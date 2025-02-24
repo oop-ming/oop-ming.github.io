@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,21 +26,23 @@
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
    <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="no-ch">Grundlagen der Java-Programmierung</a></li>
+   <li><a href="grundlagen_der_javaprogrammierung.html" class="daddy">Grundlagen der Java-Programmierung</a>
+   <ul class="other-section">
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+   </ul>
+   </li>
    <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li id="active"><a href="abstrakte_klassen_und_interfaces.html" class="active no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-   <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
-   <li><a href="git.html" class="no-ch">Git</a></li>
-   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="polymorphismus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="design_patterns.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="vererbung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="polymorphismus.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -47,7 +51,178 @@
 <article class="iDevice_wrapper textIdevice" id="id5">
 <div class="iDevice emphasis0" >
 <div id="ta5_132_2" class="block iDevice_content">
-<div class="exe-text"><p>Abstrakte Klassen und Methoden<br />Interfaces und deren Implementierung<br />Übung: Erstellung und Verwendung von Interfaces</p></div>
+<div class="exe-text"><p>Abstraktion ist ein zentrales Prinzip der objektorientierten Programmierung, das schon in den bisherigen Kapiteln – von der Einführung in Klassen und Objekte über Vererbung und Polymorphismus – sichtbar wurde. In diesem Kapitel vertiefen wir, wie abstrakte Klassen und Interfaces dazu dienen, gemeinsame Eigenschaften und Verhalten festzulegen, ohne dass jedes Detail explizit implementiert werden muss. Dabei knüpfen wir an den roten Faden der vorangegangenen Kapitel an, indem wir weiterhin praxisnahe und alltagsnahe Beispiele verwenden.</p>
+<h2>Abstrakte Klassen</h2>
+<p>Eine abstrakte Klasse lässt sich am besten als einen Bauplan verstehen, der nicht direkt ein fertiges Produkt liefert, sondern die Grundlagen für mehrere verwandte Produkte bietet. So wie man einen allgemeinen Gebäudeplan besitzt, von dem später spezifische Gebäude (Schule, Krankenhaus, Bibliothek) abgeleitet werden, beschreibt eine abstrakte Klasse gemeinsame Eigenschaften und Methoden, die konkrete Unterklassen übernehmen und erweitern.</p>
+<p><strong>Definition und Eigenschaften</strong></p>
+<ul>
+<li>Eine abstrakte Klasse kann sowohl abstrakte Methoden (ohne Implementierung) als auch konkrete Methoden (mit Implementierung) enthalten.</li>
+<li>Sie kann nicht direkt instanziiert werden. Das bedeutet, es ist nicht möglich, ein Objekt direkt von einer abstrakten Klasse zu erzeugen, sondern nur von ihren konkreten Subklassen.</li>
+<li>Abstrakte Klassen ermöglichen es, Gemeinsames zentral zu definieren und gleichzeitig den Unterklassen den Freiraum zu lassen, spezialisierte Implementierungen zu liefern.</li>
+</ul>
+<p><strong>Beispiel</strong></p>
+<p>Betrachten wir eine abstrakte Klasse „Tier“, die bereits in früheren Kapiteln zur Veranschaulichung von Vererbung und Polymorphismus verwendet wurde. Hier definieren wir ein gemeinsames Merkmal – das Geräusch – abstrakt, während wir eine konkrete Methode „schlafen“ für alle Tiere umsetzen:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Abstrakte Klasse Tier
+public abstract class Tier {
+   protected String name;
+
+   public Tier(String name) {
+      this.name = name;
+   }
+
+   // Abstrakte Methode: keine Implementierung, muss von jeder Subklasse konkret umgesetzt werden
+   public abstract void geraeuschMachen();
+
+   // Konkrete Methode: bereitgestellte allgemeine Funktionalität
+   public void schlafen() {
+      System.out.println(name + " schläft.");
+   }
+}
+
+// Konkrete Subklasse Hund
+public class Hund extends Tier {
+   public Hund(String name) {
+      super(name);
+   }
+
+   @Override
+   public void geraeuschMachen() {
+      System.out.println(name + " bellt: Wuff!");
+   }
+}</code></pre>
+</div>
+</div>
+<p>In diesem Beispiel dient die abstrakte Klasse „Tier“ dazu, einen Rahmen vorzugeben, ohne sich auf eine spezifische Implementation des Geräuschmachens festzulegen. Jede Tierart kann dann ihre eigene Variante implementieren – so bleibt der Code flexibel und übersichtlich.</p>
+<h2>2. Interfaces</h2>
+<p>Interfaces hingegen können als Verträge verstanden werden, die festlegen, welche Methoden ein Objekt bereitstellen muss – jedoch ohne jegliche Implementierung. Während abstrakte Klassen oft ein „ist-ein“ Verhältnis abbilden, fokussieren sich Interfaces auf das, was ein Objekt „kann“.</p>
+<p><strong>Definition und Eigenschaften</strong></p>
+<ul>
+<li>Ein Interface definiert ausschließlich Methodensignaturen (ab Java 8 sind auch Default-Methoden mit Implementierung möglich, jedoch bleibt das Kernelement abstrakt).</li>
+<li>Es kann von beliebig vielen Klassen „implementiert“ werden, was eine Art Mehrfachvererbung ermöglicht, da eine Klasse mehrere Interfaces implementieren kann.</li>
+<li>Interfaces dienen zur Entkoppelung: Sie legen fest, welche Funktionalitäten benötigt werden, ohne die konkrete Implementierung vorzugeben.</li>
+</ul>
+<p>Beispiel</p>
+<p>Wir erstellen ein Interface „Bewegbar“, das eine Methode definiert, die von verschiedenen Klassen umgesetzt werden soll, z. B. von Fahrzeugen oder auch von grafischen Elementen in Processing:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Interface Bewegbar
+public interface Bewegbar {
+   // Methodensignatur, die von jedem implementierenden Objekt definiert werden muss
+   void bewegen();
+}
+
+// Klasse Auto implementiert das Interface Bewegbar
+public class Auto implements Bewegbar {
+   private String modell;
+
+   public Auto(String modell) {
+      this.modell = modell;
+   }
+
+   @Override
+   public void bewegen() {
+      System.out.println(modell + " fährt auf der Straße.");
+   }
+}
+
+// Außerdem könnte auch eine grafische Form, z. B. ein Kreis, Beweglichkeit implementieren
+public class Circle implements Bewegbar {
+   private float x, y, radius;
+
+   public Circle(float x, float y, float radius) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+   }
+
+   @Override
+   public void bewegen() {
+      // Beispiel: Kreis bewegt sich diagonal
+      x += 5;
+      y += 5;
+      System.out.println("Kreis bewegt sich zu Position (" + x + ", " + y + ").");
+   }
+}</code></pre>
+</div>
+</div>
+<p>Durch diese Entkopplung der Implementierung vom Vertrag (Interface) können verschiedene Klassen – ob Fahrzeug oder grafische Form – dieselbe Methode auf unterschiedliche Weise umsetzen und dennoch über einen gemeinsamen Typ angesprochen werden.</p>
+<h2>3. Vergleich: Abstrakte Klassen vs. Interfaces</h2>
+<p>Beide Konzepte dienen der Abstraktion, verfolgen jedoch unterschiedliche Ansätze:</p>
+<p> </p>
+<table style="width: 100%; height: 155px;" border="1">
+<tbody>
+<tr style="height: 25px;">
+<td style="width: 21.0247%; height: 25px;"></td>
+<td style="width: 39.0283%; height: 25px;">Abstrakte Klasse</td>
+<td style="width: 39.9469%; height: 25px;">Interface</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 21.0247%; height: 25px;">Instanziierung</td>
+<td style="width: 39.0283%; height: 25px;">Kann nicht direkt instanziert werden</td>
+<td style="width: 39.9469%; height: 25px;">Kann ebenfalls nicht instanziert werden</td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 21.0247%; height: 50px;">Implementierung</td>
+<td style="width: 39.0283%; height: 50px;">Kann sowohl abstrakte als auch konkrete Methoden enthalten</td>
+<td style="width: 39.9469%; height: 50px;">Enthält primär abstrakte Methoden <br /><span style="font-size: 10pt;">(Default-Methoden seit Java 8 möglich)</span></td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 21.0247%; height: 25px;">Vererbung</td>
+<td style="width: 39.0283%; height: 25px;">Eine Klasse kann nur eine abstrakte Klasse erweitern</td>
+<td style="width: 39.9469%; height: 25px;">Eine Klasse kann mehrere Interfaces implementieren</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 21.0247%; height: 30px;">Verwendungszweck</td>
+<td style="width: 39.0283%; height: 30px;">
+<p>Gemeinsame Basis für eng verwandte Klassen, zentraler Code</p>
+</td>
+<td style="width: 39.9469%; height: 30px;">Definition eines Vertrages, der von beliebigen Klassen erfüllt werden kann</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br />Diese Gegenüberstellung verdeutlicht, dass abstrakte Klassen ideal sind, wenn es eine starke “ist-ein” Beziehung gibt, während Interfaces Flexibilität und lose Kopplung bei der Umsetzung von Fähigkeiten ermöglichen.</p>
+<h2>4. Praxisrelevanz und interdisziplinäre Anwendungen</h2>
+<p>Für Studierende des Medieningenieurwesens sind abstrakte Klassen und Interfaces nicht nur theoretische Konzepte, sondern Werkzeuge, um komplexe, interdisziplinäre Projekte zu realisieren. Beispielsweise kann in einem Mediaprojekt eine abstrakte Klasse „Form“ definiert werden, die eine Methode draw() enthält. Spezifische Formen wie Kreis, Rechteck oder Dreieck implementieren diese Methode jeweils auf ihre Art – was direkt an die in Kapitel 5 vorgestellte Polymorphismusstruktur anknüpft.</p>
+<p>Gleichzeitig kann ein Interface wie „Interaktiv“ festlegen, dass jede Komponente in einer Medienanwendung auch eine Methode handleInput() liefern muss – egal, ob es sich um ein grafisches Objekt, einen Sound oder ein Video handelt. Durch diese Trennung lassen sich komplexe Anwendungen modular entwerfen und flexibel erweitern, ohne dass bereits bestehender Code angepasst werden muss.</p>
+<h1><br />Übungen</h1>
+<h2>Aufgaben:</h2>
+<ul>
+<li><strong>Aufgabe 1: Abstrakte Klasse implementieren</strong><br />Erstelle eine abstrakte Klasse „Form“ mit folgenden Eigenschaften: spezielle Attribute (z. B. Position und Farbe) und einer abstrakten Methode draw().<br />Erstelle anschließend zwei konkrete Unterklassen, „Circle“ und „Rectangle“, die die Methode draw() spezifisch umsetzen.<br />Teste deine Implementierung in einer Main-Methode, in der du ein Array von Form-Objekten iterierst und jeweils draw() aufrufst.</li>
+<li><strong>Aufgabe 2: Interface in einem interaktiven Szenario</strong><br />Definiere ein Interface „Interaktiv“ mit der Methode handleInput(String input).<br />Implementiere zwei Klassen – z. B. „Button“ und „Slider“ – die dieses Interface implementieren.<br />Schreibe ein Programm, das beide Objekte erstellt und anhand eines Beispiel-Inputs die Methode handleInput() polymorph aufruft.</li>
+</ul>
+<h2>Fragen:</h2>
+<ol>
+<li>Warum kann eine abstrakte Klasse nicht direkt instanziiert werden?</li>
+<li>In welchen Situationen würdest du ein Interface einem abstrakten Klasse vorziehen?</li>
+<li>Nenne zwei wesentliche Unterschiede zwischen abstrakten Klassen und Interfaces.</li>
+<li>Wie fördert die Implementierung von Interfaces die lose Kopplung in einem Softwareprojekt?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Abstrakte Klassen:
+<ul>
+<li>Dienen als Basis und Bauplan für verwandte Klassen.</li>
+<li>Können sowohl abstrakte Methoden als auch konkrete Implementierungen enthalten.</li>
+<li>Werden genutzt, um eine “ist-ein” Beziehung zu modellieren.</li>
+</ul>
+</li>
+<li>Interfaces:
+<ul>
+<li>Definieren Verträge, die jede implementierende Klasse erfüllen muss.</li>
+<li>Ermöglichen Mehrfachvererbung in Form von verhaltensbezogener Kopplung.</li>
+<li>Sorgen für flexible und lose gekoppelte Architekturen.</li>
+</ul>
+</li>
+<li>Gemeinsamer Nutzen:
+<ul>
+<li>Beide Mechanismen unterstützen die Abstraktion und fördern die Wartbarkeit und Erweiterbarkeit von Code.</li>
+<li>Sie ergänzen die Konzepte der Klassen, Objekte, Vererbung und Polymorphismus, die bereits in den vorherigen Kapiteln behandelt wurden.</li>
+</ul>
+</li>
+</ul>
+<p></p></div>
 </div>
 </div>
 </article>
@@ -58,7 +233,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="polymorphismus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="design_patterns.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="vererbung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="polymorphismus.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,30 +26,255 @@
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
    <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="no-ch">Grundlagen der Java-Programmierung</a></li>
+   <li><a href="grundlagen_der_javaprogrammierung.html" class="daddy">Grundlagen der Java-Programmierung</a>
+   <ul class="other-section">
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+   </ul>
+   </li>
    <li id="active"><a href="klassen_und_objekte.html" class="active no-ch">Klassen und Objekte</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-   <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
-   <li><a href="git.html" class="no-ch">Git</a></li>
-   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="grundlagen_der_javaprogrammierung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="vererbung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="collections_framework.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="vererbung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Klassen und Objekte</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id2">
+<article class="iDevice_wrapper textIdevice" id="id15">
 <div class="iDevice emphasis0" >
-<div id="ta2_129_2" class="block iDevice_content">
-<div class="exe-text"><p>Definition von Klassen<br />Erstellen von Objekten<br />Attribute und Methoden<br />Konstruktoren<br />Übung: Implementierung einer Klasse (z.B. "Student" oder "Auto")<br />Kapselung<br />Prinzip der Datenkapselung<br />Modifikatoren<br />Getter und Setter<br />Übung: Implementierung von Kapselung in einer bestehenden Klasse<br />Exkurs: Packages und API</p></div>
+<div id="ta15_130_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung – Von Bauplänen zu realen Objekten</h1>
+<p>Stell dir vor, du möchtest ein individuelles Auto bauen. Du hast einen exakten Bauplan, der alle Komponenten des Autos beschreibt – Motor, Karosserie, Räder und Innenausstattung. Dieser Bauplan enthält alle Informationen, die du benötigst, um ein Auto zu produzieren, jedoch ist er selbst noch kein fahrbares Fahrzeug. In der objektorientierten Programmierung (OOP) entspricht dieser Bauplan einer Klasse.</p>
+<p>Einmal erstellt, kannst du anhand dieses Bauplans beliebig viele Autos (Objekte) fertigen – jedes Auto wird zwar nach demselben Konzept gebaut, besitzt jedoch seine eigenen Eigenschaften (z. B. Farbe, Baujahr) und verhält sich in bestimmten Situationen individuell. Genau so verhält es sich in der OOP: Eine Klasse definiert die Struktur und das Verhalten (Methoden), während Objekte konkrete Instanzen dieser Klasse sind. Diese Metapher – vom abstrakten Bauplan zum realen Produkt – soll dir helfen, den grundlegenden Zusammenhang zwischen Klassen und Objekten zu verstehen.</p>
+<p>In diesem Kapitel wirst du lernen:</p>
+<ul>
+<li>Was Klassen und Objekte sind</li>
+<li>Wie du Klassen erstellst und Objekte instanziierst</li>
+<li>Welche Rolle Attribute, Methoden und Konstruktoren spielen</li>
+<li>Wie Kapselung (Datenverbergen) zur Sicherung der integrierten Daten beiträgt</li>
+<li>Wie Zugriffsmodifizierer, Getter und Setter den Zugriff steuern und kontrollieren</li>
+<li>Und wie Packages und APIs zur Strukturierung größerer Programme beitragen</li>
+</ul>
+<h2>1. Definition von Klassen</h2>
+<p>In Java beschreibt eine Klasse den Bauplan eines Datentyps. Eine Klasse enthält:</p>
+<p>Attribute (Felder): Diese speichern den Zustand eines Objekts. Bei einem Auto könnten das z. B. die Marke, das Modell und das Baujahr sein.<br />Methoden: Diese definieren das Verhalten, das Objekte ausführen können. Zum Beispiel könnte eine Methode zum Starten des Motors oder Bremsen gedacht sein.<br />Die Definition einer Klasse legt also nicht nur fest, wie ein Objekt aussieht, sondern auch, welche Aktionen mit ihm ausgeführt werden können. Hier ein einfaches Beispiel einer Klasse „Auto“:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Auto {
+   // Attribute – der Zustand eines Autos
+   private String marke;
+   private String modell;
+   private int baujahr;
+
+   // Konstruktor: Erzeugt ein neues Auto-Objekt
+   public Auto(String marke, String modell, int baujahr) {
+      this.marke = marke;
+      this.modell = modell;
+      this.baujahr = baujahr;
+   }
+
+   // Methode: Startet das Auto
+   public void starten() {
+      System.out.println("Das Auto startet.");
+   }
+
+   // Getter und Setter für das Attribut 'marke'
+   public String getMarke() {
+      return marke;
+   }
+
+   public void setMarke(String marke) {
+      this.marke = marke;
+   }
+
+}</code></pre>
+</div>
+</div>
+<p><br /><br />In diesem Beispiel fungiert die Klasse Auto als Bauplan. Sie legt fest, welche Eigenschaften (marke, modell, baujahr) ein Auto besitzt und welche Aktionen (z. B. starten) durchgeführt werden können.</p>
+<h2><br />2. Erstellen von Objekten</h2>
+<p>Sobald eine Klasse definiert ist, kannst du Objekte davon instanziieren. Ein Objekt ist eine konkrete Ausprägung der Klasse, vergleichbar mit einem fertigen Auto, das auf Basis des Auto-Bauplans hergestellt wurde.</p>
+<p>So könnte in der Main-Methode eines Programms ein Auto-Objekt erzeugt und verwendet werden:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Main {
+   public static void main(String[] args) {
+      // Erzeugen eines Auto-Objekts
+      Auto meinAuto = new Auto("VW", "Golf", 2020);
+      meinAuto.starten(); // Ruft die Methode 'starten' auf
+      System.out.println("Marke: " + meinAuto.getMarke());
+   }
+}</code></pre>
+</div>
+</div>
+<p>Durch den Konstruktor der Klasse wird das Objekt „meinAuto“ erzeugt und mit individuellen Eigenschaften ausgestattet.</p>
+<h2><br />3. Attribute und Methoden</h2>
+<p>Attribute und Methoden bilden das Herzstück einer Klasse:</p>
+<ul>
+<li>Attribute (Felder) definieren den Zustand. Sie können verschiedene Datentypen haben (z. B. int, String, boolean).</li>
+<li>Methoden definieren das Verhalten eines Objekts. Sie enthalten Code, der Operationen auf den Attributen oder sonstige Aktionen durchführt.</li>
+</ul>
+<p>Ein anschauliches Beispiel:<br />Stell dir einen „Student“ vor. Er hat Attribute wie Name, Matrikelnummer und Studiengang. Gleichzeitig kann er Aktionen ausführen wie zur Vorlesung gehen oder sich für Prüfungen anmelden. In Java könnte dies folgendermaßen modelliert werden:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Student {
+   private String name;
+   private int matrikelnummer;
+   private String studiengang;
+
+   // Konstruktor
+   public Student(String name, int matrikelnummer, String studiengang) {
+      this.name = name;
+      this.matrikelnummer = matrikelnummer;
+      this.studiengang = studiengang;
+   }
+
+   // Eine Methode: Der Student meldet sich an
+      public void anmelden() {
+      System.out.println(name + " hat sich für den Kurs angemeldet.");
+   }
+
+   // Getter und Setter
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
+}</code></pre>
+</div>
+</div>
+<p><br />Diese Trennung von Zustand (Attribute) und Verhalten (Methoden) ist ein zentrales Merkmal der OOP. Durch die klare Strukturierung kann der Code übersichtlicher und modularer gestaltet werden.</p>
+<h2>4. Konstruktoren</h2>
+<p>Ein Konstruktor ist eine spezielle Methode, die beim Erzeugen eines Objekts aufgerufen wird, um es zu initialisieren. Im obigen Beispiel wird durch den Konstruktor der Klasse Auto sicher gestellt, dass beim Erzeugen eines Auto-Objekts die Eigenschaften marke, modell und baujahr gesetzt werden.</p>
+<p>Wichtige Aspekte von Konstruktoren:</p>
+<ul>
+<li>Namen: Der Konstruktor hat immer denselben Namen wie die Klasse.</li>
+<li>Keine Rückgabe: Konstruktoren haben keinen Rückgabetyp, auch nicht void.</li>
+<li>Überladung: Es ist möglich, mehrere Konstruktoren mit unterschiedlichen Parameterlisten zu definieren, um Objekte flexibel initialisieren zu können.</li>
+</ul>
+<p>Beispiel – Überladene Konstruktoren:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Auto {
+   private String marke;
+   private String modell;
+   private int baujahr;
+
+   // Konstruktor mit allen Parametern
+   public Auto(String marke, String modell, int baujahr) {
+      this.marke = marke;
+      this.modell = modell;
+      this.baujahr = baujahr;
+}
+
+   // Konstruktor mit Standardwert für baujahr
+   public Auto(String marke, String modell) {
+      this(marke, modell, 2025); // Ruft den anderen Konstruktor auf
+   }
+
+}</code></pre>
+</div>
+</div>
+<p>Durch Konstruktorüberladung wird die Initialisierung der Objekte flexibler und einfacher an verschiedene Anforderungen anpassbar.</p>
+<h2>5. Kapselung und das Prinzip der Datenkapselung</h2>
+<p>Ein wesentliches Prinzip der OOP ist die Kapselung (Encapsulation). Mit ihr werden die inneren Details eines Objekts verborgen und nur über definierte Schnittstellen (Methoden) zugänglich gemacht. Dies schützt die Daten vor ungewollten Zugriffen und Manipulationen.</p>
+<p>In der Klasse Auto wird beispielsweise das Attribut marke als private deklariert:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>private String marke;</code></pre>
+</div>
+</div>
+<p>Dadurch wird verhindert, dass außerhalb der Klasse direkt darauf zugegriffen wird. Stattdessen werden Getter- und Setter-Methoden angeboten, um kontrolliert Änderungen vorzunehmen:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public String getMarke() {
+   return marke;
+}
+
+public void setMarke(String marke) {
+   // Hier können zusätzliche Prüfungen eingebaut werden
+   this.marke = marke;
+}</code></pre>
+</div>
+</div>
+<p>Mit dieser Technik sorgt man dafür, dass die Objektdaten konsistent bleiben und nicht unbeabsichtigt verändert werden.</p>
+<h2>6. Modifikatoren, Getter und Setter</h2>
+<p>Modifikatoren wie private, public und protected steuern den Zugriff auf Klassenmitglieder:</p>
+<ul>
+<li>public: Mitglieder sind von überall zugreifbar.</li>
+<li>private: Mitglieder sind nur innerhalb der gleichen Klasse sichtbar.</li>
+<li>protected: Mitglieder sind innerhalb der gleichen Klasse und deren Subklassen zugänglich.</li>
+</ul>
+<p>Getter und Setter sind spezielle Methoden, die den kontrollierten Zugriff auf private Attribute ermöglichen. Sie sind nicht nur nützlich, um Datenlesefehler zu vermeiden, sondern auch um bei Bedarf Logik einzubauen (z. B. Validierungen):</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Student {
+   private int matrikelnummer;
+
+   // Getter-Methode
+   public int getMatrikelnummer() {
+      return matrikelnummer;
+   }
+
+   // Setter-Methode
+   public void setMatrikelnummer(int matrikelnummer) {
+      // Beispiel: Prüfung, dass die Matrikelnummer positiv ist
+      if(matrikelnummer &gt; 0) {
+         this.matrikelnummer = matrikelnummer;
+      } else {
+         System.out.println("Ungültige Matrikelnummer!");
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p>Mit diesen Techniken können du und deine Mitstudierenden sicherstellen, dass die Datenstrukturen in euren Programmen robust und fehlerresistent bleiben.</p>
+<p></p>
+<h1>Übungen</h1>
+<h2>Aufgaben</h2>
+<ul>
+<li>Aufgabe 1: Implementierung einer Klasse
+<ul>
+<li>Erstelle eine Klasse „Auto“ mit den Attributen: marke, modell und baujahr.</li>
+<li>Implementiere einen Konstruktor, der alle Attribute initialisiert.</li>
+<li>Füge eine Methode hinzu, die eine einfache Nachricht ausgibt, z. B. „[Marke] [Modell] startet!“</li>
+<li>Erstelle in einer Main-Methode ein Objekt der Klasse Auto und rufe die Methode auf.</li>
+</ul>
+</li>
+<li>Aufgabe 2: Implementierung von Kapselung
+<ul>
+<li>Nimm die Klasse „Student“ und deklariere die Attribute (z. B. name, matrikelnummer, studiengang) als private.</li>
+<li>Implementiere jeweils passende Getter und Setter-Methoden.</li>
+<li>Füge Logik in den Setter für die Matrikelnummer ein, sodass nur positive Werte akzeptiert werden.</li>
+<li>Teste deine Implementierung in einer einfachen Main-Methode, indem du versuchst, ungültige Werte zu setzen, und überprüfe, ob deine Validierung wirkt.</li>
+</ul>
+</li>
+</ul>
+<h2>Fragen</h2>
+<ol>
+<li>Was versteht man unter einer Klasse in der objektorientierten Programmierung?</li>
+<li>Wie unterscheiden sich ein Konstruktor und eine normale Methode?</li>
+<li>Erkläre den Begriff der Kapselung und nenne zwei Vorteile, die sich daraus ergeben.</li>
+<li>Warum werden Attribute in der Regel als private deklariert und über Getter/Setter zugänglich gemacht?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Eine Klasse ist ein Bauplan, der Attribute und Methoden definiert, während ein Objekt eine konkrete Instanz dieser Klasse darstellt.</li>
+<li>Konstruktoren initialisieren Objekte und können überladen werden, um flexible Initialisierungen zu ermöglichen.</li>
+<li>Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.</li>
+<li>Zugriffsmodifikatoren (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.</li>
+</ul>
+<p></p></div>
 </div>
 </div>
 </article>
@@ -58,7 +285,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="grundlagen_der_javaprogrammierung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="vererbung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="collections_framework.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="vererbung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,26 +26,174 @@
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
    <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="no-ch">Grundlagen der Java-Programmierung</a></li>
+   <li><a href="grundlagen_der_javaprogrammierung.html" class="daddy">Grundlagen der Java-Programmierung</a>
+   <ul class="other-section">
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+   </ul>
+   </li>
    <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
    <li id="active"><a href="vererbung.html" class="active no-ch">Vererbung</a></li>
-   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-   <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
-   <li><a href="git.html" class="no-ch">Git</a></li>
-   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="klassen_und_objekte.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="polymorphismus.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="klassen_und_objekte.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="abstrakte_klassen_und_interfaces.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Vererbung</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_127_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung – Vererbung im Alltag</h1>
+<p>Stellt euch vor, ihr betrachtet die Tierwelt: Alle Tiere besitzen gewisse gemeinsame Merkmale wie Atmung, Fortpflanzung oder Bewegung. Gleichzeitig unterscheiden sich Tiere jedoch in spezifischen Eigenschaften – ein Hund bellt, während eine Katze miaut. Dieses Grundprinzip, dass allgemeine Eigenschaften (zum Beispiel „Tiersein“) an spezifische Gruppen (wie Hund oder Katze) weitergegeben werden, bildet den Kern der Vererbung in der objektorientierten Programmierung (OOP).<br />In eurem bisherigen Programmierunterricht – unter anderem mit Processing – habt ihr bereits gelernt, wie Code wiederverwendet werden kann. Die Vererbung geht diesen Ansatz noch einen großen Schritt weiter: Sie ermöglicht es, allgemeine Funktionalitäten in einer Oberklasse (Superklasse) zu definieren und diese in spezialisierten Klassen (Subklassen) automatisch zu übernehmen und bei Bedarf anzupassen. Damit wird nicht nur redundanter Code vermieden, sondern auch die Wartbarkeit und Erweiterbarkeit eurer Programme deutlich verbessert.<br />In diesem Kapitel erfahrt ihr, was Vererbung bedeutet, wie sie in Java syntaktisch umgesetzt wird und welche Vorteile sie in der Softwareentwicklung bietet – immer vor dem Hintergrund eurer interdisziplinären Studienrichtung Medieningenieurwesen.</p>
+<h2>1. Was ist Vererbung?</h2>
+<p>Vererbung beschreibt den Mechanismus, bei dem eine Klasse (die Superklasse) Eigenschaften und Methoden an eine oder mehrere abgeleitete Klassen (Subklassen) weitergibt. Dabei werden gemeinsame Merkmale einmal definiert und müssen nicht in jeder Subklasse erneut implementiert werden.<br />Beispiel aus dem Alltag:</p>
+<ul>
+<li>Die Superklasse „Tier“ könnte allgemeine Eigenschaften wie Name und Alter sowie Methoden wie geraeuschMachen() enthalten.</li>
+<li>Die Subklassen „Hund“, „Katze“ oder „Vogel“ erben diese Eigenschaften automatisch und können zusätzlich ihr eigenes spezifisches Verhalten implementieren – ein Hund bellt, eine Katze miaut, ein Vogel zwitschert.</li>
+</ul>
+<p>Dies verdeutlicht das Prinzip: Allgemeines Verhalten und Daten werden zentral definiert, während spezielle Abweichungen individuell überschrieben werden können.</p>
+<h2>2. Vorteile der Vererbung</h2>
+<p>Die Verwendung von Vererbung bringt zahlreiche Vorteile in der objektorientierten Programmierung mit sich:</p>
+<ul>
+<li>Wiederverwendbarkeit: Einmal definierte Eigenschaften in der Superklasse werden in allen Subklassen verfügbar, was den Programmieraufwand reduziert.</li>
+<li>Wartbarkeit: Änderungen in der Superklasse wirken sich automatisch auf alle abgeleiteten Klassen aus, sofern die vererbten Methoden genutzt werden.</li>
+<li>Erweiterbarkeit: Neue Klassen können durch Ableiten von bestehenden Klassen schnell erweitert werden, ohne den gesamten Code neu schreiben zu müssen.</li>
+<li>Strukturierung: Komplexe Systeme werden in eine logische Hierarchie unterteilt, was das Verständnis und die Modellierung realer Zusammenhänge erleichtert.</li>
+</ul>
+<p>Angesichts des interdisziplinären Charakters des Studiengangs Medieningenieurwesen, in dem Informatik, Elektrotechnik und Medien kombiniert werden, hilft Vererbung dabei, wiederkehrende Logiken zentral zu erfassen und leicht an veränderte Anforderungen anzupassen.</p>
+<h2><br />3. Implementierung von Vererbung in Java</h2>
+<p>In Java erfolgt die Vererbung mittels des Schlüsselworts „extends“. Eine Klasse, die eine andere Klasse erweitert, übernimmt damit alle öffentlichen und geschützten (protected) Eigenschaften und Methoden der Superklasse.</p>
+<p><strong>Beispiel: Tierhierarchie</strong></p>
+<p>Wir definieren zunächst eine Superklasse Tier:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Tier {
+   // Geschützte Attribute, damit Subklassen darauf zugreifen können
+   protected String name;
+   protected int alter;
+
+   // Konstruktor der Superklasse
+   public Tier(String name, int alter) {
+      this.name = name;
+      this.alter = alter;
+   }
+
+   // Methode, die allgemeines Verhalten beschreibt
+   public void geraeuschMachen() {
+      System.out.println("Das Tier macht ein Geräusch.");
+   }
+
+}</code></pre>
+</div>
+</div>
+<p><br />Nun erstellen wir eine Subklasse Hund, die von Tier erbt:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Hund extends Tier {
+
+   // Konstruktor der Subklasse, ruft den Konstruktor der Superklasse auf
+   public Hund(String name, int alter) {
+      super(name, alter);
+   }
+
+   // Überschreiben der Methode, um spezielles Verhalten zu definieren
+   @Override
+   public void geraeuschMachen() {
+      System.out.println(name + " bellt: Wuff!");
+   }
+
+}</code></pre>
+</div>
+</div>
+<p><br /><br />Erklärung der wichtigen Elemente:</p>
+<ul>
+<li>Das Schlüsselwort „extends“ zeigt an, dass Hund von Tier erbt.</li>
+<li>Mit dem Aufruf von super(name, alter) im Konstruktor der Subklasse wird der Konstruktor der Oberklasse ausgeführt, sodass die Attribute korrekt initialisiert werden.</li>
+<li>Die Methode geraeuschMachen() wird in der Subklasse überschrieben (Method Overriding). Dadurch wird das spezifische Verhalten (Bellen) implementiert, während die Grundstruktur aus der Superklasse übernommen wird.</li>
+</ul>
+<p>Diese Technik der Vererbung ermöglicht es, zunächst allgemeine Verhaltensweisen zu definieren und sie später in den abgeleiteten Klassen zu spezifizieren.</p>
+<h2>4. Das Schlüsselwort „super“</h2>
+<p>Das Schlüsselwort „super“ spielt in der Vererbung eine zentrale Rolle. Es dient dazu, auf die Mitglieder (Attribute und Methoden) der Superklasse zuzugreifen.<br />Mögliche Einsatzgebiete:</p>
+<ul>
+<li>Aufruf des Konstruktors der Superklasse – wie im obigen Beispiel, um die Initialisierung zu garantieren.</li>
+<li>Zugriff auf Methoden oder Attribute der Superklasse, wenn diese in der Subklasse überschrieben wurden.</li>
+</ul>
+<p><strong>Beispiel:</strong></p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Katze extends Tier {
+
+   public Katze(String name, int alter) {
+      super(name, alter);
+   }
+
+   @Override
+   public void geraeuschMachen() {
+      // Aufruf der ursrprünglichen Implementierung aus der Superklasse,
+      // falls gewünscht, bevor der spezifische Code ausgeführt wird
+      super.geraeuschMachen();
+      System.out.println(name + " miaut: Miau!");
+   }
+}</code></pre>
+</div>
+</div>
+<p>In diesem Beispiel wird zunächst die Methode geraeuschMachen() der Superklasse aufgerufen und anschließend ein zusätzlicher, spezifischer Teil ausgeführt. Dadurch wird klar, wie Vererbung eine flexible Erweiterung und Anpassung der bestehenden Funktionalitäten ermöglicht.</p>
+<h2>5. Formen von Vererbung und ihre Besonderheiten in Java</h2>
+<p>In der objektorientierten Programmierung gibt es verschiedene Ansätze der Vererbung:</p>
+<ul>
+<li><strong>Einfachvererbung</strong>: Eine Klasse erbt von genau einer Superklasse. Dies ist die in Java vorherrschende Form, da Java – im Gegensatz zu einigen anderen Programmiersprachen – keine Mehrfachvererbung von Klassen zulässt.</li>
+<li><strong>Mehrfachvererbung (von Klassen)</strong>: Bei einigen Sprachen möglich, in Java aber nicht direkt unterstützt. Stattdessen können Schnittstellen (Interfaces) genutzt werden, um ähnliche Funktionalitäten zu realisieren.</li>
+<li><strong>Hybridlösungen</strong>: Mit abstrakten Klassen und Interfaces lassen sich teilweise mehrdimensionale Vererbungseffekte erzielen, ohne die Nachteile und Komplexitäten der Mehrfachvererbung zu riskieren.<br />Der Verzicht auf Mehrfachvererbung bei Klassen in Java dient der Klarheit: Ein Konflikt, wenn zwei Superklassen unterschiedliche Implementierungen einer Methode liefern, wird so elegant vermieden. Falls dennoch mehrere Verhaltensweisen benötigt werden, kann eine Klasse mehrere Interfaces implementieren.</li>
+</ul>
+<h2>6. Praktische Anwendung der Vererbung</h2>
+<p>Um das Konzept zu verdeutlichen, schauen wir uns ein praktisches Szenario an: Ein Medienprojekt, in dem verschiedene grafische Objekte modelliert werden sollen.<br />Nehmen wir an, ihr entwickelt eine Anwendung, in der verschiedene Formen (Kreise, Rechtecke und Dreiecke) gezeichnet werden sollen. Eine abstrakte Superklasse „Form“ definiert grundlegende Attribute wie Position und Farbe sowie eine Methode draw(), die in den abgeleiteten Klassen jeweils spezifiziert wird.<br />Dieses Prinzip der Vererbung erlaubt es, alle gemeinsamen Eigenschaften zentral zu verwalten und nur die fachspezifischen Unterschiede in den Subklassen zu implementieren.<br />Analog zur Tierhierarchie wird hier die Vererbung dazu genutzt, den Code übersichtlich und wiederverwendbar zu gestalten – ein zentraler Aspekt im interdisziplinären Arbeiten, beispielsweise bei der Entwicklung von Animationen oder interaktiven Medienanwendungen.</p>
+<h1>Übungen</h1>
+<h2>Aufgaben</h2>
+<ul>
+<li>Aufgabe 1: Tierhierarchie implementieren
+<ul>
+<li>Erstelle eine Superklasse „Tier“ mit den Attributen name (String) und alter (int) sowie einer Methode geraeuschMachen(), die ein generisches Geräusch ausgibt.</li>
+<li>Implementiere die Subklassen „Hund“ und „Katze“, die jeweils die Methode geraeuschMachen() überschreiben, um spezifische Geräusche (z. B. Bellen und Miauen) auszugeben.</li>
+<li>Teste die Klassen in einer Main-Methode, indem du mehrere Tier-Objekte erzeugst und deren Methoden aufrufst.</li>
+</ul>
+</li>
+<li>Aufgabe 2: Erweiterung mit zusätzlichen Eigenschaften
+<ul>
+<li>Ergänze die Superklasse „Tier“ um ein Attribut habitat (z. B. "Wald", "Haus", "Aquarium").</li>
+<li>Erstelle eine weitere Subklasse „Vogel“, die zusätzlich die Methode fliegen() implementiert und eventuell ein Attribut fluegelSpannweite besitzt.</li>
+<li>Nutze das Schlüsselwort super, um den Konstruktor der Superklasse aufzurufen und die gemeinsamen Attribute korrekt zu initialisieren.</li>
+<li>Teste euer Programm, indem du Objekte der Klassen Hund, Katze und Vogel erstellst und deren Verhalten demonstrierst.</li>
+</ul>
+</li>
+</ul>
+<h3>Fragen</h3>
+<ol>
+<li>Was versteht man unter Vererbung in der objektorientierten Programmierung, und welche Vorteile bietet sie?</li>
+<li>Wie wird in Java die Vererbung syntaktisch umgesetzt, und welche Rolle spielt dabei das Schlüsselwort „extends“?</li>
+<li>Erklärt bitte den Zweck des Schlüsselworts „super“ in Konstruktoren und Methoden.</li>
+<li>Warum erlaubt Java keine Mehrfachvererbung von Klassen, und welche Alternative bietet Java zur Implementierung mehrerer Verhaltensweisen?</li>
+</ol>
+<p></p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Vererbung ermöglicht es, gemeinsame Eigenschaften und Methoden in einer Superklasse zu definieren und diese in allen abgeleiteten Subklassen wiederzuverwenden.</li>
+<li>In Java wird Vererbung mit dem Schlüsselwort „extends“ umgesetzt.</li>
+<li>Das Schlüsselwort „super“ wird genutzt, um auf Konstruktoren, Methoden und Attribute der Superklasse zuzugreifen.</li>
+<li>Vererbung fördert Wiederverwendbarkeit, Wartbarkeit und Erweiterbarkeit des Codes – wichtige Aspekte in interdisziplinären Projekten im Medieningenieurwesen.</li>
+<li>Java unterstützt standardmäßig nur Einfachvererbung, wobei Mehrfachvererbung durch Interfaces abgefedert wird.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
 </div>
@@ -51,7 +201,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="klassen_und_objekte.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="polymorphismus.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="klassen_und_objekte.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="abstrakte_klassen_und_interfaces.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

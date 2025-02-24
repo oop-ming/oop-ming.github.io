@@ -24,16 +24,18 @@
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
    <li id="active"><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="active no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="no-ch">Grundlagen der Java-Programmierung</a></li>
+   <li><a href="grundlagen_der_javaprogrammierung.html" class="daddy">Grundlagen der Java-Programmierung</a>
+   <ul class="other-section">
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+   </ul>
+   </li>
    <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-   <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
-   <li><a href="git.html" class="no-ch">Git</a></li>
-   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
@@ -44,13 +46,56 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Einführung in die objekorientierte Programmierung</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id0">
+<article class="iDevice_wrapper textIdevice" id="id13">
 <div class="iDevice emphasis0" >
-<div id="ta0_127_2" class="block iDevice_content">
-<div class="exe-text"><p>Grundkonzepte der OOP<br />OOP stands for Object-Oriented Programming.</p>
-<p><br />Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.</p>
-<p><br />Object-oriented programming has several advantages over procedural programming:<br />OOP is faster and easier to execute<br />OOP provides a clear structure for the programs<br />OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug<br />OOP makes it possible to create full reusable applications with less code and shorter development time</p>
-<p><br />Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.<br />Vorteile der OOP<br />Vergleich zu prozeduraler Programmierung<br />Übung: Identifizierung von Objekten in realen Szenarien</p></div>
+<div id="ta13_128_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung – Objektorientierung im Alltag</h1>
+<p>Stell dir vor, du planst den Bau eines Freizeitparks. Anstatt jedes Detail von Grund auf neu zu planen, greifst du auf bewährte Bauelemente zurück: Fahrgeschäfte, Snackbuden, Infozentren – jeweils mit eigenen Eigenschaften und Funktionen. So ähnlich funktioniert die objektorientierte Programmierung (OOP). Anstatt jeden Programmteil als isolierte Befehlsfolge (wie in der prozeduralen Programmierung) zu schreiben, organisieren wir unseren Code in „Objekte“, die sowohl Daten als auch Verhalten kapseln. Für die Studierenden im Studiengang Medieningenieur, die bereits im ersten Semester mit Processing erste Programmiererfahrungen gemacht haben, bietet diese Denkweise einen natürlichen Übergang: Das, was in Processing oft grafisch und interaktiv umgesetzt wurde, wird nun auf ein flexibleres und strukturierteres Fundament gestellt.</p>
+<p>Darum geht es in diesem Kapitel: Wir erläutern, was OOP ist, warum sie in modernen Softwaresystemen so wichtig ist und wie sie sich von herkömmlichen prozeduralen Ansätzen unterscheidet.</p>
+<h2>Die Notwendigkeit von Objektorientierung</h2>
+<p>In vielen Bereichen – sei es in der Softwareentwicklung, der Elektrotechnik oder in den Medien – stoßen wir auf komplexe Systeme. Eine einzelne, monolithische Funktion, die alle Aufgaben abarbeitet, wird schnell unübersichtlich und schwer wartbar. Ein praktisches Beispiel: Stell dir ein Auto vor. Als Außensicht interessiert dich, wie du das Fahrzeug startest, fährst und stoppst – nicht aber, wie der Motor intern funktioniert. Genau hier kommt die Idee der Kapselung ins Spiel: Du interagierst mit dem Auto über klar definierte Schnittstellen (z. B. Zündschlüssel, Lenkrad), während die komplizierten internen Abläufe verborgen bleiben.</p>
+<p>Objektorientierte Programmierung löst dieses Problem, indem sie Programme in eigenständige Objekte unterteilt, die jeweils eine eigene Aufgabe haben. So können beispielsweise in einem Medienprojekt Charaktere, Soundeffekte und Steuerelemente als separate Objekte modelliert werden, die miteinander interagieren. Diese Struktur bringt Vorteile in der Wiederverwendbarkeit, Wartbarkeit und Erweiterbarkeit des Codes.</p>
+<h2>2. Prozedurale Programmierung vs. Objektorientierung</h2>
+<p>Ein kurzer Rückblick: In der prozeduralen Programmierung wird ein Programm als eine Abfolge von Befehlen konstruiert. Der Ablauf ist oft linear, und Daten sowie Funktionen sind getrennt organisiert. Dies erinnert an das Backen eines Kuchens nach einem festen Rezept: Schritt für Schritt werden Zutaten vorbereitet, gemischt und gebacken.</p>
+<p>Im Gegensatz dazu steht die objektorientierte Programmierung, bei der Daten und die darauf operierenden Funktionen in Klassen zusammengefasst werden. Diese Klassen dienen als Baupläne für Objekte. Ein Objekt ist also eine Instanz einer Klasse – vergleichbar mit einem individuellen Auto, das auf dem allgemeinen Bauplan „Auto“ basiert.</p>
+<p>Ein weiterer Vergleich:</p>
+<p>In prozeduralen Systemen gibt es oft globale Variablen und Funktionsaufrufe, die forsch durch den Code springen.<br />Bei OOP hingegen ist jedes Objekt für sich verantwortlich, seine eigenen Daten zu verwalten – ähnlich wie jedes Auto, das selbstständig fährt und nur mit anderen Fahrzeugen (über klar definierte Schnittstellen) interagiert.<br />Dieser klare Strukturierungsansatz erleichtert nicht nur das Verstehen des Codes, sondern macht ihn auch flexibler für Änderungen und Erweiterungen.</p>
+<h2>3. Die Grundprinzipien der Objektorientierung</h2>
+<p>OOP beruht auf vier zentralen Prinzipien, die wir anhand alltagstauglicher Beispiele kennenlernen:</p>
+<h3>Abstraktion</h3>
+<p>Abstraktion bedeutet, die wesentlichen Eigenschaften eines Objekts herauszufiltern und unwichtige Details zu verbergen. Betrachte einen Fahrkartenautomaten: Für den Nutzer zählt, dass er ein Ticket kaufen kann – er muss sich nicht damit befassen, wie die internen Berechnungen zur Preisermittlung funktionieren. Diese Vereinfachung trägt dazu bei, komplexe Systeme verständlich darzustellen und erleichtert die Programmierung, da nur die relevanten Merkmale modelliert werden.</p>
+<h3>Kapselung</h3>
+<p>Die Kapselung (Encapsulation) bewirkt, dass Daten und die dazugehörigen Methoden innerhalb eines Objekts verborgen bleiben. Ein klassisches Beispiel ist ein Bankkonto. Du siehst nur deinen Kontostand und hast über definierte Methoden (Einzahlen, Abheben) Zugriff darauf. Die internen Validierungs- und Sicherheitsmechanismen, die den Kontostand vor unautorisierten Änderungen schützen, bleiben verborgen. Dies stellt sicher, dass Daten korrekt und sicher verwaltet werden.</p>
+<h3>Vererbung</h3>
+<p>Vererbung erlaubt es, aus bestehenden Klassen neue Klassen abzuleiten. Stell dir eine Familie von Tieren vor: Die Klasse "Tier" enthält allgemeine Eigenschaften wie Atmung und Fortpflanzung. Spezifischere Klassen wie "Hund" oder "Vogel" erben diese allgemeinen Merkmale und fügen eigene Eigenschaften hinzu (z. B. Bellen oder Fliegen). Diese Hierarchisierung spart nicht nur Code, sondern ermöglicht auch ein systematisches und nachvollziehbares Design.</p>
+<h3>Polymorphismus</h3>
+<p>Polymorphismus (Mehrgestaltigkeit) ermöglicht es, dass Objekte unterschiedlicher Klassen auf dieselbe Schnittstelle reagieren können. Ein gutes Beispiel ist ein Zoo, in dem alle Tiere über die Methode „geräuschMachen()“ verfügen. Dabei kann ein Hund bellen und ein Vogel zwitschern – beide Methodenaufrufe werden in ihrem jeweiligen Kontext korrekt ausgeführt. Polymorphismus vereinfacht den Code, da er die Behandlung unterschiedlicher Objekte unter einer gemeinsamen Schnittstelle ermöglicht.</p>
+<h2>Verbindung zur bisherigen Programmiererfahrung mit Processing</h2>
+<p>Für die Studierenden, die bereits mit Processing gearbeitet haben, bietet sich an, einen Vergleich zu ziehen:</p>
+<p>In Processing wurden bereits grafische Elemente über Klassen modelliert, wenn auch oft vereinfacht.<br />Das Prinzip der Wiederverwendung von Code – so wie man in Processing häufig eigene Funktionen erstellt hat – findet in OOP seinen erweiterten Ausdruck.<br />Während in Processing der Fokus oft auf kurzen, visuellen Programmen lag, eröffnet OOP einen strukturierten Ansatz, der sich besonders für umfangreiche und komplexe Systeme eignet.<br />Der Umstieg von Processing zu einer vollumfänglichen objektorientierten Programmierung in Java bedeutet somit, dass dieselben Konzepte vertieft und um zusätzliche Prinzipien (wie Vererbung und Polymorphismus) erweitert werden. Dies ermöglicht den Studierenden, ihre bisherigen Kenntnisse gezielt auszubauen und in interdisziplinären Projekten – sei es in Medien, Informatik oder Elektrotechnik – erfolgreich einzusetzen.</p>
+<h2><br />Praktische Relevanz und didaktischer Nutzen</h2>
+<p>Die objektorientierte Programmierung ist nicht nur ein theoretisches Konstrukt, sondern hat direkten Praxisbezug. Beispielsweise kann ein Softwareprojekt im Medienbereich eine Vielzahl von Objekten beinhalten – von grafischen Elementen bis hin zu interaktiven Steuerungsmechanismen. Die Fähigkeit, komplexe Systeme in überschaubare, wiederverwendbare Einheiten zu zerlegen, ist zentral für die Entwicklung modularer und wartungsfreundlicher Software.</p>
+<p>Ein weiteres Beispiel: In der Entwicklung von mobilen Anwendungen oder in agilen Entwicklungsprozessen spielt die Wiederverwendbarkeit von Code eine wesentliche Rolle. Durch die konsequente Anwendung der OOP-Prinzipien kann der Code nicht nur leichter getestet, sondern auch schneller erweitert werden – ein deutliches Plus in schnelllebigen Entwicklungsumgebungen.</p>
+<h2>Übungsaufgaben</h2>
+<h3>Aufgabe 1: Alltagsmodellierung</h3>
+<p>Erstelle ein einfaches Konzept für ein Objekt aus deinem Alltag, das sich gut für die objektorientierte Modellierung eignet.</p>
+<p>Überlege, welche Eigenschaften (Attribute) und Funktionen (Methoden) in das Objekt integriert werden können.<br />Notiere dein Konzept stichpunktartig.<br />Beispiel: Ein „Smartphone“<br />  - Attribute: Marke, Modell, Betriebssystem, Akkulaufzeit<br />  - Methoden: Anrufen(), NachrichtSenden(), AppStarten()</p>
+<h3>Aufgabe 2: Vergleich – Prozedural vs. Objektorientiert</h3>
+<p>Überlege dir ein alltägliches Beispiel (z. B. das Zubereiten eines Kaffees) und beschreibe, wie du diesen Prozess prozedural und dann objektorientiert modellieren würdest.</p>
+<p>Erstelle eine kurze Übersicht, in der du die Vor- und Nachteile beider Ansätze gegenüberstellst.<br />Skizziere ein einfaches Flussdiagramm oder Pseudocode, der den objektorientierten Ansatz veranschaulicht.</p>
+<h2>Übungsfragen</h2>
+<p>Was versteht man unter Abstraktion in der objektorientierten Programmierung, und warum ist sie wichtig?<br />Erkläre den Unterschied zwischen Kapselung und Vererbung anhand eines praktischen Beispiels aus dem Alltag.<br />Wie unterscheidet sich die prozedurale Programmierung von der objektorientierten Herangehensweise?<br />Nenne ein Beispiel, bei dem der Einsatz von Polymorphismus in einer Softwareanwendung besonders vorteilhaft ist.</p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Objektorientierte Programmierung organisiert den Code in eigenständige Objekte, die Daten und Verhalten bündeln.</li>
+<li>Die vier zentralen Prinzipien sind Abstraktion, Kapselung, Vererbung und Polymorphismus.</li>
+<li>Im Vergleich zur prozeduralen Programmierung bietet OOP eine bessere Strukturierung und Wiederverwendbarkeit von Code.</li>
+<li>Für Studierende des Medieningenieurwesens ist der Übergang von Processing zu Java ein logischer Schritt, um komplexe Systeme modular und übersichtlich zu gestalten.</li>
+<li>Praktische Beispiele aus dem Alltag (z. B. Auto, Bankkonto, Tiere) helfen, die Konzepte anschaulich zu verstehen.</li>
+</ul>
+<h1>Abschluss</h1>
+<p>Dieses Kapitel hat dir einen umfassenden Überblick über die Grundlagen der objektorientierten Programmierung gegeben. Mit Hilfe alltäglicher Beispiele und einem direkten Vergleich zur prozeduralen Vorgehensweise konntest du die Relevanz und den Mehrwert der OOP erkennen. Die vorgestellten Konzepte bilden das Fundament für die weiteren Kapitel, in denen du tiefer in die einzelnen Details – wie Klassen, Objekte, Vererbung, Polymorphismus und darüber hinaus – eintauchen wirst. Nutze die Übungsaufgaben und -fragen, um dein Verständnis zu überprüfen und erste eigene Modelle zu entwerfen.</p>
+<p></p></div>
 </div>
 </div>
 </article>

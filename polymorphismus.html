@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,21 +26,23 @@
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
    <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="no-ch">Grundlagen der Java-Programmierung</a></li>
+   <li><a href="grundlagen_der_javaprogrammierung.html" class="daddy">Grundlagen der Java-Programmierung</a>
+   <ul class="other-section">
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+   </ul>
+   </li>
    <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li id="active"><a href="polymorphismus.html" class="active no-ch">Polymorphismus</a></li>
    <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li id="active"><a href="polymorphismus.html" class="active no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-   <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
-   <li><a href="git.html" class="no-ch">Git</a></li>
-   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="vererbung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="abstrakte_klassen_und_interfaces.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="abstrakte_klassen_und_interfaces.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="design_patterns.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -47,7 +51,175 @@
 <article class="iDevice_wrapper textIdevice" id="id4">
 <div class="iDevice emphasis0" >
 <div id="ta4_131_2" class="block iDevice_content">
-<div class="exe-text"><p>Konzept des Polymorphismus<br />Überladen von Methoden<br />Dynamische Bindung<br />Übung: Anwendung von Polymorphismus in einem Szenario</p></div>
+<div class="exe-text"><p>Die objektorientierte Programmierung wäre unvollständig ohne das Konzept des Polymorphismus – ein Prinzip, das den Code flexibler und erweiterbarer macht. In diesem Kapitel erfährst du, was Polymorphismus bedeutet, wie er im Code umgesetzt wird und wie du ihn – ganz im Sinne der Wiederverwendbarkeit und Modularität – sinnvoll in deinen Programmen einsetzen kannst. Dabei knüpfen wir an die bereits behandelten Themen wie Vererbung und Methodenüberladung an und zeigen anhand bekannter Beispiele, etwa aus der Tierwelt und grafischen Anwendungen in Processing, wie dasselbe Interface verschiedene Verhaltensweisen annehmen kann.</p>
+<h2>1.Einführung in den Polymorphismus</h2>
+<p>Stell dir vor, du befindest dich in unterschiedlichen Alltagssituationen: Im Klassenzimmer verhältst du dich als Student, im Supermarkt als Kunde und zu Hause als Familienmitglied. Obwohl es sich um dieselbe Person handelt, ändern sich deine Verhaltensweisen in Abhängigkeit der jeweiligen Situation – so spricht man von „Polymorphismus“, dem Phänomen, dass eine Instanz verschiedene Formen annehmen kann.<br />In der Programmierung bedeutet das, dass eine Variable einer Oberklasse zur Laufzeit auf Objekte unterschiedlicher Subklassen zeigen kann. Dies ermöglicht es, mit einer einheitlichen Schnittstelle auf verschiedene Implementierungen zuzugreifen.</p>
+<h2>2. Grundlagen des Polymorphismus</h2>
+<p>Polymorphismus lässt sich in zwei Hauptbereiche unterteilen:</p>
+<ul>
+<li><strong>Statischer</strong> <strong>Polymorphismus</strong> (Methodenüberladung):<br />Hierbei handelt es sich um die Möglichkeit, innerhalb einer Klasse mehrere Methoden mit demselben Namen, aber unterschiedlichen Parametern zu definieren. Die Entscheidung, welche Methode zur Compile-Zeit aufgerufen wird, basiert auf der Signatur der Methode.</li>
+<li><strong>Dynamischer Polymorphismus</strong> (Methodenüberschreibung und dynamische Bindung):<br />Dynamischer Polymorphismus zeigt sich, wenn eine Methode in einer Subklasse überschrieben wird. Dabei entscheidet erst zur Laufzeit basierend auf dem konkreten Objekttyp, welche Implementierung ausgeführt wird. Dies wird auch als dynamische Bindung bezeichnet.<br />Ein klassisches Beispiel besteht in der bereits erstellten Tierhierarchie: Auch wenn eine Variable vom Typ Tier deklariert ist, bestimmt das zur Laufzeit zugewiesene Objekt (z. B. Hund oder Katze) das ausgeführte Verhalten der Methode geraeuschMachen(). Dadurch kann derselbe Methodenaufruf unterschiedliche Ergebnisse liefern.</li>
+</ul>
+<h2>3. Polymorphismus im Code – Ein praktisches Beispiel</h2>
+<p><br />Betrachten wir zunächst ein Beispiel aus der Tierwelt, das wir in Kapitel 4 eröffnet haben. Wir definieren eine Superklasse Tier und zwei Subklassen Hund und Katze, die jeweils die Methode geraeuschMachen() spezifisch implementieren:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Superklasse
+public class Tier {
+   protected String name;
+
+   public Tier(String name) {
+      this.name = name;
+   }
+
+   // Eine generische Methode, die in den Subklassen überschrieben wird
+   public void geraeuschMachen() {
+      System.out.println("Das Tier macht ein Geräusch.");
+   }
+}
+
+// Subklasse Hund
+public class Hund extends Tier {<br />
+   public Hund(String name) {
+      super(name);
+   }
+
+   @Override
+   public void geraeuschMachen() {
+      System.out.println(name + " bellt: Wuff!");
+   }
+}
+
+// Subklasse Katze
+public class Katze extends Tier {<br />
+   public Katze(String name) {
+      super(name);
+   }
+
+   @Override
+   public void geraeuschMachen() {
+      System.out.println(name + " miaut: Miau!");
+   }
+}
+
+// Anwendung in der Main-Methode
+public class Main {
+   public static void main(String[] args) {
+   // Polymorphe Deklaration: Die Referenz vom Typ Tier kann unterschiedliche Objekttypen aufnehmen.
+   Tier tier1 = new Hund("Bello");
+   Tier tier2 = new Katze("Minka");
+
+   // Dynamische Bindung – zur Laufzeit wird die geeignete Methode aufgerufen
+   tier1.geraeuschMachen(); // Ausgabe: "Bello bellt: Wuff!"
+   tier2.geraeuschMachen(); // Ausgabe: "Minka miaut: Miau!"
+   }
+}</code></pre>
+</div>
+</div>
+<p>In diesem Beispiel zeigt sich deutlich, dass der Typ der Referenz (Tier) nicht ausschlaggebend für das Verhalten ist. Die Methode geraeuschMachen() wird zur Laufzeit „dynamisch gebunden“ und führt die Überschreibung der konkreten Subklassen aus.</p>
+<h2>4. Vergleich zu Vererbung und Methodenüberladung</h2>
+<p>Polymorphismus basiert wesentlich auf den in Kapitel 4 behandelten Prinzipien der Vererbung. Während Vererbung es erlaubt, allgemeine Eigenschaften und Methoden an Subklassen zu übertragen, geht es beim Polymorphismus darum, dass diese geerbten Methoden in den Subklassen auf unterschiedliche Weise umgesetzt werden können.</p>
+<ul>
+<li><strong>Vererbung</strong> liefert den Bauplan und die Übernahme von Eigenschaften.</li>
+<li><strong>Methodenüberladung</strong> (statischer Polymorphismus) ermöglicht es, dass innerhalb derselben Klasse mehrere Methoden mit demselben Namen, aber unterschiedlichen Parametern existieren.</li>
+<li><strong>Methodenüberschreibung</strong> (dynamischer Polymorphismus) sorgt dafür, dass in einer Vererbungshierarchie eine Methode in der Subklasse neu definiert werden kann.<br />Die Kombination dieser Konzepte ermöglicht es, Programme zu schreiben, bei denen durch einheitliche Schnittstellen unterschiedliche Implementierungen zur Laufzeit gewählt werden – ein entscheidender Vorteil bei der Erweiterung und Pflege von Software.</li>
+</ul>
+<h2>5. Polymorphismus in grafischen Anwendungen mit Processing</h2>
+<p>Für Studierende des Medieningenieurwesens ist es besonders interessant zu sehen, wie Polymorphismus in grafischen Anwendungen eingesetzt wird. Angenommen, du entwickelst eine Anwendung in Processing, in der verschiedene Formen dargestellt werden sollen. Du könntest dazu eine abstrakte Superklasse Shape definieren und für jede konkrete Form (Circle, Rectangle, Triangle usw.) die Methode draw() überschreiben:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Abstrakte Oberklasse für grafische Formen
+public abstract class Shape {
+   protected float x, y;
+
+   public Shape(float x, float y) {
+      this.x = x;
+      this.y = y;
+   }
+
+   // Abstrakte Methode, die von den Subklassen implementiert wird
+   public abstract void draw();
+}
+
+// Kreis als Subklasse von Shape
+public class Circle extends Shape {
+   private float radius;
+
+   public Circle(float x, float y, float radius) {
+      super(x, y);
+      this.radius = radius;
+   }
+
+   @Override
+   public void draw() {
+      // In Processing könnte man hier ellipse(x, y, radius*2, radius*2) aufrufen
+      System.out.println("Zeichne einen Kreis an Position (" + x + ", " + y + ") mit Radius " + radius);
+   }
+}
+
+// Rechteck als Subklasse von Shape
+public class Rectangle extends Shape {
+   private float width, height;
+
+   public Rectangle(float x, float y, float width, float height) {
+      super(x, y);
+      this.width = width;
+      this.height = height;
+   }
+
+   @Override
+   public void draw() {
+   // In Processing könnte man hier rect(x, y, width, height) aufrufen
+      System.out.println("Zeichne ein Rechteck an Position (" + x + ", " + y + ") mit Breite " + width + " und Höhe " + height);
+   }
+}
+
+// Anwendung in der Main-Methode
+public class Main {
+   public static void main(String[] args) {
+      Shape[] shapes = new Shape[2];
+      shapes[0] = new Circle(50, 50, 20);
+      shapes[1] = new Rectangle(100, 100, 40, 30);
+
+      // Polymorpher Aufruf der draw()-Methode: Je nach konkrete Instanz wird die richtige Methode ausgeführt.
+      for (Shape shape : shapes) {
+         shape.draw();
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p>Dieses Beispiel demonstriert, wie polymorphe Methodenaufrufe in grafischen Anwendungen Abstraktion und Wiederverwendbarkeit fördern – ein klarer Vorteil, wenn du interaktive Medienprojekte oder Animationen entwickelst.</p>
+<h2>6. Vorteile des Polymorphismus</h2>
+<p>Die Anwendung von Polymorphismus bietet in der Praxis mehrere Vorteile:</p>
+<ul>
+<li><strong>Flexibilität</strong>: Durch die Verwendung gemeinsamer Schnittstellen kannst du Funktionen erstellen, die mit verschiedensten Objekttypen arbeiten.</li>
+<li><strong>Erweiterbarkeit</strong>: Neue Klassen können problemlos in bestehende Hierarchien integriert werden, ohne dass bestehender Code angepasst werden muss.</li>
+<li><strong>Wartungsfreundlichkeit</strong>: Änderungen an einer Methode in der Oberklasse wirken sich auf alle Subklassen aus, sofern diese nicht ausdrücklich überschrieben wurden.</li>
+<li><strong>Redundanzreduktion</strong>: Gemeinsame Logik wird zentral gehalten, während spezifische Unterschiede in den Subklassen behandelt werden.</li>
+</ul>
+<p></p>
+<h1>Übungen</h1>
+<h2><br />Aufgaben</h2>
+<ul>
+<li>Tierhierarchie erweitern:<br />Erweitere das in Kapitel 4 eingeführte Beispiel. Erstelle zusätzlich zur Klasse Hund und Katze eine weitere Subklasse Vogel, die die Methode geraeuschMachen() überschreibt (z. B. mit der Ausgabe „zwitschert: Zirp,zirp“).<br />Erstelle in einer Main-Methode ein Array vom Typ Tier, das Objekte aller drei Klassen enthält, und rufe für jedes Objekt die Methode geraeuschMachen() auf.</li>
+<li>Grafische Anwendung in Processing:<br />Entwickle eine einfache Klassenhierarchie für grafische Formen. Ergänze das Beispiel von Circle und Rectangle um eine weitere Form (z. B. Triangle) und implementiere eine polymorphe draw()-Methode für alle Formen.<br />Schreibe eine Main-Methode, in der ein Array verschiedener Formen durchlaufen und jede Form gezeichnet wird.</li>
+</ul>
+<h2>Fragen</h2>
+<ol>
+<li>Was versteht man unter dynamischer Bindung im Kontext des Polymorphismus?</li>
+<li>Wie unterscheidet sich das Konzept des Polymorphismus vom statischen Polymorphismus (Methodenüberladung)?</li>
+<li>Welche Vorteile bietet der Einsatz von Polymorphismus in der Softwareentwicklung?</li>
+<li>Warum ist es sinnvoll, in grafischen Anwendungen (wie in Processing) polymorphe Methoden einzusetzen?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Polymorphismus ermöglicht es, dass eine Referenz einer Oberklasse Objekte verschiedener Subklassen zur Laufzeit aufnehmen kann.</li>
+<li>Durch dynamische Bindung wird zur Laufzeit entschieden, welche Methode ausgeführt wird – dies fördert Flexibilität und Wiederverwendbarkeit.</li>
+<li>Methodenüberladung (statischer Polymorphismus) und Methodenüberschreibung (dynamischer Polymorphismus) sind zwei Formen des Polymorphismus.</li>
+<li>Grafische Anwendungen profitieren erheblich von polymorphen Strukturen, da sie eine einheitliche Schnittstelle für unterschiedliche Objekttypen bereitstellen.</li>
+<li>Der Vergleich zu den bereits behandelten Konzepten (Vererbung und Methodenüberladung) zeigt, wie Polymorphismus die Modularität und Erweiterbarkeit verbessert.</li>
+</ul></div>
 </div>
 </div>
 </article>
@@ -58,7 +230,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="vererbung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="abstrakte_klassen_und_interfaces.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="abstrakte_klassen_und_interfaces.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="design_patterns.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

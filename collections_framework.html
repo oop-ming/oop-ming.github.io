@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,21 +26,23 @@
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
    <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="no-ch">Grundlagen der Java-Programmierung</a></li>
+   <li class="current-page-parent"><a href="grundlagen_der_javaprogrammierung.html" class="current-page-parent daddy">Grundlagen der Java-Programmierung</a>
+   <ul>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li id="active"><a href="collections_framework.html" class="active no-ch">Collections Framework</a></li>
+   </ul>
+   </li>
    <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-   <li id="active"><a href="collections_framework.html" class="active no-ch">Collections Framework</a></li>
-   <li><a href="git.html" class="no-ch">Git</a></li>
-   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="ausnahmebehandlung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="git.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="ausnahmebehandlung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="klassen_und_objekte.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -47,7 +51,236 @@
 <article class="iDevice_wrapper textIdevice" id="id8">
 <div class="iDevice emphasis0" >
 <div id="ta8_135_2" class="block iDevice_content">
-<div class="exe-text"><p>Listen, Sets und Maps<br />Iteratoren<br />Lambda<br />Generics<br />Übung: Verwendung von Collections in einem praktischen Beispiel<br />Einführung in Streams<br />Verwendung von Lambda-Ausdrücken mit Streams<br />Übung: Datenverarbeitung mit Streams und Lambda-Ausdrücken</p></div>
+<div class="exe-text"><h1>Einführung – Warum Collections?</h1>
+<p>Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.</p>
+<p>In diesem Kapitel lernst du die wichtigsten Collection-Typen kennen: ArrayList, LinkedList, HashMap und Stack. Wir betrachten ihre Eigenschaften, Einsatzmöglichkeiten und wie sie mit Iteratoren, erweiterten For-Schleifen und Streams verarbeitet werden können. Dabei knüpfen wir an den roten Faden der bisherigen Kapitel an, indem wir praktische Beispiele aus der Medien- und Softwareentwicklung verwenden.</p>
+<h2>1. Einführung in das Collections Framework</h2>
+<p>Das Collections Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:</p>
+<ul>
+<li>Dynamische Arrays (z. B. mit ArrayList)</li>
+<li>Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)</li>
+<li>Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)</li>
+</ul>
+<p>Vorteile des Collections Frameworks</p>
+<ul>
+<li><strong>Flexibilität:</strong> Dynamische Größenanpassung der Datenstrukturen.</li>
+<li><strong>Effizienz:</strong> Optimierte Algorithmen für Suchen, Einfügen und Löschen.</li>
+<li><strong>Einheitlichkeit:</strong> Gemeinsame Schnittstellen für verschiedene Datenstrukturen.</li>
+</ul>
+<h2>2. Wichtige Collection-Typen</h2>
+<h3>2.1 ArrayList</h3>
+<p>Die ArrayList ist eine dynamische Liste, die ähnlich wie ein Array funktioniert, aber ihre Größe automatisch anpasst.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Elemente werden in einer bestimmten Reihenfolge gespeichert.</li>
+<li>Doppelte Werte sind erlaubt.</li>
+<li>Zugriff auf Elemente erfolgt über Indizes.</li>
+</ul>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.ArrayList;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&lt;String&gt; playlist = new ArrayList&lt;&gt;();
+      playlist.add("Song A");
+      playlist.add("Song B");
+      playlist.add("Song C");
+
+      // Zugriff auf Elemente
+      System.out.println("Erster Song: " + playlist.get(0));
+
+      // Iteration
+      for (String song : playlist) {
+         System.out.println("Song: " + song);
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<h3>2.2 LinkedList</h3>
+<p>Die LinkedList ist eine Liste, bei der die Elemente als Knoten miteinander verbunden sind.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Gut geeignet für häufiges Einfügen/Löschen von Elementen.</li>
+<li>Schlechtere Zugriffszeit im Vergleich zur ArrayList.</li>
+</ul>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.LinkedList;
+
+public class Main {
+   public static void main(String[] args) {
+      LinkedList&lt;String&gt; queue = new LinkedList&lt;&gt;();
+      queue.add("Task 1");
+      queue.add("Task 2");
+      queue.addFirst("Urgent Task");
+   
+      // Iteration mit Iterator
+      for (String task : queue) {
+         System.out.println("Aufgabe: " + task);
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<h3>2.3 HashMap</h3>
+<p>Die HashMap ist eine Map-Struktur, die Schlüssel-Wert-Paare speichert.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Schneller Zugriff auf Werte über Schlüssel.</li>
+<li>Keine garantierte Reihenfolge der Elemente.</li>
+</ul>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.HashMap;
+
+public class Main {
+   public static void main(String[] args) {
+      HashMap&lt;Integer, String&gt; userMap = new HashMap&lt;&gt;();
+      userMap.put(1, "Alice");
+      userMap.put(2, "Bob");
+
+      // Zugriff auf Werte
+      System.out.println("Benutzer mit ID 1: " + userMap.get(1));
+
+      // Iteration über Schlüssel-Wert-Paare
+      for (var entry : userMap.entrySet()) {
+         System.out.println("ID: " + entry.getKey() + ", Name: " + entry.getValue());
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<h3>2.4 Stack</h3>
+<p>Der Stack arbeitet nach dem Last-In-First-Out-Prinzip (LIFO). Dies ist besonders nützlich bei Transformationen oder Rückverfolgungen.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Elemente werden gestapelt (push) und zuletzt hinzugefügte zuerst entfernt (pop).</li>
+</ul>
+<p>Beispiel aus Processing:</p>
+<p>In Processing hast du mit pushMatrix() und popMatrix() bereits einen Stack verwendet, um Transformationen des Koordinatensystems zu speichern:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>Stack&lt;String&gt; stack = new Stack&lt;&gt;();
+stack.push("Transformation 1");
+stack.push("Transformation 2");
+
+// Letzte Transformation entfernen
+System.out.println(stack.pop()); // Ausgabe: Transformation 2</code></pre>
+</div>
+</div>
+<h2>3. Iteration über Collections</h2>
+<p>Java bietet verschiedene Möglichkeiten zur Iteration über Collections:</p>
+<h3>3.1 Erweiterte For-Schleife</h3>
+<p>Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>ArrayList&lt;String&gt; songs = new ArrayList&lt;&gt;();
+songs.add("Song A");
+songs.add("Song B");
+
+for (String song : songs) {
+   System.out.println(song);
+}</code></pre>
+</div>
+</div>
+<h3>3.2 Iterator</h3>
+<p>Ein Iterator bietet mehr Kontrolle über die Iteration:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&lt;String&gt; songs = new ArrayList&lt;&gt;();
+      songs.add("Song A");
+      songs.add("Song B");
+
+      Iterator&lt;String&gt; iterator = songs.iterator();
+      while (iterator.hasNext()) {
+         System.out.println(iterator.next());
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<h2>4. Einführung in Streams</h2>
+<p>Streams bieten eine moderne Möglichkeit zur Verarbeitung von Daten in Collections mithilfe von Lambda-Ausdrücken.</p>
+<h3>4.1 Filter</h3>
+<p>Mit filter() kannst du Elemente basierend auf einer Bedingung auswählen:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.ArrayList;
+import java.util.stream.Collectors;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;&gt;();
+      numbers.add(10);
+      numbers.add(20);
+      numbers.add(30);
+
+      // Nur Zahlen größer als 15 filtern
+      var filteredNumbers = numbers.stream()
+      .filter(n -&gt; n &gt; 15)
+      .collect(Collectors.toList());
+
+      System.out.println(filteredNumbers); // Ausgabe: [20, 30]
+   }
+}</code></pre>
+</div>
+</div>
+<h3>4.2 Map</h3>
+<p>Mit map() kannst du Elemente transformieren:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>ArrayList&lt;String&gt; names = new ArrayList&lt;&gt;();
+names.add("Alice");
+names.add("Bob");
+
+var upperCaseNames = names.stream()
+.map(String::toUpperCase)
+.collect(Collectors.toList());
+
+System.out.println(upperCaseNames); // Ausgabe: [ALICE, BOB]</code></pre>
+</div>
+</div>
+<h1>Übungen</h1>
+<h2>Aufgaben</h2>
+<ul>
+<li>Aufgabe 1:<br />Erstelle ein Programm mit einer ArrayList, in der Songs gespeichert werden können:
+<ul>
+<li>Füge mindestens fünf Songs hinzu.</li>
+<li>Entferne einen Song aus der Liste.</li>
+<li>Iteriere über die Liste und gib alle Songs aus.</li>
+</ul>
+</li>
+<li>Aufgabe 2:<br />Simuliere einen Stack für Transformationen in einem Grafikprogramm:
+<ul>
+<li>Implementiere einen Stack mit Transformationen wie „Translation“ oder „Rotation“.</li>
+<li>Füge Transformationen hinzu und entferne sie schrittweise.</li>
+</ul>
+</li>
+</ul>
+<h2>Fragen</h2>
+<ol>
+<li>Was sind die Hauptunterschiede zwischen einer ArrayList und einer LinkedList?</li>
+<li>Wie funktioniert das LIFO-Prinzip bei einem Stack?</li>
+<li>Welche Vorteile bietet die Verwendung von Streams gegenüber traditionellen Schleifen?</li>
+<li>Wann würdest du einen Iterator anstelle einer erweiterten For-Schleife verwenden?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Das Java Collections Framework bietet leistungsstarke Klassen wie ArrayList, LinkedList, HashMap und Stack.</li>
+<li>Mit erweiterten For-Schleifen (for-each) und Iteratoren kannst du effizient durch Collections iterieren.</li>
+<li>Streams ermöglichen moderne Datenverarbeitung mit Methoden wie filter() und map().</li>
+<li>Die Wahl der richtigen Collection hängt von den Anforderungen ab – z. B. schneller Zugriff (HashMap) oder dynamische Listen (ArrayList).<br /><br /></li>
+</ul></div>
 </div>
 </div>
 </article>
@@ -58,7 +291,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="ausnahmebehandlung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="git.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="ausnahmebehandlung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="klassen_und_objekte.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
