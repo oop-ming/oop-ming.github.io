@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Collections und Lambda Ausdrücke | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li class="current-page-parent"><a href="java.html" class="current-page-parent daddy">Java</a>
+   <ul>
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li id="active"><a href="collections_und_lambda_ausdrcke.html" class="active no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ausnahmebehandlung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="klassen_und_objekte.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Collections und Lambda Ausdrücke</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id8">
+<div class="iDevice emphasis0" >
+<div id="ta8_135_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung – Warum Collections?</h1>
+<p>Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.</p>
+<p>In diesem Kapitel lernst du:</p>
+<ul>
+<li>Die wichtigsten Collection-Typen: ArrayList, LinkedList, HashMap und Stack. Wir betrachten ihre Eigenschaften,</li>
+<li>Einsatzmöglichkeiten von Collections </li>
+<li>Verarbeitung von Collections mithilfe von Iteratoren, erweiterten For-Schleifen und Streams.</li>
+</ul>
+<h1>Das Collections Framework</h1>
+<p>Das Collections Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:</p>
+<ul>
+<li>Dynamische Arrays (z. B. mit ArrayList)</li>
+<li>Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)</li>
+<li>Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)</li>
+</ul>
+<p>Vorteile des Collections Frameworks</p>
+<ul>
+<li><strong>Flexibilität:</strong> Dynamische Größenanpassung der Datenstrukturen.</li>
+<li><strong>Effizienz:</strong> Optimierte Algorithmen für Suchen, Einfügen und Löschen.</li>
+<li><strong>Einheitlichkeit:</strong> Gemeinsame Schnittstellen für verschiedene Datenstrukturen.</li>
+</ul>
+<h1>Wichtige Collection-Typen</h1>
+<div class="exe-fx exe-tabs">
+<h2>ArrayList</h2>
+<p>Die <span style="font-family: andale mono, monospace;">ArrayList</span> ist eine dynamische Liste, die ähnlich wie ein Array funktioniert, aber ihre Größe automatisch anpasst.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Elemente werden in einer bestimmten Reihenfolge gespeichert.</li>
+<li>Doppelte Werte sind erlaubt.</li>
+<li>Zugriff auf Elemente erfolgt über Indizes.</li>
+</ul>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.ArrayList;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&lt;String&gt; playlist = new ArrayList&lt;&gt;();
+      playlist.add("Song A");
+      playlist.add("Song B");
+      playlist.add("Song C");
+
+      System.out.println("Erster Song: " + playlist.get(0));
+
+      for (String song : playlist) {
+         System.out.println("Song: " + song);
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h2>LinkedList</h2>
+<p>Die <span style="font-family: andale mono, monospace;">LinkedList</span> ist eine Liste, bei der die Elemente als Knoten miteinander verbunden sind.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Gut geeignet für häufiges Einfügen/Löschen von Elementen.</li>
+<li>Schlechtere Zugriffszeit im Vergleich zur ArrayList.</li>
+</ul>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.LinkedList;
+
+public class Main {
+   public static void main(String[] args) {
+      LinkedList&lt;String&gt; queue = new LinkedList&lt;&gt;();
+      queue.add("Task 1");
+      queue.add("Task 2");
+      queue.addFirst("Urgent Task");
+   
+      for (String task : queue) {
+         System.out.println("Aufgabe: " + task);
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h2>HashMap</h2>
+<p>Die HashMap ist eine Map-Struktur, die Schlüssel-Wert-Paare speichert.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Schneller Zugriff auf Werte über Schlüssel.</li>
+<li>Keine garantierte Reihenfolge der Elemente.</li>
+</ul>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.HashMap;
+
+public class Main {
+   public static void main(String[] args) {
+      HashMap&lt;String, String&gt; modulMap = new HashMap&lt;&gt;();
+      modulMap.put("OOP", "Objektorientierte Programmierung");
+      modulMap.put("PRG", "Programmieren");
+
+      // Zugriff auf Werte
+      System.out.println("Modul mit ID OOP: " + modulMap.get("OOP")); // Ausgabe: Modul mit ID OOP: Objektorientierte Programmierung
+
+      // Iteration über Schlüssel-Wert-Paare
+      for (var entry : modulMap.entrySet()) {
+         System.out.println("ID: " + entry.getKey() + ", Name: " + entry.getValue());
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h2>Stack</h2>
+<p>Der Stack arbeitet nach dem Last-In-First-Out-Prinzip (LIFO). Dies ist besonders nützlich bei Transformationen oder Rückverfolgungen.</p>
+<p>Eigenschaften:</p>
+<ul>
+<li>Elemente werden gestapelt (push) und zuletzt hinzugefügte zuerst entfernt (pop).</li>
+</ul>
+<p>In Processing hast du mit pushMatrix() und popMatrix() bereits einen Stack verwendet, um Transformationen des Koordinatensystems zu speichern:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>Stack&lt;String&gt; stack = new Stack&lt;&gt;();
+stack.push("Transformation 1");
+stack.push("Transformation 2");
+
+// Letzte Transformation entfernen
+System.out.println(stack.pop()); // Ausgabe: Transformation 2</code></pre>
+</div>
+</div>
+<p></p>
+</div>
+<p></p>
+<h2>Iteration über Collections</h2>
+<p>Java bietet verschiedene Möglichkeiten zur Iteration über Collections:</p>
+<div class="exe-fx exe-tabs">
+<h2>Erweiterte for-Schleife</h2>
+<p>Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten for-Schleife ist deutlich einfacher, als der einer normalen for-Schleife:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>for ( Datentyp variable : Liste) {
+
+   // Schleifenkörper
+
+}</code></pre>
+</div>
+</div>
+<p><strong>Beispiel:</strong></p>
+<p>In diesem Beispiel werden alle Songtitel innerhalb der ArrayList vom Typ String ausgegeben.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>ArrayList&lt;String&gt; songs = new ArrayList&lt;&gt;();
+songs.add("Song A");
+songs.add("Song B");
+
+for (String song : songs) {
+   System.out.println(song);
+}</code></pre>
+</div>
+</div>
+<h3></h3>
+<h2>.forEach - Methode inkl. Lambda Ausdruck</h2>
+<p>Collections wie ArrayList, LinkedList und HashMap haben eine Klassen-Methode .forEach(). Innerhalb der Klammern der .forEach()-Methode wird angegeben, was für jedes Element der Liste durgeführt werden soll.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>LinkedList&lt;String&gt; queue = new LinkedList&lt;&gt;();
+queue.add("Task 1");
+queue.add("Task 2");
+queue.addFirst("Urgent Task");
+   
+queue.forEach(task -&gt; System.out.println(task));</code></pre>
+</div>
+</div>
+<p>Das was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegen nimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Ein Parameter
+Parameter -&gt; Anweisung
+
+// Mehrere Parameter
+(Parameter1, Parameter2) -&gt; Anweisung
+
+// Mehrere Parameter und komplexe Anweisung
+(Parameter1, Parameter2) -&gt; { Codeblock }</code></pre>
+</div>
+</div>
+<p></p>
+<h2>Iterator</h2>
+<p>Ein Iterator bietet mehr Kontrolle über die Iteration:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&lt;String&gt; songs = new ArrayList&lt;&gt;();
+      songs.add("Song A");
+      songs.add("Song B");
+
+      Iterator&lt;String&gt; iterator = songs.iterator();
+      while (iterator.hasNext()) {
+         System.out.println(iterator.next());
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p></p>
+</div>
+<p></p>
+<h1>Übungen</h1>
+<h2>Aufgaben</h2>
+<ul>
+<li>Aufgabe 1:<br />Erstelle ein Programm mit einer HashMap, die eine Einkaufsliste sein soll:
+<ul>
+<li>Der Schlüssel ist das Produkt, das gekauft werden soll und der Wert die Menge (z.B. 5 Tomaten)</li>
+<li>Füge mindestens fünf Produkte zur Einkaufsliste hinzu.</li>
+<li>Ändere die Menge von einem Produkt.</li>
+<li>Iteriere über die Liste und gib alle Produkte aus.</li>
+</ul>
+</li>
+<li>Aufgabe 2:<br />Simuliere einen Stack für Transformationen in einem Grafikprogramm:
+<ul>
+<li>Implementiere einen Stack mit Transformationen wie „Translation“ oder „Rotation“.</li>
+<li>Füge Transformationen hinzu und entferne sie schrittweise.</li>
+</ul>
+</li>
+</ul>
+<h2>Fragen</h2>
+<ol>
+<li>Was sind die Hauptunterschiede zwischen einer ArrayList und einer LinkedList?</li>
+<li>Wie funktioniert das LIFO-Prinzip bei einem Stack?</li>
+<li>Was ist ein Lambda Ausdruck und wo wird er eingesetzt?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Das Java Collections Framework bietet leistungsstarke Klassen wie ArrayList, LinkedList, HashMap und Stack.</li>
+<li>Mit erweiterten For-Schleifen (for-each) und Iteratoren kannst du effizient durch Collections iterieren.</li>
+<li>Die Wahl der richtigen Collection hängt von den Anforderungen ab – z. B. schneller Zugriff (HashMap) oder dynamische Listen (ArrayList).<br /><br /></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ausnahmebehandlung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="klassen_und_objekte.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

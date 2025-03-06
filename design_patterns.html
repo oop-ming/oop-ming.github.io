@@ -25,24 +25,32 @@
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
-   <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li><a href="grundlagen_der_javaprogrammierung.html" class="daddy">Grundlagen der Java-Programmierung</a>
+   <li><a href="java.html" class="daddy">Java</a>
    <ul class="other-section">
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
       <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
-      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
    </ul>
    </li>
-   <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
    <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li id="active"><a href="design_patterns.html" class="active no-ch">Design Patterns</a></li>
-   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="polymorphismus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="programmierprinzipien.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="polymorphismus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="versionskontrolle_mit_git.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -51,14 +59,87 @@
 <article class="iDevice_wrapper textIdevice" id="id6">
 <div class="iDevice emphasis0" >
 <div id="ta6_133_2" class="block iDevice_content">
-<div class="exe-text"><p>In diesem Kapitel tauchen wir in die Welt der Design Patterns ein – bewährte Lösungsschablonen, die Entwicklern helfen, wiederkehrende Probleme in der objektorientierten Programmierung elegant und effizient zu lösen. Design Patterns bieten nicht nur einen einheitlichen Sprachgebrauch im Team, sondern fördern auch die Wiederverwendbarkeit, Wartbarkeit und Skalierbarkeit des Codes. Anknüpfend an den roten Faden früherer Kapitel – in denen wir beispielsweise Tierhierarchien, grafische Formen und Interaktionen in Processing behandelt haben – werden wir hier ausgewählte Patterns vorstellen, die für Anfänger gut verständlich sind und in interdisziplinären Anwendungsfällen, wie sie im Studiengang Medieningenieur an der Fachhochschule vorkommen, häufig eingesetzt werden.</p>
-<h2>Einführung und Bedeutung von Design Patterns</h2>
-<p>Design Patterns lassen sich am besten mit dem Konzept von Kochrezepten vergleichen. Wie ein Rezept dir vorgibt, welche Zutaten (Klassen, Objekte) in welcher Reihenfolge kombiniert werden müssen, geben Design Patterns erfahrenen Entwicklern einen Leitfaden, um typische Entwurfsprobleme zu lösen. Dabei geht es nicht darum, fertigen Code zu liefern, sondern um flexible Vorlagen, die der konkreten Anwendung angepasst werden können. Besonders in Projekten aus den Bereichen Medien, Elektrotechnik und Informatik helfen Patterns, komplexe Systeme modular zu strukturieren und kommunikative Schnittstellen (Interfaces) sowie gemeinsame Verhaltensweisen einheitlich zu definieren.</p>
-<h2>2. Creational Patterns</h2>
-<p>Der erste Abschnitt widmet sich sogenannten Creational Patterns, also Mustern, die sich mit der objektbezogenen Erzeugung von Instanzen beschäftigen. Hier sollen zwei Muster im Fokus stehen:</p>
-<h3>2.1 Singleton Pattern</h3>
-<p>Das Singleton Pattern stellt sicher, dass eine Klasse nur eine einzige Instanz besitzt und bietet einen globalen Zugriffspunkt darauf. Ein typisches Beispiel ist ein Logger, der in einer Applikation verwendet wird, um Statusmeldungen zu protokollieren – es soll nicht mehrere Logger geben, die in unterschiedlichen Bereichen unabhängig voneinander agieren.</p>
-<p><strong>Beispiel:</strong></p>
+<div class="exe-text"><h1>Einführung - Lösungen für wiederkehrende Probleme</h1>
+<p>Design Patterns sind bewährte Lösungsansätze für wiederkehrende Probleme in der objektorientierten Programmierung. Das schöne an Design Patterns ist somit, dass andere Menschen bereits vor dir Lösungen für Probleme gefunden haben und du diese einfach nutzen kannst. Auf diese Weise kannst du viele Probleme in der objektorientierten Programmierung vermeiden. Du kannst dir Design Patterns vorstellen, wie Verkehrsregeln. Verkehrsregeln lösen wiederkehrende Probleme im Straßenverkehr. Amplen regeln wer wann fahren darf, Zebrastreifen regeln wo Fußgänger die Straße überqueren dürfen, etc. Diese Muster haben sich bewährt und werden an unzähligen Stellen eingesetzt und regeln den Verkehr. Dasselbe machen Deisgn Patterns in der Softwareentwicklung.</p>
+<p>In diesem Kapitel wirst du lernen:</p>
+<ul>
+<li>Die drei Hauptkategorien von Design Patterns</li>
+<li>Wichtige und anfängerfreundliche Design Patterns </li>
+</ul>
+<h1>Arten von Design Patterns</h1>
+<p>Design Patterns in der Softwareentwicklung beschreiben das Zusammenwirken von Klassen, Objekten und Methoden, mit dem Ziel bestimmte Entwurfsprobleme zu lösen. Dabei geht es nicht darum fertigen Code zur Verfügung zu stellen, sondern eine Vorlage zu bilden, die an das eigene Programm angepasst werden kann. Der Einsatz von Design Patterns bietet mehrere Vorteile:</p>
+<ol>
+<li><strong>Wiederverwendbarkeit:</strong> Bewährte Lösungen können in verschiedenen Projekten eingesetzt werden</li>
+<li><strong>Flexibilität:</strong> Systeme werden leichter erweiterbar und änderbar</li>
+<li><strong>Kommunikation:</strong> Design Patterns schaffen eine gemeinsame Sprache für Entwickler</li>
+</ol>
+<p>Es ist wichtig zu beachten, dass Design Patterns nicht blind angewendet werden sollten. Sie sollten als Richtlinien verstanden werden, die an die spezifischen Anforderungen des jeweiligen Projekts angepasst werden müssen.</p>
+<p>Design Patterns lassen sich in 3 Hauptkategorien einteilen:</p>
+<ul>
+<li><strong>Creational Patterns (Erzeugungsmuster)</strong> beschäftigen sich mit dem Erzeugen von Objekten
+<ul>
+<li>Beispiele: Singleton, Factory Method</li>
+</ul>
+</li>
+<li><strong>Structural Patterns (Sturkturmuster)</strong> beschreiben die Komposition von Klassen und Objekten
+<ul>
+<li>Beispiele: Decorator, Composite</li>
+</ul>
+</li>
+<li><strong>Behavioral Patterns (Verhaltensmuster)</strong> modellieren die Interaktion zwischen Objekten und deren Verhalten
+<ul>
+<li>Beispiele: Observer, Strategy</li>
+</ul>
+</li>
+</ul>
+<h1>Grundlegende Design Patterns</h1>
+<p>In diesem Kapitel werden vier grundlegende und anfängerfreundliche Design Patterns vorgestellt: Das Singleton Pattern, das Factory Method Pattern, das Observer Pattern und das Strategy Pattern.</p>
+<h2>Singleton Pattern</h2>
+<p>Das Singleton Pattern löst das wiederkehrende Problem, sicherzustellen, dass von einer Klasse nur genau eine Instanz existiert und ein globaler Zugriffspunkt auf diese Instanz bereitgestellt wird.</p>
+<p>Typische Einsatzmöglichkeiten des Singleton Patterns sind:</p>
+<ul>
+<li><strong>Datenbankverbindungen:</strong> Eine <em>einzige</em> Verbindung zur Datenbank wird verwendet, um Ressourcen zu sparen und die Leistung zu verbessern.</li>
+<li><strong>Logging:</strong> Ein <em>zentrales</em> Logger-Objekt verwaltet Logging-Informationen für die <em>gesamte</em> Anwendung.</li>
+<li><strong>Konfigurationsverwaltung:</strong> Eine <em>zentrale</em> Klasse verwaltet die Anwendungskonfiguration und bietet Zugriff auf Konfigurationsparameter.</li>
+<li><strong>Druckerwarteschlange:</strong> Alle Druckaufträge werden in einen <em>einzigen</em> Puffer geschrieben.</li>
+<li><strong>Dateisystem:</strong> Ein Singleton kann das <em>einzige</em> Dateisystem in einer Anwendung repräsentieren.</li>
+<li><strong>Zentrale Ressourcenverwaltung:</strong> Wenn eine Ressource <em>nur einmal</em> in der Anwendung existieren soll, wie z.B. ein Fenster in einer grafischen Anwendung</li>
+</ul>
+<p>Das Singleton Pattern wird also hauptsächlich eingesetzt, wenn eine <em>zentrale</em> Kontrolle über eine Ressource oder einen Dienst erforderlich ist und sichergestellt werden muss, dass nur eine Instanz davon existiert.</p>
+<h3>Aufbau</h3>
+<p>Der Aufbau eines Singleton Patterns besteht aus folgenden Elementen:</p>
+<ul>
+<li><strong>Private statische Instanz</strong>: Eine private statische Variable, die das einzige Objekt der Klasse speichert.</li>
+<li><strong>Privater Konstruktor</strong>: Der Konstruktor der Klasse ist privat, sodass die Klasse nicht von außen instanziiert werden kann.</li>
+<li><strong>Öffentliche statische Zugriffsmethode</strong>: Eine öffentliche statische Methode (oft <span style="font-family: andale mono, monospace;">getInstance()</span> genannt), die die einzige Instanz der Klasse zurückgibt.</li>
+</ul>
+<p>Die Implementierung folgt typischerweise diesem Muster:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>public final class Singleton {
+
+   private static Singleton instance;
+   
+   private Singleton() {}
+
+   public static Singleton getInstance() {
+      if (instance == null) {
+         instance = new Singleton();
+      }
+      return instance;
+   }
+}</code></pre>
+</div>
+</div>
+<p>Wichtige Aspekte des Aufbaus:</p>
+<ul>
+<li>Die Klasse stellt sicher, dass nur eine Instanz erstellt wird.</li>
+<li>Wenn bereits eine Instanz existiert, wird diese zurückgegeben, wenn nicht wird eine neue Instanz erstellt und diese dann zurückgegeben.</li>
+<li>Sie bietet einen globalen Zugriffspunkt auf diese Instanz.</li>
+<li>Die Instanziierung erfolgt erst beim ersten Aufruf der <span style="font-family: andale mono, monospace;">getInstance()</span>-Methode.</li>
+</ul>
+<p><strong>Beispiel: Logger</strong></p>
+<p>Wie bereits oben erwähnt ist ein typisches Beispiel ein Logger, der in einer Applikation verwendet wird, um Statusmeldungen zu protokollieren – es soll nicht mehrere Logger geben, die in unterschiedlichen Bereichen unabhängig voneinander agieren.</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>public class Logger {
@@ -88,305 +169,359 @@ public class Main {
 }</code></pre>
 </div>
 </div>
-<h3>2.2 Factory Method Pattern</h3>
-<p>Das Factory Method Pattern bietet eine Schnittstelle zur Erzeugung von Objekten, ohne die genauen Klassen der zu erzeugenden Objekte bekannt geben zu müssen. Anknüpfend an den roten Faden früherer Kapitel, können wir hier beispielsweise eine Factory zur Erzeugung von grafischen Formen nutzen – etwa für die bereits behandelten Formen wie Circle und Rectangle.</p>
-<p>Beispiel:</p>
+<h2>Factory Method Pattern</h2>
+<p>Das Factory Method Pattern löst mehrere wiederkehrende Probleme in der objektorientierten Programmierung:</p>
+<ul>
+<li><strong>Entkopplung</strong> <strong>der Objekterstellung</strong>: Es ermöglicht die Erstellung von Objekten, ohne die exakte Klasse dieser Objekte spezifizieren zu müssen.</li>
+<li><strong>Zentralisierung</strong> <strong>der</strong> <strong>Objekterstellung</strong>: Es verhindert, dass die Objekterstellung über den gesamten Code verstreut ist.</li>
+<li><strong>Erweiterbarkeit:</strong> Es erlaubt das Hinzufügen neuer Produkttypen, ohne bestehenden Code zu ändern.</li>
+<li><strong>Komplexitätsreduzierung:</strong> Es kapselt die Komplexität der Objekterstellung.</li>
+</ul>
+<p>Typische Einsatzmöglichkeiten des Factory Method Patterns sind:</p>
+<ul>
+<li><strong>Frameworks und Klassenbibliotheken</strong>: Besonders nützlich, wenn die konkret zu erstellenden Produkte nicht im Vorhinein bekannt sind.</li>
+<li><strong>Authentifizierungssysteme:</strong> Zur Delegation des Authentifizierungsprozesses an Factory-Klassen, die Entscheidungen über das Handling des jeweiligen Users treffen.</li>
+<li><strong>Software mit regelmäßigen Klassenergänzungen</strong>: Geeignet für Systeme, in denen planmäßig neue Klassen hinzugefügt werden, die den gleichen Erstellungsprozess durchlaufen müssen.</li>
+<li><strong>Testbarkeit verbessern:</strong> Ermöglicht einfaches Ersetzen konkreter Klassen durch Mock-Objekte für Testzwecke.</li>
+<li><strong>Wiederverwendung von Code:</strong> Fördert die Erstellung einer Familie verwandter Objekte mit gemeinsamem Verhalten, aber unterschiedlichen Implementierungen.</li>
+</ul>
+<p>Das Factory Method Pattern bietet somit eine flexible und erweiterbare Lösung für die Objekterstellung in verschiedenen Szenarien der Softwareentwicklung.</p>
+<h3>Aufbau</h3>
+<p>Der Aufbau des Factory Method Patterns besteht aus folgenden Komponenten:</p>
+<ul>
+<li><strong>Produkt:</strong> Eine <em>abstrakte</em> Klasse oder ein Interface, das die Schnittstelle für die Objekte definiert, die von der Factory-Methode erstellt werden sollen.</li>
+<li><strong>Konkretes Produkt:</strong> Konkrete Klassen, die das Produkt-Interface implementieren.</li>
+<li><strong>Erzeuger:</strong> Eine <em>abstrakte</em> Klasse, die die Factory-Methode deklariert. Diese Methode gibt ein Objekt vom Typ Produkt zurück. Der Creator kann auch eine Standardimplementierung der Factory-Methode enthalten.</li>
+<li><strong>Konkreter Erzeuger:</strong> Unterklassen des Creators, die die Factory-Methode überschreiben, um spezifische Produkte zu erzeugen.</li>
+</ul>
+<p>Die Struktur des Patterns sieht wie folgt aus:</p>
+<ul>
+<li>Der Creator definiert eine abstrakte Factory-Methode, die ein Produkt-Objekt zurückgibt.</li>
+<li>Konkrete Creator-Klassen überschreiben diese Methode, um spezifische Produkte zu erzeugen.</li>
+<li>Das Programm arbeitet mit dem abstrakten Produkt und Creator, nicht mit konkreten Implementierungen.</li>
+</ul>
+<p><strong>Beispiel: Formen</strong></p>
+<p>In folgendem Beispiel geht es um die Anwendung der Factory Method auf Formen. Es gibt ein Interface Shape, welches alle konkreten Formen (Kreis und Rechteck) implementieren. Dazu kommt ein abstrakter Erzeuger (Interface) für Formen und konkrete Erzeuger für Rechtecke und Kreise. In der main Methode können nun Formen erstellt werden, ohne dass das Programm genau wissen muss, wie die Formen erstellt werden und welche Klasse sie haben.</p>
 <div class="highlighted-code language-java">
 <div>
-<pre><code>// Gemeinsames Interface für Formen
-public interface Shape {
-   void draw();
+<pre><code>// Produkt: Gemeinsames Interface für Formen
+interface Shape {
+    void draw();
 }
 
-// Konkrete Implementierung: Kreis
-public class Circle implements Shape {
-   @Override
-   public void draw() {
-      System.out.println("Zeichne einen Kreis.");
-   }
+// Konkretes Produkt: Kreis
+class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Zeichne einen Kreis.");
+    }
 }
 
-// Konkrete Implementierung: Rechteck
-public class Rectangle implements Shape {
-   @Override     <br />   public void draw() {
-      System.out.println("Zeichne ein Rechteck.");
-   }
+// Konkretes Produkt: Rechteck
+class Rectangle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Zeichne ein Rechteck.");
+    }
 }
 
-// Factory zur Erstellung von Formen
-public class ShapeFactory {
-   public Shape createShape(String shapeType) {
-      if (shapeType == null) {
-         return null;
-      }<br />
-      if (shapeType.equalsIgnoreCase("CIRCLE")) {
-         return new Circle();
-      } else if (shapeType.equalsIgnoreCase("RECTANGLE")) {
-         return new Rectangle();
-      }
-      return null;
-   }
+// Erzeuger
+interface ShapeFactory {
+    Shape createShape();
+}
+
+// Konkreter Erzeuger für Kreise
+class CircleFactory implements ShapeFactory {
+    @Override
+    public Shape createShape() {
+        return new Circle();
+    }
+}
+
+// Konkreter Erzeuger für Rechtecke
+class RectangleFactory implements ShapeFactory {
+    @Override
+    public Shape createShape() {
+        return new Rectangle();
+    }
 }
 
 // Anwendung in der Main-Methode:
 public class Main {
-   public static void main(String[] args) {
-      ShapeFactory factory = new ShapeFactory();
-      Shape shape1 = factory.createShape("CIRCLE");
-      Shape shape2 = factory.createShape("RECTANGLE");
-      shape1.draw(); // Ausgabe: "Zeichne einen Kreis."
-      shape2.draw(); // Ausgabe: "Zeichne ein Rechteck."
-   }
+    public static void main(String[] args) {
+        ShapeFactory circleFactory = new CircleFactory();
+        Shape circle = circleFactory.createShape();
+
+        ShapeFactory rectangleFactory = new RectangleFactory();
+        Shape rectangle = rectangleFactory.createShape();
+
+        circle.draw(); // Ausgabe: "Zeichne einen Kreis."
+        rectangle.draw(); // Ausgabe: "Zeichne ein Rechteck."
+    }
 }</code></pre>
 </div>
 </div>
-<h2><br />3. Structural Patterns</h2>
-<p>Structural Patterns helfen dabei, Klassen und Objekte zu kombinieren, um größere Strukturen zu schaffen – ähnlich wie Bausteine in einem Baukastensystem, das wir bereits bei der Modellierung von Tierhierarchien oder grafischen Objekten gesehen haben.</p>
-<h3>3.1 Adapter Pattern</h3>
-<p>Das Adapter Pattern ermöglicht es, Klassen mit inkompatiblen Schnittstellen miteinander arbeiten zu lassen. Es funktioniert wie ein Übersetzer zwischen verschiedenen Systemen. Beispielsweise könnte eine bestehende Klasse, die grafische Formen in Processing darstellt, in einen neuen Kontext integriert werden, der ein anderes Interface erwartet.</p>
-<p><strong>Beispiel:</strong></p>
+<h2>Observer Pattern</h2>
+<p>Das Observer Pattern löst folgende wiederkehrende Probleme, dass Obejkte über die Zustandsänderung eines anderen Objekts informiert werden müssen.</p>
+<p>Typische Einsatzmöglichkeiten des Observer Patterns sind:</p>
+<ul>
+<li><strong>Benutzeroberflächen:</strong> Aktualisierung von UI-Elementen bei Änderungen der zugrunde liegenden Daten, wie z.B. die Anpassung mehrerer Anzeigen in einer Wetter-App bei Datenänderungen.</li>
+<li><strong>Ereignisbehandlung:</strong> Benachrichtigung mehrerer Listener über Ereignisse oder Änderungen.</li>
+<li><strong>Verteilte Systeme:</strong> Übermittlung von Updates an mehrere Komponenten in einem verteilten System.</li>
+<li><strong>Softwarearchitekturen:</strong> Model-View-Controller (MVC): Synchronisation von Views mit Änderungen im Model.</li>
+<li><strong>Echtzeitdaten</strong>: Aktualisierung von Displays in Echtzeit, z.B. Überwachung von Aktienkursen und automatische Benachrichtigung bei bestimmten Schwellenwerten.</li>
+</ul>
+<p>Das Observer Pattern eignet sich besonders für Szenarien, in denen mehrere Komponenten auf Änderungen in einem anderen Element reagieren müssen, ohne eng miteinander gekoppelt zu sein. Das Observer Pattern ermöglicht es, dass ein Objekt (das Subjekt) seine Beobachter (Observer) automatisch benachrichtigt, wenn sich sein Zustand ändert. Dieses Muster wird häufig in Event-basierter Programmierung genutzt, etwa in grafischen Benutzeroberflächen oder Animationen.</p>
+<h3>Aufbau</h3>
+<p>Das Observer Pattern besteht aus folgenden Hauptkomponenten:</p>
+<ul>
+<li><strong>Subject</strong> (Beobachtetes Objekt):
+<ul>
+<li>Enthält eine Liste der registrierten Observer</li>
+<li>Bietet Methoden zum An- und Abmelden von Observern (oft <span style="font-family: andale mono, monospace;">attach()</span> und <span style="font-family: andale mono, monospace;">detach()</span> genannt)</li>
+<li>Implementiert eine <span style="font-family: andale mono, monospace;">notify()-Methode,</span> um alle registrierten Observer zu benachrichtigen</li>
+</ul>
+</li>
+<li><strong>Observer</strong> (Beobachter)<br />
+<ul>
+<li>Definiert eine Schnittstelle mit einer Update-Methode (oft <span style="font-family: andale mono, monospace;">update()</span> genannt)</li>
+<li>Diese Methode wird vom Subject aufgerufen, wenn sich dessen Zustand ändert</li>
+</ul>
+</li>
+<li><strong>Concrete Subject</strong><br />
+<ul>
+<li>Erbt vom Subject oder implementiert dessen Schnittstelle</li>
+<li>Verwaltet den Zustand, der für Observer von Interesse ist</li>
+<li>Ruft <span style="font-family: andale mono, monospace;">notify()</span> auf, wenn sich der Zustand ändert</li>
+</ul>
+</li>
+<li><strong>Concrete Observer</strong><br />
+<ul>
+<li>Implementiert die Observer-Schnittstelle</li>
+<li>Definiert, wie auf Änderungen des Subjects reagiert wird</li>
+</ul>
+</li>
+</ul>
+<p>Der typische Ablauf im Observer Pattern ist:</p>
+<ol>
+<li>Observer registrieren sich beim Subject</li>
+<li>Das Subject ändert seinen Zustand</li>
+<li>Das Subject benachrichtigt alle registrierten Observer über die Änderung</li>
+<li>Die Observer reagieren auf die Benachrichtigung</li>
+</ol>
+<p><strong>Beispiel Wetterstation:</strong></p>
 <div class="highlighted-code language-java">
 <div>
-<pre><code>// Angenommen, dies ist eine bestehende Klasse, die eine Form in Processing zeichnet:
-public class ProcessingCircle {
-   public void drawCircle() {
-      System.out.println("Zeichne Kreis in Processing-Manier.");
-   }
-}
-
-// Das gewünschte Interface entspricht dem Shape-Interface:
-public interface Shape {
-   void draw();
-}
-
-// Adapter, der ProcessingCircle in das Shape-Interface einbindet:
-public class CircleAdapter implements Shape {
-   private ProcessingCircle processingCircle;
-
-   public CircleAdapter(ProcessingCircle processingCircle) {
-      this.processingCircle = processingCircle;
-   }
-
-   @Override
-   public void draw() {
-   // Übersetzung des Aufrufs ins entsprechende Processing-Format
-      processingCircle.drawCircle();
-   }
-}
-
-// Anwendung:
-public class Main {
-   public static void main(String[] args) {
-      ProcessingCircle pc = new ProcessingCircle();
-      Shape shape = new CircleAdapter(pc);
-      shape.draw(); // Ausgabe: "Zeichne Kreis in Processing-Manier."
-   }
-}</code></pre>
-</div>
-</div>
-<h3>3.2 Composite Pattern</h3>
-<p>Das Composite Pattern erlaubt es, Objekte in Baumstrukturen zu organisieren, sodass einzelne Objekte (Blätter) und Gruppen von Objekten (Composite-Objekte) einheitlich behandelt werden können. Im Kontext grafischer Anwendungen kann ein Composite beispielsweise genutzt werden, um komplexe Zusammenstellungen von grafischen Formen (wie Gruppen von Formen) als einzelnes Objekt zu modellieren.</p>
-<p><strong>Beispiel:</strong></p>
-<div class="highlighted-code language-java">
-<div>
-<pre><code>import java.util.ArrayList;
+<pre><code>// Das "Subject" (Beobachtetes Objekt)
+import java.util.ArrayList;
 import java.util.List;
 
-// Gemeinsame Schnittstelle für alle grafischen Elemente
-public interface Graphic {
-   void draw();
+class WetterStation {
+    private List&lt;Observer&gt; observers = new ArrayList&lt;&gt;();
+    private int temperatur;
+
+    // Observer registrieren
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    // Observer entfernen
+    public void removeObserver(Observer observer) {
+        observers.remove(observer);
+    }
+
+    // Alle Observer benachrichtigen
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(temperatur);
+        }
+    }
+
+    // Zustand ändern und Benachrichtigung auslösen
+    public void setTemperatur(int temperatur) {
+        this.temperatur = temperatur;
+        notifyObservers();
+    }
 }
 
-// Blattelement: Einzelne grafische Form
-public class Circle implements Graphic {
-   @Override
-   public void draw() {
-      System.out.println("Zeichne einen Kreis.");
-   }
+// Das "Observer"-Interface
+interface Observer {
+    void update(int temperatur);
 }
 
-// Composite: Gruppe von grafischen Elementen
-public class CompositeGraphic implements Graphic {
-   private List&lt;Graphic&gt; graphics = new ArrayList&lt;&gt;();
-
-   public void add(Graphic graphic) {
-      graphics.add(graphic);
-   }
-
-   @Override
-   public void draw() {
-      for (Graphic graphic : graphics) {
-         graphic.draw();
-      }
-   }
+// Ein konkreter Observer
+class HandyApp implements Observer {
+    @Override
+    public void update(int temperatur) {
+        System.out.println("HandyApp: Die Temperatur hat sich geändert: " + temperatur + "°C");
+    }
 }
 
-// Anwendung:
+// Ein weiterer konkreter Observer
+class WetterAnzeige implements Observer {
+    @Override
+    public void update(int temperatur) {
+        System.out.println("WetterAnzeige: Neue Temperatur: " + temperatur + "°C");
+    }
+}
+
+// Hauptklasse zum Testen des Patterns
 public class Main {
-   public static void main(String[] args) {
-      Circle circle1 = new Circle();
-      Circle circle2 = new Circle();
-      CompositeGraphic graphicGroup = new CompositeGraphic();
-      graphicGroup.add(circle1);
-      graphicGroup.add(circle2);
-      // Alle enthaltenen Formen werden durch einen einzigen Aufruf gezeichnet:
-      graphicGroup.draw();
-   }
+    public static void main(String[] args) {
+        WetterStation wetterStation = new WetterStation();
+
+        // Observer erstellen und registrieren
+        HandyApp handyApp = new HandyApp();
+        WetterAnzeige wetterAnzeige = new WetterAnzeige();
+
+        wetterStation.addObserver(handyApp);
+        wetterStation.addObserver(wetterAnzeige);
+
+        // Temperatur ändern und Observer benachrichtigen
+        wetterStation.setTemperatur(25);
+        wetterStation.setTemperatur(30);
+    }
 }</code></pre>
 </div>
 </div>
-<h2>4. Behavioral Patterns</h2>
-<p>Behavioral Patterns beschäftigen sich mit der Interaktion und Kommunikation zwischen Objekten. Zwei häufig verwendete Muster in diesem Bereich sind:</p>
-<h3>4.1 Observer Pattern</h3>
-<p>Das Observer Pattern ermöglicht es, dass ein Objekt (das Subjekt) seine Beobachter (Observer) automatisch benachrichtigt, wenn sich sein Zustand ändert. Dieses Muster wird häufig in Event-basierter Programmierung genutzt, etwa in grafischen Benutzeroberflächen oder Animationen.</p>
+<h2>Strategy Pattern</h2>
+<p>Das Strategy Pattern löst das wiederkehrende Problem, dass während der Laufzeit überprüft werden muss, wie sich ein Objekt verhalten muss bzw. welcher Algoritmus angewendet werden muss. Das Strategy Pattern kapselt verschiedene Algorithmen in separaten Klassen und ermöglicht es dem Klienten, zur Laufzeit zwischen ihnen zu wählen. Dadurch wird der Code flexibler und leichter erweiterbar.</p>
+<p>Typische Einsatzmöglichkeiten des Strategy Patterns sind:</p>
+<ul>
+<li><strong>Sortieralgorithmen:</strong> Auswahl verschiedener Sortierverfahren für Datensammlungen, z.B. in E-Commerce-Anwendungen zur Sortierung von Produkten nach Preis, Beliebtheit oder Relevanz</li>
+<li><strong>Zahlungsabwicklung:</strong> Implementierung verschiedener Zahlungsmethoden wie Kreditkarte, PayPal oder Kryptowährungen in einem Onlineshop</li>
+<li><strong>Preisstrategien:</strong> Umsetzung unterschiedlicher Preismodelle für Abonnements, z.B. in Streaming-Diensten oder Fitnessstudios</li>
+<li><strong>Validierungsregeln:</strong> Anwendung verschiedener Validierungsstrategien für Daten oder Benutzeraktionen</li>
+<li><strong>Formatierung</strong> <strong>und Rendering:</strong> Implementierung verschiedener Formatierungs- oder Rendering-Strategien für Texte oder Bilder</li>
+<li><strong>Datenbankzugriff:</strong> Verwendung unterschiedlicher Strategien für den Zugriff auf verschiedene Datenquellen</li>
+<li><strong>Spieleentwicklung:</strong> Implementierung verschiedener Angriffsstrategien für Charaktere in Videospielen</li>
+</ul>
+<h3>Aufbau</h3>
+<p>Das Strategy Pattern besteht aus drei Hauptkomponenten:</p>
+<ul>
+<li>Kontext (Context)<br />
+<ul>
+<li>Enthält eine Referenz auf ein Strategy-Objekt</li>
+<li>Nutzt die Strategy, um einen Algorithmus auszuführen</li>
+<li>Kann zur Laufzeit die konkrete Strategy ändern</li>
+</ul>
+</li>
+<li>Strategy (Strategie-Interface)<br />
+<ul>
+<li>Definiert eine gemeinsame Schnittstelle für alle konkreten Strategien</li>
+<li>Deklariert die Methode(n), die von konkreten Strategien implementiert werden müssen</li>
+</ul>
+</li>
+<li>Concrete Strategies (Konkrete Strategien)<br />
+<ul>
+<li>Implementieren das Strategy-Interface</li>
+<li>Stellen spezifische Algorithmen oder Verhaltensweisen bereit</li>
+</ul>
+</li>
+</ul>
+<p>Der typische Ablauf im Strategy Pattern ist:</p>
+<ol>
+<li>Der Kontext wird mit einer konkreten Strategie initialisiert</li>
+<li>Der Client kann die Strategie im Kontext bei Bedarf austauschen</li>
+<li>Der Kontext ruft die Methode der Strategie auf, ohne deren konkrete Implementierung zu kennen</li>
+</ol>
+<p>Dieses Muster ermöglicht es, Algorithmen unabhängig vom Kontext zu definieren und auszutauschen, was die Flexibilität und Erweiterbarkeit des Codes erhöht</p>
 <p>Beispiel:</p>
 <div class="highlighted-code language-java">
 <div>
-<pre><code>import java.util.ArrayList;
-import java.util.List;
-
-// Subjekt, das Beobachter registriert
-public class Subject {
-   private List&lt;Observer&gt; observers = new ArrayList&lt;&gt;();
-   private String state;
-
-   public void addObserver(Observer observer) {
-      observers.add(observer);
-   }
-
-   public void setState(String state) {
-      this.state = state;
-      notifyObservers();
-   }
-
-   private void notifyObservers() {
-      for (Observer observer : observers) {
-         observer.update(state);
-      }
-   }
+<pre><code>// Strategy Interface
+interface PaymentStrategy {
+    void pay(int amount);
 }
 
-// Observer-Schnittstelle
-public interface Observer {
-   void update(String state);
+// Concrete Strategies
+class CreditCardPayment implements PaymentStrategy {
+    public void pay(int amount) {
+        System.out.println("Zahlung von " + amount + " € per Kreditkarte");
+    }
 }
 
-// Konkrete Observer
-public class ConcreteObserver implements Observer {
-   private String name;
-
-   public ConcreteObserver(String name) {
-      this.name = name;
-   }
-
-   @Override
-   public void update(String state) {
-      System.out.println(name + " wurde benachrichtigt: Neuer Zustand -&gt; " + state);
-   }
+class PayPalPayment implements PaymentStrategy {
+    public void pay(int amount) {
+        System.out.println("Zahlung von " + amount + " € per PayPal");
+    }
 }
 
-// Anwendung:
+class BankTransferPayment implements PaymentStrategy {
+    public void pay(int amount) {
+        System.out.println("Zahlung von " + amount + " € per Banküberweisung");
+    }
+}
+
+// Context
+class ShoppingCart {
+    private PaymentStrategy paymentStrategy;
+
+    public void setPaymentStrategy(PaymentStrategy strategy) {
+        this.paymentStrategy = strategy;
+    }
+
+    public void checkout(int amount) {
+        paymentStrategy.pay(amount);
+    }
+}
+
+// Anwendung
 public class Main {
-   public static void main(String[] args) {
-      Subject subject = new Subject();
-      Observer obs1 = new ConcreteObserver("Observer 1");
-      Observer obs2 = new ConcreteObserver("Observer 2");
-      subject.addObserver(obs1);
-      subject.addObserver(obs2);
-      subject.setState("Aktiv");
-   }
+    public static void main(String[] args) {
+        ShoppingCart cart = new ShoppingCart();
+
+        cart.setPaymentStrategy(new CreditCardPayment());
+        cart.checkout(100); // Ausgabe: Zahlung von 100€ per Kreditkarte
+
+        cart.setPaymentStrategy(new PayPalPayment());
+        cart.checkout(200); // Ausgabe: Zahlung von 200€ per PayPal
+
+        cart.setPaymentStrategy(new BankTransferPayment());
+        cart.checkout(300); // Ausgabe: Zahlung von 300€ per Banküberweisung
+    }
 }</code></pre>
 </div>
 </div>
-<h3>4.2 Strategy Pattern</h3>
-<p>Das Strategy Pattern kapselt verschiedene Algorithmen in separaten Klassen und ermöglicht es dem Klienten, zur Laufzeit zwischen ihnen zu wählen. Dadurch wird der Code flexibler und leichter erweiterbar. Ein praxisnahes Beispiel im Medienkontext könnte die Auswahl unterschiedlicher Zeichenstrategien für grafische Formen sein.</p>
-<p>Beispiel:</p>
-<div class="highlighted-code language-java">
-<div>
-<pre><code>// Strategy-Schnittstelle, die einen Zeichenalgorithmus definiert
-public interface DrawStrategy {
-   void draw();
-}
-
-// Konkrete Strategien
-public class SimpleDrawStrategy implements DrawStrategy {
-   @Override
-   public void draw() {
-      System.out.println("Zeichne die Form auf einfache Weise.");
-   }
-}
-
-public class FancyDrawStrategy implements DrawStrategy {
-   @Override
-   public void draw() {
-      System.out.println("Zeichne die Form mit aufwändigen Effekten.");
-   }
-}
-
-// Kontext, der eine Strategie verwendet
-public class ShapeContext {
-   private DrawStrategy strategy;
-
-   public ShapeContext(DrawStrategy strategy) {
-      this.strategy = strategy;
-   }
-
-   public void setStrategy(DrawStrategy strategy) {
-      this.strategy = strategy;
-   }
-
-   public void executeDraw() {
-      strategy.draw();
-   }
-}
-
-// Anwendung:
-public class Main {
-   public static void main(String[] args) {
-      ShapeContext context = new ShapeContext(new SimpleDrawStrategy());
-      context.executeDraw(); // Ausgabe: "Zeichne die Form auf einfache Weise."
-      context.setStrategy(new FancyDrawStrategy());
-      context.executeDraw(); // Ausgabe: "Zeichne die Form mit aufwändigen Effekten."
-   }
-}</code></pre>
-</div>
-</div>
+<p>In diesem Beispiel:</p>
+<ul>
+<li><span style="font-family: andale mono, monospace;">PaymentStrategy</span> ist das Strategy Interface, das die Methode <span style="font-family: andale mono, monospace;">pay()</span> definiert.</li>
+<li><span style="font-family: andale mono, monospace;">CreditCardPayment, PayPalPayment</span> und <span style="font-family: andale mono, monospace;">BankTransferPayment</span> sind konkrete Strategien, die das Interface implementieren.</li>
+<li><span style="font-family: andale mono, monospace;">ShoppingCart</span> ist der Kontext, der die Strategie verwendet und austauschen kann.</li>
+<li>Im <span style="font-family: andale mono, monospace;">Main</span>-Programm wird demonstriert, wie verschiedene Zahlungsstrategien dynamisch ausgewählt und verwendet werden können.</li>
+</ul>
+<p>Dieses Pattern ermöglicht es, Zahlungsmethoden einfach hinzuzufügen oder zu ändern, ohne den bestehenden Code zu modifizieren</p>
 <h1>Übungen</h1>
 <h2>Aufgaben:</h2>
 <ul>
-<li><strong>Aufgabe 1:</strong><br />Erstelle eine kleine Anwendung, in der du das Singleton Pattern implementierst (zum Beispiel für einen Logger), und nutze diesen Logger in einem Programm, das verschiedene grafische Formen erzeugt.</li>
-<li><strong>Aufgabe 2:</strong><br />Erweitere die bestehende Shape-Fabrik aus Kapitel 2 um eine Composite-Struktur, bei der mehrere Formen zu einer Gruppe zusammengefasst werden können, und implementiere zusätzlich das Observer Pattern, um Änderungen an der Gruppe zu überwachen.</li>
+<li><strong>Aufgabe 1: Datenbankverbindung</strong><br />Erstelle eine kleine Anwendung, in der du das Singleton Pattern implementierst für eine Datenbankverbindung. Dein Programm soll die Verbindung mit einer Datenbank herstellen können und wieder trennen können (es reicht die Simulation durch Konsolenausgaben). Achte dabei darauf, dass es nur eine Datenbankverbindung geben darf.</li>
+<li><strong>Aufgabe 2: Datenbankverbindung 2</strong><br />Erweitere dein Programm aus Aufgabe 2 um ein Strategy Pattern. Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Dankebank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).</li>
 </ul>
 <h2>Fragen:</h2>
 <ol>
 <li>Welche Vorteile bietet das Singleton Pattern im Vergleich zu normaler Objektinstanziierung?</li>
 <li>Wie unterscheidet sich das Factory Method Pattern vom Singleton Pattern bezüglich der Objekt-Erzeugung?</li>
-<li>Nenne zwei wesentliche Merkmale des Adapter Patterns und erläutere, wie es den Integrationsaufwand reduziert.</li>
+<li>Nenne zwei wesentliche Merkmale des Observer Patterns.</li>
 <li>Beschreibe den Unterschied zwischen dem Observer Pattern und dem Strategy Pattern.</li>
 </ol>
 <p></p>
 <h1>Zusammenfassung</h1>
 <ul>
-<li>Creational Patterns:
+<li>Design Patterns stellen wiederverwendbare Lösungsvorlagen dar, die helfen, wiederkehrende Probleme in der Softwareentwicklung zu meistern und den Code flexibel sowie wartbar zu gestalten.</li>
+<li><strong>Creational Patterns</strong> beschäftigen sich mit dem Erzeugen von Objekten<br />
 <ul>
-<li>Singleton: Sorgt für genau eine Instanz einer Klasse mit globalem Zugriff.</li>
-<li>Factory Method: Erzeugt Objekte, ohne deren konkrete Klasse explizit nennen zu müssen.</li>
+<li><strong>Singleton:</strong> Sorgt für genau eine Instanz einer Klasse mit globalem Zugriff.</li>
+<li><strong>Factory Method:</strong> Erzeugt Objekte, ohne deren konkrete Klasse explizit nennen zu müssen.</li>
 </ul>
 </li>
-<li>Structural Patterns:
+<li><strong>Structural Patterns</strong> beschreiben die Komposition von Klassen und Objekten </li>
+<li><strong>Behavioral Patterns</strong> modellieren die Interaktion zwischenObjekten und deren Verhalten <br />
 <ul>
-<li>Adapter: Übersetzt inkompatible Schnittstellen, sodass Klassen zusammenarbeiten können.</li>
-<li>Composite: Organisiert Objekte in Baumstrukturen, sodass Einzelteile und Gruppen einheitlich behandelt werden können.</li>
-</ul>
-</li>
-<li>Behavioral Patterns:
-<ul>
-<li>Observer: Ermöglicht die automatische Benachrichtigung registrierter Observer bei Zustandsänderungen eines Subjekts.</li>
-<li>Strategy: Kapselt unterschiedliche Algorithmen, so dass zur Laufzeit flexibel zwischen ihnen gewählt werden kann.</li>
+<li><strong>Observer:</strong> Ermöglicht die automatische Benachrichtigung registrierter Observer bei Zustandsänderungen eines Subjekts.</li>
+<li><strong>Strategy:</strong> Kapselt unterschiedliche Algorithmen, so dass zur Laufzeit flexibel zwischen ihnen gewählt werden kann.</li>
 </ul>
 </li>
 </ul>
-<p>Design Patterns stellen wiederverwendbare Lösungsvorlagen dar, die helfen, wiederkehrende Probleme in der Softwareentwicklung zu meistern und den Code flexibel sowie wartbar zu gestalten.<br />Die vorgestellten Beispiele knüpfen an bereits diskutierte Konzepte (z. B. grafische Formen und Tierhierarchien) an und zeigen, wie die Patterns im interdisziplinären Kontext angewendet werden können.</p>
 <p></p></div>
 </div>
 </div>
@@ -398,7 +533,7 @@ public class Main {
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="polymorphismus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="programmierprinzipien.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="polymorphismus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="versionskontrolle_mit_git.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

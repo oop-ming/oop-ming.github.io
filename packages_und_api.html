@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Packages und API | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-21"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li><a href="java.html" class="daddy">Java</a>
+   <ul class="other-section">
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="klassen_und_objekte.html" class="current-page-parent daddy">Klassen und Objekte</a>
+   <ul>
+      <li id="active"><a href="packages_und_api.html" class="active no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="klassen_und_objekte.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="processing_in_anderen_klassen_nutzen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Packages und API</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id29">
+<div class="iDevice emphasis0" >
+<div id="ta29_128_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung</h1>
+<p>Ein Paket oder auch Package wird in Java verwendet um Klassen zu gruppieren, die zusammengehören. Du kannst dir das am besten vorstellen, wir Ordner in einem Dateisystem. Mithilfe von Packages lassen sich Klassen organisieren und Konflikte bei der Namensgebung vermeiden. Dabei lassen sich Packages in Java in zwei Kategorien einteilen: Pakete aus der Java API und benutzerdefinierte Pakete.</p>
+<p>In diesem Kapitel lernst du:</p>
+<ul>
+<li>Was die Java API ist</li>
+<li>Wie man Pakete und Klassen imporiert</li>
+<li>Wie man selber Pakete und Klassen definieren kann.</li>
+</ul>
+<h1>Java API</h1>
+<p><span class="ILfuVd" lang="de"><span class="hgKElc">APIs (Application Programming Interfaces) sind sogenannte Programmierschnittstellen. Sie bestehen aus mehreren Definitionen und Protokollen zur Softwareentwicklung. </span></span>Die Java API ist eine Bibliothek und enthält viele Klassen, die du für die Entwicklung deiner Java-Anwendungen kostenlos nutzen darf. Die Java API ist automatisch in deiner Java Entwicklungsumgebung integriert.</p>
+<p>Die Java-Bibliothek ist unterteilt ist Packages und Klassen. Das bedeutet du kannst entweder einzelne Klassen oder ganze Packete (die mehrere Klassen enthalten) importieren. Eine Liste mit allen Paketen und Klassen innerhalb der Java API findest du auf <a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noopener">Oracle</a>.</p>
+<h1>Importieren von Klassen und Packages</h1>
+<p>Den <strong>Syntax</strong> zum einbinden bzw. importieren einer Bibliothek kennen wir bereits aus Processing:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import package.name.Class;   // Klasse importieren
+import package.name.*;          //  Paket importieren
+</code></pre>
+</div>
+</div>
+<p>Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel Collections und Lambda Ausdrücke: </p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>import java.util.ArrayList;   // Importiert die Klasse ArrayList
+import java.util.*;                // Importiert alle Collections
+</code></pre>
+</div>
+</div>
+<h1>Erstellen eigener Pakete</h1>
+<p>Am Anfang des Kapitels haben wir gesagt, dass Packages Klassen gruppieren und man sich das vorstellen kann wie Ordner in einem Dateisystem. Tatsächlich kann man sich das nicht nur so vorstellen - es <em>ist</em> auch so. Java nutzt ein Dateisystem um Packages zu speichern. Das könnte zum Beispiel so aussehen:</p>
+<ul>
+<li>Haupt-Verzeichnis
+<ul>
+<li>meinpaket
+<ul>
+<li>MeineKlasse</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Um ein Package zu erstellen hast du in IntelliJ zwei Möglichkeiten. In beiden Fällen klickst du mit der rechten Maustaste auf dein src Ordner wählst dann ...</p>
+<ul>
+<li><em>New &gt; Package</em><br />In diesem Fall gibtst du einfach den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im src Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl <span style="font-family: andale mono, monospace;">package name;</span> (wobei name der Name deines Pakets ist) stehen. Dadurch weiß der Compiler, dass diese Klasse zu diesem Paket gehört.</li>
+<li><em>New &gt; Java Class</em><br />Wer es etwas schneller haben möchte kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option <em>Java Class</em> wählt und hier im Eingabefeld den Paketname und den Klassenname getrennt durch einen Punkt angibt (z.B. <span style="font-family: andale mono, monospace;">meinpaket.MeineKlasse</span>). Dann erstellt IntelliJ erst das Paket (und den Ordner) <span style="font-family: andale mono, monospace;">meinPaket</span> und direkt danach die Klasse <span style="font-family: andale mono, monospace;">MeineKlasse.</span> Auch hier findest du in der ersten Zeile innerhalb der Klasse den package Befehl.</li>
+</ul>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Packages gruppieren Klassen in einer sinnvollen Struktur und verhindern Konflikte bei der Namensgebung</li>
+<li>Es gibt vordefinierte und benutzerdefinierte Pakete</li>
+<li>Die Java API ist eine mächtige Bibliothek mit vielen Klassen, die du kostenlos nutzen kannst</li>
+<li>Pakete und Klassen werden mithilfe von import importiert</li>
+<li>Eigene Pakete können über das User-Interface von IntelliJ und mithilfe des <span style="font-family: andale mono, monospace;">package</span> Schlüsselworts erstellt werden.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="klassen_und_objekte.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="processing_in_anderen_klassen_nutzen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

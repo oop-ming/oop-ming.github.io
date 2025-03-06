@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Processing in anderen Klassen nutzen | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-22"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li><a href="java.html" class="daddy">Java</a>
+   <ul class="other-section">
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="klassen_und_objekte.html" class="current-page-parent daddy">Klassen und Objekte</a>
+   <ul>
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li id="active"><a href="processing_in_anderen_klassen_nutzen.html" class="active no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="packages_und_api.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="dokumentation.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Processing in anderen Klassen nutzen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id30">
+<div class="iDevice emphasis0" >
+<div id="ta30_129_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung</h1>
+<p>Im Kapitel <a href="erste_schritte_in_java.html" target="_blank" rel="noopener">Erste Schritte in Java</a> haben wir gelernt, wie wir Processing in Java nutzen können. Hierfür mussten wir eine Klasse erstellen, welches die Klassen <span style="font-family: andale mono, monospace;">PApplet</span> erweitert und Eigenschaften von ihr erbt. Auf diese Weise sind wir in der Lage <em>innerhalb</em> dieser Klasse Processing Befehle zu nutzen. Allerdings gibt es einige Fälle, in denen wir Processing <em>außerhalb</em> dieser Klasse verwenden möchten.</p>
+<p>In diesem Kapitel lernst du:</p>
+<ul>
+<li>Wie du eine Referenz zu deinem Processing-Fenster an eine andere Klasse übergibst</li>
+<li>Wie du in anderen Klassen Processing Methoden und Konstanten nutzen kannst</li>
+</ul>
+<h1>Beipsiel Projekt: Moving Ball</h1>
+<p>Um zu veranschaulichen, wie das funktioniert, erstellen wir ein kurzes Programm, welches aus einem Ball besteht, der von links nach rechts fliegt und wenn er den rechten Bildschirmrand verlässt, wieder auf der linken Seite startet.</p>
+<p>Um ein neues Projekt zu erstellen, gehe ich folgendermaßen vor:</p>
+<ul>
+<li><strong>Neues Projekt erstellen</strong>: Über<strong> ☰ &gt; File &gt; New &gt; New Project</strong> erstelle ich ein neues Projekt mit dem Namen <span style="font-family: andale mono, monospace;">movingBall.</span></li>
+<li><strong>Processing</strong> <strong>verknüpfen</strong>: In der linken Spalte klicke ich mit der rechten Maustaste auf meinen Projektordner "movingBall" und navigiere zu <strong>Open Module Settings &gt; Modules</strong>. Hier füge ich core.jar hinzu, wie im Kapitel <a href="erste_schritte_in_java.html" target="_blank" rel="noopener">Erste Schritte in Java</a> erläutert</li>
+<li><strong>Die Klasse <span style="font-family: andale mono, monospace;">Window</span> erstellen</strong>: Mit Rechtsklick auf den <span style="font-family: andale mono, monospace;">src</span>-Ordner in der linken Spalte erstelle ich die Klasse <span style="font-family: andale mono, monospace;">Window</span> und ergänze folgendes:
+<ul>
+<li>Erste Zeile: <span style="font-family: andale mono, monospace;">import processing.core.PApplet;</span></li>
+<li>Hinter <span style="font-family: andale mono, monospace;">Window:</span> <span style="font-family: andale mono, monospace;">extends PApplet</span></li>
+<li>In der Klasse: Die Methoden <span style="font-family: andale mono, monospace;">void settings() {}</span> und <span style="font-family: andale mono, monospace;">void draw() {}</span> inklusive der <span style="font-family: andale mono, monospace;">@Override</span> Annotation</li>
+</ul>
+</li>
+<li><strong><span style="font-family: andale mono, monospace;">Window</span> in <span style="font-family: andale mono, monospace;">Main</span> aufrufen</strong>: 
+<ul>
+<li>Erste Zeile: <span style="font-family: andale mono, monospace;">import processing.core.PApplet;</span></li>
+<li>In der main-Methode: <span style="font-family: andale mono, monospace;">PApplet.main("Window");</span></li>
+</ul>
+</li>
+<li><strong>Die Klasse <span style="font-family: andale mono, monospace;">Ball</span> erstellen</strong>: Mit Rechtsklick auf den <span style="font-family: andale mono, monospace;">src</span>-Ordner in der linken Spalte erstelle ich die Klasse <span style="font-family: andale mono, monospace;">Ball.</span></li>
+</ul>
+<p>Jetzt können wir unseren Ball erstellen. So, wie wir bisher in Processing (prozedural) programmiert haben, hätten wir wahrscheinlich allen Code in einer Datei gehabt (hier in diesem Fall in <span style="font-family: andale mono, monospace;">Window).</span> Es hätte ein paar globale Variablen gegeben, wie <span style="font-family: andale mono, monospace;">x</span>, <span style="font-family: andale mono, monospace;">y</span>, und <span style="font-family: andale mono, monospace;">speed</span> und ein paar Befehle in <span style="font-family: andale mono, monospace;">draw()</span>, wie z.B. <span style="font-family: andale mono, monospace;">x += speed</span> und die Kollisionsabfrage, wenn der Ball den rechten Bildschirmrand berührt.</p>
+<p>Dies machen wir in Java anders, da wir objektorientiert programmieren. Das bedeutet, dass ein Objekt, das wir von der Klasse <span style="font-family: andale mono, monospace;">Ball</span> erstellen ein in sich vollständiger und unabhängiger "echter" Ball ist. Alle Daten und alles Verhalten, muss innerhalb der Klasse angelegt und gespeichert werden. Was brauchen wir hierfür?</p>
+<ul>
+<li><strong>Daten</strong>
+<ul>
+<li>x- und y-Position</li>
+<li>Geschwindigkeit</li>
+<li>Größe bzw. Durchmesser</li>
+<li>Farbe (Grauwert)</li>
+</ul>
+</li>
+<li><strong>Verhalten</strong><br />
+<ul>
+<li>zeichnen() - der Ball muss gemalt werden können</li>
+<li>bewegen() - Berechnung der nächsten Position inkl. Abprallen</li>
+</ul>
+</li>
+</ul>
+<p>So könnte unsere Klasse Ball erstmal aussehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>public class Ball {
+    
+    private float x;
+    private float y;
+    private float geschwindigkeit;
+    private int durchmesser;
+    private int grauwert;
+    
+    Ball (float x, float y, float geschwindigkeit, int durchmesser, int grauwert) {
+        this.x = x;
+        this.y = y;
+        this.geschwindigkeit = geschwindigkeit;
+        this.durchmesser = durchmesser;
+        this.grauwert = grauwert;
+    }
+    
+    public void zeichnen () {
+        // Hier brauche ich die Befehle ellipse() und fill()
+    }
+    
+    public void bewegen () {
+        x += geschwindigkeit;
+        
+        // Zum Abprallen muss ich die Breite des Fensters kennen
+    }
+}</code></pre>
+</div>
+</div>
+<p><strong>Beachte:</strong> Die Attribute sind alle <span style="font-family: andale mono, monospace;">private,</span> um ungewollte Änderungen zu vermeiden - nur die Methoden <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen()</span> sind <span style="font-family: andale mono, monospace;">public.</span></p>
+<p>Jetzt haben wir aber ein Problem: Die Befehle <span style="font-family: andale mono, monospace;">ellipse()</span> und <span style="font-family: andale mono, monospace;">fill()</span> kann ich hier gar nicht nutzen, weil ich ja nicht in der <span style="font-family: andale mono, monospace;">Window</span> Klasse bin und ich kann hier auch nicht auf <span style="font-family: andale mono, monospace;">width</span> zugreifen. Dieses "Problem" lösen wir, indem wir ein weiteres Attribut anlegen, das eine Referenz auf unser <span style="font-family: andale mono, monospace;">Window</span> ist. Auf diese Weise können wir dann innerhalb der <span style="font-family: andale mono, monospace;">Ball</span> Klasse auf unser <span style="font-family: andale mono, monospace;">Window</span> zugreifen.</p>
+<div class="highlighted-code language-java line-numbers hightlight-3and10and11and22and23and31">
+<div>
+<pre><code>public class Ball {
+
+    private Window window;
+    private float x;
+    private float y;
+    private float geschwindigkeit;
+    private int durchmesser;
+    private int grauwert;
+
+    Ball (Window window, float x, float y, float geschwindigkeit, int durchmesser, int grauwert) {
+        this.window = window;
+        this.x = x;
+        this.y = y;
+        this.geschwindigkeit = geschwindigkeit;
+        this.durchmesser = durchmesser;
+        this.grauwert = grauwert;
+    }
+
+    void zeichnen () {
+
+        // Nun kann ich hier, über das window-Attribut auf mein Processing Fenster zugreifen
+        window.fill(grauwert);
+        window.circle(x,y, durchmesser);
+    }
+
+    void bewegen () {
+        x += geschwindigkeit;
+
+        // Nach links setzen, wenn der Ball rechts den Bildschirm verlassen hat
+        // Hier greife ich über das window-Attribut auf die width zu
+        if(x - durchmesser/2 &gt; window.width) {
+            x = -durchmesser/2;
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<p><strong>Erklärung:</strong></p>
+<ul>
+<li>Ganz oben wurde das Attribut <span style="font-family: andale mono, monospace;">window</span> hinzugefügt. Es hat den Datentyp <span style="font-family: andale mono, monospace;">Window</span> und ist eine Referenz auf das <span style="font-family: andale mono, monospace;">Window</span>-Objekt, das wir in Main erstellen und welches unser Grafikfenster erzeugt.</li>
+<li>In Zeile 10 und 11 wurde jeweils das <span style="font-family: andale mono, monospace;">window</span>-Attribut zum Konstruktor von <span style="font-family: andale mono, monospace;">Ball</span> hinzugefügt</li>
+<li>In <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen()</span> kann nun über das <span style="font-family: andale mono, monospace;">window</span>-Attribut mithilfe der Punktnotation auf Methoden und Attribute des <span style="font-family: andale mono, monospace;">Window</span> Objekts zugegriffen werden.</li>
+</ul>
+<p>Nun müssen wir nur noch in der Window Klasse ein Objekt vom Typ Ball erstellen und diesen zeichnen und bewegen. Final sieht das vollständige Programm folgendermaßen aus:</p>
+<div class="exe-fx exe-tabs">
+<h2>Main.java</h2>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>import processing.core.PApplet;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        PApplet.main("Window");
+
+    }
+}</code></pre>
+</div>
+</div>
+<p><br /><br /><br /></p>
+<h2>Window.java</h2>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>import processing.core.PApplet;
+
+public class Window extends PApplet {
+
+    Ball ball;
+
+    @Override
+    public void settings() {
+        size( 400, 400);
+        // Da wir eine Referenz von "diesem" Window in den Konstruktor
+        // übergeben wollen, nutzen wir hier das Schlüsselwort this
+        ball = new Ball(this, width/2, height/2, 2, 100, 200);
+
+    }
+
+    @Override
+    public void draw() {
+        background(60);
+
+        // Zugriff auf die Methoden von ball mithilfe der Punktnotation
+        ball.bewegen();
+        ball.zeichnen();
+
+    }
+}
+</code></pre>
+</div>
+</div>
+<p><br /><br /><br /></p>
+<h2>Ball.java</h2>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>public class Ball {
+
+    private Window window;
+    private float x;
+    private float y;
+    private float geschwindigkeit;
+    private int durchmesser;
+    private int grauwert;
+
+    Ball (Window window, float x, float y, float geschwindigkeit, int durchmesser, int grauwert) {
+        this.window = window;
+        this.x = x;
+        this.y = y;
+        this.geschwindigkeit = geschwindigkeit;
+        this.durchmesser = durchmesser;
+        this.grauwert = grauwert;
+    }
+
+    void zeichnen () {
+
+        // Nun kann ich hier, über das window-Attribut auf mein Processing Fenster zugreifen
+        window.fill(grauwert);
+        window.circle(x,y, durchmesser);
+    }
+
+    void bewegen () {
+        x += geschwindigkeit;
+
+        // Nach links setzen, wenn der Ball rechts den Bildschirm verlassen hat
+        // Hier greife ich über das window-Attribut auf die width zu
+        if(x - durchmesser/2 &gt; window.width) {
+            x = -durchmesser/2;
+        }
+    }
+}
+</code></pre>
+</div>
+</div>
+<p><br /><br /><br /></p>
+</div>
+<h2>Statische Eigenschaften von Processing-Klassen</h2>
+<p>Wenn wir in Java mit Processing programmieren, binden wir Processing als Bibliothek in unser Programm ein. Die Processing Bibliothek enthält 2 Klassen, deren statische Eigenschaften für uns wichtig sind: <span style="font-family: andale mono, monospace;">PApplet</span> und <span style="font-family: andale mono, monospace;">PConstants.</span></p>
+<h3>PApplet</h3>
+<p>In dieser Klasse befinden sich fast alle Processing Methoden, wie z.B.</p>
+<ul>
+<li><span style="font-family: andale mono, monospace;">rect(), fill(), size(), translate() ...</span> <em>(nicht</em> statische Methoden - benötigen ein Grafikfenster)</li>
+<li><span style="font-family: andale mono, monospace;">dist(), map(), hour(), ...</span> (statische Methoden - benötigt für Operationen auch ohne Grafikfenster)</li>
+</ul>
+<p><strong>WICHTIG:</strong> Bei der <span style="font-family: andale mono, monospace;">PApplet</span> Klasse muss zwischen den statischen und den <em>nicht</em> statischen Methoden unterschieden werden.</p>
+<ul>
+<li>Die <em>nicht</em> statischen Methoden können nur auf Objekte der <span style="font-family: andale mono, monospace;">PApplet</span> Klasse angewendet werden. Dabei handelt es sich um das Grafikfenster. Im obigen Beispiel dies das <span style="font-family: andale mono, monospace;">window</span> Objekt, welches wir aus der <span style="font-family: andale mono, monospace;">Window</span> Klasse erstellt haben und welche die <span style="font-family: andale mono, monospace;">PApplet</span> Klasse erweitert. Bei den nicht statischen Methoden handelt es sich um Methoden, die zu einem konkreten Grafikfenster gehören, wie z.B. <span style="font-family: andale mono, monospace;">fill(), ellipse(), size(),</span> da sie die Ausgabe auf dem Grafikfenster beeinflussen.</li>
+<li>Statische Methoden können über die <span style="font-family: andale mono, monospace;">PApplet</span> Klasse statisch verwendet werden. Dabei handelt es sich um Methoden, welche unabhängig von einem Grafikfenster sind, wie z.B. mathematische Methoden wie <span style="font-family: andale mono, monospace;">ceil() und pow()</span>.</li>
+</ul>
+<h3>PConstants</h3>
+<p>In dieser Klasse befinden sich viele wichtige Konstanten, wie z.B.</p>
+<ul>
+<li><span style="font-family: andale mono, monospace;">CENTER, CORNER, CORNERS, ...</span> (benötigt für <span style="font-family: andale mono, monospace;">rectMode()</span> oder <span style="font-family: andale mono, monospace;">ellipseMode()</span> )</li>
+<li><span style="font-family: andale mono, monospace;">LEFT, UP, RIGHT, DOWN, ...</span> (benötigt für Tasteneingaben)</li>
+<li><span style="font-family: andale mono, monospace;">PI, TWO_PI, ...</span> (allgemeine mathematische Konstanten)</li>
+</ul>
+<p><strong>Beispiel</strong></p>
+<p>Ein typischer Anwendungsfall ist, wenn ich zum Beispiel in meiner Klasse <span style="font-family: andale mono, monospace;">Ball</span> aus dem obigen Beispiel den <span style="font-family: andale mono, monospace;">ellipseMode</span> auf <span style="font-family: andale mono, monospace;">CORNER</span> setzen möchte. In diesem Fall nutze ich die <em>nicht</em> statische Methode <span style="font-family: andale mono, monospace;">ellipseMode()</span> meines <span style="font-family: andale mono, monospace;">window</span> Objekts und die statische Konstante <span style="font-family: andale mono, monospace;">CORNER</span> der <span style="font-family: andale mono, monospace;">PConstants</span> Klasse. Außerdem könnte ich den Abstand des Balls zum rechten Rand auch mithilfe der statischen Methode <span style="font-family: andale mono, monospace;">dist()</span> der <span style="font-family: andale mono, monospace;">PApplet</span> Klasse überprüfen. Die <span style="font-family: andale mono, monospace;">Ball</span> Klasse würde nun folgendermaßen aussehen:</p>
+<div class="highlighted-code language-java line-numbers hightlight-1and2and26and39">
+<div>
+<pre><code>import processing.core.PApplet;
+import processing.core.PConstants;
+
+public class Ball {
+
+    private Window window;
+    private float x;
+    private float y;
+    private float geschwindigkeit;
+    private int durchmesser;
+    private int grauwert;
+
+    Ball (Window window, float x, float y, float geschwindigkeit, int durchmesser, int grauwert) {
+        this.window = window;
+        this.x = x;
+        this.y = y;
+        this.geschwindigkeit = geschwindigkeit;
+        this.durchmesser = durchmesser;
+        this.grauwert = grauwert;
+    }
+
+    void zeichnen () {
+
+        // Nicht statische Methode ellipseMode wird auf window angewendet
+        // Statische Konstante wird über PConstants abgerufen
+        window.ellipseMode(PConstants.CORNER);
+
+        window.fill(grauwert);
+        window.circle(x,y, durchmesser);
+
+
+    }
+
+    void bewegen () {
+        x += geschwindigkeit;
+
+        // Nach links setzen, wenn der Ball rechts den Bildschirm verlassen hat
+        // Statische Methode dist() der PApplet Klasse
+        float d = PApplet.dist(x, window.height/2, window.width, window.height/2);
+        if(d &lt;= 0) {
+            x = -durchmesser;
+        }
+    }
+}
+</code></pre>
+</div>
+</div>
+<h1>Übungen</h1>
+<h2>Aufgabe</h2>
+<p><strong>Uhrzeit anzeigen</strong><br />Erstelle ein Java-Projekt, das Processing verwendet und in der Mitte des Grafikfensters die akutelle Uhrzeit anzeigt. Erstelle hierfür eine eigene Klasse <span style="font-family: andale mono, monospace;">Uhrzeit,</span> welche alle Daten und alles Verhalten enthält (ähnlich, wie die Klasse <span style="font-family: andale mono, monospace;">Ball).</span> Nutze für die Darstellung der Uhrzeit die Processing Methoden <span style="font-family: andale mono, monospace;">hour(), minute()</span> und <span style="font-family: andale mono, monospace;">second().</span></p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Um von einer anderen Klasse aus auf dem Processing-Fenster Methoden ausführen zu können, müssen wir an diese Klasse eine Referenz auf ein Objekt der <span style="font-family: andale mono, monospace;">PApplet</span> Klasse übergeben.</li>
+<li>Auf statische Eigenschaften von Processing kann über die <span style="font-family: andale mono, monospace;">PApplet</span> und die <span style="font-family: andale mono, monospace;">PConstants</span> Klasse zugegriffen werden.</li>
+<li>In beiden Fällen muss in der jeweiligen Datei die Processing Bibliothek eingbunden werden mithilfe von <span style="font-family: andale mono, monospace;">import processing.core.PApplet;</span></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="packages_und_api.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="dokumentation.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

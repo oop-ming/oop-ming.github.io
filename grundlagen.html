@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Grundlagen | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li class="current-page-parent"><a href="java.html" class="current-page-parent daddy">Java</a>
+   <ul>
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li id="active"><a href="grundlagen.html" class="active no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="erste_schritte_in_java.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="ausnahmebehandlung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Grundlagen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_128_2" class="block iDevice_content">
+<div class="exe-text"><ol></ol>
+<h1>Einführung in Java</h1>
+<p>In diesem Abschnitt möchten wir uns ansehen, wie man in Java Code schreibt. Vieles davon wird identisch oder ähnlich zu dem sein, wie es in Processing ist. Dennoch schauen wir uns alles einmal an, damit wir wissen, wie man in Java programmiert. Die einzelnen Themen werden nur kurz angeschnitten und nicht ausführlich erklärt, da diese Grundlagen vorausgesetzt werden.</p>
+<p>In diesem Abschnitt lernst du:</p>
+<ul>
+<li>Die Grundlagen von Java
+<ul>
+<li>Syntax, Datentypen, Konsolenausgabe, Kontrollstrukturen, Arrays, Methoden und Math.</li>
+</ul>
+</li>
+<li>Die Unterschiede und Gemeinsamkeiten von Processing und Java</li>
+</ul>
+<h1>Syntax</h1>
+<p>Die Syntax von Java ist identisch mit dem von Processing. Hier einige wichtige Punkte:</p>
+<ul>
+<li>Groß- und Kleinschreibung muss beachtet werden</li>
+<li>Semikolons (;) beenden Anweisungen.</li>
+<li>Blöcke werden durch geschweifte Klammern {} definiert.</li>
+<li>Bezeicher
+<ul>
+<li>dürfen nicht mit einem Schlüsselwort der Sprache Java identisch sein, z.B. darf man nicht int oder float als Variablenname verwenden<br />bestehen aus Ziffern (0-9), Buchstaben (a-z, A-Z) und zwei weiteren Zeichen (Unterstrich und $)<br />dürfen nicht mit einer Ziffer beginnen<br />dürfen keine Leerzeichen enthalten und auch keinen Bindestrich (würde als Minus interpretiert werden)</li>
+</ul>
+</li>
+<li>Kommentare können einzeilig oder mehrzeilig sein.
+<ul>
+<li>Einzeilig: <code>// Kommentar</code></li>
+<li>Mehrzeilig: <br /><code>/* </code><br /><code>   Mehrzeiliger Kommentar </code><br /><code>*/</code></li>
+</ul>
+</li>
+</ul>
+<h1>Datentypen</h1>
+<h2>Primitive Datentypen</h2>
+<p>Java unterscheidet zwischen<strong> primitiven Datentypen</strong> und <strong>Referenzdatentypen</strong>. Primitive Datentypen zeichnen sich dadurch aus, dass sie einfach nur einen Wert speichern (also eine Zahl oder einen Wahrheitwert). Sie werden daher auch als <strong>Wertetypen</strong> bezeichnet. Wertetypen kannst du daran erkennen, dass der Datentyp klein geschrieben wird. Dies sind die 8 primitiven Datentypen in Java:</p>
+<table style="width: 100%;" border="1" class="exe-table">
+<thead>
+<tr>
+<td style="width: 33.3333%;">Primitiver Typ</td>
+<td style="width: 33.3333%;">Beschreibung</td>
+<td style="width: 33.3333%;">Beispiel</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%;">byte, short, <strong>int</strong>, long</td>
+<td style="width: 33.3333%;">Ganze Zahlen (unterschiedlicher Wertebereich)</td>
+<td style="width: 33.3333%;">int x = 10;</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">float, <strong>double</strong></td>
+<td style="width: 33.3333%;">Gleitkommazahlen (unterschiedlicher Wertebereich)</td>
+<td style="width: 33.3333%;">double y = 5.5;</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">char</td>
+<td style="width: 33.3333%;">Einzelne Zeichen</td>
+<td style="width: 33.3333%;">char c = 'A';</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">boolean</td>
+<td style="width: 33.3333%;">Wahrheitswerte</td>
+<td style="width: 33.3333%;">boolean b = true;</td>
+</tr>
+</tbody>
+</table>
+<p>Alle anderen Datentypen sind <strong>Referenztypen</strong>. Diesen Namen haben sie, weil sie keine einfachen Werte speichern, sondern eine Referenz (so etwas wie ein Link) zu einer Stelle im Speicher, wo dann ein Objekt gespeichert ist, dass aus mehreren Daten und Methoden besteht. Aus diesem Grund werden Referenztypen auch als <strong>Objekttypen</strong> bezeichnet. Objekttypen erkennst du daran, dass sie groß geschrieben werden. Objekte werden mithilfe von Klassen ("Bauplänen") erstellt. Das haben wir bereits in der Einführung gelernt. Was man sonst noch alles über Refenztypen bzw. Objekttypen wissen muss, lernen wir also sobald wir uns dem Thema "Klassen und Objekte" widmen.</p>
+<h2>Enum</h2>
+<p>Ein enum (kurz für "enumeration" = Aufzählung) ist eine besondere Klasse und repräsentiert eine Gruppe von Konstanten, die wir selber festlegen können. Um einen enum zu erstellen, nutzt du das Schlüsselwort enum, wählst einen Bezeichner und ergänzt einen Codeblock. Innerhalb des Codeblocks kannst du deine Konstanten auflisten und diese mithilfe von Kommata trennen. Auf diese Konstanten kannst du dann zugreifen mithilfe der Punktnotation:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
+    THURSDAY, FRIDAY, SATURDAY 
+}
+
+System.out.println(Day.MONDAY);</code></pre>
+</div>
+</div>
+<p>Du solltest enum-Typen immer dann verwenden, wenn du einen festen Satz von Konstanten darstellen willst. Dazu gehören natürliche enum-Typen wie die Planeten in unserem Sonnensystem und Datensätze, bei denen du zu Programmstart alle möglichen Werte kennst (z.B. Auswahlmöglichkeiten in einem Menü).</p>
+<p>Hinweis: Gemäß algemeiner Programmierkonventionen werden Konstanten immer in GROßBUCHSTABEN geschrieben und Leerzeichen mit einem Unterstrich _ markiert.</p>
+<h2>Typumwandlung</h2>
+<p>Eine Typumwandlung wird durchgeführt, wenn du den Wert eines primitiven Datentyps einem anderen primitiven Datentyp zuweist. In Java gibt es 2 Arten der Typumwandlung:</p>
+<ul>
+<li><strong>Erweiternde Typumwandlung</strong> (automatisch)
+<ul>
+<li>In diesem Fall weißt du einen kleineren Datentyp einem größeren Datentyp zu</li>
+<li>byte -&gt; short -&gt; char -&gt; int -&gt; long -&gt; float -&gt; double</li>
+</ul>
+</li>
+<li><strong>Reduzierende Typumwandlung</strong> (manuell)
+<ul>
+<li>In diesem Fal weißt du einen größeren Datentyp einem kleineren zu.</li>
+<li>Dies erfolgt manuell, indem der Zieldatentyp in Klammern () vor dem Wert hinzugefügt wird.</li>
+<li>double -&gt; float -&gt; long -&gt; int -&gt; char -&gt; short -&gt; byte</li>
+</ul>
+</li>
+</ul>
+<p><strong>Beispiele</strong></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>byte myByte = 3;
+float myFloat = myByte; // Automatische Typumwandlung, ergibt 3.0
+
+double myDouble = 14.845;
+int myInt = (int) myDouble; // Manuelle Typumwandlung, ergibt 14</code></pre>
+</div>
+</div>
+<h1>Konsolenausgabe</h1>
+<p>Eine einfache Konsolenausgabe erfolgt in Java mit System.out.println().  System ist eine Klasse innerhalb von Java, welche viele wichtige Methoden und Daten bereithält. Sie enthält unter anderem den Abschnitt out (kurz für Output), welcheunter anderen folgende Methoden enthält:</p>
+<ul>
+<li>println(): Kurz für print line - erstellt eine Konsolenausgabe mit Zeilenumbruch am Ende</li>
+<li>print(): Erstellt eine Konsolenausgabe <em>ohne</em> Zeilenumbruch am Ende</li>
+<li>printf(): Erstellt eine <em>formatierte</em> Konsolenausgabe (vgl. String.format())</li>
+</ul>
+<h1>Kontrollstrukturen</h1>
+<p>Kontrollstrukturen steuern den Ablauf deines Programms. Die wichtigsten Kontrollstrukturen sind Fallunterscheidungen (if und switch) und Schleifen (for, while, do-while).</p>
+<div class="exe-fx exe-tabs">
+<h2>if-Anweisung</h2>
+<p>Mithilfe einer if-Anweisung kann eine Fallunterscheidung druchgeführt werden. In den gescheiften Klammern mit eine Bedinung angegeben werden (z.B. in Form eines Vergleichs oder einer booleschen Variable). Eine differenzierte Fallunterscheidung erfolgt mithilfe von else und else if.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>int x = 10;
+if (x &gt; 5) {
+   System.out.println("x ist größer als 5");
+} else {
+   System.out.println("x ist kleiner oder gleich 5");
+}</code></pre>
+</div>
+</div>
+<h2>Switch</h2>
+Mithilfe eines Switchs kann eine Fallunterscheidung durchgeführt werden, wenn eine Variable auf einen bestimmten Wert überprüft werden soll und die möglichen Optionen bekannt sind.<br />
+<div class="highlighted-code language-java">
+<div>
+<pre><code>int tag = 3;
+        
+switch (tag) {
+   case 1:
+      System.out.println("Montag");
+      break;
+   case 2:
+      System.out.println("Dienstag");
+      break;
+   case 3:
+      System.out.println("Mittwoch");
+      break;
+   case 4:
+      System.out.println("Donnerstag");
+      break;
+   case 5:
+      System.out.println("Freitag");
+      break;
+   case 6:
+      System.out.println("Samstag");
+      break;
+   case 7:
+      System.out.println("Sonntag");
+      break;
+   default:
+      System.out.println("Ungültiger Tag");
+   }
+}</code></pre>
+</div>
+</div>
+<br /><br /><br />
+<h2>For-Schleife</h2>
+<p>For-Schliefen sind Zählschleifen, die im Schleifenkopf eine Laufvariable, ein Abbruchkriterium und eine Schleifenaktion festlegen. Eine Schleife kann mithilfe von <code>break</code> abgebrochen werden. Ein Schleifendurchlauf kann mithilfe von <code>continue</code> übersprungen werden.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>for (int i = 0; i &lt; 10; i++) {
+   System.out.println(i);
+}</code></pre>
+</div>
+</div>
+<p></p>
+<p></p>
+<h2>While-Schleife</h2>
+<p>While-Schleifen sind kopfgesteuerte Schleifen, welche ein Abbruchkriterium im Schleifenkopf enthalten.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>int i = 0;
+while (i &lt; 10) {
+   System.out.println(i);
+   i++;
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h2>Do-while-Schleife</h2>
+<p>Do-While-Schleifen sind fußgesteuerte Schleifen, welche ein Abbruchkriterium im Schleifenfuß enthalten.<br /><br /></p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>int i = 0;
+do {
+   System.out.println(i);
+   i++;
+} while (i &lt; 10)</code></pre>
+</div>
+</div>
+<h2>try-Catch</h2>
+Ein try-Catch-Block ist eine Struktur, um Ausnahmen (Exceptions) abzufangen:<br /><br />
+<div class="highlighted-code language-java">
+<div>
+<pre><code>int a = 3;
+int b =  0;
+
+try {
+
+   System.out.println(a / b);
+
+} catch (ArithmeticException e) {
+
+   System.out.println("Division durch 0 nicht möglich!");
+
+}</code></pre>
+</div>
+</div>
+Das Thema Ausnahmebehandlung wird im Abschnitt "<a href="ausnahmebehandlung.html" target="_blank" title="Ausnahmebehandlung" rel="noopener">Ausnahmebehandlung</a>" ausführlicher erklärt.</div>
+<h1>Arrays</h1>
+<p>Arrays sind Sammlungen von Elementen desselben Datentyps. Arrays können mehrere Dimensionen haben. Das bedeutet, dass in einem Array-Element ein weiterer Array gespeichert ist. Arrays haben in der ersten Dimension eine feste Länge, welche bei der Deklaration angegeben werden muss. Mithilfe des Index, kann auf einzelne Elemente zugegriffen werden. Der Index beginnt bei 0. Bei Arrays handelt es sich um Objekttypen. </p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Kurze Schreibweise
+int[] zahlen = {1, 2, 3, 4, 5};
+System.out.println(zahlen[0]); // Gibt "1" aus
+
+// Lange Schreibweise
+int[][] werte = new int[2][2];
+werte[0][0] = 1;
+werte[0][1] = 2;
+werte[1][0] = 3;
+werte[1][1] = 4;
+
+System.out.println(werte[0][1]); // Gibt "2" aus</code></pre>
+</div>
+</div>
+<h1>Methoden</h1>
+<p>Methoden sind sind Codeblöcke, welche nur dann ausgeführt werden, wenn sie aufgerufen werden. Methoden werden auch häufig als <strong>Funktionen</strong> bezeichnet. Methoden werden verwendet, um Code zu strukturieren und Code wiederzuverwenden. Sobald eine Reihe von Operationen mehrmals ausgeführt werden soll, ist es sinnvoll sie in einer Methode zusammenzufassen. Methoden können Daten entgegennehmen in Form von Parametern. Außerdem können sie Daten zurückgeben in Form von Rückgabewerten.</p>
+<p><strong>Wichtig</strong>: In Java können Methoden nur <em>innerhalb</em> von Klassen verwendet werden!</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Main {
+  public static void main(String[] args) {
+
+    // Aufruf der Methode ohne Parameter und Rückgabewert
+    gruesseWelt();
+
+    // Aufruf der Methode addiere mit zwei Parametern
+    int ergebnis = addiere(5, 3);
+    System.out.println("Das Ergebnis der Addition ist: " + ergebnis);
+  }
+
+  // Definition einer einfachen Methode ohne Parameter und Rückgabewert
+  public static void gruesseWelt() {
+    // Diese Methode gibt einfach einen Text aus
+    System.out.println("Hallo Welt!");
+  }
+
+  // Definition einer Methode mit zwei Parametern und einem Rückgabewert
+  public static int addiere(int zahl1, int zahl2) {
+    // Diese Methode addiert zwei Zahlen und gibt das Ergebnis zurück
+    int summe = zahl1 + zahl2;
+    return summe; // Rückgabe des Ergebnisses
+  }
+}</code></pre>
+</div>
+</div>
+<h2>Überladung</h2>
+<p>Methoden können in Java überladen werden. Das bedeutet, dass mehr als eine Definition für diese Methode vorliegt. Diese Definitionen unterscheiden sich anhand der Parameter (Anzahl und Reihenfolge). Methoden-Überladung wird häufig eingesetzt, um Standardwerte zu setzen, wenn z.B. keine Daten vorliegen.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Main {
+  public static void main(String[] args) {
+
+    // Aufruf der Methode ohne Parameter 
+    System.out.println(hallo()); // Ausgabe: Hallo du!
+    // Aufruf der Methode ohne Parameter 
+    System.out.println(hallo("Ingrid")); // Ausgabe: Hallo Ingrid!
+  }
+
+  // Definition einer Methode ohne Parameter
+  public static String hallo() {
+    return "Hallo du!"; // Rückgabe der Begrüßung mit Name
+  }
+
+  // Definition einer Methode mit Parameter
+  public static String hallo(String name) {
+    return "Hallo " + name + "!"; // Rückgabe der Begrüßung mit Name
+}</code></pre>
+</div>
+</div>
+<h1>Modifikatoren</h1>
+<p>Modifikatoren werden in Java verwendet, um die Sichtbarkeit, Lebensdauer und Veränderbarkeit von Elementen festzulegen. Ein paar Modifikatoren sind und bereits begegnet, wie z.B. <span style="font-family: andale mono, monospace;">final, public</span> und <span style="font-family: andale mono, monospace;">static.</span> Modifikatore lassen sich in 2 Gruppen einteilen: <strong>Zugriffsmodifikatoren</strong> und <strong>Nicht-Zugriffsmodifiaktoren</strong>.</p>
+<h2>Zugriffsmodifikatoren</h2>
+<p>Zugriffsmodifikatoren steuern die Sichbarkeit und Klassen, Methoden und Attributen. In Java gibt es 4 Zugriffsmodifkatoren:</p>
+<table style="width: 100%;" border="1" class="exe-table">
+<thead>
+<tr>
+<td style="width: 25%;">Modifikator</td>
+<td style="width: 74.437%;">Beschreibung</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 25.563%;"><span style="font-family: andale mono, monospace;">public</span> (öffentlich)</td>
+<td style="width: 74.437%;">Diese Klasse (bzw. das Attribut, die Methode) ist von jeder anderen Klasse aus zugänglich.</td>
+</tr>
+<tr>
+<td style="width: 25.563%;"><span style="font-family: andale mono, monospace;">protected</span> (geschützt)</td>
+<td style="width: 74.437%;">Diese Klasse (bzw. das Attribut, die Methode) ist innerhalb seines eigenen Pakets und von Unterklassen zugänglich.</td>
+</tr>
+<tr>
+<td style="width: 25.563%;"><span style="font-family: andale mono, monospace;">private</span> (privat)</td>
+<td style="width: 74.437%;">Diese Klasse (bzw. das Attribut, die Methode) ist nur innerhalb seiner eigenen Klasse zugänglich.</td>
+</tr>
+<tr>
+<td style="width: 25.563%;"><em>default</em> (kein Schlüsselwort)</td>
+<td style="width: 74.437%;">Diese Klasse (bzw. das Attribut, die Methode) ist nur innerhalb seines eigenen Pakets zugänglich.</td>
+</tr>
+</tbody>
+</table>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Öffentliche Zahl
+public class Beispiel {
+    public int oeffentlicheZahl;
+    protected int geschuetzteZahl;
+    int defaultZahl; // Standard Zugriff
+    private int privateZahl;
+}</code></pre>
+</div>
+</div>
+<p><span class="listed-menu css-1kkg4t3">In diesem Beispiel ist <span style="font-family: andale mono, monospace;">oeffentlicheZahl</span> von überall zugänglich, <span style="font-family: andale mono, monospace;">geschuetzteZahl</span> ist innerhalb des Pakets und der Subklassen zugänglich, <span style="font-family: andale mono, monospace;">defaultZahl</span> ist innerhalb des Pakets zugänglich und <span style="font-family: andale mono, monospace;">privateZahl</span> ist nur innerhalb der Klasse <span style="font-family: andale mono, monospace;">Beispiel</span> zugänglich.</span><span class="listed-menu css-1kkg4t3"></span></p>
+<h2>Nicht-Zugriffsmodifikatoren</h2>
+<p class="p-margin">Nicht-Zugriffsmodifikatoren bieten zusätzliche Funktionen wie die Kontrolle der Vererbung, die Gewährleistung der Unveränderlichkeit und die Definition besonderer Eigenschaften. </p>
+<p>Für Klassen gibt es die Modifikatoren final und abstract:</p>
+<table style="width: 100%; height: 100px;" border="1" class="exe-table">
+<thead>
+<tr style="height: 25px;">
+<td style="width: 25%; height: 25px;">Modifikator</td>
+<td style="width: 72.6856%; height: 25px;">Beschreibung</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 50px;">
+<td style="width: 27.3144%; height: 50px;"><strong><span style="font-family: andale mono, monospace;">final</span> (final)</strong></td>
+<td style="width: 72.6856%; height: 50px;">
+<p>Die Klasse kann nicht von anderen Klassen vererbt werden.</p>
+<p><span style="font-size: 10pt;">Mehr zumThema Vererbung lernen wir im Kapitel <a href="vererbung.html">Vererbung</a>.</span></p>
+</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 27.3144%; height: 25px;"><strong><span style="font-family: andale mono, monospace;">abstract</span> (abstrakt)</strong></td>
+<td style="width: 72.6856%; height: 25px;">
+<p>Die Klasse kann nicht verwendet werden, um Objekte zu erstellen (Um auf eine abstrakte Klasse zuzugreifen, muss sie von einer anderen Klasse vererbt werden.</p>
+<p><span style="font-size: 10pt;">Mehr zum Thema Vererbung und Abstraktion lernen wir im Kapitel <a href="vererbung.html">Vererbung</a> und <a href="abstraktion.html">Abstrakte Klassen und Interfaces</a>)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Für Attribute und Methoden gibt es folgden Modifikatoren:</p>
+<table style="width: 100%; height: 201px;" border="1" class="exe-table">
+<thead>
+<tr style="height: 25px;">
+<td style="width: 25%; height: 25px;">Modifikator</td>
+<td style="width: 71.9349%; height: 25px;">Beschreibung</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 28px;">
+<td style="width: 28.0651%; height: 28px;"><strong><span style="font-family: andale mono, monospace;">final</span> (final)</strong></td>
+<td style="width: 71.9349%; height: 28px;">Attribute und Methoden können nicht überschrieben/verändert werden</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 28.0651%; height: 23px;"><strong><span style="font-family: andale mono, monospace;">static</span> (statisch)</strong></td>
+<td style="width: 71.9349%; height: 23px;">Attribute und Methoden gehören zur Klasse, nicht zum Objekt</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 28.0651%; height: 25px;"><strong><span style="font-family: andale mono, monospace;">abstract</span> (abstrakt)</strong></td>
+<td style="width: 71.9349%; height: 25px;">
+<p>Kann nur in einer abstrakten Klasse verwendet werden und kann nur auf Methoden verwendet werden. Die Methode hat keinen Codeblock, zum Beispiel abstract void run();. Der Codeblockwird in der Subklasse erstellt.</p>
+<p><span style="font-size: 10pt;">Mehr zum Thema Vererbung und Abstraktion lernen wir im Kapitel <a href="vererbung.html">Vererbung</a> und <a href="abstraktion.html">Abstrakte Klassen und Interfaces</a>)</span></p>
+</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 28.0651%; height: 25px;"><strong><span style="font-family: andale mono, monospace;">transient</span> (</strong><strong>transient)</strong></td>
+<td style="width: 71.9349%; height: 25px;">Verhindert die Serialisierung von Klassenfeldern.</td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 28.0651%; height: 50px;"><strong><span style="font-family: andale mono, monospace;">synchronized</span> (synchronisiert)</strong></td>
+<td style="width: 71.9349%; height: 50px;">Wird im Multithreading verwendet, um sicherzustellen, dass immer nur ein Thread auf eine Methode oder einen Block zugreifen kann.</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 28.0651%; height: 25px;"><strong><span style="font-family: andale mono, monospace;">volatile</span> (flüchtig)</strong></td>
+<td style="width: 71.9349%; height: 25px;">Stellt sicher, dass der Wert einer Variablen immer aus dem Hauptspeicher gelesen wird.</td>
+</tr>
+</tbody>
+</table>
+<p>Hinweis: Die Themen Serialisierung und Multithreading werden wir in diesem Modul nicht behandeln.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>public class Beispiel {
+    public static final int KONSTANTE = 100;
+
+    public static void main(String[] args) {
+        System.out.println("Constant Value: " + CONSTANT);
+    }
+}</code></pre>
+</div>
+</div>
+<h1>Math</h1>
+<p>Die Klasse Math enthält viele Methoden mit deren Hilfe mathematische Operationen durchgeführt werden können. Hier sind einige Beispiele:</p>
+<table class="exe-table" style="margin: 0;">
+<tbody>
+<tr>
+<th style="width: 22%;">Methode</th>
+<th style="width: 57%;">Beschreibung</th>
+<th style="width: 21%;">Rückgabetyp</th>
+</tr>
+<tr>
+<td>abs(x)</td>
+<td>Gibt den absoluten Wert von x zurück</td>
+<td>double|float|int|long</td>
+</tr>
+<tr>
+<td>atan2(y,x)</td>
+<td>Gibt den Winkel Theta aus der Umwandlung von rechtwinkligen Koordinaten (x, y) in Polarkoordinaten (r, Theta) zurück.</td>
+<td>double</td>
+</tr>
+<tr>
+<td>ceil(x)</td>
+<td>Gibt den nach oben als Ganzzahl gerundeten Wert von x zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>cos(x)</td>
+<td>Gibt den Cosinus von x (im Bogenmaß) zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>floor(x)</td>
+<td>Gibt den nach unten als Ganzzahl gerundeten Wert von x zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>max(x, y)</td>
+<td> Gibt den größeren Wert  zurück</td>
+<td>double|float|int|long</td>
+</tr>
+<tr>
+<td>min(x, y)</td>
+<td>Gibt den kleineren Wert zurück</td>
+<td>double|float|int|long</td>
+</tr>
+<tr>
+<td>pow(x, y)</td>
+<td>Gibt denWert von x hoch y zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>random()</td>
+<td>Gibt eine Zufallszahl zwischen 0 und 1 zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>round(x)</td>
+<td>Gibt den als Ganzzahl gerundeten Wert von x zurück</td>
+<td>long|int</td>
+</tr>
+<tr>
+<td>sin(x)</td>
+<td>Gibt den Sinus von x (x is im Bogenmaß) zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>sqrt(x)</td>
+<td>Gibt Wurzel von x zurück</td>
+<td>double</td>
+</tr>
+<tr>
+<td>tan(x)</td>
+<td>Gibt den Tangens x (in Bogenmaß) zurück</td>
+<td>double</td>
+</tr>
+</tbody>
+</table>
+<h1>Übungsaufgaben</h1>
+<h2>Aufgaben</h2>
+<ol>
+<li>Schreibe ein Programm, das zwei Zahlen einliest und ihre Summe berechnet.</li>
+<li>Erstelle ein Array mit den Zahlen von 1 bis 10 und gib alle Zahlen in umgekehrter Reihenfolge aus.</li>
+<li>Schreibe ein Programm, das überprüft, ob eine eingegebene Zahl gerade oder ungerade ist.</li>
+</ol>
+<h2>Fragen</h2>
+<ol>
+<li>Wie unterscheidet sich ein Array von einer normalen Variablen?</li>
+<li>Worin unterscheiden sich die verschiedenen Befehle, mit denen eine Konsolenausgabe erstellt werden kann?</li>
+<li>Worin unterscheiden sich Methoden/Funktionen in Processing und Java?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Die Syntaxregeln in Java sind identisch mit den Regeln von Processing und müssen zwingend eingehalten werden, damit dein Programm ausführbar ist.</li>
+<li>In Java werden Datentypen unterschieden nach primitiven Datentypen und Referenztypen.
+<ul>
+<li>Primitve Datentypen speichern einfache Werte und werden klein geschrieben. Daher werden sie auch als <strong>Wertetyp</strong> bezeichnet</li>
+<li>Referenztypen speichern Objekte und werde groß geschrieben. Daher werden sie auch als <strong>Objekttyp</strong> bezeichnet.</li>
+</ul>
+</li>
+<li>Mithilfe des Datentyp enum kann ein Set von Konstanten definiert werden.</li>
+<li>Die Konsolenausgabe erfolgt in Java mithilfe von System.out.println() (alternativ geht auch print() oder printf() am Ende)</li>
+<li>In Java gibt es 2 Arten der Typumwandlung für pirmitive Datentypen
+<ul>
+<li>Die erweiternde Typumwandlung in einen größeren Datentyp erfolgt autmatisch.</li>
+<li>Die reduzierende Typumwandlung in einen kleineren Datentyp erfolgt manuell, in dem der Ziel-Datentyp in Klammern () vor den zu konvertierenden Wert gesetzt wird.</li>
+</ul>
+</li>
+<li>In Java gibt es Fallunterscheidungen und Schleifen
+<ul>
+<li>Fallunterscheidung: if und switch</li>
+<li>Schleifen: for, while und do-while</li>
+<li>Diese Kontrollstrukturen sind identisch mit denen in Processing.</li>
+<li>Ausnahmebehandlungen funktionieren in Java, so wie in Processing, allerdings steigen wir in diesem Skript etwas tiefer in das Thema ein.</li>
+</ul>
+</li>
+<li>Arrays sind Sammlungen gleichartiger Elemente und müssen in ihrem Typ definiert werden.
+<ul>
+<li>Es gibt ein-und mehrdimensionale Arrays</li>
+<li>Auf die einzelnen Elemente kann mithilfe des Index zugegriffen werden, welcher bei 0 beginnt</li>
+<li>Arrays in JAva sind identisch mit Arrays in Processing</li>
+</ul>
+</li>
+<li>Methoden sind Gruppen von Befehlen, die in einem Coeblock zusammengefasst werden, um Struktur und Wiederverwendbarkeit zu schaffen.
+<ul>
+<li>Methoden haben wir in Processing immer als Funktionen bezeichnet, sind aber dasselbe</li>
+<li>In Java können Methoden nur innerhalb von Klasser erstellt werden.</li>
+</ul>
+</li>
+<li>Die Klasse Math bietet eine Reihe von vorgefertigten Befehlen, mit denen gängige arithmetische Operationen durchgeführt werden können.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="erste_schritte_in_java.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="ausnahmebehandlung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

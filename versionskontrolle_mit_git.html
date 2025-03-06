@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Versionskontrolle mit Git | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li><a href="java.html" class="daddy">Java</a>
+   <ul class="other-section">
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+   <li id="active"><a href="versionskontrolle_mit_git.html" class="active no-ch">Versionskontrolle mit Git</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="design_patterns.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Versionskontrolle mit Git</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id18">
+<div class="iDevice emphasis0" >
+<div id="ta18_144_2" class="block iDevice_content">
+<div class="exe-text"><p>.TODO</p>
+<p>Git ist für viele Studierende neu, insbesondere das Verständnis von Konzepten wie Staging Area, Commit-Historie oder Merge-Konflikten.</p>
+<p><br />Grundlegende Befehle wie git init, git add, git commit, git push und deren Bedeutung im Workflow.<br />Die Funktion der Staging Area und warum sie wichtig ist.<br />Unterschiede zwischen lokalem Repository und Remote Repository (origin).<br />Einfache Beispiele für Zusammenarbeit im Team mit GitLab (z. B. Pull Requests, Konfliktlösung).</p>
+<p>Der Abschnitt zu UML-Klassendiagrammen ist zu knapp; Es fehlen konkrete Erklärungen zu den Elementen eines Klassendiagramms (z. B. Klassenname, Attribute, Methoden, Beziehungen) sowie Regeln und Notationen.<br />Den UML-Teil erweitern: Alle Elemente eines Klassendiagramms (Oberer Bereich: Klassenname, mittlerer Bereich: Attribute, unterer Bereich: Methoden) detailliert beschreiben; Ergänzungen zu Beziehungen (Vererbung, Aggregation etc.) und Notationen (z. B. Multiplikatoren, Sichtbarkeitsmodifikatoren) einfügen; ein vollständiges Beispiel (z. B. Mediaplayer-System) beifügen.<br />Unzureichende Beschreibung zur Einrichtung und Nutzung von Javadoc (z. B. fehlende Schritt-für-Schritt-Anleitungen zur Generierung der Dokumentation sowohl in der Kommandozeile als auch in IntelliJ IDEA)<br />Detaillierte Anleitung zur Erstellung von Javadoc einfügen: Schritt-für-Schritt-Erklärungen mit konkreten Befehlen (z. B. javadoc -d doc -sourcepath src -subpackages &lt;paketname&gt;) und Hinweise zur Nutzung der IntelliJ-GUI (Tools &gt; Generate JavaDoc…); alle relevanten Javadoc-Tags (@param, @return, @throws, @see) und deren Anwendung erläutern.</p>
+<p>Viele Studierende haben keine Erfahrung mit UML-Diagrammen oder wissen nicht, wie sie diese praktisch anwenden können.</p>
+<p><br />Die grundlegenden Elemente eines Klassendiagramms: Klassenname, Attribute, Methoden.<br />Beziehungen zwischen Klassen: Vererbung, Assoziation, Aggregation, Komposition.<br />Regeln für die Erstellung eines sauberen Klassendiagramms (z. B. konsistente Notation).<br />Ein vollständiges Beispiel eines Klassendiagramms für ein einfaches System (z. B. Mediaplayer).<br />6. Javadoc-Dokumentation mit Schritt-für-Schritt-Anleitungen.</p>
+<p></p>
+<p>Viele Studierende wissen nicht, wie sie Javadoc einrichten oder verwenden sollen.</p>
+<p><br />Wie man Javadoc-Kommentare schreibt (@param, @return, @throws etc.).<br />Schritt-für-Schritt-Anleitung zur Generierung der Dokumentation in IntelliJ IDEA oder der Kommandozeile.<br />Beispiele für gut dokumentierte Klassen und Methoden.<br />Die Bedeutung einer vollständigen Dokumentation für Teamprojekte.</p>
+<h2>1. Einleitung</h2>
+<p>Hier folgt das Kapitel Programmierprinzipien – ein umfassender Leitfaden, der zeigt, wie Versionskontrolle und Dokumentation als Grundlage für erfolgreiche Teamprojekte dienen. Wir beleuchten dabei detailliert, wie Git – sowohl über die Kommandozeile als auch direkt in der IntelliJ IDEA – eingesetzt wird, um mittels grundlegender Befehle wie git init, git add, git commit, git push, git pull und git merge den Code in einem kollaborativen Umfeld zu verwalten. Anschließend erklären wir, welche Rolle eine saubere Dokumentation spielt, wie UML-Diagramme und Javadoc-Beispiele konkret umgesetzt werden und welche Folgen unzureichende Dokumentation (etwa ein niedriger Truck-Factor) haben kann</p>
+<p>In interdisziplinären Projekten – etwa im Studiengang Medieningenieur – ist es entscheidend, dass mehrere Teammitglieder gleichzeitig an einer Codebasis arbeiten können. Eine strukturierte Versionskontrolle mittels Git verhindert, dass einzelne Änderungen verloren gehen, und ermöglicht es, den Projektfortschritt jederzeit nachvollziehen zu können. Gleichzeitig stellt eine aussagekräftige Dokumentation sicher, dass neu eingestellte Teammitglieder oder Kollegen schnell den Überblick über die Codearchitektur gewinnen. In diesem Kapitel erfährst du, wie Du beides – Versionskontrolle und Dokumentation – im Rahmen eines größeren Softwareprojekts effizient umsetzt.</p>
+<h2>2. Versionskontrolle und Zusammenarbeit mit Git</h2>
+<h3>2.1 Grundlagen von Git</h3>
+<p>Git ist ein verteiltes Versionskontrollsystem, das den gesamten Projektverlauf als eine Reihe von Snapshots (Commits) speichert. Dabei wird unterschieden in:</p>
+<ul>
+<li>Arbeitsverzeichnis (Working Directory): Hier bearbeitest du deine Quellcodedateien.</li>
+<li>Staging Area (Index): In diesem Zwischenspeicher werden selektiv Dateien markiert, die in den nächsten Commit aufgenommen werden sollen.</li>
+<li>Repository: Hier werden alle erstellten Commits dauerhaft gespeichert.</li>
+</ul>
+<p>Git speichert Änderungen durch den Einsatz von sogenannten Snapshots. Mit der Trennung in Staging und Commit-Phase hast du die volle Kontrolle darüber, welche Änderungen du dokumentieren möchtest.</p>
+<h3>2.2 Detaillierte Schritt‑für‑Schritt-Anleitungen: Kommandozeile</h3>
+<h4>2.2.1 Git am Anfang: Repository initialisieren</h4>
+<ol>
+<li>Git installieren:<br />Lade Git von der offiziellen Website (https://git-scm.com) herunter und installiere es.</li>
+<li>Arbeitsverzeichnis anlegen und Repository initialisieren:<br />Öffne die Kommandozeile, navigiere in das Verzeichnis deines Projekts und führe folgenden Befehl aus:<br />
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git init</code></pre>
+</div>
+</div>
+Dadurch wird ein neues Git-Repository (ein versteckter Ordner namens .git) im Projektverzeichnis erstellt.</li>
+</ol>
+<h3>2.2.2 Dateien zum Staging-Bereich hinzufügen</h3>
+<p>Bevor du einen Snapshot machst, musst du die Änderungen „stagen“. Dies geschieht mit:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git add &lt;Dateiname&gt;</code></pre>
+</div>
+</div>
+<p>oder, um <em>alle</em> geänderten Dateien hinzuzufügen:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git add .</code></pre>
+</div>
+</div>
+<p>Hierbei werden die Änderungen im Staging-Bereich (Index) zusammengetragen.</p>
+<h4>2.2.3 Einen Commit erstellen</h4>
+<p>Nachdem die gewünschten Dateien im Staging-Bereich liegen, erstellst du einen Commit:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code> git commit -m "Erste Commit-Nachricht: Projekt initialisiert"</code></pre>
+</div>
+</div>
+<p>Der Commit speichert einen Snapshot der aktuell gestagten Dateien in deiner lokalen Historie. Die Commit-Nachricht sollte kurz und prägnant beschreiben, was geändert wurde.</p>
+<h4>2.2.4 Branches verwalten</h4>
+<p>Um parallel an neuen Features zu arbeiten, werden Branches genutzt:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git branch feature/neues-feature
+git checkout feature/neues-feature</code></pre>
+</div>
+</div>
+<p>Alternativ:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git checkout -b feature/neues-feature</code></pre>
+</div>
+</div>
+<p>Dadurch wird ein neuer Branch erstellt und direkt gewechselt.</p>
+<h4>2.2.5 Änderungen integrieren: Merge</h4>
+<p>Wenn du mit der Arbeit in einem Feature-Branch fertig bist, möchtest du die Änderungen in den Hauptbranch (z. B. main oder master) integrieren:</p>
+<ol>
+<li>Wechsle in den Hauptbranch:<br />
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git checkout main</code></pre>
+</div>
+</div>
+</li>
+<li>Führe einen Merge durch:<br />
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git merge feature/neues-feature</code></pre>
+</div>
+</div>
+</li>
+</ol>
+<p>Bei einfachen Änderungen werden Merge-Konflikte selten; sollte es jedoch zu Konflikten kommen, zeigt Git an, in welchen Dateien Konflikte vorliegen. In solchen Fällen bearbeitest du die entsprechenden Dateien manuell, markierst die Konfliktbereiche (Git fügt spezielle Markierungen ein) und führst anschließend einen weiteren Commit durch.</p>
+<h4>2.2.6 Remote Repositories: Origin und GitLab</h4>
+<p>Remote Repositories ermöglichen es, dass dein lokales Repository mit einem zentralen Server (z. B. GitLab) synchronisiert wird.</p>
+<ul>
+<li>Remote hinzufügen:<br />Um ein Remote-Repository hinzuzufügen, verwende:<br />
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git remote add origin https://gitlab.com/USERNAME/REPOSITORY.git</code></pre>
+</div>
+</div>
+Dabei bezeichnet „origin“ den Standardnamen des Remote-Repositories.</li>
+<li>Änderungen pushen:<br />Nach dem Hinzufügen des Remotes werden die lokalen Commits ins Remote-Repository übertragen:<br />
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git push -u origin main</code></pre>
+</div>
+</div>
+Das -u-Flag setzt den Upstream für den aktuellen Branch, sodass spätere Push- und Pull-Befehle einfacher auszuführen sind.</li>
+<li>Änderungen abrufen:<br />Um die neuesten Änderungen aus dem Remote-Repository zu erhalten, benutze:<br />
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>git pull</code></pre>
+</div>
+</div>
+Dieser Befehl führt intern ein git fetch gefolgt von einem git merge durch.</li>
+</ul>
+<p>Weitere Remote-Befehle:</p>
+<ul>
+<li>git status: Zeigt den aktuellen Zustand deines Arbeitsverzeichnisses, den Staging-Bereich und die Verbindung zu Remotes an.</li>
+<li>git log: Zeigt die Commit-Historie (mit Hashes, Autor und Nachrichten).</li>
+<li>git diff: Zeigt Unterschiede zwischen Dateien—entweder vor oder nach dem Stagen.</li>
+</ul>
+<h3>2.3 Git in der IntelliJ IDEA</h3>
+<p>IntelliJ IDEA bietet eine sehr benutzerfreundliche grafische Oberfläche für Git – ideal für Einsteiger und zur Visualisierung der Git-Historie.</p>
+<h4>2.3.1 Repository in IntelliJ einrichten</h4>
+<ol>
+<li>VCS-Integration aktivieren:<br />Öffne dein Projekt in IntelliJ IDEA und gehe zu VCS &gt; Enable Version Control Integration. Wähle „Git“ aus.</li>
+<li>Erstes Commit:<br />Öffne das Commit Fenster (über VCS &gt; Commit oder durch Drücken von Ctrl+K). IntelliJ zeigt dir alle geänderten Dateien an. Wähle diese aus, füge sie zur Staging Area hinzu und schreibe eine Commit-Nachricht. Anschließend kannst du committen und sofort pushen.</li>
+<li>Branch-Verwaltung:<br />Über das Git-Widget in der rechten unteren Ecke kannst du Branches erstellen, wechseln und mergen. Rechtsklicke auf einen Branch, um Optionen wie Merge oder Rebase auszuwählen.</li>
+<li>Remote Repositories nutzen:<br />Gehe zu VCS &gt; Git &gt; Remotes und füge den Remote-Repository-Link (z. B. von GitLab) hinzu. Mit den Optionen Push und Pull in der IDE kannst du die Änderungen synchronisieren.</li>
+</ol>
+<h4>2.3.2 Visuelle Darstellung</h4>
+<p>IntelliJ IDEA bietet außerdem visuelle Git-Graphen, die die Commit-Historie und das Branching übersichtlich darstellen. Diese Diagramme helfen, den Entwicklungsfluss nachvollziehbar zu machen und Zusammenführungen (Merge) visuell zu überprüfen.</p>
+<h3>2.4 Kollaborative Git-Arbeit: Pull Requests und Merge-Konflikte</h3>
+<p>In Teamprojekten wird häufig mit Pull Requests (PR) gearbeitet, um Code-Reviews und die Integration von Feature-Branches in den Hauptbranch zu erleichtern.</p>
+<ul>
+<li>Pull Request erstellen:<br />Nachdem ein Feature-Branch in das Remote-Repository gepusht wurde, kann über die Weboberfläche (z. B. auf GitLab) ein PR erstellt werden. Im PR werden die Änderungen zusammengefasst, kommentiert und von anderen Teammitgliedern überprüft, bevor der Merge durchgeführt wird.</li>
+<li>Merge-Konflikte:<br />Bei paralleler Bearbeitung können Merge-Konflikte auftreten. In diesem Fall zeigt Git an, welche Dateien betroffen sind. Entwickler beheben Konflikte manuell, indem sie die fehlerhaften Abschnitte editieren und den Konfliktbereich anschließend wieder „stagen“ und committen.</li>
+</ul>
+<p></p>
+<h1>Übungen</h1>
+<h2>Aufgaben</h2>
+<ul>
+<li>Aufgabe 1: Git-Repository einrichten und bearbeiten:
+<ul>
+<li>Erstelle in IntelliJ IDEA ein neues Projekt und initialisiere ein Git-Repository (sowohl über die Kommandozeile als auch über die GUI).</li>
+<li>Führe mehrere Commits durch, indem du Änderungen an Dateien vornimmst, sie mit git add zum Staging hinzufügst und anschließend git commit ausführst.</li>
+<li>Erstelle einen neuen Branch, bearbeite darin eine Datei, löse einen einfachen Merge-Konflikt und merge den Branch in main.</li>
+<li>Füge ein Remote-Repository (z. B. in GitLab) hinzu, pushe deine Commits und erzeuge einen Pull Request, den du anschließend zusammenführst.</li>
+</ul>
+</li>
+<li>Aufgabe 2: Dokumentation erstellen:
+<ul>
+<li>Erstelle ein UML-Klassendiagramm für ein einfaches Mediaplayer-System mit Klassen wie Playlist, Song und MediaLibrary.</li>
+<li>Ergänze den vorhandenen Java-Code mit ausführlichen Javadoc-Kommentaren und generiere die HTML-Dokumentation.</li>
+<li>Diskutiere in einem kurzen Bericht, welche Konsequenzen fehlender Dokumentation für den Truck-Factor haben kann und welchen Einfluss dies auf die Teamarbeit hat.</li>
+</ul>
+</li>
+</ul>
+<h2>Fragen</h2>
+<ul>
+<li>Erkläre den Ablauf von git init, git add, git commit und git push. Wie hängen diese Befehle zusammen?</li>
+<li>Was bedeutet der Begriff „staging area“ in Git, und warum ist das Staging vor dem Commit wichtig?</li>
+<li>Wie wird in Git ein Remote-Repository eingerichtet und welchen Namen hat es standardmäßig? Welche Befehle werden verwendet, um Änderungen mit einem Remote-Repository zu synchronisieren?</li>
+<li>Wie können Pull Requests zu einer höheren Codequalität beitragen und welche Rolle spielen sie im Zusammenführungsprozess von Branches?</li>
+</ul>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Git-Grundlagen:
+<ul>
+<li>Mit git init, git add, git commit und git push werden Änderungen verwaltet und dokumentiert.</li>
+<li>Branches ermöglichen die parallele Bearbeitung, während Merge-Befehle diese Änderungen in den Hauptbranch integrieren.</li>
+<li>Remote-Repositorys (in der Regel unter dem Namen „origin“) sorgen für die Zusammenarbeit über zentrale Server (z. B. GitLab).</li>
+</ul>
+</li>
+<li>Git in IntelliJ IDEA:
+<ul>
+<li>Die IDE bietet visuelle Werkzeuge zur Git-Integration, inklusive Menüoptionen zum Committen, Branch-Wechseln und Mergen.</li>
+<li>Es werden beide Arbeitsweisen gezeigt: Kommandozeile und GUI.</li>
+</ul>
+</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="design_patterns.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

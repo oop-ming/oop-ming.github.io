@@ -61,18 +61,21 @@ body{padding:0;text-align:center}
 	#headerContent{white-space:normal;text-overflow:normal;font-weight:bold}
 }
 /* eXeLearning Style Designer */#content{/*contentBGColor*/background-color:#f9f9f9;}
-.pagination a,#nav-toggler a,#skipNav a{/*nav2BGColor*/background-color:#333333;/*nav2AColor*/color:#ffffff;}
-.pagination a:hover,.pagination a:focus,#nav-toggler a:hover{/*nav2HoverBGColor*/background-color:#555555;}
+#exe-client-search-text{border-color:#00305d;}
+#exe-client-search-submit{/*searchBarButtonBGColor*/background:#00305d;border-color:#00305d;/*searchBarButtonTextColor*/color:#ffffff;}
+.pagination a,#nav-toggler a,#skipNav a{/*nav2BGColor*/background-color:#00305d;/*nav2AColor*/color:#ffffff;}
+.pagination a:hover,.pagination a:focus,#nav-toggler a:hover{/*nav2HoverBGColor*/background-color:#00305d;}
 body{/*bodyBGColor*/background-color:#ffffff;}
-#siteNav,#siteNav a{/*navBGColor*/background-color:#f9f9f9;/*navAColor*/color:#555555;/*navBorderColor*/border-color:#dddddd;}
+#siteNav,#siteNav a{/*navBGColor*/background-color:#f9f9f9;/*navAColor*/color:#222222;/*navBorderColor*/border-color:#dddddd;}
 @media screen and (min-width: 701px) and (max-width: 1015px){#siteNav,#siteNav ul{background-color:#f9f9f9;border-color:#dddddd;}
 #siteNav li{background-color:#f9f9f9;}
 }
-#siteNav a:hover,#siteNav a:focus,#siteNav a.active{/*navHoverBGColor*/background-color:#ffffff;/*navAHoverColor*/color:#000000;}
+#siteNav a:hover,#siteNav a:focus,#siteNav a.active{/*navHoverBGColor*/background-color:#ffffff;/*navAHoverColor*/color:#00305d;}
 @media screen and (min-width: 701px) and (max-width: 1015px){#siteNav li:hover,#siteNav li.sfhover{background-color:#ffffff;}
 }
 .pagination{border-color:#dddddd;}
-#bottomPagination{background-color:#ffffff;}
+#bottomPagination .page-counter{color:#000000;}
+#bottomPagination{background-color:#eeeeee;}
 /* eXeLearning Style Designer (custom CSS) */
 .pagination .print-page{
 display:none;

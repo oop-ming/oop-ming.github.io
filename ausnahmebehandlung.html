@@ -25,24 +25,32 @@
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
-   <li><a href="einfhrung_in_die_objekorientierte_programmierung.html" class="no-ch">Einführung in die objekorientierte Programmierung</a></li>
-   <li class="current-page-parent"><a href="grundlagen_der_javaprogrammierung.html" class="current-page-parent daddy">Grundlagen der Java-Programmierung</a>
+   <li class="current-page-parent"><a href="java.html" class="current-page-parent daddy">Java</a>
    <ul>
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
       <li id="active"><a href="ausnahmebehandlung.html" class="active no-ch">Ausnahmebehandlung</a></li>
-      <li><a href="collections_framework.html" class="no-ch">Collections Framework</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
    </ul>
    </li>
-   <li><a href="klassen_und_objekte.html" class="no-ch">Klassen und Objekte</a></li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
    <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
-   <li><a href="abstrakte_klassen_und_interfaces.html" class="no-ch">Abstrakte Klassen und Interfaces</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
    <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
    <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
-   <li><a href="programmierprinzipien.html" class="no-ch">Programmierprinzipien</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="grundlagen_der_javaprogrammierung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="collections_framework.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="grundlagen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="collections_und_lambda_ausdrcke.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -51,11 +59,18 @@
 <article class="iDevice_wrapper textIdevice" id="id7">
 <div class="iDevice emphasis0" >
 <div id="ta7_134_2" class="block iDevice_content">
-<div class="exe-text"><p>Die Ausnahmebehandlung ist ein zentraler Bestandteil der Softwareentwicklung, da sie es ermöglicht, unerwartete Fehler – sei es durch falsche Nutzereingaben, fehlende Ressourcen oder defekte Hardware – kontrolliert abzufangen und zu behandeln, ohne dass das gesamte Programm abstürzt2. Im Rahmen des Fachs „Objektorientierte Programmierung“ vertiefen wir hier die Konzepte von try‑catch‑Blöcken, throw, throws, finally und die Definition eigener Exceptions, wobei wir auch darauf eingehen, wie diese Mechanismen im Vergleich zu den Erfahrungen in Processing genutzt werden können27.</p>
-<h2>1. Einführung in die Ausnahmebehandlung</h2>
-<p>Stellen Sie sich vor, Sie möchten eine Kaffeemaschine bedienen: Im besten Fall drückt der Benutzer den richtigen Knopf, und der Kaffee wird zubereitet. Wird jedoch versehentlich ein falscher Knopf gedrückt oder ist eine Komponente defekt, muss das System den Fehler erkennen und darüber informieren, ohne komplett auszuschalten2.<br />In der Softwareentwicklung funktioniert die Ausnahmebehandlung ähnlich: Statt dass bei einem Fehler das Programm abrupt beendet wird, werden potenziell fehleranfällige Codeabschnitte in einem geschützten Bereich – dem try‑Block – ausgeführt, und auftretende Fehler werden gezielt abgefangen.</p>
-<h2>2. Try‑Catch-Blöcke</h2>
-<p>Der try‑Block fasst alle Codezeilen zusammen, bei denen ein Fehler auftreten könnte.<br />Kommt ein Fehler (eine „Exception“) vor, wird der reguläre Ausführungsfluss unterbrochen, und die Kontrolle springt zur passenden catch‑Klausel, die den Fehler behandelt27.<br />Ein einfaches Beispiel ist das Teilen durch Null, das zu einer ArithmeticException führt:</p>
+<div class="exe-text"><h1>Einführung</h1>
+<p>Stell dir vor, du möchtest dir morgens um 6:23 Uhr einen Kaffee mit deiner Kaffeemaschine machen: Im besten Fall drückst du den richtigen Knopf, und der Kaffee wird zubereitet. Bist du jedoch übermüdet und drückst einen falscher Knopf gedrückt oder ist eine Komponente defekt (Wassertank leer, Schlauch verkalkt), muss das System den Fehler erkennen und darüber informieren, ohne komplett auszuschalten - oder gar kaputt zu gehen. In der Softwareentwicklung funktioniert die Ausnahmebehandlung ähnlich: Statt dass bei einem Fehler das Programm abrupt beendet wird, werden potenziell fehleranfällige Codeabschnitte in einem geschützten Bereich – dem try‑Block – ausgeführt, und auftretende Fehler werden gezielt abgefangen.</p>
+<p>Die Ausnahmebehandlung ist ein zentraler Bestandteil der Softwareentwicklung, da sie es ermöglicht, unerwartete Fehler – sei es durch falsche Nutzereingaben, fehlende Ressourcen oder defekte Hardware – kontrolliert abzufangen und zu behandeln, ohne dass das gesamte Programm abstürzt. Im Kapitel vertiefen wir hier die Konzepte von try‑catch‑Blöcken, throw, throws, finally und die Definition eigener Exceptions und bauen damit auf den Grundlagen aus dem Modul Programmieren auf.</p>
+<p>In diese Kapitel lernst du:</p>
+<ul>
+<li>Den Aufbau und Einsatz von try-catch-Blöcken</li>
+<li>Das manuelle Werfen einer Exception mithilfe von throw</li>
+<li>Das definieren eigener Exceptions</li>
+</ul>
+<h1>Try‑Catch-Blöcke</h1>
+<p>Der <span style="font-family: andale mono, monospace;">try</span>‑Block fasst alle Codezeilen zusammen, bei denen ein Fehler auftreten könnte. Kommt ein Fehler (eine <span style="font-family: andale mono, monospace;">Exception)</span> vor, wird der reguläre Kontrollfluss unterbrochen, und die Kontrolle springt zur passenden <span style="font-family: andale mono, monospace;">catch</span>‑Klausel, die den Fehler behandelt.</p>
+<p>Ein einfaches Beispiel ist das Teilen durch Null, das zu einer <span style="font-family: andale mono, monospace;">ArithmeticException</span> führt:</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>try {
@@ -66,9 +81,9 @@
 }</code></pre>
 </div>
 </div>
-<p>In diesem Beispiel verhindert der catch‑Block, dass das Programm abstürzt, und gibt stattdessen eine verständliche Fehlermeldung aus.</p>
-<h2>3. Das Schlüsselwort throw und die Deklaration mit throws</h2>
-<p>Manchmal möchte man eine Exception aktiv auslösen – etwa wenn eine Eingabe ungültig ist oder ein bestimmter Zustand nicht erfüllt wird.<br />Hier kommt das Schlüsselwort throw zum Einsatz; es ermöglicht, eine Exception manuell zu „werfen“.<br />Zudem kann eine Methode mit dem Schlüsselwort throws deklarieren, welche Exception(s) sie möglicherweise an den aufrufenden Code weitergibt.</p>
+<p>In diesem Beispiel verhindert der <span style="font-family: andale mono, monospace;">catch</span>‑Block, dass das Programm abstürzt, und gibt stattdessen eine verständliche Fehlermeldung aus.</p>
+<h1>Das Schlüsselwort throw und die Deklaration mit throws</h1>
+<p>Manchmal möchte man eine <span style="font-family: andale mono, monospace;">Exception</span> aktiv auslösen – etwa wenn eine Eingabe ungültig ist oder ein bestimmter Zustand nicht erfüllt wird. Hier kommt das Schlüsselwort <span style="font-family: andale mono, monospace;">throw</span> zum Einsatz. Es ermöglicht, eine <span style="font-family: andale mono, monospace;">Exception</span> manuell zu „werfen“. Zudem kann eine Methode mit dem Schlüsselwort <span style="font-family: andale mono, monospace;">throws</span> deklarieren, welche Exception(s) sie möglicherweise an den aufrufenden Code weitergibt.</p>
 <p>Ein kompaktes Beispiel:</p>
 <div class="highlighted-code language-java">
 <div>
@@ -80,9 +95,9 @@
 }</code></pre>
 </div>
 </div>
-<p>Beim Aufruf der Methode muss dann entweder eine Exception behandelt oder erneut weitergereicht werden27.</p>
-<h2>4. Der finally-Block</h2>
-<p>Unabhängig davon, ob im try‑Block eine Exception auftritt oder nicht, soll oft abschließender Code ausgeführt werden, beispielsweise zum Freigeben von Ressourcen wie geöffnete Dateien oder Datenbankverbindungen.<br />Hier kommt der finally‑Block ins Spiel, der immer ausgeführt wird, bevor der Programmfluss fortgesetzt wird27.</p>
+<p>Beim Aufruf der Methode muss dann entweder eine <span style="font-family: andale mono, monospace;">Exception</span> behandelt oder erneut weitergereicht werden.</p>
+<h1>Der finally-Block</h1>
+<p>Unabhängig davon, ob im <span style="font-family: andale mono, monospace;">try</span>‑Block eine <span style="font-family: andale mono, monospace;">Exception</span> auftritt oder nicht, soll oft abschließender Code ausgeführt werden, beispielsweise zum Freigeben von Ressourcen wie geöffnete Dateien oder Datenbankverbindungen. Hier kommt der <span style="font-family: andale mono, monospace;">finally</span>‑Block ins Spiel, der <em>immer</em> ausgeführt wird, bevor der Programmfluss fortgesetzt wird.</p>
 <p>Ein Beispiel:</p>
 <div class="highlighted-code language-java">
 <div>
@@ -96,11 +111,9 @@
 }</code></pre>
 </div>
 </div>
-<p>Dieser Block stellt sicher, dass wichtige Aufräumaufgaben unabhängig vom Ausgang des try‑Blocks durchgeführt werden2.</p>
-<h2>5. Vergleich zwischen Java und Processing</h2>
-<p>In Processing kommt ebenfalls die Verwendung von try‑catch in Frage, wenn auch oft in vereinfachter Form, da viele Fehler bereits in den Grundlagenmodulen behandelt werden.<br />Java bietet jedoch durch den expliziten Einsatz von throw, throws und finally eine feinere Kontrolle und Dokumentation möglicher Fehlerquellen, was in größeren und komplexeren Anwendungen essenziell ist.<br />Während in Processing häufig eher intuitive und kompakte Fehlerbehandlungen üblich sind, ermöglicht Java eine strukturiertere und robustere Fehlerverwaltung, die besonders in interdisziplinären Projekten (etwa in der Verbindung von Software mit Hardwarekomponenten) von Vorteil ist.</p>
-<h2>6. Eigene Ausnahmen definieren (Custom Exceptions)</h2>
-<p>Oft ist es sinnvoll, eigene Ausnahmen zu definieren, um spezifische Fehlerfälle klar benennen zu können, wie z. B. fehlerhafte Nutzereingaben oder den Ausfall eines Sensors in eingebetteten Systemen2.<br />Die Definition einer eigenen Exception erfolgt in Java, indem man die Klasse Exception erweitert:</p>
+<p>Dieser Block stellt sicher, dass wichtige Aufräumaufgaben unabhängig vom Ausgang des <span style="font-family: andale mono, monospace;">try</span>‑Blocks durchgeführt werden.</p>
+<h1>Eigene Ausnahmen definieren (Custom Exceptions)</h1>
+<p>Oft ist es sinnvoll, eigene Ausnahmen zu definieren, um spezifische Fehlerfälle klar benennen zu können, wie z. B. fehlerhafte Nutzereingaben oder den Ausfall eines Sensors in eingebetteten Systemen. Die Definition einer eigenen Exception erfolgt in Java, indem man die Klasse <span style="font-family: andale mono, monospace;">Exception</span> erweitert:</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code> // Definition einer benutzerdefinierten Exception
@@ -119,14 +132,12 @@ public void validateInput(int input) throws InvalidInputException {
 }</code></pre>
 </div>
 </div>
-<p>Durch den gezielten Einsatz eigener Exceptions können Entwickler Fehlerfälle präziser abfangen und dem Benutzer aussagekräftige Rückmeldungen geben – beispielsweise in einer Benutzeroberfläche, die auf defekte Hardware oder nicht erfüllte Systemvoraussetzungen reagiert27.</p>
-<h2>7. Praktische Alltags- und medieningenieurwissenschaftliche Analogien</h2>
-<p>Stellen Sie sich vor, Sie betreiben ein hochmodernes Audiosystem in einem Konzertsaal. Wird eine Komponente (wie ein Verstärker oder ein Lautsprecher) plötzlich nicht erkannt, muss das System den Fehler melden, um eine Katastrophe zu vermeiden – ähnlich wie eine Exception in Java den Programmablauf unterbricht und kontrolliert fortsetzt.<br />Ein weiteres Beispiel: Wenn ein Benutzer über das Bedienfeld einer Mediaplayer-App eine falsche Eingabe tätigt (z. B. einen ungültigen Dateinamen oder eine falsche Pfadangabe), fängt der try‑Block in Java diesen Fehler ab und der catch‑Block informiert den Benutzer über das Problem, anstatt dass die App abrupt beendet wird.</p>
+<p>Durch den gezielten Einsatz eigener Exceptions können Entwickler Fehlerfälle präziser abfangen und dem Benutzer aussagekräftige Rückmeldungen geben – beispielsweise in einer Benutzeroberfläche, die auf defekte Hardware oder nicht erfüllte Systemvoraussetzungen reagiert.</p>
 <h1>Übungen</h1>
 <h2>Aufgaben</h2>
 <ul>
-<li>Aufgabe 1:<br />Schreibe ein Programm, das den Benutzer zur Eingabe einer Zahl auffordert. Wenn der Benutzer einen ungültigen (z. B. nicht-numerischen) Wert eingibt, soll eine benutzerdefinierte Exception „InvalidInputException“ geworfen und in einem catch‑Block abgefangen werden, sodass eine entsprechende Fehlermeldung ausgegeben wird.</li>
-<li>Aufgabe 2:<br />Simuliere eine einfache Hardware-Komponente – zum Beispiel einen Sensorsimulator –, der einen Messwert zurückgibt. Falls der Messwert einen bestimmten Schwellenwert unterschreitet oder überschreitet, wirf eine Exception (z. B. SensorMalfunctionException) und fange diese in einem try‑catch‑Block ab, um eine Warnung auszugeben.</li>
+<li><strong>Aufgabe 1</strong>: Falsche Eingabe<br />Schreibe ein Programm, das den Benutzer zur Eingabe einer Zahl auffordert. Wenn der Benutzer einen ungültigen (z. B. nicht-numerischen) Wert eingibt, soll eine benutzerdefinierte Exception „InvalidInputException“ geworfen und in einem catch‑Block abgefangen werden, sodass eine entsprechende Fehlermeldung ausgegeben wird.</li>
+<li><strong>Aufgabe 2</strong>: Falscher Messwert<br />Simuliere eine einfache Hardware-Komponente – zum Beispiel einen Sensorsimulator –, der einen Messwert zurückgibt. Falls der Messwert einen bestimmten Schwellenwert unterschreitet oder überschreitet, wirf eine Exception (z. B. SensorMalfunctionException) und fange diese in einem try‑catch‑Block ab, um eine Warnung auszugeben.</li>
 </ul>
 <h2>Fragen</h2>
 <ol>
@@ -135,15 +146,14 @@ public void validateInput(int input) throws InvalidInputException {
 <li>Welche Aufgabe übernimmt der finally‑Block, und warum ist er nützlich?</li>
 <li>Wie und warum würdest eine eigene Exception definieren?</li>
 </ol>
-<h1><br />Zusammenfassung</h1>
+<h1>Zusammenfassung</h1>
 <ul>
-<li>try‑Block: Enthält Code, der potenziell Fehler verursachen kann.</li>
-<li>catch‑Block: Fängt spezifische Exception-Typen ab und behandelt sie, um den Programmfluss aufrechtzuerhalten.</li>
-<li>throw: Ermöglicht das manuelle Auslösen von Exceptions.</li>
-<li>throws: Deklariert in der Methodensignatur, dass eine Methode eine Exception werfen kann.</li>
-<li>finally: Ein Block, der immer ausgeführt wird – ideal für Aufräumarbeiten.</li>
+<li><span style="font-family: andale mono, monospace;">try</span>‑Block: Enthält Code, der potenziell Fehler verursachen kann.</li>
+<li><span style="font-family: andale mono, monospace;">catch</span>‑Block: Fängt spezifische Exception-Typen ab und behandelt sie, um den Programmfluss aufrechtzuerhalten.</li>
+<li><span style="font-family: andale mono, monospace;">throw:</span> Ermöglicht das manuelle Auslösen von Exceptions.</li>
+<li><span style="font-family: andale mono, monospace;">throws</span>: Deklariert in der Methodensignatur, dass eine Methode eine Exception werfen kann.</li>
+<li><span style="font-family: andale mono, monospace;">finally:</span> Ein Block, der immer ausgeführt wird – ideal für Aufräumarbeiten.</li>
 <li>Custom Exceptions: Erlauben eine präzisere Fehlerbehandlung, indem spezifische Fehlerfälle benannt und behandelt werden.</li>
-<li>Vergleich Processing vs. Java: Während Processing häufig einfachere Ausnahmebehandlungen nutzt, bietet Java durch zusätzliche Keywords wie throw/throws und finally eine detailliertere Kontrolle.</li>
 </ul></div>
 </div>
 </div>
@@ -155,7 +165,7 @@ public void validateInput(int input) throws InvalidInputException {
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="grundlagen_der_javaprogrammierung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="collections_framework.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="grundlagen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="collections_und_lambda_ausdrcke.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Erste Schritte in Java | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-15"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li class="current-page-parent"><a href="java.html" class="current-page-parent daddy">Java</a>
+   <ul>
+      <li id="active"><a href="erste_schritte_in_java.html" class="active no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li><a href="dokumentation.html" class="no-ch">Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+   <li><a href="versionskontrolle_mit_git.html" class="no-ch">Versionskontrolle mit Git</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="java.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="grundlagen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Erste Schritte in Java</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id14">
+<div class="iDevice emphasis0" >
+<div id="ta14_129_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung – Der Übergang von Processing zu Java</h1>
+<p>Im ersten Semester hast du bereits mit Processing gearbeitet und grundlegende Programmierkonzepte kennengelernt. Processing basiert auf Java, ist jedoch speziell darauf ausgelegt, kreative und grafische Anwendungen einfach umzusetzen. In diesem Kapitel lernst du, wie du von Processing zu „reinem“ Java übergehst und die Grundlagen der Java-Programmierung meisterst. Außerdem betrachten wir, wie du Processing "in" Java - also einer Java-Entwicklungsumgebung - verwenden kannst und worauf du dabei achten musst.</p>
+<p>Java ist eine der weltweit am häufigsten verwendeten Programmiersprachen. Sie wird in Bereichen wie Webentwicklung, Mobile Apps, Unternehmenssoftware und sogar in eingebetteten Systemen eingesetzt. Der Übergang von Processing zu Java ermöglicht dir nicht nur, komplexere Anwendungen zu entwickeln, sondern auch, deine Programmierkenntnisse auf ein professionelles Niveau zu heben.</p>
+<p>In diesem Abschnitt wirst du lernen:</p>
+<ul>
+<li>Wie du eine Java-Entwicklungsumgebung auf deinem Rechner einrichtest</li>
+<li>Wie du ein erstes, einfaches "Hello World!"-Programm in Java schreibst</li>
+<li>Wie Programme in Java grundlegend aufgebaut sind</li>
+<li>Wie du Processing in der Java-Entwicklungsumgebung nutzen kannst</li>
+</ul>
+<h1>Erste Schritte in Java</h1>
+<h2>Einrichtung der Java-Entwicklungsumgebung</h2>
+<p>Um mit Java zu arbeiten, benötigst du eine sogenannte Entwicklungsumgebung. Eine Entwicklungsumgebung ist die Integration von verschiedenen Entwicklungswerkzeugen in ein Hauptprogramm zur effizienten und effektiven Softwareentwicklung. Sie wird oft mit dem englischen Begriff <strong>IDE (Integrated Development Environment)</strong> abgekürzt.</p>
+<p>Jede Programmiersprache braucht verschiedene Komponente an Entwicklungswerkzeugen, um entwickelt werden zu können. Deswegen redet man auch von einer Entwicklungsumgebung für Java oder für C++ usw. Diese IDEs haben alle verschiedene Bestandteile.</p>
+<p>Der Vorteil von so einer IDE ist, dass du "nur" ein Programm installieren musst und da alles dabei ist, was du brauchst. <em>Nur</em> steht in diesem Fall in Anführungszeichen, weil beim erstmaligen Installieren einer solchen IDE in der Regel noch ein paar weitere Komponenten installiert werden müssen, die man generell für Java braucht. Wenn du dich aber später für eine andere IDE entscheidest, musst du diese nicht neu installieren.</p>
+<p>Die gängigsten Optionen sind IntelliJ IDEA, Eclipse und VSCode. Für dieses Skript verwenden wir IntelliJ IDEA.</p>
+<p>Schritte zur Einrichtung:</p>
+<ol>
+<li><strong>IntelliJ IDEA installieren<br /></strong>
+<ul>
+<li>Lade IntelliJ IDEA (Community Edition) herunter und installiere es. </li>
+<li>Eine Anleitung hierfür findest du unter: <a href="https://www.jetbrains.com/help/idea/installation-guide.html#standalone_windows">https://www.jetbrains.com/help/idea/installation-guide.html#standalone_windows</a></li>
+</ul>
+</li>
+<li><strong>Java Development Kit (JDK) installieren</strong> <span style="font-size: 10pt;">(du kannst diesen Schritt überspringen, falls du bereits ein JDK installiert hast)</span><br />Hierfür musst du das JDK herunterladen und es dann in IntelliJ verknüpfen. Mit verknüpfen ist gemeint, dass IntelliJ wissen muss, wo das JDK auf deinem Rechner liegt. <br />Hier hast du mehrere Möglichkeiten.
+<ul>
+<li>JDK separat herunterladen und im nächsten Schritt in IntelliJ verknüpfen.</li>
+<li>Herunterladen und verknüpfen in einem Schritt direkt über IntelliJ.</li>
+<li>Beide Varianten werden auf der offiziellen Webseite von IntelliJ im Abschnitt "Add global SDK" erklärt: <a href="https://www.jetbrains.com/help/idea/sdk.html#add_global_sdk">https://www.jetbrains.com/help/idea/sdk.html#add_global_sdk</a></li>
+</ul>
+</li>
+</ol>
+<h2>Dein erstes „Hello World“-Programm</h2>
+<p>Nun bist du bereit für dein erstes Java-Programm. Ein klassisches Beispiel für den Einstieg in eine neue Programmiersprache ist das „Hello World“-Programm. Es zeigt dir die grundlegende Struktur eines Java-Programms. Wenn du in IntelliJ ein neues Java-Projekt erstellst, ist IntelliJ so freundlich und bietet dir an, dein Projekt mit Beispiel Code und Onboarding Tips zu erstellen. Dies ist gerade am Anfang hilfreich, um eine guten Einstieg in die Arbeit mit Java und IntelliJ zu erhalten. Diese Optionen findest du in dem Dialog, in dem du ein neues Projekt erstellt. Wenn du ein leeres Projekt haben möchstes, kannst du diese beiden Checkboxen auch deaktivieren. Wenn du sie aktiviert lässt, erstellt IntelliJ dein Projekt mit folgendem Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>//TIP To Run code, press Shift + F10 or click the Arrow icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        //TIP Press Alt + Enter with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
+
+        for (int i = 1; i &lt;= 5; i++) {
+            //TIP Press Shift + F9 to start debugging your code. We have set one breakpoint
+            // for you, but you can always add more by pressing Strg + F8.
+            System.out.println("i = " + i);
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<p>Bei diesem Programm handelt es sich um ein klassisches "Hello World!"-Programm. Das ist eine Art Programmier-Standard für Anfänger. Bei einem "Hello World"-Programm geht es darum erfolgreich ein Programm zu erstellen, das in der Regel in der Konsole "Hello World!" ausgibt. Dieses Programm hat zusätzlich noch eine for-Schleife, welche die Zahlen von 1 bis 5 in der Konsole ausgibt.</p>
+<p>Wenn du möchtest, kannst du das Programm einmal starten und testen, ob alles funktioniert. Nutze dafür die Schaltflächen in der IDE oder die Shortcuts, die in den Tips in den Kommentaren erwähnt werden. Die Shortcuts variieren je nach System (Windows, MacOs, Linux) und können auch indiviuell angepasst werden.</p>
+<p><strong>Erklärung:</strong></p>
+<ul>
+<li><span style="font-family: andale mono, monospace;">public class Main</span>: Jede Datei in Java enthält mindestens eine Klasse. Hier heißt die Klasse (meistens) Main.</li>
+<li><span style="font-family: andale mono, monospace;">public static void main(String[] args)</span>: Dies ist die Hauptmethode, die beim Start des Programms ausgeführt wird.
+<ul>
+<li>Bisher habe wir in Processing häufig von <em>Funktionen</em> gesprochen. In Java nennen wir diese <em>Methoden.</em> Methoden sind Funktionen, die zu einer Klassen gehören. In diesem Fall gehört die Methode <span style="font-family: andale mono, monospace;">main()</span> zur Klasse <span style="font-family: andale mono, monospace;">Main.</span></li>
+<li>In Java beginnen Programme (fast) immer mit der <span style="font-family: andale mono, monospace;">main()</span> Methode in der <span style="font-family: andale mono, monospace;">Main</span> Klasse. Das ist so wie in Processing, wo jedes Programm mit <span style="font-family: andale mono, monospace;">setup()</span> startet.</li>
+</ul>
+</li>
+<li><span style="font-family: andale mono, monospace;">System.out.printf("Hello an Welcome!")</span>: Gibt den Text „Hello an Welcome!“ in der Konsole aus.
+<ul>
+<li><span style="font-family: andale mono, monospace;">printf()</span> ist eine Methode, mit der Text in der Konsole ausgegeben und formatiert werden kann. Sie funktioniert wie die Methode <span style="font-family: andale mono, monospace;">String.format()</span>, welche wir bereits in Processing verwendet haben.</li>
+<li><strong>Wichtiger Unterschied zu Processing</strong>: In Java musst du, um in der Konsole etwas printen zu können, immer <span style="font-family: andale mono, monospace;">System.out.</span> vor den jeweiligen print-Befehl schreiben. Weiter unten im Programm siehst du auch die Methode <span style="font-family: andale mono, monospace;">println()</span>, die wir bereits aus Processing kennen.</li>
+</ul>
+</li>
+</ul>
+<p>Du siehst: Ein paar Dinge sind in Java anders, vieles ist aber auch gleich. Neu sind zum Beispiel der Aufbau <span style="font-family: andale mono, monospace;">(Main</span> Klasse und <span style="font-family: andale mono, monospace;">main</span>-Methode), einige Schlüsselwörter (wie z.B. <span style="font-family: andale mono, monospace;">public</span> und <span style="font-family: andale mono, monospace;">static)</span> und etwas andere Befehle (<span style="font-family: andale mono, monospace;">System.out.println()</span>). Gleich ist aber der grundlegende Syntax (geschweifte Klammern, Semikolon am Ende, Aufbau von Funktionen/Methoden und Schleifen, ...) und die meisten Schlüsselwörter <span style="font-family: andale mono, monospace;">(void, for, println,</span> ...)</p>
+<p>In Processing wäre so ein Programm deutlich einfacher gewesen. Du hättest einfach<span style="font-family: andale mono, monospace;"> println("Hello an Welcome!");</span> geschreiben und die for-Schleife angelegt. In Java ist die Struktur strenger: Du musst Klassen und Methoden definieren, damit dein Programm funktioniert. Aus diesem Grund ist Processing anfängerfreundlich, weil es an einigen Stellen die etwas umständliche Struktur von Java wegnimmt.</p>
+<h2>Processing in der Java IDE</h2>
+<p>Da Processing eine (anfängerfreundliche) Version von Java ist, kann man Processing Code auch in Java schreiben - wenn man ein paar Einstellungen in der IDE vornimmt. In diesem Modul legen wir den Schwerpunkt auf der Arbeit mit Java, allerdings machen wir uns eine Sache von Processing zu Nutzen: <em>Die grafische Ausgabe.</em> Das ist mit Java nämlich so einfach nicht möglich. Aus diesem Grund möchten wir Processing in unser Java-Projekt integrieren und dafür nutzen die grafische Ausgabe zu erstellen. Das Hauptprogramm soll aber in Java geschrieben werden. In diesem Abschnitt gehen wir di einzelnen Schritte durch, die du gehen musst, um Processing in IntelliJ einzurichten.</p>
+<p><strong>Schritt 1:</strong> Processing installieren und mit IntelliJ verknüpfen</p>
+<p>Installiere dir Processing von <a href="http://www.processing.org,">www.processing.org,</a> falls du dies noch nicht getan haben solltest. Danach öffnest du das Java-Projekt, zu dem du Processing hinzufügen möchtest oder erstellst ein neues Projekt. Dann öffnest du die Modul Einstellung ("Open Module Settings") indem du in der linken Spate deines Projekt mit der rechten Maustaste auf den Projektordner (ganz oben) klickst. Es öffnet sich dann ein Kontext-Menü, in dem du fast ganz unten den Punkt "Open Module Settings" findest.</p>
+<p>Nun offnet sich ein Fenster mit dem Titel "Project Structure". Im rechten Bereich kannst du diverse Einstellungen für Module vornehmen. Achte darauf, dass du dich im Tab "Dependencies" (Abhängigkeiten) befindest. In der Tabelle siehst du links oben ein Plus-Icon. Klicke auf das Icon, um eine neue Abhängigkeit hinzuzufügen. Wähle in dem Kontextmenü den Punkt "JAR or Directories". Daraufhin öffnet sich ein Fenster, indem du die Dateien und Ordner auf deinem Rechner siehst. Hier musst du den Pfad zu der Datei "core.jar" angeben, die sich in deinem Processing-Ordner befindet.</p>
+<p><img src="open_module_settings.png" title="Modul Einstellungen öffnen" width="641" height="754" /> <img src="add_jar.png" alt="" title="Jar-Datei hinzufügen" width="794" height="428" /></p>
+<p><strong>Wo genau finde ich diese "core.jar"-Datei?</strong> Da Processing kein Programm ist, das man installiert, sondern in der Regeln einfach nur runterlädt, kann dein Processing Ordner theoretisch überall sein, wie z.B. in deinem Downloads-Ordner, wenn du Proessing nach dem Download dort liegen lassen hast. Es ist allerdings durchaus sinnvoll Processing nicht im Downloads-Ordner, auf dem Desktop oder sonst zu wo liegen zu haben. Überlege dir einen sinnvollen Ort auf deinem Rechner. Für Windows Nutzer bietet sich z.B. der Programme-Order unter "Dieser PC" an. Je nachdem, welche Version von Processing du hast, hat dieser Ordner einen Namen wie "processing-4.3". Verwechsle ihn nicht mit dem Ordner "Processing". Dies ist ein Ordner, den Processing für dich erstellt und in dem alle deine Sketches gespeichtert sind. </p>
+<ul>
+<li>Wenn du im "richtigen" Processing-Ordner bist, findest du deine core.jar-Datei unter core/library/core.jar.</li>
+<li>Hinweise: IntelliJ braucht nur die Datei core.jar. Das bedeutet, dass es theoretisch auch möglich ist, die Datei in den Ordner zu kopieren, wo all deine IntelliJ-Projekte gespeichert sind, damit du sie in Zukunft schneller findest, dann: Diese Verknüpfung musst du für jedes Java-Projkt vornehmen, das Processing verwenden soll.</li>
+</ul>
+<p><strong>Schritt 2:</strong> Processing im Code importieren</p>
+<p>Damit du das Grafikfenster erhältst und Processing-Befehle nutzen kannst fehlen nur noch ein paar Schritte. Als erstes musst du eine neue Klasse mit dem Namen <span style="font-family: andale mono, monospace;">Window</span> erstellen (theoretisch kannst du auch jeden anderen Namen wählen, in dieser Anleitung nutzen wir aber den Namen <span style="font-family: andale mono, monospace;">Window).</span> Das machst du, indem du in der linken Spalte in deinem Projekt den Ordner mit dem Namen <span style="font-family: andale mono, monospace;">src</span> suchst. In diesem Ordner befindet sich aller Code, den du für dein Projekt erstellt. Klicke den Ordner mit der rechten Maustaste an. Es öffnet sich ein Kontextmenü, in der ganz oben die Option "New" steht. Wähle "New" und dann im nächsten Menü die Option "Java Class". Im nächsten Schritt kannst du den Namen für deine Klasse festlegen. IntelliJ erstellt dann eine Datei namens <span style="font-family: andale mono, monospace;">Window.java</span> mit folgendem Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>public class Window {
+}</code></pre>
+</div>
+</div>
+<p><strong>Wichtig:</strong> Die Datei und die Klasse müssen gleich heißen. Falls du dich also vertippt hast und deine Klasse umbenennen willst, musst du den Namen der Klasse und den Namen der Datei anpassen. Mehr dazu im Kapitel <a href="klassen_und_objekte.html">Klassen und Objekte</a>.</p>
+<p>Den Code in der Datei <span style="font-family: andale mono, monospace;">Window.java</span> tauschst du nun durch folgenden Code aus:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>import processing.core.PApplet; // importiert die Processing Bibliothek
+
+// Die von unser erstellte Klasse Window erbt Eigenschaften von der Klasse PApplet
+public class Window extends PApplet {
+
+    @Override
+    public void settings () { // Diese Methode entspricht void setup()
+
+    }
+
+    @Override
+    public void draw () { // Diese Methode entspricht void draw()
+
+    }
+}</code></pre>
+</div>
+</div>
+<p><strong>Erklärung:</strong></p>
+<ul>
+<li>In der ersten Zeile wird die Processing Bibliothek importiert. Das kennen wir bereits von Processing.</li>
+<li>In Zeile 4 haben wir unsere Klasse ergänzt durch den Teil <span style="font-family: andale mono, monospace;">extends PApplet</span>. Das bedeutet, dass unsere Klasse jetzt Eigenschaften von der Klasse <span style="font-family: andale mono, monospace;">PApplet</span> (also von Processing) erbt. Was "erben" genau bedeutet schauen wir uns im Kapitel "Vererbung" an. Du musst aktuell nur wissen: <em>Innerhalb</em> der <span style="font-family: andale mono, monospace;">Window</span> Klasse kannst du ganz normalen Processing Code schreiben, so wie du es bisher gewohnt warst.</li>
+<li>In Zeile 7 und Zeile 8 werden 2 wichtige Methoden definiert: <span style="font-family: andale mono, monospace;">settings()</span> und <span style="font-family: andale mono, monospace;">draw()</span>. Sie entsprechen den Funktionen <span style="font-family: andale mono, monospace;">setup()</span> und<span style="font-family: andale mono, monospace;"> draw()</span> in Processing.</li>
+</ul>
+<p>Jetzt wo wir unsere <span style="font-family: andale mono, monospace;">Window</span> Klasse erstellt haben, fehlt ein letzter Schritt: Wir müssen unser "Fenster" noch in der <span style="font-family: andale mono, monospace;">main</span>-Methode (dort, wo unser Java-Programm startet) aufrufen. Das machst du, indem du deine <span style="font-family: andale mono, monospace;">main</span>-Methode um 2 wichtige Zeilen ergänzt:</p>
+<div class="highlighted-code language-java line-numbers hightlight-1and8">
+<div>
+<pre><code>import processing.core.PApplet;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Öffnet das Grafikfenster von Processing und führt
+        // den Code in der Window Klasse aus
+        PApplet.main("Window");
+
+    }
+}</code></pre>
+</div>
+</div>
+<p><strong>Erklärung:</strong></p>
+<ul>
+<li>In Zeile 1 haben wir wieder den <span style="font-family: andale mono, monospace;">import</span>-Befehl, den wir auch in <span style="font-family: andale mono, monospace;">Window.java</span> verwendet haben. Wichtig: In Java müssen Bibliotheken in <em>jeder</em> Datei importiert werden, welche diese Bibliothek nutzt.</li>
+<li>In Zeile 8 rufen wir unsere <span style="font-family: andale mono, monospace;">Window</span>-Klasse auf und führen den Code darin aus.</li>
+</ul>
+<p><strong>Schritt 3</strong>: Programm starten und Run Configuration festlegen</p>
+<p>Jetzt wollen wir unser Programm starten. Hierbei gibt es eine Sache zu beachten: Wenn du oben auf das Pfeil-Icon klickst, um dein Programm auszuführen, wird immer standardmäßig die Datei ausgeführt, welche du gerade ausgewählt hast. Da dein Programm aber nur mit der main-Methode in der Main Klasse starten kann, hast du 2 Möglichkeiten. Entweder du wählst jedes Mal bevor du dein Programm starten willst, die Main Klasse aus (was ziemlich umständlich ist) ODER erstellst eine sogenannte "Run Configuration", welche dir diesen Schritt erspart. Um eine Run Configuration zu erstellen gehst du folgendermaßen vor:</p>
+<ul>
+<li>Links neben dem "Run"-Pfeil findest du ein Dropdown-Menü indem steht "Current File" (was bedeutet, dass immer die aktuelle Datei ausgeführt wird). Klicke auf Current File, damit sich das Dropdown Menü öffnet und wähle den Punkt "Edit Configurations".</li>
+<li>In dem Fenster, das sich öffnet steht links in der Spalte "Add new ..." und rechts in dem großen Bereich "Add new run configuration". Klicke auf eine der beiden Optionen (beide führen dieselbe Aktion aus). Wenn du eine der Optionen anklickst, öffnet sich ein Dropdown-Menü, in dem du die oberste Option "Application" auswählst.</li>
+<li>Im rechten Bereich kannst du nun deine Konfiguration erstellen. Ganz oben kannst du einen Namen festlegen (z.B. Main oder Start oder ...). Darunter Findest du den Abschnit Build an Run und in der rechten Hälfte der ersten Zeile kannst du die Klasse angeben, die in dieser Run Configuration ausgeührt werden soll. Dieses Feld sollte rot umrandet sein und den Platzhaltertext "Main class" enthalten. Trage hier "Main" ein. Jetzt klickst du unten aus Ok und das Fenster schließt sich.</li>
+<li>Oben in den Dropdown-Menü neben dem Run-Pfeil sollte nun deine Run Configuration ausgewählt sein. Überprüfe dies, indem du auf den Dropdown-Menü klickst. Nun solltest du wählen können zwischen "Current File" und dem Namen deiner Run Configuration. Wenn deine Run Configuration ausgewählt ist, bedeutet dies, dass immer die main-Methode ausgeführt wird, wenn du auf den Pfeil klickst, egal welche Datei du gerade ausgewählt hast.</li>
+</ul>
+<p>Teste deine Run Configuration und dein Programm, indem du in Processing etwas zeichnest, zum Beispiel ein Rechteck mit dem Text "Hello World!".</p>
+<p><strong>Tip:</strong> Die Autoformatierung findest du in IntelliJ an zwei Stellen: Entweder indem du auf deine Date mit der rechten Maustaste klickst und dort Reformat Code wähst oder über das <strong>Hauptmenü</strong> (☰ oben links)<strong> &gt; Code &gt; Reformat Code. </strong>In diesem Menü findest du auch noch weitere hilfreiche optionen, wie z.B. Auto Kommentare oder Auto-Einrückungen.</p>
+<h1>Praxis: Lerne die Entwicklungsumgebung kennen</h1>
+<p>Die Entwicklungsumgebung (IDE) ist ein unglaublich starkes Werkzeug, welches dir - wenn du sie beherrschst - das Programmieren deutlich einfacher und effizienter macht. Das bedeutet: Je besser du dich mit deiner Entwicklungsumgebung auskennst, desto besser und schneller wirst du am Ende programmieren. In diesem Skript ist es nicht möglich auf alle Einzelheiten von IntelliJ einzugehen. Aus diesem Grund ist es sinnvoll, dass du dich selber mit IntelliJ und seinen Funktionen beschäftigst.</p>
+<p>IntelliJ bietet dir ein sehr umfassendes in IntelliJ eingebautes Tutorial, welches ich nur wärmstens empfehlen kann. Das Tutorial besteht aus mehreren Kapiteln, welche du Schritt für Schritt durchgehen kannst und auch zu einen späteren Zeitpunkt weitermachen kannst. Um das Tutorial in IntelliJ durchführen zu können musst du folgendes tun:</p>
+<ol>
+<li>Stelle sicher, dass das IDE Features Trainer Plugin installiert ist.
+<ul>
+<li>Dies kannst du überprüfen, indem du über <strong>File &gt; Settings &gt; Plugins</strong> schaust, ob der<strong> IDE Features Trainer</strong> installiert ist. Wenn das Plugin nicht installiert ist, installiere es. </li>
+</ul>
+</li>
+<li>Nun kannst du über den Willkommen Bildschirm von IntelliJ den Features Trainer starten
+<ul>
+<li>Der Willkommens Bildschirm wird standardmäßig nur beim ersten öffnen von IntelliJ gezeigt. Sobald du ein Projekt erstellt hast, wird immer das zuletzt geöffnete Projekt geöffnet, wenn du IntelliJ startest.</li>
+<li>Um den Willkommen Bildschirm erneut anzuzeigen, musst du das aktuelle Projekt (bzw. alle aktuellen Projekte) schließen. Das machst du über <strong>☰ &gt; File &gt; Close Project</strong>. </li>
+<li>Auf dem Willkommen Bildschirm wählst du links <strong>"Learn"</strong> aus und klickst dann unter <strong>"Learn</strong> <strong>IDE Features"</strong> auf <strong>"Start</strong> <strong>Learning"</strong>.</li>
+</ul>
+</li>
+</ol>
+<h1>Übungsaufgaben</h1>
+<h2>Aufgaben</h2>
+<ol>
+<li>Erstelle ein Hello World-Programm in Java (ohne den Beispiel-Code von IntelliJ)</li>
+<li>Erstelle ein Hello World-Programm in Java mit Processing. Zeichne im Grafikfenster eine beliebige Länderflagge.</li>
+<li>Starte den IDE Features Trainer und mache alle Lektionen, bis auf die letzte (Git).</li>
+</ol>
+<h2>Fragen</h2>
+<ol>
+<li>Wofür wird die Methode main() in einem Java-Programm verwendet?</li>
+<li>Nenne drei Unterschiede zwischen Processing und Java.</li>
+<li>Was ist eine Run Configuration und wofür wird sei gebraucht?</li>
+</ol>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Bevor man ein Programm in Java programmieren und kompilieren kann, muss man eine Java-Entwickungsumgebung (IDE) einrichten und das Java Development Kit (JDK) installieren</li>
+<li>Java ist eine objektorientierte Programmiersprache mit strengerer Syntax als Processing.</li>
+<li>Ein Programm besteht aus Klassen und Methoden; die Hauptmethode heißt main(). Hier startet das Programm.</li>
+<li>Das „Hello World“-Programm zeigt die grundlegende Struktur eines Java-Codes.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="java.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="grundlagen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
