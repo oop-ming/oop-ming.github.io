@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Konzeption und Dokumentation | Objektorientierte Programmierung Skript </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">Objektorientierte Programmierung Skript</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Objektorientierte Programmierung</a></li>
+   <li><a href="java.html" class="daddy">Java</a>
+   <ul class="other-section">
+      <li><a href="erste_schritte_in_java.html" class="no-ch">Erste Schritte in Java</a></li>
+      <li><a href="grundlagen.html" class="no-ch">Grundlagen</a></li>
+      <li><a href="ausnahmebehandlung.html" class="no-ch">Ausnahmebehandlung</a></li>
+      <li><a href="collections_und_lambda_ausdrcke.html" class="no-ch">Collections und Lambda Ausdrücke</a></li>
+   </ul>
+   </li>
+   <li><a href="klassen_und_objekte.html" class="daddy">Klassen und Objekte</a>
+   <ul class="other-section">
+      <li><a href="packages_und_api.html" class="no-ch">Packages und API</a></li>
+      <li><a href="processing_in_anderen_klassen_nutzen.html" class="no-ch">Processing in anderen Klassen nutzen</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="konzeption_und_dokumentation.html" class="active no-ch">Konzeption und Dokumentation</a></li>
+   <li><a href="kapselung.html" class="no-ch">Kapselung</a></li>
+   <li><a href="vererbung.html" class="no-ch">Vererbung</a></li>
+   <li><a href="abstraktion.html" class="no-ch">Abstraktion</a></li>
+   <li><a href="polymorphismus.html" class="no-ch">Polymorphismus</a></li>
+   <li><a href="design_patterns.html" class="no-ch">Design Patterns</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="processing_in_anderen_klassen_nutzen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="kapselung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Konzeption und Dokumentation</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id28">
+<div class="iDevice emphasis0" >
+<div id="ta28_127_2" class="block iDevice_content">
+<div class="exe-text"><h1>Einführung - Hausbau nach Plan</h1>
+<p>Stell dir vor, du möchtest ein Haus bauen - wie gehst du vor? Was machst du als erstes? Wahrscheinlich würdest du nicht direkt mit dem bauen anfangen, sondern zunächst einen Plan erstellen. Du machst dir Gedanken, welche Anforderungen das Haus erfüllen muss, dann würdest du einen Grundriss zeichnen, das Material besorgen und dann erst anfangen das Haus zu bauen. Fertig, oder? Nein, am Ende würdest du noch dafür sorgen, dass alles gut dokumentiert ist. Denn wenn du in ein paar Jahren einen Wasserrohrbruch hast, möchtest du wissen, wo genau die Rohre entlang laufen oder wenn du die Zimmertüre an einer anderen Stelle haben möchtest, dann musst du wissen, wo genau in der Wand ide Kabel entlang laufen.</p>
+<p>Dieses Vorgehen lässt sich genau so auf die Softwareentwicklung übertragen. Wenn du ein Software-Projekt umsetzen möchtest, ist es nicht sonderlich sinnvoll direkt mit dem Programmieren anzufangen, ohne einen Plan zu haben. wie beim Hausbau muss erst eine Analyse der Anforderungen an die Software erstellt werden. Danach kann ein Konzept erstellt werden, welches anschließend im Code umgesetzt wird. Abschließend (oder am besten währenddessen) muss eine Dokumentation erstellt werden, damit man auch nach einiger Zeit das Programm noch erweitern oder korrigieren kann.</p>
+<p>In diesem Abschnitt beschäftigen wir uns mit dem Konzeption und der Dokumentation von objektorientierter Software. Du lernst in diesem Abschnitt:</p>
+<ul>
+<li>Wie man bei der Konzeption von Software vorgeht</li>
+<li>Was es mit der Unified Markup Language (kurz: UML) auf sich hat</li>
+<li>Wie du Klassendiagramme zur Konzeption und Dokumentation einsetzten kannst</li>
+<li>Wie du mithilfe von Aktivitätsdiagrammen den Programmablauf konzipieren und darstellen kannst</li>
+<li>Wie du mithilfe von Javadoc deinen Code automatisiert dokumentieren kannst</li>
+</ul>
+<h1>Einführung in die strukturierte Softwareentwicklung</h1>
+<p>Als Programmieranfänger habt ihr bisher vielleicht schon einige Erfahrungen mit dem Schreiben von Code gesammelt. Möglicherweise sah euer Vorgehen dabei so aus:</p>
+<ol>
+<li>Eine Idee für ein Programm haben</li>
+<li>Direkt anfangen zu coden</li>
+<li>Wenn etwas nicht funktioniert, durch Ausprobieren eine Lösung finden</li>
+<li>Das Programm so lange anpassen, bis es irgendwie läuft</li>
+</ol>
+<p>Diese Herangehensweise mag für kleine Projekte ausreichen. Bei größeren und komplexeren Softwareprojekten stößt man damit jedoch schnell an Grenzen:</p>
+<ul>
+<li>Der Code wird unübersichtlich und schwer zu warten</li>
+<li>Änderungen und Erweiterungen sind aufwändig</li>
+<li>Fehler schleichen sich leicht ein und sind schwer zu finden</li>
+<li>Die Zusammenarbeit im Team wird erschwert</li>
+</ul>
+<p>Um diese Probleme zu vermeiden, haben sich in der professionellen Softwareentwicklung strukturierte Vorgehensweisen etabliert. Zwei zentrale Konzepte dabei sind die Anforderungsanalyse und der Softwareentwurf. Bei der Anforderungsanalyse geht es darum zunächst die Anforderungen an das Programm zu ermitteln und diese einfach zu modellieren. Beim Softwareentwurfgeht es darum, die Ergebnisse der Analyse zu nutzen, um die technische Umsetzung zu modellieren bzw. entwerfen.</p>
+<p>In diesem Kapitel beschäftigen wir uns mit der <em>Objektorientierten</em> Analyse (OOA) und dem <em>Objektorientierten</em> Design (OOD). Dabei handelt es sich um objektorientierte Varianten der Anforderungsanalyse und des Softwareentwurfs. Beide Phasen nutzen objektorientierte Prinzipien wie <a href="kapselung.html">Kapselung</a>, <a href="vererbung.html">Vererbung</a> und <a href="polymorphismus.html">Polymorphismus</a>, um bereits in der Analyse- und Design-Phase einen odjektorientierten Entwurf zu entwickeln. Indem bereits bei der Analyse und im Design objektorientierte Prinzipien angewendet werden, ist der Übergang zur Umsetzung in einem objektorientierten Programm später einfacher.</p>
+<p>Es gibt verschiedene Vorgehensmodelle für Softwareentwicklung. Einige davon wirst du im Laufe des Studium ausführlich kennenlernen. Für den Anfang folgen wir diesem einfachen Ablauf:</p>
+<ul>
+<li><strong>Konzeption: </strong>In der Konzeption geht es darum, die Anforderungen an die Software zu analysieren und einen Softwareentwurf zu entwickeln.</li>
+<li><strong>Implementierung: </strong>Bei der Implementierung geht es darum, den Softwareentwurf umzusetzen.</li>
+<li><strong>Dokumentation: </strong>Bei der Dokumentation geht es darum den Aufbau der Software zu dokumentieren. Dies kann während oder nach dem Implementierung erfolgen.</li>
+</ul>
+<h1>Konzeption</h1>
+<h2>Objektorientierte Analyse</h2>
+<p>Der erste Schritt in der Softwareentwicklung ist die Anforderungsanalyse. Die Objektorientierte Analyse konzentriert sich darauf, die Anforderungen eines Systems zu verstehen und in ein Modell zu übersetzen, das die reale Welt widerspiegelt. Dabei werden Objekte, ihre Eigenschaften und Beziehungen identifiziert, die das zu entwickelnde System repräsentieren. Diese Phase hilft dir, ein klares Verständnis des Problems zu erlangen, bevor du mit der technischen Umsetzung beginnen.</p>
+<p>Der Prozess der OOA umfasst folgende Schritte:</p>
+<div class="exe-fx exe-accordion">
+<h2>1. Anforderungserhebung</h2>
+<p>Bei der Anforderungserhebung geht es darum, die Anforderungen an die Software zu sammeln, zu definieren und zu verstehen. Dies erfolgt zum Beispiel durch Interviews mit den Stakeholdern (Auftraggeber/Kunden) oder späteren Nutzern der Software.</p>
+<p>Stell dir vor, du erhältst den Auftrag einen Taschenrechner zu programmieren. Bevor du anfängst, musst du erstmal mit dem Auftraggeber klären, was der Taschenrechner alles können soll. Reichen die einfachen arithmetischen Operationen (Addition, Subtraktion, Multiplikation und Division) oder sollen weitere Funktionen hinzugefügt werden? Welche Designvorgaben gibt es für den Taschenrechner? Wer wird den Taschenrechner später nutzen? ...</p>
+<h2>2. Identifikation von Objekten und Klassen</h2>
+<p>Bei diesem Schritt geht es darum aus den Anforderungen Objekte abzuleiten, die deine Software braucht. Ähnliche Objekte können und Klassen gruppiert werden. Außerdem können bereits Attribute und Methoden für Klassen definiert werden. Bei diesem Schritt müssen noch nicht alle technischen Details geklärt sein. Ziel ist es einen ersten Überblick und eine erste Struktur zu erstellen - die auch noch Lücken haben kann.</p>
+<p>Bei unserem Taschenrechner könnte das folgendermaßen aussehen: Wir erinnern uns - die Objektorientierte Programmierung versucht Programme so zu entwicklen, dass sie echte Objekte aus der realen Welt beschreibt. Aus welchen Objekten besteht ein Taschenrechner? Mehrere Tasten (Zahlen 0-9, +, -, *, :, Komma, =, Eingabe löschen, ...), ein Display und eine Fläche auf der alles angeordnet ist. Eine erste Übersicht könnte somit folgendermaßen aussehen:</p>
+<ul>
+<li>Fläche
+<ul>
+<li>Attribut: Tasten[] tasten</li>
+<li>Attribut: Display display</li>
+<li>Methode: void anzeigen()</li>
+</ul>
+</li>
+<li>Display
+<ul>
+<li>Attribut: String text</li>
+<li>Methode: void anzeigen()</li>
+</ul>
+</li>
+<li>Taste
+<ul>
+<li>Attribut: String label</li>
+<li>Methode: void anzeigen()</li>
+<li>Methode: void drücken()</li>
+</ul>
+</li>
+</ul>
+<p>In dieser Liste habe ich mir einen ersten Überblick über den Aufbau des Programms geschaffen. Ich habe die Klassen Fläche, Display und Taste mit diversen Attributen und Methoden definiert. Diese Liste ist nicht vollständig ausgearbeitet, aber ein guter erster Entwurf.</p>
+<h2>3. Modellierung von Beziehungen</h2>
+<p>Im nächsten Schritt geht es darum Beziehungen zwischen den einzelnen Klassen herauszuarbeiten. Dabei gibt es 4 Arten von Beziehungen: Assoziation, Vererbung, Aggregation und Komposition. Mehr zu diesen Beziehung erfährst du weiter unten im Abschnitt <a href="#Beziehungen">Beziehungen</a>.</p>
+<p>Bei unserem Taschenrechner liegt eine sogenannte Komposition vor. Die Komposition beschreibt eine Beziehung zwischen einen Ganzen und seinen Teilen, wobei das Ganze nur zusammen mit seinen Teilen, wobei weder das Ganze noch die Teile unabhängig voneinander existieren können. Das Ganze ist bei dem Taschenrechner die Fläche und die Teile aus denen die Fläche besteht, sind die Tasten und das Display. Ohne Tasten und Display ergibt die Fläche keinen Sinn - und einzeln ergeben weder Tasten noch Display einen Sinn.</p>
+<h2>4. Erstellen von UML-Diagrammen</h2>
+<p>Nachdem eine erste Struktur in Form von Auflistung der einzelnen Klassen und deren Eigenschaften und Beziehungen erfolgt ist, geht es im nächsten Schritt darum, diese Struktur zu visualisieren. Dies erfolgt mithilfe von sogenannten UML-Diagrammen. Dabei handelt es sich um Diagramme, die nach einen gewissen einheitlichen Schema erstellt wurden. Dieses Schema wird ist die Unified Markup Language. Zwei sinvolle Diagramme, welche erstellt werden sollten, sind das <strong>Klassendiagramm</strong> für die statische Struktur und das <strong>Aktivitätsdiagramm</strong> für die dynamische Struktur. Mehr zu den Themen UML, Klassendiagramm und Aktivitätsdiagramm erfährst du im Abschnitt <a href="#UML">UML-Diagramme</a>.</p>
+<p>Ein sehr einfaches Klassendiagramm für unseren Taschenrechner könnte zum Beispiel folgendermaßen aussehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>|--------------------| |--------------------| |--------------------|
+|       Fläche       | |      Display       | |       Taste        |
+|--------------------| |--------------------| |--------------------|
+| tasten: Tasten[]   | | text: String       | | label: String      |
+| display: Display   | |                    | |                    |
+|--------------------| |--------------------| |--------------------| 
+| anzeigen(): void   | | anzeigen(): void   | | anzeigen(): void   |
+|                    | |                    | | drücken(): void    |
+|--------------------| |--------------------| |--------------------|</code></pre>
+</div>
+</div>
+<h2>5. Verfeinerung des Modells</h2>
+<p>Der letzte Schritt der Objektorientierten Analyse ist die <a href="#t534f9633-cb9c-ba95-2b93-b9153d3d656a" id="link534f9633-cb9c-ba95-2b93-b9153d3d656a" class="exe-tooltip definition-tt blue-tt">iterative</a> Überarbeitung und Verfeinerung der Modelle. Dies erfolgt zum Beispiel in Abbsprache mit den Stakeholdern oder durch Absprache innerhalb des Teams. In mehreren Durchläufen werden die Modelle basierend auf dem Feedback und den neuen Erkenntnissen angepasst.</p>
+<p>Eine Erkenntnis bei unserem Taschenrechner könnte zum Beispiel sein, dass alle drei Klassen eine Methode gemeinsam haben: anzeigen(). Hier wäre es möglich <a href="vererbung.html" title="Zum Kapitel Vererbung">Vererbung</a> anzuwenden und eine (<a href="abstraktion.html" title="Zum Kapitel Abstraktion">abstrakte</a>) Klasse AnzeigbaresObjekt zu erstellen, welche die Methode anzeigen() an die Unterklassen vererbt.</p>
+</div>
+<h2><a id="UML"></a>UML-Diagramme</h2>
+<p>UML-Diagramme ist ein Sammelbegriff für verschiedene Arten von Diagrammen, welche eingesetzt werden um verschiedene Aspekte (wie z.B. Struktur, Ablauf, Zusammenhänge, ...) im Bereich der Softwareentwicklung zu visualisieren. UML steht dabei für Unified Modeling Language. Dabei handelt es sich um eine visuelle Modellierungssprache für die Architektur ud das Design von Softwareprojekten. Die UML legt dabei fest, wie die einzelnen Elemente grafisch darstellt und angeordnet werden sollen. Wir kennen das bereits aus dem Programmablaufplan (PAP). Hier ist zum Beispiel festlegt, dass eine Verzweigung durch eine Raute dargestellt wird und eine Ein- oder Ausgabe durch ein Paralellogramm. Die Vorgaben für den Programmablaufplan stammen aber nicht aus der UML, sondern aus der DIN-Norm 66001.</p>
+<p>Diese Vereinheitlichung der Darstellung (egal ob nach DIN-Norm oder UML) hat den Vorteil, dass unsere Diagramme und Visualisierungen einheitlich sind und auch von anderen Personen gelesen und verstanden werden können. Die UML legt nicht fest, womit du diese Diagramme erstellst. Du kannst sie von Hand mit Papier und Bleistift erstellen, einen Text-Editor verwenden (so wie in manchen Beispielen hier) oder Tools einsetzen, welche dir etwas Arbeit abnehmen, wie z.B. <a href="https://www.lucidchart.com/pages/de">Lucidchart</a>, <a href="https://app.diagrams.net/">draw.io</a> oder <a href="https://plantuml.com/de/">PlantUML</a>.</p>
+<p>Zwei wichtige Diagramm-Typen sind das Klassendiagramm, zur Visualisierung des statischen Struktur, und das Aktivitätsdiagramm, zur Visualisierung des dynamischen Struktur.</p>
+<h3>Klassendiagramme</h3>
+<p>Bei Klassendiagrammen handelt es sich um Strukturdiagramme der Unified Modeling Language (UML). Mithilfe von Klassendiagrammen können Klassen und deren Beziehungen visuell dargestellt werden. Ein UML-Klassendiagramm visualisiert somit die statische Struktur eines Systems. Es zeigt, welche Klassen (als Baupläne von Objekten) im System existieren, welche Attribute und Methoden sie besitzen und wie sie zueinander in Beziehung stehen.</p>
+<p>Der Aufbau von einem Klassendiagramm ist im Prinzip recht simpel:</p>
+<ul>
+<li>Klassen werden mithilfe von Boxen dargestellt</li>
+<li>Beziehungen zwischen den Klassen werden mithilfe von Pfeilen/Verbindungen dargestellt</li>
+</ul>
+<div class="exe-fx exe-accordion">
+<h2>Klassen</h2>
+<p>"Klassenboxen" bestehen aus den 3 Teilen Name, Attribute und Methoden.</p>
+<ul>
+<li>Name:
+<ul>
+<li>Enthält den Namen der Klasse.</li>
+</ul>
+</li>
+<li>Attribute:
+<ul>
+<li>Bei Attributen wird der Name des Attribut angegeben, gefolgt vom Datentyp</li>
+<li>Attribute können bei der Deklaration auch direkt initialisiert werden, dann wird der Wert mit angegeben</li>
+<li>Beispiel: <span style="font-family: andale mono, monospace;">name : String</span> oder <span style="font-family: andale mono, monospace;">alter : int = 18</span></li>
+</ul>
+</li>
+<li>Methoden:<br />
+<ul>
+<li>Bei Methoden wird der Name, ggf. Parameter und ggf. Rückgabewerte angegeben</li>
+<li>Beispiel: <span style="font-family: andale mono, monospace;">getName():String</span> oder <span style="font-family: andale mono, monospace;">setAlter(param:int):void</span></li>
+</ul>
+</li>
+</ul>
+<p>Neben den drei Hauptteilen, sind die Sichtbarkeitkeitsmodifikatoren ein weiterer wichtiger Aspekt, welcher in Klassendiagrammen dargestellt wird. Die Sichtbarkeitsmodifikatoren in Klassendiagrammen sind:</p>
+<ul>
+<li>public (+)</li>
+<li>private (-)</li>
+<li>protected (#)</li>
+<li>package (~)</li>
+</ul>
+<p>Statische Eigenschaften einer Klasse (im Programmcode mit static gekennzeichnet) werden im Klassendiagramm dargestellt, indem das jeweilige Attribut oder die Methode <span style="text-decoration: underline;">unterstrichen</span> wird.</p>
+<h2>Beziehungen</h2>
+<p>Neben den inneren Elementen definieren Klassendiagramme auch die Beziehungen zwischen den Klassen. Zu den gängigen Beziehungstypen zählen:</p>
+<ul>
+<li><strong>Assoziation:</strong>
+<ul>
+<li>Eine einfache Verbindung zwischen zwei Klassen, z. B. kann ein Student an mehreren Kursen teilnehmen, die Klassen Student und Kurs können aber unabhängig voneinander exisitieren.</li>
+<li>Dargestellt durch eine Linie, welche beide Klassen verbindet</li>
+</ul>
+</li>
+<li><strong>Vererbung:</strong>
+<ul>
+<li>Zeigt an, dass eine Unterklasse von einer Oberklasse erbt</li>
+<li>Dargestellt durch einen Pfeil, der von der Unterklasse zur Oberklasse zeigt</li>
+</ul>
+</li>
+<li><strong>Aggregation:</strong>
+<ul>
+<li>Steht für eine Beziehung zwischen einem Ganzen und seinen Teilen, bei der die Teilobjekte auch unabhängig existieren können, z.B. besteht ein Wald aus mehreren Bäumen (Teilobjekte). Der Wald kann ohne Bäume nicht existieren, ein Baum kann aber ohne einen Wald exisitieren.</li>
+<li>Dargestellt durch eine Linie mit einer nicht ausgefüllten Raute am Ende des Ganzen.<br />Komposition hingegen drückt eine starke Bindung aus, bei der das Teil ohne das Ganze nicht existieren kann.</li>
+</ul>
+</li>
+<li><strong>Komposition:</strong>
+<ul>
+<li>Drückt eine Beziehung zwischen einem Ganzen und seinen Teilen, bei der weder das Ganze noch die Teile unabhängig voneinander existieren können, wie z.B. ein Gebäude voller Räume. Ohne Räume gibt es keine Gebäude und ohne Gebäude keine Räume.</li>
+<li>Dargestellt durch eine Linie mit einer ausgefüllten Raute am Ende des Ganzen.</li>
+</ul>
+</li>
+</ul>
+<p></p>
+</div>
+<h3>Beispiele</h3>
+<p>Wie genau wird so ein Diagramm nun dargestellt? Hier hast du einiges an Freiheit: Du kannst es von Hand zeichnen (am besten mit Lineal), ein einem Texteditor erstellen oder spezielle Programm dafür verwenden: Hauptsache du hältst dich an die UML-Regeln für Klassendiagramme.</p>
+<h4>Beispiel: Mediaplayer</h4>
+<p>Hier siehst du ein Beispiel für ein einfaches Klassendiagramm für einen Mediaplayer, das in einem Texteditor erstellt wurde. Es zeigt die Klasse <span style="font-family: andale mono, monospace;">MediaPlayer</span> und die Subklasse <span style="font-family: andale mono, monospace;">AdvancedPlayer</span>, welche von <span style="font-family: andale mono, monospace;">MediaPlayer</span> erbt.</p>
+<div class="pre-code">
+<div>
+<pre><code>+-----------------------+
+|      MediaPlayer      |
++-----------------------+
+| - volume: int         |
+| - isPlaying: boolean  |
++-----------------------+
+| + play(): void        |
+| + pause(): void       |
+| + stop(): void        |
++-----------------------+
+            ▲
+            │
++--------------------------+
+|      AdvancedPlayer      |
++--------------------------+
+| - equalizerSettings: int |
++--------------------------+
+| + adjustEqualizer(): void|
++--------------------------+</code></pre>
+</div>
+</div>
+<h4>Beispiel: Tier-Hierarchie</h4>
+<p>Folgendes Beispiel ergänzt die Tierhierarchie aus dem Kapitel <a href="vererbung.html">Vererbung</a>. Ich habe sie ergänzt um die Klassen Ball, Ei und Forellenscharm. Ball und Hund haben eine Assoziation da sie jeweils auch unabhängig voneinerander exisitieren können. Ei und Vogel verbindet eine Aggregation, da es ohne Vogel kein Ei geben kann.</p>
+<p><img src="klassendiagramm_beispiel2.png" alt="" width="1181" height="526" /></p>
+<p>Dieses Diagramm habe ich mit draw.io erstellt - ein kostenloses Programm, dass du im Browser nutzen oder herunterladen kannst und viele vorgefertigte Formen für verschiedene Anwendungsfälle enthält - unter anderem das Erstellen von UML-Klassendiagrammen.</p>
+<h3>Aktivitätsdiagramm</h3>
+<div class=" table-div">Bei einem UML-Aktivitätsdiagramm handelt es sich um ein Flussdiagramm ähnlich wie ein Programmablaufplan. Das Ziel das Aktivitätsdiagramms ist es, die von einem System aausgeführten Aktivitäten abzubilden. Aktivitätsdiagramm visualisieren die dynamische Struktur und die Abläufe innerhalb eines Systems.</div>
+<div class=" table-div"></div>
+<div class=" table-div">Aktivitätsdiagramm bestehen aus folgenden Grundelementen:</div>
+<ul>
+<li class=" table-div">Start- und Endknoten: Stellen den Beginn und das Ende einer Aktivität dar.</li>
+<li class=" table-div">Aktionen: Stellen einen Schritt in der Aktivität dar, welche von dem Benutzer oder der Software durchgeführt werden</li>
+<li class=" table-div">Entscheidungsknoten: Stellen eine Verzeigung dar, welche an eine Bedinung geknüpft ist</li>
+<li class=" table-div">Kontrollflüsse: Werden dargestellt durch Verbindungen zwischen dein einzelnen Elementen.</li>
+</ul>
+<p>Dies sind einige der am häufigsten verwendeten Symbole in einem Aktivitätsdiagramm:</p>
+<div class="exe-fx exe-tabs">
+<h2>Startknoten</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Anfangssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/initial-state-33x31.PNG" width="50" height="50" /></div>
+<div class=" table-div">Steht am Anfang eines jeden Aktivitätsdiagrammes und stell den Start dar. Der Startknoten kann alleine stehen oder durch ein Notizsymbol ergänzt werden.</div>
+<h2>Aktion</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Aktivitätssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/activity-66x35.PNG" /></div>
+<p>Zeigt einen einzlenen Schritt innerhalb der Aktivität an und enthalten kurze Beschreibungen des jeweiligen Schritts.</p>
+<h2>Kontrollflüsse/Verbindungen</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Konnektorsymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/arrow-66x11.PNG" /></div>
+<div class=" table-div">Verbindungslinien mit Pfeilen stellen den Kontrollfluss innerhalb der Aktivität dar.</div>
+<h2>Synchronisierung</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Verbindungssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/join-66x57.PNG" /></div>
+<div class=" table-div">Stellt eine Verbindung zwischen zwei paralell ablaufenden Aktivitäten dar, welche an dieser Stelle zusammengeführt werden.</div>
+<h2>Verzweigung</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Verzweigungssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml-activity-diagram-symbols-meaning/UML_activity_diagram_notation6-60x63.PNG" /></div>
+<div class=" table-div">Spaltet die Aktivität auf in zwei Aktivitäten, welche paralell ablaufen.</div>
+<h2>Entscheidung</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Entscheidungssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/decision-33x30.PNG" /></div>
+<div class=" table-div">Stellt eine Entscheidung dar, welche an eine Bedinung geknüpft ist.</div>
+<h2>Hinweis/Notiz</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Hinweissymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/note-33x26@2x.PNG" /></div>
+<div class=" table-div">Bietet die Möglichkeit zusätzliche Informationen zu ergänzen, welche nicht Teil der Aktivität selber sind.</div>
+<h2>Endknoten</h2>
+<div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Endsymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/end-state-33x32.PNG" /></div>
+<div class=" table-div">Stellt das Ende einer Aktivität dar.</div>
+</div>
+<h4>Swimlanes</h4>
+<p>Aktivitätsdiagramme können Swimlanes enthalten, um Aktionen, die von verschiedenen Akteuren durchgeführt werden in sogenannten Threads zu gruppieren. Dabei können diese Akteure Benutzer sein, aber auch verschiedene Programme oder Teile eines Programms.</p>
+<p>Das Aktivitätsdiagramms eines Taschenrechners mit einer einfachen Rechenoperation könnte zum Beispiel folgendermaßen aussehen:</p>
+<p><img src="aktivitatsdiagramm.png" alt="" width="402" height="642" /></p>
+<h4>Vorgehen</h4>
+<p>Bei der Erstellung eines Aktivitätsdiagramms gehst du am besten folgendermaßen vor:</p>
+<ol>
+<li>Finde alle einzelnen Handlungsschritte für diese Aktivität</li>
+<li>Überlege dir, welche Akteure beteiligt sind</li>
+<li>Finde heraus, in welcher Reihenfolge die einzelnen Schritte haben</li>
+<li>Füge die Swimlanes hinzu</li>
+</ol>
+<h2>Objektorientiertes Design</h2>
+<p>Das OOD baut auf den Ergebnissen der OOA auf und übersetzt das konzeptuelle Modell in eine konkrete Softwarearchitektur. OOD konzentriert sich dabei darauf, wie das System technisch umgesetzt werden soll. Folgende Aspekte sind dabei wichtig:</p>
+<ol>
+<li><strong>Architekturentwurf</strong><br />Hier geht es um die Festlegung der Systemarchitektur. Haben wir ein monlithisches Programm, das aus einer Einheit besteht oder haben wir ein Programm, das z.B. eine Client-Server-Struktur hat?</li>
+<li><strong>Detaillierung der Klassen</strong><br />Hierbei werden die Klassenstrukturen aus der OOA verfeinert, z.B. durch das Hinzufügen von Attributen und Methoden, des Festlegen von Zugriffmodifikatoren und das Bestimmen von Interfaces und abstrakten Klassen. </li>
+<li><strong>Anwendung von Entwurfsprinzipien</strong><br />Hier geht es um die bewusste Anwendung von Kapselung, Polymorphismus, Abstraktion und Vererbung. </li>
+<li><strong>Einsatz von Entwurfsmustern</strong><br />Bei diesem Punkt geht es um die Verwendung von Design Pattern als Lösungsansatz für wiederkehrende Probleme</li>
+</ol>
+<p>Das OOD baut auf den Ergebnissen der OOA auf und verfeinert und konkretiert diese solange, bis mit der Implementierung der Software begonnen werden kann. Der Übergang von OOA zu OOD ist meist fließend. OOA und OOD unterscheiden sich dahingehend, dass mithilfe von OOA ein erstes Modell erstellt werden soll, das dabei hilft die Anforderungen an die Software zu verstehen und in eine Struktur zu übersetzen. OOD wiederum hat den Fokus den Schritt vom Modell hin zur Implementierung zu gehen und legt den Schwerpunkt dadurch auf die technische Ausarbeitung des Modells.</p>
+<p></p>
+<h1>Dokumentation</h1>
+<p>Dokuentation der Software ist ein zentraler Aspekt der Softwareentwicklung. Sie hilft dabei, dass Software auch nach der Entwicklung noch wartbar und erweiterbar ist. Stell dir vor, nach ein paar Jahren stellt sich heraus, dass in deiner Software eine gravierende Sicherheitslücke ist. Nun geht es darum möglichst schnell und zuverlässig diese Lücke zu schließen, auch wenn du nicht mehr weißt, was du dir damals bei der Entwicklung der Software alles gedacht hast. Aus diesem Grund muss Software dokumentiert werden - damit du und andere damit langfristig arbeiten können.</p>
+<h2>Javadoc</h2>
+<p>Ein wichtiges Tool zur Dokumentation von Java-Programmen ist Javadoc. Javadoc ist das standardisierte Tool zur Erzeugung von API-Dokumentationen aus Java-Quellcode. Eine API-Dokumentation ist eine umfassende Anleitung, die Entwicklern detaillierte Informationen zur Integration und Nutzung einer Programmierschnittstelle bereitstellt, einschließlich Beschreibungen von Endpunkten, Methoden, Parametern, Rückgabewerten und Fehlercodes.</p>
+<h3>Wie funktioniert Javadoc?</h3>
+<p>Die Dokumentation mit Javadoc erfolgt mithilfe von Javadoc Kommentaren im Quellcode. Diese Kommentare enthalten Informationen zu Klassen, Attributen und Methoden. Das Hilfsprogramm javadoc liest den Quellcode und erzeugt daraus HTML-Seiten mit der Dokumentation der Software.</p>
+<h3>Javadoc Kommentare</h3>
+<p>Der Syntax für Javadoc Kommentare ist ein Sonderfall des mehrzeiligen Kommentars in Java und sieht folgendemaßen aus:</p>
+<div class="pre-code">
+<div>
+<pre><code>/**
+  * Das ist ein Javadoc Kommentar
+  * In der obersten Zeile befinden sich zwei Sternchen - das Erkennungsmerkmal
+  * von Javadoc Kommentaren
+*/</code></pre>
+</div>
+</div>
+<p>Javadoc Kommentare können mithilfe von HTML beliebig formatiert werden.</p>
+<p>Javadoc Kommentare werden vor die Klasse, Methode oder das Attribut geschrieben, welches sie dokumentieren. In folgendem Beispiel soll die Dokumentation einer Methode erfolgen. Somit wird das Javadoc Kommentar vor die Methode geschrieben:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre class="  language-java"><code class="  language-java"><span class="token comment" spellcheck="true">/**
+* Diese Methode berechnet die Summe von zwei Ganzzahlen.
+*
+* @param a Die erste Zahl.
+* @param b Die zweite Zahl.
+* @return Die Summe von a und b.
+*/</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">   return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+</div>
+</div>
+<p>Das Javadoc Kommentar besteht aus einer Beschreibung und aus sogenannten Tags inklusive Beschreibung. Die hier verwendeten Tags sind <span style="font-family: andale mono, monospace;">@param,</span> welche die Beschreibung eines Parameters der Methode einleitet und <span style="font-family: andale mono, monospace;">@return,</span> welches die Beschreibung des Rückgabewerts einer Methode einleitet.</p>
+<p style="text-align: left;"><strong>TIP:</strong> In IntelliJ können Javadoc Kommentare automatisch und über das Kontextmenü erstellt werden. Um ein Javadoc Kommentar automatisch zu erstellen, tippst du /** ein und drückst danach ENTER. IntelliJ vervollständigt dann deinen Javadoc Kommentar. Alternativ kannst du auch den Textcursor innerhalb des Bezeichners platzieren und ALT + ENTER (oder OPTION + ENTER) drücken, um das Kontextmenü zu öffnen und dort "Add Javadoc" auswählen.</p>
+<h3>Tags in Javadoc</h3>
+<p>Neben den oben genannten Tags <span style="font-family: andale mono, monospace;">@param</span> und <span style="font-family: andale mono, monospace;">@return</span> gibt es noch weitere Tags. Die folgende Tabelle listet die häufigsten und wichtigsten Tags auf:</p>
+<table class="exe-table" style="height: 275px;">
+<thead>
+<tr style="height: 25px;">
+<td style="height: 25px; width: 110.817px;"><strong>Tag</strong></td>
+<td style="height: 25px; width: 647.4px;"><strong>Beschreibung</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@param</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Beschreibt einen Parameter einer Methode oder eines Konstruktors</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@return</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Beschreibt den Rückgabewert einer Methode</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@throws</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Beschreibt eine Ausnahme, die von einer Methode geworfen werden kann</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@see</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Erstellt einen "Siehe auch"-Verweis auf andere Elemente der Dokumentation</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@deprecated</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px; text-align: left;">Kennzeichnet eine Klasse, Methode oder ein Feld als veraltet</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">{@link}</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Erstellt einen Link zu einer anderen Klasse oder Methode</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@since</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Gibt die Version an, seit der ein Feature verfügbar ist</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@author</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Identifiziert den Autor des Codes (nur für Klassen und Schnittstellen)</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">@version</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Versionsinformation (nur für Klassen und Schnittstellen)</td>
+</tr>
+<tr style="height: 25px;">
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 110.817px;"><span style="font-family: andale mono, monospace;">{@code}</span></td>
+<td class="border-borderMain px-sm dark:border-borderMainDark min-w-[48px] break-normal border" style="height: 25px; width: 647.4px;">Formatiert Text in Codefont und maskiert HTML-Sonderzeichen</td>
+</tr>
+</tbody>
+</table>
+<h3>Javadoc Dokumentation generieren</h3>
+<p><strong>Option 1: Javadoc mithilfe der Koemmandozeile generieren</strong></p>
+<p>Wechsle in das Verzeichnis, in dem sich dein Quellcode befindet. Führe folgenden Befehl aus, um die Dokumentation zu erstellen:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre class="  language-markup"><code class="  language-markup">javadoc -d doc -sourcepath src -subpackages com.meineprojekt</code></pre>
+</div>
+</div>
+<ul>
+<li><span style="font-family: andale mono, monospace;">-d doc</span> gibt an, dass die HTML-Dateien im Ordner „doc“ erstellt werden sollen.</li>
+<li><span style="font-family: andale mono, monospace;">-sourcepath src</span> zeigt den Pfad zu deinem Quellcode.</li>
+<li><span style="font-family: andale mono, monospace;">-subpackages com.meineprojekt</span> sorgt dafür, dass alle Unterpakete des angegebenen Pakets dokumentiert werden.</li>
+</ul>
+<p>Weitere mögliche Optionen, welche du zu diesem Befehl hinzufügen kannst, sind:</p>
+<ul>
+<li><em>-author </em>Generierung der Dokumentation unter Berücksichtigung des <em>@author</em> tag</li>
+<li><em>-help </em>zeigt die online Hilfe</li>
+<li><em>-private</em> generiert Dokumentation auch für private Attribute</li>
+<li><em>-version</em> Generierung der Dokumentation unter Berücksichtigung des <em>@version</em> tag</li>
+</ul>
+<p><strong>Option 2: Javadoc in der IDE generieren (IntelliJ IDEA)</strong></p>
+<ul>
+<li>Öffne dein Projekt in IntelliJ IDEA.</li>
+<li>Gehe zu Tools &gt; Generate JavaDoc….</li>
+<li>Wähle die zu dokumentierenden Module und lege den Zielordner für die HTML-Dokumentation fest.</li>
+<li>Du kannst hier auch erweiterte Optionen anpassen (z. B. Sichtbarkeitsstufen), um festzulegen, welche Klassen und Methoden dokumentiert werden sollen.</li>
+</ul>
+<h3>Praktische Hinweise und Tipps</h3>
+<ul>
+<li><strong>Regelmäßige Aktualisierung:</strong> Füge Javadoc-Kommentare von <em>Beginn an in deinen Code ein</em> und aktualisiere sie bei Änderungen, um eine stets aktuelle Dokumentation zu gewährleisten.</li>
+<li><strong>Vollständigkeit:</strong> Jede öffentliche und geschützte Methode sollte kommentiert sein. Dies unterstützt den Wissensaustausch und ist für die spätere Nutzung und Erweiterung unerlässlich.</li>
+<li><strong>Überprüfe die generierte Dokumentation:</strong> Oftmals können Tippfehler oder unvollständige Parameterangaben die automatische Dokumentation stören. Schaue dir im Anschluss immer die HTML-Dokumentation an, um Fehler zu erkennen und zu beheben.<br /><br /></li>
+</ul>
+<h1>Übungen</h1>
+<h2>Aufgaben</h2>
+<ul>
+<li>Aufgabe 1: Klassendiagramm<br />
+<ul>
+<li>Erstelle ein Klassendiagramm für ein einfaches Bibliothekssystem mit folgenden Klassen:<br />
+<ul>
+<li>Buch (mit Attributen: Titel, Autor, ISBN</li>
+<li>Benutzer (mit Attributen: Name, Ausweisnummer)</li>
+<li>Ausleihe (mit Attributen: Ausleihdatum, Rückgabedatum)</li>
+</ul>
+</li>
+<li>Berücksichtige folgende Beziehung: Eine Ausleihe bezieht sich auf ein Buch und einen Benutzer</li>
+<li>Füge den Klassen jeweils mindestens eine Methode hinzu und verwende die korrekten UML-Notationen für Attribute, Methoden und Beziehungen.</li>
+</ul>
+</li>
+<li>Aufgabe 2: Aktivitätsdiagramm
+<ul>
+<li>Erstelle ein Aktivitätsdiagramm für den Prozess der Geldabhebung an einem Geldautomaten. Berücksichtige dabei folgende Schritte:
+<ul>
+<li>Karte einschieben</li>
+<li>PIN eingeben</li>
+<li>Betrag wählen</li>
+<li>Kontostand prüfen</li>
+<li>Geld ausgeben (wenn Kontostand ausreichend)</li>
+<li>Karte zurückgeben</li>
+</ul>
+</li>
+<li>Füge eine Entscheidung hinzu, die prüft, ob der Kontostand ausreichend ist. Falls nicht, soll eine Fehlermeldung angezeigt werden. Verwende die korrekten UML-Symbole für Start, Ende, Aktionen, Entscheidungen und Kontrollflüsse.</li>
+</ul>
+</li>
+<li>Aufgabe 3: Javadoc
+<ul>
+<li>Schreibe Javadoc-Kommentare für die folgende Klasse und Methode:
+<div class="highlighted-code language-java">
+<div>
+<pre><code>public class Taschenrechner {
+   public double addiere(double a, double b) {
+      return a + b;
+   }
+}</code></pre>
+</div>
+</div>
+</li>
+<li>Dein Javadoc-Kommentar sollte Folgendes enthalten:
+<ul>
+<li>Eine Beschreibung der Klasse</li>
+<li>Eine Beschreibung der Methode</li>
+<li>@param Tags für beide Parameter</li>
+<li>Ein @return Tag für den Rückgabewert</li>
+</ul>
+</li>
+<li>Achte auf die korrekte Syntax und Formatierung der Javadoc-Kommentare.</li>
+</ul>
+</li>
+</ul>
+<h2>Fragen</h2>
+<ul>
+<li>Wie unterscheiden sich die Objektorientierte Analyse (OOA) und das Objektorientierte Design (OOD) in ihren Zielen und Schwerpunkten? Erläutere die Hauptunterschiede und erkläre, warum beide Phasen für die Softwareentwicklung wichtig sind.</li>
+<li>Stell dir vor, du sollst ein Klassendiagramm für ein einfaches Banksystem erstellen. Welche Klassen würdest du definieren und welche Beziehungen (z.B. Vererbung, Aggregation, Komposition) würdest du zwischen diesen Klassen darstellen? Begründen deine Entscheidungen.</li>
+<li>Erkläre den Zweck und die Vorteile von Aktivitätsdiagrammen in der Softwareentwicklung. Wie können diese Diagramme dazu beitragen, den Ablauf eines Programms besser zu verstehen und zu planen?</li>
+<li>Warum ist die Dokumentation von Code durch Javadoc so wichtig für die langfristige Wartbarkeit und Erweiterbarkeit von Software? Nenne mindestens drei konkrete Vorteile und erläutere, wie diese die Zusammenarbeit in einem Entwicklerteam verbessern können.</li>
+</ul>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Strukturierte Softwareentwicklung ist für komplexe Projekte von großer Bedeutung, da sie Probleme wie unübersichtlichen Code und schwierige Wartung vermeidet.</li>
+<li>Der Prozess der Softwareentwicklung umfasst die Phasen Konzeption, Implementierung und Dokumentation, wobei jede Phase eine wichtige Rolle für den Erfolg des Projekts spielt.</li>
+<li><strong>Objektorientierte Analyse (OOA): </strong>Verständnis der Anforderungen und Erstellen eines Modells
+<ul>
+<li>Die <strong>Anforderungserhebung</strong> bildet den ersten Schritt der OOA, bei dem alle funktionalen und nicht-funktionalen Anforderungen gesammelt und definiert werden.</li>
+<li>Bei der <strong>Identifikation von Objekten und Klassen</strong> werden relevante Entitäten aus den Anforderungen extrahiert und in Klassen gruppiert.</li>
+<li>Die Modellierung von <strong>Beziehungen</strong> zwischen den Klassen ist ein wichtiger Schritt, um die Struktur des Systems zu erfassen.</li>
+<li><strong>UML-Diagramme</strong> werden erstellt, um die Systemstruktur und -funktionen visuell darzustellen.</li>
+</ul>
+</li>
+<li><strong>Klassendiagramme</strong> zeigen die statische Struktur des Systems, indem sie Klassen, deren Attribute und Methoden sowie die Beziehungen zwischen den Klassen darstellen.</li>
+<li><strong>Aktivitätsdiagramme</strong> visualisieren die dynamische Struktur und die Abläufe innerhalb eines Systems, indem sie Aktionen, Entscheidungen und Kontrollflüsse abbilden.</li>
+<li><strong>Objektorientiertes Design (OOD): </strong>Verfeinern des Modells und Entwurf der technischen Umsetzung
+<ul>
+<li>Der <strong>Architekturentwurf</strong> legt die grundlegende Struktur des Systems fest, wie beispielsweise eine Client-Server-Architektur oder eine Microservices-Architektur.</li>
+<li>Bei der <strong>Detaillierung der Klassen</strong> werden die Strukturen aus der OOA verfeinert und zentrale Prinzipien wie Kapselung, Abstraktion und Vererbung umgesetzt.</li>
+<li>Der <strong>Einsatz von Design Patterns</strong> hilft dabei, bewährte Lösungsansätze für wiederkehrende Probleme zu nutzen.</li>
+</ul>
+</li>
+<li><strong>Dokumentation</strong><br />
+<ul>
+<li><strong>Javadoc</strong> ist ein wichtiges Tool zur Erstellung von API-Dokumentationen aus Java-Quellcode.</li>
+<li><strong>Javadoc-Kommentare</strong> werden im Quellcode verwendet, um Klassen, Attribute und Methoden zu dokumentieren.</li>
+<li>Die Verwendung von Tags wie @param, @return und @throws strukturiert die Dokumentation und macht sie leichter verständlich.</li>
+<li>Die Generierung der Javadoc-Dokumentation kann über die Kommandozeile oder integrierte Entwicklungsumgebungen erfolgen.</li>
+</ul>
+</li>
+</ul>
+<div id="t534f9633-cb9c-ba95-2b93-b9153d3d656a" class="exe-tooltip-text">
+<p>iterativ = sich schrittweise in wiederholten Vorgängen der exakten Lösung annähernd</p>
+</div></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="processing_in_anderen_klassen_nutzen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="kapselung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
