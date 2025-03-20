@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -171,12 +173,14 @@ person<span class="token punctuation">.</span>age <span class="token operator">=
 <span class="token punctuation">}</span></code></pre>
 </div>
 </div>
-<p>Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.<br /><br /></p>
+<p>Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.</p>
+<h1>Abschluss</h1>
+<div class="exe-fx exe-accordion">
 <h2>Aufgaben</h2>
 <ul>
 <li><strong>Aufgabe 1</strong>: Beispiele korrigieren
 <ul>
-<li>Im Abschnitt "Relevanz von Kapselung" wurden einige Negativ-Beispiel für schlechte Kapselung augezeigt</li>
+<li>Im Abschnitt "Relevanz von Kapselung" wurden drei Negativ-Beispiel für schlechte Kapselung aufgezeigt</li>
 <li>Passe alle drei Beispiel mithilfe von Modifikatoren, Gettern oder Settern so an, dass eine gute und sinnvolle Kapselung vorliegt.</li>
 </ul>
 </li>
@@ -184,13 +188,45 @@ person<span class="token punctuation">.</span>age <span class="token operator">=
 <h2>Fragen</h2>
 <ol>
 <li>Erkläre den Begriff der Kapselung und nenne zwei Vorteile, die sich daraus ergeben.</li>
-<li>Warum werden Attribute in der Regel als private deklariert und über Getter/Setter zugänglich gemacht?</li>
+<li>Was ist eine Getter und was ist ein Setter?</li>
+<li>Wozu werden Getter und Setter  eingesetzt?</li>
+<li>Warum werden Attribute in der Regel als <span style="font-family: andale mono, monospace;">private</span> deklariert und über Getter/Setter zugänglich gemacht?</li>
 </ol>
-<h1>Zusammenfassung</h1>
+<h2>Zusammenfassung</h2>
 <ul>
-<li>Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.</li>
-<li>Zugriffsmodifikatoren (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.</li>
-</ul></div>
+<li>Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.
+<ul>
+<li>Ein <strong>Getter</strong> ist eine öffentliche Funktion, welcher den Wert eines Attributs zurückgibt. Mithilfe eines Getters kann ein reiner Lesezugriff umgesetzt werden.</li>
+<li>Ein <strong>Setter</strong> ist eine öffentliche Funktion, welche den Wert eines Attributs ändert. Der Setter ermöglicht die Einbindung einer Überprüfung oder Anpassung des Wertes oder die Ausführung weiterer Aktionen, bevor der Wert geändert wird.</li>
+<li><strong>Beispiel:</strong>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>class OnlineShop {
+
+   private int bestand;
+
+   public in getBestand () {
+      return bestand;
+   }
+
+   public void setBestand (int menge) {
+
+      if (menge &gt;= 0) {
+         bestand = menge;
+      } else {
+         System.out.println("Bestand darf nicht negativ sein!");
+      }
+   }
+}</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li><strong>Zugriffsmodifikatoren</strong> (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.</li>
+</ul>
+</div>
+<p></p></div>
 </div>
 </div>
 </article>

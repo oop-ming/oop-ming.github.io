@@ -269,7 +269,8 @@ void draw() {
 &lt;/div&gt;
 &lt;p&gt;Du siehst: Alles, was der Roboter braucht (seine Daten und sein Verhalten) befindet sich innerhalb der Klasse. In Zeile 19 wird ein neuer Roboter erstellt mit dem Schlüsselwort new - das kennen wir aus Processing bereits vor der Deklaration eines Arrays. In Zeile 22 und 23 greifen wir auf die Funktionen (auch Methoden) des Roboters über die Punktnotation zu.&lt;/p&gt;
 &lt;p&gt;Wenn wir nun anfangen Klassen und Objekte in Java zu schreiben, wird dies tatsächlich fast genauso aussehen. Da Processing eine vereinfachte Version von Java ist, haben beide viele Gemeinsamkeiten. Im folgenden Kapitel sehen wir uns an, wie man in Java programmiert und wie dies sich von Processing unterscheidet.&lt;/p&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe: Alltagsmodellierung&lt;br /&gt;&lt;/strong&gt;
@@ -292,13 +293,14 @@ void draw() {
 &lt;li&gt;Erkläre den Unterschied zwischen Kapselung und Vererbung anhand eines praktischen Beispiels aus dem Alltag.&lt;/li&gt;
 &lt;li&gt;Wie unterscheidet sich die prozedurale Programmierung von der objektorientierten Herangehensweise?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Objektorientierte Programmierung organisiert den Code in eigenständige Objekte, die Daten und Verhalten bündeln.&lt;/li&gt;
 &lt;li&gt;Die vier zentralen Prinzipien sind Abstraktion, Kapselung, Vererbung und Polymorphismus.&lt;/li&gt;
 &lt;li&gt;Im Vergleich zur prozeduralen Programmierung bietet Objektorientierte Programmierung eine bessere Strukturierung und Wiederverwendbarkeit von Code.&lt;/li&gt;
 &lt;li&gt;Praktische Beispiele aus dem Alltag (z. B. Auto, Bankkonto, Tiere) helfen, die Konzepte anschaulich zu verstehen.&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;"></unicode>
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;"></unicode>
            <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
            <int value="4"></int>
            <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -392,7 +394,7 @@ void draw() {
         <list></list>
         <string role="key" value="children"></string>
         <list>
-         <instance class="exe.engine.node.Node" reference="40">
+         <instance class="exe.engine.node.Node" reference="43">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Erste Schritte in Java"></unicode>
@@ -629,18 +631,19 @@ public class Main {
 &lt;ol&gt;
 &lt;li&gt;Stelle sicher, dass das IDE Features Trainer Plugin installiert ist.
 &lt;ul&gt;
-&lt;li&gt;Dies kannst du überprüfen, indem du über &lt;strong&gt;File &amp;gt; Settings &amp;gt; Plugins&lt;/strong&gt; schaust, ob der&lt;strong&gt; IDE Features Trainer&lt;/strong&gt; installiert ist. Wenn das Plugin nicht installiert ist, installiere es. &lt;/li&gt;
+&lt;li&gt;Dies kannst du überprüfen, indem du über &lt;strong&gt;File &amp;gt; Settings &amp;gt; Plugins&lt;/strong&gt; schaust, ob der&lt;strong&gt; IDE Features Trainer&lt;/strong&gt; installiert ist. Wenn das Plugin nicht installiert ist, installiere es.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Nun kannst du über den Willkommen Bildschirm von IntelliJ den Features Trainer starten
 &lt;ul&gt;
 &lt;li&gt;Der Willkommens Bildschirm wird standardmäßig nur beim ersten öffnen von IntelliJ gezeigt. Sobald du ein Projekt erstellt hast, wird immer das zuletzt geöffnete Projekt geöffnet, wenn du IntelliJ startest.&lt;/li&gt;
-&lt;li&gt;Um den Willkommen Bildschirm erneut anzuzeigen, musst du das aktuelle Projekt (bzw. alle aktuellen Projekte) schließen. Das machst du über &lt;strong&gt;☰ &amp;gt; File &amp;gt; Close Project&lt;/strong&gt;. &lt;/li&gt;
+&lt;li&gt;Um den Willkommen Bildschirm erneut anzuzeigen, musst du das aktuelle Projekt (bzw. alle aktuellen Projekte) schließen. Das machst du über &lt;strong&gt;☰ &amp;gt; File &amp;gt; Close Project&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Auf dem Willkommen Bildschirm wählst du links &lt;strong&gt;&quot;Learn&quot;&lt;/strong&gt; aus und klickst dann unter &lt;strong&gt;&quot;Learn&lt;/strong&gt; &lt;strong&gt;IDE Features&quot;&lt;/strong&gt; auf &lt;strong&gt;&quot;Start&lt;/strong&gt; &lt;strong&gt;Learning&quot;&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Übungsaufgaben&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Erstelle ein Hello World-Programm in Java (ohne den Beispiel-Code von IntelliJ)&lt;/li&gt;
@@ -653,13 +656,14 @@ public class Main {
 &lt;li&gt;Nenne drei Unterschiede zwischen Processing und Java.&lt;/li&gt;
 &lt;li&gt;Was ist eine Run Configuration und wofür wird sei gebraucht?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Bevor man ein Programm in Java programmieren und kompilieren kann, muss man eine Java-Entwickungsumgebung (IDE) einrichten und das Java Development Kit (JDK) installieren&lt;/li&gt;
 &lt;li&gt;Java ist eine objektorientierte Programmiersprache mit strengerer Syntax als Processing.&lt;/li&gt;
 &lt;li&gt;Ein Programm besteht aus Klassen und Methoden; die Hauptmethode heißt main(). Hier startet das Programm.&lt;/li&gt;
 &lt;li&gt;Das „Hello World“-Programm zeigt die grundlegende Struktur eines Java-Codes.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                  <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                  <int value="4"></int>
@@ -680,7 +684,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="301"></int>
+                        <int value="306"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -694,9 +698,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.39"></unicode>
+                      <unicode value="14_129_2.41"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="42">
+                      <instance class="exe.engine.resource.Resource" reference="45">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -705,7 +709,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpdpmpgz\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -732,7 +736,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="305"></int>
+                        <int value="310"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -746,9 +750,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.40"></unicode>
+                      <unicode value="14_129_2.42"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="43">
+                      <instance class="exe.engine.resource.Resource" reference="46">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -757,7 +761,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpdpmpgz\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1116,7 +1120,8 @@ public class Main {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Implementierung einer Klasse
@@ -1143,7 +1148,7 @@ public class Main {
 &lt;li&gt;Wie unterscheiden sich ein Konstruktor und eine normale Methode?&lt;/li&gt;
 &lt;li&gt;Was bedeutet es, wenn eine Methode in einer Klasse statisch ist?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Eine Klasse ist ein Bauplan, der Attribute und Methoden definiert, während ein Objekt eine konkrete Instanz dieser Klasse darstellt.
 &lt;ul&gt;
@@ -1159,6 +1164,7 @@ public class Main {
 &lt;/li&gt;
 &lt;li&gt;Konstruktoren initialisieren Objekte und können überladen werden, um flexible Initialisierungen zu ermöglichen.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                           <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                           <int value="4"></int>
@@ -1898,7 +1904,7 @@ public class Beispiel {
 &lt;/div&gt;
 &lt;p&gt;&lt;span class=&quot;listed-menu css-1kkg4t3&quot;&gt;In diesem Beispiel ist &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;oeffentlicheZahl&lt;/span&gt; von überall zugänglich, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;geschuetzteZahl&lt;/span&gt; ist innerhalb des Pakets und der Subklassen zugänglich, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;defaultZahl&lt;/span&gt; ist innerhalb des Pakets zugänglich und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;privateZahl&lt;/span&gt; ist nur innerhalb der Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Beispiel&lt;/span&gt; zugänglich.&lt;/span&gt;&lt;span class=&quot;listed-menu css-1kkg4t3&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;Nicht-Zugriffsmodifikatoren&lt;/h2&gt;
-&lt;p class=&quot;p-margin&quot;&gt;Nicht-Zugriffsmodifikatoren bieten zusätzliche Funktionen wie die Kontrolle der Vererbung, die Gewährleistung der Unveränderlichkeit und die Definition besonderer Eigenschaften. &lt;/p&gt;
+&lt;p class=&quot;p-margin&quot;&gt;Nicht-Zugriffsmodifikatoren bieten zusätzliche Funktionen wie die Kontrolle der Vererbung, die Gewährleistung der Unveränderlichkeit und die Definition besonderer Eigenschaften.&lt;/p&gt;
 &lt;p&gt;Für Klassen gibt es die Modifikatoren final und abstract:&lt;/p&gt;
 &lt;table style=&quot;width: 100%; height: 100px;&quot; border=&quot;1&quot; class=&quot;exe-table&quot;&gt;
 &lt;thead&gt;
@@ -2050,7 +2056,8 @@ public class Beispiel {
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1&gt;Übungsaufgaben&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Schreibe ein Programm, das zwei Zahlen einliest und ihre Summe berechnet.&lt;/li&gt;
@@ -2063,7 +2070,7 @@ public class Beispiel {
 &lt;li&gt;Worin unterscheiden sich die verschiedenen Befehle, mit denen eine Konsolenausgabe erstellt werden kann?&lt;/li&gt;
 &lt;li&gt;Worin unterscheiden sich Methoden/Funktionen in Processing und Java?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Die Syntaxregeln in Java sind identisch mit den Regeln von Processing und müssen zwingend eingehalten werden, damit dein Programm ausführbar ist.&lt;/li&gt;
 &lt;li&gt;In Java werden Datentypen unterschieden nach primitiven Datentypen und Referenztypen.
@@ -2103,6 +2110,8 @@ public class Beispiel {
 &lt;/li&gt;
 &lt;li&gt;Die Klasse Math bietet eine Reihe von vorgefertigten Befehlen, mit denen gängige arithmetische Operationen durchgeführt werden können.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                                      <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                                      <int value="4"></int>
@@ -2231,7 +2240,7 @@ public class Beispiel {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;In diesem Beispiel verhindert der &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;catch&lt;/span&gt;‑Block, dass das Programm abstürzt, und gibt stattdessen eine verständliche Fehlermeldung aus.&lt;/p&gt;
-&lt;h1&gt;Das Schlüsselwort throw und die Deklaration mit throws&lt;/h1&gt;
+&lt;h1&gt;Das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;throw&lt;/span&gt; und die Deklaration mit &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;throws&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;Manchmal möchte man eine &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Exception&lt;/span&gt; aktiv auslösen – etwa wenn eine Eingabe ungültig ist oder ein bestimmter Zustand nicht erfüllt wird. Hier kommt das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;throw&lt;/span&gt; zum Einsatz. Es ermöglicht, eine &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Exception&lt;/span&gt; manuell zu „werfen“. Zudem kann eine Methode mit dem Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;throws&lt;/span&gt; deklarieren, welche Exception(s) sie möglicherweise an den aufrufenden Code weitergibt.&lt;/p&gt;
 &lt;p&gt;Ein kompaktes Beispiel:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
@@ -2282,7 +2291,8 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Durch den gezielten Einsatz eigener Exceptions können Entwickler Fehlerfälle präziser abfangen und dem Benutzer aussagekräftige Rückmeldungen geben – beispielsweise in einer Benutzeroberfläche, die auf defekte Hardware oder nicht erfüllte Systemvoraussetzungen reagiert.&lt;/p&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Falsche Eingabe&lt;br /&gt;Schreibe ein Programm, das den Benutzer zur Eingabe einer Zahl auffordert. Wenn der Benutzer einen ungültigen (z. B. nicht-numerischen) Wert eingibt, soll eine benutzerdefinierte Exception „InvalidInputException“ geworfen und in einem catch‑Block abgefangen werden, sodass eine entsprechende Fehlermeldung ausgegeben wird.&lt;/li&gt;
@@ -2295,7 +2305,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;Welche Aufgabe übernimmt der finally‑Block, und warum ist er nützlich?&lt;/li&gt;
 &lt;li&gt;Wie und warum würdest eine eigene Exception definieren?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;try&lt;/span&gt;‑Block: Enthält Code, der potenziell Fehler verursachen kann.&lt;/li&gt;
 &lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;catch&lt;/span&gt;‑Block: Fängt spezifische Exception-Typen ab und behandelt sie, um den Programmfluss aufrechtzuerhalten.&lt;/li&gt;
@@ -2303,7 +2313,9 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;throws&lt;/span&gt;: Deklariert in der Methodensignatur, dass eine Methode eine Exception werfen kann.&lt;/li&gt;
 &lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;finally:&lt;/span&gt; Ein Block, der immer ausgeführt wird – ideal für Aufräumarbeiten.&lt;/li&gt;
 &lt;li&gt;Custom Exceptions: Erlauben eine präzisere Fehlerbehandlung, indem spezifische Fehlerfälle benannt und behandelt werden.&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;"></unicode>
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                                               <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                                               <int value="4"></int>
                                               <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -2616,7 +2628,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpdpmpgz\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2636,7 +2648,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpdpmpgz\\klassendiagramm_beispiel2.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3034,10 +3046,11 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;&lt;strong&gt;Vollständigkeit:&lt;/strong&gt; Jede öffentliche und geschützte Methode sollte kommentiert sein. Dies unterstützt den Wissensaustausch und ist für die spätere Nutzung und Erweiterung unerlässlich.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Überprüfe die generierte Dokumentation:&lt;/strong&gt; Oftmals können Tippfehler oder unvollständige Parameterangaben die automatische Dokumentation stören. Schaue dir im Anschluss immer die HTML-Dokumentation an, um Fehler zu erkennen und zu beheben.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Aufgabe 1: Klassendiagramm&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Klassendiagramm&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;Erstelle ein Klassendiagramm für ein einfaches Bibliothekssystem mit folgenden Klassen:&lt;br /&gt;
 &lt;ul&gt;
@@ -3050,7 +3063,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;Füge den Klassen jeweils mindestens eine Methode hinzu und verwende die korrekten UML-Notationen für Attribute, Methoden und Beziehungen.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Aufgabe 2: Aktivitätsdiagramm
+&lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Aktivitätsdiagramm
 &lt;ul&gt;
 &lt;li&gt;Erstelle ein Aktivitätsdiagramm für den Prozess der Geldabhebung an einem Geldautomaten. Berücksichtige dabei folgende Schritte:
 &lt;ul&gt;
@@ -3065,7 +3078,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;Füge eine Entscheidung hinzu, die prüft, ob der Kontostand ausreichend ist. Falls nicht, soll eine Fehlermeldung angezeigt werden. Verwende die korrekten UML-Symbole für Start, Ende, Aktionen, Entscheidungen und Kontrollflüsse.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Aufgabe 3: Javadoc
+&lt;li&gt;&lt;strong&gt;Aufgabe 3&lt;/strong&gt;: Javadoc
 &lt;ul&gt;
 &lt;li&gt;Schreibe Javadoc-Kommentare für die folgende Klasse und Methode:
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
@@ -3097,7 +3110,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;Erkläre den Zweck und die Vorteile von Aktivitätsdiagrammen in der Softwareentwicklung. Wie können diese Diagramme dazu beitragen, den Ablauf eines Programms besser zu verstehen und zu planen?&lt;/li&gt;
 &lt;li&gt;Warum ist die Dokumentation von Code durch Javadoc so wichtig für die langfristige Wartbarkeit und Erweiterbarkeit von Software? Nenne mindestens drei konkrete Vorteile und erläutere, wie diese die Zusammenarbeit in einem Entwicklerteam verbessern können.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Strukturierte Softwareentwicklung ist für komplexe Projekte von großer Bedeutung, da sie Probleme wie unübersichtlichen Code und schwierige Wartung vermeidet.&lt;/li&gt;
 &lt;li&gt;Der Prozess der Softwareentwicklung umfasst die Phasen Konzeption, Implementierung und Dokumentation, wobei jede Phase eine wichtige Rolle für den Erfolg des Projekts spielt.&lt;/li&gt;
@@ -3127,6 +3140,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;div id=&quot;t534f9633-cb9c-ba95-2b93-b9153d3d656a&quot; class=&quot;exe-tooltip-text&quot;&gt;
 &lt;p&gt;iterativ = sich schrittweise in wiederholten Vorgängen der exakten Lösung annähernd&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;"></unicode>
@@ -3149,7 +3163,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="302"></int>
+                                                   <int value="307"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3163,7 +3177,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.7"></unicode>
+                                                 <unicode value="28_127_2.9"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="27"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3182,7 +3196,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="303"></int>
+                                                   <int value="308"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3196,7 +3210,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.8"></unicode>
+                                                 <unicode value="28_127_2.10"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="28"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3414,12 +3428,14 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.&lt;/p&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Beispiele korrigieren
 &lt;ul&gt;
-&lt;li&gt;Im Abschnitt &quot;Relevanz von Kapselung&quot; wurden einige Negativ-Beispiel für schlechte Kapselung augezeigt&lt;/li&gt;
+&lt;li&gt;Im Abschnitt &quot;Relevanz von Kapselung&quot; wurden drei Negativ-Beispiel für schlechte Kapselung aufgezeigt&lt;/li&gt;
 &lt;li&gt;Passe alle drei Beispiel mithilfe von Modifikatoren, Gettern oder Settern so an, dass eine gute und sinnvolle Kapselung vorliegt.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -3427,13 +3443,45 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
 &lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Erkläre den Begriff der Kapselung und nenne zwei Vorteile, die sich daraus ergeben.&lt;/li&gt;
-&lt;li&gt;Warum werden Attribute in der Regel als private deklariert und über Getter/Setter zugänglich gemacht?&lt;/li&gt;
+&lt;li&gt;Was ist eine Getter und was ist ein Setter?&lt;/li&gt;
+&lt;li&gt;Wozu werden Getter und Setter  eingesetzt?&lt;/li&gt;
+&lt;li&gt;Warum werden Attribute in der Regel als &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private&lt;/span&gt; deklariert und über Getter/Setter zugänglich gemacht?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.&lt;/li&gt;
-&lt;li&gt;Zugriffsmodifikatoren (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;"></unicode>
+&lt;li&gt;Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.
+&lt;ul&gt;
+&lt;li&gt;Ein &lt;strong&gt;Getter&lt;/strong&gt; ist eine öffentliche Funktion, welcher den Wert eines Attributs zurückgibt. Mithilfe eines Getters kann ein reiner Lesezugriff umgesetzt werden.&lt;/li&gt;
+&lt;li&gt;Ein &lt;strong&gt;Setter&lt;/strong&gt; ist eine öffentliche Funktion, welche den Wert eines Attributs ändert. Der Setter ermöglicht die Einbindung einer Überprüfung oder Anpassung des Wertes oder die Ausführung weiterer Aktionen, bevor der Wert geändert wird.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;class OnlineShop {
+
+   private int bestand;
+
+   public in getBestand () {
+      return bestand;
+   }
+
+   public void setBestand (int menge) {
+
+      if (menge &amp;gt;= 0) {
+         bestand = menge;
+      } else {
+         System.out.println(&quot;Bestand darf nicht negativ sein!&quot;);
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zugriffsmodifikatoren&lt;/strong&gt; (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                                                      <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                                                      <int value="4"></int>
                                                      <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -3513,7 +3561,7 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
                                              <reference key="21"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="9"></int>
+                                            <int value="11"></int>
                                             <string role="key" value="parentNode"></string>
                                             <reference key="33"></reference>
                                            </dictionary>
@@ -3941,11 +3989,12 @@ class Wall implements Drawable {
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;div&gt;Trotz dieser Nachteile überwiegen in vielen Fällen die Vorteile von Polymorphismus. Wichtig ist, dass du die Vor- und Nachteile abwägst und Polymorphismus in deinen Programmen angemessen einsetzt. &lt;/div&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
-&lt;h2&gt;&lt;br /&gt;Aufgaben&lt;/h2&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Tierhierarchie erweitern:&lt;br /&gt;Erweitere das in Kapitel 4 eingeführte Beispiel. Erstelle zusätzlich zur Klasse Hund und Katze eine weitere Subklasse Vogel, die die Methode geraeuschMachen() überschreibt (z. B. mit der Ausgabe „zwitschert: Zirp,zirp“).&lt;br /&gt;Erstelle in einer Main-Methode ein Array vom Typ Tier, das Objekte aller drei Klassen enthält, und rufe für jedes Objekt die Methode geraeuschMachen() auf.&lt;/li&gt;
-&lt;li&gt;Grafische Anwendung in Processing:&lt;br /&gt;Entwickle eine einfache Klassenhierarchie für grafische Formen. Ergänze das Beispiel von Circle und Rectangle um eine weitere Form (z. B. Triangle) und implementiere eine polymorphe draw()-Methode für alle Formen.&lt;br /&gt;Schreibe eine Main-Methode, in der ein Array verschiedener Formen durchlaufen und jede Form gezeichnet wird.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Tierhierarchie erweitern&lt;br /&gt;Erweitere das in Kapitel 4 eingeführte Beispiel. Erstelle zusätzlich zur Klasse Hund und Katze eine weitere Subklasse Vogel, die die Methode geraeuschMachen() überschreibt (z. B. mit der Ausgabe „zwitschert: Zirp,zirp“).&lt;br /&gt;Erstelle in einer Main-Methode ein Array vom Typ Tier, das Objekte aller drei Klassen enthält, und rufe für jedes Objekt die Methode geraeuschMachen() auf.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Grafische Anwendung in Processing&lt;br /&gt;Entwickle eine einfache Klassenhierarchie für grafische Formen. Ergänze das Beispiel von Circle und Rectangle um eine weitere Form (z. B. Triangle) und implementiere eine polymorphe draw()-Methode für alle Formen.&lt;br /&gt;Schreibe eine Main-Methode, in der ein Array verschiedener Formen durchlaufen und jede Form gezeichnet wird.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
@@ -3954,7 +4003,7 @@ class Wall implements Drawable {
 &lt;li&gt;Welche Vorteile bietet der Einsatz von Polymorphismus in der Softwareentwicklung?&lt;/li&gt;
 &lt;li&gt;Warum ist es sinnvoll, in grafischen Anwendungen (wie in Processing) polymorphe Methoden einzusetzen?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;div&gt;
 &lt;div&gt;
 &lt;div&gt;
@@ -4009,6 +4058,8 @@ class Wall implements Drawable {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                                      <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                                      <int value="4"></int>
@@ -4059,7 +4110,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpdpmpgz\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4333,7 +4384,8 @@ public class Main {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Fahrzeug-Vererbungshierarchie implementieren
@@ -4372,23 +4424,25 @@ public class Main {
 &lt;/ul&gt;
 &lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Was versteht man unter Vererbung in der objektorientierten Programmierung, und welche Vorteile bietet sie?&lt;/li&gt;
+&lt;li&gt;Was versteht man unter Vererbung in der objektorientierten Programmierung?&lt;/li&gt;
+&lt;li&gt;Eelche Vorteile bietet Vererbung?&lt;/li&gt;
 &lt;li&gt;Wie wird in Java die Vererbung syntaktisch umgesetzt, und welche Rolle spielt dabei das Schlüsselwort „extends“?&lt;/li&gt;
 &lt;li&gt;Erklärt den Zweck des Schlüsselworts „super“ in Konstruktoren und Methoden.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Vererbung ermöglicht es, gemeinsame Eigenschaften und Methoden in einer Superklasse zu definieren und diese in allen abgeleiteten Subklassen wiederzuverwenden.
+&lt;li&gt;Vererbung ermöglicht es, gemeinsame Eigenschaften und Methoden in einer &lt;strong&gt;Superklasse&lt;/strong&gt; zu definieren und diese in allen &lt;strong&gt;abgeleiteten Subklassen&lt;/strong&gt; wiederzuverwenden.
 &lt;ul&gt;
-&lt;li&gt;Superklasse: diese Klasse vererbt Eigenschaften und Methoden&lt;/li&gt;
-&lt;li&gt;Subklasse: diese Klasse erbt Eigenschaften und Methoden&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Superklasse:&lt;/strong&gt; diese Klasse vererbt Eigenschaften und Methoden&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subklasse:&lt;/strong&gt; diese Klasse erbt Eigenschaften und Methoden&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;In einer Vererbungshierarchie mit mehreren Vererbungsebenen, kann eine Klasse sowohl Super- als auch Subklasse sein.&lt;/li&gt;
-&lt;li&gt;In Java wird Vererbung mit dem Schlüsselwort „extends“ umgesetzt.&lt;/li&gt;
-&lt;li&gt;Das Schlüsselwort „super“ wird genutzt, um auf Konstruktoren, Methoden und Attribute der Superklasse zuzugreifen.&lt;/li&gt;
-&lt;li&gt;Vererbung fördert Wiederverwendbarkeit, Wartbarkeit und Erweiterbarkeit des Codes – wichtige Aspekte in interdisziplinären Projekten im Medieningenieurwesen.&lt;/li&gt;
+&lt;li&gt;In Java wird Vererbung mit dem Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;extends&lt;/span&gt; umgesetzt.&lt;/li&gt;
+&lt;li&gt;Das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super&lt;/span&gt; wird genutzt, um auf Konstruktoren, Methoden und Attribute der Superklasse zuzugreifen.&lt;/li&gt;
+&lt;li&gt;Vererbung fördert &lt;strong&gt;Wiederverwendbarkeit, Wartbarkeit&lt;/strong&gt; und &lt;strong&gt;Erweiterbarkeit&lt;/strong&gt; des Codes&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                               <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                               <int value="4"></int>
@@ -4409,7 +4463,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="304"></int>
+                                     <int value="309"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4423,7 +4477,7 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.17"></unicode>
+                                   <unicode value="16_127_2.18"></unicode>
                                    <string role="key" value="_imageResource"></string>
                                    <reference key="34"></reference>
                                    <string role="key" value="_parent"></string>
@@ -4447,7 +4501,7 @@ public class Main {
                                <reference key="17"></reference>
                               </dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="18"></int>
+                              <int value="19"></int>
                               <string role="key" value="parentNode"></string>
                               <reference key="21"></reference>
                              </dictionary>
@@ -4772,22 +4826,23 @@ class MyList implements Sortable {
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;br /&gt;Diese Gegenüberstellung verdeutlicht, dass abstrakte Klassen ideal sind, wenn es eine starke “ist-ein” Beziehung gibt, während Interfaces Flexibilität und lose Kopplung bei der Umsetzung von Fähigkeiten ermöglichen.&lt;/p&gt;
-&lt;h1&gt;&lt;br /&gt;Übungen&lt;/h1&gt;
-&lt;h2&gt;Aufgaben:&lt;/h2&gt;
-&lt;p&gt;Beide Übungsaugaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Klassen%20und%20Objekte#auto_top&quot;&gt;Klassen und Objekte&lt;/a&gt;. Nutze den Code als Grundlage. Du sollst von diesem Code 2 Varianten erstellen:&lt;/p&gt;
+&lt;h1&gt;&lt;br /&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
+&lt;p&gt;Beide Übungsaugaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Klassen%20und%20Objekte#auto_top&quot;&gt;Klassen und Objekte&lt;/a&gt;. Nutze den Code als Grundlage. Du sollst von diesem Code&lt;em&gt; 2 Varianten&lt;/em&gt; erstellen:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 1: Abstrakte Klassen implementieren&lt;br /&gt;&lt;/strong&gt;Der Ball hat zwei wichtige Methoden: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;zeichnen()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen().&lt;/span&gt; Lagere beide Methoden inklusive den dafür benötigten Feldern in 2 abstrakte Klassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;DrawableObject&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MovableObjekt&lt;/span&gt; aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1: Abstrakte Klassen implementieren&lt;br /&gt;&lt;/strong&gt;Der Ball hat zwei wichtige Methoden: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;zeichnen()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen().&lt;/span&gt; Lagere beide Methoden inklusive den dafür benötigten Attributen in 2 abstrakte Klassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;DrawableObject&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MovableObjekt&lt;/span&gt; aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 2: Interfaces implementieren&lt;br /&gt;&lt;/strong&gt;Bei dieser Aufgabe sollst du die Methoden &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;zeichnen()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen()&lt;/span&gt; nicht in abstrakten Klassen auslagern, sondern in die Interfaces &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Drawable&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Moveable&lt;/span&gt; und diese dann in der Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; umsetzen.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Reflexion:&lt;/strong&gt;&lt;br /&gt;Schau dir beide Varianten deines Codes an: Die mit den abstrakten Klassen und die mit den Interfaces. Beides sind sinnvolle Strukturen. Welche Variante findest du sinnvoller und nachvollziehbarer?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Fragen:&lt;/h2&gt;
+&lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Erklär's mir als wäre ich 5 Jahre alt: Was sind abstrakte Klassen und was sind Interfaces?&lt;/li&gt;
 &lt;li&gt;Warum kann eine abstrakte Klasse nicht direkt instanziiert werden?&lt;/li&gt;
 &lt;li&gt;In welchen Situationen würdest du ein Interface einem abstrakten Klasse vorziehen?&lt;/li&gt;
 &lt;li&gt;Nenne zwei wesentliche Unterschiede zwischen abstrakten Klassen und Interfaces.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Abstrakte Klassen:
 &lt;ul&gt;
@@ -4809,6 +4864,7 @@ class MyList implements Sortable {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                        <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                        <int value="4"></int>
@@ -4843,7 +4899,7 @@ class MyList implements Sortable {
                     </list>
                     <string role="key" value="children"></string>
                     <list>
-                     <instance class="exe.engine.node.Node" reference="37">
+                     <instance class="exe.engine.node.Node" reference="40">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Packages und API"></unicode>
@@ -4945,7 +5001,7 @@ import package.name.*;          //  Paket importieren
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel Collections und Lambda Ausdrücke: &lt;/p&gt;
+&lt;p&gt;Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top&quot; title=&quot;Zum Kapitel&quot;&gt;Collections und Lambda Ausdrücke&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;import java.util.ArrayList;   // Importiert die Klasse ArrayList
@@ -4971,7 +5027,28 @@ import java.util.*;                // Importiert alle Collections
 &lt;li&gt;&lt;em&gt;New &amp;gt; Package&lt;/em&gt;&lt;br /&gt;In diesem Fall gibtst du einfach den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im src Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package name;&lt;/span&gt; (wobei name der Name deines Pakets ist) stehen. Dadurch weiß der Compiler, dass diese Klasse zu diesem Paket gehört.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;New &amp;gt; Java Class&lt;/em&gt;&lt;br /&gt;Wer es etwas schneller haben möchte kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option &lt;em&gt;Java Class&lt;/em&gt; wählt und hier im Eingabefeld den Paketname und den Klassenname getrennt durch einen Punkt angibt (z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinpaket.MeineKlasse&lt;/span&gt;). Dann erstellt IntelliJ erst das Paket (und den Ordner) &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinPaket&lt;/span&gt; und direkt danach die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MeineKlasse.&lt;/span&gt; Auch hier findest du in der ersten Zeile innerhalb der Klasse den package Befehl.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Math-Klasse
+&lt;ul&gt;
+&lt;li&gt;Binde die Math Klasse in einer Datei in einem Projekt ein.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Eigenes Paket
+&lt;ul&gt;
+&lt;li&gt;Erstelle ein eigenes Packet innerhalb deines Projekts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fragen&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In welche zwei Kategorien lassen sich Packages in Java einteilen?&lt;/li&gt;
+&lt;li&gt;Warum sind Packages wichtig? Welche Vorteile bringen sie mit?&lt;/li&gt;
+&lt;li&gt;Wie werden Packages in einer Datei eingebunden? Welcher Befehl wird benötigt?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Packages gruppieren Klassen in einer sinnvollen Struktur und verhindern Konflikte bei der Namensgebung&lt;/li&gt;
 &lt;li&gt;Es gibt vordefinierte und benutzerdefinierte Pakete&lt;/li&gt;
@@ -4979,6 +5056,7 @@ import java.util.*;                // Importiert alle Collections
 &lt;li&gt;Pakete und Klassen werden mithilfe von import importiert&lt;/li&gt;
 &lt;li&gt;Eigene Pakete können über das User-Interface von IntelliJ und mithilfe des &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package&lt;/span&gt; Schlüsselworts erstellt werden.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                              <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                              <int value="4"></int>
@@ -4998,11 +5076,409 @@ import java.util.*;                // Importiert alle Collections
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
-                             <dictionary></dictionary>
+                             <dictionary>
+                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top"></unicode>
+                              <instance class="exe.engine.node.Node" reference="39">
+                               <dictionary>
+                                <string role="key" value="_title"></string>
+                                <unicode value="Collections und Lambda Ausdrücke"></unicode>
+                                <string role="key" value="idevices"></string>
+                                <list>
+                                 <instance class="exe.engine.jsidevice.JsIdevice" reference="37">
+                                  <dictionary>
+                                   <string role="key" value="_title"></string>
+                                   <unicode value=""></unicode>
+                                   <string role="key" value="_attributes"></string>
+                                   <list>
+                                    <tuple>
+                                     <string value="title"></string>
+                                     <list>
+                                      <string value="Title"></string>
+                                      <int value="0"></int>
+                                      <int value="0"></int>
+                                     </list>
+                                    </tuple>
+                                    <tuple>
+                                     <string value="category"></string>
+                                     <list>
+                                      <string value="Category"></string>
+                                      <int value="0"></int>
+                                      <int value="1"></int>
+                                     </list>
+                                    </tuple>
+                                    <tuple>
+                                     <string value="css-class"></string>
+                                     <list>
+                                      <string value="CSS class"></string>
+                                      <int value="0"></int>
+                                      <int value="2"></int>
+                                     </list>
+                                    </tuple>
+                                    <tuple>
+                                     <string value="icon"></string>
+                                     <list>
+                                      <string value="Icon"></string>
+                                      <int value="0"></int>
+                                      <int value="3"></int>
+                                     </list>
+                                    </tuple>
+                                   </list>
+                                   <string role="key" value="_author"></string>
+                                   <string value=""></string>
+                                   <string role="key" value="_iDeviceDir"></string>
+                                   <string value="text"></string>
+                                   <string role="key" value="_purpose"></string>
+                                   <string value=""></string>
+                                   <string role="key" value="_tip"></string>
+                                   <string value=""></string>
+                                   <string role="key" value="_typeName"></string>
+                                   <unicode value="Text"></unicode>
+                                   <string role="key" value="_valid"></string>
+                                   <bool value="1"></bool>
+                                   <string role="key" value="class_"></string>
+                                   <unicode value="text"></unicode>
+                                   <string role="key" value="edit"></string>
+                                   <bool value="0"></bool>
+                                   <string role="key" value="emphasis"></string>
+                                   <int value="0"></int>
+                                   <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
+                                   <int value="1"></int>
+                                   <string role="key" value="fields"></string>
+                                   <list>
+                                    <instance class="exe.engine.field.TextAreaField" reference="38">
+                                     <dictionary>
+                                      <string role="key" value="_id"></string>
+                                      <unicode value="135_2"></unicode>
+                                      <string role="key" value="_idevice"></string>
+                                      <reference key="37"></reference>
+                                      <string role="key" value="_instruc"></string>
+                                      <string value=""></string>
+                                      <string role="key" value="_name"></string>
+                                      <string value=""></string>
+                                      <string role="key" value="anchor_names"></string>
+                                      <list></list>
+                                      <string role="key" value="anchors_linked_from_fields"></string>
+                                      <dictionary></dictionary>
+                                      <string role="key" value="content_w_resourcePaths"></string>
+                                      <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung – Warum Collections?&lt;/h1&gt;
+&lt;p&gt;Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.&lt;/p&gt;
+&lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Die wichtigsten Collection-Typen: ArrayList, LinkedList, HashMap und Stack. Wir betrachten ihre Eigenschaften,&lt;/li&gt;
+&lt;li&gt;Einsatzmöglichkeiten von Collections &lt;/li&gt;
+&lt;li&gt;Verarbeitung von Collections mithilfe von Iteratoren, erweiterten For-Schleifen und Streams.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Das Collections Framework&lt;/h1&gt;
+&lt;p&gt;Das Collections Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamische Arrays (z. B. mit ArrayList)&lt;/li&gt;
+&lt;li&gt;Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)&lt;/li&gt;
+&lt;li&gt;Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vorteile des Collections Frameworks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Flexibilität:&lt;/strong&gt; Dynamische Größenanpassung der Datenstrukturen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Effizienz:&lt;/strong&gt; Optimierte Algorithmen für Suchen, Einfügen und Löschen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Einheitlichkeit:&lt;/strong&gt; Gemeinsame Schnittstellen für verschiedene Datenstrukturen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Wichtige Collection-Typen&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
+&lt;h2&gt;ArrayList&lt;/h2&gt;
+&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ArrayList&lt;/span&gt; ist eine dynamische Liste, die ähnlich wie ein Array funktioniert, aber ihre Größe automatisch anpasst.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elemente werden in einer bestimmten Reihenfolge gespeichert.&lt;/li&gt;
+&lt;li&gt;Doppelte Werte sind erlaubt.&lt;/li&gt;
+&lt;li&gt;Zugriff auf Elemente erfolgt über Indizes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beispiel:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&amp;lt;String&amp;gt; playlist = new ArrayList&amp;lt;&amp;gt;();
+      playlist.add(&quot;Song A&quot;);
+      playlist.add(&quot;Song B&quot;);
+      playlist.add(&quot;Song C&quot;);
+
+      System.out.println(&quot;Erster Song: &quot; + playlist.get(0));
+
+      for (String song : playlist) {
+         System.out.println(&quot;Song: &quot; + song);
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;LinkedList&lt;/h2&gt;
+&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;LinkedList&lt;/span&gt; ist eine Liste, bei der die Elemente als Knoten miteinander verbunden sind.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gut geeignet für häufiges Einfügen/Löschen von Elementen.&lt;/li&gt;
+&lt;li&gt;Schlechtere Zugriffszeit im Vergleich zur ArrayList.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beispiel:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.LinkedList;
+
+public class Main {
+   public static void main(String[] args) {
+      LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
+      queue.add(&quot;Task 1&quot;);
+      queue.add(&quot;Task 2&quot;);
+      queue.addFirst(&quot;Urgent Task&quot;);
+   
+      for (String task : queue) {
+         System.out.println(&quot;Aufgabe: &quot; + task);
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;HashMap&lt;/h2&gt;
+&lt;p&gt;Die HashMap ist eine Map-Struktur, die Schlüssel-Wert-Paare speichert.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schneller Zugriff auf Werte über Schlüssel.&lt;/li&gt;
+&lt;li&gt;Keine garantierte Reihenfolge der Elemente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beispiel:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.HashMap;
+
+public class Main {
+   public static void main(String[] args) {
+      HashMap&amp;lt;String, String&amp;gt; modulMap = new HashMap&amp;lt;&amp;gt;();
+      modulMap.put(&quot;OOP&quot;, &quot;Objektorientierte Programmierung&quot;);
+      modulMap.put(&quot;PRG&quot;, &quot;Programmieren&quot;);
+
+      // Zugriff auf Werte
+      System.out.println(&quot;Modul mit ID OOP: &quot; + modulMap.get(&quot;OOP&quot;)); // Ausgabe: Modul mit ID OOP: Objektorientierte Programmierung
+
+      // Iteration über Schlüssel-Wert-Paare
+      for (var entry : modulMap.entrySet()) {
+         System.out.println(&quot;ID: &quot; + entry.getKey() + &quot;, Name: &quot; + entry.getValue());
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;Stack&lt;/h2&gt;
+&lt;p&gt;Der Stack arbeitet nach dem Last-In-First-Out-Prinzip (LIFO). Dies ist besonders nützlich bei Transformationen oder Rückverfolgungen.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elemente werden gestapelt (push) und zuletzt hinzugefügte zuerst entfernt (pop).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Processing hast du mit pushMatrix() und popMatrix() bereits einen Stack verwendet, um Transformationen des Koordinatensystems zu speichern:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;Stack&amp;lt;String&amp;gt; stack = new Stack&amp;lt;&amp;gt;();
+stack.push(&quot;Transformation 1&quot;);
+stack.push(&quot;Transformation 2&quot;);
+
+// Letzte Transformation entfernen
+System.out.println(stack.pop()); // Ausgabe: Transformation 2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;Iteration über Collections&lt;/h2&gt;
+&lt;p&gt;Java bietet verschiedene Möglichkeiten zur Iteration über Collections:&lt;/p&gt;
+&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
+&lt;h2&gt;Erweiterte for-Schleife&lt;/h2&gt;
+&lt;p&gt;Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten for-Schleife ist deutlich einfacher, als der einer normalen for-Schleife:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;for ( Datentyp variable : Liste) {
+
+   // Schleifenkörper
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In diesem Beispiel werden alle Songtitel innerhalb der ArrayList vom Typ String ausgegeben.&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
+songs.add(&quot;Song A&quot;);
+songs.add(&quot;Song B&quot;);
+
+for (String song : songs) {
+   System.out.println(song);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h2&gt;.forEach - Methode inkl. Lambda Ausdruck&lt;/h2&gt;
+&lt;p&gt;Collections wie ArrayList, LinkedList und HashMap haben eine Klassen-Methode .forEach(). Innerhalb der Klammern der .forEach()-Methode wird angegeben, was für jedes Element der Liste durgeführt werden soll.&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
+queue.add(&quot;Task 1&quot;);
+queue.add(&quot;Task 2&quot;);
+queue.addFirst(&quot;Urgent Task&quot;);
+   
+queue.forEach(task -&amp;gt; System.out.println(task));&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Das was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegen nimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;// Ein Parameter
+Parameter -&amp;gt; Anweisung
+
+// Mehrere Parameter
+(Parameter1, Parameter2) -&amp;gt; Anweisung
+
+// Mehrere Parameter und komplexe Anweisung
+(Parameter1, Parameter2) -&amp;gt; { Codeblock }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;Iterator&lt;/h2&gt;
+&lt;p&gt;Ein Iterator bietet mehr Kontrolle über die Iteration:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
+      songs.add(&quot;Song A&quot;);
+      songs.add(&quot;Song B&quot;);
+
+      Iterator&amp;lt;String&amp;gt; iterator = songs.iterator();
+      while (iterator.hasNext()) {
+         System.out.println(iterator.next());
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Aufgabe 1:&lt;br /&gt;Erstelle ein Programm mit einer HashMap, die eine Einkaufsliste sein soll:
+&lt;ul&gt;
+&lt;li&gt;Der Schlüssel ist das Produkt, das gekauft werden soll und der Wert die Menge (z.B. 5 Tomaten)&lt;/li&gt;
+&lt;li&gt;Füge mindestens fünf Produkte zur Einkaufsliste hinzu.&lt;/li&gt;
+&lt;li&gt;Ändere die Menge von einem Produkt.&lt;/li&gt;
+&lt;li&gt;Iteriere über die Liste und gib alle Produkte aus.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Aufgabe 2:&lt;br /&gt;Simuliere einen Stack für Transformationen in einem Grafikprogramm:
+&lt;ul&gt;
+&lt;li&gt;Implementiere einen Stack mit Transformationen wie „Translation“ oder „Rotation“.&lt;/li&gt;
+&lt;li&gt;Füge Transformationen hinzu und entferne sie schrittweise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fragen&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Was sind die Hauptunterschiede zwischen einer ArrayList und einer LinkedList?&lt;/li&gt;
+&lt;li&gt;Wie funktioniert das LIFO-Prinzip bei einem Stack?&lt;/li&gt;
+&lt;li&gt;Was ist ein Lambda Ausdruck und wo wird er eingesetzt?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Das Java Collections Framework bietet leistungsstarke Klassen wie ArrayList, LinkedList, HashMap und Stack.&lt;/li&gt;
+&lt;li&gt;Mit erweiterten For-Schleifen (for-each) und Iteratoren kannst du effizient durch Collections iterieren.&lt;/li&gt;
+&lt;li&gt;Die Wahl der richtigen Collection hängt von den Anforderungen ab – z. B. schneller Zugriff (HashMap) oder dynamische Listen (ArrayList).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
+                                      <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                                      <int value="4"></int>
+                                      <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                                      <int value="2"></int>
+                                      <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                                      <int value="3"></int>
+                                      <string role="key" value="htmlTag"></string>
+                                      <string value="div"></string>
+                                      <string role="key" value="images"></string>
+                                      <instance class="exe.engine.galleryidevice.GalleryImages">
+                                       <dictionary>
+                                        <string role="key" value=".listitems"></string>
+                                        <list></list>
+                                        <string role="key" value="idevice"></string>
+                                        <reference key="38"></reference>
+                                       </dictionary>
+                                      </instance>
+                                      <string role="key" value="intlinks_to_anchors"></string>
+                                      <dictionary></dictionary>
+                                      <string role="key" value="nextImageId"></string>
+                                      <int value="0"></int>
+                                      <string role="key" value="parentNode"></string>
+                                      <reference key="39"></reference>
+                                     </dictionary>
+                                    </instance>
+                                   </list>
+                                   <string role="key" value="icon"></string>
+                                   <unicode value=""></unicode>
+                                   <string role="key" value="id"></string>
+                                   <unicode value="8"></unicode>
+                                   <string role="key" value="ideviceCategory"></string>
+                                   <unicode value="Text and Tasks"></unicode>
+                                   <string role="key" value="lastIdevice"></string>
+                                   <bool value="0"></bool>
+                                   <string role="key" value="nextFieldId"></string>
+                                   <int value="3"></int>
+                                   <string role="key" value="originalicon"></string>
+                                   <string value=""></string>
+                                   <string role="key" value="parentNode"></string>
+                                   <reference key="39"></reference>
+                                   <string role="key" value="systemResources"></string>
+                                   <list></list>
+                                   <string role="key" value="undo"></string>
+                                   <bool value="1"></bool>
+                                   <string role="key" value="userResources"></string>
+                                   <list></list>
+                                   <string role="key" value="version"></string>
+                                   <int value="0"></int>
+                                  </dictionary>
+                                 </instance>
+                                </list>
+                                <string role="key" value="_id"></string>
+                                <unicode value="8"></unicode>
+                                <string role="key" value="_package"></string>
+                                <reference key="4"></reference>
+                                <string role="key" value="anchor_fields"></string>
+                                <list></list>
+                                <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+                                <int value="2"></int>
+                                <string role="key" value="exportType"></string>
+                                <string value="website"></string>
+                                <string role="key" value="last_full_node_path"></string>
+                                <string value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke"></string>
+                                <string role="key" value="parent"></string>
+                                <reference key="16"></reference>
+                                <string role="key" value="top_anchors_linked_from_fields"></string>
+                                <list>
+                                 <reference key="36"></reference>
+                                </list>
+                                <string role="key" value="children"></string>
+                                <list></list>
+                               </dictionary>
+                              </instance>
+                             </dictionary>
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="37"></reference>
+                             <reference key="40"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -5019,7 +5495,7 @@ import java.util.*;                // Importiert alle Collections
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="37"></reference>
+                          <reference key="40"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -5051,13 +5527,13 @@ import java.util.*;                // Importiert alle Collections
                        <list></list>
                       </dictionary>
                      </instance>
-                     <instance class="exe.engine.node.Node" reference="41">
+                     <instance class="exe.engine.node.Node" reference="44">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Processing in anderen Klassen nutzen"></unicode>
                        <string role="key" value="idevices"></string>
                        <list>
-                        <instance class="exe.engine.jsidevice.JsIdevice" reference="38">
+                        <instance class="exe.engine.jsidevice.JsIdevice" reference="41">
                          <dictionary>
                           <string role="key" value="_title"></string>
                           <unicode value=""></unicode>
@@ -5118,12 +5594,12 @@ import java.util.*;                // Importiert alle Collections
                           <int value="1"></int>
                           <string role="key" value="fields"></string>
                           <list>
-                           <instance class="exe.engine.field.TextAreaField" reference="39">
+                           <instance class="exe.engine.field.TextAreaField" reference="42">
                             <dictionary>
                              <string role="key" value="_id"></string>
                              <unicode value="129_2"></unicode>
                              <string role="key" value="_idevice"></string>
-                             <reference key="38"></reference>
+                             <reference key="41"></reference>
                              <string role="key" value="_instruc"></string>
                              <string value=""></string>
                              <string role="key" value="_name"></string>
@@ -5140,7 +5616,7 @@ import java.util.*;                // Importiert alle Collections
 &lt;li&gt;Wie du eine Referenz zu deinem Processing-Fenster an eine andere Klasse übergibst&lt;/li&gt;
 &lt;li&gt;Wie du in anderen Klassen Processing Methoden und Konstanten nutzen kannst&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Beipsiel Projekt: Moving Ball&lt;/h1&gt;
+&lt;h1&gt;Beispiel Projekt: Moving Ball&lt;/h1&gt;
 &lt;p&gt;Um zu veranschaulichen, wie das funktioniert, erstellen wir ein kurzes Programm, welches aus einem Ball besteht, der von links nach rechts fliegt und wenn er den rechten Bildschirmrand verlässt, wieder auf der linken Seite startet.&lt;/p&gt;
 &lt;p&gt;Um ein neues Projekt zu erstellen, gehe ich folgendermaßen vor:&lt;/p&gt;
 &lt;ul&gt;
@@ -5161,7 +5637,7 @@ import java.util.*;                // Importiert alle Collections
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; erstellen&lt;/strong&gt;: Mit Rechtsklick auf den &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;src&lt;/span&gt;-Ordner in der linken Spalte erstelle ich die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Jetzt können wir unseren Ball erstellen. So, wie wir bisher in Processing (prozedural) programmiert haben, hätten wir wahrscheinlich allen Code in einer Datei gehabt (hier in diesem Fall in &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window).&lt;/span&gt; Es hätte ein paar globale Variablen gegeben, wie &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;x&lt;/span&gt;, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;y&lt;/span&gt;, und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;speed&lt;/span&gt; und ein paar Befehle in &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;draw()&lt;/span&gt;, wie z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;x += speed&lt;/span&gt; und die Kollisionsabfrage, wenn der Ball den rechten Bildschirmrand berührt.&lt;/p&gt;
+&lt;p&gt;Jetzt können wir unseren Ball erstellen. So, wie wir bisher in Processing (imperativ) programmiert haben, hätten wir wahrscheinlich allen Code in einer Datei gehabt (hier in diesem Fall in &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window).&lt;/span&gt; Es hätte ein paar globale Variablen gegeben, wie &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;x&lt;/span&gt;, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;y&lt;/span&gt;, und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;speed&lt;/span&gt; und ein paar Befehle in &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;draw()&lt;/span&gt;, wie z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;x += speed&lt;/span&gt; und die Kollisionsabfrage, wenn der Ball den rechten Bildschirmrand berührt.&lt;/p&gt;
 &lt;p&gt;Dies machen wir in Java anders, da wir objektorientiert programmieren. Das bedeutet, dass ein Objekt, das wir von der Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; erstellen ein in sich vollständiger und unabhängiger &quot;echter&quot; Ball ist. Alle Daten und alles Verhalten, muss innerhalb der Klasse angelegt und gespeichert werden. Was brauchen wir hierfür?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Daten&lt;/strong&gt;
@@ -5423,15 +5899,26 @@ public class Ball {
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
-&lt;h2&gt;Aufgabe&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Uhrzeit anzeigen&lt;/strong&gt;&lt;br /&gt;Erstelle ein Java-Projekt, das Processing verwendet und in der Mitte des Grafikfensters die akutelle Uhrzeit anzeigt. Erstelle hierfür eine eigene Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Uhrzeit,&lt;/span&gt; welche alle Daten und alles Verhalten enthält (ähnlich, wie die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball).&lt;/span&gt; Nutze für die Darstellung der Uhrzeit die Processing Methoden &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;hour(), minute()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;second().&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1: Uhrzeit anzeigen&lt;/strong&gt;&lt;br /&gt;Erstelle ein Java-Projekt, das Processing verwendet und in der Mitte des Grafikfensters die akutelle Uhrzeit anzeigt. Erstelle hierfür eine eigene Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Uhrzeit,&lt;/span&gt; welche alle Daten und alles Verhalten enthält (ähnlich, wie die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball).&lt;/span&gt; Nutze für die Darstellung der Uhrzeit die Processing Methoden &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;hour(), minute()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;second().&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Fragen&lt;/span&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: verdana, geneva, sans-serif;&quot;&gt;Welche Voraussetzungen müssen vorliegen, damit ich Processing in einem Java Projekt nutzen kann?&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: verdana, geneva, sans-serif;&quot;&gt;Was muss ich tun, damit ich in einer Klassen Processing-Befehle ausführen kann? (2 Optionen möglich)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: verdana, geneva, sans-serif;&quot;&gt;Was sind statische Eigenschaften von Processing (nenne 1-2 Beispiele) und wie kann ich darauf zugreifen?&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Um von einer anderen Klasse aus auf dem Processing-Fenster Methoden ausführen zu können, müssen wir an diese Klasse eine Referenz auf ein Objekt der &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;PApplet&lt;/span&gt; Klasse übergeben.&lt;/li&gt;
 &lt;li&gt;Auf statische Eigenschaften von Processing kann über die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;PApplet&lt;/span&gt; und die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;PConstants&lt;/span&gt; Klasse zugegriffen werden.&lt;/li&gt;
 &lt;li&gt;In beiden Fällen muss in der jeweiligen Datei die Processing Bibliothek eingbunden werden mithilfe von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;import processing.core.PApplet;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;"></unicode>
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
                              <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                              <int value="4"></int>
                              <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -5446,18 +5933,18 @@ public class Ball {
                                <string role="key" value=".listitems"></string>
                                <list></list>
                                <string role="key" value="idevice"></string>
-                               <reference key="39"></reference>
+                               <reference key="42"></reference>
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
                              <dictionary>
                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Erste%20Schritte%20in%20Java#auto_top"></unicode>
-                              <reference key="40"></reference>
+                              <reference key="43"></reference>
                              </dictionary>
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="41"></reference>
+                             <reference key="44"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -5474,7 +5961,7 @@ public class Ball {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="41"></reference>
+                          <reference key="44"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -5511,9 +5998,9 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="41"></int>
+                 <int value="43"></int>
                  <string role="key" value="parentNode"></string>
-                 <reference key="40"></reference>
+                 <reference key="43"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -5530,15 +6017,15 @@ public class Ball {
               <string role="key" value="originalicon"></string>
               <string value=""></string>
               <string role="key" value="parentNode"></string>
-              <reference key="40"></reference>
+              <reference key="43"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="undo"></string>
               <bool value="1"></bool>
               <string role="key" value="userResources"></string>
               <list>
-               <reference key="42"></reference>
-               <reference key="43"></reference>
+               <reference key="45"></reference>
+               <reference key="46"></reference>
               </list>
               <string role="key" value="version"></string>
               <int value="0"></int>
@@ -5561,7 +6048,7 @@ public class Ball {
            <reference key="16"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list>
-            <reference key="39"></reference>
+            <reference key="42"></reference>
            </list>
            <string role="key" value="children"></string>
            <list></list>
@@ -5569,397 +6056,7 @@ public class Ball {
          </instance>
          <reference key="22"></reference>
          <reference key="20"></reference>
-         <instance class="exe.engine.node.Node" reference="46">
-          <dictionary>
-           <string role="key" value="_title"></string>
-           <unicode value="Collections und Lambda Ausdrücke"></unicode>
-           <string role="key" value="idevices"></string>
-           <list>
-            <instance class="exe.engine.jsidevice.JsIdevice" reference="44">
-             <dictionary>
-              <string role="key" value="_title"></string>
-              <unicode value=""></unicode>
-              <string role="key" value="_attributes"></string>
-              <list>
-               <tuple>
-                <string value="title"></string>
-                <list>
-                 <string value="Title"></string>
-                 <int value="0"></int>
-                 <int value="0"></int>
-                </list>
-               </tuple>
-               <tuple>
-                <string value="category"></string>
-                <list>
-                 <string value="Category"></string>
-                 <int value="0"></int>
-                 <int value="1"></int>
-                </list>
-               </tuple>
-               <tuple>
-                <string value="css-class"></string>
-                <list>
-                 <string value="CSS class"></string>
-                 <int value="0"></int>
-                 <int value="2"></int>
-                </list>
-               </tuple>
-               <tuple>
-                <string value="icon"></string>
-                <list>
-                 <string value="Icon"></string>
-                 <int value="0"></int>
-                 <int value="3"></int>
-                </list>
-               </tuple>
-              </list>
-              <string role="key" value="_author"></string>
-              <string value=""></string>
-              <string role="key" value="_iDeviceDir"></string>
-              <string value="text"></string>
-              <string role="key" value="_purpose"></string>
-              <string value=""></string>
-              <string role="key" value="_tip"></string>
-              <string value=""></string>
-              <string role="key" value="_typeName"></string>
-              <unicode value="Text"></unicode>
-              <string role="key" value="_valid"></string>
-              <bool value="1"></bool>
-              <string role="key" value="class_"></string>
-              <unicode value="text"></unicode>
-              <string role="key" value="edit"></string>
-              <bool value="0"></bool>
-              <string role="key" value="emphasis"></string>
-              <int value="0"></int>
-              <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
-              <int value="1"></int>
-              <string role="key" value="fields"></string>
-              <list>
-               <instance class="exe.engine.field.TextAreaField" reference="45">
-                <dictionary>
-                 <string role="key" value="_id"></string>
-                 <unicode value="135_2"></unicode>
-                 <string role="key" value="_idevice"></string>
-                 <reference key="44"></reference>
-                 <string role="key" value="_instruc"></string>
-                 <string value=""></string>
-                 <string role="key" value="_name"></string>
-                 <string value=""></string>
-                 <string role="key" value="anchor_names"></string>
-                 <list></list>
-                 <string role="key" value="anchors_linked_from_fields"></string>
-                 <dictionary></dictionary>
-                 <string role="key" value="content_w_resourcePaths"></string>
-                 <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung – Warum Collections?&lt;/h1&gt;
-&lt;p&gt;Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.&lt;/p&gt;
-&lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Die wichtigsten Collection-Typen: ArrayList, LinkedList, HashMap und Stack. Wir betrachten ihre Eigenschaften,&lt;/li&gt;
-&lt;li&gt;Einsatzmöglichkeiten von Collections &lt;/li&gt;
-&lt;li&gt;Verarbeitung von Collections mithilfe von Iteratoren, erweiterten For-Schleifen und Streams.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Das Collections Framework&lt;/h1&gt;
-&lt;p&gt;Das Collections Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dynamische Arrays (z. B. mit ArrayList)&lt;/li&gt;
-&lt;li&gt;Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)&lt;/li&gt;
-&lt;li&gt;Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Vorteile des Collections Frameworks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Flexibilität:&lt;/strong&gt; Dynamische Größenanpassung der Datenstrukturen.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Effizienz:&lt;/strong&gt; Optimierte Algorithmen für Suchen, Einfügen und Löschen.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Einheitlichkeit:&lt;/strong&gt; Gemeinsame Schnittstellen für verschiedene Datenstrukturen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Wichtige Collection-Typen&lt;/h1&gt;
-&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
-&lt;h2&gt;ArrayList&lt;/h2&gt;
-&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ArrayList&lt;/span&gt; ist eine dynamische Liste, die ähnlich wie ein Array funktioniert, aber ihre Größe automatisch anpasst.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Elemente werden in einer bestimmten Reihenfolge gespeichert.&lt;/li&gt;
-&lt;li&gt;Doppelte Werte sind erlaubt.&lt;/li&gt;
-&lt;li&gt;Zugriff auf Elemente erfolgt über Indizes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beispiel:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
-
-public class Main {
-   public static void main(String[] args) {
-      ArrayList&amp;lt;String&amp;gt; playlist = new ArrayList&amp;lt;&amp;gt;();
-      playlist.add(&quot;Song A&quot;);
-      playlist.add(&quot;Song B&quot;);
-      playlist.add(&quot;Song C&quot;);
-
-      System.out.println(&quot;Erster Song: &quot; + playlist.get(0));
-
-      for (String song : playlist) {
-         System.out.println(&quot;Song: &quot; + song);
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;LinkedList&lt;/h2&gt;
-&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;LinkedList&lt;/span&gt; ist eine Liste, bei der die Elemente als Knoten miteinander verbunden sind.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Gut geeignet für häufiges Einfügen/Löschen von Elementen.&lt;/li&gt;
-&lt;li&gt;Schlechtere Zugriffszeit im Vergleich zur ArrayList.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beispiel:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.LinkedList;
-
-public class Main {
-   public static void main(String[] args) {
-      LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
-      queue.add(&quot;Task 1&quot;);
-      queue.add(&quot;Task 2&quot;);
-      queue.addFirst(&quot;Urgent Task&quot;);
-   
-      for (String task : queue) {
-         System.out.println(&quot;Aufgabe: &quot; + task);
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;HashMap&lt;/h2&gt;
-&lt;p&gt;Die HashMap ist eine Map-Struktur, die Schlüssel-Wert-Paare speichert.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Schneller Zugriff auf Werte über Schlüssel.&lt;/li&gt;
-&lt;li&gt;Keine garantierte Reihenfolge der Elemente.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beispiel:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.HashMap;
-
-public class Main {
-   public static void main(String[] args) {
-      HashMap&amp;lt;String, String&amp;gt; modulMap = new HashMap&amp;lt;&amp;gt;();
-      modulMap.put(&quot;OOP&quot;, &quot;Objektorientierte Programmierung&quot;);
-      modulMap.put(&quot;PRG&quot;, &quot;Programmieren&quot;);
-
-      // Zugriff auf Werte
-      System.out.println(&quot;Modul mit ID OOP: &quot; + modulMap.get(&quot;OOP&quot;)); // Ausgabe: Modul mit ID OOP: Objektorientierte Programmierung
-
-      // Iteration über Schlüssel-Wert-Paare
-      for (var entry : modulMap.entrySet()) {
-         System.out.println(&quot;ID: &quot; + entry.getKey() + &quot;, Name: &quot; + entry.getValue());
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Stack&lt;/h2&gt;
-&lt;p&gt;Der Stack arbeitet nach dem Last-In-First-Out-Prinzip (LIFO). Dies ist besonders nützlich bei Transformationen oder Rückverfolgungen.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Elemente werden gestapelt (push) und zuletzt hinzugefügte zuerst entfernt (pop).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In Processing hast du mit pushMatrix() und popMatrix() bereits einen Stack verwendet, um Transformationen des Koordinatensystems zu speichern:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;Stack&amp;lt;String&amp;gt; stack = new Stack&amp;lt;&amp;gt;();
-stack.push(&quot;Transformation 1&quot;);
-stack.push(&quot;Transformation 2&quot;);
-
-// Letzte Transformation entfernen
-System.out.println(stack.pop()); // Ausgabe: Transformation 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Iteration über Collections&lt;/h2&gt;
-&lt;p&gt;Java bietet verschiedene Möglichkeiten zur Iteration über Collections:&lt;/p&gt;
-&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
-&lt;h2&gt;Erweiterte for-Schleife&lt;/h2&gt;
-&lt;p&gt;Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten for-Schleife ist deutlich einfacher, als der einer normalen for-Schleife:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;for ( Datentyp variable : Liste) {
-
-   // Schleifenkörper
-
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In diesem Beispiel werden alle Songtitel innerhalb der ArrayList vom Typ String ausgegeben.&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
-songs.add(&quot;Song A&quot;);
-songs.add(&quot;Song B&quot;);
-
-for (String song : songs) {
-   System.out.println(song);
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;.forEach - Methode inkl. Lambda Ausdruck&lt;/h2&gt;
-&lt;p&gt;Collections wie ArrayList, LinkedList und HashMap haben eine Klassen-Methode .forEach(). Innerhalb der Klammern der .forEach()-Methode wird angegeben, was für jedes Element der Liste durgeführt werden soll.&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
-queue.add(&quot;Task 1&quot;);
-queue.add(&quot;Task 2&quot;);
-queue.addFirst(&quot;Urgent Task&quot;);
-   
-queue.forEach(task -&amp;gt; System.out.println(task));&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Das was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegen nimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;// Ein Parameter
-Parameter -&amp;gt; Anweisung
-
-// Mehrere Parameter
-(Parameter1, Parameter2) -&amp;gt; Anweisung
-
-// Mehrere Parameter und komplexe Anweisung
-(Parameter1, Parameter2) -&amp;gt; { Codeblock }&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Iterator&lt;/h2&gt;
-&lt;p&gt;Ein Iterator bietet mehr Kontrolle über die Iteration:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
-import java.util.Iterator;
-
-public class Main {
-   public static void main(String[] args) {
-      ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
-      songs.add(&quot;Song A&quot;);
-      songs.add(&quot;Song B&quot;);
-
-      Iterator&amp;lt;String&amp;gt; iterator = songs.iterator();
-      while (iterator.hasNext()) {
-         System.out.println(iterator.next());
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
-&lt;h2&gt;Aufgaben&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Aufgabe 1:&lt;br /&gt;Erstelle ein Programm mit einer HashMap, die eine Einkaufsliste sein soll:
-&lt;ul&gt;
-&lt;li&gt;Der Schlüssel ist das Produkt, das gekauft werden soll und der Wert die Menge (z.B. 5 Tomaten)&lt;/li&gt;
-&lt;li&gt;Füge mindestens fünf Produkte zur Einkaufsliste hinzu.&lt;/li&gt;
-&lt;li&gt;Ändere die Menge von einem Produkt.&lt;/li&gt;
-&lt;li&gt;Iteriere über die Liste und gib alle Produkte aus.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Aufgabe 2:&lt;br /&gt;Simuliere einen Stack für Transformationen in einem Grafikprogramm:
-&lt;ul&gt;
-&lt;li&gt;Implementiere einen Stack mit Transformationen wie „Translation“ oder „Rotation“.&lt;/li&gt;
-&lt;li&gt;Füge Transformationen hinzu und entferne sie schrittweise.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Fragen&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Was sind die Hauptunterschiede zwischen einer ArrayList und einer LinkedList?&lt;/li&gt;
-&lt;li&gt;Wie funktioniert das LIFO-Prinzip bei einem Stack?&lt;/li&gt;
-&lt;li&gt;Was ist ein Lambda Ausdruck und wo wird er eingesetzt?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Das Java Collections Framework bietet leistungsstarke Klassen wie ArrayList, LinkedList, HashMap und Stack.&lt;/li&gt;
-&lt;li&gt;Mit erweiterten For-Schleifen (for-each) und Iteratoren kannst du effizient durch Collections iterieren.&lt;/li&gt;
-&lt;li&gt;Die Wahl der richtigen Collection hängt von den Anforderungen ab – z. B. schneller Zugriff (HashMap) oder dynamische Listen (ArrayList).&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;"></unicode>
-                 <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                 <int value="4"></int>
-                 <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
-                 <int value="2"></int>
-                 <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
-                 <int value="3"></int>
-                 <string role="key" value="htmlTag"></string>
-                 <string value="div"></string>
-                 <string role="key" value="images"></string>
-                 <instance class="exe.engine.galleryidevice.GalleryImages">
-                  <dictionary>
-                   <string role="key" value=".listitems"></string>
-                   <list></list>
-                   <string role="key" value="idevice"></string>
-                   <reference key="45"></reference>
-                  </dictionary>
-                 </instance>
-                 <string role="key" value="intlinks_to_anchors"></string>
-                 <dictionary></dictionary>
-                 <string role="key" value="nextImageId"></string>
-                 <int value="0"></int>
-                 <string role="key" value="parentNode"></string>
-                 <reference key="46"></reference>
-                </dictionary>
-               </instance>
-              </list>
-              <string role="key" value="icon"></string>
-              <unicode value=""></unicode>
-              <string role="key" value="id"></string>
-              <unicode value="8"></unicode>
-              <string role="key" value="ideviceCategory"></string>
-              <unicode value="Text and Tasks"></unicode>
-              <string role="key" value="lastIdevice"></string>
-              <bool value="0"></bool>
-              <string role="key" value="nextFieldId"></string>
-              <int value="3"></int>
-              <string role="key" value="originalicon"></string>
-              <string value=""></string>
-              <string role="key" value="parentNode"></string>
-              <reference key="46"></reference>
-              <string role="key" value="systemResources"></string>
-              <list></list>
-              <string role="key" value="undo"></string>
-              <bool value="1"></bool>
-              <string role="key" value="userResources"></string>
-              <list></list>
-              <string role="key" value="version"></string>
-              <int value="0"></int>
-             </dictionary>
-            </instance>
-           </list>
-           <string role="key" value="_id"></string>
-           <unicode value="8"></unicode>
-           <string role="key" value="_package"></string>
-           <reference key="4"></reference>
-           <string role="key" value="anchor_fields"></string>
-           <list></list>
-           <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
-           <int value="2"></int>
-           <string role="key" value="exportType"></string>
-           <string value="website"></string>
-           <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke"></string>
-           <string role="key" value="parent"></string>
-           <reference key="16"></reference>
-           <string role="key" value="top_anchors_linked_from_fields"></string>
-           <list></list>
-           <string role="key" value="children"></string>
-           <list></list>
-          </dictionary>
-         </instance>
+         <reference key="39"></reference>
         </list>
        </dictionary>
       </instance>
@@ -6483,21 +6580,21 @@ public class Main {
 &lt;li&gt;Im &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Main&lt;/span&gt;-Programm wird demonstriert, wie verschiedene Zahlungsstrategien dynamisch ausgewählt und verwendet werden können.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Dieses Pattern ermöglicht es, Zahlungsmethoden einfach hinzuzufügen oder zu ändern, ohne den bestehenden Code zu modifizieren&lt;/p&gt;
-&lt;h1&gt;Übungen&lt;/h1&gt;
-&lt;h2&gt;Aufgaben:&lt;/h2&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 1: Datenbankverbindung&lt;/strong&gt;&lt;br /&gt;Erstelle eine kleine Anwendung, in der du das Singleton Pattern implementierst für eine Datenbankverbindung. Dein Programm soll die Verbindung mit einer Datenbank herstellen können und wieder trennen können (es reicht die Simulation durch Konsolenausgaben). Achte dabei darauf, dass es nur eine Datenbankverbindung geben darf.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 2: Datenbankverbindung 2&lt;/strong&gt;&lt;br /&gt;Erweitere dein Programm aus Aufgabe 2 um ein Strategy Pattern. Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Dankebank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1:&lt;/strong&gt; Datenbankverbindung&lt;br /&gt;Erstelle eine kleine Anwendung, in der du das &lt;strong&gt;Singleton Pattern&lt;/strong&gt; implementierst für eine Datenbankverbindung. Dein Programm soll die Verbindung mit einer Datenbank herstellen können und wieder trennen können (es reicht die Simulation durch Konsolenausgaben). Achte dabei darauf, dass es nur eine Datenbankverbindung geben darf.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 2:&lt;/strong&gt; Verschiedene Datenbankverdinungen&lt;br /&gt;Erweitere dein Programm aus Aufgabe 2 um ein &lt;strong&gt;Strategy Pattern.&lt;/strong&gt; Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Dankebank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Fragen:&lt;/h2&gt;
+&lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Welche Vorteile bietet das Singleton Pattern im Vergleich zu normaler Objektinstanziierung?&lt;/li&gt;
 &lt;li&gt;Wie unterscheidet sich das Factory Method Pattern vom Singleton Pattern bezüglich der Objekt-Erzeugung?&lt;/li&gt;
 &lt;li&gt;Nenne zwei wesentliche Merkmale des Observer Patterns.&lt;/li&gt;
 &lt;li&gt;Beschreibe den Unterschied zwischen dem Observer Pattern und dem Strategy Pattern.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h1&gt;Zusammenfassung&lt;/h1&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Design Patterns stellen wiederverwendbare Lösungsvorlagen dar, die helfen, wiederkehrende Probleme in der Softwareentwicklung zu meistern und den Code flexibel sowie wartbar zu gestalten.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Creational Patterns&lt;/strong&gt; beschäftigen sich mit dem Erzeugen von Objekten&lt;br /&gt;
@@ -6514,6 +6611,7 @@ public class Main {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
               <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
               <int value="4"></int>
@@ -6592,7 +6690,7 @@ public class Main {
    <unicode role="key" value="11"></unicode>
    <reference key="21"></reference>
    <unicode role="key" value="15"></unicode>
-   <reference key="40"></reference>
+   <reference key="43"></reference>
    <unicode role="key" value="16"></unicode>
    <reference key="22"></reference>
    <unicode role="key" value="17"></unicode>
@@ -6602,9 +6700,9 @@ public class Main {
    <unicode role="key" value="2"></unicode>
    <reference key="16"></reference>
    <unicode role="key" value="21"></unicode>
-   <reference key="37"></reference>
+   <reference key="40"></reference>
    <unicode role="key" value="22"></unicode>
-   <reference key="41"></reference>
+   <reference key="44"></reference>
    <unicode role="key" value="3"></unicode>
    <reference key="9"></reference>
    <unicode role="key" value="4"></unicode>
@@ -6616,7 +6714,7 @@ public class Main {
    <unicode role="key" value="7"></unicode>
    <reference key="20"></reference>
    <unicode role="key" value="8"></unicode>
-   <reference key="46"></reference>
+   <reference key="39"></reference>
   </dictionary>
   <string role="key" value="_objectives"></string>
   <unicode value=""></unicode>
@@ -6630,14 +6728,15 @@ public class Main {
    <reference key="17"></reference>
    <reference key="9"></reference>
    <reference key="21"></reference>
-   <reference key="40"></reference>
+   <reference key="43"></reference>
    <reference key="31"></reference>
    <reference key="32"></reference>
+   <reference key="39"></reference>
   </list>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="3"></reference>
+  <reference key="49"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -7677,11 +7776,11 @@ public class Main {
    </list>
    <string role="key" value="6223868330388650cebfa7b04d03fdc2"></string>
    <list>
-    <reference key="42"></reference>
+    <reference key="45"></reference>
    </list>
    <string role="key" value="749e23d9d9de65b7413b560ab94fac35"></string>
    <list>
-    <reference key="43"></reference>
+    <reference key="46"></reference>
    </list>
    <string role="key" value="9204c0b50abec03c0414d7426fbd5a7a"></string>
    <list>

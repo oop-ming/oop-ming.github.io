@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -352,22 +354,23 @@ class MyList implements Sortable {
 </tbody>
 </table>
 <p><br />Diese Gegenüberstellung verdeutlicht, dass abstrakte Klassen ideal sind, wenn es eine starke “ist-ein” Beziehung gibt, während Interfaces Flexibilität und lose Kopplung bei der Umsetzung von Fähigkeiten ermöglichen.</p>
-<h1><br />Übungen</h1>
-<h2>Aufgaben:</h2>
-<p>Beide Übungsaugaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel <a href="klassen_und_objekte.html">Klassen und Objekte</a>. Nutze den Code als Grundlage. Du sollst von diesem Code 2 Varianten erstellen:</p>
+<h1><br />Abschluss</h1>
+<div class="exe-fx exe-accordion">
+<h2>Aufgaben</h2>
+<p>Beide Übungsaugaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel <a href="klassen_und_objekte.html">Klassen und Objekte</a>. Nutze den Code als Grundlage. Du sollst von diesem Code<em> 2 Varianten</em> erstellen:</p>
 <ul>
-<li><strong>Aufgabe 1: Abstrakte Klassen implementieren<br /></strong>Der Ball hat zwei wichtige Methoden: <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen().</span> Lagere beide Methoden inklusive den dafür benötigten Feldern in 2 abstrakte Klassen <span style="font-family: andale mono, monospace;">DrawableObject</span> und <span style="font-family: andale mono, monospace;">MovableObjekt</span> aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse <span style="font-family: andale mono, monospace;">Ball</span> soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.</li>
+<li><strong>Aufgabe 1: Abstrakte Klassen implementieren<br /></strong>Der Ball hat zwei wichtige Methoden: <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen().</span> Lagere beide Methoden inklusive den dafür benötigten Attributen in 2 abstrakte Klassen <span style="font-family: andale mono, monospace;">DrawableObject</span> und <span style="font-family: andale mono, monospace;">MovableObjekt</span> aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse <span style="font-family: andale mono, monospace;">Ball</span> soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.</li>
 <li><strong>Aufgabe 2: Interfaces implementieren<br /></strong>Bei dieser Aufgabe sollst du die Methoden <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen()</span> nicht in abstrakten Klassen auslagern, sondern in die Interfaces <span style="font-family: andale mono, monospace;">Drawable</span> und <span style="font-family: andale mono, monospace;">Moveable</span> und diese dann in der Klasse <span style="font-family: andale mono, monospace;">Ball</span> umsetzen.</li>
 <li><strong>Reflexion:</strong><br />Schau dir beide Varianten deines Codes an: Die mit den abstrakten Klassen und die mit den Interfaces. Beides sind sinnvolle Strukturen. Welche Variante findest du sinnvoller und nachvollziehbarer?</li>
 </ul>
-<h2>Fragen:</h2>
+<h2>Fragen</h2>
 <ol>
 <li>Erklär's mir als wäre ich 5 Jahre alt: Was sind abstrakte Klassen und was sind Interfaces?</li>
 <li>Warum kann eine abstrakte Klasse nicht direkt instanziiert werden?</li>
 <li>In welchen Situationen würdest du ein Interface einem abstrakten Klasse vorziehen?</li>
 <li>Nenne zwei wesentliche Unterschiede zwischen abstrakten Klassen und Interfaces.</li>
 </ol>
-<h1>Zusammenfassung</h1>
+<h2>Zusammenfassung</h2>
 <ul>
 <li>Abstrakte Klassen:
 <ul>
@@ -389,6 +392,7 @@ class MyList implements Sortable {
 </ul>
 </li>
 </ul>
+</div>
 <p></p></div>
 </div>
 </div>

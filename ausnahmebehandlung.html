@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -81,7 +83,7 @@
 </div>
 </div>
 <p>In diesem Beispiel verhindert der <span style="font-family: andale mono, monospace;">catch</span>‑Block, dass das Programm abstürzt, und gibt stattdessen eine verständliche Fehlermeldung aus.</p>
-<h1>Das Schlüsselwort throw und die Deklaration mit throws</h1>
+<h1>Das Schlüsselwort <span style="font-family: andale mono, monospace;">throw</span> und die Deklaration mit <span style="font-family: andale mono, monospace;">throws</span></h1>
 <p>Manchmal möchte man eine <span style="font-family: andale mono, monospace;">Exception</span> aktiv auslösen – etwa wenn eine Eingabe ungültig ist oder ein bestimmter Zustand nicht erfüllt wird. Hier kommt das Schlüsselwort <span style="font-family: andale mono, monospace;">throw</span> zum Einsatz. Es ermöglicht, eine <span style="font-family: andale mono, monospace;">Exception</span> manuell zu „werfen“. Zudem kann eine Methode mit dem Schlüsselwort <span style="font-family: andale mono, monospace;">throws</span> deklarieren, welche Exception(s) sie möglicherweise an den aufrufenden Code weitergibt.</p>
 <p>Ein kompaktes Beispiel:</p>
 <div class="highlighted-code language-java">
@@ -132,7 +134,8 @@ public void validateInput(int input) throws InvalidInputException {
 </div>
 </div>
 <p>Durch den gezielten Einsatz eigener Exceptions können Entwickler Fehlerfälle präziser abfangen und dem Benutzer aussagekräftige Rückmeldungen geben – beispielsweise in einer Benutzeroberfläche, die auf defekte Hardware oder nicht erfüllte Systemvoraussetzungen reagiert.</p>
-<h1>Übungen</h1>
+<h1>Abschluss</h1>
+<div class="exe-fx exe-accordion">
 <h2>Aufgaben</h2>
 <ul>
 <li><strong>Aufgabe 1</strong>: Falsche Eingabe<br />Schreibe ein Programm, das den Benutzer zur Eingabe einer Zahl auffordert. Wenn der Benutzer einen ungültigen (z. B. nicht-numerischen) Wert eingibt, soll eine benutzerdefinierte Exception „InvalidInputException“ geworfen und in einem catch‑Block abgefangen werden, sodass eine entsprechende Fehlermeldung ausgegeben wird.</li>
@@ -145,7 +148,7 @@ public void validateInput(int input) throws InvalidInputException {
 <li>Welche Aufgabe übernimmt der finally‑Block, und warum ist er nützlich?</li>
 <li>Wie und warum würdest eine eigene Exception definieren?</li>
 </ol>
-<h1>Zusammenfassung</h1>
+<h2>Zusammenfassung</h2>
 <ul>
 <li><span style="font-family: andale mono, monospace;">try</span>‑Block: Enthält Code, der potenziell Fehler verursachen kann.</li>
 <li><span style="font-family: andale mono, monospace;">catch</span>‑Block: Fängt spezifische Exception-Typen ab und behandelt sie, um den Programmfluss aufrechtzuerhalten.</li>
@@ -153,7 +156,9 @@ public void validateInput(int input) throws InvalidInputException {
 <li><span style="font-family: andale mono, monospace;">throws</span>: Deklariert in der Methodensignatur, dass eine Methode eine Exception werfen kann.</li>
 <li><span style="font-family: andale mono, monospace;">finally:</span> Ein Block, der immer ausgeführt wird – ideal für Aufräumarbeiten.</li>
 <li>Custom Exceptions: Erlauben eine präzisere Fehlerbehandlung, indem spezifische Fehlerfälle benannt und behandelt werden.</li>
-</ul></div>
+</ul>
+</div>
+<p></p></div>
 </div>
 </div>
 </article>

@@ -67,7 +67,7 @@
 <li>Wie du eine Referenz zu deinem Processing-Fenster an eine andere Klasse übergibst</li>
 <li>Wie du in anderen Klassen Processing Methoden und Konstanten nutzen kannst</li>
 </ul>
-<h1>Beipsiel Projekt: Moving Ball</h1>
+<h1>Beispiel Projekt: Moving Ball</h1>
 <p>Um zu veranschaulichen, wie das funktioniert, erstellen wir ein kurzes Programm, welches aus einem Ball besteht, der von links nach rechts fliegt und wenn er den rechten Bildschirmrand verlässt, wieder auf der linken Seite startet.</p>
 <p>Um ein neues Projekt zu erstellen, gehe ich folgendermaßen vor:</p>
 <ul>
@@ -88,7 +88,7 @@
 </li>
 <li><strong>Die Klasse <span style="font-family: andale mono, monospace;">Ball</span> erstellen</strong>: Mit Rechtsklick auf den <span style="font-family: andale mono, monospace;">src</span>-Ordner in der linken Spalte erstelle ich die Klasse <span style="font-family: andale mono, monospace;">Ball.</span></li>
 </ul>
-<p>Jetzt können wir unseren Ball erstellen. So, wie wir bisher in Processing (prozedural) programmiert haben, hätten wir wahrscheinlich allen Code in einer Datei gehabt (hier in diesem Fall in <span style="font-family: andale mono, monospace;">Window).</span> Es hätte ein paar globale Variablen gegeben, wie <span style="font-family: andale mono, monospace;">x</span>, <span style="font-family: andale mono, monospace;">y</span>, und <span style="font-family: andale mono, monospace;">speed</span> und ein paar Befehle in <span style="font-family: andale mono, monospace;">draw()</span>, wie z.B. <span style="font-family: andale mono, monospace;">x += speed</span> und die Kollisionsabfrage, wenn der Ball den rechten Bildschirmrand berührt.</p>
+<p>Jetzt können wir unseren Ball erstellen. So, wie wir bisher in Processing (imperativ) programmiert haben, hätten wir wahrscheinlich allen Code in einer Datei gehabt (hier in diesem Fall in <span style="font-family: andale mono, monospace;">Window).</span> Es hätte ein paar globale Variablen gegeben, wie <span style="font-family: andale mono, monospace;">x</span>, <span style="font-family: andale mono, monospace;">y</span>, und <span style="font-family: andale mono, monospace;">speed</span> und ein paar Befehle in <span style="font-family: andale mono, monospace;">draw()</span>, wie z.B. <span style="font-family: andale mono, monospace;">x += speed</span> und die Kollisionsabfrage, wenn der Ball den rechten Bildschirmrand berührt.</p>
 <p>Dies machen wir in Java anders, da wir objektorientiert programmieren. Das bedeutet, dass ein Objekt, das wir von der Klasse <span style="font-family: andale mono, monospace;">Ball</span> erstellen ein in sich vollständiger und unabhängiger "echter" Ball ist. Alle Daten und alles Verhalten, muss innerhalb der Klasse angelegt und gespeichert werden. Was brauchen wir hierfür?</p>
 <ul>
 <li><strong>Daten</strong>
@@ -350,15 +350,26 @@ public class Ball {
 </code></pre>
 </div>
 </div>
-<h1>Übungen</h1>
-<h2>Aufgabe</h2>
-<p><strong>Uhrzeit anzeigen</strong><br />Erstelle ein Java-Projekt, das Processing verwendet und in der Mitte des Grafikfensters die akutelle Uhrzeit anzeigt. Erstelle hierfür eine eigene Klasse <span style="font-family: andale mono, monospace;">Uhrzeit,</span> welche alle Daten und alles Verhalten enthält (ähnlich, wie die Klasse <span style="font-family: andale mono, monospace;">Ball).</span> Nutze für die Darstellung der Uhrzeit die Processing Methoden <span style="font-family: andale mono, monospace;">hour(), minute()</span> und <span style="font-family: andale mono, monospace;">second().</span></p>
-<h1>Zusammenfassung</h1>
+<h1>Abschluss</h1>
+<div class="exe-fx exe-accordion">
+<h2>Aufgaben</h2>
+<ul>
+<li><strong>Aufgabe 1: Uhrzeit anzeigen</strong><br />Erstelle ein Java-Projekt, das Processing verwendet und in der Mitte des Grafikfensters die akutelle Uhrzeit anzeigt. Erstelle hierfür eine eigene Klasse <span style="font-family: andale mono, monospace;">Uhrzeit,</span> welche alle Daten und alles Verhalten enthält (ähnlich, wie die Klasse <span style="font-family: andale mono, monospace;">Ball).</span> Nutze für die Darstellung der Uhrzeit die Processing Methoden <span style="font-family: andale mono, monospace;">hour(), minute()</span> und <span style="font-family: andale mono, monospace;">second().</span></li>
+</ul>
+<h2><span style="font-family: andale mono, monospace;">Fragen</span></h2>
+<ol>
+<li><span style="font-family: verdana, geneva, sans-serif;">Welche Voraussetzungen müssen vorliegen, damit ich Processing in einem Java Projekt nutzen kann?</span></li>
+<li><span style="font-family: verdana, geneva, sans-serif;">Was muss ich tun, damit ich in einer Klassen Processing-Befehle ausführen kann? (2 Optionen möglich)</span></li>
+<li><span style="font-family: verdana, geneva, sans-serif;">Was sind statische Eigenschaften von Processing (nenne 1-2 Beispiele) und wie kann ich darauf zugreifen?</span></li>
+</ol>
+<h2>Zusammenfassung</h2>
 <ul>
 <li>Um von einer anderen Klasse aus auf dem Processing-Fenster Methoden ausführen zu können, müssen wir an diese Klasse eine Referenz auf ein Objekt der <span style="font-family: andale mono, monospace;">PApplet</span> Klasse übergeben.</li>
 <li>Auf statische Eigenschaften von Processing kann über die <span style="font-family: andale mono, monospace;">PApplet</span> und die <span style="font-family: andale mono, monospace;">PConstants</span> Klasse zugegriffen werden.</li>
 <li>In beiden Fällen muss in der jeweiligen Datei die Processing Bibliothek eingbunden werden mithilfe von <span style="font-family: andale mono, monospace;">import processing.core.PApplet;</span></li>
-</ul></div>
+</ul>
+</div>
+<p></p></div>
 </div>
 </div>
 </article>

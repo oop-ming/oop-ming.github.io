@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -490,21 +492,21 @@ public class Main {
 <li>Im <span style="font-family: andale mono, monospace;">Main</span>-Programm wird demonstriert, wie verschiedene Zahlungsstrategien dynamisch ausgewählt und verwendet werden können.</li>
 </ul>
 <p>Dieses Pattern ermöglicht es, Zahlungsmethoden einfach hinzuzufügen oder zu ändern, ohne den bestehenden Code zu modifizieren</p>
-<h1>Übungen</h1>
-<h2>Aufgaben:</h2>
+<h1>Abschluss</h1>
+<div class="exe-fx exe-accordion">
+<h2>Aufgaben</h2>
 <ul>
-<li><strong>Aufgabe 1: Datenbankverbindung</strong><br />Erstelle eine kleine Anwendung, in der du das Singleton Pattern implementierst für eine Datenbankverbindung. Dein Programm soll die Verbindung mit einer Datenbank herstellen können und wieder trennen können (es reicht die Simulation durch Konsolenausgaben). Achte dabei darauf, dass es nur eine Datenbankverbindung geben darf.</li>
-<li><strong>Aufgabe 2: Datenbankverbindung 2</strong><br />Erweitere dein Programm aus Aufgabe 2 um ein Strategy Pattern. Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Dankebank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).</li>
+<li><strong>Aufgabe 1:</strong> Datenbankverbindung<br />Erstelle eine kleine Anwendung, in der du das <strong>Singleton Pattern</strong> implementierst für eine Datenbankverbindung. Dein Programm soll die Verbindung mit einer Datenbank herstellen können und wieder trennen können (es reicht die Simulation durch Konsolenausgaben). Achte dabei darauf, dass es nur eine Datenbankverbindung geben darf.</li>
+<li><strong>Aufgabe 2:</strong> Verschiedene Datenbankverdinungen<br />Erweitere dein Programm aus Aufgabe 2 um ein <strong>Strategy Pattern.</strong> Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Dankebank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).</li>
 </ul>
-<h2>Fragen:</h2>
+<h2>Fragen</h2>
 <ol>
 <li>Welche Vorteile bietet das Singleton Pattern im Vergleich zu normaler Objektinstanziierung?</li>
 <li>Wie unterscheidet sich das Factory Method Pattern vom Singleton Pattern bezüglich der Objekt-Erzeugung?</li>
 <li>Nenne zwei wesentliche Merkmale des Observer Patterns.</li>
 <li>Beschreibe den Unterschied zwischen dem Observer Pattern und dem Strategy Pattern.</li>
 </ol>
-<p></p>
-<h1>Zusammenfassung</h1>
+<h2>Zusammenfassung</h2>
 <ul>
 <li>Design Patterns stellen wiederverwendbare Lösungsvorlagen dar, die helfen, wiederkehrende Probleme in der Softwareentwicklung zu meistern und den Code flexibel sowie wartbar zu gestalten.</li>
 <li><strong>Creational Patterns</strong> beschäftigen sich mit dem Erzeugen von Objekten<br />
@@ -521,6 +523,7 @@ public class Main {
 </ul>
 </li>
 </ul>
+</div>
 <p></p></div>
 </div>
 </div>

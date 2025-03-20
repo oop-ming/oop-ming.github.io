@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
@@ -13,6 +14,7 @@
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -78,7 +80,7 @@ import package.name.*;          //  Paket importieren
 </code></pre>
 </div>
 </div>
-<p>Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel Collections und Lambda Ausdrücke: </p>
+<p>Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel <a href="collections_und_lambda_ausdrcke.html" title="Zum Kapitel">Collections und Lambda Ausdrücke</a>:</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>import java.util.ArrayList;   // Importiert die Klasse ArrayList
@@ -104,7 +106,28 @@ import java.util.*;                // Importiert alle Collections
 <li><em>New &gt; Package</em><br />In diesem Fall gibtst du einfach den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im src Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl <span style="font-family: andale mono, monospace;">package name;</span> (wobei name der Name deines Pakets ist) stehen. Dadurch weiß der Compiler, dass diese Klasse zu diesem Paket gehört.</li>
 <li><em>New &gt; Java Class</em><br />Wer es etwas schneller haben möchte kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option <em>Java Class</em> wählt und hier im Eingabefeld den Paketname und den Klassenname getrennt durch einen Punkt angibt (z.B. <span style="font-family: andale mono, monospace;">meinpaket.MeineKlasse</span>). Dann erstellt IntelliJ erst das Paket (und den Ordner) <span style="font-family: andale mono, monospace;">meinPaket</span> und direkt danach die Klasse <span style="font-family: andale mono, monospace;">MeineKlasse.</span> Auch hier findest du in der ersten Zeile innerhalb der Klasse den package Befehl.</li>
 </ul>
-<h1>Zusammenfassung</h1>
+<h1>Abschluss</h1>
+<div class="exe-fx exe-accordion">
+<h2>Aufgaben</h2>
+<ul>
+<li><strong>Aufgabe 1</strong>: Math-Klasse
+<ul>
+<li>Binde die Math Klasse in einer Datei in einem Projekt ein.</li>
+</ul>
+</li>
+<li><strong>Aufgabe 2</strong>: Eigenes Paket
+<ul>
+<li>Erstelle ein eigenes Packet innerhalb deines Projekts.</li>
+</ul>
+</li>
+</ul>
+<h2>Fragen</h2>
+<ol>
+<li>In welche zwei Kategorien lassen sich Packages in Java einteilen?</li>
+<li>Warum sind Packages wichtig? Welche Vorteile bringen sie mit?</li>
+<li>Wie werden Packages in einer Datei eingebunden? Welcher Befehl wird benötigt?</li>
+</ol>
+<h2>Zusammenfassung</h2>
 <ul>
 <li>Packages gruppieren Klassen in einer sinnvollen Struktur und verhindern Konflikte bei der Namensgebung</li>
 <li>Es gibt vordefinierte und benutzerdefinierte Pakete</li>
@@ -112,6 +135,7 @@ import java.util.*;                // Importiert alle Collections
 <li>Pakete und Klassen werden mithilfe von import importiert</li>
 <li>Eigene Pakete können über das User-Interface von IntelliJ und mithilfe des <span style="font-family: andale mono, monospace;">package</span> Schlüsselworts erstellt werden.</li>
 </ul>
+</div>
 <p></p></div>
 </div>
 </div>
