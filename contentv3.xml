@@ -238,7 +238,7 @@ void drawRobot() {
 &lt;p&gt;Diese vier Prinzpien werden ausführlich in den folgenden Kapitel ausgeführt und erklärt. An dieser Stelle soll nur ein kurzer Überblick darüber gegeben werden, was objektorientierte Programmierung kann und warum dies wichtig ist.&lt;/p&gt;
 &lt;h1&gt;Processing und Objektorientierte Programmierung&lt;/h1&gt;
 &lt;p&gt;Auch in Processing sind wir an einigen Stellen bereits Objekten und Klassen begegnet. Das liegt daran, dass Processing auf der Programmiersprach Java basiert und Java eine objektorienterte Sprache ist. Da bedeutet, dass durch die Art und Weise, wie man Code in Java (oder Processing) schreibt, in Teilen schon vorgegeben ist, Klassen und Objekte zu verwenden. Zum Beispiel handelt es sich in Java bei einem Array um ein Objekt. Oder auch der Datentyp PVector ist ein &quot;Objekttyp&quot; - sprich es handelt sich bei einer Variable des Datentyps PVector umd ein Objekt. Das bedeutet: Auch in Processing kann man mit Klassen und Objekten arbeiten.&lt;/p&gt;
-&lt;p&gt;Unser &quot;prozedural&quot; programmierter Roboter, würde in Processing als Klasse und Objekt folgendermaßen aussehen:&lt;/p&gt;
+&lt;p&gt;Unser &quot;imperativ&quot; programmierter Roboter, würde in Processing als Klasse und Objekt folgendermaßen aussehen:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-processing line-numbers hightlight-19and22and23&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;class Robot { // Eine Klasse mit dem Namen Robot
@@ -297,7 +297,7 @@ void draw() {
 &lt;ul&gt;
 &lt;li&gt;Objektorientierte Programmierung organisiert den Code in eigenständige Objekte, die Daten und Verhalten bündeln.&lt;/li&gt;
 &lt;li&gt;Die vier zentralen Prinzipien sind Abstraktion, Kapselung, Vererbung und Polymorphismus.&lt;/li&gt;
-&lt;li&gt;Im Vergleich zur prozeduralen Programmierung bietet Objektorientierte Programmierung eine bessere Strukturierung und Wiederverwendbarkeit von Code.&lt;/li&gt;
+&lt;li&gt;Im Vergleich zur imperativer Programmierung bietet Objektorientierte Programmierung eine bessere Strukturierung und Wiederverwendbarkeit von Code.&lt;/li&gt;
 &lt;li&gt;Praktische Beispiele aus dem Alltag (z. B. Auto, Bankkonto, Tiere) helfen, die Konzepte anschaulich zu verstehen.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;"></unicode>
@@ -1590,7 +1590,7 @@ public class Main {
 &lt;li&gt;Groß- und Kleinschreibung muss beachtet werden&lt;/li&gt;
 &lt;li&gt;Semikolons (;) beenden Anweisungen.&lt;/li&gt;
 &lt;li&gt;Blöcke werden durch geschweifte Klammern {} definiert.&lt;/li&gt;
-&lt;li&gt;Bezeicher
+&lt;li&gt;Bezeichner
 &lt;ul&gt;
 &lt;li&gt;dürfen nicht mit einem Schlüsselwort der Sprache Java identisch sein, z.B. darf man nicht int oder float als Variablenname verwenden&lt;br /&gt;bestehen aus Ziffern (0-9), Buchstaben (a-z, A-Z) und zwei weiteren Zeichen (Unterstrich und $)&lt;br /&gt;dürfen nicht mit einer Ziffer beginnen&lt;br /&gt;dürfen keine Leerzeichen enthalten und auch keinen Bindestrich (würde als Minus interpretiert werden)&lt;/li&gt;
 &lt;/ul&gt;
@@ -6736,7 +6736,7 @@ public class Main {
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="49"></reference>
+  <reference key="22"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
