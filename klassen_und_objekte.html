@@ -61,7 +61,7 @@
 <div class="iDevice emphasis0" >
 <div id="ta15_130_2" class="block iDevice_content">
 <div class="exe-text"><h1>Einführung – Von Bauplänen zu realen Objekten</h1>
-<p>Stell dir vor, du möchtest ein individuelles Auto bauen. Du hast einen exakten Bauplan, der alle Komponenten des Autos beschreibt – Motor, Karosserie, Räder und Innenausstattung. Dieser Bauplan enthält alle Informationen, die du benötigst, um ein Auto zu produzieren, jedoch ist er selbst noch kein fahrbares Fahrzeug. In der objektorientierten Programmierung (OOP) entspricht dieser Bauplan einer Klasse.</p>
+<p>Stell dir vor, du möchtest ein Auto bauen. Du hast einen exakten Bauplan, der alle Komponenten des Autos beschreibt – Motor, Karosserie, Räder und Innenausstattung. Dieser Bauplan enthält alle Informationen, die du benötigst, um ein Auto zu produzieren, jedoch ist er selbst noch kein fahrbares Fahrzeug. In der objektorientierten Programmierung (OOP) entspricht dieser Bauplan einer Klasse.</p>
 <p>Einmal erstellt, kannst du anhand dieses Bauplans beliebig viele Autos (Objekte) fertigen – jedes Auto wird zwar nach demselben Konzept gebaut, besitzt jedoch seine eigenen Eigenschaften (z. B. Farbe, Baujahr) und verhält sich in bestimmten Situationen individuell. Genau so verhält es sich in der OOP: Eine Klasse definiert die Struktur und das Verhalten (Methoden), während Objekte konkrete Instanzen dieser Klasse sind. Diese Metapher – vom abstrakten Bauplan zum realen Produkt – soll dir helfen, den grundlegenden Zusammenhang zwischen Klassen und Objekten zu verstehen.</p>
 <p>In diesem Kapitel wirst du lernen:</p>
 <ul>
@@ -82,7 +82,7 @@
 <li>Bei einem Auto könnte z. B. eine Methode zum Starten des Motors oder Bremsen gedacht sein.</li>
 </ul>
 </li>
-<li><strong>Konstruktor(en)</strong>: Der Konsturktor wird aufgrufen, wenn du basierend auf einer Klasse ein Objekt erstellen möchstest und definiert, was genau bei der Erstellung des Objekt passiert.
+<li><strong>Konstruktor(en)</strong>: Der Konstruktor wird aufgerufen, wenn du basierend auf einer Klasse ein Objekt erstellen möchtest und definiert, was genau bei der Erstellung des Objekts passiert.
 <ul>
 <li>Bei einem Auto werden bei der Erstellung z.B. Marke, Modell und Baujahr festgelegt.</li>
 </ul>
@@ -123,7 +123,7 @@
 </div>
 <p>In diesem Beispiel fungiert die Klasse Auto als Bauplan. Sie legt fest, welche Eigenschaften (marke, modell, baujahr) ein Auto besitzt und welche Aktionen (z. B. starten) durchgeführt werden können.</p>
 <h2>Klassen und Dateinamen</h2>
-<p>Wenn du in Java eine öffnetliche Klasse mit dem <span style="font-family: andale mono, monospace;">public</span> Modifikator anlegst, <em>muss</em> die Datei denselben Namen haben wie die Klasse. Im obigen Beispiel haben wir die öffentliche Klasse <span style="font-family: andale mono, monospace;">Auto</span> angelegt (<span style="font-family: andale mono, monospace;">public class Auto</span>). Das bedeutet, dass die Datei, in der die Klasse gespeichert ist, <span style="font-family: andale mono, monospace;">Auto.java</span> heißen muss.</p>
+<p>Wenn du in Java eine öffentliche Klasse mit dem <span style="font-family: andale mono, monospace;">public</span> Modifikator anlegst, <em>muss</em> die Datei denselben Namen haben wie die Klasse. Im obigen Beispiel haben wir die öffentliche Klasse <span style="font-family: andale mono, monospace;">Auto</span> angelegt (<span style="font-family: andale mono, monospace;">public class Auto</span>). Das bedeutet, dass die Datei, in der die Klasse gespeichert ist, <span style="font-family: andale mono, monospace;">Auto.java</span> heißen muss.</p>
 <p><strong>Regel:</strong> Pro Datei darf es maximal eine <span style="font-family: andale mono, monospace;">public</span> Klasse geben, die so heißt, wie die Datei. Die Datei kann aber weitere Klassen beinhalten, die <em>nicht</em> <span style="font-family: andale mono, monospace;">public</span> sind.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -142,10 +142,10 @@ public class Fahrrad { // Das geht NICHT
 </div>
 </div>
 <h2>Klasse oder Datei umbennenen</h2>
-<p>Es gibt immer wieder den Fall, das man eine Klasse umbennen möchte, z.B. weil man sich vertippt hat oder einem ein besserer Name eingefallen ist. Angenommen, ich möchte in unserem Fall meine Klasse doch lieber <span style="font-family: andale mono, monospace;">PKW</span> anstelle von <span style="font-family: andale mono, monospace;">Auto</span> nennen. In diesem Fall kann ich <em>umständlich</em> erst die Klasse und dann die Datei umbennen. Nicht wundern: Wenn du das so machst erhältst du temporär eine Fehlermeldung, dass Klassenname und Dateiname nicht übereinstimmen.</p>
-<p><em>Viel sinnvoller</em> ist es allerdings IntelliJ die Arbeit machen zu lassen! Dafür klicke ich entweder in meinem Code auf den Namen meiner Klasse oder in der linken Spalte auf den Namen meiner Datei mit der <em>rechten Maustaste.</em> Dann öffnet sich ein Kontextmenü und dort klicken wir auf <strong>Rename</strong>. In diesem Fall benennt IntelliJ deine Klasse an allen Stellen in deinem gesamten Projekt um. Du musst also nicht selber umständlich suchen, wo du überall den Namen deiner Klasse verwendet hast und brauchst keine Angst haben, etwas zu übersehen. Das sit gerade dann sinnvoll, wenn du in einem großen Softwareprojekt etwas umbennen möchtest. </p>
+<p>Es gibt immer wieder den Fall, dass man eine Klasse umbenennen möchte, z.B. weil man sich vertippt hat oder einem ein besserer Name eingefallen ist. Angenommen, ich möchte in unserem Fall meine Klasse doch lieber <span style="font-family: andale mono, monospace;">PKW</span> anstelle von <span style="font-family: andale mono, monospace;">Auto</span> nennen. In diesem Fall kann ich <em>umständlich</em> erst die Klasse und dann die Datei umbenennen. Nicht wundern: Wenn du das so machst erhältst du temporär eine Fehlermeldung, dass Klassenname und Dateiname nicht übereinstimmen.</p>
+<p><em>Viel sinnvoller</em> ist es allerdings IntelliJ die Arbeit machen zu lassen! Dafür klicke ich entweder in meinem Code auf den Namen meiner Klasse oder in der linken Spalte auf den Namen meiner Datei mit der <em>rechten Maustaste.</em> Dann öffnet sich ein Kontextmenü und dort klicken wir auf <strong>Rename</strong>. In diesem Fall benennt IntelliJ deine Klasse an allen Stellen in deinem gesamten Projekt um. Du musst also nicht selber umständlich suchen, wo du überall den Namen deiner Klasse verwendet hast und brauchst keine Angst haben, etwas zu übersehen. Das ist gerade dann sinnvoll, wenn du in einem großen Softwareprojekt etwas umbenennen möchtest. </p>
 <h1>Erstellen von Objekten</h1>
-<p>Sobald eine Klasse definiert ist, kannst du Objekte davon erstellen.  Ein Objekt ist eine konkrete Ausprägung der Klasse, vergleichbar mit einem fertigen Auto, das auf Basis des Auto-Bauplans hergestellt wurde. Objekte werden auch als <strong>Instanzen</strong> bezeichnet. <strong>In der Informatik beschreibt eine Instanz eine konkrete Umsetzung oder ein Exemplar eines Modell.</strong> Da Obekte auch als Instanzen bezeichnet werden, wird der Vorgang des Erstellen eines Objekts auch als <strong>Instanziierung</strong> bezeichnet.</p>
+<p>Sobald eine Klasse definiert ist, kannst du Objekte davon erstellen.  Ein Objekt ist eine konkrete Ausprägung der Klasse, vergleichbar mit einem fertigen Auto, das auf Basis des Auto-Bauplans hergestellt wurde. Objekte werden auch als <strong>Instanzen</strong> bezeichnet. <strong>In der Informatik beschreibt eine Instanz eine konkrete Umsetzung oder ein Exemplar eines Modells.</strong> Da Objekte auch als Instanzen bezeichnet werden, wird der Vorgang des Erstellens eines Objekts auch als <strong>Instanziierung</strong> bezeichnet.</p>
 <p>So könnte in der Main-Methode eines Programms ein Auto-Objekt erzeugt und verwendet werden:</p>
 <div class="highlighted-code language-java">
 <div>
@@ -169,13 +169,13 @@ public class Fahrrad { // Das geht NICHT
 </div>
 <p>Durch den Konstruktor der Klasse werden die Objekte <span style="font-family: andale mono, monospace;">meinPrivatAuto</span> und <span style="font-family: andale mono, monospace;">meinArbeitsAuto</span> erzeugt und mit individuellen Eigenschaften ausgestattet. Eine Veränderung an meinArbeitsAuto hat keinerlei Auswirkung auf meinPrivatAuto, da es sich hier um 2 vollkommen autarke (unabhängige) Objekte handelt.</p>
 <h1>Konstruktoren</h1>
-<p>Ein Konstruktor ist eine spezielle Methode, die beim Erzeugen eines Objekts aufgerufen wird, um es zu initialisieren. Da es sich bei einem Konstruktor um eine Methode handelt, ist er wie eine Methode aufgebaut. Bei der Erstellung eines Konsturktors musst du folgende Dinge beachten</p>
+<p>Ein Konstruktor ist eine spezielle Methode, die beim Erzeugen eines Objekts aufgerufen wird, um es zu initialisieren. Da es sich bei einem Konstruktor um eine Methode handelt, ist er wie eine Methode aufgebaut. Bei der Erstellung eines Konstruktors musst du folgende Dinge beachten:</p>
 <ul>
 <li><strong>Namen</strong>: Der Konstruktor hat <span style="text-decoration: underline;">immer</span> denselben Namen wie die Klasse.</li>
 <li><strong>Parameter:</strong> Daten, welche zur Erstellung eines Objekts benötigt werden, können als Parameter an den Konstruktor übergeben werden</li>
-<li><strong>Keine</strong> <strong>Rückgabe</strong>: Konstruktoren haben <em>keinen</em> Rückgabetyp, auch nicht void. Das bedeutet vor dem Namen steht kein Datentyp und nicht void<strong>. </strong></li>
+<li><strong>Keine</strong> <strong>Rückgabe</strong>: Konstruktoren haben <em>keinen</em> Rückgabetyp, auch nicht void. Das bedeutet, vor dem Namen steht kein Datentyp und nicht void<strong>. </strong></li>
 </ul>
-<h2>Das Schlüsselwort "this"</h2>
+<h2>Das Schlüsselwort „this“</h2>
 <p>Das Schlüsselwort <code>this</code> bezieht sich auf das aktuelle Objekt in einer Methode oder einem Konstruktor.</p>
 <p>Die häufigste Verwendung des Schlüsselworts <code>this</code> besteht darin, die Verwechslung zwischen Klassenattributen und Parametern mit demselben Namen zu beseitigen (da ein Klassenattribut durch eine Methode oder einen Konstruktorparameter überschattet wird). Wenn man das Schlüsselwort <code>this</code> in folgendem Beispiel in Zeile 7 und 8 weglässt, wäre die Ausgabe „<code>Meine Position ist x:0 y:0</code>“ statt „<code>Meine Position ist x:34 y:65</code>“.</p>
 <div class="highlighted-code language-java line-numbers hightlight-7and8">
@@ -271,7 +271,7 @@ public class Main {
 </div>
 <p>Diese Trennung von Zustand (Attribute) und Verhalten (Methoden) ist ein zentrales Merkmal der Objektorientierten Programmierung. Durch die klare Strukturierung kann der Code übersichtlicher und modularer gestaltet werden.</p>
 <h2>Statische Eigenschaften einer Klasse</h2>
-<p>Die Eigenschaften einer Klasse können mit dem Modifikator <span style="font-family: andale mono, monospace;">static</span> versehen werden. Auf ein Attribut oder eine Methode, die static ist, kann zugegriffen werden, ohne das ein Objekt von der Klasse erstellt werden muss. Man greift dann über die Klasse und nicht über das Objekt auf die Eigenschaft zu. Statische Eigenschaften werden verwendet, wenn diese Eigenschaften eher zur Klasse, als zum Objekt gehören bzw. nicht einem konkreten Objekt zugeordnet werden. Dazu gehören zum Beispiel folgende Methoden und Eigenschaften aus der Math-Klasse:</p>
+<p>Die Eigenschaften einer Klasse können mit dem Modifikator <span style="font-family: andale mono, monospace;">static</span> versehen werden. Auf ein Attribut oder eine Methode, die <span style="font-family: andale mono, monospace;">static</span> ist, kann zugegriffen werden, ohne dass ein Objekt von der Klasse erstellt werden muss. Man greift dann über die Klasse und nicht über das Objekt auf die Eigenschaft zu. Statische Eigenschaften werden verwendet, wenn diese Eigenschaften eher zur Klasse, als zum Objekt gehören bzw. nicht einem konkreten Objekt zugeordnet werden. Dazu gehören zum Beispiel folgende Methoden und Eigenschaften aus der Math-Klasse:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>Math.sin(3.64); // Berechnung des Sinus 
@@ -279,8 +279,8 @@ Math.max(3, 7); // Ermittlung des Maximalwerts
 System.out.println(Math.PI); // Ausgabe von PI</code></pre>
 </div>
 </div>
-<p>Auf die Methoden und Attribute der Math.Klasse kannst du zugreifen, ohne ein Objekt erstellen zu müssen. Sie werden in der Math-Klasse einfach nur gruppiert. Du selber kannst in deinen eignen Programmen Methoden, die du schreibst und die zu keinem Objekt gehören, in einer eigenen Klasse gruppieren, um einfach auf diese zugreifen zu können.<br /><br /></p>
-<p>Ein weitere Vorteil von statischen Eigenschaften ist, dass du auf sie zugreifen kannst, bevor du ein Objekt erstellst und, dass sich Änderungen statischen Attributen, auf alle Objekte auswirken. Stell dir vor, wir haben eine Klasse für eine Semestergruppe. Die maximale Teilnehmerzahl für eine Semestergruppe liegt bei 15 Studierenden. Diese Eigenschaft gehört eher zu der Klasse Semestergruppe, anstatt zu jeder einzelnen Semestergruppe indiviuell. Daher kann man dieses Attribut statisch machen. Falls sich die Zahl doch einmal ändern sollte, kann man sie einfach in der Klasse ändern und diese Auswirkung betrifft dann alle Objekte.</p>
+<p>Auf die Methoden und Attribute der Math-Klasse kannst du zugreifen, ohne ein Objekt erstellen zu müssen. Sie werden in der Math-Klasse einfach nur gruppiert. Du selber kannst in deinen eignen Programmen Methoden, die du schreibst und die zu keinem Objekt gehören, in einer eigenen Klasse gruppieren, um einfach auf diese zugreifen zu können.<br /><br /></p>
+<p>Ein weiterer Vorteil von statischen Eigenschaften ist, dass du auf sie zugreifen kannst, bevor du ein Objekt erstellst und, dass sich Änderungen statischen Attributen, auf alle Objekte auswirken. Stell dir vor, wir haben eine Klasse für eine Semestergruppe. Die maximale Teilnehmerzahl für eine Semestergruppe liegt bei 15 Studierenden. Diese Eigenschaft gehört eher zu der Klasse Semestergruppe, anstatt zu jeder einzelnen Semestergruppe individuell. Daher kann man dieses Attribut statisch machen. Falls sich die Zahl doch einmal ändern sollte, kann man sie einfach in der Klasse ändern und diese Auswirkung betrifft dann alle Objekte.</p>
 <div class="highlighted-code language-java line-numbers hightlight-4">
 <div>
 <pre><code>class Semestergruppe {
@@ -312,20 +312,31 @@ public class Main {
 <div class="exe-fx exe-accordion">
 <h2>Aufgaben</h2>
 <ul>
-<li><strong>Aufgabe 1</strong>: Implementierung einer Klasse
+<li><strong>Aufgabe 1: </strong>Bücherverwaltung
 <ul>
-<li>Erstelle eine Klasse „Auto“ mit den Attributen: marke, modell und baujahr.</li>
-<li>Implementiere einen Konstruktor, der alle Attribute initialisiert.</li>
-<li>Füge eine Methode hinzu, die eine einfache Nachricht ausgibt, z. B. „[Marke] [Modell] startet!“</li>
-<li>Erstelle in einer Main-Methode ein Objekt der Klasse Auto und rufe die Methode auf.</li>
+<li>Erstelle eine Klasse Buch mit den Attributen titel (String), autor (String), isbn (String) und erscheinungsjahr (int)</li>
+<li>Implementiere folgende Punkte:
+<ul>
+<li>Einen Konkstruktor, der alle Attribute initialisiert</li>
+<li>Eine Methode toString(), welche alle Informationen des Buches als String zurückgibt</li>
+<li>Eine Methode equals(), welche 2 Bücher anhand ihrer ISBN vergleicht und das Ergebnis als boolean zurückgibt.</li>
 </ul>
 </li>
-<li><strong>Aufgabe 2</strong>: Implementierung von Kapselung
+<li>Erstelle mehrere Objekte vom Typ Buch, lass dir die Informationen zu den Büchern ausgeben und vergleiche 2 Bücher miteinander.</li>
+</ul>
+</li>
+<li><strong>Aufgabe 2</strong>: Bankkonto-Simulation
 <ul>
-<li>Nimm die Klasse „Student“ und deklariere die Attribute (z. B. name, matrikelnummer, studiengang) als private.</li>
-<li>Implementiere jeweils passende Getter und Setter-Methoden.</li>
-<li>Füge Logik in den Setter für die Matrikelnummer ein, sodass nur positive Werte und Werte mit einer länge von 6 Zeichen akzeptiert werden.</li>
-<li>Teste deine Implementierung in einer einfachen Main-Methode, indem du versuchst, ungültige Werte zu setzen, und überprüfe, ob deine Validierung wirkt.</li>
+<li>Erstelle eine Klasse Bankkonto mit den Attributen kontonummer (String), konotinhaber (String) und kontostand (double). </li>
+<li>Implementiere folgende Punkte:
+<ul>
+<li>Einen Konstruktor, der Kontonummer und Kontoinhaber initialisiert</li>
+<li>Methoden zur Einzahlung und Abhebung</li>
+<li>Eine Methode zur Anzeige des aktuellen Kontostands</li>
+<li>Eine statische Variable, die die Anzahl aller erstellten Konten zählt</li>
+</ul>
+</li>
+<li>Erstelle mehrere Objekte vom Typ Bankkonto und simuliere das Einzahlung und Abhebung.</li>
 </ul>
 </li>
 </ul>
@@ -346,7 +357,7 @@ public class Main {
 <li>Die Eigenschaften einer Klasse können statisch oder nicht statisch sein
 <ul>
 <li>Dies wird mithilfe des Modifikators <span style="font-family: andale mono, monospace;">static</span> festgelegt</li>
-<li>Statische Eigenschaften gehören zur Klasse und es kann auf sie zugegriffen werden, ohne eine Objekt der Klasse erstellen zu müssen.</li>
+<li>Statische Eigenschaften gehören zur Klasse und es kann auf sie zugegriffen werden, ohne ein Objekt der Klasse erstellen zu müssen.</li>
 <li>Nicht statische Eigenschaften können nur über ein Objekt der Klasse verwendet werden.</li>
 </ul>
 </li>

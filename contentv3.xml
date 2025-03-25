@@ -684,7 +684,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="306"></int>
+                        <int value="311"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -698,7 +698,7 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.41"></unicode>
+                      <unicode value="14_129_2.43"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="45">
                        <dictionary>
@@ -709,7 +709,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -736,7 +736,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="310"></int>
+                        <int value="315"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -750,7 +750,7 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.42"></unicode>
+                      <unicode value="14_129_2.44"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="46">
                        <dictionary>
@@ -761,7 +761,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -873,7 +873,7 @@ public class Main {
                           <dictionary></dictionary>
                           <string role="key" value="content_w_resourcePaths"></string>
                           <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung – Von Bauplänen zu realen Objekten&lt;/h1&gt;
-&lt;p&gt;Stell dir vor, du möchtest ein individuelles Auto bauen. Du hast einen exakten Bauplan, der alle Komponenten des Autos beschreibt – Motor, Karosserie, Räder und Innenausstattung. Dieser Bauplan enthält alle Informationen, die du benötigst, um ein Auto zu produzieren, jedoch ist er selbst noch kein fahrbares Fahrzeug. In der objektorientierten Programmierung (OOP) entspricht dieser Bauplan einer Klasse.&lt;/p&gt;
+&lt;p&gt;Stell dir vor, du möchtest ein Auto bauen. Du hast einen exakten Bauplan, der alle Komponenten des Autos beschreibt – Motor, Karosserie, Räder und Innenausstattung. Dieser Bauplan enthält alle Informationen, die du benötigst, um ein Auto zu produzieren, jedoch ist er selbst noch kein fahrbares Fahrzeug. In der objektorientierten Programmierung (OOP) entspricht dieser Bauplan einer Klasse.&lt;/p&gt;
 &lt;p&gt;Einmal erstellt, kannst du anhand dieses Bauplans beliebig viele Autos (Objekte) fertigen – jedes Auto wird zwar nach demselben Konzept gebaut, besitzt jedoch seine eigenen Eigenschaften (z. B. Farbe, Baujahr) und verhält sich in bestimmten Situationen individuell. Genau so verhält es sich in der OOP: Eine Klasse definiert die Struktur und das Verhalten (Methoden), während Objekte konkrete Instanzen dieser Klasse sind. Diese Metapher – vom abstrakten Bauplan zum realen Produkt – soll dir helfen, den grundlegenden Zusammenhang zwischen Klassen und Objekten zu verstehen.&lt;/p&gt;
 &lt;p&gt;In diesem Kapitel wirst du lernen:&lt;/p&gt;
 &lt;ul&gt;
@@ -894,7 +894,7 @@ public class Main {
 &lt;li&gt;Bei einem Auto könnte z. B. eine Methode zum Starten des Motors oder Bremsen gedacht sein.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Konstruktor(en)&lt;/strong&gt;: Der Konsturktor wird aufgrufen, wenn du basierend auf einer Klasse ein Objekt erstellen möchstest und definiert, was genau bei der Erstellung des Objekt passiert.
+&lt;li&gt;&lt;strong&gt;Konstruktor(en)&lt;/strong&gt;: Der Konstruktor wird aufgerufen, wenn du basierend auf einer Klasse ein Objekt erstellen möchtest und definiert, was genau bei der Erstellung des Objekts passiert.
 &lt;ul&gt;
 &lt;li&gt;Bei einem Auto werden bei der Erstellung z.B. Marke, Modell und Baujahr festgelegt.&lt;/li&gt;
 &lt;/ul&gt;
@@ -935,7 +935,7 @@ public class Main {
 &lt;/div&gt;
 &lt;p&gt;In diesem Beispiel fungiert die Klasse Auto als Bauplan. Sie legt fest, welche Eigenschaften (marke, modell, baujahr) ein Auto besitzt und welche Aktionen (z. B. starten) durchgeführt werden können.&lt;/p&gt;
 &lt;h2&gt;Klassen und Dateinamen&lt;/h2&gt;
-&lt;p&gt;Wenn du in Java eine öffnetliche Klasse mit dem &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; Modifikator anlegst, &lt;em&gt;muss&lt;/em&gt; die Datei denselben Namen haben wie die Klasse. Im obigen Beispiel haben wir die öffentliche Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto&lt;/span&gt; angelegt (&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public class Auto&lt;/span&gt;). Das bedeutet, dass die Datei, in der die Klasse gespeichert ist, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto.java&lt;/span&gt; heißen muss.&lt;/p&gt;
+&lt;p&gt;Wenn du in Java eine öffentliche Klasse mit dem &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; Modifikator anlegst, &lt;em&gt;muss&lt;/em&gt; die Datei denselben Namen haben wie die Klasse. Im obigen Beispiel haben wir die öffentliche Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto&lt;/span&gt; angelegt (&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public class Auto&lt;/span&gt;). Das bedeutet, dass die Datei, in der die Klasse gespeichert ist, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto.java&lt;/span&gt; heißen muss.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Regel:&lt;/strong&gt; Pro Datei darf es maximal eine &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; Klasse geben, die so heißt, wie die Datei. Die Datei kann aber weitere Klassen beinhalten, die &lt;em&gt;nicht&lt;/em&gt; &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; sind.&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers&quot;&gt;
 &lt;div&gt;
@@ -954,10 +954,10 @@ public class Fahrrad { // Das geht NICHT
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;Klasse oder Datei umbennenen&lt;/h2&gt;
-&lt;p&gt;Es gibt immer wieder den Fall, das man eine Klasse umbennen möchte, z.B. weil man sich vertippt hat oder einem ein besserer Name eingefallen ist. Angenommen, ich möchte in unserem Fall meine Klasse doch lieber &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;PKW&lt;/span&gt; anstelle von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto&lt;/span&gt; nennen. In diesem Fall kann ich &lt;em&gt;umständlich&lt;/em&gt; erst die Klasse und dann die Datei umbennen. Nicht wundern: Wenn du das so machst erhältst du temporär eine Fehlermeldung, dass Klassenname und Dateiname nicht übereinstimmen.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Viel sinnvoller&lt;/em&gt; ist es allerdings IntelliJ die Arbeit machen zu lassen! Dafür klicke ich entweder in meinem Code auf den Namen meiner Klasse oder in der linken Spalte auf den Namen meiner Datei mit der &lt;em&gt;rechten Maustaste.&lt;/em&gt; Dann öffnet sich ein Kontextmenü und dort klicken wir auf &lt;strong&gt;Rename&lt;/strong&gt;. In diesem Fall benennt IntelliJ deine Klasse an allen Stellen in deinem gesamten Projekt um. Du musst also nicht selber umständlich suchen, wo du überall den Namen deiner Klasse verwendet hast und brauchst keine Angst haben, etwas zu übersehen. Das sit gerade dann sinnvoll, wenn du in einem großen Softwareprojekt etwas umbennen möchtest. &lt;/p&gt;
+&lt;p&gt;Es gibt immer wieder den Fall, dass man eine Klasse umbenennen möchte, z.B. weil man sich vertippt hat oder einem ein besserer Name eingefallen ist. Angenommen, ich möchte in unserem Fall meine Klasse doch lieber &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;PKW&lt;/span&gt; anstelle von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto&lt;/span&gt; nennen. In diesem Fall kann ich &lt;em&gt;umständlich&lt;/em&gt; erst die Klasse und dann die Datei umbenennen. Nicht wundern: Wenn du das so machst erhältst du temporär eine Fehlermeldung, dass Klassenname und Dateiname nicht übereinstimmen.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Viel sinnvoller&lt;/em&gt; ist es allerdings IntelliJ die Arbeit machen zu lassen! Dafür klicke ich entweder in meinem Code auf den Namen meiner Klasse oder in der linken Spalte auf den Namen meiner Datei mit der &lt;em&gt;rechten Maustaste.&lt;/em&gt; Dann öffnet sich ein Kontextmenü und dort klicken wir auf &lt;strong&gt;Rename&lt;/strong&gt;. In diesem Fall benennt IntelliJ deine Klasse an allen Stellen in deinem gesamten Projekt um. Du musst also nicht selber umständlich suchen, wo du überall den Namen deiner Klasse verwendet hast und brauchst keine Angst haben, etwas zu übersehen. Das ist gerade dann sinnvoll, wenn du in einem großen Softwareprojekt etwas umbenennen möchtest. &lt;/p&gt;
 &lt;h1&gt;Erstellen von Objekten&lt;/h1&gt;
-&lt;p&gt;Sobald eine Klasse definiert ist, kannst du Objekte davon erstellen.  Ein Objekt ist eine konkrete Ausprägung der Klasse, vergleichbar mit einem fertigen Auto, das auf Basis des Auto-Bauplans hergestellt wurde. Objekte werden auch als &lt;strong&gt;Instanzen&lt;/strong&gt; bezeichnet. &lt;strong&gt;In der Informatik beschreibt eine Instanz eine konkrete Umsetzung oder ein Exemplar eines Modell.&lt;/strong&gt; Da Obekte auch als Instanzen bezeichnet werden, wird der Vorgang des Erstellen eines Objekts auch als &lt;strong&gt;Instanziierung&lt;/strong&gt; bezeichnet.&lt;/p&gt;
+&lt;p&gt;Sobald eine Klasse definiert ist, kannst du Objekte davon erstellen.  Ein Objekt ist eine konkrete Ausprägung der Klasse, vergleichbar mit einem fertigen Auto, das auf Basis des Auto-Bauplans hergestellt wurde. Objekte werden auch als &lt;strong&gt;Instanzen&lt;/strong&gt; bezeichnet. &lt;strong&gt;In der Informatik beschreibt eine Instanz eine konkrete Umsetzung oder ein Exemplar eines Modells.&lt;/strong&gt; Da Objekte auch als Instanzen bezeichnet werden, wird der Vorgang des Erstellens eines Objekts auch als &lt;strong&gt;Instanziierung&lt;/strong&gt; bezeichnet.&lt;/p&gt;
 &lt;p&gt;So könnte in der Main-Methode eines Programms ein Auto-Objekt erzeugt und verwendet werden:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
 &lt;div&gt;
@@ -981,13 +981,13 @@ public class Fahrrad { // Das geht NICHT
 &lt;/div&gt;
 &lt;p&gt;Durch den Konstruktor der Klasse werden die Objekte &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinPrivatAuto&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinArbeitsAuto&lt;/span&gt; erzeugt und mit individuellen Eigenschaften ausgestattet. Eine Veränderung an meinArbeitsAuto hat keinerlei Auswirkung auf meinPrivatAuto, da es sich hier um 2 vollkommen autarke (unabhängige) Objekte handelt.&lt;/p&gt;
 &lt;h1&gt;Konstruktoren&lt;/h1&gt;
-&lt;p&gt;Ein Konstruktor ist eine spezielle Methode, die beim Erzeugen eines Objekts aufgerufen wird, um es zu initialisieren. Da es sich bei einem Konstruktor um eine Methode handelt, ist er wie eine Methode aufgebaut. Bei der Erstellung eines Konsturktors musst du folgende Dinge beachten&lt;/p&gt;
+&lt;p&gt;Ein Konstruktor ist eine spezielle Methode, die beim Erzeugen eines Objekts aufgerufen wird, um es zu initialisieren. Da es sich bei einem Konstruktor um eine Methode handelt, ist er wie eine Methode aufgebaut. Bei der Erstellung eines Konstruktors musst du folgende Dinge beachten:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Namen&lt;/strong&gt;: Der Konstruktor hat &lt;span style=&quot;text-decoration: underline;&quot;&gt;immer&lt;/span&gt; denselben Namen wie die Klasse.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Parameter:&lt;/strong&gt; Daten, welche zur Erstellung eines Objekts benötigt werden, können als Parameter an den Konstruktor übergeben werden&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Keine&lt;/strong&gt; &lt;strong&gt;Rückgabe&lt;/strong&gt;: Konstruktoren haben &lt;em&gt;keinen&lt;/em&gt; Rückgabetyp, auch nicht void. Das bedeutet vor dem Namen steht kein Datentyp und nicht void&lt;strong&gt;. &lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keine&lt;/strong&gt; &lt;strong&gt;Rückgabe&lt;/strong&gt;: Konstruktoren haben &lt;em&gt;keinen&lt;/em&gt; Rückgabetyp, auch nicht void. Das bedeutet, vor dem Namen steht kein Datentyp und nicht void&lt;strong&gt;. &lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Das Schlüsselwort &quot;this&quot;&lt;/h2&gt;
+&lt;h2&gt;Das Schlüsselwort „this“&lt;/h2&gt;
 &lt;p&gt;Das Schlüsselwort &lt;code&gt;this&lt;/code&gt; bezieht sich auf das aktuelle Objekt in einer Methode oder einem Konstruktor.&lt;/p&gt;
 &lt;p&gt;Die häufigste Verwendung des Schlüsselworts &lt;code&gt;this&lt;/code&gt; besteht darin, die Verwechslung zwischen Klassenattributen und Parametern mit demselben Namen zu beseitigen (da ein Klassenattribut durch eine Methode oder einen Konstruktorparameter überschattet wird). Wenn man das Schlüsselwort &lt;code&gt;this&lt;/code&gt; in folgendem Beispiel in Zeile 7 und 8 weglässt, wäre die Ausgabe „&lt;code&gt;Meine Position ist x:0 y:0&lt;/code&gt;“ statt „&lt;code&gt;Meine Position ist x:34 y:65&lt;/code&gt;“.&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers hightlight-7and8&quot;&gt;
@@ -1083,7 +1083,7 @@ public class Main {
 &lt;/div&gt;
 &lt;p&gt;Diese Trennung von Zustand (Attribute) und Verhalten (Methoden) ist ein zentrales Merkmal der Objektorientierten Programmierung. Durch die klare Strukturierung kann der Code übersichtlicher und modularer gestaltet werden.&lt;/p&gt;
 &lt;h2&gt;Statische Eigenschaften einer Klasse&lt;/h2&gt;
-&lt;p&gt;Die Eigenschaften einer Klasse können mit dem Modifikator &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;static&lt;/span&gt; versehen werden. Auf ein Attribut oder eine Methode, die static ist, kann zugegriffen werden, ohne das ein Objekt von der Klasse erstellt werden muss. Man greift dann über die Klasse und nicht über das Objekt auf die Eigenschaft zu. Statische Eigenschaften werden verwendet, wenn diese Eigenschaften eher zur Klasse, als zum Objekt gehören bzw. nicht einem konkreten Objekt zugeordnet werden. Dazu gehören zum Beispiel folgende Methoden und Eigenschaften aus der Math-Klasse:&lt;/p&gt;
+&lt;p&gt;Die Eigenschaften einer Klasse können mit dem Modifikator &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;static&lt;/span&gt; versehen werden. Auf ein Attribut oder eine Methode, die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;static&lt;/span&gt; ist, kann zugegriffen werden, ohne dass ein Objekt von der Klasse erstellt werden muss. Man greift dann über die Klasse und nicht über das Objekt auf die Eigenschaft zu. Statische Eigenschaften werden verwendet, wenn diese Eigenschaften eher zur Klasse, als zum Objekt gehören bzw. nicht einem konkreten Objekt zugeordnet werden. Dazu gehören zum Beispiel folgende Methoden und Eigenschaften aus der Math-Klasse:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;Math.sin(3.64); // Berechnung des Sinus 
@@ -1091,8 +1091,8 @@ Math.max(3, 7); // Ermittlung des Maximalwerts
 System.out.println(Math.PI); // Ausgabe von PI&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Auf die Methoden und Attribute der Math.Klasse kannst du zugreifen, ohne ein Objekt erstellen zu müssen. Sie werden in der Math-Klasse einfach nur gruppiert. Du selber kannst in deinen eignen Programmen Methoden, die du schreibst und die zu keinem Objekt gehören, in einer eigenen Klasse gruppieren, um einfach auf diese zugreifen zu können.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Ein weitere Vorteil von statischen Eigenschaften ist, dass du auf sie zugreifen kannst, bevor du ein Objekt erstellst und, dass sich Änderungen statischen Attributen, auf alle Objekte auswirken. Stell dir vor, wir haben eine Klasse für eine Semestergruppe. Die maximale Teilnehmerzahl für eine Semestergruppe liegt bei 15 Studierenden. Diese Eigenschaft gehört eher zu der Klasse Semestergruppe, anstatt zu jeder einzelnen Semestergruppe indiviuell. Daher kann man dieses Attribut statisch machen. Falls sich die Zahl doch einmal ändern sollte, kann man sie einfach in der Klasse ändern und diese Auswirkung betrifft dann alle Objekte.&lt;/p&gt;
+&lt;p&gt;Auf die Methoden und Attribute der Math-Klasse kannst du zugreifen, ohne ein Objekt erstellen zu müssen. Sie werden in der Math-Klasse einfach nur gruppiert. Du selber kannst in deinen eignen Programmen Methoden, die du schreibst und die zu keinem Objekt gehören, in einer eigenen Klasse gruppieren, um einfach auf diese zugreifen zu können.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Ein weiterer Vorteil von statischen Eigenschaften ist, dass du auf sie zugreifen kannst, bevor du ein Objekt erstellst und, dass sich Änderungen statischen Attributen, auf alle Objekte auswirken. Stell dir vor, wir haben eine Klasse für eine Semestergruppe. Die maximale Teilnehmerzahl für eine Semestergruppe liegt bei 15 Studierenden. Diese Eigenschaft gehört eher zu der Klasse Semestergruppe, anstatt zu jeder einzelnen Semestergruppe individuell. Daher kann man dieses Attribut statisch machen. Falls sich die Zahl doch einmal ändern sollte, kann man sie einfach in der Klasse ändern und diese Auswirkung betrifft dann alle Objekte.&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers hightlight-4&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;class Semestergruppe {
@@ -1124,20 +1124,31 @@ public class Main {
 &lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Implementierung einer Klasse
+&lt;li&gt;&lt;strong&gt;Aufgabe 1: &lt;/strong&gt;Bücherverwaltung
 &lt;ul&gt;
-&lt;li&gt;Erstelle eine Klasse „Auto“ mit den Attributen: marke, modell und baujahr.&lt;/li&gt;
-&lt;li&gt;Implementiere einen Konstruktor, der alle Attribute initialisiert.&lt;/li&gt;
-&lt;li&gt;Füge eine Methode hinzu, die eine einfache Nachricht ausgibt, z. B. „[Marke] [Modell] startet!“&lt;/li&gt;
-&lt;li&gt;Erstelle in einer Main-Methode ein Objekt der Klasse Auto und rufe die Methode auf.&lt;/li&gt;
+&lt;li&gt;Erstelle eine Klasse Buch mit den Attributen titel (String), autor (String), isbn (String) und erscheinungsjahr (int)&lt;/li&gt;
+&lt;li&gt;Implementiere folgende Punkte:
+&lt;ul&gt;
+&lt;li&gt;Einen Konkstruktor, der alle Attribute initialisiert&lt;/li&gt;
+&lt;li&gt;Eine Methode toString(), welche alle Informationen des Buches als String zurückgibt&lt;/li&gt;
+&lt;li&gt;Eine Methode equals(), welche 2 Bücher anhand ihrer ISBN vergleicht und das Ergebnis als boolean zurückgibt.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Implementierung von Kapselung
+&lt;li&gt;Erstelle mehrere Objekte vom Typ Buch, lass dir die Informationen zu den Büchern ausgeben und vergleiche 2 Bücher miteinander.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Bankkonto-Simulation
 &lt;ul&gt;
-&lt;li&gt;Nimm die Klasse „Student“ und deklariere die Attribute (z. B. name, matrikelnummer, studiengang) als private.&lt;/li&gt;
-&lt;li&gt;Implementiere jeweils passende Getter und Setter-Methoden.&lt;/li&gt;
-&lt;li&gt;Füge Logik in den Setter für die Matrikelnummer ein, sodass nur positive Werte und Werte mit einer länge von 6 Zeichen akzeptiert werden.&lt;/li&gt;
-&lt;li&gt;Teste deine Implementierung in einer einfachen Main-Methode, indem du versuchst, ungültige Werte zu setzen, und überprüfe, ob deine Validierung wirkt.&lt;/li&gt;
+&lt;li&gt;Erstelle eine Klasse Bankkonto mit den Attributen kontonummer (String), konotinhaber (String) und kontostand (double). &lt;/li&gt;
+&lt;li&gt;Implementiere folgende Punkte:
+&lt;ul&gt;
+&lt;li&gt;Einen Konstruktor, der Kontonummer und Kontoinhaber initialisiert&lt;/li&gt;
+&lt;li&gt;Methoden zur Einzahlung und Abhebung&lt;/li&gt;
+&lt;li&gt;Eine Methode zur Anzeige des aktuellen Kontostands&lt;/li&gt;
+&lt;li&gt;Eine statische Variable, die die Anzahl aller erstellten Konten zählt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Erstelle mehrere Objekte vom Typ Bankkonto und simuliere das Einzahlung und Abhebung.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1158,7 +1169,7 @@ public class Main {
 &lt;li&gt;Die Eigenschaften einer Klasse können statisch oder nicht statisch sein
 &lt;ul&gt;
 &lt;li&gt;Dies wird mithilfe des Modifikators &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;static&lt;/span&gt; festgelegt&lt;/li&gt;
-&lt;li&gt;Statische Eigenschaften gehören zur Klasse und es kann auf sie zugegriffen werden, ohne eine Objekt der Klasse erstellen zu müssen.&lt;/li&gt;
+&lt;li&gt;Statische Eigenschaften gehören zur Klasse und es kann auf sie zugegriffen werden, ohne ein Objekt der Klasse erstellen zu müssen.&lt;/li&gt;
 &lt;li&gt;Nicht statische Eigenschaften können nur über ein Objekt der Klasse verwendet werden.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2056,6 +2067,14 @@ public class Beispiel {
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;Du kannst auf die Methoden der Klasse mithilfe der Punktnotation zugreifen:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;int a = Math.abs(-36); // 36
+double b = Math.ceil(5.2); // 6
+double c = Math.pow(3,3); // 27&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;h1&gt;Abschluss&lt;/h1&gt;
 &lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
@@ -2628,7 +2647,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2648,7 +2667,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\klassendiagramm_beispiel2.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3163,7 +3182,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="307"></int>
+                                                   <int value="312"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3177,7 +3196,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.9"></unicode>
+                                                 <unicode value="28_127_2.11"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="27"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3196,7 +3215,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="308"></int>
+                                                   <int value="313"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3210,7 +3229,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.10"></unicode>
+                                                 <unicode value="28_127_2.12"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="28"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3561,7 +3580,7 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
                                              <reference key="21"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="11"></int>
+                                            <int value="13"></int>
                                             <string role="key" value="parentNode"></string>
                                             <reference key="33"></reference>
                                            </dictionary>
@@ -4110,7 +4129,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp3iv5m_\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4463,7 +4482,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="309"></int>
+                                     <int value="314"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4477,7 +4496,7 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.18"></unicode>
+                                   <unicode value="16_127_2.19"></unicode>
                                    <string role="key" value="_imageResource"></string>
                                    <reference key="34"></reference>
                                    <string role="key" value="_parent"></string>
@@ -4501,7 +4520,7 @@ public class Main {
                                <reference key="17"></reference>
                               </dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="19"></int>
+                              <int value="20"></int>
                               <string role="key" value="parentNode"></string>
                               <reference key="21"></reference>
                              </dictionary>
@@ -4981,19 +5000,62 @@ class MyList implements Sortable {
                              <string role="key" value="anchors_linked_from_fields"></string>
                              <dictionary></dictionary>
                              <string role="key" value="content_w_resourcePaths"></string>
-                             <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung&lt;/h1&gt;
-&lt;p&gt;Ein Paket oder auch Package wird in Java verwendet um Klassen zu gruppieren, die zusammengehören. Du kannst dir das am besten vorstellen, wir Ordner in einem Dateisystem. Mithilfe von Packages lassen sich Klassen organisieren und Konflikte bei der Namensgebung vermeiden. Dabei lassen sich Packages in Java in zwei Kategorien einteilen: Pakete aus der Java API und benutzerdefinierte Pakete.&lt;/p&gt;
+                             <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung - Ein Ordnersystem für Klassen&lt;/h1&gt;
+&lt;div class=&quot;-my-sm -ml-2 -mr-3&quot; data-test-id=&quot;&quot;&gt;
+&lt;div class=&quot;mt-sm relative&quot; style=&quot;opacity: 1; transform: none;&quot;&gt;
+&lt;div class=&quot;overflow-hidden cursor-pointer border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-transparent md:hover:bg-offset md:dark:hover:bg-offsetDark&quot;&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;Ein Package in Java ist wie ein digitaler Ordner für deinen Code. Stell dir vor, du hast viele verschiedene Notizen für deine Uni-Kurse. Um den Überblick zu behalten, sortierst du sie in verschiedene Ordner - einen für Mathematik, einen für Geschichte und so weiter. Packages in Java funktionieren ähnlich.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-transparent&quot;&gt;
+&lt;div class=&quot;gap-y-md flex flex-col&quot;&gt;
+&lt;div class=&quot;relative default font-sans text-base text-textMain dark:text-textMainDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark&quot;&gt;
+&lt;div class=&quot;min-w-0 break-words [word-break:break-word]&quot;&gt;
+&lt;div dir=&quot;auto&quot; id=&quot;markdown-content-7&quot; class=&quot;gap-y-md flex flex-col&quot;&gt;
+&lt;div class=&quot;relative&quot;&gt;
+&lt;div class=&quot;prose text-pretty dark:prose-invert inline leading-normal break-words min-w-0 [word-break:break-word]&quot;&gt;&lt;span class=&quot;mt-md block&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Hier sind die wichtigsten Punkte:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Organisation:&lt;/strong&gt; Packages helfen dir, deine Java-Klassen zu gruppieren und zu organisieren. Alle Klassen, die zusammengehören, kommen in ein Package.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Namensgebung:&lt;/strong&gt; Packages haben Namen wie &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.util&lt;/span&gt; oder &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;com.mycompany.project&lt;/span&gt;. Diese Namen helfen, Konflikte zu vermeiden, wenn verschiedene Programmierer ähnliche Klassennamen verwenden.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zugriffskontrolle:&lt;/strong&gt; Packages ermöglichen es dir, den Zugriff auf deine Klassen zu kontrollieren. Du kannst entscheiden, welche Teile deines Codes von außerhalb des Packages sichtbar sein sollen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Standardbibliothek:&lt;/strong&gt; Java selbst nutzt Packages, um seine Standardfunktionen zu organisieren. Zum Beispiel findest du viele nützliche Klassen im Package &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.util&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Verwendung:&lt;/strong&gt; Um eine Klasse aus einem Package zu nutzen, musst du entweder den vollen Namen angeben (wie &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.util.ArrayList&lt;/span&gt;) oder eine Import-Anweisung am Anfang deiner Datei schreiben.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Packages sind also im Grunde ein Weg, deinen Code sauber und übersichtlich zu halten, ähnlich wie du deine Uni-Unterlagen organisierst&lt;a target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; class=&quot;citation ml-xs inline&quot; data-state=&quot;closed&quot; aria-label=&quot;Klassen und Objekte&quot; href=&quot;https://openbook.rheinwerk-verlag.de/javainsel/03_006.html&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Was die Java API ist&lt;/li&gt;
-&lt;li&gt;Wie man Pakete und Klassen imporiert&lt;/li&gt;
+&lt;li&gt;Wie man Pakete und Klassen importiert&lt;/li&gt;
 &lt;li&gt;Wie man selber Pakete und Klassen definieren kann.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Java API&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&quot;ILfuVd&quot; lang=&quot;de&quot;&gt;&lt;span class=&quot;hgKElc&quot;&gt;APIs (Application Programming Interfaces) sind sogenannte Programmierschnittstellen. Sie bestehen aus mehreren Definitionen und Protokollen zur Softwareentwicklung. &lt;/span&gt;&lt;/span&gt;Die Java API ist eine Bibliothek und enthält viele Klassen, die du für die Entwicklung deiner Java-Anwendungen kostenlos nutzen darf. Die Java API ist automatisch in deiner Java Entwicklungsumgebung integriert.&lt;/p&gt;
-&lt;p&gt;Die Java-Bibliothek ist unterteilt ist Packages und Klassen. Das bedeutet du kannst entweder einzelne Klassen oder ganze Packete (die mehrere Klassen enthalten) importieren. Eine Liste mit allen Paketen und Klassen innerhalb der Java API findest du auf &lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Oracle&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;ILfuVd&quot; lang=&quot;de&quot;&gt;&lt;span class=&quot;hgKElc&quot;&gt;APIs (Application Programming Interfaces) sind sogenannte Programmierschnittstellen. Sie bestehen aus mehreren Definitionen und Protokollen zur Softwareentwicklung. &lt;/span&gt;&lt;/span&gt;Die Java API ist eine umfassende Sammlung von Bibliotheken und Packages. Sie bildet die Standardbibliothek von Java und enthält unzählige Module, welche wiederum Packages enthalten. Die Java API ist automatisch in deiner Java Entwicklungsumgebung integriert.&lt;/p&gt;
+&lt;p&gt;Wichtige Punkte zur Java API:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sie umfasst eine Vielzahl von Modulen, wie z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.base, java.desktop,&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.xml&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Jedes Modul enthält mehrere Packages, die thematisch zusammengehörige Klassen und Interfaces gruppieren&lt;/li&gt;
+&lt;li&gt;Die Java SE 17 API enthält rund 4.400 Typen, verteilt auf verschiedene Packages&lt;/li&gt;
+&lt;li&gt;Einige wichtige Packages der Java API sind:
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.util&lt;/span&gt;: Hilfsklassen für Datenstrukturen und Algorithmen&lt;/li&gt;
+&lt;li&gt;j&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ava.io&lt;/span&gt;: Ein- und Ausgabeoperationen&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.net&lt;/span&gt;: Netzwerkprogrammierung&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;java.lang&lt;/span&gt;: Grundlegende Sprachunterstützung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Die Java API wird als Teil der Java Development Kit (JDK) Distribution bereitgestellt und ist somit eine integrierte Sammlung von Bibliotheken, die standardmäßig mit Java verfügbar sind. Das bedeutet du kannst entweder einzelne Klassen oder ganze Pakete (die mehrere Klassen enthalten) importieren. Eine Liste mit allen Paketen und Klassen innerhalb der Java API findest du auf &lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Oracle&lt;/a&gt;.&lt;/p&gt;
 &lt;h1&gt;Importieren von Klassen und Packages&lt;/h1&gt;
-&lt;p&gt;Den &lt;strong&gt;Syntax&lt;/strong&gt; zum einbinden bzw. importieren einer Bibliothek kennen wir bereits aus Processing:&lt;/p&gt;
+&lt;p&gt;Den &lt;strong&gt;Syntax&lt;/strong&gt; zum Einbinden bzw. Importieren eines Pakets kennen wir bereits aus Processing. Es ist derselbe Befehl, der zum einbinden einer Bibliothek verwendet wird:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;import package.name.Class;   // Klasse importieren
@@ -5001,7 +5063,7 @@ import package.name.*;          //  Paket importieren
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top&quot; title=&quot;Zum Kapitel&quot;&gt;Collections und Lambda Ausdrücke&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Ein konkretes Beispiel ist das Importieren des Collection Frameworks aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top&quot; title=&quot;Zum Kapitel&quot;&gt;Collections und Lambda Ausdrücke&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;import java.util.ArrayList;   // Importiert die Klasse ArrayList
@@ -5010,11 +5072,11 @@ import java.util.*;                // Importiert alle Collections
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h1&gt;Erstellen eigener Pakete&lt;/h1&gt;
-&lt;p&gt;Am Anfang des Kapitels haben wir gesagt, dass Packages Klassen gruppieren und man sich das vorstellen kann wie Ordner in einem Dateisystem. Tatsächlich kann man sich das nicht nur so vorstellen - es &lt;em&gt;ist&lt;/em&gt; auch so. Java nutzt ein Dateisystem um Packages zu speichern. Das könnte zum Beispiel so aussehen:&lt;/p&gt;
+&lt;p&gt;Am Anfang des Kapitels haben wir gesagt, dass Packages Klassen gruppieren und man sich das vorstellen kann wie Ordner in einem Dateisystem. Tatsächlich kann man sich das nicht nur so vorstellen – es &lt;em&gt;ist&lt;/em&gt; auch so. Java nutzt ein Dateisystem, um Packages zu speichern. Das könnte zum Beispiel so aussehen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Haupt-Verzeichnis
 &lt;ul&gt;
-&lt;li&gt;meinpaket
+&lt;li&gt;meinPaket
 &lt;ul&gt;
 &lt;li&gt;MeineKlasse&lt;/li&gt;
 &lt;/ul&gt;
@@ -5022,10 +5084,13 @@ import java.util.*;                // Importiert alle Collections
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Um ein Package zu erstellen, musst du also eigentlich nur in deinem &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;src&lt;/span&gt; Ordner anlegen, der einen Namen hat, der den Syntaxregeln von Java entspricht, wie z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinPaket.&lt;/span&gt; In diesem Ordner kannst du dann Klassen erstellen. Diese Klassen müssen in der ersten Zeile den Befehl &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package name;&lt;/span&gt; (wobei name der Name deines Pakets ist) enthalten (z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package meinPaket;&lt;/span&gt;). Dann sind diese Klassen in diesem Paket organisiert. &lt;/p&gt;
+&lt;p&gt;Aber ... so einfach geht das nicht. &lt;/p&gt;
+&lt;p&gt;Wenn du in IntelliJ mit der rechten Maustaste auf den &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;src&lt;/span&gt; Ordner klickst und dann &lt;em&gt;New&lt;/em&gt; auswählst, dann findest du hier nicht die Option &lt;em&gt;Folder&lt;/em&gt; (Ordern), sondern nur &lt;em&gt;Java Class&lt;/em&gt; und &lt;em&gt;Package&lt;/em&gt; (und ein paar weitere Optionen). Wenn du die Option &lt;em&gt;Package&lt;/em&gt; wählst, übernimmt IntelliJ die ganze Arbeit für dich.&lt;/p&gt;
 &lt;p&gt;Um ein Package zu erstellen hast du in IntelliJ zwei Möglichkeiten. In beiden Fällen klickst du mit der rechten Maustaste auf dein src Ordner wählst dann ...&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;New &amp;gt; Package&lt;/em&gt;&lt;br /&gt;In diesem Fall gibtst du einfach den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im src Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package name;&lt;/span&gt; (wobei name der Name deines Pakets ist) stehen. Dadurch weiß der Compiler, dass diese Klasse zu diesem Paket gehört.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;New &amp;gt; Java Class&lt;/em&gt;&lt;br /&gt;Wer es etwas schneller haben möchte kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option &lt;em&gt;Java Class&lt;/em&gt; wählt und hier im Eingabefeld den Paketname und den Klassenname getrennt durch einen Punkt angibt (z.B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinpaket.MeineKlasse&lt;/span&gt;). Dann erstellt IntelliJ erst das Paket (und den Ordner) &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinPaket&lt;/span&gt; und direkt danach die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MeineKlasse.&lt;/span&gt; Auch hier findest du in der ersten Zeile innerhalb der Klasse den package Befehl.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;New &amp;gt; Package &lt;/em&gt;(nur das Paket erstellen)&lt;br /&gt;In diesem Fall gibst du den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;src&lt;/span&gt; Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package name;&lt;/span&gt; (wobei name der Name deines Pakets ist) stehen. &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;New &amp;gt; Java Class &lt;/em&gt;(Paket und Klasse erstellen in einem Schritt)&lt;br /&gt;Wer es etwas schneller haben möchte, kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option &lt;em&gt;Java Class&lt;/em&gt; wählt und hier im Eingabefeld den Paketnamen und den Klassennamen getrennt durch einen Punkt angibt (z. B. &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinPaket.MeineKlasse&lt;/span&gt;). Dann erstellt IntelliJ erst das Paket (und den Ordner) &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;meinPaket&lt;/span&gt; und direkt danach die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MeineKlasse.&lt;/span&gt; Auch hier findest du in der ersten Zeile innerhalb der Klasse den &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package&lt;/span&gt; Befehl.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Abschluss&lt;/h1&gt;
 &lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
@@ -5033,12 +5098,12 @@ import java.util.*;                // Importiert alle Collections
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Math-Klasse
 &lt;ul&gt;
-&lt;li&gt;Binde die Math Klasse in einer Datei in einem Projekt ein.&lt;/li&gt;
+&lt;li&gt;Binde die Math-Klasse in einer Datei in einem Projekt ein.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Eigenes Paket
 &lt;ul&gt;
-&lt;li&gt;Erstelle ein eigenes Packet innerhalb deines Projekts.&lt;/li&gt;
+&lt;li&gt;Erstelle ein eigenes Paket innerhalb deines Projekts.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -5053,7 +5118,7 @@ import java.util.*;                // Importiert alle Collections
 &lt;li&gt;Packages gruppieren Klassen in einer sinnvollen Struktur und verhindern Konflikte bei der Namensgebung&lt;/li&gt;
 &lt;li&gt;Es gibt vordefinierte und benutzerdefinierte Pakete&lt;/li&gt;
 &lt;li&gt;Die Java API ist eine mächtige Bibliothek mit vielen Klassen, die du kostenlos nutzen kannst&lt;/li&gt;
-&lt;li&gt;Pakete und Klassen werden mithilfe von import importiert&lt;/li&gt;
+&lt;li&gt;Pakete und Klassen werden mithilfe von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;import&lt;/span&gt; importiert&lt;/li&gt;
 &lt;li&gt;Eigene Pakete können über das User-Interface von IntelliJ und mithilfe des &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package&lt;/span&gt; Schlüsselworts erstellt werden.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5998,7 +6063,7 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="43"></int>
+                 <int value="45"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="43"></reference>
                 </dictionary>
@@ -6736,7 +6801,7 @@ public class Main {
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="22"></reference>
+  <reference key="40"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>

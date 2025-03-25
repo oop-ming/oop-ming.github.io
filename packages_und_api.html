@@ -60,19 +60,62 @@
 <article class="iDevice_wrapper textIdevice" id="id29">
 <div class="iDevice emphasis0" >
 <div id="ta29_128_2" class="block iDevice_content">
-<div class="exe-text"><h1>Einführung</h1>
-<p>Ein Paket oder auch Package wird in Java verwendet um Klassen zu gruppieren, die zusammengehören. Du kannst dir das am besten vorstellen, wir Ordner in einem Dateisystem. Mithilfe von Packages lassen sich Klassen organisieren und Konflikte bei der Namensgebung vermeiden. Dabei lassen sich Packages in Java in zwei Kategorien einteilen: Pakete aus der Java API und benutzerdefinierte Pakete.</p>
+<div class="exe-text"><h1>Einführung - Ein Ordnersystem für Klassen</h1>
+<div class="-my-sm -ml-2 -mr-3" data-test-id="">
+<div class="mt-sm relative" style="opacity: 1; transform: none;">
+<div class="overflow-hidden cursor-pointer border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-transparent md:hover:bg-offset md:dark:hover:bg-offsetDark">
+<div class="overflow-hidden">Ein Package in Java ist wie ein digitaler Ordner für deinen Code. Stell dir vor, du hast viele verschiedene Notizen für deine Uni-Kurse. Um den Überblick zu behalten, sortierst du sie in verschiedene Ordner - einen für Mathematik, einen für Geschichte und so weiter. Packages in Java funktionieren ähnlich.</div>
+</div>
+</div>
+</div>
+<div class="border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-transparent">
+<div class="gap-y-md flex flex-col">
+<div class="relative default font-sans text-base text-textMain dark:text-textMainDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
+<div class="min-w-0 break-words [word-break:break-word]">
+<div dir="auto" id="markdown-content-7" class="gap-y-md flex flex-col">
+<div class="relative">
+<div class="prose text-pretty dark:prose-invert inline leading-normal break-words min-w-0 [word-break:break-word]"><span class="mt-md block"></span>
+<p>Hier sind die wichtigsten Punkte:</p>
+<ol>
+<li><strong>Organisation:</strong> Packages helfen dir, deine Java-Klassen zu gruppieren und zu organisieren. Alle Klassen, die zusammengehören, kommen in ein Package.</li>
+<li><strong>Namensgebung:</strong> Packages haben Namen wie <span style="font-family: andale mono, monospace;">java.util</span> oder <span style="font-family: andale mono, monospace;">com.mycompany.project</span>. Diese Namen helfen, Konflikte zu vermeiden, wenn verschiedene Programmierer ähnliche Klassennamen verwenden.</li>
+<li><strong>Zugriffskontrolle:</strong> Packages ermöglichen es dir, den Zugriff auf deine Klassen zu kontrollieren. Du kannst entscheiden, welche Teile deines Codes von außerhalb des Packages sichtbar sein sollen.</li>
+<li><strong>Standardbibliothek:</strong> Java selbst nutzt Packages, um seine Standardfunktionen zu organisieren. Zum Beispiel findest du viele nützliche Klassen im Package <span style="font-family: andale mono, monospace;">java.util</span></li>
+<li><strong>Verwendung:</strong> Um eine Klasse aus einem Package zu nutzen, musst du entweder den vollen Namen angeben (wie <span style="font-family: andale mono, monospace;">java.util.ArrayList</span>) oder eine Import-Anweisung am Anfang deiner Datei schreiben.</li>
+</ol>
+<p>Packages sind also im Grunde ein Weg, deinen Code sauber und übersichtlich zu halten, ähnlich wie du deine Uni-Unterlagen organisierst<a target="_blank" rel="nofollow noopener" class="citation ml-xs inline" data-state="closed" aria-label="Klassen und Objekte" href="https://openbook.rheinwerk-verlag.de/javainsel/03_006.html"></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <p>In diesem Kapitel lernst du:</p>
 <ul>
 <li>Was die Java API ist</li>
-<li>Wie man Pakete und Klassen imporiert</li>
+<li>Wie man Pakete und Klassen importiert</li>
 <li>Wie man selber Pakete und Klassen definieren kann.</li>
 </ul>
 <h1>Java API</h1>
-<p><span class="ILfuVd" lang="de"><span class="hgKElc">APIs (Application Programming Interfaces) sind sogenannte Programmierschnittstellen. Sie bestehen aus mehreren Definitionen und Protokollen zur Softwareentwicklung. </span></span>Die Java API ist eine Bibliothek und enthält viele Klassen, die du für die Entwicklung deiner Java-Anwendungen kostenlos nutzen darf. Die Java API ist automatisch in deiner Java Entwicklungsumgebung integriert.</p>
-<p>Die Java-Bibliothek ist unterteilt ist Packages und Klassen. Das bedeutet du kannst entweder einzelne Klassen oder ganze Packete (die mehrere Klassen enthalten) importieren. Eine Liste mit allen Paketen und Klassen innerhalb der Java API findest du auf <a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noopener">Oracle</a>.</p>
+<p><span class="ILfuVd" lang="de"><span class="hgKElc">APIs (Application Programming Interfaces) sind sogenannte Programmierschnittstellen. Sie bestehen aus mehreren Definitionen und Protokollen zur Softwareentwicklung. </span></span>Die Java API ist eine umfassende Sammlung von Bibliotheken und Packages. Sie bildet die Standardbibliothek von Java und enthält unzählige Module, welche wiederum Packages enthalten. Die Java API ist automatisch in deiner Java Entwicklungsumgebung integriert.</p>
+<p>Wichtige Punkte zur Java API:</p>
+<ol>
+<li>Sie umfasst eine Vielzahl von Modulen, wie z.B. <span style="font-family: andale mono, monospace;">java.base, java.desktop,</span> und <span style="font-family: andale mono, monospace;">java.xml</span></li>
+<li>Jedes Modul enthält mehrere Packages, die thematisch zusammengehörige Klassen und Interfaces gruppieren</li>
+<li>Die Java SE 17 API enthält rund 4.400 Typen, verteilt auf verschiedene Packages</li>
+<li>Einige wichtige Packages der Java API sind:
+<ul>
+<li><span style="font-family: andale mono, monospace;">java.util</span>: Hilfsklassen für Datenstrukturen und Algorithmen</li>
+<li>j<span style="font-family: andale mono, monospace;">ava.io</span>: Ein- und Ausgabeoperationen</li>
+<li><span style="font-family: andale mono, monospace;">java.net</span>: Netzwerkprogrammierung</li>
+<li><span style="font-family: andale mono, monospace;">java.lang</span>: Grundlegende Sprachunterstützung</li>
+</ul>
+</li>
+</ol>
+<p>Die Java API wird als Teil der Java Development Kit (JDK) Distribution bereitgestellt und ist somit eine integrierte Sammlung von Bibliotheken, die standardmäßig mit Java verfügbar sind. Das bedeutet du kannst entweder einzelne Klassen oder ganze Pakete (die mehrere Klassen enthalten) importieren. Eine Liste mit allen Paketen und Klassen innerhalb der Java API findest du auf <a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noopener">Oracle</a>.</p>
 <h1>Importieren von Klassen und Packages</h1>
-<p>Den <strong>Syntax</strong> zum einbinden bzw. importieren einer Bibliothek kennen wir bereits aus Processing:</p>
+<p>Den <strong>Syntax</strong> zum Einbinden bzw. Importieren eines Pakets kennen wir bereits aus Processing. Es ist derselbe Befehl, der zum einbinden einer Bibliothek verwendet wird:</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>import package.name.Class;   // Klasse importieren
@@ -80,7 +123,7 @@ import package.name.*;          //  Paket importieren
 </code></pre>
 </div>
 </div>
-<p>Ein konkretes Beispiel ist das importieren des Collection Frameworks aus dem Kapitel <a href="collections_und_lambda_ausdrcke.html" title="Zum Kapitel">Collections und Lambda Ausdrücke</a>:</p>
+<p>Ein konkretes Beispiel ist das Importieren des Collection Frameworks aus dem Kapitel <a href="collections_und_lambda_ausdrcke.html" title="Zum Kapitel">Collections und Lambda Ausdrücke</a>:</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>import java.util.ArrayList;   // Importiert die Klasse ArrayList
@@ -89,11 +132,11 @@ import java.util.*;                // Importiert alle Collections
 </div>
 </div>
 <h1>Erstellen eigener Pakete</h1>
-<p>Am Anfang des Kapitels haben wir gesagt, dass Packages Klassen gruppieren und man sich das vorstellen kann wie Ordner in einem Dateisystem. Tatsächlich kann man sich das nicht nur so vorstellen - es <em>ist</em> auch so. Java nutzt ein Dateisystem um Packages zu speichern. Das könnte zum Beispiel so aussehen:</p>
+<p>Am Anfang des Kapitels haben wir gesagt, dass Packages Klassen gruppieren und man sich das vorstellen kann wie Ordner in einem Dateisystem. Tatsächlich kann man sich das nicht nur so vorstellen – es <em>ist</em> auch so. Java nutzt ein Dateisystem, um Packages zu speichern. Das könnte zum Beispiel so aussehen:</p>
 <ul>
 <li>Haupt-Verzeichnis
 <ul>
-<li>meinpaket
+<li>meinPaket
 <ul>
 <li>MeineKlasse</li>
 </ul>
@@ -101,10 +144,13 @@ import java.util.*;                // Importiert alle Collections
 </ul>
 </li>
 </ul>
+<p>Um ein Package zu erstellen, musst du also eigentlich nur in deinem <span style="font-family: andale mono, monospace;">src</span> Ordner anlegen, der einen Namen hat, der den Syntaxregeln von Java entspricht, wie z.B. <span style="font-family: andale mono, monospace;">meinPaket.</span> In diesem Ordner kannst du dann Klassen erstellen. Diese Klassen müssen in der ersten Zeile den Befehl <span style="font-family: andale mono, monospace;">package name;</span> (wobei name der Name deines Pakets ist) enthalten (z.B. <span style="font-family: andale mono, monospace;">package meinPaket;</span>). Dann sind diese Klassen in diesem Paket organisiert. </p>
+<p>Aber ... so einfach geht das nicht. </p>
+<p>Wenn du in IntelliJ mit der rechten Maustaste auf den <span style="font-family: andale mono, monospace;">src</span> Ordner klickst und dann <em>New</em> auswählst, dann findest du hier nicht die Option <em>Folder</em> (Ordern), sondern nur <em>Java Class</em> und <em>Package</em> (und ein paar weitere Optionen). Wenn du die Option <em>Package</em> wählst, übernimmt IntelliJ die ganze Arbeit für dich.</p>
 <p>Um ein Package zu erstellen hast du in IntelliJ zwei Möglichkeiten. In beiden Fällen klickst du mit der rechten Maustaste auf dein src Ordner wählst dann ...</p>
 <ul>
-<li><em>New &gt; Package</em><br />In diesem Fall gibtst du einfach den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im src Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl <span style="font-family: andale mono, monospace;">package name;</span> (wobei name der Name deines Pakets ist) stehen. Dadurch weiß der Compiler, dass diese Klasse zu diesem Paket gehört.</li>
-<li><em>New &gt; Java Class</em><br />Wer es etwas schneller haben möchte kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option <em>Java Class</em> wählt und hier im Eingabefeld den Paketname und den Klassenname getrennt durch einen Punkt angibt (z.B. <span style="font-family: andale mono, monospace;">meinpaket.MeineKlasse</span>). Dann erstellt IntelliJ erst das Paket (und den Ordner) <span style="font-family: andale mono, monospace;">meinPaket</span> und direkt danach die Klasse <span style="font-family: andale mono, monospace;">MeineKlasse.</span> Auch hier findest du in der ersten Zeile innerhalb der Klasse den package Befehl.</li>
+<li><em>New &gt; Package </em>(nur das Paket erstellen)<br />In diesem Fall gibst du den Namen deines Pakets unter Beachtung der Bezeichner-Regeln in Java ein. Sobald du einen Namen eingegeben und die Eingabe bestätigt hast, erstellt IntelliJ einen neuen Ordner im <span style="font-family: andale mono, monospace;">src</span> Ordner. Wenn du diesen Ordner nun rechts klickst und in dem Ordner eine neue Java Klasse anlegst, dann wird in der ersten Zeile der Befehl <span style="font-family: andale mono, monospace;">package name;</span> (wobei name der Name deines Pakets ist) stehen. </li>
+<li><em>New &gt; Java Class </em>(Paket und Klasse erstellen in einem Schritt)<br />Wer es etwas schneller haben möchte, kann die oberen beiden Schritte (erst das Paket, dann die Klasse erstellen) in einem Schritt machen, indem man die Option <em>Java Class</em> wählt und hier im Eingabefeld den Paketnamen und den Klassennamen getrennt durch einen Punkt angibt (z. B. <span style="font-family: andale mono, monospace;">meinPaket.MeineKlasse</span>). Dann erstellt IntelliJ erst das Paket (und den Ordner) <span style="font-family: andale mono, monospace;">meinPaket</span> und direkt danach die Klasse <span style="font-family: andale mono, monospace;">MeineKlasse.</span> Auch hier findest du in der ersten Zeile innerhalb der Klasse den <span style="font-family: andale mono, monospace;">package</span> Befehl.</li>
 </ul>
 <h1>Abschluss</h1>
 <div class="exe-fx exe-accordion">
@@ -112,12 +158,12 @@ import java.util.*;                // Importiert alle Collections
 <ul>
 <li><strong>Aufgabe 1</strong>: Math-Klasse
 <ul>
-<li>Binde die Math Klasse in einer Datei in einem Projekt ein.</li>
+<li>Binde die Math-Klasse in einer Datei in einem Projekt ein.</li>
 </ul>
 </li>
 <li><strong>Aufgabe 2</strong>: Eigenes Paket
 <ul>
-<li>Erstelle ein eigenes Packet innerhalb deines Projekts.</li>
+<li>Erstelle ein eigenes Paket innerhalb deines Projekts.</li>
 </ul>
 </li>
 </ul>
@@ -132,7 +178,7 @@ import java.util.*;                // Importiert alle Collections
 <li>Packages gruppieren Klassen in einer sinnvollen Struktur und verhindern Konflikte bei der Namensgebung</li>
 <li>Es gibt vordefinierte und benutzerdefinierte Pakete</li>
 <li>Die Java API ist eine mächtige Bibliothek mit vielen Klassen, die du kostenlos nutzen kannst</li>
-<li>Pakete und Klassen werden mithilfe von import importiert</li>
+<li>Pakete und Klassen werden mithilfe von <span style="font-family: andale mono, monospace;">import</span> importiert</li>
 <li>Eigene Pakete können über das User-Interface von IntelliJ und mithilfe des <span style="font-family: andale mono, monospace;">package</span> Schlüsselworts erstellt werden.</li>
 </ul>
 </div>
