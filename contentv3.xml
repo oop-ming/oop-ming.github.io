@@ -394,7 +394,7 @@ void draw() {
         <list></list>
         <string role="key" value="children"></string>
         <list>
-         <instance class="exe.engine.node.Node" reference="43">
+         <instance class="exe.engine.node.Node" reference="44">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Erste Schritte in Java"></unicode>
@@ -684,7 +684,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="311"></int>
+                        <int value="316"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -698,9 +698,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.43"></unicode>
+                      <unicode value="14_129_2.45"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="45">
+                      <instance class="exe.engine.resource.Resource" reference="46">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -709,7 +709,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -736,7 +736,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="315"></int>
+                        <int value="320"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -750,9 +750,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.44"></unicode>
+                      <unicode value="14_129_2.46"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="46">
+                      <instance class="exe.engine.resource.Resource" reference="47">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -761,7 +761,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2499,7 +2499,7 @@ public void validateInput(int input) throws InvalidInputException {
                                        <string role="key" value="originalicon"></string>
                                        <string value=""></string>
                                        <string role="key" value="parentNode"></string>
-                                       <instance class="exe.engine.node.Node" reference="32">
+                                       <instance class="exe.engine.node.Node" reference="33">
                                         <dictionary>
                                          <string role="key" value="_title"></string>
                                          <unicode value="Polymorphismus"></unicode>
@@ -2604,7 +2604,7 @@ public void validateInput(int input) throws InvalidInputException {
                                               <string role="key" value="originalicon"></string>
                                               <string value=""></string>
                                               <string role="key" value="parentNode"></string>
-                                              <instance class="exe.engine.node.Node" reference="33">
+                                              <instance class="exe.engine.node.Node" reference="34">
                                                <dictionary>
                                                 <string role="key" value="_title"></string>
                                                 <unicode value="Konzeption und Dokumentation"></unicode>
@@ -2647,7 +2647,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2667,9 +2667,29 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\klassendiagramm_beispiel2.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
+                                                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
+                                                 <int value="2"></int>
+                                                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
+                                                 <int value="2"></int>
+                                                 <string role="key" value="warningMsg"></string>
+                                                 <string value=""></string>
+                                                </dictionary>
+                                               </instance>
+                                               <instance class="exe.engine.resource.Resource" reference="29">
+                                                <dictionary>
+                                                 <string role="key" value="_idevice"></string>
+                                                 <reference key="26"></reference>
+                                                 <string role="key" value="_package"></string>
+                                                 <reference key="4"></reference>
+                                                 <string role="key" value="_storageName"></string>
+                                                 <string value="wasserfall.png"></string>
+                                                 <string role="key" value="_userName"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpnu4b_d.eXe\\previews\\allyourbase\\wasserfall.png"></string>
+                                                 <string role="key" value="checksum"></string>
+                                                 <string value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
                                                  <int value="2"></int>
                                                  <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
@@ -2693,13 +2713,13 @@ public void validateInput(int input) throws InvalidInputException {
                                             <dictionary></dictionary>
                                             <string role="key" value="content_w_resourcePaths"></string>
                                             <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung - Hausbau nach Plan&lt;/h1&gt;
-&lt;p&gt;Stell dir vor, du möchtest ein Haus bauen - wie gehst du vor? Was machst du als erstes? Wahrscheinlich würdest du nicht direkt mit dem bauen anfangen, sondern zunächst einen Plan erstellen. Du machst dir Gedanken, welche Anforderungen das Haus erfüllen muss, dann würdest du einen Grundriss zeichnen, das Material besorgen und dann erst anfangen das Haus zu bauen. Fertig, oder? Nein, am Ende würdest du noch dafür sorgen, dass alles gut dokumentiert ist. Denn wenn du in ein paar Jahren einen Wasserrohrbruch hast, möchtest du wissen, wo genau die Rohre entlang laufen oder wenn du die Zimmertüre an einer anderen Stelle haben möchtest, dann musst du wissen, wo genau in der Wand ide Kabel entlang laufen.&lt;/p&gt;
-&lt;p&gt;Dieses Vorgehen lässt sich genau so auf die Softwareentwicklung übertragen. Wenn du ein Software-Projekt umsetzen möchtest, ist es nicht sonderlich sinnvoll direkt mit dem Programmieren anzufangen, ohne einen Plan zu haben. wie beim Hausbau muss erst eine Analyse der Anforderungen an die Software erstellt werden. Danach kann ein Konzept erstellt werden, welches anschließend im Code umgesetzt wird. Abschließend (oder am besten währenddessen) muss eine Dokumentation erstellt werden, damit man auch nach einiger Zeit das Programm noch erweitern oder korrigieren kann.&lt;/p&gt;
-&lt;p&gt;In diesem Abschnitt beschäftigen wir uns mit dem Konzeption und der Dokumentation von objektorientierter Software. Du lernst in diesem Abschnitt:&lt;/p&gt;
+&lt;p&gt;Stell dir vor, du möchtest ein Haus bauen - wie gehst du vor? Was machst du als Erstes? Wahrscheinlich würdest du nicht direkt mit dem bauen anfangen, sondern zunächst einen Plan erstellen. Du machst dir Gedanken, welche Anforderungen das Haus erfüllen muss, dann würdest du einen Grundriss zeichnen, das Material besorgen und dann erst anfangen das Haus zu bauen. Fertig, oder? Nein, am Ende würdest du noch dafür sorgen, dass alles gut dokumentiert ist. Denn wenn du in ein paar Jahren einen Wasserrohrbruch hast, möchtest du wissen, wo genau die Rohre entlang laufen oder wenn du die Zimmertüre an einer anderen Stelle haben möchtest, dann musst du wissen, wo genau in der Wand die Kabel entlang laufen.&lt;/p&gt;
+&lt;p&gt;Dieses Vorgehen lässt sich genau so auf die Softwareentwicklung übertragen. Wenn du ein Software-Projekt umsetzen möchtest, ist es nicht sonderlich sinnvoll, direkt mit dem Programmieren anzufangen, ohne einen Plan zu haben. Wie beim Hausbau muss erst eine Analyse der Anforderungen an die Software erstellt werden. Danach kann ein Konzept erstellt werden, welches anschließend im Code umgesetzt wird. Abschließend (oder am besten währenddessen) muss eine Dokumentation erstellt werden, damit man auch nach einiger Zeit das Programm noch erweitern oder korrigieren kann.&lt;/p&gt;
+&lt;p&gt;In diesem Abschnitt beschäftigen wir uns mit der Konzeption und der Dokumentation von objektorientierter Software. Du lernst in diesem Abschnitt:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Wie man bei der Konzeption von Software vorgeht&lt;/li&gt;
 &lt;li&gt;Was es mit der Unified Markup Language (kurz: UML) auf sich hat&lt;/li&gt;
-&lt;li&gt;Wie du Klassendiagramme zur Konzeption und Dokumentation einsetzten kannst&lt;/li&gt;
+&lt;li&gt;Wie du Klassendiagramme zur Konzeption und Dokumentation einsetzen kannst&lt;/li&gt;
 &lt;li&gt;Wie du mithilfe von Aktivitätsdiagrammen den Programmablauf konzipieren und darstellen kannst&lt;/li&gt;
 &lt;li&gt;Wie du mithilfe von Javadoc deinen Code automatisiert dokumentieren kannst&lt;/li&gt;
 &lt;/ul&gt;
@@ -2711,20 +2731,22 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;li&gt;Wenn etwas nicht funktioniert, durch Ausprobieren eine Lösung finden&lt;/li&gt;
 &lt;li&gt;Das Programm so lange anpassen, bis es irgendwie läuft&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Diese Herangehensweise mag für kleine Projekte ausreichen. Bei größeren und komplexeren Softwareprojekten stößt man damit jedoch schnell an Grenzen:&lt;/p&gt;
+&lt;p&gt;Diese Herangehensweise mag für kleine Projekte ausreichen. Bei größeren und komplexeren Software-Projekten stößt man damit jedoch schnell an Grenzen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Der Code wird unübersichtlich und schwer zu warten&lt;/li&gt;
 &lt;li&gt;Änderungen und Erweiterungen sind aufwändig&lt;/li&gt;
 &lt;li&gt;Fehler schleichen sich leicht ein und sind schwer zu finden&lt;/li&gt;
 &lt;li&gt;Die Zusammenarbeit im Team wird erschwert&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Um diese Probleme zu vermeiden, haben sich in der professionellen Softwareentwicklung strukturierte Vorgehensweisen etabliert. Zwei zentrale Konzepte dabei sind die Anforderungsanalyse und der Softwareentwurf. Bei der Anforderungsanalyse geht es darum zunächst die Anforderungen an das Programm zu ermitteln und diese einfach zu modellieren. Beim Softwareentwurfgeht es darum, die Ergebnisse der Analyse zu nutzen, um die technische Umsetzung zu modellieren bzw. entwerfen.&lt;/p&gt;
-&lt;p&gt;In diesem Kapitel beschäftigen wir uns mit der &lt;em&gt;Objektorientierten&lt;/em&gt; Analyse (OOA) und dem &lt;em&gt;Objektorientierten&lt;/em&gt; Design (OOD). Dabei handelt es sich um objektorientierte Varianten der Anforderungsanalyse und des Softwareentwurfs. Beide Phasen nutzen objektorientierte Prinzipien wie &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Kapselung#auto_top&quot;&gt;Kapselung&lt;/a&gt;, &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot;&gt;Vererbung&lt;/a&gt; und &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Polymorphismus#auto_top&quot;&gt;Polymorphismus&lt;/a&gt;, um bereits in der Analyse- und Design-Phase einen odjektorientierten Entwurf zu entwickeln. Indem bereits bei der Analyse und im Design objektorientierte Prinzipien angewendet werden, ist der Übergang zur Umsetzung in einem objektorientierten Programm später einfacher.&lt;/p&gt;
-&lt;p&gt;Es gibt verschiedene Vorgehensmodelle für Softwareentwicklung. Einige davon wirst du im Laufe des Studium ausführlich kennenlernen. Für den Anfang folgen wir diesem einfachen Ablauf:&lt;/p&gt;
+&lt;p&gt;Um diese Probleme zu vermeiden, haben sich in der professionellen Softwareentwicklung strukturierte Vorgehensweisen etabliert. Diese Vorgehensweisen bestehen in großen Teilen aus denselben Elementen: Analyse, Entwurf, Implementierung, Test, Installation und Wartung. Ein sehr klassisches und weit verbreitetes Vorgehen ist zum Beispiel das Wasserfall-Konzept. Hier werden diese Elemente einfach nacheinander abgearbeitet:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;resources/wasserfall.png&quot; alt=&quot;Wasserfall-Konzept&quot; title=&quot;Wasserfall-Konzept&quot; width=&quot;604&quot; height=&quot;297&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Die zwei Elemente, welche wir uns in diesem Kapitel genauer ansehen möchten, sind die &lt;strong&gt;Anforderungsanalyse&lt;/strong&gt; und der &lt;strong&gt;Entwurf&lt;/strong&gt; (auch Konzept oder Design genannt). Bei der Anforderungsanalyse geht es darum zunächst die Anforderungen an das Programm zu ermitteln und diese einfach zu modellieren. Beim Entwurf geht es darum, die Ergebnisse der Analyse zu nutzen, um die technische Umsetzung zu modellieren bzw. entwerfen.&lt;/p&gt;
+&lt;p&gt;In diesem Kapitel beschäftigen wir uns mit der &lt;em&gt;Objektorientierten&lt;/em&gt; Analyse (OOA) und dem &lt;em&gt;Objektorientierten&lt;/em&gt; Design (OOD). Dabei handelt es sich um objektorientierte Varianten der Anforderungsanalyse und des Softwareentwurfs. Beide Phasen nutzen objektorientierte Prinzipien wie &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Kapselung#auto_top&quot;&gt;Kapselung&lt;/a&gt;, &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot;&gt;Vererbung&lt;/a&gt; und &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Polymorphismus#auto_top&quot;&gt;Polymorphismus&lt;/a&gt;, um bereits in der Analyse- und Design-Phase einen objektorientierten Entwurf zu entwickeln. Indem bereits bei der Analyse und im Design objektorientierte Prinzipien angewendet werden, ist der Übergang zur Umsetzung in einem objektorientierten Programm später einfacher.&lt;/p&gt;
+&lt;p&gt;Es gibt verschiedene Vorgehensmodelle für Softwareentwicklung. Einige davon wirst du im Laufe des Studiums ausführlich kennenlernen. Für den Anfang folgen wir diesem einfachen Ablauf:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Konzeption: &lt;/strong&gt;In der Konzeption geht es darum, die Anforderungen an die Software zu analysieren und einen Softwareentwurf zu entwickeln.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Implementierung: &lt;/strong&gt;Bei der Implementierung geht es darum, den Softwareentwurf umzusetzen.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dokumentation: &lt;/strong&gt;Bei der Dokumentation geht es darum den Aufbau der Software zu dokumentieren. Dies kann während oder nach dem Implementierung erfolgen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Konzeption: &lt;/strong&gt;Analyse der Anforderungen an die Software und Entwicklung eines Softwareentwurfs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implementierung: &lt;/strong&gt;Umsetzung des Softwareentwurfs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dokumentation: &lt;/strong&gt;Dokumentation des Aufbaus der Software (während oder nach der Implementierung)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Konzeption&lt;/h1&gt;
 &lt;h2&gt;Objektorientierte Analyse&lt;/h2&gt;
@@ -2733,10 +2755,10 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;1. Anforderungserhebung&lt;/h2&gt;
 &lt;p&gt;Bei der Anforderungserhebung geht es darum, die Anforderungen an die Software zu sammeln, zu definieren und zu verstehen. Dies erfolgt zum Beispiel durch Interviews mit den Stakeholdern (Auftraggeber/Kunden) oder späteren Nutzern der Software.&lt;/p&gt;
-&lt;p&gt;Stell dir vor, du erhältst den Auftrag einen Taschenrechner zu programmieren. Bevor du anfängst, musst du erstmal mit dem Auftraggeber klären, was der Taschenrechner alles können soll. Reichen die einfachen arithmetischen Operationen (Addition, Subtraktion, Multiplikation und Division) oder sollen weitere Funktionen hinzugefügt werden? Welche Designvorgaben gibt es für den Taschenrechner? Wer wird den Taschenrechner später nutzen? ...&lt;/p&gt;
+&lt;p&gt;Stell dir vor, du erhältst den Auftrag, einen Taschenrechner zu programmieren. Bevor du anfängst, musst du erstmal mit dem Auftraggeber klären, was der Taschenrechner alles können soll. Reichen die einfachen arithmetischen Operationen (Addition, Subtraktion, Multiplikation und Division) oder sollen weitere Funktionen hinzugefügt werden? Welche Designvorgaben gibt es für den Taschenrechner? Wer wird den Taschenrechner später nutzen? ...&lt;/p&gt;
 &lt;h2&gt;2. Identifikation von Objekten und Klassen&lt;/h2&gt;
-&lt;p&gt;Bei diesem Schritt geht es darum aus den Anforderungen Objekte abzuleiten, die deine Software braucht. Ähnliche Objekte können und Klassen gruppiert werden. Außerdem können bereits Attribute und Methoden für Klassen definiert werden. Bei diesem Schritt müssen noch nicht alle technischen Details geklärt sein. Ziel ist es einen ersten Überblick und eine erste Struktur zu erstellen - die auch noch Lücken haben kann.&lt;/p&gt;
-&lt;p&gt;Bei unserem Taschenrechner könnte das folgendermaßen aussehen: Wir erinnern uns - die Objektorientierte Programmierung versucht Programme so zu entwicklen, dass sie echte Objekte aus der realen Welt beschreibt. Aus welchen Objekten besteht ein Taschenrechner? Mehrere Tasten (Zahlen 0-9, +, -, *, :, Komma, =, Eingabe löschen, ...), ein Display und eine Fläche auf der alles angeordnet ist. Eine erste Übersicht könnte somit folgendermaßen aussehen:&lt;/p&gt;
+&lt;p&gt;Bei diesem Schritt geht es darum aus den Anforderungen Objekte abzuleiten, die deine Software braucht. Ähnliche Objekte können in Klassen gruppiert werden. Außerdem können bereits Attribute und Methoden für Klassen definiert werden. Bei diesem Schritt müssen noch nicht alle technischen Details geklärt sein. Ziel ist es, einen ersten Überblick und eine erste Struktur zu erstellen - die auch noch Lücken haben kann.&lt;/p&gt;
+&lt;p&gt;Bei unserem Taschenrechner könnte das folgendermaßen aussehen: Wir erinnern uns - die Objektorientierte Programmierung versucht Programme so zu entwickeln, dass sie echte Objekte aus der realen Welt beschreibt. Aus welchen Objekten besteht ein Taschenrechner? Mehrere Tasten (Zahlen 0-9, +, -, *, :, Komma, =, Eingabe löschen, ...), ein Display und eine Fläche auf der alles angeordnet ist. Eine erste Übersicht könnte somit folgendermaßen aussehen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Fläche
 &lt;ul&gt;
@@ -2761,10 +2783,10 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/ul&gt;
 &lt;p&gt;In dieser Liste habe ich mir einen ersten Überblick über den Aufbau des Programms geschaffen. Ich habe die Klassen Fläche, Display und Taste mit diversen Attributen und Methoden definiert. Diese Liste ist nicht vollständig ausgearbeitet, aber ein guter erster Entwurf.&lt;/p&gt;
 &lt;h2&gt;3. Modellierung von Beziehungen&lt;/h2&gt;
-&lt;p&gt;Im nächsten Schritt geht es darum Beziehungen zwischen den einzelnen Klassen herauszuarbeiten. Dabei gibt es 4 Arten von Beziehungen: Assoziation, Vererbung, Aggregation und Komposition. Mehr zu diesen Beziehung erfährst du weiter unten im Abschnitt &lt;a href=&quot;#Beziehungen&quot;&gt;Beziehungen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Bei unserem Taschenrechner liegt eine sogenannte Komposition vor. Die Komposition beschreibt eine Beziehung zwischen einen Ganzen und seinen Teilen, wobei das Ganze nur zusammen mit seinen Teilen, wobei weder das Ganze noch die Teile unabhängig voneinander existieren können. Das Ganze ist bei dem Taschenrechner die Fläche und die Teile aus denen die Fläche besteht, sind die Tasten und das Display. Ohne Tasten und Display ergibt die Fläche keinen Sinn - und einzeln ergeben weder Tasten noch Display einen Sinn.&lt;/p&gt;
+&lt;p&gt;Im nächsten Schritt geht es darum, Beziehungen zwischen den einzelnen Klassen herauszuarbeiten. Dabei gibt es 4 Arten von Beziehungen: Assoziation, Vererbung, Aggregation und Komposition. Mehr zu diesen Beziehungen erfährst du weiter unten im Abschnitt &lt;a href=&quot;#Beziehungen&quot;&gt;Beziehungen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bei unserem Taschenrechner liegt eine sogenannte Komposition vor. Die Komposition beschreibt eine Beziehung zwischen einem Ganzen und seinen Teilen, wobei das Ganze nur zusammen mit seinen Teilen, wobei weder das Ganze noch die Teile unabhängig voneinander existieren können. Das Ganze ist bei dem Taschenrechner die Fläche und die Teile, aus denen die Fläche besteht, sind die Tasten und das Display. Ohne Tasten und Display ergibt die Fläche keinen Sinn - und einzeln ergeben weder Tasten noch Display einen Sinn.&lt;/p&gt;
 &lt;h2&gt;4. Erstellen von UML-Diagrammen&lt;/h2&gt;
-&lt;p&gt;Nachdem eine erste Struktur in Form von Auflistung der einzelnen Klassen und deren Eigenschaften und Beziehungen erfolgt ist, geht es im nächsten Schritt darum, diese Struktur zu visualisieren. Dies erfolgt mithilfe von sogenannten UML-Diagrammen. Dabei handelt es sich um Diagramme, die nach einen gewissen einheitlichen Schema erstellt wurden. Dieses Schema wird ist die Unified Markup Language. Zwei sinvolle Diagramme, welche erstellt werden sollten, sind das &lt;strong&gt;Klassendiagramm&lt;/strong&gt; für die statische Struktur und das &lt;strong&gt;Aktivitätsdiagramm&lt;/strong&gt; für die dynamische Struktur. Mehr zu den Themen UML, Klassendiagramm und Aktivitätsdiagramm erfährst du im Abschnitt &lt;a href=&quot;#UML&quot;&gt;UML-Diagramme&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nachdem eine erste Struktur in Form von Auflistung der einzelnen Klassen und deren Eigenschaften und Beziehungen erfolgt ist, geht es im nächsten Schritt darum, diese Struktur zu visualisieren. Dies erfolgt mithilfe von sogenannten UML-Diagrammen. Dabei handelt es sich um Diagramme, die nach einem gewissen einheitlichen Schema erstellt wurden. Dieses Schema ist die Unified Markup Language. Zwei sinnvolle Diagramme, sind das &lt;strong&gt;Klassendiagramm&lt;/strong&gt; für die statische Struktur und das &lt;strong&gt;Aktivitätsdiagramm&lt;/strong&gt; für die dynamische Struktur. Mehr zu den Themen UML, Klassendiagramm und Aktivitätsdiagramm erfährst du im Abschnitt &lt;a href=&quot;#UML&quot;&gt;UML-Diagramme&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ein sehr einfaches Klassendiagramm für unseren Taschenrechner könnte zum Beispiel folgendermaßen aussehen:&lt;/p&gt;
 &lt;div class=&quot;pre-code&quot;&gt;
 &lt;div&gt;
@@ -2780,13 +2802,13 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;5. Verfeinerung des Modells&lt;/h2&gt;
-&lt;p&gt;Der letzte Schritt der Objektorientierten Analyse ist die &lt;a href=&quot;#t534f9633-cb9c-ba95-2b93-b9153d3d656a&quot; id=&quot;link534f9633-cb9c-ba95-2b93-b9153d3d656a&quot; class=&quot;exe-tooltip definition-tt blue-tt&quot;&gt;iterative&lt;/a&gt; Überarbeitung und Verfeinerung der Modelle. Dies erfolgt zum Beispiel in Abbsprache mit den Stakeholdern oder durch Absprache innerhalb des Teams. In mehreren Durchläufen werden die Modelle basierend auf dem Feedback und den neuen Erkenntnissen angepasst.&lt;/p&gt;
+&lt;p&gt;Der letzte Schritt der Objektorientierten Analyse ist die &lt;a href=&quot;#t534f9633-cb9c-ba95-2b93-b9153d3d656a&quot; id=&quot;link534f9633-cb9c-ba95-2b93-b9153d3d656a&quot; class=&quot;exe-tooltip definition-tt blue-tt&quot;&gt;iterative&lt;/a&gt; Überarbeitung und Verfeinerung der Modelle. Dies erfolgt zum Beispiel in Absprache mit den Stakeholdern oder durch Absprache innerhalb des Teams. In mehreren Durchläufen werden die Modelle basierend auf dem Feedback und den neuen Erkenntnissen angepasst.&lt;/p&gt;
 &lt;p&gt;Eine Erkenntnis bei unserem Taschenrechner könnte zum Beispiel sein, dass alle drei Klassen eine Methode gemeinsam haben: anzeigen(). Hier wäre es möglich &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot; title=&quot;Zum Kapitel Vererbung&quot;&gt;Vererbung&lt;/a&gt; anzuwenden und eine (&lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top&quot; title=&quot;Zum Kapitel Abstraktion&quot;&gt;abstrakte&lt;/a&gt;) Klasse AnzeigbaresObjekt zu erstellen, welche die Methode anzeigen() an die Unterklassen vererbt.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2&gt;&lt;a id=&quot;UML&quot;&gt;&lt;/a&gt;UML-Diagramme&lt;/h2&gt;
-&lt;p&gt;UML-Diagramme ist ein Sammelbegriff für verschiedene Arten von Diagrammen, welche eingesetzt werden um verschiedene Aspekte (wie z.B. Struktur, Ablauf, Zusammenhänge, ...) im Bereich der Softwareentwicklung zu visualisieren. UML steht dabei für Unified Modeling Language. Dabei handelt es sich um eine visuelle Modellierungssprache für die Architektur ud das Design von Softwareprojekten. Die UML legt dabei fest, wie die einzelnen Elemente grafisch darstellt und angeordnet werden sollen. Wir kennen das bereits aus dem Programmablaufplan (PAP). Hier ist zum Beispiel festlegt, dass eine Verzweigung durch eine Raute dargestellt wird und eine Ein- oder Ausgabe durch ein Paralellogramm. Die Vorgaben für den Programmablaufplan stammen aber nicht aus der UML, sondern aus der DIN-Norm 66001.&lt;/p&gt;
+&lt;p&gt;UML-Diagramme ist ein Sammelbegriff für verschiedene Arten von Diagrammen, die verschiedene Aspekte (wie z.B. Struktur, Ablauf, Zusammenhänge, ...) im Bereich der Softwareentwicklung visualisieren.&lt;strong&gt; UML steht für Unified Modeling Language&lt;/strong&gt;. Dabei handelt es sich um eine visuelle Modellierungssprache für die Architektur und das Design von Software-Projekten. Die UML legt dabei fest, wie die einzelnen Elemente grafisch darstellt und angeordnet werden sollen. Wir kennen das bereits aus dem Programmablaufplan (PAP). Hier ist zum Beispiel festlegt, dass eine Verzweigung durch eine Raute dargestellt wird und eine Ein- oder Ausgabe durch ein Parallelogramm. Die Vorgaben für den Programmablaufplan stammen aber nicht aus der UML, sondern aus der DIN-Norm 66001.&lt;/p&gt;
 &lt;p&gt;Diese Vereinheitlichung der Darstellung (egal ob nach DIN-Norm oder UML) hat den Vorteil, dass unsere Diagramme und Visualisierungen einheitlich sind und auch von anderen Personen gelesen und verstanden werden können. Die UML legt nicht fest, womit du diese Diagramme erstellst. Du kannst sie von Hand mit Papier und Bleistift erstellen, einen Text-Editor verwenden (so wie in manchen Beispielen hier) oder Tools einsetzen, welche dir etwas Arbeit abnehmen, wie z.B. &lt;a href=&quot;https://www.lucidchart.com/pages/de&quot;&gt;Lucidchart&lt;/a&gt;, &lt;a href=&quot;https://app.diagrams.net/&quot;&gt;draw.io&lt;/a&gt; oder &lt;a href=&quot;https://plantuml.com/de/&quot;&gt;PlantUML&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Zwei wichtige Diagramm-Typen sind das Klassendiagramm, zur Visualisierung des statischen Struktur, und das Aktivitätsdiagramm, zur Visualisierung des dynamischen Struktur.&lt;/p&gt;
+&lt;p&gt;Zwei wichtige Diagramm-Typen sind das &lt;strong&gt;Klassendiagramm&lt;/strong&gt; (Visualisierung der statischen Struktur) und das &lt;strong&gt;Aktivitätsdiagramm&lt;/strong&gt; (Visualisierung der dynamischen Struktur).&lt;/p&gt;
 &lt;h3&gt;Klassendiagramme&lt;/h3&gt;
 &lt;p&gt;Bei Klassendiagrammen handelt es sich um Strukturdiagramme der Unified Modeling Language (UML). Mithilfe von Klassendiagrammen können Klassen und deren Beziehungen visuell dargestellt werden. Ein UML-Klassendiagramm visualisiert somit die statische Struktur eines Systems. Es zeigt, welche Klassen (als Baupläne von Objekten) im System existieren, welche Attribute und Methoden sie besitzen und wie sie zueinander in Beziehung stehen.&lt;/p&gt;
 &lt;p&gt;Der Aufbau von einem Klassendiagramm ist im Prinzip recht simpel:&lt;/p&gt;
@@ -2805,7 +2827,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/li&gt;
 &lt;li&gt;Attribute:
 &lt;ul&gt;
-&lt;li&gt;Bei Attributen wird der Name des Attribut angegeben, gefolgt vom Datentyp&lt;/li&gt;
+&lt;li&gt;Bei Attributen wird der Name des Attributs angegeben, gefolgt vom Datentyp&lt;/li&gt;
 &lt;li&gt;Attribute können bei der Deklaration auch direkt initialisiert werden, dann wird der Wert mit angegeben&lt;/li&gt;
 &lt;li&gt;Beispiel: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;name : String&lt;/span&gt; oder &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;alter : int = 18&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2817,7 +2839,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Neben den drei Hauptteilen, sind die Sichtbarkeitkeitsmodifikatoren ein weiterer wichtiger Aspekt, welcher in Klassendiagrammen dargestellt wird. Die Sichtbarkeitsmodifikatoren in Klassendiagrammen sind:&lt;/p&gt;
+&lt;p&gt;Neben den drei Hauptteilen, sind die Sichtbarkeitsmodifikatoren ein weiterer wichtiger Aspekt, welcher in Klassendiagrammen dargestellt wird. Die Sichtbarkeitsmodifikatoren in Klassendiagrammen sind:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;public (+)&lt;/li&gt;
 &lt;li&gt;private (-)&lt;/li&gt;
@@ -2830,7 +2852,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Assoziation:&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;Eine einfache Verbindung zwischen zwei Klassen, z. B. kann ein Student an mehreren Kursen teilnehmen, die Klassen Student und Kurs können aber unabhängig voneinander exisitieren.&lt;/li&gt;
+&lt;li&gt;Eine einfache Verbindung zwischen zwei Klassen, z. B. kann ein Student an mehreren Kursen teilnehmen, die Klassen Student und Kurs können aber unabhängig voneinander existieren.&lt;/li&gt;
 &lt;li&gt;Dargestellt durch eine Linie, welche beide Klassen verbindet&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2842,7 +2864,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Aggregation:&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;Steht für eine Beziehung zwischen einem Ganzen und seinen Teilen, bei der die Teilobjekte auch unabhängig existieren können, z.B. besteht ein Wald aus mehreren Bäumen (Teilobjekte). Der Wald kann ohne Bäume nicht existieren, ein Baum kann aber ohne einen Wald exisitieren.&lt;/li&gt;
+&lt;li&gt;Steht für eine Beziehung zwischen einem Ganzen und seinen Teilen, bei der die Teilobjekte auch unabhängig existieren können, z.B. besteht ein Wald aus mehreren Bäumen (Teilobjekte). Der Wald kann ohne Bäume nicht existieren, ein Baum kann aber ohne einen Wald existieren.&lt;/li&gt;
 &lt;li&gt;Dargestellt durch eine Linie mit einer nicht ausgefüllten Raute am Ende des Ganzen.&lt;br /&gt;Komposition hingegen drückt eine starke Bindung aus, bei der das Teil ohne das Ganze nicht existieren kann.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2856,9 +2878,9 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;h3&gt;Beispiele&lt;/h3&gt;
-&lt;p&gt;Wie genau wird so ein Diagramm nun dargestellt? Hier hast du einiges an Freiheit: Du kannst es von Hand zeichnen (am besten mit Lineal), ein einem Texteditor erstellen oder spezielle Programm dafür verwenden: Hauptsache du hältst dich an die UML-Regeln für Klassendiagramme.&lt;/p&gt;
+&lt;p&gt;Wie genau wird so ein Diagramm nun dargestellt? Hier hast du einiges an Freiheit: Du kannst es von Hand zeichnen (am besten mit Lineal), ein einem Text-Editor erstellen oder spezielle Programm dafür verwenden: Hauptsache, du hältst dich an die UML-Regeln für Klassendiagramme.&lt;/p&gt;
 &lt;h4&gt;Beispiel: Mediaplayer&lt;/h4&gt;
-&lt;p&gt;Hier siehst du ein Beispiel für ein einfaches Klassendiagramm für einen Mediaplayer, das in einem Texteditor erstellt wurde. Es zeigt die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MediaPlayer&lt;/span&gt; und die Subklasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;AdvancedPlayer&lt;/span&gt;, welche von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MediaPlayer&lt;/span&gt; erbt.&lt;/p&gt;
+&lt;p&gt;Hier siehst du ein Beispiel für ein einfaches Klassendiagramm für einen Mediaplayer, das in einem Text-Editor erstellt wurde. Es zeigt die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MediaPlayer&lt;/span&gt; und die Subklasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;AdvancedPlayer&lt;/span&gt;, welche von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MediaPlayer&lt;/span&gt; erbt.&lt;/p&gt;
 &lt;div class=&quot;pre-code&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;+-----------------------+
@@ -2883,18 +2905,18 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h4&gt;Beispiel: Tier-Hierarchie&lt;/h4&gt;
-&lt;p&gt;Folgendes Beispiel ergänzt die Tierhierarchie aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot;&gt;Vererbung&lt;/a&gt;. Ich habe sie ergänzt um die Klassen Ball, Ei und Forellenscharm. Ball und Hund haben eine Assoziation da sie jeweils auch unabhängig voneinerander exisitieren können. Ei und Vogel verbindet eine Aggregation, da es ohne Vogel kein Ei geben kann.&lt;/p&gt;
+&lt;p&gt;Folgendes Beispiel ergänzt die Tier-Hierarchie aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot;&gt;Vererbung&lt;/a&gt;. Ich habe sie ergänzt um die Klassen Ball, Ei und Forellenschwarm. Ball und Hund haben eine Assoziation, da sie jeweils auch unabhängig voneinander existieren können. Ei und Vogel verbindet eine Aggregation, da es ohne Vogel kein Ei geben kann.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/klassendiagramm_beispiel2.png&quot; alt=&quot;&quot; width=&quot;1181&quot; height=&quot;526&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Dieses Diagramm habe ich mit draw.io erstellt - ein kostenloses Programm, dass du im Browser nutzen oder herunterladen kannst und viele vorgefertigte Formen für verschiedene Anwendungsfälle enthält - unter anderem das Erstellen von UML-Klassendiagrammen.&lt;/p&gt;
 &lt;h3&gt;Aktivitätsdiagramm&lt;/h3&gt;
-&lt;div class=&quot; table-div&quot;&gt;Bei einem UML-Aktivitätsdiagramm handelt es sich um ein Flussdiagramm ähnlich wie ein Programmablaufplan. Das Ziel das Aktivitätsdiagramms ist es, die von einem System aausgeführten Aktivitäten abzubilden. Aktivitätsdiagramm visualisieren die dynamische Struktur und die Abläufe innerhalb eines Systems.&lt;/div&gt;
+&lt;div class=&quot; table-div&quot;&gt;Bei einem UML-Aktivitätsdiagramm handelt es sich um ein Flussdiagramm, ähnlich wie ein Programmablaufplan. Das Ziel das Aktivitätsdiagramms ist es, die von einem System ausgeführten Aktivitäten abzubilden. Aktivitätsdiagramm visualisieren die dynamische Struktur und die Abläufe innerhalb eines Systems.&lt;/div&gt;
 &lt;div class=&quot; table-div&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot; table-div&quot;&gt;Aktivitätsdiagramm bestehen aus folgenden Grundelementen:&lt;/div&gt;
+&lt;div class=&quot; table-div&quot;&gt;Aktivitätsdiagramme bestehen aus folgenden Grundelementen:&lt;/div&gt;
 &lt;ul&gt;
-&lt;li class=&quot; table-div&quot;&gt;Start- und Endknoten: Stellen den Beginn und das Ende einer Aktivität dar.&lt;/li&gt;
-&lt;li class=&quot; table-div&quot;&gt;Aktionen: Stellen einen Schritt in der Aktivität dar, welche von dem Benutzer oder der Software durchgeführt werden&lt;/li&gt;
-&lt;li class=&quot; table-div&quot;&gt;Entscheidungsknoten: Stellen eine Verzeigung dar, welche an eine Bedinung geknüpft ist&lt;/li&gt;
-&lt;li class=&quot; table-div&quot;&gt;Kontrollflüsse: Werden dargestellt durch Verbindungen zwischen dein einzelnen Elementen.&lt;/li&gt;
+&lt;li class=&quot; table-div&quot;&gt;&lt;strong&gt;Start- und Endknoten&lt;/strong&gt;: Stellen den Beginn und das Ende einer Aktivität dar.&lt;/li&gt;
+&lt;li class=&quot; table-div&quot;&gt;&lt;strong&gt;Aktionen:&lt;/strong&gt; Stellen einen Schritt in der Aktivität dar, welche von dem Benutzer oder der Software durchgeführt werden&lt;/li&gt;
+&lt;li class=&quot; table-div&quot;&gt;&lt;strong&gt;Entscheidungsknoten:&lt;/strong&gt; Stellen eine Verzweigung dar, welche an eine Bedingung geknüpft ist&lt;/li&gt;
+&lt;li class=&quot; table-div&quot;&gt;&lt;strong&gt;Kontrollflüsse:&lt;/strong&gt; Werden dargestellt durch Verbindungen zwischen den einzelnen Elementen.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Dies sind einige der am häufigsten verwendeten Symbole in einem Aktivitätsdiagramm:&lt;/p&gt;
 &lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
@@ -2903,7 +2925,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;div class=&quot; table-div&quot;&gt;Steht am Anfang eines jeden Aktivitätsdiagrammes und stell den Start dar. Der Startknoten kann alleine stehen oder durch ein Notizsymbol ergänzt werden.&lt;/div&gt;
 &lt;h2&gt;Aktion&lt;/h2&gt;
 &lt;div class=&quot; table-div&quot;&gt;&lt;img data-element-page-location=&quot;body&quot; data-element-type=&quot;image&quot; alt=&quot;Aktivitätssymbol&quot; class=&quot;overwrite-css css-1s3yuia-imageContainer&quot; loading=&quot;lazy&quot; src=&quot;https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/activity-66x35.PNG&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;Zeigt einen einzlenen Schritt innerhalb der Aktivität an und enthalten kurze Beschreibungen des jeweiligen Schritts.&lt;/p&gt;
+&lt;p&gt;Zeigt einen einzlenen Schritt innerhalb der Aktivität an und enthält eine kurze Beschreibung des jeweiligen Schritts.&lt;/p&gt;
 &lt;h2&gt;Kontrollflüsse/Verbindungen&lt;/h2&gt;
 &lt;div class=&quot; table-div&quot;&gt;&lt;img data-element-page-location=&quot;body&quot; data-element-type=&quot;image&quot; alt=&quot;Konnektorsymbol&quot; class=&quot;overwrite-css css-1s3yuia-imageContainer&quot; loading=&quot;lazy&quot; src=&quot;https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/arrow-66x11.PNG&quot; /&gt;&lt;/div&gt;
 &lt;div class=&quot; table-div&quot;&gt;Verbindungslinien mit Pfeilen stellen den Kontrollfluss innerhalb der Aktivität dar.&lt;/div&gt;
@@ -2915,7 +2937,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;div class=&quot; table-div&quot;&gt;Spaltet die Aktivität auf in zwei Aktivitäten, welche paralell ablaufen.&lt;/div&gt;
 &lt;h2&gt;Entscheidung&lt;/h2&gt;
 &lt;div class=&quot; table-div&quot;&gt;&lt;img data-element-page-location=&quot;body&quot; data-element-type=&quot;image&quot; alt=&quot;Entscheidungssymbol&quot; class=&quot;overwrite-css css-1s3yuia-imageContainer&quot; loading=&quot;lazy&quot; src=&quot;https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/decision-33x30.PNG&quot; /&gt;&lt;/div&gt;
-&lt;div class=&quot; table-div&quot;&gt;Stellt eine Entscheidung dar, welche an eine Bedinung geknüpft ist.&lt;/div&gt;
+&lt;div class=&quot; table-div&quot;&gt;Stellt eine Entscheidung dar, welche an eine Bedingung geknüpft ist.&lt;/div&gt;
 &lt;h2&gt;Hinweis/Notiz&lt;/h2&gt;
 &lt;div class=&quot; table-div&quot;&gt;&lt;img data-element-page-location=&quot;body&quot; data-element-type=&quot;image&quot; alt=&quot;Hinweissymbol&quot; class=&quot;overwrite-css css-1s3yuia-imageContainer&quot; loading=&quot;lazy&quot; src=&quot;https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/note-33x26@2x.PNG&quot; /&gt;&lt;/div&gt;
 &lt;div class=&quot; table-div&quot;&gt;Bietet die Möglichkeit zusätzliche Informationen zu ergänzen, welche nicht Teil der Aktivität selber sind.&lt;/div&gt;
@@ -2924,8 +2946,8 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;div class=&quot; table-div&quot;&gt;Stellt das Ende einer Aktivität dar.&lt;/div&gt;
 &lt;/div&gt;
 &lt;h4&gt;Swimlanes&lt;/h4&gt;
-&lt;p&gt;Aktivitätsdiagramme können Swimlanes enthalten, um Aktionen, die von verschiedenen Akteuren durchgeführt werden in sogenannten Threads zu gruppieren. Dabei können diese Akteure Benutzer sein, aber auch verschiedene Programme oder Teile eines Programms.&lt;/p&gt;
-&lt;p&gt;Das Aktivitätsdiagramms eines Taschenrechners mit einer einfachen Rechenoperation könnte zum Beispiel folgendermaßen aussehen:&lt;/p&gt;
+&lt;p&gt;Aktivitätsdiagramme können Swimlanes enthalten, um Aktionen, die von verschiedenen Akteuren durchgeführt werden, in sogenannten Threads zu gruppieren. Dabei können diese Akteure Benutzer sein, aber auch verschiedene Programme oder Teile eines Programms.&lt;/p&gt;
+&lt;p&gt;Das Aktivitätsdiagramm eines Taschenrechners mit einer einfachen Rechenoperation könnte zum Beispiel folgendermaßen aussehen:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/aktivitatsdiagramm.png&quot; alt=&quot;&quot; width=&quot;402&quot; height=&quot;642&quot; /&gt;&lt;/p&gt;
 &lt;h4&gt;Vorgehen&lt;/h4&gt;
 &lt;p&gt;Bei der Erstellung eines Aktivitätsdiagramms gehst du am besten folgendermaßen vor:&lt;/p&gt;
@@ -2938,21 +2960,21 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;h2&gt;Objektorientiertes Design&lt;/h2&gt;
 &lt;p&gt;Das OOD baut auf den Ergebnissen der OOA auf und übersetzt das konzeptuelle Modell in eine konkrete Softwarearchitektur. OOD konzentriert sich dabei darauf, wie das System technisch umgesetzt werden soll. Folgende Aspekte sind dabei wichtig:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Architekturentwurf&lt;/strong&gt;&lt;br /&gt;Hier geht es um die Festlegung der Systemarchitektur. Haben wir ein monlithisches Programm, das aus einer Einheit besteht oder haben wir ein Programm, das z.B. eine Client-Server-Struktur hat?&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Detaillierung der Klassen&lt;/strong&gt;&lt;br /&gt;Hierbei werden die Klassenstrukturen aus der OOA verfeinert, z.B. durch das Hinzufügen von Attributen und Methoden, des Festlegen von Zugriffmodifikatoren und das Bestimmen von Interfaces und abstrakten Klassen. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architekturentwurf&lt;/strong&gt;&lt;br /&gt;Hier geht es um die Festlegung der Systemarchitektur. Haben wir ein monolithisches Programm, das aus einer Einheit besteht oder haben wir ein Programm, das z.B. eine Client-Server-Struktur hat?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Detaillierung der Klassen&lt;/strong&gt;&lt;br /&gt;Hierbei werden die Klassenstrukturen aus der OOA verfeinert, z.B. durch das Hinzufügen von Attributen und Methoden, des Festlegen von Zugriffsmodifikatoren und das Bestimmen von Interfaces und abstrakten Klassen. &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Anwendung von Entwurfsprinzipien&lt;/strong&gt;&lt;br /&gt;Hier geht es um die bewusste Anwendung von Kapselung, Polymorphismus, Abstraktion und Vererbung. &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Einsatz von Entwurfsmustern&lt;/strong&gt;&lt;br /&gt;Bei diesem Punkt geht es um die Verwendung von Design Pattern als Lösungsansatz für wiederkehrende Probleme&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Das OOD baut auf den Ergebnissen der OOA auf und verfeinert und konkretiert diese solange, bis mit der Implementierung der Software begonnen werden kann. Der Übergang von OOA zu OOD ist meist fließend. OOA und OOD unterscheiden sich dahingehend, dass mithilfe von OOA ein erstes Modell erstellt werden soll, das dabei hilft die Anforderungen an die Software zu verstehen und in eine Struktur zu übersetzen. OOD wiederum hat den Fokus den Schritt vom Modell hin zur Implementierung zu gehen und legt den Schwerpunkt dadurch auf die technische Ausarbeitung des Modells.&lt;/p&gt;
+&lt;p&gt;Das OOD baut auf den Ergebnissen der OOA auf und verfeinert und konkretisiert diese so lange, bis mit der Implementierung der Software begonnen werden kann. Der Übergang von OOA zu OOD ist meist fließend. OOA und OOD unterscheiden sich dahingehend, dass mithilfe von OOA ein erstes Modell erstellt werden soll, das dabei hilft, die Anforderungen an die Software zu verstehen und in eine Struktur zu übersetzen. OOD wiederum hat den Fokus den Schritt vom Modell hin zur Implementierung zu gehen und legt den Schwerpunkt dadurch auf die technische Ausarbeitung des Modells.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;h1&gt;Dokumentation&lt;/h1&gt;
-&lt;p&gt;Dokuentation der Software ist ein zentraler Aspekt der Softwareentwicklung. Sie hilft dabei, dass Software auch nach der Entwicklung noch wartbar und erweiterbar ist. Stell dir vor, nach ein paar Jahren stellt sich heraus, dass in deiner Software eine gravierende Sicherheitslücke ist. Nun geht es darum möglichst schnell und zuverlässig diese Lücke zu schließen, auch wenn du nicht mehr weißt, was du dir damals bei der Entwicklung der Software alles gedacht hast. Aus diesem Grund muss Software dokumentiert werden - damit du und andere damit langfristig arbeiten können.&lt;/p&gt;
+&lt;p&gt;Dokumentation der Software ist ein zentraler Aspekt der Softwareentwicklung. Sie hilft dabei, dass Software auch nach der Entwicklung noch wartbar und erweiterbar ist. Stell dir vor, nach ein paar Jahren stellt sich heraus, dass in deiner Software eine gravierende Sicherheitslücke ist. Nun geht es darum möglichst schnell und zuverlässig diese Lücke zu schließen, auch wenn du nicht mehr weißt, was du dir damals bei der Entwicklung der Software alles gedacht hast. Aus diesem Grund muss Software dokumentiert werden - damit du und andere damit langfristig arbeiten können.&lt;/p&gt;
 &lt;h2&gt;Javadoc&lt;/h2&gt;
 &lt;p&gt;Ein wichtiges Tool zur Dokumentation von Java-Programmen ist Javadoc. Javadoc ist das standardisierte Tool zur Erzeugung von API-Dokumentationen aus Java-Quellcode. Eine API-Dokumentation ist eine umfassende Anleitung, die Entwicklern detaillierte Informationen zur Integration und Nutzung einer Programmierschnittstelle bereitstellt, einschließlich Beschreibungen von Endpunkten, Methoden, Parametern, Rückgabewerten und Fehlercodes.&lt;/p&gt;
 &lt;h3&gt;Wie funktioniert Javadoc?&lt;/h3&gt;
 &lt;p&gt;Die Dokumentation mit Javadoc erfolgt mithilfe von Javadoc Kommentaren im Quellcode. Diese Kommentare enthalten Informationen zu Klassen, Attributen und Methoden. Das Hilfsprogramm javadoc liest den Quellcode und erzeugt daraus HTML-Seiten mit der Dokumentation der Software.&lt;/p&gt;
 &lt;h3&gt;Javadoc Kommentare&lt;/h3&gt;
-&lt;p&gt;Der Syntax für Javadoc Kommentare ist ein Sonderfall des mehrzeiligen Kommentars in Java und sieht folgendemaßen aus:&lt;/p&gt;
+&lt;p&gt;Der Syntax für Javadoc Kommentare ist ein Sonderfall des mehrzeiligen Kommentars in Java und sieht folgendermaßen aus:&lt;/p&gt;
 &lt;div class=&quot;pre-code&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;/**
@@ -3033,7 +3055,7 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3&gt;Javadoc Dokumentation generieren&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Option 1: Javadoc mithilfe der Koemmandozeile generieren&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 1: Javadoc mithilfe der Kommandozeile generieren&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Wechsle in das Verzeichnis, in dem sich dein Quellcode befindet. Führe folgenden Befehl aus, um die Dokumentation zu erstellen:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code code-style-2 language-markup&quot;&gt;
 &lt;div&gt;
@@ -3182,7 +3204,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="312"></int>
+                                                   <int value="317"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3196,7 +3218,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.11"></unicode>
+                                                 <unicode value="28_127_2.13"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="27"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3215,7 +3237,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="313"></int>
+                                                   <int value="318"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3229,9 +3251,42 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.12"></unicode>
+                                                 <unicode value="28_127_2.14"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="28"></reference>
+                                                 <string role="key" value="_parent"></string>
+                                                 <reference key="25"></reference>
+                                                 <string role="key" value="_thumbnailResource"></string>
+                                                 <none></none>
+                                                 <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
+                                                 <int value="3"></int>
+                                                 <string role="key" value="makeThumbnail"></string>
+                                                 <bool value="0"></bool>
+                                                </dictionary>
+                                               </instance>
+                                               <instance class="exe.engine.galleryidevice.GalleryImage">
+                                                <dictionary>
+                                                 <string role="key" value="_caption"></string>
+                                                 <instance class="exe.engine.field.TextField">
+                                                  <dictionary>
+                                                   <string role="key" value="_id"></string>
+                                                   <int value="321"></int>
+                                                   <string role="key" value="_idevice"></string>
+                                                   <none></none>
+                                                   <string role="key" value="_instruc"></string>
+                                                   <string value=""></string>
+                                                   <string role="key" value="_name"></string>
+                                                   <string value=""></string>
+                                                   <string role="key" value="content"></string>
+                                                   <string value=""></string>
+                                                   <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                                                   <int value="4"></int>
+                                                  </dictionary>
+                                                 </instance>
+                                                 <string role="key" value="_id"></string>
+                                                 <unicode value="28_127_2.15"></unicode>
+                                                 <string role="key" value="_imageResource"></string>
+                                                 <reference key="29"></reference>
                                                  <string role="key" value="_parent"></string>
                                                  <reference key="25"></reference>
                                                  <string role="key" value="_thumbnailResource"></string>
@@ -3252,13 +3307,13 @@ public void validateInput(int input) throws InvalidInputException {
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top"></unicode>
                                              <reference key="17"></reference>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Kapselung#auto_top"></unicode>
-                                             <instance class="exe.engine.node.Node" reference="31">
+                                             <instance class="exe.engine.node.Node" reference="32">
                                               <dictionary>
                                                <string role="key" value="_title"></string>
                                                <unicode value="Kapselung"></unicode>
                                                <string role="key" value="idevices"></string>
                                                <list>
-                                                <instance class="exe.engine.jsidevice.JsIdevice" reference="29">
+                                                <instance class="exe.engine.jsidevice.JsIdevice" reference="30">
                                                  <dictionary>
                                                   <string role="key" value="_title"></string>
                                                   <unicode value=""></unicode>
@@ -3319,12 +3374,12 @@ public void validateInput(int input) throws InvalidInputException {
                                                   <int value="1"></int>
                                                   <string role="key" value="fields"></string>
                                                   <list>
-                                                   <instance class="exe.engine.field.TextAreaField" reference="30">
+                                                   <instance class="exe.engine.field.TextAreaField" reference="31">
                                                     <dictionary>
                                                      <string role="key" value="_id"></string>
                                                      <unicode value="127_2"></unicode>
                                                      <string role="key" value="_idevice"></string>
-                                                     <reference key="29"></reference>
+                                                     <reference key="30"></reference>
                                                      <string role="key" value="_instruc"></string>
                                                      <string value=""></string>
                                                      <string role="key" value="_name"></string>
@@ -3515,7 +3570,7 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
                                                        <string role="key" value=".listitems"></string>
                                                        <list></list>
                                                        <string role="key" value="idevice"></string>
-                                                       <reference key="30"></reference>
+                                                       <reference key="31"></reference>
                                                       </dictionary>
                                                      </instance>
                                                      <string role="key" value="intlinks_to_anchors"></string>
@@ -3523,7 +3578,7 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
                                                      <string role="key" value="nextImageId"></string>
                                                      <int value="0"></int>
                                                      <string role="key" value="parentNode"></string>
-                                                     <reference key="31"></reference>
+                                                     <reference key="32"></reference>
                                                     </dictionary>
                                                    </instance>
                                                   </list>
@@ -3540,7 +3595,7 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
                                                   <string role="key" value="originalicon"></string>
                                                   <string value=""></string>
                                                   <string role="key" value="parentNode"></string>
-                                                  <reference key="31"></reference>
+                                                  <reference key="32"></reference>
                                                   <string role="key" value="systemResources"></string>
                                                   <list></list>
                                                   <string role="key" value="undo"></string>
@@ -3575,14 +3630,14 @@ person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span
                                               </dictionary>
                                              </instance>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Polymorphismus#auto_top"></unicode>
-                                             <reference key="32"></reference>
+                                             <reference key="33"></reference>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top"></unicode>
                                              <reference key="21"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="13"></int>
+                                            <int value="16"></int>
                                             <string role="key" value="parentNode"></string>
-                                            <reference key="33"></reference>
+                                            <reference key="34"></reference>
                                            </dictionary>
                                           </instance>
                                          </list>
@@ -4105,7 +4160,7 @@ class Wall implements Drawable {
                                      <string role="key" value="nextImageId"></string>
                                      <int value="0"></int>
                                      <string role="key" value="parentNode"></string>
-                                     <reference key="32"></reference>
+                                     <reference key="33"></reference>
                                     </dictionary>
                                    </instance>
                                    <reference key="25"></reference>
@@ -4120,7 +4175,7 @@ class Wall implements Drawable {
                                 <bool value="1"></bool>
                                 <string role="key" value="userResources"></string>
                                 <list>
-                                 <instance class="exe.engine.resource.Resource" reference="34">
+                                 <instance class="exe.engine.resource.Resource" reference="35">
                                   <dictionary>
                                    <string role="key" value="_idevice"></string>
                                    <reference key="13"></reference>
@@ -4129,7 +4184,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpxu1gqp\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4482,7 +4537,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="314"></int>
+                                     <int value="319"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4496,9 +4551,9 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.19"></unicode>
+                                   <unicode value="16_127_2.20"></unicode>
                                    <string role="key" value="_imageResource"></string>
-                                   <reference key="34"></reference>
+                                   <reference key="35"></reference>
                                    <string role="key" value="_parent"></string>
                                    <reference key="12"></reference>
                                    <string role="key" value="_thumbnailResource"></string>
@@ -4520,7 +4575,7 @@ public class Main {
                                <reference key="17"></reference>
                               </dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="20"></int>
+                              <int value="21"></int>
                               <string role="key" value="parentNode"></string>
                               <reference key="21"></reference>
                              </dictionary>
@@ -4918,13 +4973,13 @@ class MyList implements Sortable {
                     </list>
                     <string role="key" value="children"></string>
                     <list>
-                     <instance class="exe.engine.node.Node" reference="40">
+                     <instance class="exe.engine.node.Node" reference="41">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Packages und API"></unicode>
                        <string role="key" value="idevices"></string>
                        <list>
-                        <instance class="exe.engine.jsidevice.JsIdevice" reference="35">
+                        <instance class="exe.engine.jsidevice.JsIdevice" reference="36">
                          <dictionary>
                           <string role="key" value="_title"></string>
                           <unicode value=""></unicode>
@@ -4985,12 +5040,12 @@ class MyList implements Sortable {
                           <int value="1"></int>
                           <string role="key" value="fields"></string>
                           <list>
-                           <instance class="exe.engine.field.TextAreaField" reference="36">
+                           <instance class="exe.engine.field.TextAreaField" reference="37">
                             <dictionary>
                              <string role="key" value="_id"></string>
                              <unicode value="128_2"></unicode>
                              <string role="key" value="_idevice"></string>
-                             <reference key="35"></reference>
+                             <reference key="36"></reference>
                              <string role="key" value="_instruc"></string>
                              <string value=""></string>
                              <string role="key" value="_name"></string>
@@ -5137,19 +5192,19 @@ import java.util.*;                // Importiert alle Collections
                                <string role="key" value=".listitems"></string>
                                <list></list>
                                <string role="key" value="idevice"></string>
-                               <reference key="36"></reference>
+                               <reference key="37"></reference>
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
                              <dictionary>
                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top"></unicode>
-                              <instance class="exe.engine.node.Node" reference="39">
+                              <instance class="exe.engine.node.Node" reference="40">
                                <dictionary>
                                 <string role="key" value="_title"></string>
                                 <unicode value="Collections und Lambda Ausdrücke"></unicode>
                                 <string role="key" value="idevices"></string>
                                 <list>
-                                 <instance class="exe.engine.jsidevice.JsIdevice" reference="37">
+                                 <instance class="exe.engine.jsidevice.JsIdevice" reference="38">
                                   <dictionary>
                                    <string role="key" value="_title"></string>
                                    <unicode value=""></unicode>
@@ -5210,12 +5265,12 @@ import java.util.*;                // Importiert alle Collections
                                    <int value="1"></int>
                                    <string role="key" value="fields"></string>
                                    <list>
-                                    <instance class="exe.engine.field.TextAreaField" reference="38">
+                                    <instance class="exe.engine.field.TextAreaField" reference="39">
                                      <dictionary>
                                       <string role="key" value="_id"></string>
                                       <unicode value="135_2"></unicode>
                                       <string role="key" value="_idevice"></string>
-                                      <reference key="37"></reference>
+                                      <reference key="38"></reference>
                                       <string role="key" value="_instruc"></string>
                                       <string value=""></string>
                                       <string role="key" value="_name"></string>
@@ -5480,7 +5535,7 @@ public class Main {
                                         <string role="key" value=".listitems"></string>
                                         <list></list>
                                         <string role="key" value="idevice"></string>
-                                        <reference key="38"></reference>
+                                        <reference key="39"></reference>
                                        </dictionary>
                                       </instance>
                                       <string role="key" value="intlinks_to_anchors"></string>
@@ -5488,7 +5543,7 @@ public class Main {
                                       <string role="key" value="nextImageId"></string>
                                       <int value="0"></int>
                                       <string role="key" value="parentNode"></string>
-                                      <reference key="39"></reference>
+                                      <reference key="40"></reference>
                                      </dictionary>
                                     </instance>
                                    </list>
@@ -5505,7 +5560,7 @@ public class Main {
                                    <string role="key" value="originalicon"></string>
                                    <string value=""></string>
                                    <string role="key" value="parentNode"></string>
-                                   <reference key="39"></reference>
+                                   <reference key="40"></reference>
                                    <string role="key" value="systemResources"></string>
                                    <list></list>
                                    <string role="key" value="undo"></string>
@@ -5533,7 +5588,7 @@ public class Main {
                                 <reference key="16"></reference>
                                 <string role="key" value="top_anchors_linked_from_fields"></string>
                                 <list>
-                                 <reference key="36"></reference>
+                                 <reference key="37"></reference>
                                 </list>
                                 <string role="key" value="children"></string>
                                 <list></list>
@@ -5543,7 +5598,7 @@ public class Main {
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="40"></reference>
+                             <reference key="41"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -5560,7 +5615,7 @@ public class Main {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="40"></reference>
+                          <reference key="41"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -5592,13 +5647,13 @@ public class Main {
                        <list></list>
                       </dictionary>
                      </instance>
-                     <instance class="exe.engine.node.Node" reference="44">
+                     <instance class="exe.engine.node.Node" reference="45">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Processing in anderen Klassen nutzen"></unicode>
                        <string role="key" value="idevices"></string>
                        <list>
-                        <instance class="exe.engine.jsidevice.JsIdevice" reference="41">
+                        <instance class="exe.engine.jsidevice.JsIdevice" reference="42">
                          <dictionary>
                           <string role="key" value="_title"></string>
                           <unicode value=""></unicode>
@@ -5659,12 +5714,12 @@ public class Main {
                           <int value="1"></int>
                           <string role="key" value="fields"></string>
                           <list>
-                           <instance class="exe.engine.field.TextAreaField" reference="42">
+                           <instance class="exe.engine.field.TextAreaField" reference="43">
                             <dictionary>
                              <string role="key" value="_id"></string>
                              <unicode value="129_2"></unicode>
                              <string role="key" value="_idevice"></string>
-                             <reference key="41"></reference>
+                             <reference key="42"></reference>
                              <string role="key" value="_instruc"></string>
                              <string value=""></string>
                              <string role="key" value="_name"></string>
@@ -5998,18 +6053,18 @@ public class Ball {
                                <string role="key" value=".listitems"></string>
                                <list></list>
                                <string role="key" value="idevice"></string>
-                               <reference key="42"></reference>
+                               <reference key="43"></reference>
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
                              <dictionary>
                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Erste%20Schritte%20in%20Java#auto_top"></unicode>
-                              <reference key="43"></reference>
+                              <reference key="44"></reference>
                              </dictionary>
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="44"></reference>
+                             <reference key="45"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -6026,7 +6081,7 @@ public class Ball {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="44"></reference>
+                          <reference key="45"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -6063,9 +6118,9 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="45"></int>
+                 <int value="47"></int>
                  <string role="key" value="parentNode"></string>
-                 <reference key="43"></reference>
+                 <reference key="44"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -6082,15 +6137,15 @@ public class Ball {
               <string role="key" value="originalicon"></string>
               <string value=""></string>
               <string role="key" value="parentNode"></string>
-              <reference key="43"></reference>
+              <reference key="44"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="undo"></string>
               <bool value="1"></bool>
               <string role="key" value="userResources"></string>
               <list>
-               <reference key="45"></reference>
                <reference key="46"></reference>
+               <reference key="47"></reference>
               </list>
               <string role="key" value="version"></string>
               <int value="0"></int>
@@ -6113,7 +6168,7 @@ public class Ball {
            <reference key="16"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list>
-            <reference key="42"></reference>
+            <reference key="43"></reference>
            </list>
            <string role="key" value="children"></string>
            <list></list>
@@ -6121,23 +6176,23 @@ public class Ball {
          </instance>
          <reference key="22"></reference>
          <reference key="20"></reference>
-         <reference key="39"></reference>
+         <reference key="40"></reference>
         </list>
        </dictionary>
       </instance>
       <reference key="9"></reference>
-      <reference key="33"></reference>
-      <reference key="31"></reference>
+      <reference key="34"></reference>
+      <reference key="32"></reference>
       <reference key="21"></reference>
       <reference key="17"></reference>
-      <reference key="32"></reference>
-      <instance class="exe.engine.node.Node" reference="49">
+      <reference key="33"></reference>
+      <instance class="exe.engine.node.Node" reference="50">
        <dictionary>
         <string role="key" value="_title"></string>
         <unicode value="Design Patterns"></unicode>
         <string role="key" value="idevices"></string>
         <list>
-         <instance class="exe.engine.jsidevice.JsIdevice" reference="47">
+         <instance class="exe.engine.jsidevice.JsIdevice" reference="48">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value=""></unicode>
@@ -6198,12 +6253,12 @@ public class Ball {
            <int value="1"></int>
            <string role="key" value="fields"></string>
            <list>
-            <instance class="exe.engine.field.TextAreaField" reference="48">
+            <instance class="exe.engine.field.TextAreaField" reference="49">
              <dictionary>
               <string role="key" value="_id"></string>
               <unicode value="133_2"></unicode>
               <string role="key" value="_idevice"></string>
-              <reference key="47"></reference>
+              <reference key="48"></reference>
               <string role="key" value="_instruc"></string>
               <string value=""></string>
               <string role="key" value="_name"></string>
@@ -6692,7 +6747,7 @@ public class Main {
                 <string role="key" value=".listitems"></string>
                 <list></list>
                 <string role="key" value="idevice"></string>
-                <reference key="48"></reference>
+                <reference key="49"></reference>
                </dictionary>
               </instance>
               <string role="key" value="intlinks_to_anchors"></string>
@@ -6700,7 +6755,7 @@ public class Main {
               <string role="key" value="nextImageId"></string>
               <int value="0"></int>
               <string role="key" value="parentNode"></string>
-              <reference key="49"></reference>
+              <reference key="50"></reference>
              </dictionary>
             </instance>
            </list>
@@ -6717,7 +6772,7 @@ public class Main {
            <string role="key" value="originalicon"></string>
            <string value=""></string>
            <string role="key" value="parentNode"></string>
-           <reference key="49"></reference>
+           <reference key="50"></reference>
            <string role="key" value="systemResources"></string>
            <list></list>
            <string role="key" value="undo"></string>
@@ -6755,31 +6810,31 @@ public class Main {
    <unicode role="key" value="11"></unicode>
    <reference key="21"></reference>
    <unicode role="key" value="15"></unicode>
-   <reference key="43"></reference>
+   <reference key="44"></reference>
    <unicode role="key" value="16"></unicode>
    <reference key="22"></reference>
    <unicode role="key" value="17"></unicode>
-   <reference key="31"></reference>
+   <reference key="32"></reference>
    <unicode role="key" value="19"></unicode>
-   <reference key="33"></reference>
+   <reference key="34"></reference>
    <unicode role="key" value="2"></unicode>
    <reference key="16"></reference>
    <unicode role="key" value="21"></unicode>
-   <reference key="40"></reference>
+   <reference key="41"></reference>
    <unicode role="key" value="22"></unicode>
-   <reference key="44"></reference>
+   <reference key="45"></reference>
    <unicode role="key" value="3"></unicode>
    <reference key="9"></reference>
    <unicode role="key" value="4"></unicode>
-   <reference key="32"></reference>
+   <reference key="33"></reference>
    <unicode role="key" value="5"></unicode>
    <reference key="17"></reference>
    <unicode role="key" value="6"></unicode>
-   <reference key="49"></reference>
+   <reference key="50"></reference>
    <unicode role="key" value="7"></unicode>
    <reference key="20"></reference>
    <unicode role="key" value="8"></unicode>
-   <reference key="39"></reference>
+   <reference key="40"></reference>
   </dictionary>
   <string role="key" value="_objectives"></string>
   <unicode value=""></unicode>
@@ -6793,15 +6848,15 @@ public class Main {
    <reference key="17"></reference>
    <reference key="9"></reference>
    <reference key="21"></reference>
-   <reference key="43"></reference>
-   <reference key="31"></reference>
+   <reference key="44"></reference>
    <reference key="32"></reference>
-   <reference key="39"></reference>
+   <reference key="33"></reference>
+   <reference key="40"></reference>
   </list>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="40"></reference>
+  <reference key="34"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -7837,19 +7892,23 @@ public class Main {
   <dictionary>
    <string role="key" value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
    <list>
-    <reference key="34"></reference>
+    <reference key="35"></reference>
    </list>
    <string role="key" value="6223868330388650cebfa7b04d03fdc2"></string>
    <list>
-    <reference key="45"></reference>
+    <reference key="46"></reference>
    </list>
    <string role="key" value="749e23d9d9de65b7413b560ab94fac35"></string>
    <list>
-    <reference key="46"></reference>
+    <reference key="47"></reference>
    </list>
    <string role="key" value="9204c0b50abec03c0414d7426fbd5a7a"></string>
    <list>
     <reference key="28"></reference>
+   </list>
+   <string role="key" value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
+   <list>
+    <reference key="29"></reference>
    </list>
    <string role="key" value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
    <list>

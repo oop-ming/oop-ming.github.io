@@ -61,13 +61,13 @@
 <div class="iDevice emphasis0" >
 <div id="ta28_127_2" class="block iDevice_content">
 <div class="exe-text"><h1>Einführung - Hausbau nach Plan</h1>
-<p>Stell dir vor, du möchtest ein Haus bauen - wie gehst du vor? Was machst du als erstes? Wahrscheinlich würdest du nicht direkt mit dem bauen anfangen, sondern zunächst einen Plan erstellen. Du machst dir Gedanken, welche Anforderungen das Haus erfüllen muss, dann würdest du einen Grundriss zeichnen, das Material besorgen und dann erst anfangen das Haus zu bauen. Fertig, oder? Nein, am Ende würdest du noch dafür sorgen, dass alles gut dokumentiert ist. Denn wenn du in ein paar Jahren einen Wasserrohrbruch hast, möchtest du wissen, wo genau die Rohre entlang laufen oder wenn du die Zimmertüre an einer anderen Stelle haben möchtest, dann musst du wissen, wo genau in der Wand ide Kabel entlang laufen.</p>
-<p>Dieses Vorgehen lässt sich genau so auf die Softwareentwicklung übertragen. Wenn du ein Software-Projekt umsetzen möchtest, ist es nicht sonderlich sinnvoll direkt mit dem Programmieren anzufangen, ohne einen Plan zu haben. wie beim Hausbau muss erst eine Analyse der Anforderungen an die Software erstellt werden. Danach kann ein Konzept erstellt werden, welches anschließend im Code umgesetzt wird. Abschließend (oder am besten währenddessen) muss eine Dokumentation erstellt werden, damit man auch nach einiger Zeit das Programm noch erweitern oder korrigieren kann.</p>
-<p>In diesem Abschnitt beschäftigen wir uns mit dem Konzeption und der Dokumentation von objektorientierter Software. Du lernst in diesem Abschnitt:</p>
+<p>Stell dir vor, du möchtest ein Haus bauen - wie gehst du vor? Was machst du als Erstes? Wahrscheinlich würdest du nicht direkt mit dem bauen anfangen, sondern zunächst einen Plan erstellen. Du machst dir Gedanken, welche Anforderungen das Haus erfüllen muss, dann würdest du einen Grundriss zeichnen, das Material besorgen und dann erst anfangen das Haus zu bauen. Fertig, oder? Nein, am Ende würdest du noch dafür sorgen, dass alles gut dokumentiert ist. Denn wenn du in ein paar Jahren einen Wasserrohrbruch hast, möchtest du wissen, wo genau die Rohre entlang laufen oder wenn du die Zimmertüre an einer anderen Stelle haben möchtest, dann musst du wissen, wo genau in der Wand die Kabel entlang laufen.</p>
+<p>Dieses Vorgehen lässt sich genau so auf die Softwareentwicklung übertragen. Wenn du ein Software-Projekt umsetzen möchtest, ist es nicht sonderlich sinnvoll, direkt mit dem Programmieren anzufangen, ohne einen Plan zu haben. Wie beim Hausbau muss erst eine Analyse der Anforderungen an die Software erstellt werden. Danach kann ein Konzept erstellt werden, welches anschließend im Code umgesetzt wird. Abschließend (oder am besten währenddessen) muss eine Dokumentation erstellt werden, damit man auch nach einiger Zeit das Programm noch erweitern oder korrigieren kann.</p>
+<p>In diesem Abschnitt beschäftigen wir uns mit der Konzeption und der Dokumentation von objektorientierter Software. Du lernst in diesem Abschnitt:</p>
 <ul>
 <li>Wie man bei der Konzeption von Software vorgeht</li>
 <li>Was es mit der Unified Markup Language (kurz: UML) auf sich hat</li>
-<li>Wie du Klassendiagramme zur Konzeption und Dokumentation einsetzten kannst</li>
+<li>Wie du Klassendiagramme zur Konzeption und Dokumentation einsetzen kannst</li>
 <li>Wie du mithilfe von Aktivitätsdiagrammen den Programmablauf konzipieren und darstellen kannst</li>
 <li>Wie du mithilfe von Javadoc deinen Code automatisiert dokumentieren kannst</li>
 </ul>
@@ -79,20 +79,22 @@
 <li>Wenn etwas nicht funktioniert, durch Ausprobieren eine Lösung finden</li>
 <li>Das Programm so lange anpassen, bis es irgendwie läuft</li>
 </ol>
-<p>Diese Herangehensweise mag für kleine Projekte ausreichen. Bei größeren und komplexeren Softwareprojekten stößt man damit jedoch schnell an Grenzen:</p>
+<p>Diese Herangehensweise mag für kleine Projekte ausreichen. Bei größeren und komplexeren Software-Projekten stößt man damit jedoch schnell an Grenzen:</p>
 <ul>
 <li>Der Code wird unübersichtlich und schwer zu warten</li>
 <li>Änderungen und Erweiterungen sind aufwändig</li>
 <li>Fehler schleichen sich leicht ein und sind schwer zu finden</li>
 <li>Die Zusammenarbeit im Team wird erschwert</li>
 </ul>
-<p>Um diese Probleme zu vermeiden, haben sich in der professionellen Softwareentwicklung strukturierte Vorgehensweisen etabliert. Zwei zentrale Konzepte dabei sind die Anforderungsanalyse und der Softwareentwurf. Bei der Anforderungsanalyse geht es darum zunächst die Anforderungen an das Programm zu ermitteln und diese einfach zu modellieren. Beim Softwareentwurfgeht es darum, die Ergebnisse der Analyse zu nutzen, um die technische Umsetzung zu modellieren bzw. entwerfen.</p>
-<p>In diesem Kapitel beschäftigen wir uns mit der <em>Objektorientierten</em> Analyse (OOA) und dem <em>Objektorientierten</em> Design (OOD). Dabei handelt es sich um objektorientierte Varianten der Anforderungsanalyse und des Softwareentwurfs. Beide Phasen nutzen objektorientierte Prinzipien wie <a href="kapselung.html">Kapselung</a>, <a href="vererbung.html">Vererbung</a> und <a href="polymorphismus.html">Polymorphismus</a>, um bereits in der Analyse- und Design-Phase einen odjektorientierten Entwurf zu entwickeln. Indem bereits bei der Analyse und im Design objektorientierte Prinzipien angewendet werden, ist der Übergang zur Umsetzung in einem objektorientierten Programm später einfacher.</p>
-<p>Es gibt verschiedene Vorgehensmodelle für Softwareentwicklung. Einige davon wirst du im Laufe des Studium ausführlich kennenlernen. Für den Anfang folgen wir diesem einfachen Ablauf:</p>
+<p>Um diese Probleme zu vermeiden, haben sich in der professionellen Softwareentwicklung strukturierte Vorgehensweisen etabliert. Diese Vorgehensweisen bestehen in großen Teilen aus denselben Elementen: Analyse, Entwurf, Implementierung, Test, Installation und Wartung. Ein sehr klassisches und weit verbreitetes Vorgehen ist zum Beispiel das Wasserfall-Konzept. Hier werden diese Elemente einfach nacheinander abgearbeitet:</p>
+<p><img src="wasserfall.png" alt="Wasserfall-Konzept" title="Wasserfall-Konzept" width="604" height="297" /></p>
+<p>Die zwei Elemente, welche wir uns in diesem Kapitel genauer ansehen möchten, sind die <strong>Anforderungsanalyse</strong> und der <strong>Entwurf</strong> (auch Konzept oder Design genannt). Bei der Anforderungsanalyse geht es darum zunächst die Anforderungen an das Programm zu ermitteln und diese einfach zu modellieren. Beim Entwurf geht es darum, die Ergebnisse der Analyse zu nutzen, um die technische Umsetzung zu modellieren bzw. entwerfen.</p>
+<p>In diesem Kapitel beschäftigen wir uns mit der <em>Objektorientierten</em> Analyse (OOA) und dem <em>Objektorientierten</em> Design (OOD). Dabei handelt es sich um objektorientierte Varianten der Anforderungsanalyse und des Softwareentwurfs. Beide Phasen nutzen objektorientierte Prinzipien wie <a href="kapselung.html">Kapselung</a>, <a href="vererbung.html">Vererbung</a> und <a href="polymorphismus.html">Polymorphismus</a>, um bereits in der Analyse- und Design-Phase einen objektorientierten Entwurf zu entwickeln. Indem bereits bei der Analyse und im Design objektorientierte Prinzipien angewendet werden, ist der Übergang zur Umsetzung in einem objektorientierten Programm später einfacher.</p>
+<p>Es gibt verschiedene Vorgehensmodelle für Softwareentwicklung. Einige davon wirst du im Laufe des Studiums ausführlich kennenlernen. Für den Anfang folgen wir diesem einfachen Ablauf:</p>
 <ul>
-<li><strong>Konzeption: </strong>In der Konzeption geht es darum, die Anforderungen an die Software zu analysieren und einen Softwareentwurf zu entwickeln.</li>
-<li><strong>Implementierung: </strong>Bei der Implementierung geht es darum, den Softwareentwurf umzusetzen.</li>
-<li><strong>Dokumentation: </strong>Bei der Dokumentation geht es darum den Aufbau der Software zu dokumentieren. Dies kann während oder nach dem Implementierung erfolgen.</li>
+<li><strong>Konzeption: </strong>Analyse der Anforderungen an die Software und Entwicklung eines Softwareentwurfs</li>
+<li><strong>Implementierung: </strong>Umsetzung des Softwareentwurfs.</li>
+<li><strong>Dokumentation: </strong>Dokumentation des Aufbaus der Software (während oder nach der Implementierung)</li>
 </ul>
 <h1>Konzeption</h1>
 <h2>Objektorientierte Analyse</h2>
@@ -101,10 +103,10 @@
 <div class="exe-fx exe-accordion">
 <h2>1. Anforderungserhebung</h2>
 <p>Bei der Anforderungserhebung geht es darum, die Anforderungen an die Software zu sammeln, zu definieren und zu verstehen. Dies erfolgt zum Beispiel durch Interviews mit den Stakeholdern (Auftraggeber/Kunden) oder späteren Nutzern der Software.</p>
-<p>Stell dir vor, du erhältst den Auftrag einen Taschenrechner zu programmieren. Bevor du anfängst, musst du erstmal mit dem Auftraggeber klären, was der Taschenrechner alles können soll. Reichen die einfachen arithmetischen Operationen (Addition, Subtraktion, Multiplikation und Division) oder sollen weitere Funktionen hinzugefügt werden? Welche Designvorgaben gibt es für den Taschenrechner? Wer wird den Taschenrechner später nutzen? ...</p>
+<p>Stell dir vor, du erhältst den Auftrag, einen Taschenrechner zu programmieren. Bevor du anfängst, musst du erstmal mit dem Auftraggeber klären, was der Taschenrechner alles können soll. Reichen die einfachen arithmetischen Operationen (Addition, Subtraktion, Multiplikation und Division) oder sollen weitere Funktionen hinzugefügt werden? Welche Designvorgaben gibt es für den Taschenrechner? Wer wird den Taschenrechner später nutzen? ...</p>
 <h2>2. Identifikation von Objekten und Klassen</h2>
-<p>Bei diesem Schritt geht es darum aus den Anforderungen Objekte abzuleiten, die deine Software braucht. Ähnliche Objekte können und Klassen gruppiert werden. Außerdem können bereits Attribute und Methoden für Klassen definiert werden. Bei diesem Schritt müssen noch nicht alle technischen Details geklärt sein. Ziel ist es einen ersten Überblick und eine erste Struktur zu erstellen - die auch noch Lücken haben kann.</p>
-<p>Bei unserem Taschenrechner könnte das folgendermaßen aussehen: Wir erinnern uns - die Objektorientierte Programmierung versucht Programme so zu entwicklen, dass sie echte Objekte aus der realen Welt beschreibt. Aus welchen Objekten besteht ein Taschenrechner? Mehrere Tasten (Zahlen 0-9, +, -, *, :, Komma, =, Eingabe löschen, ...), ein Display und eine Fläche auf der alles angeordnet ist. Eine erste Übersicht könnte somit folgendermaßen aussehen:</p>
+<p>Bei diesem Schritt geht es darum aus den Anforderungen Objekte abzuleiten, die deine Software braucht. Ähnliche Objekte können in Klassen gruppiert werden. Außerdem können bereits Attribute und Methoden für Klassen definiert werden. Bei diesem Schritt müssen noch nicht alle technischen Details geklärt sein. Ziel ist es, einen ersten Überblick und eine erste Struktur zu erstellen - die auch noch Lücken haben kann.</p>
+<p>Bei unserem Taschenrechner könnte das folgendermaßen aussehen: Wir erinnern uns - die Objektorientierte Programmierung versucht Programme so zu entwickeln, dass sie echte Objekte aus der realen Welt beschreibt. Aus welchen Objekten besteht ein Taschenrechner? Mehrere Tasten (Zahlen 0-9, +, -, *, :, Komma, =, Eingabe löschen, ...), ein Display und eine Fläche auf der alles angeordnet ist. Eine erste Übersicht könnte somit folgendermaßen aussehen:</p>
 <ul>
 <li>Fläche
 <ul>
@@ -129,10 +131,10 @@
 </ul>
 <p>In dieser Liste habe ich mir einen ersten Überblick über den Aufbau des Programms geschaffen. Ich habe die Klassen Fläche, Display und Taste mit diversen Attributen und Methoden definiert. Diese Liste ist nicht vollständig ausgearbeitet, aber ein guter erster Entwurf.</p>
 <h2>3. Modellierung von Beziehungen</h2>
-<p>Im nächsten Schritt geht es darum Beziehungen zwischen den einzelnen Klassen herauszuarbeiten. Dabei gibt es 4 Arten von Beziehungen: Assoziation, Vererbung, Aggregation und Komposition. Mehr zu diesen Beziehung erfährst du weiter unten im Abschnitt <a href="#Beziehungen">Beziehungen</a>.</p>
-<p>Bei unserem Taschenrechner liegt eine sogenannte Komposition vor. Die Komposition beschreibt eine Beziehung zwischen einen Ganzen und seinen Teilen, wobei das Ganze nur zusammen mit seinen Teilen, wobei weder das Ganze noch die Teile unabhängig voneinander existieren können. Das Ganze ist bei dem Taschenrechner die Fläche und die Teile aus denen die Fläche besteht, sind die Tasten und das Display. Ohne Tasten und Display ergibt die Fläche keinen Sinn - und einzeln ergeben weder Tasten noch Display einen Sinn.</p>
+<p>Im nächsten Schritt geht es darum, Beziehungen zwischen den einzelnen Klassen herauszuarbeiten. Dabei gibt es 4 Arten von Beziehungen: Assoziation, Vererbung, Aggregation und Komposition. Mehr zu diesen Beziehungen erfährst du weiter unten im Abschnitt <a href="#Beziehungen">Beziehungen</a>.</p>
+<p>Bei unserem Taschenrechner liegt eine sogenannte Komposition vor. Die Komposition beschreibt eine Beziehung zwischen einem Ganzen und seinen Teilen, wobei das Ganze nur zusammen mit seinen Teilen, wobei weder das Ganze noch die Teile unabhängig voneinander existieren können. Das Ganze ist bei dem Taschenrechner die Fläche und die Teile, aus denen die Fläche besteht, sind die Tasten und das Display. Ohne Tasten und Display ergibt die Fläche keinen Sinn - und einzeln ergeben weder Tasten noch Display einen Sinn.</p>
 <h2>4. Erstellen von UML-Diagrammen</h2>
-<p>Nachdem eine erste Struktur in Form von Auflistung der einzelnen Klassen und deren Eigenschaften und Beziehungen erfolgt ist, geht es im nächsten Schritt darum, diese Struktur zu visualisieren. Dies erfolgt mithilfe von sogenannten UML-Diagrammen. Dabei handelt es sich um Diagramme, die nach einen gewissen einheitlichen Schema erstellt wurden. Dieses Schema wird ist die Unified Markup Language. Zwei sinvolle Diagramme, welche erstellt werden sollten, sind das <strong>Klassendiagramm</strong> für die statische Struktur und das <strong>Aktivitätsdiagramm</strong> für die dynamische Struktur. Mehr zu den Themen UML, Klassendiagramm und Aktivitätsdiagramm erfährst du im Abschnitt <a href="#UML">UML-Diagramme</a>.</p>
+<p>Nachdem eine erste Struktur in Form von Auflistung der einzelnen Klassen und deren Eigenschaften und Beziehungen erfolgt ist, geht es im nächsten Schritt darum, diese Struktur zu visualisieren. Dies erfolgt mithilfe von sogenannten UML-Diagrammen. Dabei handelt es sich um Diagramme, die nach einem gewissen einheitlichen Schema erstellt wurden. Dieses Schema ist die Unified Markup Language. Zwei sinnvolle Diagramme, sind das <strong>Klassendiagramm</strong> für die statische Struktur und das <strong>Aktivitätsdiagramm</strong> für die dynamische Struktur. Mehr zu den Themen UML, Klassendiagramm und Aktivitätsdiagramm erfährst du im Abschnitt <a href="#UML">UML-Diagramme</a>.</p>
 <p>Ein sehr einfaches Klassendiagramm für unseren Taschenrechner könnte zum Beispiel folgendermaßen aussehen:</p>
 <div class="pre-code">
 <div>
@@ -148,13 +150,13 @@
 </div>
 </div>
 <h2>5. Verfeinerung des Modells</h2>
-<p>Der letzte Schritt der Objektorientierten Analyse ist die <a href="#t534f9633-cb9c-ba95-2b93-b9153d3d656a" id="link534f9633-cb9c-ba95-2b93-b9153d3d656a" class="exe-tooltip definition-tt blue-tt">iterative</a> Überarbeitung und Verfeinerung der Modelle. Dies erfolgt zum Beispiel in Abbsprache mit den Stakeholdern oder durch Absprache innerhalb des Teams. In mehreren Durchläufen werden die Modelle basierend auf dem Feedback und den neuen Erkenntnissen angepasst.</p>
+<p>Der letzte Schritt der Objektorientierten Analyse ist die <a href="#t534f9633-cb9c-ba95-2b93-b9153d3d656a" id="link534f9633-cb9c-ba95-2b93-b9153d3d656a" class="exe-tooltip definition-tt blue-tt">iterative</a> Überarbeitung und Verfeinerung der Modelle. Dies erfolgt zum Beispiel in Absprache mit den Stakeholdern oder durch Absprache innerhalb des Teams. In mehreren Durchläufen werden die Modelle basierend auf dem Feedback und den neuen Erkenntnissen angepasst.</p>
 <p>Eine Erkenntnis bei unserem Taschenrechner könnte zum Beispiel sein, dass alle drei Klassen eine Methode gemeinsam haben: anzeigen(). Hier wäre es möglich <a href="vererbung.html" title="Zum Kapitel Vererbung">Vererbung</a> anzuwenden und eine (<a href="abstraktion.html" title="Zum Kapitel Abstraktion">abstrakte</a>) Klasse AnzeigbaresObjekt zu erstellen, welche die Methode anzeigen() an die Unterklassen vererbt.</p>
 </div>
 <h2><a id="UML"></a>UML-Diagramme</h2>
-<p>UML-Diagramme ist ein Sammelbegriff für verschiedene Arten von Diagrammen, welche eingesetzt werden um verschiedene Aspekte (wie z.B. Struktur, Ablauf, Zusammenhänge, ...) im Bereich der Softwareentwicklung zu visualisieren. UML steht dabei für Unified Modeling Language. Dabei handelt es sich um eine visuelle Modellierungssprache für die Architektur ud das Design von Softwareprojekten. Die UML legt dabei fest, wie die einzelnen Elemente grafisch darstellt und angeordnet werden sollen. Wir kennen das bereits aus dem Programmablaufplan (PAP). Hier ist zum Beispiel festlegt, dass eine Verzweigung durch eine Raute dargestellt wird und eine Ein- oder Ausgabe durch ein Paralellogramm. Die Vorgaben für den Programmablaufplan stammen aber nicht aus der UML, sondern aus der DIN-Norm 66001.</p>
+<p>UML-Diagramme ist ein Sammelbegriff für verschiedene Arten von Diagrammen, die verschiedene Aspekte (wie z.B. Struktur, Ablauf, Zusammenhänge, ...) im Bereich der Softwareentwicklung visualisieren.<strong> UML steht für Unified Modeling Language</strong>. Dabei handelt es sich um eine visuelle Modellierungssprache für die Architektur und das Design von Software-Projekten. Die UML legt dabei fest, wie die einzelnen Elemente grafisch darstellt und angeordnet werden sollen. Wir kennen das bereits aus dem Programmablaufplan (PAP). Hier ist zum Beispiel festlegt, dass eine Verzweigung durch eine Raute dargestellt wird und eine Ein- oder Ausgabe durch ein Parallelogramm. Die Vorgaben für den Programmablaufplan stammen aber nicht aus der UML, sondern aus der DIN-Norm 66001.</p>
 <p>Diese Vereinheitlichung der Darstellung (egal ob nach DIN-Norm oder UML) hat den Vorteil, dass unsere Diagramme und Visualisierungen einheitlich sind und auch von anderen Personen gelesen und verstanden werden können. Die UML legt nicht fest, womit du diese Diagramme erstellst. Du kannst sie von Hand mit Papier und Bleistift erstellen, einen Text-Editor verwenden (so wie in manchen Beispielen hier) oder Tools einsetzen, welche dir etwas Arbeit abnehmen, wie z.B. <a href="https://www.lucidchart.com/pages/de">Lucidchart</a>, <a href="https://app.diagrams.net/">draw.io</a> oder <a href="https://plantuml.com/de/">PlantUML</a>.</p>
-<p>Zwei wichtige Diagramm-Typen sind das Klassendiagramm, zur Visualisierung des statischen Struktur, und das Aktivitätsdiagramm, zur Visualisierung des dynamischen Struktur.</p>
+<p>Zwei wichtige Diagramm-Typen sind das <strong>Klassendiagramm</strong> (Visualisierung der statischen Struktur) und das <strong>Aktivitätsdiagramm</strong> (Visualisierung der dynamischen Struktur).</p>
 <h3>Klassendiagramme</h3>
 <p>Bei Klassendiagrammen handelt es sich um Strukturdiagramme der Unified Modeling Language (UML). Mithilfe von Klassendiagrammen können Klassen und deren Beziehungen visuell dargestellt werden. Ein UML-Klassendiagramm visualisiert somit die statische Struktur eines Systems. Es zeigt, welche Klassen (als Baupläne von Objekten) im System existieren, welche Attribute und Methoden sie besitzen und wie sie zueinander in Beziehung stehen.</p>
 <p>Der Aufbau von einem Klassendiagramm ist im Prinzip recht simpel:</p>
@@ -173,7 +175,7 @@
 </li>
 <li>Attribute:
 <ul>
-<li>Bei Attributen wird der Name des Attribut angegeben, gefolgt vom Datentyp</li>
+<li>Bei Attributen wird der Name des Attributs angegeben, gefolgt vom Datentyp</li>
 <li>Attribute können bei der Deklaration auch direkt initialisiert werden, dann wird der Wert mit angegeben</li>
 <li>Beispiel: <span style="font-family: andale mono, monospace;">name : String</span> oder <span style="font-family: andale mono, monospace;">alter : int = 18</span></li>
 </ul>
@@ -185,7 +187,7 @@
 </ul>
 </li>
 </ul>
-<p>Neben den drei Hauptteilen, sind die Sichtbarkeitkeitsmodifikatoren ein weiterer wichtiger Aspekt, welcher in Klassendiagrammen dargestellt wird. Die Sichtbarkeitsmodifikatoren in Klassendiagrammen sind:</p>
+<p>Neben den drei Hauptteilen, sind die Sichtbarkeitsmodifikatoren ein weiterer wichtiger Aspekt, welcher in Klassendiagrammen dargestellt wird. Die Sichtbarkeitsmodifikatoren in Klassendiagrammen sind:</p>
 <ul>
 <li>public (+)</li>
 <li>private (-)</li>
@@ -198,7 +200,7 @@
 <ul>
 <li><strong>Assoziation:</strong>
 <ul>
-<li>Eine einfache Verbindung zwischen zwei Klassen, z. B. kann ein Student an mehreren Kursen teilnehmen, die Klassen Student und Kurs können aber unabhängig voneinander exisitieren.</li>
+<li>Eine einfache Verbindung zwischen zwei Klassen, z. B. kann ein Student an mehreren Kursen teilnehmen, die Klassen Student und Kurs können aber unabhängig voneinander existieren.</li>
 <li>Dargestellt durch eine Linie, welche beide Klassen verbindet</li>
 </ul>
 </li>
@@ -210,7 +212,7 @@
 </li>
 <li><strong>Aggregation:</strong>
 <ul>
-<li>Steht für eine Beziehung zwischen einem Ganzen und seinen Teilen, bei der die Teilobjekte auch unabhängig existieren können, z.B. besteht ein Wald aus mehreren Bäumen (Teilobjekte). Der Wald kann ohne Bäume nicht existieren, ein Baum kann aber ohne einen Wald exisitieren.</li>
+<li>Steht für eine Beziehung zwischen einem Ganzen und seinen Teilen, bei der die Teilobjekte auch unabhängig existieren können, z.B. besteht ein Wald aus mehreren Bäumen (Teilobjekte). Der Wald kann ohne Bäume nicht existieren, ein Baum kann aber ohne einen Wald existieren.</li>
 <li>Dargestellt durch eine Linie mit einer nicht ausgefüllten Raute am Ende des Ganzen.<br />Komposition hingegen drückt eine starke Bindung aus, bei der das Teil ohne das Ganze nicht existieren kann.</li>
 </ul>
 </li>
@@ -224,9 +226,9 @@
 <p></p>
 </div>
 <h3>Beispiele</h3>
-<p>Wie genau wird so ein Diagramm nun dargestellt? Hier hast du einiges an Freiheit: Du kannst es von Hand zeichnen (am besten mit Lineal), ein einem Texteditor erstellen oder spezielle Programm dafür verwenden: Hauptsache du hältst dich an die UML-Regeln für Klassendiagramme.</p>
+<p>Wie genau wird so ein Diagramm nun dargestellt? Hier hast du einiges an Freiheit: Du kannst es von Hand zeichnen (am besten mit Lineal), ein einem Text-Editor erstellen oder spezielle Programm dafür verwenden: Hauptsache, du hältst dich an die UML-Regeln für Klassendiagramme.</p>
 <h4>Beispiel: Mediaplayer</h4>
-<p>Hier siehst du ein Beispiel für ein einfaches Klassendiagramm für einen Mediaplayer, das in einem Texteditor erstellt wurde. Es zeigt die Klasse <span style="font-family: andale mono, monospace;">MediaPlayer</span> und die Subklasse <span style="font-family: andale mono, monospace;">AdvancedPlayer</span>, welche von <span style="font-family: andale mono, monospace;">MediaPlayer</span> erbt.</p>
+<p>Hier siehst du ein Beispiel für ein einfaches Klassendiagramm für einen Mediaplayer, das in einem Text-Editor erstellt wurde. Es zeigt die Klasse <span style="font-family: andale mono, monospace;">MediaPlayer</span> und die Subklasse <span style="font-family: andale mono, monospace;">AdvancedPlayer</span>, welche von <span style="font-family: andale mono, monospace;">MediaPlayer</span> erbt.</p>
 <div class="pre-code">
 <div>
 <pre><code>+-----------------------+
@@ -251,18 +253,18 @@
 </div>
 </div>
 <h4>Beispiel: Tier-Hierarchie</h4>
-<p>Folgendes Beispiel ergänzt die Tierhierarchie aus dem Kapitel <a href="vererbung.html">Vererbung</a>. Ich habe sie ergänzt um die Klassen Ball, Ei und Forellenscharm. Ball und Hund haben eine Assoziation da sie jeweils auch unabhängig voneinerander exisitieren können. Ei und Vogel verbindet eine Aggregation, da es ohne Vogel kein Ei geben kann.</p>
+<p>Folgendes Beispiel ergänzt die Tier-Hierarchie aus dem Kapitel <a href="vererbung.html">Vererbung</a>. Ich habe sie ergänzt um die Klassen Ball, Ei und Forellenschwarm. Ball und Hund haben eine Assoziation, da sie jeweils auch unabhängig voneinander existieren können. Ei und Vogel verbindet eine Aggregation, da es ohne Vogel kein Ei geben kann.</p>
 <p><img src="klassendiagramm_beispiel2.png" alt="" width="1181" height="526" /></p>
 <p>Dieses Diagramm habe ich mit draw.io erstellt - ein kostenloses Programm, dass du im Browser nutzen oder herunterladen kannst und viele vorgefertigte Formen für verschiedene Anwendungsfälle enthält - unter anderem das Erstellen von UML-Klassendiagrammen.</p>
 <h3>Aktivitätsdiagramm</h3>
-<div class=" table-div">Bei einem UML-Aktivitätsdiagramm handelt es sich um ein Flussdiagramm ähnlich wie ein Programmablaufplan. Das Ziel das Aktivitätsdiagramms ist es, die von einem System aausgeführten Aktivitäten abzubilden. Aktivitätsdiagramm visualisieren die dynamische Struktur und die Abläufe innerhalb eines Systems.</div>
+<div class=" table-div">Bei einem UML-Aktivitätsdiagramm handelt es sich um ein Flussdiagramm, ähnlich wie ein Programmablaufplan. Das Ziel das Aktivitätsdiagramms ist es, die von einem System ausgeführten Aktivitäten abzubilden. Aktivitätsdiagramm visualisieren die dynamische Struktur und die Abläufe innerhalb eines Systems.</div>
 <div class=" table-div"></div>
-<div class=" table-div">Aktivitätsdiagramm bestehen aus folgenden Grundelementen:</div>
+<div class=" table-div">Aktivitätsdiagramme bestehen aus folgenden Grundelementen:</div>
 <ul>
-<li class=" table-div">Start- und Endknoten: Stellen den Beginn und das Ende einer Aktivität dar.</li>
-<li class=" table-div">Aktionen: Stellen einen Schritt in der Aktivität dar, welche von dem Benutzer oder der Software durchgeführt werden</li>
-<li class=" table-div">Entscheidungsknoten: Stellen eine Verzeigung dar, welche an eine Bedinung geknüpft ist</li>
-<li class=" table-div">Kontrollflüsse: Werden dargestellt durch Verbindungen zwischen dein einzelnen Elementen.</li>
+<li class=" table-div"><strong>Start- und Endknoten</strong>: Stellen den Beginn und das Ende einer Aktivität dar.</li>
+<li class=" table-div"><strong>Aktionen:</strong> Stellen einen Schritt in der Aktivität dar, welche von dem Benutzer oder der Software durchgeführt werden</li>
+<li class=" table-div"><strong>Entscheidungsknoten:</strong> Stellen eine Verzweigung dar, welche an eine Bedingung geknüpft ist</li>
+<li class=" table-div"><strong>Kontrollflüsse:</strong> Werden dargestellt durch Verbindungen zwischen den einzelnen Elementen.</li>
 </ul>
 <p>Dies sind einige der am häufigsten verwendeten Symbole in einem Aktivitätsdiagramm:</p>
 <div class="exe-fx exe-tabs">
@@ -271,7 +273,7 @@
 <div class=" table-div">Steht am Anfang eines jeden Aktivitätsdiagrammes und stell den Start dar. Der Startknoten kann alleine stehen oder durch ein Notizsymbol ergänzt werden.</div>
 <h2>Aktion</h2>
 <div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Aktivitätssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/activity-66x35.PNG" /></div>
-<p>Zeigt einen einzlenen Schritt innerhalb der Aktivität an und enthalten kurze Beschreibungen des jeweiligen Schritts.</p>
+<p>Zeigt einen einzlenen Schritt innerhalb der Aktivität an und enthält eine kurze Beschreibung des jeweiligen Schritts.</p>
 <h2>Kontrollflüsse/Verbindungen</h2>
 <div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Konnektorsymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/arrow-66x11.PNG" /></div>
 <div class=" table-div">Verbindungslinien mit Pfeilen stellen den Kontrollfluss innerhalb der Aktivität dar.</div>
@@ -283,7 +285,7 @@
 <div class=" table-div">Spaltet die Aktivität auf in zwei Aktivitäten, welche paralell ablaufen.</div>
 <h2>Entscheidung</h2>
 <div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Entscheidungssymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/decision-33x30.PNG" /></div>
-<div class=" table-div">Stellt eine Entscheidung dar, welche an eine Bedinung geknüpft ist.</div>
+<div class=" table-div">Stellt eine Entscheidung dar, welche an eine Bedingung geknüpft ist.</div>
 <h2>Hinweis/Notiz</h2>
 <div class=" table-div"><img data-element-page-location="body" data-element-type="image" alt="Hinweissymbol" class="overwrite-css css-1s3yuia-imageContainer" loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/activity-diagram/note-33x26@2x.PNG" /></div>
 <div class=" table-div">Bietet die Möglichkeit zusätzliche Informationen zu ergänzen, welche nicht Teil der Aktivität selber sind.</div>
@@ -292,8 +294,8 @@
 <div class=" table-div">Stellt das Ende einer Aktivität dar.</div>
 </div>
 <h4>Swimlanes</h4>
-<p>Aktivitätsdiagramme können Swimlanes enthalten, um Aktionen, die von verschiedenen Akteuren durchgeführt werden in sogenannten Threads zu gruppieren. Dabei können diese Akteure Benutzer sein, aber auch verschiedene Programme oder Teile eines Programms.</p>
-<p>Das Aktivitätsdiagramms eines Taschenrechners mit einer einfachen Rechenoperation könnte zum Beispiel folgendermaßen aussehen:</p>
+<p>Aktivitätsdiagramme können Swimlanes enthalten, um Aktionen, die von verschiedenen Akteuren durchgeführt werden, in sogenannten Threads zu gruppieren. Dabei können diese Akteure Benutzer sein, aber auch verschiedene Programme oder Teile eines Programms.</p>
+<p>Das Aktivitätsdiagramm eines Taschenrechners mit einer einfachen Rechenoperation könnte zum Beispiel folgendermaßen aussehen:</p>
 <p><img src="aktivitatsdiagramm.png" alt="" width="402" height="642" /></p>
 <h4>Vorgehen</h4>
 <p>Bei der Erstellung eines Aktivitätsdiagramms gehst du am besten folgendermaßen vor:</p>
@@ -306,21 +308,21 @@
 <h2>Objektorientiertes Design</h2>
 <p>Das OOD baut auf den Ergebnissen der OOA auf und übersetzt das konzeptuelle Modell in eine konkrete Softwarearchitektur. OOD konzentriert sich dabei darauf, wie das System technisch umgesetzt werden soll. Folgende Aspekte sind dabei wichtig:</p>
 <ol>
-<li><strong>Architekturentwurf</strong><br />Hier geht es um die Festlegung der Systemarchitektur. Haben wir ein monlithisches Programm, das aus einer Einheit besteht oder haben wir ein Programm, das z.B. eine Client-Server-Struktur hat?</li>
-<li><strong>Detaillierung der Klassen</strong><br />Hierbei werden die Klassenstrukturen aus der OOA verfeinert, z.B. durch das Hinzufügen von Attributen und Methoden, des Festlegen von Zugriffmodifikatoren und das Bestimmen von Interfaces und abstrakten Klassen. </li>
+<li><strong>Architekturentwurf</strong><br />Hier geht es um die Festlegung der Systemarchitektur. Haben wir ein monolithisches Programm, das aus einer Einheit besteht oder haben wir ein Programm, das z.B. eine Client-Server-Struktur hat?</li>
+<li><strong>Detaillierung der Klassen</strong><br />Hierbei werden die Klassenstrukturen aus der OOA verfeinert, z.B. durch das Hinzufügen von Attributen und Methoden, des Festlegen von Zugriffsmodifikatoren und das Bestimmen von Interfaces und abstrakten Klassen. </li>
 <li><strong>Anwendung von Entwurfsprinzipien</strong><br />Hier geht es um die bewusste Anwendung von Kapselung, Polymorphismus, Abstraktion und Vererbung. </li>
 <li><strong>Einsatz von Entwurfsmustern</strong><br />Bei diesem Punkt geht es um die Verwendung von Design Pattern als Lösungsansatz für wiederkehrende Probleme</li>
 </ol>
-<p>Das OOD baut auf den Ergebnissen der OOA auf und verfeinert und konkretiert diese solange, bis mit der Implementierung der Software begonnen werden kann. Der Übergang von OOA zu OOD ist meist fließend. OOA und OOD unterscheiden sich dahingehend, dass mithilfe von OOA ein erstes Modell erstellt werden soll, das dabei hilft die Anforderungen an die Software zu verstehen und in eine Struktur zu übersetzen. OOD wiederum hat den Fokus den Schritt vom Modell hin zur Implementierung zu gehen und legt den Schwerpunkt dadurch auf die technische Ausarbeitung des Modells.</p>
+<p>Das OOD baut auf den Ergebnissen der OOA auf und verfeinert und konkretisiert diese so lange, bis mit der Implementierung der Software begonnen werden kann. Der Übergang von OOA zu OOD ist meist fließend. OOA und OOD unterscheiden sich dahingehend, dass mithilfe von OOA ein erstes Modell erstellt werden soll, das dabei hilft, die Anforderungen an die Software zu verstehen und in eine Struktur zu übersetzen. OOD wiederum hat den Fokus den Schritt vom Modell hin zur Implementierung zu gehen und legt den Schwerpunkt dadurch auf die technische Ausarbeitung des Modells.</p>
 <p></p>
 <h1>Dokumentation</h1>
-<p>Dokuentation der Software ist ein zentraler Aspekt der Softwareentwicklung. Sie hilft dabei, dass Software auch nach der Entwicklung noch wartbar und erweiterbar ist. Stell dir vor, nach ein paar Jahren stellt sich heraus, dass in deiner Software eine gravierende Sicherheitslücke ist. Nun geht es darum möglichst schnell und zuverlässig diese Lücke zu schließen, auch wenn du nicht mehr weißt, was du dir damals bei der Entwicklung der Software alles gedacht hast. Aus diesem Grund muss Software dokumentiert werden - damit du und andere damit langfristig arbeiten können.</p>
+<p>Dokumentation der Software ist ein zentraler Aspekt der Softwareentwicklung. Sie hilft dabei, dass Software auch nach der Entwicklung noch wartbar und erweiterbar ist. Stell dir vor, nach ein paar Jahren stellt sich heraus, dass in deiner Software eine gravierende Sicherheitslücke ist. Nun geht es darum möglichst schnell und zuverlässig diese Lücke zu schließen, auch wenn du nicht mehr weißt, was du dir damals bei der Entwicklung der Software alles gedacht hast. Aus diesem Grund muss Software dokumentiert werden - damit du und andere damit langfristig arbeiten können.</p>
 <h2>Javadoc</h2>
 <p>Ein wichtiges Tool zur Dokumentation von Java-Programmen ist Javadoc. Javadoc ist das standardisierte Tool zur Erzeugung von API-Dokumentationen aus Java-Quellcode. Eine API-Dokumentation ist eine umfassende Anleitung, die Entwicklern detaillierte Informationen zur Integration und Nutzung einer Programmierschnittstelle bereitstellt, einschließlich Beschreibungen von Endpunkten, Methoden, Parametern, Rückgabewerten und Fehlercodes.</p>
 <h3>Wie funktioniert Javadoc?</h3>
 <p>Die Dokumentation mit Javadoc erfolgt mithilfe von Javadoc Kommentaren im Quellcode. Diese Kommentare enthalten Informationen zu Klassen, Attributen und Methoden. Das Hilfsprogramm javadoc liest den Quellcode und erzeugt daraus HTML-Seiten mit der Dokumentation der Software.</p>
 <h3>Javadoc Kommentare</h3>
-<p>Der Syntax für Javadoc Kommentare ist ein Sonderfall des mehrzeiligen Kommentars in Java und sieht folgendemaßen aus:</p>
+<p>Der Syntax für Javadoc Kommentare ist ein Sonderfall des mehrzeiligen Kommentars in Java und sieht folgendermaßen aus:</p>
 <div class="pre-code">
 <div>
 <pre><code>/**
@@ -401,7 +403,7 @@
 </tbody>
 </table>
 <h3>Javadoc Dokumentation generieren</h3>
-<p><strong>Option 1: Javadoc mithilfe der Koemmandozeile generieren</strong></p>
+<p><strong>Option 1: Javadoc mithilfe der Kommandozeile generieren</strong></p>
 <p>Wechsle in das Verzeichnis, in dem sich dein Quellcode befindet. Führe folgenden Befehl aus, um die Dokumentation zu erstellen:</p>
 <div class="highlighted-code code-style-2 language-markup">
 <div>
