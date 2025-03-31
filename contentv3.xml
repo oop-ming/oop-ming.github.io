@@ -71,7 +71,7 @@
   <string role="key" value="_intendedEndUserRoleType"></string>
   <unicode value=""></unicode>
   <string role="key" value="_isChanged"></string>
-  <bool value="0"></bool>
+  <bool value="1"></bool>
   <string role="key" value="_isTemplate"></string>
   <bool value="0"></bool>
   <string role="key" value="_lang"></string>
@@ -394,7 +394,7 @@ void draw() {
         <list></list>
         <string role="key" value="children"></string>
         <list>
-         <instance class="exe.engine.node.Node" reference="44">
+         <instance class="exe.engine.node.Node" reference="41">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Erste Schritte in Java"></unicode>
@@ -684,7 +684,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="316"></int>
+                        <int value="334"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -698,9 +698,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.45"></unicode>
+                      <unicode value="14_129_2.51"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="46">
+                      <instance class="exe.engine.resource.Resource" reference="43">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -709,7 +709,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -736,7 +736,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="320"></int>
+                        <int value="338"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -750,9 +750,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.46"></unicode>
+                      <unicode value="14_129_2.52"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="47">
+                      <instance class="exe.engine.resource.Resource" reference="44">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -761,7 +761,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2499,7 +2499,7 @@ public void validateInput(int input) throws InvalidInputException {
                                        <string role="key" value="originalicon"></string>
                                        <string value=""></string>
                                        <string role="key" value="parentNode"></string>
-                                       <instance class="exe.engine.node.Node" reference="33">
+                                       <instance class="exe.engine.node.Node" reference="30">
                                         <dictionary>
                                          <string role="key" value="_title"></string>
                                          <unicode value="Polymorphismus"></unicode>
@@ -2604,7 +2604,7 @@ public void validateInput(int input) throws InvalidInputException {
                                               <string role="key" value="originalicon"></string>
                                               <string value=""></string>
                                               <string role="key" value="parentNode"></string>
-                                              <instance class="exe.engine.node.Node" reference="34">
+                                              <instance class="exe.engine.node.Node" reference="31">
                                                <dictionary>
                                                 <string role="key" value="_title"></string>
                                                 <unicode value="Konzeption und Dokumentation"></unicode>
@@ -2647,7 +2647,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2667,7 +2667,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\klassendiagramm_beispiel2.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2687,7 +2687,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="wasserfall.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpnu4b_d.eXe\\previews\\allyourbase\\wasserfall.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\wasserfall.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3059,13 +3059,13 @@ public void validateInput(int input) throws InvalidInputException {
 &lt;p&gt;Wechsle in das Verzeichnis, in dem sich dein Quellcode befindet. Führe folgenden Befehl aus, um die Dokumentation zu erstellen:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code code-style-2 language-markup&quot;&gt;
 &lt;div&gt;
-&lt;pre class=&quot;  language-markup&quot;&gt;&lt;code class=&quot;  language-markup&quot;&gt;javadoc -d doc -sourcepath src -subpackages com.meineprojekt&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;  language-markup&quot;&gt;&lt;code class=&quot;  language-markup&quot;&gt;javadoc -d doc -sourcepath src -subpackages com.meinprojekt&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;-d doc&lt;/span&gt; gibt an, dass die HTML-Dateien im Ordner „doc“ erstellt werden sollen.&lt;/li&gt;
 &lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;-sourcepath src&lt;/span&gt; zeigt den Pfad zu deinem Quellcode.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;-subpackages com.meineprojekt&lt;/span&gt; sorgt dafür, dass alle Unterpakete des angegebenen Pakets dokumentiert werden.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;-subpackages com.meinprojekt&lt;/span&gt; sorgt dafür, dass alle Unterpakete des angegebenen Pakets dokumentiert werden.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Weitere mögliche Optionen, welche du zu diesem Befehl hinzufügen kannst, sind:&lt;/p&gt;
 &lt;ul&gt;
@@ -3204,7 +3204,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="317"></int>
+                                                   <int value="335"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3218,7 +3218,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.13"></unicode>
+                                                 <unicode value="28_127_2.22"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="27"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3237,7 +3237,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="318"></int>
+                                                   <int value="336"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3251,7 +3251,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.14"></unicode>
+                                                 <unicode value="28_127_2.23"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="28"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3270,7 +3270,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="321"></int>
+                                                   <int value="339"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3284,7 +3284,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.15"></unicode>
+                                                 <unicode value="28_127_2.24"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="29"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3306,338 +3306,15 @@ public void validateInput(int input) throws InvalidInputException {
                                             <dictionary>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top"></unicode>
                                              <reference key="17"></reference>
-                                             <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Kapselung#auto_top"></unicode>
-                                             <instance class="exe.engine.node.Node" reference="32">
-                                              <dictionary>
-                                               <string role="key" value="_title"></string>
-                                               <unicode value="Kapselung"></unicode>
-                                               <string role="key" value="idevices"></string>
-                                               <list>
-                                                <instance class="exe.engine.jsidevice.JsIdevice" reference="30">
-                                                 <dictionary>
-                                                  <string role="key" value="_title"></string>
-                                                  <unicode value=""></unicode>
-                                                  <string role="key" value="_attributes"></string>
-                                                  <list>
-                                                   <tuple>
-                                                    <string value="title"></string>
-                                                    <list>
-                                                     <string value="Title"></string>
-                                                     <int value="0"></int>
-                                                     <int value="0"></int>
-                                                    </list>
-                                                   </tuple>
-                                                   <tuple>
-                                                    <string value="category"></string>
-                                                    <list>
-                                                     <string value="Category"></string>
-                                                     <int value="0"></int>
-                                                     <int value="1"></int>
-                                                    </list>
-                                                   </tuple>
-                                                   <tuple>
-                                                    <string value="css-class"></string>
-                                                    <list>
-                                                     <string value="CSS class"></string>
-                                                     <int value="0"></int>
-                                                     <int value="2"></int>
-                                                    </list>
-                                                   </tuple>
-                                                   <tuple>
-                                                    <string value="icon"></string>
-                                                    <list>
-                                                     <string value="Icon"></string>
-                                                     <int value="0"></int>
-                                                     <int value="3"></int>
-                                                    </list>
-                                                   </tuple>
-                                                  </list>
-                                                  <string role="key" value="_author"></string>
-                                                  <string value=""></string>
-                                                  <string role="key" value="_iDeviceDir"></string>
-                                                  <string value="text"></string>
-                                                  <string role="key" value="_purpose"></string>
-                                                  <string value=""></string>
-                                                  <string role="key" value="_tip"></string>
-                                                  <string value=""></string>
-                                                  <string role="key" value="_typeName"></string>
-                                                  <unicode value="Text"></unicode>
-                                                  <string role="key" value="_valid"></string>
-                                                  <bool value="1"></bool>
-                                                  <string role="key" value="class_"></string>
-                                                  <unicode value="text"></unicode>
-                                                  <string role="key" value="edit"></string>
-                                                  <bool value="0"></bool>
-                                                  <string role="key" value="emphasis"></string>
-                                                  <int value="0"></int>
-                                                  <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
-                                                  <int value="1"></int>
-                                                  <string role="key" value="fields"></string>
-                                                  <list>
-                                                   <instance class="exe.engine.field.TextAreaField" reference="31">
-                                                    <dictionary>
-                                                     <string role="key" value="_id"></string>
-                                                     <unicode value="127_2"></unicode>
-                                                     <string role="key" value="_idevice"></string>
-                                                     <reference key="30"></reference>
-                                                     <string role="key" value="_instruc"></string>
-                                                     <string value=""></string>
-                                                     <string role="key" value="_name"></string>
-                                                     <string value=""></string>
-                                                     <string role="key" value="anchor_names"></string>
-                                                     <list></list>
-                                                     <string role="key" value="anchors_linked_from_fields"></string>
-                                                     <dictionary></dictionary>
-                                                     <string role="key" value="content_w_resourcePaths"></string>
-                                                     <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Kapselung und das Prinzip der Datenkapselung&lt;/h1&gt;
-&lt;p&gt;Ein wesentliches Prinzip der objektorientierten Programmierung ist die Kapselung (Encapsulation). Mit ihr werden die inneren Details (Die Daten und das Verhalten) eines Objekts verborgen und nur über definierte Schnittstellen (Methoden) zugänglich gemacht. Dies schützt die Daten vor ungewollten Zugriffen und Manipulationen.&lt;/p&gt;
-&lt;h2&gt;Modifikatoren&lt;/h2&gt;
-&lt;p&gt;Um den Zugriff auf die Attribute und Methoden einer Klasse zu steuern, kommen sogenannte Modifikatoren zum Einsatz. Folgende Modifikatoren regeln, wer auf die Mitglieder einer Klasse (Attribute und Methoden) zugreifen darf:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public:&lt;/span&gt; Mitglieder sind von überall zugreifbar.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private:&lt;/span&gt; Mitglieder sind nur innerhalb der gleichen Klasse sichtbar.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;protected:&lt;/span&gt; Mitglieder sind innerhalb der gleichen Klasse und deren Subklassen zugänglich.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In der Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto&lt;/span&gt; wird beispielsweise das Attribut marke als &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private&lt;/span&gt; deklariert:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; String marke&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Dadurch wird verhindert, dass außerhalb der Klasse direkt darauf zugegriffen wird. Das bedeutet, dass dieses Attribut von außerhalb weder gelesen noch bearbeitet werden darf.&lt;/p&gt;
-&lt;h2&gt;Getter und Setter&lt;/h2&gt;
-&lt;p&gt;Stattdessen werden &lt;strong&gt;Getter- und Setter-Methoden&lt;/strong&gt; angeboten, um kontrolliert Änderungen vorzunehmen. Getter sind dafür da Informationen zu lesen, Setter sind dafür da Informationen zu bearbeiten. Durch die Trennung in Getter und Setter, habe ich die Möglichkeit z.B. das Lesen der Daten durch andere Klassen zu ermöglichen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;(public),&lt;/span&gt; das Ändern der Daten aber nur von innerhalb der Klasse zu emöglichen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;(private).&lt;/span&gt; Setter können außerdem dafür verwendet werden, um Daten zu prüfen oder zu bearbeiten, bevor der alte Wert des Attributs überschrieben wird.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Getter&lt;/strong&gt; sind Methoden, die auf ein bestimmtes Attribut zugreifen und dieses als Rückgabewert zurückgeben&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Setter&lt;/strong&gt; sind Methoden, die einen Wert als Parameter übergeben bekommen, diesen ggf. prüfen oder bearbeiten und dann (bei erfolgreicher Prüfung bzw. nach der Bearbeitung) den Wert einem Attribut zuweisen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Öffentliche Methode zum lesen der Marke&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; String &lt;span class=&quot;token function&quot;&gt;getMarke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; marke&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Öffentliche Methode zum ändern der Marke inkl. Bearbeitung&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setMarke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;String marke&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Hier wird sichergestellt, dass die Marke klein geschrieben wird.&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;marke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; marke&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Mit dieser Technik sorgt man dafür, dass die Objektdaten konsistent bleiben und nicht unbeabsichtigt verändert werden.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;: Student/in&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-   &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Getter-Methode&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getMatrikelnummer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-   &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Setter-Methode&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setMatrikelnummer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Beispiel: Prüfung, dass die Matrikelnummer positiv ist&lt;/span&gt;
-      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;matrikelnummer &lt;span class=&quot;token operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-         &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;matrikelnummer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-         System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Ungültige Matrikelnummer!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;In diesem Beispiel wird überprüft, ob die Matrikelnummer, die an die Methode setMatrikelnummer() übergeben wurde, größer als 0 ist. Falls nicht, wird der Wert nicht verändert und eine Fehlermeldung in der Konsole ausgegeben.&lt;/p&gt;
-&lt;h2&gt;Relevanz von Kapselung&lt;/h2&gt;
-&lt;p&gt;In den einfachen Beispielen, die wir hier in dem Modul behandeln, mag die Wichtigkeit von Kapselung nicht sonderlich groß sein. Bei Softwareprojekten in der Wirtschaft ist dies allerdings enorm wichtig. Wenn keine oder eine schlechte Kapselung in einer Klasse vorliegen, kann das gravierende Folgen haben. &lt;/p&gt;
-&lt;h3&gt;Unbeabsichtigte Datenmanipulation&lt;/h3&gt;
-&lt;p&gt;Ohne angemessene Kapselung können externe Klassen direkt auf interne Daten zugreifen und diese möglicherweise auf unerwünschte Weise verändern.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Bankkonto-Klasse&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Account&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; balance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;deposit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      balance &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;In diesem Fall könnte eine andere Klasse den Kontostand direkt manipulieren:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;Account myAccount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Account&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-myAccount&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;balance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Unerlaubte direkte Manipulation&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Verletzung der Datenintegrität&lt;/h3&gt;
-&lt;p&gt;Ohne Kapselung können Daten in einen ungültigen Zustand versetzt werden, da Validierungslogik umgangen werden kann.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Personenklasse&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Hier könnte ein ungültiges Alter gesetzt werden:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;Person person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Ungültiges Alter&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;Verletzung des Geheimnisprinzips&lt;/h3&gt;
-&lt;p&gt;Ohne Kapselung wird das Innenleben einer Klasse offengelegt, was dem Prinzip der Informationsverbergung widerspricht4.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Datenbankverbindungsklasse&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DatabaseConnection&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; String username&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; String password&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; Connection connection&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.&lt;/p&gt;
-&lt;h1&gt;Abschluss&lt;/h1&gt;
-&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
-&lt;h2&gt;Aufgaben&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Beispiele korrigieren
-&lt;ul&gt;
-&lt;li&gt;Im Abschnitt &quot;Relevanz von Kapselung&quot; wurden drei Negativ-Beispiel für schlechte Kapselung aufgezeigt&lt;/li&gt;
-&lt;li&gt;Passe alle drei Beispiel mithilfe von Modifikatoren, Gettern oder Settern so an, dass eine gute und sinnvolle Kapselung vorliegt.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Fragen&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Erkläre den Begriff der Kapselung und nenne zwei Vorteile, die sich daraus ergeben.&lt;/li&gt;
-&lt;li&gt;Was ist eine Getter und was ist ein Setter?&lt;/li&gt;
-&lt;li&gt;Wozu werden Getter und Setter  eingesetzt?&lt;/li&gt;
-&lt;li&gt;Warum werden Attribute in der Regel als &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private&lt;/span&gt; deklariert und über Getter/Setter zugänglich gemacht?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.
-&lt;ul&gt;
-&lt;li&gt;Ein &lt;strong&gt;Getter&lt;/strong&gt; ist eine öffentliche Funktion, welcher den Wert eines Attributs zurückgibt. Mithilfe eines Getters kann ein reiner Lesezugriff umgesetzt werden.&lt;/li&gt;
-&lt;li&gt;Ein &lt;strong&gt;Setter&lt;/strong&gt; ist eine öffentliche Funktion, welche den Wert eines Attributs ändert. Der Setter ermöglicht die Einbindung einer Überprüfung oder Anpassung des Wertes oder die Ausführung weiterer Aktionen, bevor der Wert geändert wird.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;class OnlineShop {
-
-   private int bestand;
-
-   public in getBestand () {
-      return bestand;
-   }
-
-   public void setBestand (int menge) {
-
-      if (menge &amp;gt;= 0) {
-         bestand = menge;
-      } else {
-         System.out.println(&quot;Bestand darf nicht negativ sein!&quot;);
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Zugriffsmodifikatoren&lt;/strong&gt; (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
-                                                     <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                                                     <int value="4"></int>
-                                                     <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
-                                                     <int value="2"></int>
-                                                     <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
-                                                     <int value="3"></int>
-                                                     <string role="key" value="htmlTag"></string>
-                                                     <string value="div"></string>
-                                                     <string role="key" value="images"></string>
-                                                     <instance class="exe.engine.galleryidevice.GalleryImages">
-                                                      <dictionary>
-                                                       <string role="key" value=".listitems"></string>
-                                                       <list></list>
-                                                       <string role="key" value="idevice"></string>
-                                                       <reference key="31"></reference>
-                                                      </dictionary>
-                                                     </instance>
-                                                     <string role="key" value="intlinks_to_anchors"></string>
-                                                     <dictionary></dictionary>
-                                                     <string role="key" value="nextImageId"></string>
-                                                     <int value="0"></int>
-                                                     <string role="key" value="parentNode"></string>
-                                                     <reference key="32"></reference>
-                                                    </dictionary>
-                                                   </instance>
-                                                  </list>
-                                                  <string role="key" value="icon"></string>
-                                                  <unicode value=""></unicode>
-                                                  <string role="key" value="id"></string>
-                                                  <unicode value="26"></unicode>
-                                                  <string role="key" value="ideviceCategory"></string>
-                                                  <unicode value="Text and Tasks"></unicode>
-                                                  <string role="key" value="lastIdevice"></string>
-                                                  <bool value="0"></bool>
-                                                  <string role="key" value="nextFieldId"></string>
-                                                  <int value="3"></int>
-                                                  <string role="key" value="originalicon"></string>
-                                                  <string value=""></string>
-                                                  <string role="key" value="parentNode"></string>
-                                                  <reference key="32"></reference>
-                                                  <string role="key" value="systemResources"></string>
-                                                  <list></list>
-                                                  <string role="key" value="undo"></string>
-                                                  <bool value="1"></bool>
-                                                  <string role="key" value="userResources"></string>
-                                                  <list></list>
-                                                  <string role="key" value="version"></string>
-                                                  <int value="0"></int>
-                                                 </dictionary>
-                                                </instance>
-                                               </list>
-                                               <string role="key" value="_id"></string>
-                                               <unicode value="17"></unicode>
-                                               <string role="key" value="_package"></string>
-                                               <reference key="4"></reference>
-                                               <string role="key" value="anchor_fields"></string>
-                                               <list></list>
-                                               <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
-                                               <int value="2"></int>
-                                               <string role="key" value="exportType"></string>
-                                               <string value="website"></string>
-                                               <string role="key" value="last_full_node_path"></string>
-                                               <string value="exe-node:Objektorientierte%20Programmierung:Kapselung"></string>
-                                               <string role="key" value="parent"></string>
-                                               <reference key="3"></reference>
-                                               <string role="key" value="top_anchors_linked_from_fields"></string>
-                                               <list>
-                                                <reference key="25"></reference>
-                                               </list>
-                                               <string role="key" value="children"></string>
-                                               <list></list>
-                                              </dictionary>
-                                             </instance>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Polymorphismus#auto_top"></unicode>
-                                             <reference key="33"></reference>
+                                             <reference key="30"></reference>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top"></unicode>
                                              <reference key="21"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="16"></int>
+                                            <int value="25"></int>
                                             <string role="key" value="parentNode"></string>
-                                            <reference key="34"></reference>
+                                            <reference key="31"></reference>
                                            </dictionary>
                                           </instance>
                                          </list>
@@ -4160,7 +3837,7 @@ class Wall implements Drawable {
                                      <string role="key" value="nextImageId"></string>
                                      <int value="0"></int>
                                      <string role="key" value="parentNode"></string>
-                                     <reference key="33"></reference>
+                                     <reference key="30"></reference>
                                     </dictionary>
                                    </instance>
                                    <reference key="25"></reference>
@@ -4175,7 +3852,7 @@ class Wall implements Drawable {
                                 <bool value="1"></bool>
                                 <string role="key" value="userResources"></string>
                                 <list>
-                                 <instance class="exe.engine.resource.Resource" reference="35">
+                                 <instance class="exe.engine.resource.Resource" reference="32">
                                   <dictionary>
                                    <string role="key" value="_idevice"></string>
                                    <reference key="13"></reference>
@@ -4184,7 +3861,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpjlxzo5\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4537,7 +4214,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="319"></int>
+                                     <int value="337"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4551,9 +4228,9 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.20"></unicode>
+                                   <unicode value="16_127_2.23"></unicode>
                                    <string role="key" value="_imageResource"></string>
-                                   <reference key="35"></reference>
+                                   <reference key="32"></reference>
                                    <string role="key" value="_parent"></string>
                                    <reference key="12"></reference>
                                    <string role="key" value="_thumbnailResource"></string>
@@ -4575,7 +4252,7 @@ public class Main {
                                <reference key="17"></reference>
                               </dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="21"></int>
+                              <int value="24"></int>
                               <string role="key" value="parentNode"></string>
                               <reference key="21"></reference>
                              </dictionary>
@@ -4973,13 +4650,13 @@ class MyList implements Sortable {
                     </list>
                     <string role="key" value="children"></string>
                     <list>
-                     <instance class="exe.engine.node.Node" reference="41">
+                     <instance class="exe.engine.node.Node" reference="38">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Packages und API"></unicode>
                        <string role="key" value="idevices"></string>
                        <list>
-                        <instance class="exe.engine.jsidevice.JsIdevice" reference="36">
+                        <instance class="exe.engine.jsidevice.JsIdevice" reference="33">
                          <dictionary>
                           <string role="key" value="_title"></string>
                           <unicode value=""></unicode>
@@ -5040,12 +4717,12 @@ class MyList implements Sortable {
                           <int value="1"></int>
                           <string role="key" value="fields"></string>
                           <list>
-                           <instance class="exe.engine.field.TextAreaField" reference="37">
+                           <instance class="exe.engine.field.TextAreaField" reference="34">
                             <dictionary>
                              <string role="key" value="_id"></string>
                              <unicode value="128_2"></unicode>
                              <string role="key" value="_idevice"></string>
-                             <reference key="36"></reference>
+                             <reference key="33"></reference>
                              <string role="key" value="_instruc"></string>
                              <string value=""></string>
                              <string role="key" value="_name"></string>
@@ -5192,19 +4869,19 @@ import java.util.*;                // Importiert alle Collections
                                <string role="key" value=".listitems"></string>
                                <list></list>
                                <string role="key" value="idevice"></string>
-                               <reference key="37"></reference>
+                               <reference key="34"></reference>
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
                              <dictionary>
                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top"></unicode>
-                              <instance class="exe.engine.node.Node" reference="40">
+                              <instance class="exe.engine.node.Node" reference="37">
                                <dictionary>
                                 <string role="key" value="_title"></string>
                                 <unicode value="Collections und Lambda Ausdrücke"></unicode>
                                 <string role="key" value="idevices"></string>
                                 <list>
-                                 <instance class="exe.engine.jsidevice.JsIdevice" reference="38">
+                                 <instance class="exe.engine.jsidevice.JsIdevice" reference="35">
                                   <dictionary>
                                    <string role="key" value="_title"></string>
                                    <unicode value=""></unicode>
@@ -5265,12 +4942,12 @@ import java.util.*;                // Importiert alle Collections
                                    <int value="1"></int>
                                    <string role="key" value="fields"></string>
                                    <list>
-                                    <instance class="exe.engine.field.TextAreaField" reference="39">
+                                    <instance class="exe.engine.field.TextAreaField" reference="36">
                                      <dictionary>
                                       <string role="key" value="_id"></string>
                                       <unicode value="135_2"></unicode>
                                       <string role="key" value="_idevice"></string>
-                                      <reference key="38"></reference>
+                                      <reference key="35"></reference>
                                       <string role="key" value="_instruc"></string>
                                       <string value=""></string>
                                       <string role="key" value="_name"></string>
@@ -5535,7 +5212,7 @@ public class Main {
                                         <string role="key" value=".listitems"></string>
                                         <list></list>
                                         <string role="key" value="idevice"></string>
-                                        <reference key="39"></reference>
+                                        <reference key="36"></reference>
                                        </dictionary>
                                       </instance>
                                       <string role="key" value="intlinks_to_anchors"></string>
@@ -5543,7 +5220,7 @@ public class Main {
                                       <string role="key" value="nextImageId"></string>
                                       <int value="0"></int>
                                       <string role="key" value="parentNode"></string>
-                                      <reference key="40"></reference>
+                                      <reference key="37"></reference>
                                      </dictionary>
                                     </instance>
                                    </list>
@@ -5560,7 +5237,7 @@ public class Main {
                                    <string role="key" value="originalicon"></string>
                                    <string value=""></string>
                                    <string role="key" value="parentNode"></string>
-                                   <reference key="40"></reference>
+                                   <reference key="37"></reference>
                                    <string role="key" value="systemResources"></string>
                                    <list></list>
                                    <string role="key" value="undo"></string>
@@ -5588,7 +5265,7 @@ public class Main {
                                 <reference key="16"></reference>
                                 <string role="key" value="top_anchors_linked_from_fields"></string>
                                 <list>
-                                 <reference key="37"></reference>
+                                 <reference key="34"></reference>
                                 </list>
                                 <string role="key" value="children"></string>
                                 <list></list>
@@ -5598,7 +5275,7 @@ public class Main {
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="41"></reference>
+                             <reference key="38"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -5615,7 +5292,7 @@ public class Main {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="41"></reference>
+                          <reference key="38"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -5647,13 +5324,13 @@ public class Main {
                        <list></list>
                       </dictionary>
                      </instance>
-                     <instance class="exe.engine.node.Node" reference="45">
+                     <instance class="exe.engine.node.Node" reference="42">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Processing in anderen Klassen nutzen"></unicode>
                        <string role="key" value="idevices"></string>
                        <list>
-                        <instance class="exe.engine.jsidevice.JsIdevice" reference="42">
+                        <instance class="exe.engine.jsidevice.JsIdevice" reference="39">
                          <dictionary>
                           <string role="key" value="_title"></string>
                           <unicode value=""></unicode>
@@ -5714,12 +5391,12 @@ public class Main {
                           <int value="1"></int>
                           <string role="key" value="fields"></string>
                           <list>
-                           <instance class="exe.engine.field.TextAreaField" reference="43">
+                           <instance class="exe.engine.field.TextAreaField" reference="40">
                             <dictionary>
                              <string role="key" value="_id"></string>
                              <unicode value="129_2"></unicode>
                              <string role="key" value="_idevice"></string>
-                             <reference key="42"></reference>
+                             <reference key="39"></reference>
                              <string role="key" value="_instruc"></string>
                              <string value=""></string>
                              <string role="key" value="_name"></string>
@@ -6053,18 +5730,18 @@ public class Ball {
                                <string role="key" value=".listitems"></string>
                                <list></list>
                                <string role="key" value="idevice"></string>
-                               <reference key="43"></reference>
+                               <reference key="40"></reference>
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
                              <dictionary>
                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Erste%20Schritte%20in%20Java#auto_top"></unicode>
-                              <reference key="44"></reference>
+                              <reference key="41"></reference>
                              </dictionary>
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="45"></reference>
+                             <reference key="42"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -6081,7 +5758,7 @@ public class Ball {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="45"></reference>
+                          <reference key="42"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -6118,9 +5795,9 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="47"></int>
+                 <int value="53"></int>
                  <string role="key" value="parentNode"></string>
-                 <reference key="44"></reference>
+                 <reference key="41"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -6137,15 +5814,15 @@ public class Ball {
               <string role="key" value="originalicon"></string>
               <string value=""></string>
               <string role="key" value="parentNode"></string>
-              <reference key="44"></reference>
+              <reference key="41"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="undo"></string>
               <bool value="1"></bool>
               <string role="key" value="userResources"></string>
               <list>
-               <reference key="46"></reference>
-               <reference key="47"></reference>
+               <reference key="43"></reference>
+               <reference key="44"></reference>
               </list>
               <string role="key" value="version"></string>
               <int value="0"></int>
@@ -6168,7 +5845,7 @@ public class Ball {
            <reference key="16"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list>
-            <reference key="43"></reference>
+            <reference key="40"></reference>
            </list>
            <string role="key" value="children"></string>
            <list></list>
@@ -6176,16 +5853,355 @@ public class Ball {
          </instance>
          <reference key="22"></reference>
          <reference key="20"></reference>
-         <reference key="40"></reference>
+         <reference key="37"></reference>
         </list>
        </dictionary>
       </instance>
       <reference key="9"></reference>
-      <reference key="34"></reference>
-      <reference key="32"></reference>
+      <reference key="31"></reference>
+      <instance class="exe.engine.node.Node" reference="47">
+       <dictionary>
+        <string role="key" value="_title"></string>
+        <unicode value="Kapselung"></unicode>
+        <string role="key" value="idevices"></string>
+        <list>
+         <instance class="exe.engine.jsidevice.JsIdevice" reference="45">
+          <dictionary>
+           <string role="key" value="_title"></string>
+           <unicode value=""></unicode>
+           <string role="key" value="_attributes"></string>
+           <list>
+            <tuple>
+             <string value="title"></string>
+             <list>
+              <string value="Title"></string>
+              <int value="0"></int>
+              <int value="0"></int>
+             </list>
+            </tuple>
+            <tuple>
+             <string value="category"></string>
+             <list>
+              <string value="Category"></string>
+              <int value="0"></int>
+              <int value="1"></int>
+             </list>
+            </tuple>
+            <tuple>
+             <string value="css-class"></string>
+             <list>
+              <string value="CSS class"></string>
+              <int value="0"></int>
+              <int value="2"></int>
+             </list>
+            </tuple>
+            <tuple>
+             <string value="icon"></string>
+             <list>
+              <string value="Icon"></string>
+              <int value="0"></int>
+              <int value="3"></int>
+             </list>
+            </tuple>
+           </list>
+           <string role="key" value="_author"></string>
+           <string value=""></string>
+           <string role="key" value="_iDeviceDir"></string>
+           <string value="text"></string>
+           <string role="key" value="_purpose"></string>
+           <string value=""></string>
+           <string role="key" value="_tip"></string>
+           <string value=""></string>
+           <string role="key" value="_typeName"></string>
+           <unicode value="Text"></unicode>
+           <string role="key" value="_valid"></string>
+           <bool value="1"></bool>
+           <string role="key" value="class_"></string>
+           <unicode value="text"></unicode>
+           <string role="key" value="edit"></string>
+           <bool value="0"></bool>
+           <string role="key" value="emphasis"></string>
+           <int value="0"></int>
+           <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
+           <int value="1"></int>
+           <string role="key" value="fields"></string>
+           <list>
+            <instance class="exe.engine.field.TextAreaField" reference="46">
+             <dictionary>
+              <string role="key" value="_id"></string>
+              <unicode value="127_2"></unicode>
+              <string role="key" value="_idevice"></string>
+              <reference key="45"></reference>
+              <string role="key" value="_instruc"></string>
+              <string value=""></string>
+              <string role="key" value="_name"></string>
+              <string value=""></string>
+              <string role="key" value="anchor_names"></string>
+              <list></list>
+              <string role="key" value="anchors_linked_from_fields"></string>
+              <dictionary></dictionary>
+              <string role="key" value="content_w_resourcePaths"></string>
+              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung - Kaffee kochen leicht gemacht&lt;/h1&gt;
+&lt;p&gt;Schauen wir uns ein Gerät an, welches die meisten von euch zu Hause haben: die Kaffeemaschine. Manche nutzen sie (mehrmals) täglich und andere so gut wie nie. Die Bedienung ist recht simpel - und damit ist die Kaffeemaschine ein gutes Beispiel für das Prinzip der Kapselung in der objektorientierten Programmierung:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Äußere Schnittstelle&lt;/strong&gt;: Von außen sieht man nur Knöpfe und den Wassertank. Ich kann also nur bestimmte Aktionen durchführen und Informationen ablesen. Alles, was ich von &quot;außen&quot; machen kann, ist sozusagen die &quot;öffentliche Schnittstelle&quot; der Kaffeemaschine. Der Rest ist mir verborgen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inneres Funktionieren&lt;/strong&gt;: Im Inneren laufen komplexe Prozesse ab: Das Wasser wird erhitzt, der Kaffee wird ggf. gemahlen, das Wasser wird in den Filter gepumpt, ... Diese internen Vorgänge sind uns verborgen. Man hört vielleicht das Aufkochen des Wassers, aber konkrete Einblicke in die technischen Abläufe haben wir nicht. Und wir müssen sie auch nicht haben, da wir ja einfach nur Kaffee haben wollen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Schutz und Kontrolle&lt;/strong&gt;: Ich kann nicht in die Maschine direkt eingreifen. Stattdessen nutze ich die vorgesehenen Einstellungen, welche mir die Maschine zur Verfügung stellt. Das schützt die Maschine vor Fehlfunktionen. Genauso schützt Kapselung den internen Zustand eines Objekts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Kapselung&lt;/strong&gt; (engl.: Encapsulation) ist ein wesentliches Prinzip der objektorientierten Programmierung. &lt;strong&gt;Das Ziel der Kapselung ist es, die Eigenschaften eines Objektes zu verbergen&lt;/strong&gt; und nur diejenigen öffentlich zur Verfügung zu stellen, welche für die Interaktion (mit anderen Objekten, Systemen oder dem Nutzer) relevant sind. Dies schützt die Daten vor ungewollten Zugriffen und Manipulationen.&lt;/p&gt;
+&lt;h2&gt;Modifikatoren&lt;/h2&gt;
+&lt;p&gt;Um den Zugriff auf die Attribute und Methoden einer Klasse zu steuern, kommen sogenannte Modifikatoren zum Einsatz. Folgende Modifikatoren regeln, wer auf die Mitglieder einer Klasse (Attribute und Methoden) zugreifen darf:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public:&lt;/span&gt; Mitglieder sind von überall zugreifbar.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private:&lt;/span&gt; Mitglieder sind nur innerhalb der gleichen Klasse sichtbar.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;protected:&lt;/span&gt; Mitglieder sind innerhalb der gleichen Klasse und deren Subklassen zugänglich.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;default&lt;/em&gt; (auch &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;package-private&lt;/span&gt; genannt): Wenn kein expliziter Modifikator angegeben ist, sind die Mitglieder nur innerhalb ihres Pakets sichtbar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In der Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Auto&lt;/span&gt; wird beispielsweise das Attribut marke als &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private&lt;/span&gt; deklariert:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; String marke&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Dadurch wird verhindert, dass außerhalb der Klasse direkt darauf zugegriffen wird. Das bedeutet, dass dieses Attribut von außerhalb weder gelesen noch bearbeitet werden darf.&lt;/p&gt;
+&lt;h2&gt;Getter und Setter&lt;/h2&gt;
+&lt;p&gt;Stattdessen werden &lt;strong&gt;Getter- und Setter-Methoden&lt;/strong&gt; angeboten, um kontrolliert Änderungen vorzunehmen. Getter sind dafür da Informationen zu lesen, Setter sind dafür da Informationen zu bearbeiten. Durch die Trennung in Getter und Setter, habe ich die Möglichkeit z.B. das Lesen der Daten durch andere Klassen zu ermöglichen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;(public),&lt;/span&gt; das Ändern der Daten aber nur von innerhalb der Klasse zu ermöglichen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;(private).&lt;/span&gt; Setter können außerdem dafür verwendet werden, um Daten zu prüfen oder zu bearbeiten, bevor der alte Wert des Attributs überschrieben wird.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Getter&lt;/strong&gt; sind Methoden, die auf ein bestimmtes Attribut zugreifen und dieses als Rückgabewert zurückgeben&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Setter&lt;/strong&gt; sind Methoden, die einen Wert als Parameter übergeben bekommen, diesen ggf. prüfen oder bearbeiten und dann (bei erfolgreicher Prüfung bzw. nach der Bearbeitung) den Wert einem Attribut zuweisen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Öffentliche Methode zum lesen der Marke&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; String &lt;span class=&quot;token function&quot;&gt;getMarke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; marke&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Öffentliche Methode zum ändern der Marke inkl. Bearbeitung&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setMarke&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;String marke&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Hier wird sichergestellt, dass die Marke klein geschrieben wird.&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;marke &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; marke&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Mit dieser Technik sorgt man dafür, dass die Objektdaten konsistent bleiben und nicht unbeabsichtigt verändert werden.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;: Student/in&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+   &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Getter-Methode&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getMatrikelnummer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Setter-Methode&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setMatrikelnummer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Beispiel: Prüfung, dass die Matrikelnummer positiv ist&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;matrikelnummer &lt;span class=&quot;token operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;matrikelnummer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; matrikelnummer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+         System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Ungültige Matrikelnummer!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In diesem Beispiel wird überprüft, ob die Matrikelnummer, die an die Methode setMatrikelnummer() übergeben wurde, größer als 0 ist. Falls nicht, wird der Wert nicht verändert und eine Fehlermeldung in der Konsole ausgegeben.&lt;/p&gt;
+&lt;h2&gt;Relevanz von Kapselung&lt;/h2&gt;
+&lt;p&gt;Kapselung sorgt dafür, dass die Sichtbarkeit von Daten sicher und sinnvoll geregelt ist. Wenn keine oder schlechte Kapselung vorliegt, kann dies unterschiedliche Folgen haben.&lt;/p&gt;
+&lt;h3&gt;Unbeabsichtigte Datenmanipulation&lt;/h3&gt;
+&lt;p&gt;Ohne angemessene Kapselung können externe Klassen direkt auf interne Daten zugreifen und diese möglicherweise auf unerwünschte Weise verändern.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Bankkonto-Klasse&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;public class Bankkonto {&lt;br /&gt;    // Öffentlicher Kontostand
+    public int kontostand;
+
+    // Öffentliche Methode abheben ermöglicht
+    // ungeschützten Zugriff
+    public void abheben (int menge) {
+        kontostand += menge;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In diesem Fall könnte eine andere Klasse den Kontostand direkt manipulieren:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;Bankkonto konto = new Bankkonto();
+        
+// Unerlaubte direkte Manipulation
+konto.kontostand = 1000000;
+konto.abheben(500000);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Verletzung der Datenintegrität&lt;/h3&gt;
+&lt;p&gt;Ohne Kapselung können Daten in einen ungültigen Zustand versetzt werden, da Validierung umgangen werden kann.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Personenklasse&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; alter&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Hier könnte ein ungültiges Alter gesetzt werden:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;Person person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+person&lt;span class=&quot;token punctuation&quot;&gt;.alter&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Ungültiges Alter&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Verletzung des Geheimnisprinzips&lt;/h3&gt;
+&lt;p&gt;Ohne Kapselung wird das Innenleben einer Klasse offengelegt, was dem Prinzip der Informationsverbergung widerspricht.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Datenbankverbindungsklasse&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre class=&quot;  language-java&quot;&gt;&lt;code class=&quot;  language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Datenbankverbindung&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; String nutzername&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; String passwort&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; Connection verbindung&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;Datenbankverbindung datenbankverbindung = new Datenbankverbindung();
+System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Beispiele korrigieren
+&lt;ul&gt;
+&lt;li&gt;Im Abschnitt &quot;Relevanz von Kapselung&quot; wurden drei Negativ-Beispiele für schlechte Kapselung aufgezeigt&lt;/li&gt;
+&lt;li&gt;Passe alle drei Beispiele mithilfe von Modifikatoren, Gettern oder Settern so an, dass eine gute und sinnvolle Kapselung vorliegt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fragen&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Erkläre den Begriff der Kapselung und nenne zwei Vorteile, die sich daraus ergeben.&lt;/li&gt;
+&lt;li&gt;Was ist eine Getter und was ist ein Setter?&lt;/li&gt;
+&lt;li&gt;Wozu werden Getter und Setter eingesetzt?&lt;/li&gt;
+&lt;li&gt;Warum werden Attribute in der Regel als &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private&lt;/span&gt; deklariert und über Getter/Setter zugänglich gemacht?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kapselung verbirgt die internen Details eines Objekts und sorgt für kontrollierten Zugriff über Getter und Setter.
+&lt;ul&gt;
+&lt;li&gt;Ein &lt;strong&gt;Getter&lt;/strong&gt; ist eine öffentliche Funktion, welcher den Wert eines Attributs zurückgibt. Mithilfe eines Getters kann ein reiner Lesezugriff umgesetzt werden.&lt;/li&gt;
+&lt;li&gt;Ein &lt;strong&gt;Setter&lt;/strong&gt; ist eine öffentliche Funktion, welche den Wert eines Attributs ändert. Der Setter ermöglicht die Einbindung einer Überprüfung oder Anpassung des Wertes oder die Ausführung weiterer Aktionen, bevor der Wert geändert wird.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;class OnlineShop {
+
+   private int bestand;
+
+   public in getBestand () {
+      return bestand;
+   }
+
+   public void setBestand (int menge) {
+
+      if (menge &amp;gt;= 0) {
+         bestand = menge;
+      } else {
+         System.out.println(&quot;Bestand darf nicht negativ sein!&quot;);
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zugriffsmodifikatoren&lt;/strong&gt; (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
+              <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+              <int value="4"></int>
+              <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+              <int value="2"></int>
+              <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+              <int value="3"></int>
+              <string role="key" value="htmlTag"></string>
+              <string value="div"></string>
+              <string role="key" value="images"></string>
+              <instance class="exe.engine.galleryidevice.GalleryImages">
+               <dictionary>
+                <string role="key" value=".listitems"></string>
+                <list></list>
+                <string role="key" value="idevice"></string>
+                <reference key="46"></reference>
+               </dictionary>
+              </instance>
+              <string role="key" value="intlinks_to_anchors"></string>
+              <dictionary></dictionary>
+              <string role="key" value="nextImageId"></string>
+              <int value="0"></int>
+              <string role="key" value="parentNode"></string>
+              <reference key="47"></reference>
+             </dictionary>
+            </instance>
+           </list>
+           <string role="key" value="icon"></string>
+           <unicode value=""></unicode>
+           <string role="key" value="id"></string>
+           <unicode value="26"></unicode>
+           <string role="key" value="ideviceCategory"></string>
+           <unicode value="Text and Tasks"></unicode>
+           <string role="key" value="lastIdevice"></string>
+           <bool value="0"></bool>
+           <string role="key" value="nextFieldId"></string>
+           <int value="3"></int>
+           <string role="key" value="originalicon"></string>
+           <string value=""></string>
+           <string role="key" value="parentNode"></string>
+           <reference key="47"></reference>
+           <string role="key" value="systemResources"></string>
+           <list></list>
+           <string role="key" value="undo"></string>
+           <bool value="1"></bool>
+           <string role="key" value="userResources"></string>
+           <list></list>
+           <string role="key" value="version"></string>
+           <int value="0"></int>
+          </dictionary>
+         </instance>
+        </list>
+        <string role="key" value="_id"></string>
+        <unicode value="17"></unicode>
+        <string role="key" value="_package"></string>
+        <reference key="4"></reference>
+        <string role="key" value="anchor_fields"></string>
+        <list></list>
+        <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+        <int value="2"></int>
+        <string role="key" value="exportType"></string>
+        <string value="website"></string>
+        <string role="key" value="last_full_node_path"></string>
+        <string value="exe-node:Objektorientierte%20Programmierung:Kapselung"></string>
+        <string role="key" value="parent"></string>
+        <reference key="3"></reference>
+        <string role="key" value="top_anchors_linked_from_fields"></string>
+        <list>
+         <reference key="25"></reference>
+        </list>
+        <string role="key" value="children"></string>
+        <list></list>
+       </dictionary>
+      </instance>
       <reference key="21"></reference>
       <reference key="17"></reference>
-      <reference key="33"></reference>
+      <reference key="30"></reference>
       <instance class="exe.engine.node.Node" reference="50">
        <dictionary>
         <string role="key" value="_title"></string>
@@ -6810,23 +6826,23 @@ public class Main {
    <unicode role="key" value="11"></unicode>
    <reference key="21"></reference>
    <unicode role="key" value="15"></unicode>
-   <reference key="44"></reference>
+   <reference key="41"></reference>
    <unicode role="key" value="16"></unicode>
    <reference key="22"></reference>
    <unicode role="key" value="17"></unicode>
-   <reference key="32"></reference>
+   <reference key="47"></reference>
    <unicode role="key" value="19"></unicode>
-   <reference key="34"></reference>
+   <reference key="31"></reference>
    <unicode role="key" value="2"></unicode>
    <reference key="16"></reference>
    <unicode role="key" value="21"></unicode>
-   <reference key="41"></reference>
+   <reference key="38"></reference>
    <unicode role="key" value="22"></unicode>
-   <reference key="45"></reference>
+   <reference key="42"></reference>
    <unicode role="key" value="3"></unicode>
    <reference key="9"></reference>
    <unicode role="key" value="4"></unicode>
-   <reference key="33"></reference>
+   <reference key="30"></reference>
    <unicode role="key" value="5"></unicode>
    <reference key="17"></reference>
    <unicode role="key" value="6"></unicode>
@@ -6834,7 +6850,7 @@ public class Main {
    <unicode role="key" value="7"></unicode>
    <reference key="20"></reference>
    <unicode role="key" value="8"></unicode>
-   <reference key="40"></reference>
+   <reference key="37"></reference>
   </dictionary>
   <string role="key" value="_objectives"></string>
   <unicode value=""></unicode>
@@ -6848,15 +6864,15 @@ public class Main {
    <reference key="17"></reference>
    <reference key="9"></reference>
    <reference key="21"></reference>
-   <reference key="44"></reference>
-   <reference key="32"></reference>
-   <reference key="33"></reference>
-   <reference key="40"></reference>
+   <reference key="41"></reference>
+   <reference key="47"></reference>
+   <reference key="30"></reference>
+   <reference key="37"></reference>
   </list>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="34"></reference>
+  <reference key="47"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -7892,15 +7908,15 @@ public class Main {
   <dictionary>
    <string role="key" value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
    <list>
-    <reference key="35"></reference>
+    <reference key="32"></reference>
    </list>
    <string role="key" value="6223868330388650cebfa7b04d03fdc2"></string>
    <list>
-    <reference key="46"></reference>
+    <reference key="43"></reference>
    </list>
    <string role="key" value="749e23d9d9de65b7413b560ab94fac35"></string>
    <list>
-    <reference key="47"></reference>
+    <reference key="44"></reference>
    </list>
    <string role="key" value="9204c0b50abec03c0414d7426fbd5a7a"></string>
    <list>

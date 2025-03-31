@@ -60,14 +60,21 @@
 <article class="iDevice_wrapper textIdevice" id="id26">
 <div class="iDevice emphasis0" >
 <div id="ta26_127_2" class="block iDevice_content">
-<div class="exe-text"><h1>Kapselung und das Prinzip der Datenkapselung</h1>
-<p>Ein wesentliches Prinzip der objektorientierten Programmierung ist die Kapselung (Encapsulation). Mit ihr werden die inneren Details (Die Daten und das Verhalten) eines Objekts verborgen und nur über definierte Schnittstellen (Methoden) zugänglich gemacht. Dies schützt die Daten vor ungewollten Zugriffen und Manipulationen.</p>
+<div class="exe-text"><h1>Einführung - Kaffee kochen leicht gemacht</h1>
+<p>Schauen wir uns ein Gerät an, welches die meisten von euch zu Hause haben: die Kaffeemaschine. Manche nutzen sie (mehrmals) täglich und andere so gut wie nie. Die Bedienung ist recht simpel - und damit ist die Kaffeemaschine ein gutes Beispiel für das Prinzip der Kapselung in der objektorientierten Programmierung:</p>
+<ul>
+<li><strong>Äußere Schnittstelle</strong>: Von außen sieht man nur Knöpfe und den Wassertank. Ich kann also nur bestimmte Aktionen durchführen und Informationen ablesen. Alles, was ich von "außen" machen kann, ist sozusagen die "öffentliche Schnittstelle" der Kaffeemaschine. Der Rest ist mir verborgen.</li>
+<li><strong>Inneres Funktionieren</strong>: Im Inneren laufen komplexe Prozesse ab: Das Wasser wird erhitzt, der Kaffee wird ggf. gemahlen, das Wasser wird in den Filter gepumpt, ... Diese internen Vorgänge sind uns verborgen. Man hört vielleicht das Aufkochen des Wassers, aber konkrete Einblicke in die technischen Abläufe haben wir nicht. Und wir müssen sie auch nicht haben, da wir ja einfach nur Kaffee haben wollen.</li>
+<li><strong>Schutz und Kontrolle</strong>: Ich kann nicht in die Maschine direkt eingreifen. Stattdessen nutze ich die vorgesehenen Einstellungen, welche mir die Maschine zur Verfügung stellt. Das schützt die Maschine vor Fehlfunktionen. Genauso schützt Kapselung den internen Zustand eines Objekts.</li>
+</ul>
+<p><strong>Kapselung</strong> (engl.: Encapsulation) ist ein wesentliches Prinzip der objektorientierten Programmierung. <strong>Das Ziel der Kapselung ist es, die Eigenschaften eines Objektes zu verbergen</strong> und nur diejenigen öffentlich zur Verfügung zu stellen, welche für die Interaktion (mit anderen Objekten, Systemen oder dem Nutzer) relevant sind. Dies schützt die Daten vor ungewollten Zugriffen und Manipulationen.</p>
 <h2>Modifikatoren</h2>
 <p>Um den Zugriff auf die Attribute und Methoden einer Klasse zu steuern, kommen sogenannte Modifikatoren zum Einsatz. Folgende Modifikatoren regeln, wer auf die Mitglieder einer Klasse (Attribute und Methoden) zugreifen darf:</p>
 <ul>
 <li><span style="font-family: andale mono, monospace;">public:</span> Mitglieder sind von überall zugreifbar.</li>
 <li><span style="font-family: andale mono, monospace;">private:</span> Mitglieder sind nur innerhalb der gleichen Klasse sichtbar.</li>
 <li><span style="font-family: andale mono, monospace;">protected:</span> Mitglieder sind innerhalb der gleichen Klasse und deren Subklassen zugänglich.</li>
+<li><em>default</em> (auch <span style="font-family: andale mono, monospace;">package-private</span> genannt): Wenn kein expliziter Modifikator angegeben ist, sind die Mitglieder nur innerhalb ihres Pakets sichtbar.</li>
 </ul>
 <p>In der Klasse <span style="font-family: andale mono, monospace;">Auto</span> wird beispielsweise das Attribut marke als <span style="font-family: andale mono, monospace;">private</span> deklariert:</p>
 <div class="highlighted-code language-java">
@@ -77,7 +84,7 @@
 </div>
 <p>Dadurch wird verhindert, dass außerhalb der Klasse direkt darauf zugegriffen wird. Das bedeutet, dass dieses Attribut von außerhalb weder gelesen noch bearbeitet werden darf.</p>
 <h2>Getter und Setter</h2>
-<p>Stattdessen werden <strong>Getter- und Setter-Methoden</strong> angeboten, um kontrolliert Änderungen vorzunehmen. Getter sind dafür da Informationen zu lesen, Setter sind dafür da Informationen zu bearbeiten. Durch die Trennung in Getter und Setter, habe ich die Möglichkeit z.B. das Lesen der Daten durch andere Klassen zu ermöglichen <span style="font-family: andale mono, monospace;">(public),</span> das Ändern der Daten aber nur von innerhalb der Klasse zu emöglichen <span style="font-family: andale mono, monospace;">(private).</span> Setter können außerdem dafür verwendet werden, um Daten zu prüfen oder zu bearbeiten, bevor der alte Wert des Attributs überschrieben wird.</p>
+<p>Stattdessen werden <strong>Getter- und Setter-Methoden</strong> angeboten, um kontrolliert Änderungen vorzunehmen. Getter sind dafür da Informationen zu lesen, Setter sind dafür da Informationen zu bearbeiten. Durch die Trennung in Getter und Setter, habe ich die Möglichkeit z.B. das Lesen der Daten durch andere Klassen zu ermöglichen <span style="font-family: andale mono, monospace;">(public),</span> das Ändern der Daten aber nur von innerhalb der Klasse zu ermöglichen <span style="font-family: andale mono, monospace;">(private).</span> Setter können außerdem dafür verwendet werden, um Daten zu prüfen oder zu bearbeiten, bevor der alte Wert des Attributs überschrieben wird.</p>
 <ul>
 <li><strong>Getter</strong> sind Methoden, die auf ein bestimmtes Attribut zugreifen und dieses als Rückgabewert zurückgeben</li>
 <li><strong>Setter</strong> sind Methoden, die einen Wert als Parameter übergeben bekommen, diesen ggf. prüfen oder bearbeiten und dann (bei erfolgreicher Prüfung bzw. nach der Bearbeitung) den Wert einem Attribut zuweisen.</li>
@@ -122,35 +129,40 @@
 </div>
 <p>In diesem Beispiel wird überprüft, ob die Matrikelnummer, die an die Methode setMatrikelnummer() übergeben wurde, größer als 0 ist. Falls nicht, wird der Wert nicht verändert und eine Fehlermeldung in der Konsole ausgegeben.</p>
 <h2>Relevanz von Kapselung</h2>
-<p>In den einfachen Beispielen, die wir hier in dem Modul behandeln, mag die Wichtigkeit von Kapselung nicht sonderlich groß sein. Bei Softwareprojekten in der Wirtschaft ist dies allerdings enorm wichtig. Wenn keine oder eine schlechte Kapselung in einer Klasse vorliegen, kann das gravierende Folgen haben. </p>
+<p>Kapselung sorgt dafür, dass die Sichtbarkeit von Daten sicher und sinnvoll geregelt ist. Wenn keine oder schlechte Kapselung vorliegt, kann dies unterschiedliche Folgen haben.</p>
 <h3>Unbeabsichtigte Datenmanipulation</h3>
 <p>Ohne angemessene Kapselung können externe Klassen direkt auf interne Daten zugreifen und diese möglicherweise auf unerwünschte Weise verändern.</p>
 <p><strong>Beispiel:</strong> Bankkonto-Klasse</p>
 <div class="highlighted-code language-java">
 <div>
-<pre class="  language-java"><code class="  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Account</span> <span class="token punctuation">{</span>
-   <span class="token keyword">public</span> <span class="token keyword">int</span> balance<span class="token punctuation">;</span>
+<pre class="  language-java"><code class="  language-java">public class Bankkonto {<br />    // Öffentlicher Kontostand
+    public int kontostand;
 
-   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">deposit</span><span class="token punctuation">(</span><span class="token keyword">int</span> amount<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      balance <span class="token operator">+=</span> amount<span class="token punctuation">;</span>
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+    // Öffentliche Methode abheben ermöglicht
+    // ungeschützten Zugriff
+    public void abheben (int menge) {
+        kontostand += menge;
+    }
+}</code></pre>
 </div>
 </div>
 <p>In diesem Fall könnte eine andere Klasse den Kontostand direkt manipulieren:</p>
 <div class="highlighted-code language-java">
 <div>
-<pre class="  language-java"><code class="  language-java">Account myAccount <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Account</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-myAccount<span class="token punctuation">.</span>balance <span class="token operator">=</span> <span class="token number">1000000</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Unerlaubte direkte Manipulation</span></code></pre>
+<pre class="  language-java"><code class="  language-java">Bankkonto konto = new Bankkonto();
+        
+// Unerlaubte direkte Manipulation
+konto.kontostand = 1000000;
+konto.abheben(500000);</code></pre>
 </div>
 </div>
 <h3>Verletzung der Datenintegrität</h3>
-<p>Ohne Kapselung können Daten in einen ungültigen Zustand versetzt werden, da Validierungslogik umgangen werden kann.</p>
+<p>Ohne Kapselung können Daten in einen ungültigen Zustand versetzt werden, da Validierung umgangen werden kann.</p>
 <p><strong>Beispiel:</strong> Personenklasse</p>
 <div class="highlighted-code language-java">
 <div>
 <pre class="  language-java"><code class="  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
-   <span class="token keyword">public</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> <span class="token keyword">int</span> alter<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
 </div>
 </div>
@@ -158,30 +170,36 @@ myAccount<span class="token punctuation">.</span>balance <span class="token oper
 <div class="highlighted-code language-java">
 <div>
 <pre class="  language-java"><code class="  language-java">Person person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-person<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Ungültiges Alter</span></code></pre>
+person<span class="token punctuation">.alter</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Ungültiges Alter</span></code></pre>
 </div>
 </div>
 <h3>Verletzung des Geheimnisprinzips</h3>
-<p>Ohne Kapselung wird das Innenleben einer Klasse offengelegt, was dem Prinzip der Informationsverbergung widerspricht4.</p>
+<p>Ohne Kapselung wird das Innenleben einer Klasse offengelegt, was dem Prinzip der Informationsverbergung widerspricht.</p>
 <p><strong>Beispiel:</strong> Datenbankverbindungsklasse</p>
 <div class="highlighted-code language-java">
 <div>
-<pre class="  language-java"><code class="  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DatabaseConnection</span> <span class="token punctuation">{</span>
-   <span class="token keyword">public</span> String username<span class="token punctuation">;</span>
-   <span class="token keyword">public</span> String password<span class="token punctuation">;</span>
-   <span class="token keyword">public</span> Connection connection<span class="token punctuation">;</span>
+<pre class="  language-java"><code class="  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Datenbankverbindung</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> String nutzername<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> String passwort<span class="token punctuation">;</span>
+   <span class="token keyword">public</span> Connection verbindung<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
 </div>
 </div>
 <p>Sensible Informationen wie Benutzername und Passwort sind hier direkt zugänglich.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>Datenbankverbindung datenbankverbindung = new Datenbankverbindung();
+System.out.println(datenbankverbindung.passwort);</code></pre>
+</div>
+</div>
 <h1>Abschluss</h1>
 <div class="exe-fx exe-accordion">
 <h2>Aufgaben</h2>
 <ul>
 <li><strong>Aufgabe 1</strong>: Beispiele korrigieren
 <ul>
-<li>Im Abschnitt "Relevanz von Kapselung" wurden drei Negativ-Beispiel für schlechte Kapselung aufgezeigt</li>
-<li>Passe alle drei Beispiel mithilfe von Modifikatoren, Gettern oder Settern so an, dass eine gute und sinnvolle Kapselung vorliegt.</li>
+<li>Im Abschnitt "Relevanz von Kapselung" wurden drei Negativ-Beispiele für schlechte Kapselung aufgezeigt</li>
+<li>Passe alle drei Beispiele mithilfe von Modifikatoren, Gettern oder Settern so an, dass eine gute und sinnvolle Kapselung vorliegt.</li>
 </ul>
 </li>
 </ul>
@@ -189,7 +207,7 @@ person<span class="token punctuation">.</span>age <span class="token operator">=
 <ol>
 <li>Erkläre den Begriff der Kapselung und nenne zwei Vorteile, die sich daraus ergeben.</li>
 <li>Was ist eine Getter und was ist ein Setter?</li>
-<li>Wozu werden Getter und Setter  eingesetzt?</li>
+<li>Wozu werden Getter und Setter eingesetzt?</li>
 <li>Warum werden Attribute in der Regel als <span style="font-family: andale mono, monospace;">private</span> deklariert und über Getter/Setter zugänglich gemacht?</li>
 </ol>
 <h2>Zusammenfassung</h2>
@@ -241,4 +259,4 @@ person<span class="token punctuation">.</span>age <span class="token operator">=
 </nav>
 </div>
 </div>
-<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
