@@ -61,7 +61,7 @@
 <div class="iDevice emphasis0" >
 <div id="ta5_132_2" class="block iDevice_content">
 <div class="exe-text"><h1>Einführung - Abstraktion</h1>
-<p>Abstraktion ist ein Vorgang, bestehen aus dem Weglassen von Einzelheiten und dem Überführen in etwas Allgemeines. Im Attag führen wir Abstraktion eigentlich immer dann aus, wenn wir Dinge kategorieseren. Wir nehmen eine Reihe von Dingen, schauen, welche Eigenschaften diese Dinge gemeinsam haben und fassen sie dann in einer Kategorie oder Klasse zusammen. Die Kategorie ist eine Abstraktion der einzelnen Dinge. In unserem Tierbeispiel aus dem Kapitel <a href="vererbung.html">Vererbung</a> sind wir bereits der Abstraktion begegnet: Hund, Katze und Wal haben wir alle der Kategorie oder Klasse Säugetier zugeordnet. Die Klasse Säugtier ist somit eine Abstraktion von Hund, Katze und Wal. Wir lassen ein paar Details weg und überführen Hund, Katze und Wal in etwas allgemeineres. Säugtier, Vogel, Reptil und Fisch haben wir der Klasse Tier zugeordnet - eine Klasse die noch abstrakter ist und weniger Details enthält.</p>
+<p>Abstraktion ist ein Vorgang, bestehen aus dem Weglassen von Einzelheiten und dem Überführen in etwas Allgemeines. Im Alltag führen wir Abstraktion eigentlich immer dann aus, wenn wir Dinge kategorisieren. Wir nehmen eine Reihe von Dingen, schauen, welche Eigenschaften diese Dinge gemeinsam haben und fassen sie dann in einer Kategorie oder Klasse zusammen. Die Kategorie ist eine Abstraktion der einzelnen Dinge. In unserem Tierbeispiel aus dem Kapitel <a href="vererbung.html">Vererbung</a> sind wir bereits der Abstraktion begegnet: Hund, Katze und Wal haben wir alle der Kategorie oder Klasse Säugetier zugeordnet. Die Klasse Säugetier ist somit eine Abstraktion von Hund, Katze und Wal. Wir lassen ein paar Details weg und überführen Hund, Katze und Wal in etwas allgemeineres. Säugetier, Vogel, Reptil und Fisch haben wir der Klasse Tier zugeordnet - eine Klasse die noch abstrakter ist und weniger Details enthält.</p>
 <p>Abstraktion ist ein zentrales Prinzip der objektorientierten Programmierung, das schon in den bisherigen Kapiteln sichtbar wurde. Mithilfe von abstrakten Klassen und Interfaces ist es möglich gemeinsame Eigenschaften und gemeinsames Verhalten festzulegen, ohne dass jedes Detail explizit implementiert werden muss.</p>
 <p>In diesem Kapitel lernst du</p>
 <ul>
@@ -71,17 +71,17 @@
 <li>Die Stärken und Schwächen von Interfaces und abstrakten Klassen.</li>
 </ul>
 <h1>Abstrakte Klassen</h1>
-<p>Während eine Klasse ein konkreter Bauplan für ein Objekt ist, ist eine abstrakte Klasse eher eine Vorlage für ein Bauplan für ein Objekt. Aus der Vorlage selber kann kein Objekt erstellt werden, da wichtige Details fehlen. Stell dir das vor, wie bei einem Unternehmen, das Häuser baut. Im Katalog des Unternehmens sind ein paar Standard-Grundrisse, welche definieren, wie die Räume aufgeteilt sind, wo Fenster und Türen sein können und wo das Treppenhaus ist. Aus diesem Standard-Grundriss kann man aber kein Haus bauen, da die Kunden noch festlegen müssen, welche Türen sie genau möchten, ob sie lieber ein großes, breites Fenster haben möchten oder 2 kleine, welche Art von Treppe eingebaut werden soll, etc. Sobald das alles festgelegt ist, liegt ein fertiger konkreter Bauplan vor, mit dem ein Haus gebaut werden kann.</p>
+<p>Während eine Klasse ein konkreter Bauplan für ein Objekt ist, ist eine abstrakte Klasse eher eine <em>Vorlage</em> für einen Bauplan für ein Objekt. Aus der Vorlage selber kann kein Objekt erstellt werden, da wichtige Details fehlen. Stell dir das vor, wie bei einem Unternehmen, das Häuser baut. Im Katalog des Unternehmens sind ein paar Standard-Grundrisse, welche definieren, wie die Räume aufgeteilt sind, wo Fenster und Türen sein können und wo das Treppenhaus ist. Aus diesem Standard-Grundriss kann man aber kein Haus bauen, da die Kunden noch festlegen müssen, welche Türen sie genau möchten, ob sie lieber ein großes, breites Fenster haben möchten oder 2 kleine, welche Art von Treppe eingebaut werden soll, etc. Sobald das alles festgelegt ist, liegt ein fertiger konkreter Bauplan vor, mit dem ein Haus gebaut werden kann.</p>
 <p><strong>Definition und Eigenschaften</strong></p>
 <ul>
 <li>Eine abstrakte Klasse kann sowohl abstrakte Methoden (ohne Implementierung) als auch konkrete Methoden (mit Implementierung) enthalten.</li>
 <li>Sie kann nicht <em>direkt</em> instanziiert werden. Das bedeutet, es ist nicht möglich, ein Objekt direkt von einer abstrakten Klasse zu erzeugen, sondern nur von ihren konkreten Subklassen.</li>
-<li>Abstrakte Klassen ermöglichen es, Gemeinsames zentral zu definieren und gleichzeitig den Subklassen den Freiraum zu lassen, spezialisierte Implementierungen zu liefern.</li>
+<li>Abstrakte Klassen ermöglichen es, gemeinsames zentral zu definieren und gleichzeitig den Subklassen den Freiraum zu lassen, spezialisierte Implementierungen zu liefern.</li>
 </ul>
 <p><strong>Syntax</strong></p>
 <ul>
 <li>Abstrakte Klassen werden definiert, in dem man den Modifikator <span style="font-family: andale mono, monospace;">abstract</span> vor das Schlüsselwort <span style="font-family: andale mono, monospace;">class</span> setzt</li>
-<li>Abstrakte Methoden werden definiert, in dem den Modifikator <span style="font-family: andale mono, monospace;">abstract</span> von den Rückgabetyp setzt und den Codeblock {} weglässt. <br />
+<li>Abstrakte Methoden werden definiert, in dem den Modifikator <span style="font-family: andale mono, monospace;">abstract</span> vor den Rückgabetyp setzt und den Codeblock {} weglässt. <br />
 <ul>
 <li>Dies wird auch als <strong>Methodensignatur</strong> bezeichnet: Sie definiert Rückgabetyp, Name und Anzahl und Reihenfolge der Parameter.</li>
 </ul>
@@ -134,10 +134,10 @@ class Hund extends Saeugetier {
 </div>
 </div>
 <p>In diesem Beispiel dient die abstrakte Klasse <span style="font-family: andale mono, monospace;">Tier</span> dazu, einen Rahmen vorzugeben, ohne sich auf eine spezifische Implementation des Geräuschmachens festzulegen. Jede Tierart kann dann ihre eigene Variante implementieren – so bleibt der Code flexibel und übersichtlich.</p>
-<p>Abstrakte Klassen nutzen das Prinzip der <strong>Kategorisierung</strong> bzw. <strong>Klassifizierung</strong>. In dem Tier-Beispiel wird das gut sichtbar: Ein konkreter Hund (Objekt) gehört zu der Klasse der Hunde, die Klasse Hund gehört zur Klasse der Säugetiere und die Klasse Säugetiere gehört zu der Klasse Tier. Je "höher" man in dieser Klasifizierung geht, desto abstraker werden die Klassen. Hier sind Klassifikation und Abstraktion eng miteinander verbunden.</p>
+<p>Abstrakte Klassen nutzen das Prinzip der <strong>Kategorisierung</strong> bzw. <strong>Klassifizierung</strong>. In dem Tier-Beispiel wird das gut sichtbar: Ein konkreter Hund (Objekt) gehört zu der Klasse der Hunde, die Klasse Hund gehört zur Klasse der Säugetiere und die Klasse Säugetiere gehört zu der Klasse Tier. Je "höher" man in dieser Klassifizierung geht, desto abstrakter werden die Klassen. Hier sind Klassifikation und Abstraktion eng miteinander verbunden.</p>
 <h1>Interfaces</h1>
-<p>Interfaces sind eine Struktur, die es ebenfalls ermöglicht Abstraktion im Code umzusetzen - aber <em>ohne</em> Klassifikation. Das bedeutet ein Interface kann abstrakte Methoden definieren und Eigenschaften festlegen, ohne dass diese zu einer konkreten Klasse gehören. Viel mehr kann dieses Interface jeder beliebigen Klasse einfach unabhängig von Vererbung und Klassifikation zugeordnet werden.</p>
-<p>Bildlich kannst du dir ein Interface vorstelle wir ein Vertrag: In diesem Vertrag wird festgelegt, welche Methoden ein Objekt bereitstellen (also den Codeblock ergänzen) muss. Das Interface legt fest, um welche Methode(n) es sich handelt, das Objekt definiert, wie diese umgesetzt werden. Abstrakte Klassen bilden häufig ein "ist-ein"-Verhätlnis ab (z.B. ein Hund <em>ist ein</em> Säugetier), wohingegen Interfaces ein "kann"-Verhältnis abbilden (ein Hund <em>kann</em> ein Geräusch Machen). </p>
+<p>Interfaces sind eine Struktur, die es ebenfalls ermöglicht, Abstraktion im Code umzusetzen - aber <em>ohne</em> Klassifikation. Das bedeutet, ein Interface kann abstrakte Methoden definieren und Eigenschaften festlegen, ohne dass diese zu einer konkreten Klasse gehören. Viel mehr kann dieses Interface jeder beliebigen Klasse einfach unabhängig von Vererbung und Klassifikation zugeordnet werden.</p>
+<p>Bildlich kannst du dir ein Interface vorstellen wie ein Vertrag: In diesem Vertrag wird festgelegt, welche Methoden ein Objekt bereitstellen (also den Codeblock ergänzen) muss. Das Interface legt fest, um welche Methode(n) es sich handelt; das Objekt definiert, wie diese umgesetzt werden. Abstrakte Klassen bilden häufig ein "ist-ein"-Verhältnis ab (z.B. ein Hund <em>ist ein</em> Säugetier), wohingegen Interfaces ein "kann"-Verhältnis abbilden (ein Hund <em>kann</em> ein Geräusch machen). </p>
 <p><strong>Definition und Eigenschaften</strong></p>
 <ul>
 <li>Ein Interface definiert primär abstrakte Methoden und kann <span style="font-family: andale mono, monospace;">default</span> Methoden erhalten.</li>
@@ -149,29 +149,28 @@ class Hund extends Saeugetier {
 <li>Interfaces werden definiert, indem man anstelle des Schlüsselwortes <span style="font-family: andale mono, monospace;">class,</span> das Schlüsselwort <span style="font-family: andale mono, monospace;">interface</span> einsetzt.
 <ul>
 <li>Interfaces haben keinen Konstruktor</li>
-<li>Interfaces können Felder und Methoden enthalten.
+<li>Interfaces können Konstanten (<span style="font-family: andale mono, monospace;">public static final</span>) und Methoden enthalten.
 <ul></ul>
 </li>
-<li>Methoden (und Felder) können folgende Modifikatoren haben:
+<li>Methoden können folgende Modifikatoren haben:
 <ul>
-<li><span style="font-family: andale mono, monospace;">public</span> (implizit): Alle Methoden in Interfaces sind standardmäßig <span style="font-family: andale mono, monospace;">public.</span> Der Modifikator kann weggelassen werden.</li>
-<li><span style="font-family: andale mono, monospace;">abstract</span> (implizit): Alle Methoden in Interfaces sind standardmäßg <span style="font-family: andale mono, monospace;">abstract.</span> Der Modifikator kann weggelassen werden.</li>
-<li><span style="font-family: andale mono, monospace;">default:</span> Seit Java 8 können Interfaces konkrete Implementierungen mit default-Methoden haben</li>
-<li><span style="font-family: andale mono, monospace;">static:</span> Seit Java 8 sind auch statische Methoden erlaubt.</li>
-<li><span style="font-family: andale mono, monospace;">private:</span> Seit Java 9 sind auch private Methoden erlaubt - diese benötigen aber eine Implementierung, da sie von außerhalb des Interfaces nicht überschrieben werden können.</li>
+<li><span style="font-family: andale mono, monospace;">public</span> und <span style="font-family: andale mono, monospace;">abstract</span> (implizit): Methoden in Interfaces sind standardmäßig <span style="font-family: andale mono, monospace;">public</span> und <span style="font-family: andale mono, monospace;">abstract</span>. Modifikator kann weggelassen werden.</li>
+<li><span style="font-family: andale mono, monospace;">default:</span> Interfaces können konkrete Implementierungen mit default-Methoden haben</li>
+<li><span style="font-family: andale mono, monospace;">static:</span> Auch statische Methoden sind erlaubt.</li>
+<li><span style="font-family: andale mono, monospace;">private:</span> Auch private Methoden sidn erlaubt (benötigen eine Implementierung, da sie von außerhalb nicht überschrieben werden können)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Interfaces werden angewendet, indem man hinter dem Klassennamen <span style="font-family: andale mono, monospace;">implements [Interfacename]</span> ergänzt und ...
+<li>Interfaces werden implementiert, indem man hinter dem Klassennamen <span style="font-family: andale mono, monospace;">implements [Interfacename]</span> ergänzt <br />
 <ul>
-<li>alle (abstrakten) Methoden des Interfaces implementiert, wenn die Klasse selber nicht abstrakt ist</li>
-<li>kein oder einen Teil der (abstrakten) Methoden des Interfaces implementiert, wenn die Klasse selber abstrakt ist.</li>
+<li>Abstrakte Klassen <em>können</em> die abstrakten Methoden des Interfaces implementieren (mit einem Codeblock versehen)</li>
+<li>Nicht abstrakte Klassen müssen alle abstrakten Methoden des Interfaces implementieren</li>
 </ul>
 </li>
 </ul>
 <p><strong>Tier Beispiel</strong></p>
-<p>Wir nehmen unser Tier Beispiel und wandeln einen Teil davon in ein Interface um, denn: Nicht nur Tiere können ein Geräusch machen: Auch Autos, eine Klingel, ein Lautpsprecher etc. Wir möchten also die Methode geräuschMachen() in ein Interface auslagern, welches wir in verschiedenen Klassen implementieren können.</p>
+<p>Wir nehmen unser Tier Beispiel und wandeln einen Teil davon in ein Interface um, denn nicht nur Tiere können ein Geräusch machen: auch Autos, eine Klingel, ein Lautsprecher etc. Wir möchten also die Methode geräuschMachen() in ein Interface auslagern, welches wir in verschiedenen Klassen implementieren können.</p>
 <div class="highlighted-code language-java line-numbers hightlight-2and11and37and43and52">
 <div>
 <pre><code>// Hier wird das Interface definiert
@@ -235,7 +234,7 @@ class Klingel implements GeraeuschMachen {
 </div>
 </div>
 <p><strong>Beispiel Bewegung und Zeichnen</strong></p>
-<p>Ein weiteres Beispiel ist die Umsetzung von Interfaces für Bewegung und dem Zeichnen auf dem Bildschirm. Gerade in Programmen gibt es einige Elemente, die bewegbar sind und auf der Bildschirm gezeichnet werden. Aber nicht alle Elemente im Spiel werden auf dem Bildschirm gezeichnet und nicht alle Elemente, die auf dem Bildschirm gezeichnet werden, sind bewegbar. Aus diesem Grund kann es durchaus sinnvoll sein, diese beiden separaten Interfaces zu Nutzen und je nach Bedarf in Klassen einzubinden. Der Spieler wird zum Beispiel gezeichnet und bewegt, ein Wand hingegen wird nur gezeichnet, aber <em>nicht</em> bewegt.</p>
+<p>Ein weiteres Beispiel ist die Umsetzung von Interfaces für Bewegung und dem Zeichnen auf dem Bildschirm. Gerade in Programmen gibt es einige Elemente, die bewegbar sind und auf der Bildschirm gezeichnet werden. Aber nicht alle Elemente im Spiel werden auf dem Bildschirm gezeichnet und nicht alle Elemente, die auf dem Bildschirm gezeichnet werden, sind bewegbar. Aus diesem Grund kann es durchaus sinnvoll sein, diese beiden separaten Interfaces zu nutzen und je nach Bedarf in Klassen einzubinden. Der Spieler wird zum Beispiel gezeichnet und bewegt, eine Wand hingegen wird nur gezeichnet, aber <em>nicht</em> bewegt.</p>
 <p>Wir erstellen also die Interfaces <span style="font-family: andale mono, monospace;">Movable</span> und <span style="font-family: andale mono, monospace;">Drawble</span> und implementieren sie in den Klassen <span style="font-family: andale mono, monospace;">Player</span> und <span style="font-family: andale mono, monospace;">Wall</span>:</p>
 <div class="highlighted-code language-java line-numbers hightlight-1and6and12and34">
 <div>
@@ -291,7 +290,7 @@ class Wall implements Drawable {
 <p>Du siehst: Player implementiert 2 Interfaces: Weitere Interfaces werden durch Kommata getrennt an das erste Interface angehängt.</p>
 <h2>default-Methoden</h2>
 <p>Wir haben gelernt, dass es der Zweck von Interfaces ist, Verhalten (in Form von Methoden) vorzugeben, die Implementierung aber den Klassen zu überlassen, die das Interface verwendet. Seit Java 8 (also ca. seit 2014) ist es aber auch möglich in einem Interface sogenannte <span style="font-family: andale mono, monospace;">default</span> Methoden zu erstellen. Hierbei handelt es sich um konkrete Methoden (mit Implementierung), die von den Klassen, die das Interface verwenden, überschrieben werden können - nicht müssen.</p>
-<p>default-Methoden wurden eingeführt um folgendes Problem zu lösen: Stell dir ein großes Java-Projekt vor mit einem Interface, dass in 20+ Klassen verwendet wird. Nun erweiterst du dein Interface um eine neue Methode (die bis vor 2014 abstrakt sein musste) von allen 20+ implementiert werden muss. Das würde bedeuten, dass dein Programm nicht ausführbar ist, bis du in jeder Klasse eine konkrete Implementierung eingebaut ist - was sehr umständlich ist. Mit default-Methoden ist das nicht der Fall. Hier kannst du eine Standard-Implementierung zur Verfügung stellen, welche verwendet wird solange die Klasse diese nicht mit einer eignenen Implementierung überschreibt.</p>
+<p>default-Methoden wurden eingeführt, um folgendes Problem zu lösen: Stell dir ein großes Java-Projekt vor, mit einem Interface, dass in 20+ Klassen verwendet wird. Nun erweiterst du dein Interface um eine neue Methode (die bis vor 2014 abstrakt sein musste) von allen 20+ implementiert werden muss. Das würde bedeuten, dass dein Programm nicht ausführbar ist, bis du in jeder Klasse eine konkrete Implementierung eingebaut ist - was sehr umständlich ist. Mit default-Methoden ist das nicht der Fall. Hier kannst du eine Standard-Implementierung zur Verfügung stellen, welche verwendet wird, solange die Klasse diese nicht mit einer eigenen Implementierung überschreibt.</p>
 <p>Dieses Problem tritt häufig auf, wenn eine Bibliothek erweitert wird. Mithilfe von default-Methoden bist du nicht gezwungen, dein ganzes Programm anpassen zu müssen, nur weil eine Bibliothek, die du verwendest, weitere Methoden in seinen Interfaces hinzugefügt hat.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -331,8 +330,8 @@ class MyList implements Sortable {
 <tbody>
 <tr style="height: 25px;">
 <td style="width: 21.0247%; height: 25px;"><strong>Instanziierung</strong></td>
-<td style="width: 39.0283%; height: 25px;">Kann nicht direkt instanziert werden</td>
-<td style="width: 39.9469%; height: 25px;">Kann nicht direkt instanziert werden</td>
+<td style="width: 39.0283%; height: 25px;">Kann nicht direkt instanziiert werden</td>
+<td style="width: 39.9469%; height: 25px;">Kann nicht direkt instanziiert werden</td>
 </tr>
 <tr style="height: 50px;">
 <td style="width: 21.0247%; height: 50px;"><strong>Implementierung</strong></td>
@@ -357,9 +356,9 @@ class MyList implements Sortable {
 <h1><br />Abschluss</h1>
 <div class="exe-fx exe-accordion">
 <h2>Aufgaben</h2>
-<p>Beide Übungsaugaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel <a href="klassen_und_objekte.html">Klassen und Objekte</a>. Nutze den Code als Grundlage. Du sollst von diesem Code<em> 2 Varianten</em> erstellen:</p>
+<p>Beide Übungsaufgaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel <a href="klassen_und_objekte.html">Klassen und Objekte</a>. Nutze den Code als Grundlage. Du sollst von diesem Code<em> 2 Varianten</em> erstellen:</p>
 <ul>
-<li><strong>Aufgabe 1: Abstrakte Klassen implementieren<br /></strong>Der Ball hat zwei wichtige Methoden: <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen().</span> Lagere beide Methoden inklusive den dafür benötigten Attributen in 2 abstrakte Klassen <span style="font-family: andale mono, monospace;">DrawableObject</span> und <span style="font-family: andale mono, monospace;">MovableObjekt</span> aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse <span style="font-family: andale mono, monospace;">Ball</span> soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.</li>
+<li><strong>Aufgabe 1: Abstrakte Klassen implementieren<br /></strong>Der Ball hat zwei wichtige Methoden: <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen().</span> Lagere beide Methoden inklusive der dafür benötigten Attributen in 2 abstrakte Klassen <span style="font-family: andale mono, monospace;">DrawableObject</span> und <span style="font-family: andale mono, monospace;">MovableObject</span> aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse <span style="font-family: andale mono, monospace;">Ball</span> soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.</li>
 <li><strong>Aufgabe 2: Interfaces implementieren<br /></strong>Bei dieser Aufgabe sollst du die Methoden <span style="font-family: andale mono, monospace;">zeichnen()</span> und <span style="font-family: andale mono, monospace;">bewegen()</span> nicht in abstrakten Klassen auslagern, sondern in die Interfaces <span style="font-family: andale mono, monospace;">Drawable</span> und <span style="font-family: andale mono, monospace;">Moveable</span> und diese dann in der Klasse <span style="font-family: andale mono, monospace;">Ball</span> umsetzen.</li>
 <li><strong>Reflexion:</strong><br />Schau dir beide Varianten deines Codes an: Die mit den abstrakten Klassen und die mit den Interfaces. Beides sind sinnvolle Strukturen. Welche Variante findest du sinnvoller und nachvollziehbarer?</li>
 </ul>
@@ -367,7 +366,7 @@ class MyList implements Sortable {
 <ol>
 <li>Erklär's mir als wäre ich 5 Jahre alt: Was sind abstrakte Klassen und was sind Interfaces?</li>
 <li>Warum kann eine abstrakte Klasse nicht direkt instanziiert werden?</li>
-<li>In welchen Situationen würdest du ein Interface einem abstrakten Klasse vorziehen?</li>
+<li>In welchen Situationen würdest du ein Interface einer abstrakten Klasse vorziehen?</li>
 <li>Nenne zwei wesentliche Unterschiede zwischen abstrakten Klassen und Interfaces.</li>
 </ol>
 <h2>Zusammenfassung</h2>

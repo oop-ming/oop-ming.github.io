@@ -71,7 +71,7 @@
   <string role="key" value="_intendedEndUserRoleType"></string>
   <unicode value=""></unicode>
   <string role="key" value="_isChanged"></string>
-  <bool value="1"></bool>
+  <bool value="0"></bool>
   <string role="key" value="_isTemplate"></string>
   <bool value="0"></bool>
   <string role="key" value="_lang"></string>
@@ -684,7 +684,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="334"></int>
+                        <int value="364"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -698,7 +698,7 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.51"></unicode>
+                      <unicode value="14_129_2.61"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="43">
                        <dictionary>
@@ -709,7 +709,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -736,7 +736,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="338"></int>
+                        <int value="368"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -750,7 +750,7 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.52"></unicode>
+                      <unicode value="14_129_2.62"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="44">
                        <dictionary>
@@ -761,7 +761,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1326,7 +1326,7 @@ public class Main {
                          <string role="key" value="originalicon"></string>
                          <string value=""></string>
                          <string role="key" value="parentNode"></string>
-                         <instance class="exe.engine.node.Node" reference="17">
+                         <instance class="exe.engine.node.Node" reference="31">
                           <dictionary>
                            <string role="key" value="_title"></string>
                            <unicode value="Abstraktion"></unicode>
@@ -1431,7 +1431,7 @@ public class Main {
                                 <string role="key" value="originalicon"></string>
                                 <string value=""></string>
                                 <string role="key" value="parentNode"></string>
-                                <instance class="exe.engine.node.Node" reference="21">
+                                <instance class="exe.engine.node.Node" reference="20">
                                  <dictionary>
                                   <string role="key" value="_title"></string>
                                   <unicode value="Vererbung"></unicode>
@@ -1536,7 +1536,7 @@ public class Main {
                                        <string role="key" value="originalicon"></string>
                                        <string value=""></string>
                                        <string role="key" value="parentNode"></string>
-                                       <instance class="exe.engine.node.Node" reference="22">
+                                       <instance class="exe.engine.node.Node" reference="21">
                                         <dictionary>
                                          <string role="key" value="_title"></string>
                                          <unicode value="Grundlagen"></unicode>
@@ -2151,16 +2151,14 @@ double c = Math.pow(3,3); // 27&lt;/code&gt;&lt;/pre&gt;
                                      </instance>
                                      <string role="key" value="intlinks_to_anchors"></string>
                                      <dictionary>
-                                      <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top"></unicode>
-                                      <reference key="17"></reference>
                                       <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Ausnahmebehandlung#auto_top"></unicode>
-                                      <instance class="exe.engine.node.Node" reference="20">
+                                      <instance class="exe.engine.node.Node" reference="19">
                                        <dictionary>
                                         <string role="key" value="_title"></string>
                                         <unicode value="Ausnahmebehandlung"></unicode>
                                         <string role="key" value="idevices"></string>
                                         <list>
-                                         <instance class="exe.engine.jsidevice.JsIdevice" reference="18">
+                                         <instance class="exe.engine.jsidevice.JsIdevice" reference="17">
                                           <dictionary>
                                            <string role="key" value="_title"></string>
                                            <unicode value=""></unicode>
@@ -2221,12 +2219,12 @@ double c = Math.pow(3,3); // 27&lt;/code&gt;&lt;/pre&gt;
                                            <int value="1"></int>
                                            <string role="key" value="fields"></string>
                                            <list>
-                                            <instance class="exe.engine.field.TextAreaField" reference="19">
+                                            <instance class="exe.engine.field.TextAreaField" reference="18">
                                              <dictionary>
                                               <string role="key" value="_id"></string>
                                               <unicode value="134_2"></unicode>
                                               <string role="key" value="_idevice"></string>
-                                              <reference key="18"></reference>
+                                              <reference key="17"></reference>
                                               <string role="key" value="_instruc"></string>
                                               <string value=""></string>
                                               <string role="key" value="_name"></string>
@@ -2349,7 +2347,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                 <string role="key" value=".listitems"></string>
                                                 <list></list>
                                                 <string role="key" value="idevice"></string>
-                                                <reference key="19"></reference>
+                                                <reference key="18"></reference>
                                                </dictionary>
                                               </instance>
                                               <string role="key" value="intlinks_to_anchors"></string>
@@ -2357,7 +2355,7 @@ public void validateInput(int input) throws InvalidInputException {
                                               <string role="key" value="nextImageId"></string>
                                               <int value="0"></int>
                                               <string role="key" value="parentNode"></string>
-                                              <reference key="20"></reference>
+                                              <reference key="19"></reference>
                                              </dictionary>
                                             </instance>
                                            </list>
@@ -2374,7 +2372,7 @@ public void validateInput(int input) throws InvalidInputException {
                                            <string role="key" value="originalicon"></string>
                                            <string value=""></string>
                                            <string role="key" value="parentNode"></string>
-                                           <reference key="20"></reference>
+                                           <reference key="19"></reference>
                                            <string role="key" value="systemResources"></string>
                                            <list></list>
                                            <string role="key" value="undo"></string>
@@ -2409,21 +2407,21 @@ public void validateInput(int input) throws InvalidInputException {
                                        </dictionary>
                                       </instance>
                                       <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top"></unicode>
-                                      <reference key="21"></reference>
+                                      <reference key="20"></reference>
                                      </dictionary>
                                      <string role="key" value="nextImageId"></string>
                                      <int value="0"></int>
                                      <string role="key" value="parentNode"></string>
-                                     <reference key="22"></reference>
+                                     <reference key="21"></reference>
                                     </dictionary>
                                    </instance>
                                    <reference key="10"></reference>
-                                   <instance class="exe.engine.field.TextAreaField" reference="23">
+                                   <instance class="exe.engine.field.TextAreaField" reference="22">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
                                      <unicode value="131_2"></unicode>
                                      <string role="key" value="_idevice"></string>
-                                     <instance class="exe.engine.jsidevice.JsIdevice" reference="24">
+                                     <instance class="exe.engine.jsidevice.JsIdevice" reference="23">
                                       <dictionary>
                                        <string role="key" value="_title"></string>
                                        <unicode value=""></unicode>
@@ -2484,7 +2482,7 @@ public void validateInput(int input) throws InvalidInputException {
                                        <int value="1"></int>
                                        <string role="key" value="fields"></string>
                                        <list>
-                                        <reference key="23"></reference>
+                                        <reference key="22"></reference>
                                        </list>
                                        <string role="key" value="icon"></string>
                                        <unicode value=""></unicode>
@@ -2499,13 +2497,13 @@ public void validateInput(int input) throws InvalidInputException {
                                        <string role="key" value="originalicon"></string>
                                        <string value=""></string>
                                        <string role="key" value="parentNode"></string>
-                                       <instance class="exe.engine.node.Node" reference="30">
+                                       <instance class="exe.engine.node.Node" reference="29">
                                         <dictionary>
                                          <string role="key" value="_title"></string>
                                          <unicode value="Polymorphismus"></unicode>
                                          <string role="key" value="idevices"></string>
                                          <list>
-                                          <reference key="24"></reference>
+                                          <reference key="23"></reference>
                                          </list>
                                          <string role="key" value="_id"></string>
                                          <unicode value="4"></unicode>
@@ -2523,12 +2521,12 @@ public void validateInput(int input) throws InvalidInputException {
                                          <reference key="3"></reference>
                                          <string role="key" value="top_anchors_linked_from_fields"></string>
                                          <list>
-                                          <instance class="exe.engine.field.TextAreaField" reference="25">
+                                          <instance class="exe.engine.field.TextAreaField" reference="24">
                                            <dictionary>
                                             <string role="key" value="_id"></string>
                                             <unicode value="127_2"></unicode>
                                             <string role="key" value="_idevice"></string>
-                                            <instance class="exe.engine.jsidevice.JsIdevice" reference="26">
+                                            <instance class="exe.engine.jsidevice.JsIdevice" reference="25">
                                              <dictionary>
                                               <string role="key" value="_title"></string>
                                               <unicode value=""></unicode>
@@ -2589,7 +2587,7 @@ public void validateInput(int input) throws InvalidInputException {
                                               <int value="1"></int>
                                               <string role="key" value="fields"></string>
                                               <list>
-                                               <reference key="25"></reference>
+                                               <reference key="24"></reference>
                                               </list>
                                               <string role="key" value="icon"></string>
                                               <unicode value=""></unicode>
@@ -2604,13 +2602,13 @@ public void validateInput(int input) throws InvalidInputException {
                                               <string role="key" value="originalicon"></string>
                                               <string value=""></string>
                                               <string role="key" value="parentNode"></string>
-                                              <instance class="exe.engine.node.Node" reference="31">
+                                              <instance class="exe.engine.node.Node" reference="30">
                                                <dictionary>
                                                 <string role="key" value="_title"></string>
                                                 <unicode value="Konzeption und Dokumentation"></unicode>
                                                 <string role="key" value="idevices"></string>
                                                 <list>
-                                                 <reference key="26"></reference>
+                                                 <reference key="25"></reference>
                                                 </list>
                                                 <string role="key" value="_id"></string>
                                                 <unicode value="19"></unicode>
@@ -2638,18 +2636,38 @@ public void validateInput(int input) throws InvalidInputException {
                                               <bool value="1"></bool>
                                               <string role="key" value="userResources"></string>
                                               <list>
-                                               <instance class="exe.engine.resource.Resource" reference="27">
+                                               <instance class="exe.engine.resource.Resource" reference="26">
                                                 <dictionary>
                                                  <string role="key" value="_idevice"></string>
-                                                 <reference key="26"></reference>
+                                                 <reference key="25"></reference>
                                                  <string role="key" value="_package"></string>
                                                  <reference key="4"></reference>
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
+                                                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
+                                                 <int value="2"></int>
+                                                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
+                                                 <int value="2"></int>
+                                                 <string role="key" value="warningMsg"></string>
+                                                 <string value=""></string>
+                                                </dictionary>
+                                               </instance>
+                                               <instance class="exe.engine.resource.Resource" reference="27">
+                                                <dictionary>
+                                                 <string role="key" value="_idevice"></string>
+                                                 <reference key="25"></reference>
+                                                 <string role="key" value="_package"></string>
+                                                 <reference key="4"></reference>
+                                                 <string role="key" value="_storageName"></string>
+                                                 <string value="klassendiagramm_beispiel2.png"></string>
+                                                 <string role="key" value="_userName"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\klassendiagramm_beispiel2.png"></string>
+                                                 <string role="key" value="checksum"></string>
+                                                 <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
                                                  <int value="2"></int>
                                                  <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
@@ -2661,33 +2679,13 @@ public void validateInput(int input) throws InvalidInputException {
                                                <instance class="exe.engine.resource.Resource" reference="28">
                                                 <dictionary>
                                                  <string role="key" value="_idevice"></string>
-                                                 <reference key="26"></reference>
-                                                 <string role="key" value="_package"></string>
-                                                 <reference key="4"></reference>
-                                                 <string role="key" value="_storageName"></string>
-                                                 <string value="klassendiagramm_beispiel2.png"></string>
-                                                 <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\klassendiagramm_beispiel2.png"></string>
-                                                 <string role="key" value="checksum"></string>
-                                                 <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
-                                                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
-                                                 <int value="2"></int>
-                                                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
-                                                 <int value="2"></int>
-                                                 <string role="key" value="warningMsg"></string>
-                                                 <string value=""></string>
-                                                </dictionary>
-                                               </instance>
-                                               <instance class="exe.engine.resource.Resource" reference="29">
-                                                <dictionary>
-                                                 <string role="key" value="_idevice"></string>
-                                                 <reference key="26"></reference>
+                                                 <reference key="25"></reference>
                                                  <string role="key" value="_package"></string>
                                                  <reference key="4"></reference>
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="wasserfall.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\wasserfall.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\wasserfall.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3204,7 +3202,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="335"></int>
+                                                   <int value="365"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3218,11 +3216,44 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.22"></unicode>
+                                                 <unicode value="28_127_2.37"></unicode>
+                                                 <string role="key" value="_imageResource"></string>
+                                                 <reference key="26"></reference>
+                                                 <string role="key" value="_parent"></string>
+                                                 <reference key="24"></reference>
+                                                 <string role="key" value="_thumbnailResource"></string>
+                                                 <none></none>
+                                                 <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
+                                                 <int value="3"></int>
+                                                 <string role="key" value="makeThumbnail"></string>
+                                                 <bool value="0"></bool>
+                                                </dictionary>
+                                               </instance>
+                                               <instance class="exe.engine.galleryidevice.GalleryImage">
+                                                <dictionary>
+                                                 <string role="key" value="_caption"></string>
+                                                 <instance class="exe.engine.field.TextField">
+                                                  <dictionary>
+                                                   <string role="key" value="_id"></string>
+                                                   <int value="366"></int>
+                                                   <string role="key" value="_idevice"></string>
+                                                   <none></none>
+                                                   <string role="key" value="_instruc"></string>
+                                                   <string value=""></string>
+                                                   <string role="key" value="_name"></string>
+                                                   <string value=""></string>
+                                                   <string role="key" value="content"></string>
+                                                   <string value=""></string>
+                                                   <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                                                   <int value="4"></int>
+                                                  </dictionary>
+                                                 </instance>
+                                                 <string role="key" value="_id"></string>
+                                                 <unicode value="28_127_2.38"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="27"></reference>
                                                  <string role="key" value="_parent"></string>
-                                                 <reference key="25"></reference>
+                                                 <reference key="24"></reference>
                                                  <string role="key" value="_thumbnailResource"></string>
                                                  <none></none>
                                                  <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -3237,7 +3268,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="336"></int>
+                                                   <int value="369"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3251,44 +3282,11 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.23"></unicode>
+                                                 <unicode value="28_127_2.39"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="28"></reference>
                                                  <string role="key" value="_parent"></string>
-                                                 <reference key="25"></reference>
-                                                 <string role="key" value="_thumbnailResource"></string>
-                                                 <none></none>
-                                                 <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
-                                                 <int value="3"></int>
-                                                 <string role="key" value="makeThumbnail"></string>
-                                                 <bool value="0"></bool>
-                                                </dictionary>
-                                               </instance>
-                                               <instance class="exe.engine.galleryidevice.GalleryImage">
-                                                <dictionary>
-                                                 <string role="key" value="_caption"></string>
-                                                 <instance class="exe.engine.field.TextField">
-                                                  <dictionary>
-                                                   <string role="key" value="_id"></string>
-                                                   <int value="339"></int>
-                                                   <string role="key" value="_idevice"></string>
-                                                   <none></none>
-                                                   <string role="key" value="_instruc"></string>
-                                                   <string value=""></string>
-                                                   <string role="key" value="_name"></string>
-                                                   <string value=""></string>
-                                                   <string role="key" value="content"></string>
-                                                   <string value=""></string>
-                                                   <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                                                   <int value="4"></int>
-                                                  </dictionary>
-                                                 </instance>
-                                                 <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.24"></unicode>
-                                                 <string role="key" value="_imageResource"></string>
-                                                 <reference key="29"></reference>
-                                                 <string role="key" value="_parent"></string>
-                                                 <reference key="25"></reference>
+                                                 <reference key="24"></reference>
                                                  <string role="key" value="_thumbnailResource"></string>
                                                  <none></none>
                                                  <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -3299,22 +3297,20 @@ public void validateInput(int input) throws InvalidInputException {
                                                </instance>
                                               </list>
                                               <string role="key" value="idevice"></string>
-                                              <reference key="25"></reference>
+                                              <reference key="24"></reference>
                                              </dictionary>
                                             </instance>
                                             <string role="key" value="intlinks_to_anchors"></string>
                                             <dictionary>
-                                             <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top"></unicode>
-                                             <reference key="17"></reference>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Polymorphismus#auto_top"></unicode>
-                                             <reference key="30"></reference>
+                                             <reference key="29"></reference>
                                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top"></unicode>
-                                             <reference key="21"></reference>
+                                             <reference key="20"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="25"></int>
+                                            <int value="40"></int>
                                             <string role="key" value="parentNode"></string>
-                                            <reference key="31"></reference>
+                                            <reference key="30"></reference>
                                            </dictionary>
                                           </instance>
                                          </list>
@@ -3342,8 +3338,8 @@ public void validateInput(int input) throws InvalidInputException {
                                      <dictionary></dictionary>
                                      <string role="key" value="content_w_resourcePaths"></string>
                                      <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung&lt;/h1&gt;
-&lt;p&gt;Die letzte Säule der Objektorientierten Programmierung ist der Polymorphismus (oder auch Polymorphie). Polymorphismus bedeutet so viel wie &quot;Vielgestaltigkeit&quot; - also das ein und dieselbe Sache viele unterschiedliche Gestalten annehmen kann. Dabei kann es sich um Objekte oder auch um Verhalten handeln. Stell dir eine Reihe von Personen vor, die arbeiten gehen. Bei jeder dieser Personen wird &quot;arbeiten gehen&quot; unterschiedlich aussehen, da sie unterschiedliche Berufe ausführen - dasselbe &quot;allgemeine&quot; Verhalten nimmt viele verschiedene Gestalten an.&lt;/p&gt;
-&lt;p&gt;In unserem Tier Beispiel aus den vorherigen Kapiteln ist das Prinzip des Polymorphismus ebenfalls gut zu erkennen: Ein Tier (bzw. ein Objekt der Klasse Tier) kann verschiedene Gestalten annehmen, nämlich Säugtier, Fisch, Hund, Wal, etc., obwohl alles Tiere sind. Und auch ihr Verhalten kann unterschiedliche Formen annehmen: jedes Tier macht ein anderes Geräusch, obwohl der Verhalten geraeuschMachen() dasselbe ist.&lt;/p&gt;
+&lt;p&gt;Die letzte Säule der Objektorientierten Programmierung ist der Polymorphismus (oder auch Polymorphie). Polymorphismus bedeutet so viel wie &quot;Vielgestaltigkeit&quot; - also, dass ein und dieselbe Sache, viele unterschiedliche Gestalten annehmen kann. Dabei kann es sich um Objekte oder auch um Verhalten handeln. Stell dir eine Reihe von Personen vor, die arbeiten gehen. Bei jeder dieser Personen wird &quot;arbeiten gehen&quot; unterschiedlich aussehen, da sie unterschiedliche Berufe ausführen - dasselbe &quot;allgemeine&quot; Verhalten nimmt viele verschiedene Gestalten an.&lt;/p&gt;
+&lt;p&gt;In unserem Tier Beispiel aus den vorherigen Kapiteln ist das Prinzip des Polymorphismus ebenfalls gut zu erkennen: Ein Tier (bzw. ein Objekt der Klasse Tier) kann verschiedene Gestalten annehmen, nämlich Säugetier, Fisch, Hund, Wal, etc., obwohl alles Tiere sind. Und auch ihr Verhalten kann unterschiedliche Formen annehmen: jedes Tier macht ein anderes Geräusch, obwohl der Verhalten geraeuschMachen() dasselbe ist.&lt;/p&gt;
 &lt;p&gt;Polymorphismus ist eine der zentralen Säulen der objektorientierten Programmierung. Wir sind dem Polymorphismus an einigen Stellen bereits begegnet.&lt;/p&gt;
 &lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
 &lt;ul&gt;
@@ -3407,7 +3403,7 @@ public class Main {
 &lt;p&gt;Polymorphismus in Java lässt sich in zwei Arten unterteilen: statischer und dynamischer Polymorphismus.&lt;/p&gt;
 &lt;h2&gt;Statischer Polymorphismus&lt;/h2&gt;
 &lt;p&gt;Statischer Polymorphismus nutzt &lt;strong&gt;Methodenüberladung,&lt;/strong&gt; um eine Methode mit unterschiedlichen Implementierungen zu haben. Aus diesem Grund wird er auch als statisch bezeichnet, da im Code bereits zum Zeitpunkt der Kompilierung festgelegt ist, welche Methode angewendet wird. Die Entscheidung, welche Methode zur Compile-Zeit aufgerufen wird, basiert auf der Signatur der Methode.&lt;/p&gt;
-&lt;p&gt;Zum Beipspiel könnten wir in der Tier Klasse die Methode &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;geraeuschMachen()&lt;/span&gt; überladen, indem wir eine Version hinzufügen, bei der man im Parameter angeben kann, wie oft ein Geräusch gemacht werden soll.&lt;/p&gt;
+&lt;p&gt;Zum Beispiel könnten wir in der Tier-Klasse die Methode &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;geraeuschMachen()&lt;/span&gt; überladen, indem wir eine Version hinzufügen, bei der man im Parameter angeben kann, wie oft ein Geräusch gemacht werden soll.&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers hightlight-9and29and45&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;abstract class Tier {
@@ -3459,9 +3455,9 @@ public class Main {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;In Zeile 45 ist bereits zur Comile-Zeit eindeutig festgelegt, welche Implementierung der Methode umgesetzt wird durch die eindeutige Methodensignatur.&lt;/p&gt;
+&lt;p&gt;In Zeile 45 ist bereits zur Compile-Zeit eindeutig festgelegt, welche Implementierung der Methode umgesetzt wird durch die eindeutige Methodensignatur.&lt;/p&gt;
 &lt;h2&gt;Dynamischer Polymorphismus&lt;/h2&gt;
-&lt;p&gt;Dynamischer Polymorphismus nutzt Methodenüberschreibung und dynamische Bindung. Dabei wird erst zur Laufzeit entschieden, basierend auf dem konkreten Objekttyp, welche Implementierung ausgeführt wird. Aus diesen Grund wird er als dynamisch bezeichnet, da erst zur Laufzeit klar wird, welchen Typ das Objekt hat und welche Implementierung deswegen Anwendung findet.&lt;/p&gt;
+&lt;p&gt;Dynamischer Polymorphismus nutzt Methodenüberschreibung und dynamische Bindung. Dabei wird erst zur Laufzeit entschieden, basierend auf dem konkreten Objekttyp, welche Implementierung ausgeführt wird. Aus diesem Grund wird er als dynamisch bezeichnet, da erst zur Laufzeit klar wird, welchen Typ das Objekt hat und welche Implementierung deswegen Anwendung findet.&lt;/p&gt;
 &lt;p&gt;Methodenüberschreibung und dynamische Bindung wurden im ersten Beispiel in diesem Kapitel veranschaulicht. Zur Veranschaulichung der dynamischen Bindung ergänzen wir dieses Beispiel noch um die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Katze&lt;/span&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers hightlight-44and45&quot;&gt;
 &lt;div&gt;
@@ -3515,12 +3511,12 @@ public class Main {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h1&gt;Polymorphismus mit Interfaces&lt;/h1&gt;
-&lt;p&gt;Das Prinzip der dynamischen Bindung und der Behandlung von Objekten als Instanzen ihrer Oberklasse funktioniert auch in Bezug auf Interfaces. Das bedeutet ich kann ein Objekt auch über den Typ des Interface ansprechen. Das schauen wir uns einmal anhand des Beispiels aus dem Kapitel Abstraktion an, in dem wir die Interfaces Drawable und Movable erstellt haben und diese in die Klassen Player und Wall eingebunden haben. Wir erweitern das Beispiel, indem wir sie in mit Processing in Java kombinieren, damit wir einen draw-Loop haben.&lt;/p&gt;
+&lt;p&gt;Das Prinzip der dynamischen Bindung und der Behandlung von Objekten als Instanzen ihrer Oberklasse funktioniert auch in Bezug auf Interfaces. Konkret bedeutet das, ich kann ein Objekt auch über den Typ des &lt;em&gt;Interface&lt;/em&gt; ansprechen. Schauen wir uns das einmal anhand des Beispiels aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top&quot; target=&quot;_blank&quot; title=&quot;Zum Kapitel Abstraktion&quot; rel=&quot;noopener&quot;&gt;Abstraktion&lt;/a&gt; an, in dem wir die Interfaces &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Drawable&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Movable&lt;/span&gt; erstellt haben, welche von den Klassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Player&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Wall&lt;/span&gt; implementiert wurden. Wir erweitern das Beispiel, indem wir sie in mit Processing in Java kombinieren, damit wir einen draw-Loop haben.&lt;/p&gt;
 &lt;p&gt;Dynamischer Polymorphismus ermöglicht mir nun folgendes: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In der Window Klasse deklariere ich zunächst eine player Variable, ein wall Variable und einen Array vom Typ Drawable mit der Länge 2. Du siehst: Ich kann auch ein Interface als Datentyp verwenden.&lt;/li&gt;
-&lt;li&gt;In settings() initialisiere ich nun player und wall und speichere diese in meinem drawables Array&lt;/li&gt;
-&lt;li&gt;Nun kann ich in draw() durch meinen drawbles Array iterieren und diese zeichnen über die draw() Methode aus dem Interface. Das geht, weil durch den Typ des Interfaces festgelegt ist, dass alle Elemente in einem Array vom Typ Drawable eine draw() Methode besitzen. Allerdings kann jedes Element diese draw Methode unterschiedlich umsetzen - das player Objekt setzt die Methode anders um als das wall Objekt.  &lt;/li&gt;
+&lt;li&gt;In der &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window&lt;/span&gt; Klasse deklariere ich zunächst die Variablen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;player&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;wall&lt;/span&gt; und einen Array vom Typ &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Drawable&lt;/span&gt; mit der Länge 2. Du siehst: Ich kann auch ein Interface als Datentyp verwenden.&lt;/li&gt;
+&lt;li&gt;In &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;settings()&lt;/span&gt; initialisiere ich nun &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;player&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;wall&lt;/span&gt; und speichere diese in meinem &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;drawables&lt;/span&gt; Array&lt;/li&gt;
+&lt;li&gt;Nun kann ich in &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;draw()&lt;/span&gt; durch meinen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;drawbles&lt;/span&gt; Array iterieren und diese zeichnen über die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;draw()&lt;/span&gt; Methode aus dem Interface. Das geht, weil durch den Typ des Interfaces festgelegt ist, dass alle Elemente in einem Array vom Typ &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Drawable&lt;/span&gt; eine &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;draw()&lt;/span&gt; Methode besitzen. Allerdings kann jedes Element diese &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;draw()&lt;/span&gt; Methode unterschiedlich umsetzen - das &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;player&lt;/span&gt;-Objekt setzt die Methode anders um, als das &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;wall-&lt;/span&gt;Objekt.  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers&quot;&gt;
 &lt;div&gt;
@@ -3610,136 +3606,6 @@ class Wall implements Drawable {
 &lt;li&gt;&lt;strong&gt;Methodenüberladung&lt;/strong&gt; (statischer Polymorphismus) ermöglicht es, dass innerhalb derselben Klasse mehrere Methoden mit demselben Namen, aber unterschiedlichen Parametern existieren.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Methodenüberschreibung&lt;/strong&gt; (dynamischer Polymorphismus) sorgt dafür, dass in einer Vererbungshierarchie eine Methode in der Subklasse neu definiert werden kann.&lt;br /&gt;Die Kombination dieser Konzepte ermöglicht es, Programme zu schreiben, bei denen durch einheitliche Schnittstellen unterschiedliche Implementierungen zur Laufzeit gewählt werden – ein entscheidender Vorteil bei der Erweiterung und Pflege von Software.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Vor- und Nachteile von Polymorphismus in Java&lt;/h1&gt;
-&lt;div&gt;Polymorphismus ist ein zentrales Konzept der objektorientierten Programmierung in Java. Es bietet zahlreiche Vorteile, bringt aber auch einige Herausforderungen mit sich. Im Folgenden werden die wichtigsten Vor- und Nachteile erläutert.&lt;/div&gt;
-&lt;h2&gt;Vorteile&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Erhöhte Flexibilität:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Ermöglicht die Verwendung desselben Codes für verschiedene Datenstrukturen und Objekttypen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Macht Software anpassungsfähiger an unterschiedliche Szenarien ohne grundlegende Codeänderungen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Verbesserte Wiederverwendbarkeit:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Erlaubt die Nutzung von Code für verschiedene Objekttypen ohne Neuschreibung.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Reduziert Redundanzen und optimiert die Codelänge.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Vereinfachte Wartbarkeit:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Führt zu besser strukturiertem und zentralisiertem Code.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Änderungen an einer Stelle können im gesamten Projekt wirksam werden.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Verbesserte Übersichtlichkeit:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Vermeidet Code-Duplikate und fördert die Nutzung abgeleiteter Klassen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Macht den Quelltext insgesamt nachvollziehbarer, besonders in großen Projekten.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Erhöhte Modularität:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Fördert ein modulares und skalierbares Software-Design.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Ermöglicht die Trennung von Schnittstellen und Implementierungen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Vereinfachte Erweiterbarkeit:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Erleichtert das Hinzufügen neuer Funktionalitäten ohne Änderung des bestehenden Codes.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Reduziert die Kopplung zwischen Klassen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Nachteile&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Leistungseinbußen:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Dynamische Polymorphie kann zu Performanceproblemen führen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Die dynamische Methodenauswahl zur Laufzeit verursacht zusätzlichen Rechenaufwand.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Erhöhte Komplexität:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Kann den Code schwieriger verständlich machen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Entwickler müssen genau analysieren, welche Methode in welchem Fall aufgerufen wird.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Implementierungsherausforderungen:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Korrekte Anwendung erfordert sorgfältige Planung und Umsetzung.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Unerfahrene Programmierer könnten Polymorphismus falsch anwenden und Laufzeitfehler verursachen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Debugging-Schwierigkeiten:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Die tatsächlich aufgerufene Methodenimplementierung ist nicht immer offensichtlich.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Nachverfolgung des Programmablaufs kann komplex werden, besonders bei mehrfacher Methodenüberschreibung.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;b&gt;Einschränkungen bei Compiler-Optimierungen:&lt;/b&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Compiler haben Schwierigkeiten, polymorphen Code zu optimieren.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Besonders problematisch bei dynamischem Klassenladen oder komplexen Vererbungsstrukturen.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;Trotz dieser Nachteile überwiegen in vielen Fällen die Vorteile von Polymorphismus. Wichtig ist, dass du die Vor- und Nachteile abwägst und Polymorphismus in deinen Programmen angemessen einsetzt. &lt;/div&gt;
 &lt;h1&gt;Abschluss&lt;/h1&gt;
 &lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
@@ -3799,10 +3665,10 @@ class Wall implements Drawable {
 &lt;/li&gt;
 &lt;li&gt;Objekte können über Interface-Typen angesprochen werden&lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;strong&gt;Vorteile:&lt;/strong&gt; Erhöhte Flexibilität, Verbesserte Wiederverwendbarkeit, Vereinfachte Wartbarkeit, Verbesserte Übersichtlichkeit, Erhöhte Modularität, Vereinfachte Erweiterbarkeit&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Vorteile:&lt;/strong&gt; Erhöhte Flexibilität, verbesserte Wiederverwendbarkeit, Vereinfachte Wartbarkeit, Verbesserte Übersichtlichkeit, Erhöhte Modularität, Vereinfachte Erweiterbarkeit&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;strong&gt;Nachteile:&lt;/strong&gt; Leistungseinbußen, Erhöhte Komplexität, Implementierungsherausforderungen, Debugging-Schwierigkeiten, Einschränkungen bei Compiler-Optimierungen&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Nachteile:&lt;/strong&gt; Leistungseinbußen, erhöhte Komplexität, Implementierungsherausforderungen, Debugging-Schwierigkeiten, Einschränkungen bei Compiler-Optimierungen&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3826,21 +3692,23 @@ class Wall implements Drawable {
                                        <string role="key" value=".listitems"></string>
                                        <list></list>
                                        <string role="key" value="idevice"></string>
-                                       <reference key="23"></reference>
+                                       <reference key="22"></reference>
                                       </dictionary>
                                      </instance>
                                      <string role="key" value="intlinks_to_anchors"></string>
                                      <dictionary>
+                                      <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top"></unicode>
+                                      <reference key="31"></reference>
                                       <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top"></unicode>
-                                      <reference key="21"></reference>
+                                      <reference key="20"></reference>
                                      </dictionary>
                                      <string role="key" value="nextImageId"></string>
                                      <int value="0"></int>
                                      <string role="key" value="parentNode"></string>
-                                     <reference key="30"></reference>
+                                     <reference key="29"></reference>
                                     </dictionary>
                                    </instance>
-                                   <reference key="25"></reference>
+                                   <reference key="24"></reference>
                                   </list>
                                   <string role="key" value="children"></string>
                                   <list></list>
@@ -3861,7 +3729,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpelrgtt\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3887,18 +3755,18 @@ class Wall implements Drawable {
                               <dictionary></dictionary>
                               <string role="key" value="content_w_resourcePaths"></string>
                               <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung – Vererbung im Alltag&lt;/h1&gt;
-&lt;p&gt;Das Prinzip der Vererbung lässt sich am einfachsten anhand der Tierwelt veranschaulichen. Nehmen wir eine Reihe von unterschiedlichen Tieren: Hund, Katze, Schlange, Wal, Amsel, und Forelle. Was haben diese Lebewesen alle gemeinsam? Es sind Tiere. Tiere zeichnen sich durch eine Reihe an Eigenschaften und Verhalten aus, welche alle Tiere gemeinsam haben:&lt;/p&gt;
+&lt;p&gt;Das Prinzip der Vererbung lässt sich am einfachsten anhand der Tierwelt veranschaulichen. Nehmen wir eine Reihe von unterschiedlichen Tieren: Hund, Katze, Schlange, Wal, Amsel und Forelle. Was haben diese Lebewesen alle gemeinsam? Es sind Tiere. Tiere zeichnen sich durch eine Reihe an Eigenschaften und Verhalten aus, welche alle Tiere gemeinsam haben:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Eigenschaften: Alter, Gewicht, Größe, ...&lt;/li&gt;
 &lt;li&gt;Verhalten: atmen, essen, bewegen, ...&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Da sie diese Eigenschaften gemeinsam haben, kann man sie zusammen in der Gruppe der Tiere zusammenfassen. Sie &quot;erben&quot; diese Eigenschaften quasi von der allgemeinene Gruppe &quot;Tiere&quot;. Allerdings unterscheiden sich diese Tiere auch in ihrer Art: Die Schlange ist ein &lt;strong&gt;Reptil,&lt;/strong&gt; die Amsel ist ein &lt;strong&gt;Vogel,&lt;/strong&gt; Hund, Katze und Wal sind &lt;strong&gt;Säugetiere&lt;/strong&gt; und die Forelle ist ein &lt;strong&gt;Fisch.&lt;/strong&gt; Es gibt hier also noch Untergruppen, die sich unterscheiden. In den Untergruppen wiederum teilen sich Tiere wieder viele Eigenschaften, wie z.B. dass alle Fische mit Kiemen atmen. Jede dieser Untergruppen (Fische, Reptilien, Säugetiere, Vögel) ist eine Klasse und ein Bauplan für Tiere dieser Gruppe und erbt Eigenschaften der allgemeinen Gruppe (oder Klasse) &quot;Tier&quot;.&lt;/p&gt;
+&lt;p&gt;Da sie diese Eigenschaften gemeinsam haben, kann man sie zusammen in der Gruppe der Tiere zusammenfassen. Sie &quot;erben&quot; diese Eigenschaften quasi von der allgemeinen Gruppe &quot;Tiere&quot;. Allerdings unterscheiden sich diese Tiere auch in ihrer Art: Die Schlange ist ein &lt;strong&gt;Reptil,&lt;/strong&gt; die Amsel ist ein &lt;strong&gt;Vogel,&lt;/strong&gt; Hund, Katze und Wal sind &lt;strong&gt;Säugetiere&lt;/strong&gt; und die Forelle ist ein &lt;strong&gt;Fisch.&lt;/strong&gt; Es gibt hier also noch Untergruppen, die sich unterscheiden. In den Untergruppen wiederum teilen sich Tiere wieder viele Eigenschaften, wie z.B. dass alle Fische mit Kiemen atmen. Jede dieser Untergruppen (Fische, Reptilien, Säugetiere, Vögel) ist eine Klasse und ein Bauplan für Tiere dieser Gruppe und erbt Eigenschaften der allgemeinen Gruppe (oder Klasse) &quot;Tier&quot;.&lt;/p&gt;
 &lt;p&gt;Dieses Prinzip der Vererbung findet Anwendung in der Objektorientierten Programmierung. Warum? Wir haben bereits gelernt, wie wir Code wiederverwenden können. Die Vererbung geht diesen Ansatz noch einen großen Schritt weiter: Sie ermöglicht es, allgemeine Funktionalitäten in einer Oberklasse zu definieren und diese in spezialisierten Klassen automatisch zu übernehmen und bei Bedarf anzupassen. Damit wird nicht nur redundanter Code vermieden, sondern auch die Wartbarkeit und Erweiterbarkeit eurer Programme deutlich verbessert. Außerdem sorgt Vererbung auch für eine übersichtliche und nachvollziehbare Struktur in unserem Code.&lt;/p&gt;
 &lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Was Vererbung bedeutet&lt;/li&gt;
 &lt;li&gt;Wie man Vererbung in Java umsetzt&lt;/li&gt;
-&lt;li&gt;Welche Vorteile Vererbung für die Sortwareentwicklung bringt&lt;/li&gt;
+&lt;li&gt;Welche Vorteile Vererbung für die Software-Entwicklung bringt&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Was ist Vererbung?&lt;/h1&gt;
 &lt;p&gt;Vererbung beschreibt den Mechanismus, bei dem eine Klasse (die Superklasse) Eigenschaften und Methoden an eine oder mehrere abgeleitete Klassen (Subklassen) weitergibt. Dabei werden gemeinsame Merkmale einmal definiert und müssen nicht in jeder Subklasse erneut implementiert werden. Das Konzept der Vererbung kann in zwei Gruppen kategorisiert werden:&lt;/p&gt;
@@ -3909,21 +3777,21 @@ class Wall implements Drawable {
 &lt;p&gt;Dabei kann eine Subklasse immer nur Eigenschaften und Methoden von &lt;em&gt;einer&lt;/em&gt; Superklasse direkt erben und &lt;em&gt;nicht&lt;/em&gt; von mehreren.&lt;/p&gt;
 &lt;p&gt;Wenn wir dieses Prinzip auf unser Tier-Beispiel anwenden, erhalten wir folgende Unterteilung:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Die Superklasse „Tier“ enthält allgemeine Eigenschaften wie Alter, Gewicht und Größ sowie Methoden wie atmen(), essen() und bewegen().&lt;/li&gt;
+&lt;li&gt;Die Superklasse „Tier“ enthält allgemeine Eigenschaften wie Alter, Gewicht und Größe sowie Methoden wie atmen(), essen() und bewegen().&lt;/li&gt;
 &lt;li&gt;Die Subklassen &quot;Säugetier&quot;, &quot;Reptil&quot;, &quot;Fisch&quot; und &quot;Vogel&quot; übernehmen diese Eigenschaften und Methoden von &quot;Tier&quot;, haben aber auch jeweils eigene Eigenschaften und Methoden, wie Flossenanzahl, Flügelspannweite und eiLegen().
 &lt;ul&gt;
 &lt;li&gt;Die Subklassen sind gleichzeitig Superklassen für die nächste Vererbungsebene&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Die Subklassen „Hund“, „Amsel“ oder „Wal“ erben die Eigenschaften und Methoden von alle ihren Superklassen und besitzen wiederum eigene Eigenschaften und Methoden, wie z.B. ballHolen().&lt;br /&gt;
+&lt;li&gt;Die Subklassen „Hund“, „Amsel“ oder „Wal“ erben die Eigenschaften und Methoden von ihren Superklassen und besitzen wiederum eigene Eigenschaften und Methoden, wie z.B. ballHolen().&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Wichtig:&lt;/strong&gt; &quot;Hund&quot; erbt &lt;em&gt;nur&lt;/em&gt; die Eigenschaften und Methoden von &quot;Säugetier&quot;. &lt;em&gt;Indirekt&lt;/em&gt; erbt &quot;Hund&quot; natürlich auch die Eigenschaften und Methoden von &quot;Tier&quot;, aber nur, weil &quot;Säugetier&quot; sie von &quot;Tier&quot; erbt. Das ist gemeint mit: Eine Subklasse kann immer nur Eigenschaften und Methoden &lt;em&gt;einer&lt;/em&gt; Superklasse &lt;em&gt;direkt&lt;/em&gt; erben. &quot;Hund&quot; kann auch keine weiteren Eigenschaften von einer weiteren Klasse &quot;Haustier&quot; erben.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Wenn wir nun noch die unterschiedlichen Arten von Tieren hinzufügen (Vogel, Säugetier, etc.), dann sind diese Subklassen von &quot;Tier&quot; und Superklassen von &quot;Hund&quot;, &quot;Amsel&quot;, &quot;Wal&quot; und Co. Diese Vererbungshierarchie kann mithilfe eines Klassendiagramms veranschaulicht werden. Wie man so ein Klassendiagramm erstellt, lernen wir im Abschnitt &quot;Dokumentation&quot;. Alle Tiere erben die Eigenschaften und Methoden von den Klassen auf die der jeweilge Pfeil zeigt. &lt;/p&gt;
+&lt;p&gt;Wenn wir nun noch die unterschiedlichen Arten von Tieren hinzufügen (Vogel, Säugetier, etc.), dann sind diese Subklassen von &quot;Tier&quot; und Superklassen von &quot;Hund&quot;, &quot;Amsel&quot;, &quot;Wal&quot; und Co. Diese Vererbungshierarchie kann mithilfe eines Klassendiagramms veranschaulicht werden. Wie man so ein Klassendiagramm erstellt, lernen wir im Abschnitt &quot;Dokumentation&quot;. Alle Tiere erben die Eigenschaften und Methoden von den Klassen, auf die der jeweilige Pfeil zeigt. &lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/klassendiagramm_vererbung.drawio.png&quot; alt=&quot;Dieses Klassendiagramm veranschaulicht Vererbung im Tierreich&quot; title=&quot;Vererbung im Tierreich&quot; width=&quot;1051&quot; height=&quot;492&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Ein anderes Beispiel für Vererbung ist die Vererbung von Stileigenschaften in der Typografie:In Design-Programmen wie InDesign von Adobe können verschiedene Absatzstile festgelegt werden für Fließtext, Stichpunkte, Überschriften, etc. Diese ABsatzstile können so angelegt werden, dass sie aufeinander aufbauen. Das bedeutet, sie übernehmen bestimmte Eigenschaften, wie z.B. die Schriftart, von dem Absatzstil, auf den sie aufbauen. Wenn ich dann im Desgin-Prozess auf die Idee komme doch eine andere Schriftart verwenden zu wollen, muss ich nicht jeden einzelnen Absatzstil anpassen, sondern im besten Fall nur einen, auf den alle anderen aufbauen. &lt;/p&gt;
+&lt;p&gt;Ein anderes Beispiel für Vererbung ist die Vererbung von Stileigenschaften in der Typografie:In Design-Programmen wie InDesign von Adobe können verschiedene Absatzstile festgelegt werden für Fließtext, Stichpunkte, Überschriften, etc. Diese Absatzstile können so angelegt werden, dass sie aufeinander aufbauen. Das bedeutet, sie übernehmen bestimmte Eigenschaften, wie z.B. die Schriftart, von dem Absatzstil, auf den sie aufbauen. Wenn ich dann im Design-Prozess auf die Idee komme, doch eine andere Schriftart verwenden zu wollen, muss ich nicht jeden einzelnen Absatzstil anpassen, sondern im besten Fall nur einen, auf den alle anderen aufbauen. &lt;/p&gt;
 &lt;p&gt;Die Verwendung von Vererbung bringt zahlreiche Vorteile in der objektorientierten Programmierung mit sich:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Wiederverwendbarkeit:&lt;/strong&gt; Einmal definierte Eigenschaften in der Superklasse werden in allen Subklassen verfügbar, was den Programmieraufwand reduziert.&lt;/li&gt;
@@ -4015,7 +3883,7 @@ class Fisch extends Tier {
 &lt;li&gt;Das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;extends&lt;/span&gt; zeigt an, dass Säugetier und Fisch von Tier erben.&lt;/li&gt;
 &lt;li&gt;Mit dem Aufruf von&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt; super(alter, gewicht, größe)&lt;/span&gt; im Konstruktor der Subklasse wird der Konstruktor der Oberklasse ausgeführt, sodass die Attribute korrekt initialisiert werden.&lt;/li&gt;
 &lt;li&gt;Danach können die weiteren klassenspezifischen Attributen initialisiert werden.&lt;/li&gt;
-&lt;li&gt;Abschließend werden die neuen klassenspazifischen Methoden deklariert.&lt;/li&gt;
+&lt;li&gt;Abschließend werden die neuen klassenspezifischen Methoden deklariert.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Im nächsten Schritt erstellen wir zwei weitere Subklassen: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Hund&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Forelle.&lt;/span&gt; Diese erben jeweils von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Säugetier&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Fisch.&lt;/span&gt;&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
@@ -4042,7 +3910,7 @@ class Fisch extends Tier {
 class Forelle extends Fisch {
 
    // Konstruktor der Subklasse, ruft den Konstruktor der Superklasse auf
-   public Fisch(int alter, int gewicht, int größe, int anzahlFlossen) {
+   public Forelle(int alter, int gewicht, int größe, int anzahlFlossen) {
       super(alter, gewicht, größe, anzahlFlossen);
    }
 
@@ -4070,11 +3938,11 @@ public class Main {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Erklärung: Die Methode &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen()&lt;/span&gt; wird in der Subklasse überschrieben. Das erfolgt mithilfer der Annotation &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;@Override&lt;/span&gt;. Dadurch wird das spezifische Verhalten (Laufen oder Schwimmen) implementiert, während die Grundstruktur aus der Superklasse übernommen wird. Diese Technik der Vererbung ermöglicht es, zunächst allgemeine Verhaltensweisen zu definieren und sie später in den abgeleiteten Klassen zu spezifizieren.&lt;/p&gt;
+&lt;p&gt;Erklärung: Die Methode &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen()&lt;/span&gt; wird in der Subklasse überschrieben. Das erfolgt mithilfe der Annotation &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;@Override&lt;/span&gt;. Dadurch wird das spezifische Verhalten (Laufen oder Schwimmen) implementiert, während die Grundstruktur aus der Superklasse übernommen wird. Diese Technik der Vererbung ermöglicht es, zunächst allgemeine Verhaltensweisen zu definieren und sie später in den abgeleiteten Klassen zu spezifizieren.&lt;/p&gt;
 &lt;p&gt;Die Superklassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Tier, Fisch&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Säugetier&lt;/span&gt; sind ziemlich abstrakt. Das bedeutet, dass wahrscheinlich zu keinem Zeitpunkt ein Objekt von diesen Klassen erstellt wird, denn kein Tier ist &quot;nur&quot; ein Tier. Bei einem Tier handelt es sich immer um eine konkrete Rasse oder Art, wie z.B. Hund, Katze, Forelle, etc. Das Prinzip der Abstraktion schauen wir uns genauer im Kapitel &quot;&lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top&quot;&gt;Abstrakte Klassen und Interfaces&lt;/a&gt;&quot; an. Hier kannst du aber bereits erkennen, was mit Abstraktion gemeint ist: Eine Klasse, die zwar Eigenschaften und Methoden definiert, aber nicht dafür gedacht ist, dass Objekte aus ihr erstellt werden.&lt;/p&gt;
 &lt;h2&gt;Das Schlüsselwort „super“&lt;/h2&gt;
 &lt;p&gt;Das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super&lt;/span&gt; spielt in der Vererbung eine &lt;strong&gt;zentrale&lt;/strong&gt; &lt;strong&gt;Rolle&lt;/strong&gt;. Es dient dazu, auf die Mitglieder (Attribute und Methoden) der Superklasse zuzugreifen. super ist quasi ein Verweis auf die Superklasse.&lt;/p&gt;
-&lt;p&gt;In erster Linie wird das Schlüsselwort super im &lt;strong&gt;Konstruktor&lt;/strong&gt; einer Subklasse verwendet, um den Konstruktor der Superklasse aufzurufen. Das erfolgt, indem man hinter &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super&lt;/span&gt; in den Klammern () die Parameter des Konstruktors der Superklasse gibt. Dann wird dieser Konstruktor mit diesen Parametern aufgerufen. Danach kann man die klassenspezifischen Attribute der Subklasse intialisieren. &lt;strong&gt;Wichtig&lt;/strong&gt;: Der Aufruf des Konstruktors der Superklasse mithilfe von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super()&lt;/span&gt; muss der erste Befehl innerhalb des Konstruktors der Subklasse sein.&lt;/p&gt;
+&lt;p&gt;In erster Linie wird das Schlüsselwort super im &lt;strong&gt;Konstruktor&lt;/strong&gt; einer Subklasse verwendet, um den Konstruktor der Superklasse aufzurufen. Das erfolgt, indem man hinter &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super&lt;/span&gt; in den Klammern () die Parameter des Konstruktors der Superklasse gibt. Dann wird dieser Konstruktor mit diesen Parametern aufgerufen. Danach kann man die klassenspezifischen Attribute der Subklasse initialisieren. &lt;strong&gt;Wichtig&lt;/strong&gt;: Der Aufruf des Konstruktors der Superklasse mithilfe von &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super()&lt;/span&gt; muss der erste Befehl innerhalb des Konstruktors der Subklasse sein.&lt;/p&gt;
 &lt;p&gt;Ein weiteres Einsatzgebiet ist, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super&lt;/span&gt; zu verwenden, um auf Methoden oder Attribute aus der Superklasse zuzugreifen. Dies erfolgt mithilfe der Punktnotation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java&quot;&gt;
@@ -4141,29 +4009,29 @@ public class Main {
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1&lt;/strong&gt;: Fahrzeug-Vererbungshierarchie implementieren
 &lt;ul&gt;
-&lt;li&gt;Erstelle eine Superklasse „Fahrzeug“ mit folgenden Attributen und Methoden:
+&lt;li&gt;Erstelle eine Superklasse Fahrzeug mit folgenden Attributen und Methoden:
 &lt;ul&gt;
 &lt;li&gt;Attribute: anzahlRaeder, Baujahr, geschwindigkeit&lt;/li&gt;
 &lt;li&gt;Methoden: beschleunigen(), bremsen() (die Methoden sollen eine einfache Konsolenausgabe enthalten).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Erstelle eine Subklasse &quot;MotorisiertesFahrzeug&quot; mit folgenden weiteren Attributen und Methoden:
+&lt;li&gt;Erstelle eine Subklasse MotorisiertesFahrzeug mit folgenden weiteren Attributen und Methoden:
 &lt;ul&gt;
 &lt;li&gt;Attribut: tankFuellung&lt;/li&gt;
 &lt;li&gt;Methode: tanken(double menge)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Erstelle nun die Subklassen &quot;Fahrrad&quot;, welche direkt von der &quot;Fahzeug&quot;-Klassse erbt und &quot;PKW&quot; und &quot;Motorrad&quot;, welche von &quot;MotorisiertesFahrzeug&quot; erbt. &lt;br /&gt;
+&lt;li&gt;Erstelle nun die Subklassen Fahrrad, (welche direkt von der Fahrzeug-Klassse erbt) und PKW und Motorrad (welche von MotorisiertesFahrzeug erben). &lt;br /&gt;
 &lt;ul&gt;
-&lt;li&gt;Füge jeder Klasse ein spezifisches Attribut doer eine Methoden hinzu, die für den jeweiligen Fahrzeugtyp charakteristisch sind.&lt;/li&gt;
+&lt;li&gt;Füge jeder Klasse ein spezifisches Attribut oder eine Methoden hinzu, die für den jeweiligen Fahrzeugtyp charakteristisch sind.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 2&lt;/strong&gt;: Erweiterung mit sinnvoller Kapselung
 &lt;ul&gt;
-&lt;li&gt;Ergänze deine Klassen, um sinnvolle Zugriffsmodifikatoren. Es sollen so wenig wie möglich Attribute und Methoden public sein.&lt;/li&gt;
-&lt;li&gt;Ergänze deine Klassen um sinnvolle Getter und Setter, um die Daten zu schützen und zu prüfen, bevor sie geändert werden.
+&lt;li&gt;Ergänze sinnvolle Zugriffsmodifikatoren. Es sollen so wenig wie möglich Attribute und Methoden public sein.&lt;/li&gt;
+&lt;li&gt;Ergänze sinnvolle Getter und Setter, um die Daten zu schützen und zu prüfen, bevor sie geändert werden.
 &lt;ul&gt;
 &lt;li&gt;setAnzahlRaeder(int anzahl) soll nur eine Anzahl größer 0 akzeptieren&lt;/li&gt;
 &lt;li&gt;tanken(double menge) soll nur eine sinnvolle Menge akzeptieren&lt;/li&gt;
@@ -4176,7 +4044,8 @@ public class Main {
 &lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Was versteht man unter Vererbung in der objektorientierten Programmierung?&lt;/li&gt;
-&lt;li&gt;Eelche Vorteile bietet Vererbung?&lt;/li&gt;
+&lt;li&gt;Welche Vorteile bietet Vererbung?&lt;/li&gt;
+&lt;li&gt;Wie viele direkte Superklassen kann eine Subklasse haben?&lt;/li&gt;
 &lt;li&gt;Wie wird in Java die Vererbung syntaktisch umgesetzt, und welche Rolle spielt dabei das Schlüsselwort „extends“?&lt;/li&gt;
 &lt;li&gt;Erklärt den Zweck des Schlüsselworts „super“ in Konstruktoren und Methoden.&lt;/li&gt;
 &lt;/ol&gt;
@@ -4189,6 +4058,7 @@ public class Main {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;In einer Vererbungshierarchie mit mehreren Vererbungsebenen, kann eine Klasse sowohl Super- als auch Subklasse sein.&lt;/li&gt;
+&lt;li&gt;Eine Subklasse kann nur eine direkte Superklasse haben.&lt;/li&gt;
 &lt;li&gt;In Java wird Vererbung mit dem Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;extends&lt;/span&gt; umgesetzt.&lt;/li&gt;
 &lt;li&gt;Das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;super&lt;/span&gt; wird genutzt, um auf Konstruktoren, Methoden und Attribute der Superklasse zuzugreifen.&lt;/li&gt;
 &lt;li&gt;Vererbung fördert &lt;strong&gt;Wiederverwendbarkeit, Wartbarkeit&lt;/strong&gt; und &lt;strong&gt;Erweiterbarkeit&lt;/strong&gt; des Codes&lt;/li&gt;
@@ -4214,7 +4084,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="337"></int>
+                                     <int value="367"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4228,7 +4098,7 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.23"></unicode>
+                                   <unicode value="16_127_2.28"></unicode>
                                    <string role="key" value="_imageResource"></string>
                                    <reference key="32"></reference>
                                    <string role="key" value="_parent"></string>
@@ -4247,18 +4117,16 @@ public class Main {
                                </dictionary>
                               </instance>
                               <string role="key" value="intlinks_to_anchors"></string>
-                              <dictionary>
-                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Abstraktion#auto_top"></unicode>
-                               <reference key="17"></reference>
-                              </dictionary>
+                              <dictionary></dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="24"></int>
+                              <int value="29"></int>
                               <string role="key" value="parentNode"></string>
-                              <reference key="21"></reference>
+                              <reference key="20"></reference>
                              </dictionary>
                             </instance>
                             <reference key="14"></reference>
-                            <reference key="25"></reference>
+                            <reference key="24"></reference>
+                            <reference key="22"></reference>
                            </list>
                            <string role="key" value="children"></string>
                            <list></list>
@@ -4284,7 +4152,7 @@ public class Main {
                        <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung - Abstraktion&lt;/h1&gt;
-&lt;p&gt;Abstraktion ist ein Vorgang, bestehen aus dem Weglassen von Einzelheiten und dem Überführen in etwas Allgemeines. Im Attag führen wir Abstraktion eigentlich immer dann aus, wenn wir Dinge kategorieseren. Wir nehmen eine Reihe von Dingen, schauen, welche Eigenschaften diese Dinge gemeinsam haben und fassen sie dann in einer Kategorie oder Klasse zusammen. Die Kategorie ist eine Abstraktion der einzelnen Dinge. In unserem Tierbeispiel aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot;&gt;Vererbung&lt;/a&gt; sind wir bereits der Abstraktion begegnet: Hund, Katze und Wal haben wir alle der Kategorie oder Klasse Säugetier zugeordnet. Die Klasse Säugtier ist somit eine Abstraktion von Hund, Katze und Wal. Wir lassen ein paar Details weg und überführen Hund, Katze und Wal in etwas allgemeineres. Säugtier, Vogel, Reptil und Fisch haben wir der Klasse Tier zugeordnet - eine Klasse die noch abstrakter ist und weniger Details enthält.&lt;/p&gt;
+&lt;p&gt;Abstraktion ist ein Vorgang, bestehen aus dem Weglassen von Einzelheiten und dem Überführen in etwas Allgemeines. Im Alltag führen wir Abstraktion eigentlich immer dann aus, wenn wir Dinge kategorisieren. Wir nehmen eine Reihe von Dingen, schauen, welche Eigenschaften diese Dinge gemeinsam haben und fassen sie dann in einer Kategorie oder Klasse zusammen. Die Kategorie ist eine Abstraktion der einzelnen Dinge. In unserem Tierbeispiel aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top&quot;&gt;Vererbung&lt;/a&gt; sind wir bereits der Abstraktion begegnet: Hund, Katze und Wal haben wir alle der Kategorie oder Klasse Säugetier zugeordnet. Die Klasse Säugetier ist somit eine Abstraktion von Hund, Katze und Wal. Wir lassen ein paar Details weg und überführen Hund, Katze und Wal in etwas allgemeineres. Säugetier, Vogel, Reptil und Fisch haben wir der Klasse Tier zugeordnet - eine Klasse die noch abstrakter ist und weniger Details enthält.&lt;/p&gt;
 &lt;p&gt;Abstraktion ist ein zentrales Prinzip der objektorientierten Programmierung, das schon in den bisherigen Kapiteln sichtbar wurde. Mithilfe von abstrakten Klassen und Interfaces ist es möglich gemeinsame Eigenschaften und gemeinsames Verhalten festzulegen, ohne dass jedes Detail explizit implementiert werden muss.&lt;/p&gt;
 &lt;p&gt;In diesem Kapitel lernst du&lt;/p&gt;
 &lt;ul&gt;
@@ -4294,17 +4162,17 @@ public class Main {
 &lt;li&gt;Die Stärken und Schwächen von Interfaces und abstrakten Klassen.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Abstrakte Klassen&lt;/h1&gt;
-&lt;p&gt;Während eine Klasse ein konkreter Bauplan für ein Objekt ist, ist eine abstrakte Klasse eher eine Vorlage für ein Bauplan für ein Objekt. Aus der Vorlage selber kann kein Objekt erstellt werden, da wichtige Details fehlen. Stell dir das vor, wie bei einem Unternehmen, das Häuser baut. Im Katalog des Unternehmens sind ein paar Standard-Grundrisse, welche definieren, wie die Räume aufgeteilt sind, wo Fenster und Türen sein können und wo das Treppenhaus ist. Aus diesem Standard-Grundriss kann man aber kein Haus bauen, da die Kunden noch festlegen müssen, welche Türen sie genau möchten, ob sie lieber ein großes, breites Fenster haben möchten oder 2 kleine, welche Art von Treppe eingebaut werden soll, etc. Sobald das alles festgelegt ist, liegt ein fertiger konkreter Bauplan vor, mit dem ein Haus gebaut werden kann.&lt;/p&gt;
+&lt;p&gt;Während eine Klasse ein konkreter Bauplan für ein Objekt ist, ist eine abstrakte Klasse eher eine &lt;em&gt;Vorlage&lt;/em&gt; für einen Bauplan für ein Objekt. Aus der Vorlage selber kann kein Objekt erstellt werden, da wichtige Details fehlen. Stell dir das vor, wie bei einem Unternehmen, das Häuser baut. Im Katalog des Unternehmens sind ein paar Standard-Grundrisse, welche definieren, wie die Räume aufgeteilt sind, wo Fenster und Türen sein können und wo das Treppenhaus ist. Aus diesem Standard-Grundriss kann man aber kein Haus bauen, da die Kunden noch festlegen müssen, welche Türen sie genau möchten, ob sie lieber ein großes, breites Fenster haben möchten oder 2 kleine, welche Art von Treppe eingebaut werden soll, etc. Sobald das alles festgelegt ist, liegt ein fertiger konkreter Bauplan vor, mit dem ein Haus gebaut werden kann.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition und Eigenschaften&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Eine abstrakte Klasse kann sowohl abstrakte Methoden (ohne Implementierung) als auch konkrete Methoden (mit Implementierung) enthalten.&lt;/li&gt;
 &lt;li&gt;Sie kann nicht &lt;em&gt;direkt&lt;/em&gt; instanziiert werden. Das bedeutet, es ist nicht möglich, ein Objekt direkt von einer abstrakten Klasse zu erzeugen, sondern nur von ihren konkreten Subklassen.&lt;/li&gt;
-&lt;li&gt;Abstrakte Klassen ermöglichen es, Gemeinsames zentral zu definieren und gleichzeitig den Subklassen den Freiraum zu lassen, spezialisierte Implementierungen zu liefern.&lt;/li&gt;
+&lt;li&gt;Abstrakte Klassen ermöglichen es, gemeinsames zentral zu definieren und gleichzeitig den Subklassen den Freiraum zu lassen, spezialisierte Implementierungen zu liefern.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Syntax&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Abstrakte Klassen werden definiert, in dem man den Modifikator &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract&lt;/span&gt; vor das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;class&lt;/span&gt; setzt&lt;/li&gt;
-&lt;li&gt;Abstrakte Methoden werden definiert, in dem den Modifikator &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract&lt;/span&gt; von den Rückgabetyp setzt und den Codeblock {} weglässt. &lt;br /&gt;
+&lt;li&gt;Abstrakte Methoden werden definiert, in dem den Modifikator &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract&lt;/span&gt; vor den Rückgabetyp setzt und den Codeblock {} weglässt. &lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;Dies wird auch als &lt;strong&gt;Methodensignatur&lt;/strong&gt; bezeichnet: Sie definiert Rückgabetyp, Name und Anzahl und Reihenfolge der Parameter.&lt;/li&gt;
 &lt;/ul&gt;
@@ -4357,10 +4225,10 @@ class Hund extends Saeugetier {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;In diesem Beispiel dient die abstrakte Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Tier&lt;/span&gt; dazu, einen Rahmen vorzugeben, ohne sich auf eine spezifische Implementation des Geräuschmachens festzulegen. Jede Tierart kann dann ihre eigene Variante implementieren – so bleibt der Code flexibel und übersichtlich.&lt;/p&gt;
-&lt;p&gt;Abstrakte Klassen nutzen das Prinzip der &lt;strong&gt;Kategorisierung&lt;/strong&gt; bzw. &lt;strong&gt;Klassifizierung&lt;/strong&gt;. In dem Tier-Beispiel wird das gut sichtbar: Ein konkreter Hund (Objekt) gehört zu der Klasse der Hunde, die Klasse Hund gehört zur Klasse der Säugetiere und die Klasse Säugetiere gehört zu der Klasse Tier. Je &quot;höher&quot; man in dieser Klasifizierung geht, desto abstraker werden die Klassen. Hier sind Klassifikation und Abstraktion eng miteinander verbunden.&lt;/p&gt;
+&lt;p&gt;Abstrakte Klassen nutzen das Prinzip der &lt;strong&gt;Kategorisierung&lt;/strong&gt; bzw. &lt;strong&gt;Klassifizierung&lt;/strong&gt;. In dem Tier-Beispiel wird das gut sichtbar: Ein konkreter Hund (Objekt) gehört zu der Klasse der Hunde, die Klasse Hund gehört zur Klasse der Säugetiere und die Klasse Säugetiere gehört zu der Klasse Tier. Je &quot;höher&quot; man in dieser Klassifizierung geht, desto abstrakter werden die Klassen. Hier sind Klassifikation und Abstraktion eng miteinander verbunden.&lt;/p&gt;
 &lt;h1&gt;Interfaces&lt;/h1&gt;
-&lt;p&gt;Interfaces sind eine Struktur, die es ebenfalls ermöglicht Abstraktion im Code umzusetzen - aber &lt;em&gt;ohne&lt;/em&gt; Klassifikation. Das bedeutet ein Interface kann abstrakte Methoden definieren und Eigenschaften festlegen, ohne dass diese zu einer konkreten Klasse gehören. Viel mehr kann dieses Interface jeder beliebigen Klasse einfach unabhängig von Vererbung und Klassifikation zugeordnet werden.&lt;/p&gt;
-&lt;p&gt;Bildlich kannst du dir ein Interface vorstelle wir ein Vertrag: In diesem Vertrag wird festgelegt, welche Methoden ein Objekt bereitstellen (also den Codeblock ergänzen) muss. Das Interface legt fest, um welche Methode(n) es sich handelt, das Objekt definiert, wie diese umgesetzt werden. Abstrakte Klassen bilden häufig ein &quot;ist-ein&quot;-Verhätlnis ab (z.B. ein Hund &lt;em&gt;ist ein&lt;/em&gt; Säugetier), wohingegen Interfaces ein &quot;kann&quot;-Verhältnis abbilden (ein Hund &lt;em&gt;kann&lt;/em&gt; ein Geräusch Machen). &lt;/p&gt;
+&lt;p&gt;Interfaces sind eine Struktur, die es ebenfalls ermöglicht, Abstraktion im Code umzusetzen - aber &lt;em&gt;ohne&lt;/em&gt; Klassifikation. Das bedeutet, ein Interface kann abstrakte Methoden definieren und Eigenschaften festlegen, ohne dass diese zu einer konkreten Klasse gehören. Viel mehr kann dieses Interface jeder beliebigen Klasse einfach unabhängig von Vererbung und Klassifikation zugeordnet werden.&lt;/p&gt;
+&lt;p&gt;Bildlich kannst du dir ein Interface vorstellen wie ein Vertrag: In diesem Vertrag wird festgelegt, welche Methoden ein Objekt bereitstellen (also den Codeblock ergänzen) muss. Das Interface legt fest, um welche Methode(n) es sich handelt; das Objekt definiert, wie diese umgesetzt werden. Abstrakte Klassen bilden häufig ein &quot;ist-ein&quot;-Verhältnis ab (z.B. ein Hund &lt;em&gt;ist ein&lt;/em&gt; Säugetier), wohingegen Interfaces ein &quot;kann&quot;-Verhältnis abbilden (ein Hund &lt;em&gt;kann&lt;/em&gt; ein Geräusch machen). &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition und Eigenschaften&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ein Interface definiert primär abstrakte Methoden und kann &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;default&lt;/span&gt; Methoden erhalten.&lt;/li&gt;
@@ -4372,29 +4240,28 @@ class Hund extends Saeugetier {
 &lt;li&gt;Interfaces werden definiert, indem man anstelle des Schlüsselwortes &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;class,&lt;/span&gt; das Schlüsselwort &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;interface&lt;/span&gt; einsetzt.
 &lt;ul&gt;
 &lt;li&gt;Interfaces haben keinen Konstruktor&lt;/li&gt;
-&lt;li&gt;Interfaces können Felder und Methoden enthalten.
+&lt;li&gt;Interfaces können Konstanten (&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public static final&lt;/span&gt;) und Methoden enthalten.
 &lt;ul&gt;&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Methoden (und Felder) können folgende Modifikatoren haben:
+&lt;li&gt;Methoden können folgende Modifikatoren haben:
 &lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; (implizit): Alle Methoden in Interfaces sind standardmäßig &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public.&lt;/span&gt; Der Modifikator kann weggelassen werden.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract&lt;/span&gt; (implizit): Alle Methoden in Interfaces sind standardmäßg &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract.&lt;/span&gt; Der Modifikator kann weggelassen werden.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;default:&lt;/span&gt; Seit Java 8 können Interfaces konkrete Implementierungen mit default-Methoden haben&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;static:&lt;/span&gt; Seit Java 8 sind auch statische Methoden erlaubt.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private:&lt;/span&gt; Seit Java 9 sind auch private Methoden erlaubt - diese benötigen aber eine Implementierung, da sie von außerhalb des Interfaces nicht überschrieben werden können.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract&lt;/span&gt; (implizit): Methoden in Interfaces sind standardmäßig &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;abstract&lt;/span&gt;. Modifikator kann weggelassen werden.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;default:&lt;/span&gt; Interfaces können konkrete Implementierungen mit default-Methoden haben&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;static:&lt;/span&gt; Auch statische Methoden sind erlaubt.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private:&lt;/span&gt; Auch private Methoden sidn erlaubt (benötigen eine Implementierung, da sie von außerhalb nicht überschrieben werden können)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Interfaces werden angewendet, indem man hinter dem Klassennamen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;implements [Interfacename]&lt;/span&gt; ergänzt und ...
+&lt;li&gt;Interfaces werden implementiert, indem man hinter dem Klassennamen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;implements [Interfacename]&lt;/span&gt; ergänzt &lt;br /&gt;
 &lt;ul&gt;
-&lt;li&gt;alle (abstrakten) Methoden des Interfaces implementiert, wenn die Klasse selber nicht abstrakt ist&lt;/li&gt;
-&lt;li&gt;kein oder einen Teil der (abstrakten) Methoden des Interfaces implementiert, wenn die Klasse selber abstrakt ist.&lt;/li&gt;
+&lt;li&gt;Abstrakte Klassen &lt;em&gt;können&lt;/em&gt; die abstrakten Methoden des Interfaces implementieren (mit einem Codeblock versehen)&lt;/li&gt;
+&lt;li&gt;Nicht abstrakte Klassen müssen alle abstrakten Methoden des Interfaces implementieren&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Tier Beispiel&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Wir nehmen unser Tier Beispiel und wandeln einen Teil davon in ein Interface um, denn: Nicht nur Tiere können ein Geräusch machen: Auch Autos, eine Klingel, ein Lautpsprecher etc. Wir möchten also die Methode geräuschMachen() in ein Interface auslagern, welches wir in verschiedenen Klassen implementieren können.&lt;/p&gt;
+&lt;p&gt;Wir nehmen unser Tier Beispiel und wandeln einen Teil davon in ein Interface um, denn nicht nur Tiere können ein Geräusch machen: auch Autos, eine Klingel, ein Lautsprecher etc. Wir möchten also die Methode geräuschMachen() in ein Interface auslagern, welches wir in verschiedenen Klassen implementieren können.&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers hightlight-2and11and37and43and52&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;// Hier wird das Interface definiert
@@ -4458,7 +4325,7 @@ class Klingel implements GeraeuschMachen {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Beispiel Bewegung und Zeichnen&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Ein weiteres Beispiel ist die Umsetzung von Interfaces für Bewegung und dem Zeichnen auf dem Bildschirm. Gerade in Programmen gibt es einige Elemente, die bewegbar sind und auf der Bildschirm gezeichnet werden. Aber nicht alle Elemente im Spiel werden auf dem Bildschirm gezeichnet und nicht alle Elemente, die auf dem Bildschirm gezeichnet werden, sind bewegbar. Aus diesem Grund kann es durchaus sinnvoll sein, diese beiden separaten Interfaces zu Nutzen und je nach Bedarf in Klassen einzubinden. Der Spieler wird zum Beispiel gezeichnet und bewegt, ein Wand hingegen wird nur gezeichnet, aber &lt;em&gt;nicht&lt;/em&gt; bewegt.&lt;/p&gt;
+&lt;p&gt;Ein weiteres Beispiel ist die Umsetzung von Interfaces für Bewegung und dem Zeichnen auf dem Bildschirm. Gerade in Programmen gibt es einige Elemente, die bewegbar sind und auf der Bildschirm gezeichnet werden. Aber nicht alle Elemente im Spiel werden auf dem Bildschirm gezeichnet und nicht alle Elemente, die auf dem Bildschirm gezeichnet werden, sind bewegbar. Aus diesem Grund kann es durchaus sinnvoll sein, diese beiden separaten Interfaces zu nutzen und je nach Bedarf in Klassen einzubinden. Der Spieler wird zum Beispiel gezeichnet und bewegt, eine Wand hingegen wird nur gezeichnet, aber &lt;em&gt;nicht&lt;/em&gt; bewegt.&lt;/p&gt;
 &lt;p&gt;Wir erstellen also die Interfaces &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Movable&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Drawble&lt;/span&gt; und implementieren sie in den Klassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Player&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Wall&lt;/span&gt;:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers hightlight-1and6and12and34&quot;&gt;
 &lt;div&gt;
@@ -4514,7 +4381,7 @@ class Wall implements Drawable {
 &lt;p&gt;Du siehst: Player implementiert 2 Interfaces: Weitere Interfaces werden durch Kommata getrennt an das erste Interface angehängt.&lt;/p&gt;
 &lt;h2&gt;default-Methoden&lt;/h2&gt;
 &lt;p&gt;Wir haben gelernt, dass es der Zweck von Interfaces ist, Verhalten (in Form von Methoden) vorzugeben, die Implementierung aber den Klassen zu überlassen, die das Interface verwendet. Seit Java 8 (also ca. seit 2014) ist es aber auch möglich in einem Interface sogenannte &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;default&lt;/span&gt; Methoden zu erstellen. Hierbei handelt es sich um konkrete Methoden (mit Implementierung), die von den Klassen, die das Interface verwenden, überschrieben werden können - nicht müssen.&lt;/p&gt;
-&lt;p&gt;default-Methoden wurden eingeführt um folgendes Problem zu lösen: Stell dir ein großes Java-Projekt vor mit einem Interface, dass in 20+ Klassen verwendet wird. Nun erweiterst du dein Interface um eine neue Methode (die bis vor 2014 abstrakt sein musste) von allen 20+ implementiert werden muss. Das würde bedeuten, dass dein Programm nicht ausführbar ist, bis du in jeder Klasse eine konkrete Implementierung eingebaut ist - was sehr umständlich ist. Mit default-Methoden ist das nicht der Fall. Hier kannst du eine Standard-Implementierung zur Verfügung stellen, welche verwendet wird solange die Klasse diese nicht mit einer eignenen Implementierung überschreibt.&lt;/p&gt;
+&lt;p&gt;default-Methoden wurden eingeführt, um folgendes Problem zu lösen: Stell dir ein großes Java-Projekt vor, mit einem Interface, dass in 20+ Klassen verwendet wird. Nun erweiterst du dein Interface um eine neue Methode (die bis vor 2014 abstrakt sein musste) von allen 20+ implementiert werden muss. Das würde bedeuten, dass dein Programm nicht ausführbar ist, bis du in jeder Klasse eine konkrete Implementierung eingebaut ist - was sehr umständlich ist. Mit default-Methoden ist das nicht der Fall. Hier kannst du eine Standard-Implementierung zur Verfügung stellen, welche verwendet wird, solange die Klasse diese nicht mit einer eigenen Implementierung überschreibt.&lt;/p&gt;
 &lt;p&gt;Dieses Problem tritt häufig auf, wenn eine Bibliothek erweitert wird. Mithilfe von default-Methoden bist du nicht gezwungen, dein ganzes Programm anpassen zu müssen, nur weil eine Bibliothek, die du verwendest, weitere Methoden in seinen Interfaces hinzugefügt hat.&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers&quot;&gt;
 &lt;div&gt;
@@ -4554,8 +4421,8 @@ class MyList implements Sortable {
 &lt;tbody&gt;
 &lt;tr style=&quot;height: 25px;&quot;&gt;
 &lt;td style=&quot;width: 21.0247%; height: 25px;&quot;&gt;&lt;strong&gt;Instanziierung&lt;/strong&gt;&lt;/td&gt;
-&lt;td style=&quot;width: 39.0283%; height: 25px;&quot;&gt;Kann nicht direkt instanziert werden&lt;/td&gt;
-&lt;td style=&quot;width: 39.9469%; height: 25px;&quot;&gt;Kann nicht direkt instanziert werden&lt;/td&gt;
+&lt;td style=&quot;width: 39.0283%; height: 25px;&quot;&gt;Kann nicht direkt instanziiert werden&lt;/td&gt;
+&lt;td style=&quot;width: 39.9469%; height: 25px;&quot;&gt;Kann nicht direkt instanziiert werden&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr style=&quot;height: 50px;&quot;&gt;
 &lt;td style=&quot;width: 21.0247%; height: 50px;&quot;&gt;&lt;strong&gt;Implementierung&lt;/strong&gt;&lt;/td&gt;
@@ -4580,9 +4447,9 @@ class MyList implements Sortable {
 &lt;h1&gt;&lt;br /&gt;Abschluss&lt;/h1&gt;
 &lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
-&lt;p&gt;Beide Übungsaugaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Klassen%20und%20Objekte#auto_top&quot;&gt;Klassen und Objekte&lt;/a&gt;. Nutze den Code als Grundlage. Du sollst von diesem Code&lt;em&gt; 2 Varianten&lt;/em&gt; erstellen:&lt;/p&gt;
+&lt;p&gt;Beide Übungsaufgaben basieren auf dem Beispiel mit dem Bewegenden Ball aus dem Kapitel &lt;a href=&quot;exe-node:Objektorientierte%20Programmierung:Klassen%20und%20Objekte#auto_top&quot;&gt;Klassen und Objekte&lt;/a&gt;. Nutze den Code als Grundlage. Du sollst von diesem Code&lt;em&gt; 2 Varianten&lt;/em&gt; erstellen:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 1: Abstrakte Klassen implementieren&lt;br /&gt;&lt;/strong&gt;Der Ball hat zwei wichtige Methoden: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;zeichnen()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen().&lt;/span&gt; Lagere beide Methoden inklusive den dafür benötigten Attributen in 2 abstrakte Klassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;DrawableObject&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MovableObjekt&lt;/span&gt; aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 1: Abstrakte Klassen implementieren&lt;br /&gt;&lt;/strong&gt;Der Ball hat zwei wichtige Methoden: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;zeichnen()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen().&lt;/span&gt; Lagere beide Methoden inklusive der dafür benötigten Attributen in 2 abstrakte Klassen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;DrawableObject&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;MovableObject&lt;/span&gt; aus und erstelle eine sinnvolle Vererbungshierarchie. Die Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; soll von beiden Klassen erben und Implementierungen für die abstrakten Methoden zur Verfügung stellen.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 2: Interfaces implementieren&lt;br /&gt;&lt;/strong&gt;Bei dieser Aufgabe sollst du die Methoden &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;zeichnen()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;bewegen()&lt;/span&gt; nicht in abstrakten Klassen auslagern, sondern in die Interfaces &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Drawable&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Moveable&lt;/span&gt; und diese dann in der Klasse &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Ball&lt;/span&gt; umsetzen.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Reflexion:&lt;/strong&gt;&lt;br /&gt;Schau dir beide Varianten deines Codes an: Die mit den abstrakten Klassen und die mit den Interfaces. Beides sind sinnvolle Strukturen. Welche Variante findest du sinnvoller und nachvollziehbarer?&lt;/li&gt;
 &lt;/ul&gt;
@@ -4590,7 +4457,7 @@ class MyList implements Sortable {
 &lt;ol&gt;
 &lt;li&gt;Erklär's mir als wäre ich 5 Jahre alt: Was sind abstrakte Klassen und was sind Interfaces?&lt;/li&gt;
 &lt;li&gt;Warum kann eine abstrakte Klasse nicht direkt instanziiert werden?&lt;/li&gt;
-&lt;li&gt;In welchen Situationen würdest du ein Interface einem abstrakten Klasse vorziehen?&lt;/li&gt;
+&lt;li&gt;In welchen Situationen würdest du ein Interface einer abstrakten Klasse vorziehen?&lt;/li&gt;
 &lt;li&gt;Nenne zwei wesentliche Unterschiede zwischen abstrakten Klassen und Interfaces.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;Zusammenfassung&lt;/h2&gt;
@@ -4639,12 +4506,12 @@ class MyList implements Sortable {
                         <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Klassen%20und%20Objekte#auto_top"></unicode>
                         <reference key="9"></reference>
                         <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Vererbung#auto_top"></unicode>
-                        <reference key="21"></reference>
+                        <reference key="20"></reference>
                        </dictionary>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <reference key="17"></reference>
+                       <reference key="31"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -5795,7 +5662,7 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="53"></int>
+                 <int value="63"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="41"></reference>
                 </dictionary>
@@ -5851,14 +5718,14 @@ public class Ball {
            <list></list>
           </dictionary>
          </instance>
-         <reference key="22"></reference>
-         <reference key="20"></reference>
+         <reference key="21"></reference>
+         <reference key="19"></reference>
          <reference key="37"></reference>
         </list>
        </dictionary>
       </instance>
       <reference key="9"></reference>
-      <reference key="31"></reference>
+      <reference key="30"></reference>
       <instance class="exe.engine.node.Node" reference="47">
        <dictionary>
         <string role="key" value="_title"></string>
@@ -6122,7 +5989,14 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Zugriffsmodifikatoren&lt;/strong&gt; (private, public, protected) steuern, wer welche Klassenmitglieder einsehen und verändern darf.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zugriffsmodifikatoren&lt;/strong&gt; &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;(private, public, protected)&lt;/span&gt; steuern, wer welche Klassenmitglieder einsehen und verändern darf.
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;public:&lt;/span&gt; Eigenschaften sind außerhalb der Klasse sichtbar&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;private:&lt;/span&gt; Eigenschaften sind nur innerhalb der Klasse sichtbar&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;protected:&lt;/span&gt; Eigschaften sind innerhalb der Klasse und von Subklassen sichtbar&lt;/li&gt;
+&lt;li&gt;default (Keine Angabe): Eigenschaften sind außerhalb der Klasse, aber nur innerhalb des Pakets sichtbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -6193,15 +6067,15 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
         <reference key="3"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
         <list>
-         <reference key="25"></reference>
+         <reference key="24"></reference>
         </list>
         <string role="key" value="children"></string>
         <list></list>
        </dictionary>
       </instance>
-      <reference key="21"></reference>
-      <reference key="17"></reference>
-      <reference key="30"></reference>
+      <reference key="20"></reference>
+      <reference key="31"></reference>
+      <reference key="29"></reference>
       <instance class="exe.engine.node.Node" reference="50">
        <dictionary>
         <string role="key" value="_title"></string>
@@ -6318,7 +6192,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Grundlegende Design Patterns&lt;/h1&gt;
-&lt;p&gt;In diesem Kapitel werden vier grundlegende und anfängerfreundliche Design Patterns vorgestellt: Das Singleton Pattern, das Factory Method Pattern, das Observer Pattern und das Strategy Pattern.&lt;/p&gt;
+&lt;p&gt;In diesem Kapitel werden vier grundlegende und anfängerfreundliche Design Patterns vorgestellt: Das Singleton Pattern, das Observer Pattern und das Strategy Pattern.&lt;/p&gt;
 &lt;h2&gt;Singleton Pattern&lt;/h2&gt;
 &lt;p&gt;Das Singleton Pattern löst das wiederkehrende Problem, sicherzustellen, dass von einer Klasse nur genau eine Instanz existiert und ein globaler Zugriffspunkt auf diese Instanz bereitgestellt wird.&lt;/p&gt;
 &lt;p&gt;Typische Einsatzmöglichkeiten des Singleton Patterns sind:&lt;/p&gt;
@@ -6359,7 +6233,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Wichtige Aspekte des Aufbaus:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Die Klasse stellt sicher, dass nur eine Instanz erstellt wird.&lt;/li&gt;
-&lt;li&gt;Wenn bereits eine Instanz existiert, wird diese zurückgegeben, wenn nicht wird eine neue Instanz erstellt und diese dann zurückgegeben.&lt;/li&gt;
+&lt;li&gt;Wenn bereits eine Instanz existiert, wird diese zurückgegeben, wenn nicht, wird eine neue Instanz erstellt und diese dann zurückgegeben.&lt;/li&gt;
 &lt;li&gt;Sie bietet einen globalen Zugriffspunkt auf diese Instanz.&lt;/li&gt;
 &lt;li&gt;Die Instanziierung erfolgt erst beim ersten Aufruf der &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;getInstance()&lt;/span&gt;-Methode.&lt;/li&gt;
 &lt;/ul&gt;
@@ -6394,7 +6268,7 @@ public class Main {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h2&gt;Factory Method Pattern&lt;/h2&gt;
+&lt;!--&lt;h2&gt;Factory Method Pattern&lt;/h2&gt;
 &lt;p&gt;Das Factory Method Pattern löst mehrere wiederkehrende Probleme in der objektorientierten Programmierung:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Entkopplung&lt;/strong&gt; &lt;strong&gt;der Objekterstellung&lt;/strong&gt;: Es ermöglicht die Erstellung von Objekten, ohne die exakte Klasse dieser Objekte spezifizieren zu müssen.&lt;/li&gt;
@@ -6485,9 +6359,9 @@ public class Main {
     }
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt;--&gt;
 &lt;h2&gt;Observer Pattern&lt;/h2&gt;
-&lt;p&gt;Das Observer Pattern löst folgende wiederkehrende Probleme, dass Obejkte über die Zustandsänderung eines anderen Objekts informiert werden müssen.&lt;/p&gt;
+&lt;p&gt;Das Observer Pattern löst folgende wiederkehrende Probleme, dass Objekte über die Zustandsänderung eines anderen Objekts informiert werden müssen.&lt;/p&gt;
 &lt;p&gt;Typische Einsatzmöglichkeiten des Observer Patterns sind:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Benutzeroberflächen:&lt;/strong&gt; Aktualisierung von UI-Elementen bei Änderungen der zugrunde liegenden Daten, wie z.B. die Anpassung mehrerer Anzeigen in einer Wetter-App bei Datenänderungen.&lt;/li&gt;
@@ -6624,20 +6498,20 @@ public class Main {
 &lt;h3&gt;Aufbau&lt;/h3&gt;
 &lt;p&gt;Das Strategy Pattern besteht aus drei Hauptkomponenten:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Kontext (Context)&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Kontext&lt;/strong&gt; (Context)&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;Enthält eine Referenz auf ein Strategy-Objekt&lt;/li&gt;
 &lt;li&gt;Nutzt die Strategy, um einen Algorithmus auszuführen&lt;/li&gt;
 &lt;li&gt;Kann zur Laufzeit die konkrete Strategy ändern&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Strategy (Strategie-Interface)&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Strategy&lt;/strong&gt; (Strategie-Interface)&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;Definiert eine gemeinsame Schnittstelle für alle konkreten Strategien&lt;/li&gt;
 &lt;li&gt;Deklariert die Methode(n), die von konkreten Strategien implementiert werden müssen&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Concrete Strategies (Konkrete Strategien)&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Concrete Strategies&lt;/strong&gt; (Konkrete Strategien)&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;Implementieren das Strategy-Interface&lt;/li&gt;
 &lt;li&gt;Stellen spezifische Algorithmen oder Verhaltensweisen bereit&lt;/li&gt;
@@ -6736,7 +6610,6 @@ public class Main {
 &lt;li&gt;&lt;strong&gt;Creational Patterns&lt;/strong&gt; beschäftigen sich mit dem Erzeugen von Objekten&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Singleton:&lt;/strong&gt; Sorgt für genau eine Instanz einer Klasse mit globalem Zugriff.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Factory Method:&lt;/strong&gt; Erzeugt Objekte, ohne deren konkrete Klasse explizit nennen zu müssen.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Structural Patterns&lt;/strong&gt; beschreiben die Komposition von Klassen und Objekten &lt;/li&gt;
@@ -6824,15 +6697,15 @@ public class Main {
     </dictionary>
    </instance>
    <unicode role="key" value="11"></unicode>
-   <reference key="21"></reference>
+   <reference key="20"></reference>
    <unicode role="key" value="15"></unicode>
    <reference key="41"></reference>
    <unicode role="key" value="16"></unicode>
-   <reference key="22"></reference>
+   <reference key="21"></reference>
    <unicode role="key" value="17"></unicode>
    <reference key="47"></reference>
    <unicode role="key" value="19"></unicode>
-   <reference key="31"></reference>
+   <reference key="30"></reference>
    <unicode role="key" value="2"></unicode>
    <reference key="16"></reference>
    <unicode role="key" value="21"></unicode>
@@ -6842,13 +6715,13 @@ public class Main {
    <unicode role="key" value="3"></unicode>
    <reference key="9"></reference>
    <unicode role="key" value="4"></unicode>
-   <reference key="30"></reference>
+   <reference key="29"></reference>
    <unicode role="key" value="5"></unicode>
-   <reference key="17"></reference>
+   <reference key="31"></reference>
    <unicode role="key" value="6"></unicode>
    <reference key="50"></reference>
    <unicode role="key" value="7"></unicode>
-   <reference key="20"></reference>
+   <reference key="19"></reference>
    <unicode role="key" value="8"></unicode>
    <reference key="37"></reference>
   </dictionary>
@@ -6860,19 +6733,19 @@ public class Main {
   <string value="Base"></string>
   <string role="key" value="anchor_nodes"></string>
   <list>
-   <reference key="20"></reference>
-   <reference key="17"></reference>
+   <reference key="19"></reference>
+   <reference key="31"></reference>
    <reference key="9"></reference>
-   <reference key="21"></reference>
+   <reference key="20"></reference>
    <reference key="41"></reference>
    <reference key="47"></reference>
-   <reference key="30"></reference>
+   <reference key="29"></reference>
    <reference key="37"></reference>
   </list>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="47"></reference>
+  <reference key="29"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -7920,15 +7793,15 @@ public class Main {
    </list>
    <string role="key" value="9204c0b50abec03c0414d7426fbd5a7a"></string>
    <list>
-    <reference key="28"></reference>
+    <reference key="27"></reference>
    </list>
    <string role="key" value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
    <list>
-    <reference key="29"></reference>
+    <reference key="28"></reference>
    </list>
    <string role="key" value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
    <list>
-    <reference key="27"></reference>
+    <reference key="26"></reference>
    </list>
   </dictionary>
   <string role="key" value="root"></string>

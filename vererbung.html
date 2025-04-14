@@ -61,18 +61,18 @@
 <div class="iDevice emphasis0" >
 <div id="ta16_127_2" class="block iDevice_content">
 <div class="exe-text"><h1>Einführung – Vererbung im Alltag</h1>
-<p>Das Prinzip der Vererbung lässt sich am einfachsten anhand der Tierwelt veranschaulichen. Nehmen wir eine Reihe von unterschiedlichen Tieren: Hund, Katze, Schlange, Wal, Amsel, und Forelle. Was haben diese Lebewesen alle gemeinsam? Es sind Tiere. Tiere zeichnen sich durch eine Reihe an Eigenschaften und Verhalten aus, welche alle Tiere gemeinsam haben:</p>
+<p>Das Prinzip der Vererbung lässt sich am einfachsten anhand der Tierwelt veranschaulichen. Nehmen wir eine Reihe von unterschiedlichen Tieren: Hund, Katze, Schlange, Wal, Amsel und Forelle. Was haben diese Lebewesen alle gemeinsam? Es sind Tiere. Tiere zeichnen sich durch eine Reihe an Eigenschaften und Verhalten aus, welche alle Tiere gemeinsam haben:</p>
 <ul>
 <li>Eigenschaften: Alter, Gewicht, Größe, ...</li>
 <li>Verhalten: atmen, essen, bewegen, ...</li>
 </ul>
-<p>Da sie diese Eigenschaften gemeinsam haben, kann man sie zusammen in der Gruppe der Tiere zusammenfassen. Sie "erben" diese Eigenschaften quasi von der allgemeinene Gruppe "Tiere". Allerdings unterscheiden sich diese Tiere auch in ihrer Art: Die Schlange ist ein <strong>Reptil,</strong> die Amsel ist ein <strong>Vogel,</strong> Hund, Katze und Wal sind <strong>Säugetiere</strong> und die Forelle ist ein <strong>Fisch.</strong> Es gibt hier also noch Untergruppen, die sich unterscheiden. In den Untergruppen wiederum teilen sich Tiere wieder viele Eigenschaften, wie z.B. dass alle Fische mit Kiemen atmen. Jede dieser Untergruppen (Fische, Reptilien, Säugetiere, Vögel) ist eine Klasse und ein Bauplan für Tiere dieser Gruppe und erbt Eigenschaften der allgemeinen Gruppe (oder Klasse) "Tier".</p>
+<p>Da sie diese Eigenschaften gemeinsam haben, kann man sie zusammen in der Gruppe der Tiere zusammenfassen. Sie "erben" diese Eigenschaften quasi von der allgemeinen Gruppe "Tiere". Allerdings unterscheiden sich diese Tiere auch in ihrer Art: Die Schlange ist ein <strong>Reptil,</strong> die Amsel ist ein <strong>Vogel,</strong> Hund, Katze und Wal sind <strong>Säugetiere</strong> und die Forelle ist ein <strong>Fisch.</strong> Es gibt hier also noch Untergruppen, die sich unterscheiden. In den Untergruppen wiederum teilen sich Tiere wieder viele Eigenschaften, wie z.B. dass alle Fische mit Kiemen atmen. Jede dieser Untergruppen (Fische, Reptilien, Säugetiere, Vögel) ist eine Klasse und ein Bauplan für Tiere dieser Gruppe und erbt Eigenschaften der allgemeinen Gruppe (oder Klasse) "Tier".</p>
 <p>Dieses Prinzip der Vererbung findet Anwendung in der Objektorientierten Programmierung. Warum? Wir haben bereits gelernt, wie wir Code wiederverwenden können. Die Vererbung geht diesen Ansatz noch einen großen Schritt weiter: Sie ermöglicht es, allgemeine Funktionalitäten in einer Oberklasse zu definieren und diese in spezialisierten Klassen automatisch zu übernehmen und bei Bedarf anzupassen. Damit wird nicht nur redundanter Code vermieden, sondern auch die Wartbarkeit und Erweiterbarkeit eurer Programme deutlich verbessert. Außerdem sorgt Vererbung auch für eine übersichtliche und nachvollziehbare Struktur in unserem Code.</p>
 <p>In diesem Kapitel lernst du:</p>
 <ul>
 <li>Was Vererbung bedeutet</li>
 <li>Wie man Vererbung in Java umsetzt</li>
-<li>Welche Vorteile Vererbung für die Sortwareentwicklung bringt</li>
+<li>Welche Vorteile Vererbung für die Software-Entwicklung bringt</li>
 </ul>
 <h1>Was ist Vererbung?</h1>
 <p>Vererbung beschreibt den Mechanismus, bei dem eine Klasse (die Superklasse) Eigenschaften und Methoden an eine oder mehrere abgeleitete Klassen (Subklassen) weitergibt. Dabei werden gemeinsame Merkmale einmal definiert und müssen nicht in jeder Subklasse erneut implementiert werden. Das Konzept der Vererbung kann in zwei Gruppen kategorisiert werden:</p>
@@ -83,21 +83,21 @@
 <p>Dabei kann eine Subklasse immer nur Eigenschaften und Methoden von <em>einer</em> Superklasse direkt erben und <em>nicht</em> von mehreren.</p>
 <p>Wenn wir dieses Prinzip auf unser Tier-Beispiel anwenden, erhalten wir folgende Unterteilung:</p>
 <ul>
-<li>Die Superklasse „Tier“ enthält allgemeine Eigenschaften wie Alter, Gewicht und Größ sowie Methoden wie atmen(), essen() und bewegen().</li>
+<li>Die Superklasse „Tier“ enthält allgemeine Eigenschaften wie Alter, Gewicht und Größe sowie Methoden wie atmen(), essen() und bewegen().</li>
 <li>Die Subklassen "Säugetier", "Reptil", "Fisch" und "Vogel" übernehmen diese Eigenschaften und Methoden von "Tier", haben aber auch jeweils eigene Eigenschaften und Methoden, wie Flossenanzahl, Flügelspannweite und eiLegen().
 <ul>
 <li>Die Subklassen sind gleichzeitig Superklassen für die nächste Vererbungsebene</li>
 </ul>
 </li>
-<li>Die Subklassen „Hund“, „Amsel“ oder „Wal“ erben die Eigenschaften und Methoden von alle ihren Superklassen und besitzen wiederum eigene Eigenschaften und Methoden, wie z.B. ballHolen().<br />
+<li>Die Subklassen „Hund“, „Amsel“ oder „Wal“ erben die Eigenschaften und Methoden von ihren Superklassen und besitzen wiederum eigene Eigenschaften und Methoden, wie z.B. ballHolen().<br />
 <ul>
 <li><strong>Wichtig:</strong> "Hund" erbt <em>nur</em> die Eigenschaften und Methoden von "Säugetier". <em>Indirekt</em> erbt "Hund" natürlich auch die Eigenschaften und Methoden von "Tier", aber nur, weil "Säugetier" sie von "Tier" erbt. Das ist gemeint mit: Eine Subklasse kann immer nur Eigenschaften und Methoden <em>einer</em> Superklasse <em>direkt</em> erben. "Hund" kann auch keine weiteren Eigenschaften von einer weiteren Klasse "Haustier" erben.</li>
 </ul>
 </li>
 </ul>
-<p>Wenn wir nun noch die unterschiedlichen Arten von Tieren hinzufügen (Vogel, Säugetier, etc.), dann sind diese Subklassen von "Tier" und Superklassen von "Hund", "Amsel", "Wal" und Co. Diese Vererbungshierarchie kann mithilfe eines Klassendiagramms veranschaulicht werden. Wie man so ein Klassendiagramm erstellt, lernen wir im Abschnitt "Dokumentation". Alle Tiere erben die Eigenschaften und Methoden von den Klassen auf die der jeweilge Pfeil zeigt. </p>
+<p>Wenn wir nun noch die unterschiedlichen Arten von Tieren hinzufügen (Vogel, Säugetier, etc.), dann sind diese Subklassen von "Tier" und Superklassen von "Hund", "Amsel", "Wal" und Co. Diese Vererbungshierarchie kann mithilfe eines Klassendiagramms veranschaulicht werden. Wie man so ein Klassendiagramm erstellt, lernen wir im Abschnitt "Dokumentation". Alle Tiere erben die Eigenschaften und Methoden von den Klassen, auf die der jeweilige Pfeil zeigt. </p>
 <p><img src="klassendiagramm_vererbung.drawio.png" alt="Dieses Klassendiagramm veranschaulicht Vererbung im Tierreich" title="Vererbung im Tierreich" width="1051" height="492" /></p>
-<p>Ein anderes Beispiel für Vererbung ist die Vererbung von Stileigenschaften in der Typografie:In Design-Programmen wie InDesign von Adobe können verschiedene Absatzstile festgelegt werden für Fließtext, Stichpunkte, Überschriften, etc. Diese ABsatzstile können so angelegt werden, dass sie aufeinander aufbauen. Das bedeutet, sie übernehmen bestimmte Eigenschaften, wie z.B. die Schriftart, von dem Absatzstil, auf den sie aufbauen. Wenn ich dann im Desgin-Prozess auf die Idee komme doch eine andere Schriftart verwenden zu wollen, muss ich nicht jeden einzelnen Absatzstil anpassen, sondern im besten Fall nur einen, auf den alle anderen aufbauen. </p>
+<p>Ein anderes Beispiel für Vererbung ist die Vererbung von Stileigenschaften in der Typografie:In Design-Programmen wie InDesign von Adobe können verschiedene Absatzstile festgelegt werden für Fließtext, Stichpunkte, Überschriften, etc. Diese Absatzstile können so angelegt werden, dass sie aufeinander aufbauen. Das bedeutet, sie übernehmen bestimmte Eigenschaften, wie z.B. die Schriftart, von dem Absatzstil, auf den sie aufbauen. Wenn ich dann im Design-Prozess auf die Idee komme, doch eine andere Schriftart verwenden zu wollen, muss ich nicht jeden einzelnen Absatzstil anpassen, sondern im besten Fall nur einen, auf den alle anderen aufbauen. </p>
 <p>Die Verwendung von Vererbung bringt zahlreiche Vorteile in der objektorientierten Programmierung mit sich:</p>
 <ul>
 <li><strong>Wiederverwendbarkeit:</strong> Einmal definierte Eigenschaften in der Superklasse werden in allen Subklassen verfügbar, was den Programmieraufwand reduziert.</li>
@@ -189,7 +189,7 @@ class Fisch extends Tier {
 <li>Das Schlüsselwort <span style="font-family: andale mono, monospace;">extends</span> zeigt an, dass Säugetier und Fisch von Tier erben.</li>
 <li>Mit dem Aufruf von<span style="font-family: andale mono, monospace;"> super(alter, gewicht, größe)</span> im Konstruktor der Subklasse wird der Konstruktor der Oberklasse ausgeführt, sodass die Attribute korrekt initialisiert werden.</li>
 <li>Danach können die weiteren klassenspezifischen Attributen initialisiert werden.</li>
-<li>Abschließend werden die neuen klassenspazifischen Methoden deklariert.</li>
+<li>Abschließend werden die neuen klassenspezifischen Methoden deklariert.</li>
 </ul>
 <p>Im nächsten Schritt erstellen wir zwei weitere Subklassen: <span style="font-family: andale mono, monospace;">Hund</span> und <span style="font-family: andale mono, monospace;">Forelle.</span> Diese erben jeweils von <span style="font-family: andale mono, monospace;">Säugetier</span> und <span style="font-family: andale mono, monospace;">Fisch.</span></p>
 <div class="highlighted-code language-java">
@@ -216,7 +216,7 @@ class Fisch extends Tier {
 class Forelle extends Fisch {
 
    // Konstruktor der Subklasse, ruft den Konstruktor der Superklasse auf
-   public Fisch(int alter, int gewicht, int größe, int anzahlFlossen) {
+   public Forelle(int alter, int gewicht, int größe, int anzahlFlossen) {
       super(alter, gewicht, größe, anzahlFlossen);
    }
 
@@ -244,11 +244,11 @@ public class Main {
 }</code></pre>
 </div>
 </div>
-<p>Erklärung: Die Methode <span style="font-family: andale mono, monospace;">bewegen()</span> wird in der Subklasse überschrieben. Das erfolgt mithilfer der Annotation <span style="font-family: andale mono, monospace;">@Override</span>. Dadurch wird das spezifische Verhalten (Laufen oder Schwimmen) implementiert, während die Grundstruktur aus der Superklasse übernommen wird. Diese Technik der Vererbung ermöglicht es, zunächst allgemeine Verhaltensweisen zu definieren und sie später in den abgeleiteten Klassen zu spezifizieren.</p>
+<p>Erklärung: Die Methode <span style="font-family: andale mono, monospace;">bewegen()</span> wird in der Subklasse überschrieben. Das erfolgt mithilfe der Annotation <span style="font-family: andale mono, monospace;">@Override</span>. Dadurch wird das spezifische Verhalten (Laufen oder Schwimmen) implementiert, während die Grundstruktur aus der Superklasse übernommen wird. Diese Technik der Vererbung ermöglicht es, zunächst allgemeine Verhaltensweisen zu definieren und sie später in den abgeleiteten Klassen zu spezifizieren.</p>
 <p>Die Superklassen <span style="font-family: andale mono, monospace;">Tier, Fisch</span> und <span style="font-family: andale mono, monospace;">Säugetier</span> sind ziemlich abstrakt. Das bedeutet, dass wahrscheinlich zu keinem Zeitpunkt ein Objekt von diesen Klassen erstellt wird, denn kein Tier ist "nur" ein Tier. Bei einem Tier handelt es sich immer um eine konkrete Rasse oder Art, wie z.B. Hund, Katze, Forelle, etc. Das Prinzip der Abstraktion schauen wir uns genauer im Kapitel "<a href="abstraktion.html">Abstrakte Klassen und Interfaces</a>" an. Hier kannst du aber bereits erkennen, was mit Abstraktion gemeint ist: Eine Klasse, die zwar Eigenschaften und Methoden definiert, aber nicht dafür gedacht ist, dass Objekte aus ihr erstellt werden.</p>
 <h2>Das Schlüsselwort „super“</h2>
 <p>Das Schlüsselwort <span style="font-family: andale mono, monospace;">super</span> spielt in der Vererbung eine <strong>zentrale</strong> <strong>Rolle</strong>. Es dient dazu, auf die Mitglieder (Attribute und Methoden) der Superklasse zuzugreifen. super ist quasi ein Verweis auf die Superklasse.</p>
-<p>In erster Linie wird das Schlüsselwort super im <strong>Konstruktor</strong> einer Subklasse verwendet, um den Konstruktor der Superklasse aufzurufen. Das erfolgt, indem man hinter <span style="font-family: andale mono, monospace;">super</span> in den Klammern () die Parameter des Konstruktors der Superklasse gibt. Dann wird dieser Konstruktor mit diesen Parametern aufgerufen. Danach kann man die klassenspezifischen Attribute der Subklasse intialisieren. <strong>Wichtig</strong>: Der Aufruf des Konstruktors der Superklasse mithilfe von <span style="font-family: andale mono, monospace;">super()</span> muss der erste Befehl innerhalb des Konstruktors der Subklasse sein.</p>
+<p>In erster Linie wird das Schlüsselwort super im <strong>Konstruktor</strong> einer Subklasse verwendet, um den Konstruktor der Superklasse aufzurufen. Das erfolgt, indem man hinter <span style="font-family: andale mono, monospace;">super</span> in den Klammern () die Parameter des Konstruktors der Superklasse gibt. Dann wird dieser Konstruktor mit diesen Parametern aufgerufen. Danach kann man die klassenspezifischen Attribute der Subklasse initialisieren. <strong>Wichtig</strong>: Der Aufruf des Konstruktors der Superklasse mithilfe von <span style="font-family: andale mono, monospace;">super()</span> muss der erste Befehl innerhalb des Konstruktors der Subklasse sein.</p>
 <p>Ein weiteres Einsatzgebiet ist, <span style="font-family: andale mono, monospace;">super</span> zu verwenden, um auf Methoden oder Attribute aus der Superklasse zuzugreifen. Dies erfolgt mithilfe der Punktnotation.</p>
 <p><strong>Beispiel:</strong></p>
 <div class="highlighted-code language-java">
@@ -315,29 +315,29 @@ public class Main {
 <ul>
 <li><strong>Aufgabe 1</strong>: Fahrzeug-Vererbungshierarchie implementieren
 <ul>
-<li>Erstelle eine Superklasse „Fahrzeug“ mit folgenden Attributen und Methoden:
+<li>Erstelle eine Superklasse Fahrzeug mit folgenden Attributen und Methoden:
 <ul>
 <li>Attribute: anzahlRaeder, Baujahr, geschwindigkeit</li>
 <li>Methoden: beschleunigen(), bremsen() (die Methoden sollen eine einfache Konsolenausgabe enthalten).</li>
 </ul>
 </li>
-<li>Erstelle eine Subklasse "MotorisiertesFahrzeug" mit folgenden weiteren Attributen und Methoden:
+<li>Erstelle eine Subklasse MotorisiertesFahrzeug mit folgenden weiteren Attributen und Methoden:
 <ul>
 <li>Attribut: tankFuellung</li>
 <li>Methode: tanken(double menge)</li>
 </ul>
 </li>
-<li>Erstelle nun die Subklassen "Fahrrad", welche direkt von der "Fahzeug"-Klassse erbt und "PKW" und "Motorrad", welche von "MotorisiertesFahrzeug" erbt. <br />
+<li>Erstelle nun die Subklassen Fahrrad, (welche direkt von der Fahrzeug-Klassse erbt) und PKW und Motorrad (welche von MotorisiertesFahrzeug erben). <br />
 <ul>
-<li>Füge jeder Klasse ein spezifisches Attribut doer eine Methoden hinzu, die für den jeweiligen Fahrzeugtyp charakteristisch sind.</li>
+<li>Füge jeder Klasse ein spezifisches Attribut oder eine Methoden hinzu, die für den jeweiligen Fahrzeugtyp charakteristisch sind.</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><strong>Aufgabe 2</strong>: Erweiterung mit sinnvoller Kapselung
 <ul>
-<li>Ergänze deine Klassen, um sinnvolle Zugriffsmodifikatoren. Es sollen so wenig wie möglich Attribute und Methoden public sein.</li>
-<li>Ergänze deine Klassen um sinnvolle Getter und Setter, um die Daten zu schützen und zu prüfen, bevor sie geändert werden.
+<li>Ergänze sinnvolle Zugriffsmodifikatoren. Es sollen so wenig wie möglich Attribute und Methoden public sein.</li>
+<li>Ergänze sinnvolle Getter und Setter, um die Daten zu schützen und zu prüfen, bevor sie geändert werden.
 <ul>
 <li>setAnzahlRaeder(int anzahl) soll nur eine Anzahl größer 0 akzeptieren</li>
 <li>tanken(double menge) soll nur eine sinnvolle Menge akzeptieren</li>
@@ -350,7 +350,8 @@ public class Main {
 <h2>Fragen</h2>
 <ol>
 <li>Was versteht man unter Vererbung in der objektorientierten Programmierung?</li>
-<li>Eelche Vorteile bietet Vererbung?</li>
+<li>Welche Vorteile bietet Vererbung?</li>
+<li>Wie viele direkte Superklassen kann eine Subklasse haben?</li>
 <li>Wie wird in Java die Vererbung syntaktisch umgesetzt, und welche Rolle spielt dabei das Schlüsselwort „extends“?</li>
 <li>Erklärt den Zweck des Schlüsselworts „super“ in Konstruktoren und Methoden.</li>
 </ol>
@@ -363,6 +364,7 @@ public class Main {
 </ul>
 </li>
 <li>In einer Vererbungshierarchie mit mehreren Vererbungsebenen, kann eine Klasse sowohl Super- als auch Subklasse sein.</li>
+<li>Eine Subklasse kann nur eine direkte Superklasse haben.</li>
 <li>In Java wird Vererbung mit dem Schlüsselwort <span style="font-family: andale mono, monospace;">extends</span> umgesetzt.</li>
 <li>Das Schlüsselwort <span style="font-family: andale mono, monospace;">super</span> wird genutzt, um auf Konstruktoren, Methoden und Attribute der Superklasse zuzugreifen.</li>
 <li>Vererbung fördert <strong>Wiederverwendbarkeit, Wartbarkeit</strong> und <strong>Erweiterbarkeit</strong> des Codes</li>

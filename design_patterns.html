@@ -94,7 +94,7 @@
 </li>
 </ul>
 <h1>Grundlegende Design Patterns</h1>
-<p>In diesem Kapitel werden vier grundlegende und anfängerfreundliche Design Patterns vorgestellt: Das Singleton Pattern, das Factory Method Pattern, das Observer Pattern und das Strategy Pattern.</p>
+<p>In diesem Kapitel werden vier grundlegende und anfängerfreundliche Design Patterns vorgestellt: Das Singleton Pattern, das Observer Pattern und das Strategy Pattern.</p>
 <h2>Singleton Pattern</h2>
 <p>Das Singleton Pattern löst das wiederkehrende Problem, sicherzustellen, dass von einer Klasse nur genau eine Instanz existiert und ein globaler Zugriffspunkt auf diese Instanz bereitgestellt wird.</p>
 <p>Typische Einsatzmöglichkeiten des Singleton Patterns sind:</p>
@@ -135,7 +135,7 @@
 <p>Wichtige Aspekte des Aufbaus:</p>
 <ul>
 <li>Die Klasse stellt sicher, dass nur eine Instanz erstellt wird.</li>
-<li>Wenn bereits eine Instanz existiert, wird diese zurückgegeben, wenn nicht wird eine neue Instanz erstellt und diese dann zurückgegeben.</li>
+<li>Wenn bereits eine Instanz existiert, wird diese zurückgegeben, wenn nicht, wird eine neue Instanz erstellt und diese dann zurückgegeben.</li>
 <li>Sie bietet einen globalen Zugriffspunkt auf diese Instanz.</li>
 <li>Die Instanziierung erfolgt erst beim ersten Aufruf der <span style="font-family: andale mono, monospace;">getInstance()</span>-Methode.</li>
 </ul>
@@ -170,7 +170,7 @@ public class Main {
 }</code></pre>
 </div>
 </div>
-<h2>Factory Method Pattern</h2>
+<!--<h2>Factory Method Pattern</h2>
 <p>Das Factory Method Pattern löst mehrere wiederkehrende Probleme in der objektorientierten Programmierung:</p>
 <ul>
 <li><strong>Entkopplung</strong> <strong>der Objekterstellung</strong>: Es ermöglicht die Erstellung von Objekten, ohne die exakte Klasse dieser Objekte spezifizieren zu müssen.</li>
@@ -261,9 +261,9 @@ public class Main {
     }
 }</code></pre>
 </div>
-</div>
+</div>-->
 <h2>Observer Pattern</h2>
-<p>Das Observer Pattern löst folgende wiederkehrende Probleme, dass Obejkte über die Zustandsänderung eines anderen Objekts informiert werden müssen.</p>
+<p>Das Observer Pattern löst folgende wiederkehrende Probleme, dass Objekte über die Zustandsänderung eines anderen Objekts informiert werden müssen.</p>
 <p>Typische Einsatzmöglichkeiten des Observer Patterns sind:</p>
 <ul>
 <li><strong>Benutzeroberflächen:</strong> Aktualisierung von UI-Elementen bei Änderungen der zugrunde liegenden Daten, wie z.B. die Anpassung mehrerer Anzeigen in einer Wetter-App bei Datenänderungen.</li>
@@ -400,20 +400,20 @@ public class Main {
 <h3>Aufbau</h3>
 <p>Das Strategy Pattern besteht aus drei Hauptkomponenten:</p>
 <ul>
-<li>Kontext (Context)<br />
+<li><strong>Kontext</strong> (Context)<br />
 <ul>
 <li>Enthält eine Referenz auf ein Strategy-Objekt</li>
 <li>Nutzt die Strategy, um einen Algorithmus auszuführen</li>
 <li>Kann zur Laufzeit die konkrete Strategy ändern</li>
 </ul>
 </li>
-<li>Strategy (Strategie-Interface)<br />
+<li><strong>Strategy</strong> (Strategie-Interface)<br />
 <ul>
 <li>Definiert eine gemeinsame Schnittstelle für alle konkreten Strategien</li>
 <li>Deklariert die Methode(n), die von konkreten Strategien implementiert werden müssen</li>
 </ul>
 </li>
-<li>Concrete Strategies (Konkrete Strategien)<br />
+<li><strong>Concrete Strategies</strong> (Konkrete Strategien)<br />
 <ul>
 <li>Implementieren das Strategy-Interface</li>
 <li>Stellen spezifische Algorithmen oder Verhaltensweisen bereit</li>
@@ -512,7 +512,6 @@ public class Main {
 <li><strong>Creational Patterns</strong> beschäftigen sich mit dem Erzeugen von Objekten<br />
 <ul>
 <li><strong>Singleton:</strong> Sorgt für genau eine Instanz einer Klasse mit globalem Zugriff.</li>
-<li><strong>Factory Method:</strong> Erzeugt Objekte, ohne deren konkrete Klasse explizit nennen zu müssen.</li>
 </ul>
 </li>
 <li><strong>Structural Patterns</strong> beschreiben die Komposition von Klassen und Objekten </li>
