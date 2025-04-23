@@ -394,7 +394,7 @@ void draw() {
         <list></list>
         <string role="key" value="children"></string>
         <list>
-         <instance class="exe.engine.node.Node" reference="41">
+         <instance class="exe.engine.node.Node" reference="38">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Erste Schritte in Java"></unicode>
@@ -684,7 +684,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="364"></int>
+                        <int value="388"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -698,9 +698,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.61"></unicode>
+                      <unicode value="14_129_2.69"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="43">
+                      <instance class="exe.engine.resource.Resource" reference="40">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -709,7 +709,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp2vbk4e\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -736,7 +736,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="368"></int>
+                        <int value="392"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -750,9 +750,9 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.62"></unicode>
+                      <unicode value="14_129_2.70"></unicode>
                       <string role="key" value="_imageResource"></string>
-                      <instance class="exe.engine.resource.Resource" reference="44">
+                      <instance class="exe.engine.resource.Resource" reference="41">
                        <dictionary>
                         <string role="key" value="_idevice"></string>
                         <reference key="5"></reference>
@@ -761,7 +761,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp2vbk4e\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2645,7 +2645,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp2vbk4e\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2665,7 +2665,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\klassendiagramm_beispiel2.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp2vbk4e\\klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2685,7 +2685,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="wasserfall.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\wasserfall.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp2vbk4e\\wasserfall.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3202,7 +3202,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="365"></int>
+                                                   <int value="389"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3216,7 +3216,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.37"></unicode>
+                                                 <unicode value="28_127_2.49"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="26"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3235,7 +3235,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="366"></int>
+                                                   <int value="390"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3249,7 +3249,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.38"></unicode>
+                                                 <unicode value="28_127_2.50"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="27"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3268,7 +3268,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="369"></int>
+                                                   <int value="393"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3282,7 +3282,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.39"></unicode>
+                                                 <unicode value="28_127_2.51"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="28"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3308,7 +3308,7 @@ public void validateInput(int input) throws InvalidInputException {
                                              <reference key="20"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="40"></int>
+                                            <int value="52"></int>
                                             <string role="key" value="parentNode"></string>
                                             <reference key="30"></reference>
                                            </dictionary>
@@ -3729,7 +3729,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpvvc8ci\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmp2vbk4e\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4084,7 +4084,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="367"></int>
+                                     <int value="391"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4098,7 +4098,7 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.28"></unicode>
+                                   <unicode value="16_127_2.32"></unicode>
                                    <string role="key" value="_imageResource"></string>
                                    <reference key="32"></reference>
                                    <string role="key" value="_parent"></string>
@@ -4119,7 +4119,7 @@ public class Main {
                               <string role="key" value="intlinks_to_anchors"></string>
                               <dictionary></dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="29"></int>
+                              <int value="33"></int>
                               <string role="key" value="parentNode"></string>
                               <reference key="20"></reference>
                              </dictionary>
@@ -4517,7 +4517,7 @@ class MyList implements Sortable {
                     </list>
                     <string role="key" value="children"></string>
                     <list>
-                     <instance class="exe.engine.node.Node" reference="38">
+                     <instance class="exe.engine.node.Node" reference="35">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Packages und API"></unicode>
@@ -4740,409 +4740,11 @@ import java.util.*;                // Importiert alle Collections
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
-                             <dictionary>
-                              <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke#auto_top"></unicode>
-                              <instance class="exe.engine.node.Node" reference="37">
-                               <dictionary>
-                                <string role="key" value="_title"></string>
-                                <unicode value="Collections und Lambda Ausdrücke"></unicode>
-                                <string role="key" value="idevices"></string>
-                                <list>
-                                 <instance class="exe.engine.jsidevice.JsIdevice" reference="35">
-                                  <dictionary>
-                                   <string role="key" value="_title"></string>
-                                   <unicode value=""></unicode>
-                                   <string role="key" value="_attributes"></string>
-                                   <list>
-                                    <tuple>
-                                     <string value="title"></string>
-                                     <list>
-                                      <string value="Title"></string>
-                                      <int value="0"></int>
-                                      <int value="0"></int>
-                                     </list>
-                                    </tuple>
-                                    <tuple>
-                                     <string value="category"></string>
-                                     <list>
-                                      <string value="Category"></string>
-                                      <int value="0"></int>
-                                      <int value="1"></int>
-                                     </list>
-                                    </tuple>
-                                    <tuple>
-                                     <string value="css-class"></string>
-                                     <list>
-                                      <string value="CSS class"></string>
-                                      <int value="0"></int>
-                                      <int value="2"></int>
-                                     </list>
-                                    </tuple>
-                                    <tuple>
-                                     <string value="icon"></string>
-                                     <list>
-                                      <string value="Icon"></string>
-                                      <int value="0"></int>
-                                      <int value="3"></int>
-                                     </list>
-                                    </tuple>
-                                   </list>
-                                   <string role="key" value="_author"></string>
-                                   <string value=""></string>
-                                   <string role="key" value="_iDeviceDir"></string>
-                                   <string value="text"></string>
-                                   <string role="key" value="_purpose"></string>
-                                   <string value=""></string>
-                                   <string role="key" value="_tip"></string>
-                                   <string value=""></string>
-                                   <string role="key" value="_typeName"></string>
-                                   <unicode value="Text"></unicode>
-                                   <string role="key" value="_valid"></string>
-                                   <bool value="1"></bool>
-                                   <string role="key" value="class_"></string>
-                                   <unicode value="text"></unicode>
-                                   <string role="key" value="edit"></string>
-                                   <bool value="0"></bool>
-                                   <string role="key" value="emphasis"></string>
-                                   <int value="0"></int>
-                                   <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
-                                   <int value="1"></int>
-                                   <string role="key" value="fields"></string>
-                                   <list>
-                                    <instance class="exe.engine.field.TextAreaField" reference="36">
-                                     <dictionary>
-                                      <string role="key" value="_id"></string>
-                                      <unicode value="135_2"></unicode>
-                                      <string role="key" value="_idevice"></string>
-                                      <reference key="35"></reference>
-                                      <string role="key" value="_instruc"></string>
-                                      <string value=""></string>
-                                      <string role="key" value="_name"></string>
-                                      <string value=""></string>
-                                      <string role="key" value="anchor_names"></string>
-                                      <list></list>
-                                      <string role="key" value="anchors_linked_from_fields"></string>
-                                      <dictionary></dictionary>
-                                      <string role="key" value="content_w_resourcePaths"></string>
-                                      <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung – Warum Collections?&lt;/h1&gt;
-&lt;p&gt;Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.&lt;/p&gt;
-&lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Die wichtigsten Collection-Typen: ArrayList, LinkedList, HashMap und Stack. Wir betrachten ihre Eigenschaften,&lt;/li&gt;
-&lt;li&gt;Einsatzmöglichkeiten von Collections &lt;/li&gt;
-&lt;li&gt;Verarbeitung von Collections mithilfe von Iteratoren, erweiterten For-Schleifen und Streams.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Das Collections Framework&lt;/h1&gt;
-&lt;p&gt;Das Collections Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dynamische Arrays (z. B. mit ArrayList)&lt;/li&gt;
-&lt;li&gt;Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)&lt;/li&gt;
-&lt;li&gt;Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Vorteile des Collections Frameworks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Flexibilität:&lt;/strong&gt; Dynamische Größenanpassung der Datenstrukturen.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Effizienz:&lt;/strong&gt; Optimierte Algorithmen für Suchen, Einfügen und Löschen.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Einheitlichkeit:&lt;/strong&gt; Gemeinsame Schnittstellen für verschiedene Datenstrukturen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Wichtige Collection-Typen&lt;/h1&gt;
-&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
-&lt;h2&gt;ArrayList&lt;/h2&gt;
-&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ArrayList&lt;/span&gt; ist eine dynamische Liste, die ähnlich wie ein Array funktioniert, aber ihre Größe automatisch anpasst.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Elemente werden in einer bestimmten Reihenfolge gespeichert.&lt;/li&gt;
-&lt;li&gt;Doppelte Werte sind erlaubt.&lt;/li&gt;
-&lt;li&gt;Zugriff auf Elemente erfolgt über Indizes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beispiel:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
-
-public class Main {
-   public static void main(String[] args) {
-      ArrayList&amp;lt;String&amp;gt; playlist = new ArrayList&amp;lt;&amp;gt;();
-      playlist.add(&quot;Song A&quot;);
-      playlist.add(&quot;Song B&quot;);
-      playlist.add(&quot;Song C&quot;);
-
-      System.out.println(&quot;Erster Song: &quot; + playlist.get(0));
-
-      for (String song : playlist) {
-         System.out.println(&quot;Song: &quot; + song);
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;LinkedList&lt;/h2&gt;
-&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;LinkedList&lt;/span&gt; ist eine Liste, bei der die Elemente als Knoten miteinander verbunden sind.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Gut geeignet für häufiges Einfügen/Löschen von Elementen.&lt;/li&gt;
-&lt;li&gt;Schlechtere Zugriffszeit im Vergleich zur ArrayList.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beispiel:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.LinkedList;
-
-public class Main {
-   public static void main(String[] args) {
-      LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
-      queue.add(&quot;Task 1&quot;);
-      queue.add(&quot;Task 2&quot;);
-      queue.addFirst(&quot;Urgent Task&quot;);
-   
-      for (String task : queue) {
-         System.out.println(&quot;Aufgabe: &quot; + task);
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;HashMap&lt;/h2&gt;
-&lt;p&gt;Die HashMap ist eine Map-Struktur, die Schlüssel-Wert-Paare speichert.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Schneller Zugriff auf Werte über Schlüssel.&lt;/li&gt;
-&lt;li&gt;Keine garantierte Reihenfolge der Elemente.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Beispiel:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.HashMap;
-
-public class Main {
-   public static void main(String[] args) {
-      HashMap&amp;lt;String, String&amp;gt; modulMap = new HashMap&amp;lt;&amp;gt;();
-      modulMap.put(&quot;OOP&quot;, &quot;Objektorientierte Programmierung&quot;);
-      modulMap.put(&quot;PRG&quot;, &quot;Programmieren&quot;);
-
-      // Zugriff auf Werte
-      System.out.println(&quot;Modul mit ID OOP: &quot; + modulMap.get(&quot;OOP&quot;)); // Ausgabe: Modul mit ID OOP: Objektorientierte Programmierung
-
-      // Iteration über Schlüssel-Wert-Paare
-      for (var entry : modulMap.entrySet()) {
-         System.out.println(&quot;ID: &quot; + entry.getKey() + &quot;, Name: &quot; + entry.getValue());
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Stack&lt;/h2&gt;
-&lt;p&gt;Der Stack arbeitet nach dem Last-In-First-Out-Prinzip (LIFO). Dies ist besonders nützlich bei Transformationen oder Rückverfolgungen.&lt;/p&gt;
-&lt;p&gt;Eigenschaften:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Elemente werden gestapelt (push) und zuletzt hinzugefügte zuerst entfernt (pop).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In Processing hast du mit pushMatrix() und popMatrix() bereits einen Stack verwendet, um Transformationen des Koordinatensystems zu speichern:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;Stack&amp;lt;String&amp;gt; stack = new Stack&amp;lt;&amp;gt;();
-stack.push(&quot;Transformation 1&quot;);
-stack.push(&quot;Transformation 2&quot;);
-
-// Letzte Transformation entfernen
-System.out.println(stack.pop()); // Ausgabe: Transformation 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Iteration über Collections&lt;/h2&gt;
-&lt;p&gt;Java bietet verschiedene Möglichkeiten zur Iteration über Collections:&lt;/p&gt;
-&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
-&lt;h2&gt;Erweiterte for-Schleife&lt;/h2&gt;
-&lt;p&gt;Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten for-Schleife ist deutlich einfacher, als der einer normalen for-Schleife:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;for ( Datentyp variable : Liste) {
-
-   // Schleifenkörper
-
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In diesem Beispiel werden alle Songtitel innerhalb der ArrayList vom Typ String ausgegeben.&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
-songs.add(&quot;Song A&quot;);
-songs.add(&quot;Song B&quot;);
-
-for (String song : songs) {
-   System.out.println(song);
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;.forEach - Methode inkl. Lambda Ausdruck&lt;/h2&gt;
-&lt;p&gt;Collections wie ArrayList, LinkedList und HashMap haben eine Klassen-Methode .forEach(). Innerhalb der Klammern der .forEach()-Methode wird angegeben, was für jedes Element der Liste durgeführt werden soll.&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
-queue.add(&quot;Task 1&quot;);
-queue.add(&quot;Task 2&quot;);
-queue.addFirst(&quot;Urgent Task&quot;);
-   
-queue.forEach(task -&amp;gt; System.out.println(task));&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Das was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegen nimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;// Ein Parameter
-Parameter -&amp;gt; Anweisung
-
-// Mehrere Parameter
-(Parameter1, Parameter2) -&amp;gt; Anweisung
-
-// Mehrere Parameter und komplexe Anweisung
-(Parameter1, Parameter2) -&amp;gt; { Codeblock }&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Iterator&lt;/h2&gt;
-&lt;p&gt;Ein Iterator bietet mehr Kontrolle über die Iteration:&lt;/p&gt;
-&lt;div class=&quot;highlighted-code language-java&quot;&gt;
-&lt;div&gt;
-&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
-import java.util.Iterator;
-
-public class Main {
-   public static void main(String[] args) {
-      ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
-      songs.add(&quot;Song A&quot;);
-      songs.add(&quot;Song B&quot;);
-
-      Iterator&amp;lt;String&amp;gt; iterator = songs.iterator();
-      while (iterator.hasNext()) {
-         System.out.println(iterator.next());
-      }
-   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h1&gt;Abschluss&lt;/h1&gt;
-&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
-&lt;h2&gt;Aufgaben&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Aufgabe 1:&lt;br /&gt;Erstelle ein Programm mit einer HashMap, die eine Einkaufsliste sein soll:
-&lt;ul&gt;
-&lt;li&gt;Der Schlüssel ist das Produkt, das gekauft werden soll und der Wert die Menge (z.B. 5 Tomaten)&lt;/li&gt;
-&lt;li&gt;Füge mindestens fünf Produkte zur Einkaufsliste hinzu.&lt;/li&gt;
-&lt;li&gt;Ändere die Menge von einem Produkt.&lt;/li&gt;
-&lt;li&gt;Iteriere über die Liste und gib alle Produkte aus.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Aufgabe 2:&lt;br /&gt;Simuliere einen Stack für Transformationen in einem Grafikprogramm:
-&lt;ul&gt;
-&lt;li&gt;Implementiere einen Stack mit Transformationen wie „Translation“ oder „Rotation“.&lt;/li&gt;
-&lt;li&gt;Füge Transformationen hinzu und entferne sie schrittweise.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Fragen&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Was sind die Hauptunterschiede zwischen einer ArrayList und einer LinkedList?&lt;/li&gt;
-&lt;li&gt;Wie funktioniert das LIFO-Prinzip bei einem Stack?&lt;/li&gt;
-&lt;li&gt;Was ist ein Lambda Ausdruck und wo wird er eingesetzt?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Das Java Collections Framework bietet leistungsstarke Klassen wie ArrayList, LinkedList, HashMap und Stack.&lt;/li&gt;
-&lt;li&gt;Mit erweiterten For-Schleifen (for-each) und Iteratoren kannst du effizient durch Collections iterieren.&lt;/li&gt;
-&lt;li&gt;Die Wahl der richtigen Collection hängt von den Anforderungen ab – z. B. schneller Zugriff (HashMap) oder dynamische Listen (ArrayList).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
-                                      <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                                      <int value="4"></int>
-                                      <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
-                                      <int value="2"></int>
-                                      <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
-                                      <int value="3"></int>
-                                      <string role="key" value="htmlTag"></string>
-                                      <string value="div"></string>
-                                      <string role="key" value="images"></string>
-                                      <instance class="exe.engine.galleryidevice.GalleryImages">
-                                       <dictionary>
-                                        <string role="key" value=".listitems"></string>
-                                        <list></list>
-                                        <string role="key" value="idevice"></string>
-                                        <reference key="36"></reference>
-                                       </dictionary>
-                                      </instance>
-                                      <string role="key" value="intlinks_to_anchors"></string>
-                                      <dictionary></dictionary>
-                                      <string role="key" value="nextImageId"></string>
-                                      <int value="0"></int>
-                                      <string role="key" value="parentNode"></string>
-                                      <reference key="37"></reference>
-                                     </dictionary>
-                                    </instance>
-                                   </list>
-                                   <string role="key" value="icon"></string>
-                                   <unicode value=""></unicode>
-                                   <string role="key" value="id"></string>
-                                   <unicode value="8"></unicode>
-                                   <string role="key" value="ideviceCategory"></string>
-                                   <unicode value="Text and Tasks"></unicode>
-                                   <string role="key" value="lastIdevice"></string>
-                                   <bool value="0"></bool>
-                                   <string role="key" value="nextFieldId"></string>
-                                   <int value="3"></int>
-                                   <string role="key" value="originalicon"></string>
-                                   <string value=""></string>
-                                   <string role="key" value="parentNode"></string>
-                                   <reference key="37"></reference>
-                                   <string role="key" value="systemResources"></string>
-                                   <list></list>
-                                   <string role="key" value="undo"></string>
-                                   <bool value="1"></bool>
-                                   <string role="key" value="userResources"></string>
-                                   <list></list>
-                                   <string role="key" value="version"></string>
-                                   <int value="0"></int>
-                                  </dictionary>
-                                 </instance>
-                                </list>
-                                <string role="key" value="_id"></string>
-                                <unicode value="8"></unicode>
-                                <string role="key" value="_package"></string>
-                                <reference key="4"></reference>
-                                <string role="key" value="anchor_fields"></string>
-                                <list></list>
-                                <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
-                                <int value="2"></int>
-                                <string role="key" value="exportType"></string>
-                                <string value="website"></string>
-                                <string role="key" value="last_full_node_path"></string>
-                                <string value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke"></string>
-                                <string role="key" value="parent"></string>
-                                <reference key="16"></reference>
-                                <string role="key" value="top_anchors_linked_from_fields"></string>
-                                <list>
-                                 <reference key="34"></reference>
-                                </list>
-                                <string role="key" value="children"></string>
-                                <list></list>
-                               </dictionary>
-                              </instance>
-                             </dictionary>
+                             <dictionary></dictionary>
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="38"></reference>
+                             <reference key="35"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -5159,7 +4761,7 @@ public class Main {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="38"></reference>
+                          <reference key="35"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -5191,13 +4793,13 @@ public class Main {
                        <list></list>
                       </dictionary>
                      </instance>
-                     <instance class="exe.engine.node.Node" reference="42">
+                     <instance class="exe.engine.node.Node" reference="39">
                       <dictionary>
                        <string role="key" value="_title"></string>
                        <unicode value="Processing in anderen Klassen nutzen"></unicode>
                        <string role="key" value="idevices"></string>
                        <list>
-                        <instance class="exe.engine.jsidevice.JsIdevice" reference="39">
+                        <instance class="exe.engine.jsidevice.JsIdevice" reference="36">
                          <dictionary>
                           <string role="key" value="_title"></string>
                           <unicode value=""></unicode>
@@ -5258,12 +4860,12 @@ public class Main {
                           <int value="1"></int>
                           <string role="key" value="fields"></string>
                           <list>
-                           <instance class="exe.engine.field.TextAreaField" reference="40">
+                           <instance class="exe.engine.field.TextAreaField" reference="37">
                             <dictionary>
                              <string role="key" value="_id"></string>
                              <unicode value="129_2"></unicode>
                              <string role="key" value="_idevice"></string>
-                             <reference key="39"></reference>
+                             <reference key="36"></reference>
                              <string role="key" value="_instruc"></string>
                              <string value=""></string>
                              <string role="key" value="_name"></string>
@@ -5597,18 +5199,18 @@ public class Ball {
                                <string role="key" value=".listitems"></string>
                                <list></list>
                                <string role="key" value="idevice"></string>
-                               <reference key="40"></reference>
+                               <reference key="37"></reference>
                               </dictionary>
                              </instance>
                              <string role="key" value="intlinks_to_anchors"></string>
                              <dictionary>
                               <unicode role="key" value="exe-node:Objektorientierte%20Programmierung:Java%20:Erste%20Schritte%20in%20Java#auto_top"></unicode>
-                              <reference key="41"></reference>
+                              <reference key="38"></reference>
                              </dictionary>
                              <string role="key" value="nextImageId"></string>
                              <int value="0"></int>
                              <string role="key" value="parentNode"></string>
-                             <reference key="42"></reference>
+                             <reference key="39"></reference>
                             </dictionary>
                            </instance>
                           </list>
@@ -5625,7 +5227,7 @@ public class Ball {
                           <string role="key" value="originalicon"></string>
                           <string value=""></string>
                           <string role="key" value="parentNode"></string>
-                          <reference key="42"></reference>
+                          <reference key="39"></reference>
                           <string role="key" value="systemResources"></string>
                           <list></list>
                           <string role="key" value="undo"></string>
@@ -5662,9 +5264,9 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="63"></int>
+                 <int value="71"></int>
                  <string role="key" value="parentNode"></string>
-                 <reference key="41"></reference>
+                 <reference key="38"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -5681,15 +5283,15 @@ public class Ball {
               <string role="key" value="originalicon"></string>
               <string value=""></string>
               <string role="key" value="parentNode"></string>
-              <reference key="41"></reference>
+              <reference key="38"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="undo"></string>
               <bool value="1"></bool>
               <string role="key" value="userResources"></string>
               <list>
-               <reference key="43"></reference>
-               <reference key="44"></reference>
+               <reference key="40"></reference>
+               <reference key="41"></reference>
               </list>
               <string role="key" value="version"></string>
               <int value="0"></int>
@@ -5712,7 +5314,7 @@ public class Ball {
            <reference key="16"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list>
-            <reference key="40"></reference>
+            <reference key="37"></reference>
            </list>
            <string role="key" value="children"></string>
            <list></list>
@@ -5720,19 +5322,653 @@ public class Ball {
          </instance>
          <reference key="21"></reference>
          <reference key="19"></reference>
-         <reference key="37"></reference>
+         <instance class="exe.engine.node.Node" reference="44">
+          <dictionary>
+           <string role="key" value="_title"></string>
+           <unicode value="Collections und Lambda Ausdrücke"></unicode>
+           <string role="key" value="idevices"></string>
+           <list>
+            <instance class="exe.engine.jsidevice.JsIdevice" reference="42">
+             <dictionary>
+              <string role="key" value="_title"></string>
+              <unicode value=""></unicode>
+              <string role="key" value="_attributes"></string>
+              <list>
+               <tuple>
+                <string value="title"></string>
+                <list>
+                 <string value="Title"></string>
+                 <int value="0"></int>
+                 <int value="0"></int>
+                </list>
+               </tuple>
+               <tuple>
+                <string value="category"></string>
+                <list>
+                 <string value="Category"></string>
+                 <int value="0"></int>
+                 <int value="1"></int>
+                </list>
+               </tuple>
+               <tuple>
+                <string value="css-class"></string>
+                <list>
+                 <string value="CSS class"></string>
+                 <int value="0"></int>
+                 <int value="2"></int>
+                </list>
+               </tuple>
+               <tuple>
+                <string value="icon"></string>
+                <list>
+                 <string value="Icon"></string>
+                 <int value="0"></int>
+                 <int value="3"></int>
+                </list>
+               </tuple>
+              </list>
+              <string role="key" value="_author"></string>
+              <string value=""></string>
+              <string role="key" value="_iDeviceDir"></string>
+              <string value="text"></string>
+              <string role="key" value="_purpose"></string>
+              <string value=""></string>
+              <string role="key" value="_tip"></string>
+              <string value=""></string>
+              <string role="key" value="_typeName"></string>
+              <unicode value="Text"></unicode>
+              <string role="key" value="_valid"></string>
+              <bool value="1"></bool>
+              <string role="key" value="class_"></string>
+              <unicode value="text"></unicode>
+              <string role="key" value="edit"></string>
+              <bool value="0"></bool>
+              <string role="key" value="emphasis"></string>
+              <int value="0"></int>
+              <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
+              <int value="1"></int>
+              <string role="key" value="fields"></string>
+              <list>
+               <instance class="exe.engine.field.TextAreaField" reference="43">
+                <dictionary>
+                 <string role="key" value="_id"></string>
+                 <unicode value="135_2"></unicode>
+                 <string role="key" value="_idevice"></string>
+                 <reference key="42"></reference>
+                 <string role="key" value="_instruc"></string>
+                 <string value=""></string>
+                 <string role="key" value="_name"></string>
+                 <string value=""></string>
+                 <string role="key" value="anchor_names"></string>
+                 <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
+                 <string role="key" value="content_w_resourcePaths"></string>
+                 <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung – Warum Collections?&lt;/h1&gt;
+&lt;p&gt;Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections-Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.&lt;/p&gt;
+&lt;p&gt;In diesem Kapitel lernst du:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Die wichtigsten Collection-Typen: &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ArrayList, LinkedList, HashMap&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Stack.&lt;/span&gt; Wir betrachten ihre Eigenschaften,&lt;/li&gt;
+&lt;li&gt;Einsatzmöglichkeiten von Collections &lt;/li&gt;
+&lt;li&gt;Verarbeitung von Collections mithilfe von Iteratoren und erweiterten For-Schleifen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Das Collections-Framework&lt;/h1&gt;
+&lt;p&gt;Das Collections-Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamische Arrays (z. B. mit ArrayList)&lt;/li&gt;
+&lt;li&gt;Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)&lt;/li&gt;
+&lt;li&gt;Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vorteile des Collections-Frameworks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Flexibilität:&lt;/strong&gt; Dynamische Größenanpassung der Datenstrukturen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Effizienz:&lt;/strong&gt; Optimierte Algorithmen für Suchen, Einfügen und Löschen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Einheitlichkeit:&lt;/strong&gt; Gemeinsame Schnittstellen für verschiedene Datenstrukturen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Übersicht über das Collection Framework&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;resources/Collections_Ubersicht.png&quot; alt=&quot;Übersicht über das Collection Framework&quot; title=&quot;Übersicht über das Collection Framework&quot; width=&quot;916&quot; height=&quot;476&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Das Paket java.util enthält alle Interfaces &amp;amp; Klassen, die für die Java Collection benötigt werden.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Das Interface Iterable bietet den Iterator, der es ermöglicht, durch alle Sammlungen zu iterieren.&lt;/li&gt;
+&lt;li&gt;Iterable wird durch Collection erweitert, welche durch Set, List &amp;amp; Queue erweitert wird.&lt;/li&gt;
+&lt;li&gt;LinkedList, Vector &amp;amp; ArrayList implementieren List, und Vector wird durch Stack erweitert.&lt;/li&gt;
+&lt;li&gt;Set wird von HashSet &amp;amp; LinkedHashSet geerbt, außerdem wird es durch SortedSet erweitert, das von TreeSet implementiert wird.&lt;/li&gt;
+&lt;li&gt;Queue wird von PriorityQueue implementiert und durch Deque erweitert, die wiederum von ArrayDeque implementiert wird.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Collection Interfaces&lt;/h2&gt;
+&lt;table width=&quot;1710&quot; class=&quot;exe-table&quot; style=&quot;height: 398px; width: 1710px;&quot;&gt;
+&lt;thead&gt;
+&lt;tr style=&quot;height: 58px;&quot;&gt;
+&lt;td style=&quot;height: 58px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 58px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;&lt;b&gt;Beschreibung&lt;/b&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style=&quot;height: 50px;&quot;&gt;
+&lt;td style=&quot;height: 50px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Set&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 50px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;Kann keine doppelten Elemente speichern.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;height: 58px;&quot;&gt;
+&lt;td style=&quot;height: 58px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;List&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 58px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;Verwaltet die geordnete Sammlung der Elemente.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;height: 58px;&quot;&gt;
+&lt;td style=&quot;height: 58px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Queue&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 58px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;Eine lineare Sammlung, die dem FIFO-Prinzip (First-In-First-Out) folgt.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;height: 58px;&quot;&gt;
+&lt;td style=&quot;height: 58px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Deque&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 58px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;Warteschlange mit zwei Enden; ermöglicht Einfügen &amp;amp; Löschen von Elementen an beiden Enden.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;height: 58px;&quot;&gt;
+&lt;td style=&quot;height: 58px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Map&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 58px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;Kann keine redundanten Elemente speichern und speichert Daten im Schlüssel-Wert-Paar-Format.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&quot;height: 58px;&quot;&gt;
+&lt;td style=&quot;height: 58px; width: 162.233px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;SortedSet&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;height: 58px; width: 1400.57px;&quot;&gt;
+&lt;p&gt;Ordnet Elemente in aufsteigender Reihenfolge.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Collection Methoden&lt;/h2&gt;
+&lt;table width=&quot;1766&quot; class=&quot;exe-table&quot; style=&quot;width: 1766px;&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;b&gt;Methode&lt;/b&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;&lt;b&gt;Beschreibung&lt;/b&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;add()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Elemente zur Sammlung hinzufügen&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;remove()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Elemente der Sammlung löschen&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;clear()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Löscht alle Elemente der Sammlung.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;isEmpty()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Testet, ob eine Sammlung leer ist.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;size()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Gesamtzahl der Elemente einer Sammlung&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;equals()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Vergleicht, ob 2 Sammlungen inhaltlich gleich sind&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;retainAll()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Behält Elemente, die in beiden Sammlungen vorkommen&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;toArray()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Umwandlung einer Sammlung in ein Array.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;contains()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Prüft, ob ein Wert vorhanden ist oder nicht.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 215.333px;&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;max()&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;width: 1347.47px;&quot;&gt;
+&lt;p&gt;Findet den größten Wert in einer Sammlung.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;Wichtige Collection-Typen&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
+&lt;h2&gt;ArrayList&lt;/h2&gt;
+&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ArrayList&lt;/span&gt; ist eine dynamische Liste, die ähnlich wie ein Array funktioniert, aber ihre Größe automatisch anpasst.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elemente werden in einer bestimmten Reihenfolge gespeichert.&lt;/li&gt;
+&lt;li&gt;Doppelte Werte sind erlaubt.&lt;/li&gt;
+&lt;li&gt;Zugriff auf Elemente erfolgt über Indizes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beispiel:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&amp;lt;String&amp;gt; playlist = new ArrayList&amp;lt;&amp;gt;();
+      playlist.add(&quot;Song A&quot;);
+      playlist.add(&quot;Song B&quot;);
+      playlist.add(&quot;Song C&quot;);
+
+      System.out.println(&quot;Erster Song: &quot; + playlist.get(0));
+
+      for (String song : playlist) {
+         System.out.println(&quot;Song: &quot; + song);
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;LinkedList&lt;/h2&gt;
+&lt;p&gt;Die &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;LinkedList&lt;/span&gt; ist eine Liste, bei der die Elemente als Knoten miteinander verbunden sind.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gut geeignet für häufiges Einfügen/Löschen von Elementen.&lt;/li&gt;
+&lt;li&gt;Schlechtere Zugriffszeit im Vergleich zur ArrayList.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beispiel:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.LinkedList;
+
+public class Main {
+   public static void main(String[] args) {
+      LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
+      queue.add(&quot;Task 1&quot;);
+      queue.add(&quot;Task 2&quot;);
+      queue.addFirst(&quot;Urgent Task&quot;);
+   
+      for (String task : queue) {
+         System.out.println(&quot;Aufgabe: &quot; + task);
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;HashMap&lt;/h2&gt;
+&lt;p&gt;Die HashMap ist eine Map-Struktur, die Schlüssel-Wert-Paare speichert.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schneller Zugriff auf Werte über Schlüssel.&lt;/li&gt;
+&lt;li&gt;Keine garantierte Reihenfolge der Elemente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beispiel:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.HashMap;
+
+public class Main {
+   public static void main(String[] args) {
+      HashMap&amp;lt;String, String&amp;gt; modulMap = new HashMap&amp;lt;&amp;gt;();
+      modulMap.put(&quot;OOP&quot;, &quot;Objektorientierte Programmierung&quot;);
+      modulMap.put(&quot;PRG&quot;, &quot;Programmieren&quot;);
+
+      // Zugriff auf Werte
+      System.out.println(&quot;Modul mit ID OOP: &quot; + modulMap.get(&quot;OOP&quot;)); // Ausgabe: Modul mit ID OOP: Objektorientierte Programmierung
+
+      // Iteration über Schlüssel-Wert-Paare
+      for (var entry : modulMap.entrySet()) {
+         System.out.println(&quot;ID: &quot; + entry.getKey() + &quot;, Name: &quot; + entry.getValue());
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;Stack&lt;/h2&gt;
+&lt;p&gt;Der Stack arbeitet nach dem Last-In-First-Out-Prinzip (LIFO). Dies ist besonders nützlich bei Transformationen oder Rückverfolgungen.&lt;/p&gt;
+&lt;p&gt;Eigenschaften:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elemente werden gestapelt (push) und zuletzt hinzugefügte zuerst entfernt (pop).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Processing hast du mit pushMatrix() und popMatrix() bereits einen Stack verwendet, um Transformationen des Koordinatensystems zu speichern:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;Stack&amp;lt;String&amp;gt; stack = new Stack&amp;lt;&amp;gt;();
+stack.push(&quot;Transformation 1&quot;);
+stack.push(&quot;Transformation 2&quot;);
+
+// Letzte Transformation entfernen
+System.out.println(stack.pop()); // Ausgabe: Transformation 2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;Iteration über Collections&lt;/h2&gt;
+&lt;p&gt;Java bietet verschiedene Möglichkeiten zur Iteration über Collections:&lt;/p&gt;
+&lt;div class=&quot;exe-fx exe-tabs&quot;&gt;
+&lt;h2&gt;Erweiterte For-Schleife&lt;/h2&gt;
+&lt;p&gt;Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten For-Schleife ist deutlich einfacher, als der einer normalen For-Schleife:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;for ( Datentyp variable : Liste) {
+
+   // Schleifenkörper
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Selbstverständlich können Collections auch mit der normalen For-Schleife durchlaufen werden.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In diesem Beispiel werden alle Songtitel innerhalb der &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ArrayList&lt;/span&gt; vom Typ String ausgegeben.&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
+songs.add(&quot;Song A&quot;);
+songs.add(&quot;Song B&quot;);
+
+for (String song : songs) {
+   System.out.println(song);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h2&gt;forEach() &amp;amp; Lambda-Ausdruck&lt;/h2&gt;
+&lt;p&gt;Collections implementieren das Interface Iterable und können somit die Methode&lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt; forEach()&lt;/span&gt; des Interfaces nutzen. Innerhalb der Klammern wird angegeben, was für jedes Element der Sammlung durchgeführt werden soll.&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;LinkedList&amp;lt;String&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;();
+queue.add(&quot;Task 1&quot;);
+queue.add(&quot;Task 2&quot;);
+queue.addFirst(&quot;Urgent Task&quot;);
+   
+queue.forEach(task -&amp;gt; System.out.println(task));&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Mit &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;forEach()&lt;/span&gt; ist das Entfernen von Elementen aus der Collection während der Iteration nicht erlaubt und führt zu einer &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;ConcurrentModificationException&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Lambda-Ausdruck&lt;/h3&gt;
+&lt;p&gt;Das, was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegennimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;// Aufbau -----------------------------------
+(Parameterliste) -&amp;gt; Ausdruck oder { Anweisung }
+
+// Beispiele --------------------------------
+
+// Einfache Addition zweier Zahlen
+(a, b) -&amp;gt; a + b
+
+// Einen Wert quadrieren
+x -&amp;gt; x * x
+
+// Ohne Parameter
+() -&amp;gt; System.out.println(&quot;Hallo Welt&quot;)
+
+// Mit Block und explizitem Return
+(a, b) -&amp;gt; {
+   int sum = a + b;
+   return sum * 2;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2&gt;Iterator&lt;/h2&gt;
+&lt;p&gt;Ein Iterator ist ein Objekt, das explizit aus einer Collection erzeugt wird. Mit den Methoden &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;hasNext()&lt;/span&gt;, &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;next()&lt;/span&gt; und &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;remove()&lt;/span&gt; kann man die Elemente sequenziell durchlaufen und ggf. entfernen.&lt;/p&gt;
+&lt;div class=&quot;highlighted-code language-java&quot;&gt;
+&lt;div&gt;
+&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList&amp;lt;String&amp;gt; songs = new ArrayList&amp;lt;&amp;gt;();
+      songs.add(&quot;Song A&quot;);
+      songs.add(&quot;Song B&quot;);
+
+      Iterator&amp;lt;String&amp;gt; iterator = songs.iterator();
+      while (iterator.hasNext()) {
+         System.out.println(iterator.next());
+      }
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;Abschluss&lt;/h1&gt;
+&lt;div class=&quot;exe-fx exe-accordion&quot;&gt;
+&lt;h2&gt;Aufgaben&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Aufgabe 1:&lt;br /&gt;Erstelle ein Programm mit einer HashMap, die eine Einkaufsliste sein soll:
+&lt;ul&gt;
+&lt;li&gt;Der Schlüssel ist das Produkt, das gekauft werden soll und der Wert die Menge (z.B. 5 Tomaten)&lt;/li&gt;
+&lt;li&gt;Füge mindestens fünf Produkte zur Einkaufsliste hinzu.&lt;/li&gt;
+&lt;li&gt;Ändere die Menge von einem Produkt.&lt;/li&gt;
+&lt;li&gt;Iteriere über die Liste und gib alle Produkte aus.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Aufgabe 2:&lt;br /&gt;Simuliere einen Stack für Transformationen in einem Grafikprogramm:
+&lt;ul&gt;
+&lt;li&gt;Implementiere einen Stack mit Transformationen wie „Translation“ oder „Rotation“.&lt;/li&gt;
+&lt;li&gt;Füge Transformationen hinzu und entferne sie schrittweise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fragen&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Was sind die Hauptunterschiede zwischen einer ArrayList und einer LinkedList?&lt;/li&gt;
+&lt;li&gt;Wie funktioniert das LIFO-Prinzip bei einem Stack?&lt;/li&gt;
+&lt;li&gt;Was ist ein Lambda Ausdruck und wo wird er eingesetzt?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Zusammenfassung&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Das Java Collections Framework bietet leistungsstarke Klassen wie ArrayList, LinkedList, HashMap und Stack.&lt;/li&gt;
+&lt;li&gt;Mit erweiterten For-Schleifen (for-each) und Iteratoren kannst du effizient durch Collections iterieren.&lt;/li&gt;
+&lt;li&gt;Die Wahl der richtigen Collection hängt von den Anforderungen ab – z. B. schneller Zugriff (HashMap) oder dynamische Listen (ArrayList).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
+                 <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                 <int value="4"></int>
+                 <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                 <int value="2"></int>
+                 <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                 <int value="3"></int>
+                 <string role="key" value="htmlTag"></string>
+                 <string value="div"></string>
+                 <string role="key" value="images"></string>
+                 <instance class="exe.engine.galleryidevice.GalleryImages">
+                  <dictionary>
+                   <string role="key" value=".listitems"></string>
+                   <list>
+                    <instance class="exe.engine.galleryidevice.GalleryImage">
+                     <dictionary>
+                      <string role="key" value="_caption"></string>
+                      <instance class="exe.engine.field.TextField">
+                       <dictionary>
+                        <string role="key" value="_id"></string>
+                        <int value="394"></int>
+                        <string role="key" value="_idevice"></string>
+                        <none></none>
+                        <string role="key" value="_instruc"></string>
+                        <string value=""></string>
+                        <string role="key" value="_name"></string>
+                        <string value=""></string>
+                        <string role="key" value="content"></string>
+                        <string value=""></string>
+                        <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                        <int value="4"></int>
+                       </dictionary>
+                      </instance>
+                      <string role="key" value="_id"></string>
+                      <unicode value="8_135_2.0"></unicode>
+                      <string role="key" value="_imageResource"></string>
+                      <instance class="exe.engine.resource.Resource" reference="45">
+                       <dictionary>
+                        <string role="key" value="_idevice"></string>
+                        <reference key="42"></reference>
+                        <string role="key" value="_package"></string>
+                        <reference key="4"></reference>
+                        <string role="key" value="_storageName"></string>
+                        <string value="Collections_Ubersicht.png"></string>
+                        <string role="key" value="_userName"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphmjyic.eXe\\previews\\allyourbase\\Collections_\xc3\x9cbersicht.png"></string>
+                        <string role="key" value="checksum"></string>
+                        <string value="2e04e6cbb8c55879197f75d0872b16ad"></string>
+                        <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
+                        <int value="2"></int>
+                        <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
+                        <int value="2"></int>
+                        <string role="key" value="warningMsg"></string>
+                        <string value=""></string>
+                       </dictionary>
+                      </instance>
+                      <string role="key" value="_parent"></string>
+                      <reference key="43"></reference>
+                      <string role="key" value="_thumbnailResource"></string>
+                      <none></none>
+                      <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
+                      <int value="3"></int>
+                      <string role="key" value="makeThumbnail"></string>
+                      <bool value="0"></bool>
+                     </dictionary>
+                    </instance>
+                   </list>
+                   <string role="key" value="idevice"></string>
+                   <reference key="43"></reference>
+                  </dictionary>
+                 </instance>
+                 <string role="key" value="intlinks_to_anchors"></string>
+                 <dictionary></dictionary>
+                 <string role="key" value="nextImageId"></string>
+                 <int value="1"></int>
+                 <string role="key" value="parentNode"></string>
+                 <reference key="44"></reference>
+                </dictionary>
+               </instance>
+              </list>
+              <string role="key" value="icon"></string>
+              <unicode value=""></unicode>
+              <string role="key" value="id"></string>
+              <unicode value="8"></unicode>
+              <string role="key" value="ideviceCategory"></string>
+              <unicode value="Text and Tasks"></unicode>
+              <string role="key" value="lastIdevice"></string>
+              <bool value="0"></bool>
+              <string role="key" value="nextFieldId"></string>
+              <int value="3"></int>
+              <string role="key" value="originalicon"></string>
+              <string value=""></string>
+              <string role="key" value="parentNode"></string>
+              <reference key="44"></reference>
+              <string role="key" value="systemResources"></string>
+              <list></list>
+              <string role="key" value="undo"></string>
+              <bool value="1"></bool>
+              <string role="key" value="userResources"></string>
+              <list>
+               <reference key="45"></reference>
+              </list>
+              <string role="key" value="version"></string>
+              <int value="0"></int>
+             </dictionary>
+            </instance>
+           </list>
+           <string role="key" value="_id"></string>
+           <unicode value="8"></unicode>
+           <string role="key" value="_package"></string>
+           <reference key="4"></reference>
+           <string role="key" value="anchor_fields"></string>
+           <list></list>
+           <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+           <int value="2"></int>
+           <string role="key" value="exportType"></string>
+           <string value="website"></string>
+           <string role="key" value="last_full_node_path"></string>
+           <string value="exe-node:Objektorientierte%20Programmierung:Java%20:Collections%20und%20Lambda%20Ausdr%C3%BCcke"></string>
+           <string role="key" value="parent"></string>
+           <reference key="16"></reference>
+           <string role="key" value="top_anchors_linked_from_fields"></string>
+           <list>
+            <reference key="34"></reference>
+           </list>
+           <string role="key" value="children"></string>
+           <list></list>
+          </dictionary>
+         </instance>
         </list>
        </dictionary>
       </instance>
       <reference key="9"></reference>
       <reference key="30"></reference>
-      <instance class="exe.engine.node.Node" reference="47">
+      <instance class="exe.engine.node.Node" reference="48">
        <dictionary>
         <string role="key" value="_title"></string>
         <unicode value="Kapselung"></unicode>
         <string role="key" value="idevices"></string>
         <list>
-         <instance class="exe.engine.jsidevice.JsIdevice" reference="45">
+         <instance class="exe.engine.jsidevice.JsIdevice" reference="46">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value=""></unicode>
@@ -5793,12 +6029,12 @@ public class Ball {
            <int value="1"></int>
            <string role="key" value="fields"></string>
            <list>
-            <instance class="exe.engine.field.TextAreaField" reference="46">
+            <instance class="exe.engine.field.TextAreaField" reference="47">
              <dictionary>
               <string role="key" value="_id"></string>
               <unicode value="127_2"></unicode>
               <string role="key" value="_idevice"></string>
-              <reference key="45"></reference>
+              <reference key="46"></reference>
               <string role="key" value="_instruc"></string>
               <string value=""></string>
               <string role="key" value="_name"></string>
@@ -6014,7 +6250,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
                 <string role="key" value=".listitems"></string>
                 <list></list>
                 <string role="key" value="idevice"></string>
-                <reference key="46"></reference>
+                <reference key="47"></reference>
                </dictionary>
               </instance>
               <string role="key" value="intlinks_to_anchors"></string>
@@ -6022,7 +6258,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
               <string role="key" value="nextImageId"></string>
               <int value="0"></int>
               <string role="key" value="parentNode"></string>
-              <reference key="47"></reference>
+              <reference key="48"></reference>
              </dictionary>
             </instance>
            </list>
@@ -6039,7 +6275,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
            <string role="key" value="originalicon"></string>
            <string value=""></string>
            <string role="key" value="parentNode"></string>
-           <reference key="47"></reference>
+           <reference key="48"></reference>
            <string role="key" value="systemResources"></string>
            <list></list>
            <string role="key" value="undo"></string>
@@ -6076,13 +6312,13 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
       <reference key="20"></reference>
       <reference key="31"></reference>
       <reference key="29"></reference>
-      <instance class="exe.engine.node.Node" reference="50">
+      <instance class="exe.engine.node.Node" reference="51">
        <dictionary>
         <string role="key" value="_title"></string>
         <unicode value="Design Patterns"></unicode>
         <string role="key" value="idevices"></string>
         <list>
-         <instance class="exe.engine.jsidevice.JsIdevice" reference="48">
+         <instance class="exe.engine.jsidevice.JsIdevice" reference="49">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value=""></unicode>
@@ -6143,12 +6379,12 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
            <int value="1"></int>
            <string role="key" value="fields"></string>
            <list>
-            <instance class="exe.engine.field.TextAreaField" reference="49">
+            <instance class="exe.engine.field.TextAreaField" reference="50">
              <dictionary>
               <string role="key" value="_id"></string>
               <unicode value="133_2"></unicode>
               <string role="key" value="_idevice"></string>
-              <reference key="48"></reference>
+              <reference key="49"></reference>
               <string role="key" value="_instruc"></string>
               <string value=""></string>
               <string role="key" value="_name"></string>
@@ -6159,7 +6395,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
               <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
               <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;h1&gt;Einführung - Lösungen für wiederkehrende Probleme&lt;/h1&gt;
-&lt;p&gt;Design Patterns sind bewährte Lösungsansätze für wiederkehrende Probleme in der objektorientierten Programmierung. Das schöne an Design Patterns ist somit, dass andere Menschen bereits vor dir Lösungen für Probleme gefunden haben und du diese einfach nutzen kannst. Auf diese Weise kannst du viele Probleme in der objektorientierten Programmierung vermeiden. Du kannst dir Design Patterns vorstellen, wie Verkehrsregeln. Verkehrsregeln lösen wiederkehrende Probleme im Straßenverkehr. Amplen regeln wer wann fahren darf, Zebrastreifen regeln wo Fußgänger die Straße überqueren dürfen, etc. Diese Muster haben sich bewährt und werden an unzähligen Stellen eingesetzt und regeln den Verkehr. Dasselbe machen Deisgn Patterns in der Softwareentwicklung.&lt;/p&gt;
+&lt;p&gt;Design Patterns sind bewährte Lösungsansätze für wiederkehrende Probleme in der objektorientierten Programmierung. Das Schöne an Design Patterns ist somit, dass andere Menschen bereits vor dir Lösungen für Probleme gefunden haben und du diese einfach nutzen kannst. Auf diese Weise kannst du viele Probleme in der objektorientierten Programmierung vermeiden. Du kannst dir Design Patterns vorstellen, wie Verkehrsregeln. Verkehrsregeln lösen wiederkehrende Probleme im Straßenverkehr. Ampeln regeln, wer wann fahren darf, Zebrastreifen regeln, wo Fußgänger die Straße überqueren dürfen, etc. Diese Muster haben sich bewährt und werden an unzähligen Stellen eingesetzt und regeln den Verkehr. Dasselbe machen Design Patterns in der Softwareentwicklung.&lt;/p&gt;
 &lt;p&gt;In diesem Kapitel wirst du lernen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Die drei Hauptkategorien von Design Patterns&lt;/li&gt;
@@ -6595,11 +6831,11 @@ public class Main {
 &lt;h2&gt;Aufgaben&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Aufgabe 1:&lt;/strong&gt; Datenbankverbindung&lt;br /&gt;Erstelle eine kleine Anwendung, in der du das &lt;strong&gt;Singleton Pattern&lt;/strong&gt; implementierst für eine Datenbankverbindung. Dein Programm soll die Verbindung mit einer Datenbank herstellen können und wieder trennen können (es reicht die Simulation durch Konsolenausgaben). Achte dabei darauf, dass es nur eine Datenbankverbindung geben darf.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Aufgabe 2:&lt;/strong&gt; Verschiedene Datenbankverdinungen&lt;br /&gt;Erweitere dein Programm aus Aufgabe 2 um ein &lt;strong&gt;Strategy Pattern.&lt;/strong&gt; Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Dankebank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgabe 2:&lt;/strong&gt; Verschiedene Datenbankverbinungen&lt;br /&gt;Erweitere dein Programm aus Aufgabe 2 um ein &lt;strong&gt;Strategy Pattern.&lt;/strong&gt; Es soll verschiedene Strategien geben, sich mit einer Datenbank zu verbinden: eine Online-Datenbank und eine lokale Datenbank. Dein Programm soll überprüfen, ob eine Verbindung zum Internet besteht. Falls ja, soll die Online-Datenbank abgerufen werden, falls nein, die lokale. (Es reicht eine Simulation per Konsolenausgabe).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Fragen&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Welche Vorteile bietet das Singleton Pattern im Vergleich zu normaler Objektinstanziierung?&lt;/li&gt;
+&lt;li&gt;Welche Vorteile bietet das Singleton Pattern im Vergleich zu normaler Objektinstantiierung?&lt;/li&gt;
 &lt;li&gt;Wie unterscheidet sich das Factory Method Pattern vom Singleton Pattern bezüglich der Objekt-Erzeugung?&lt;/li&gt;
 &lt;li&gt;Nenne zwei wesentliche Merkmale des Observer Patterns.&lt;/li&gt;
 &lt;li&gt;Beschreibe den Unterschied zwischen dem Observer Pattern und dem Strategy Pattern.&lt;/li&gt;
@@ -6613,10 +6849,10 @@ public class Main {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Structural Patterns&lt;/strong&gt; beschreiben die Komposition von Klassen und Objekten &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Behavioral Patterns&lt;/strong&gt; modellieren die Interaktion zwischenObjekten und deren Verhalten &lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Behavioral Patterns&lt;/strong&gt; modellieren die Interaktion zwischen Objekten und deren Verhalten &lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Observer:&lt;/strong&gt; Ermöglicht die automatische Benachrichtigung registrierter Observer bei Zustandsänderungen eines Subjekts.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Strategy:&lt;/strong&gt; Kapselt unterschiedliche Algorithmen, so dass zur Laufzeit flexibel zwischen ihnen gewählt werden kann.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strategy:&lt;/strong&gt; Kapselt unterschiedliche Algorithmen, sodass zur Laufzeit flexibel zwischen ihnen gewählt werden kann.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -6636,7 +6872,7 @@ public class Main {
                 <string role="key" value=".listitems"></string>
                 <list></list>
                 <string role="key" value="idevice"></string>
-                <reference key="49"></reference>
+                <reference key="50"></reference>
                </dictionary>
               </instance>
               <string role="key" value="intlinks_to_anchors"></string>
@@ -6644,7 +6880,7 @@ public class Main {
               <string role="key" value="nextImageId"></string>
               <int value="0"></int>
               <string role="key" value="parentNode"></string>
-              <reference key="50"></reference>
+              <reference key="51"></reference>
              </dictionary>
             </instance>
            </list>
@@ -6661,7 +6897,7 @@ public class Main {
            <string role="key" value="originalicon"></string>
            <string value=""></string>
            <string role="key" value="parentNode"></string>
-           <reference key="50"></reference>
+           <reference key="51"></reference>
            <string role="key" value="systemResources"></string>
            <list></list>
            <string role="key" value="undo"></string>
@@ -6699,19 +6935,19 @@ public class Main {
    <unicode role="key" value="11"></unicode>
    <reference key="20"></reference>
    <unicode role="key" value="15"></unicode>
-   <reference key="41"></reference>
+   <reference key="38"></reference>
    <unicode role="key" value="16"></unicode>
    <reference key="21"></reference>
    <unicode role="key" value="17"></unicode>
-   <reference key="47"></reference>
+   <reference key="48"></reference>
    <unicode role="key" value="19"></unicode>
    <reference key="30"></reference>
    <unicode role="key" value="2"></unicode>
    <reference key="16"></reference>
    <unicode role="key" value="21"></unicode>
-   <reference key="38"></reference>
+   <reference key="35"></reference>
    <unicode role="key" value="22"></unicode>
-   <reference key="42"></reference>
+   <reference key="39"></reference>
    <unicode role="key" value="3"></unicode>
    <reference key="9"></reference>
    <unicode role="key" value="4"></unicode>
@@ -6719,11 +6955,11 @@ public class Main {
    <unicode role="key" value="5"></unicode>
    <reference key="31"></reference>
    <unicode role="key" value="6"></unicode>
-   <reference key="50"></reference>
+   <reference key="51"></reference>
    <unicode role="key" value="7"></unicode>
    <reference key="19"></reference>
    <unicode role="key" value="8"></unicode>
-   <reference key="37"></reference>
+   <reference key="44"></reference>
   </dictionary>
   <string role="key" value="_objectives"></string>
   <unicode value=""></unicode>
@@ -6737,15 +6973,15 @@ public class Main {
    <reference key="31"></reference>
    <reference key="9"></reference>
    <reference key="20"></reference>
-   <reference key="41"></reference>
-   <reference key="47"></reference>
+   <reference key="38"></reference>
+   <reference key="48"></reference>
    <reference key="29"></reference>
-   <reference key="37"></reference>
+   <reference key="44"></reference>
   </list>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="29"></reference>
+  <reference key="44"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -7779,17 +8015,21 @@ public class Main {
   <string value="2.9"></string>
   <string role="key" value="resources"></string>
   <dictionary>
+   <string role="key" value="2e04e6cbb8c55879197f75d0872b16ad"></string>
+   <list>
+    <reference key="45"></reference>
+   </list>
    <string role="key" value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
    <list>
     <reference key="32"></reference>
    </list>
    <string role="key" value="6223868330388650cebfa7b04d03fdc2"></string>
    <list>
-    <reference key="43"></reference>
+    <reference key="40"></reference>
    </list>
    <string role="key" value="749e23d9d9de65b7413b560ab94fac35"></string>
    <list>
-    <reference key="44"></reference>
+    <reference key="41"></reference>
    </list>
    <string role="key" value="9204c0b50abec03c0414d7426fbd5a7a"></string>
    <list>

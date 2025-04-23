@@ -61,26 +61,194 @@
 <div class="iDevice emphasis0" >
 <div id="ta8_135_2" class="block iDevice_content">
 <div class="exe-text"><h1>Einführung – Warum Collections?</h1>
-<p>Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.</p>
+<p>Stell dir vor, du möchtest in einem Mediaplayer eine Playlist verwalten, in der Songs hinzugefügt, gelöscht und sortiert werden können. Oder du entwickelst ein System, das Nutzereingaben speichert und analysiert. Solche Aufgaben erfordern die Verwaltung von Datenstrukturen, die flexibel und effizient sind. Genau hier kommt das Collections-Framework von Java ins Spiel. Es bietet eine Vielzahl von Klassen und Interfaces, um Daten zu speichern, zu organisieren und zu verarbeiten.</p>
 <p>In diesem Kapitel lernst du:</p>
 <ul>
-<li>Die wichtigsten Collection-Typen: ArrayList, LinkedList, HashMap und Stack. Wir betrachten ihre Eigenschaften,</li>
+<li>Die wichtigsten Collection-Typen: <span style="font-family: andale mono, monospace;">ArrayList, LinkedList, HashMap</span> und <span style="font-family: andale mono, monospace;">Stack.</span> Wir betrachten ihre Eigenschaften,</li>
 <li>Einsatzmöglichkeiten von Collections </li>
-<li>Verarbeitung von Collections mithilfe von Iteratoren, erweiterten For-Schleifen und Streams.</li>
+<li>Verarbeitung von Collections mithilfe von Iteratoren und erweiterten For-Schleifen.</li>
 </ul>
-<h1>Das Collections Framework</h1>
-<p>Das Collections Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:</p>
+<h1>Das Collections-Framework</h1>
+<p>Das Collections-Framework ist eine Sammlung von Interfaces und Klassen, die es ermöglichen, Daten effizient zu speichern und zu verwalten. Es bietet Lösungen für häufige Probleme wie:</p>
 <ul>
 <li>Dynamische Arrays (z. B. mit ArrayList)</li>
 <li>Schnelle Zuordnung von Schlüsseln zu Werten (z. B. mit HashMap)</li>
 <li>Stapelverarbeitung nach dem Last-In-First-Out-Prinzip (z. B. mit Stack)</li>
 </ul>
-<p>Vorteile des Collections Frameworks</p>
+<p>Vorteile des Collections-Frameworks</p>
 <ul>
 <li><strong>Flexibilität:</strong> Dynamische Größenanpassung der Datenstrukturen.</li>
 <li><strong>Effizienz:</strong> Optimierte Algorithmen für Suchen, Einfügen und Löschen.</li>
 <li><strong>Einheitlichkeit:</strong> Gemeinsame Schnittstellen für verschiedene Datenstrukturen.</li>
 </ul>
+<h2>Übersicht über das Collection Framework</h2>
+<p><img src="Collections_Ubersicht.png" alt="Übersicht über das Collection Framework" title="Übersicht über das Collection Framework" width="916" height="476" /></p>
+<p>Das Paket java.util enthält alle Interfaces &amp; Klassen, die für die Java Collection benötigt werden.</p>
+<ul>
+<li>Das Interface Iterable bietet den Iterator, der es ermöglicht, durch alle Sammlungen zu iterieren.</li>
+<li>Iterable wird durch Collection erweitert, welche durch Set, List &amp; Queue erweitert wird.</li>
+<li>LinkedList, Vector &amp; ArrayList implementieren List, und Vector wird durch Stack erweitert.</li>
+<li>Set wird von HashSet &amp; LinkedHashSet geerbt, außerdem wird es durch SortedSet erweitert, das von TreeSet implementiert wird.</li>
+<li>Queue wird von PriorityQueue implementiert und durch Deque erweitert, die wiederum von ArrayDeque implementiert wird.</li>
+</ul>
+<h2>Collection Interfaces</h2>
+<table width="1710" class="exe-table" style="height: 398px; width: 1710px;">
+<thead>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 162.233px;">
+<p><b>Name</b></p>
+</td>
+<td style="height: 58px; width: 1400.57px;">
+<p><b>Beschreibung</b></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 50px;">
+<td style="height: 50px; width: 162.233px;">
+<p><span style="font-family: andale mono, monospace;">Set</span></p>
+</td>
+<td style="height: 50px; width: 1400.57px;">
+<p>Kann keine doppelten Elemente speichern.</p>
+</td>
+</tr>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 162.233px;">
+<p><span style="font-family: andale mono, monospace;">List</span></p>
+</td>
+<td style="height: 58px; width: 1400.57px;">
+<p>Verwaltet die geordnete Sammlung der Elemente.</p>
+</td>
+</tr>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 162.233px;">
+<p><span style="font-family: andale mono, monospace;">Queue</span></p>
+</td>
+<td style="height: 58px; width: 1400.57px;">
+<p>Eine lineare Sammlung, die dem FIFO-Prinzip (First-In-First-Out) folgt.</p>
+</td>
+</tr>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 162.233px;">
+<p><span style="font-family: andale mono, monospace;">Deque</span></p>
+</td>
+<td style="height: 58px; width: 1400.57px;">
+<p>Warteschlange mit zwei Enden; ermöglicht Einfügen &amp; Löschen von Elementen an beiden Enden.</p>
+</td>
+</tr>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 162.233px;">
+<p><span style="font-family: andale mono, monospace;">Map</span></p>
+</td>
+<td style="height: 58px; width: 1400.57px;">
+<p>Kann keine redundanten Elemente speichern und speichert Daten im Schlüssel-Wert-Paar-Format.</p>
+</td>
+</tr>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 162.233px;">
+<p><span style="font-family: andale mono, monospace;">SortedSet</span></p>
+</td>
+<td style="height: 58px; width: 1400.57px;">
+<p>Ordnet Elemente in aufsteigender Reihenfolge.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Collection Methoden</h2>
+<table width="1766" class="exe-table" style="width: 1766px;">
+<thead>
+<tr>
+<td style="width: 215.333px;">
+<p><b>Methode</b></p>
+</td>
+<td style="width: 1347.47px;">
+<p><b>Beschreibung</b></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">add()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Elemente zur Sammlung hinzufügen</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">remove()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Elemente der Sammlung löschen</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">clear()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Löscht alle Elemente der Sammlung.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">isEmpty()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Testet, ob eine Sammlung leer ist.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">size()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Gesamtzahl der Elemente einer Sammlung</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">equals()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Vergleicht, ob 2 Sammlungen inhaltlich gleich sind</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">retainAll()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Behält Elemente, die in beiden Sammlungen vorkommen</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">toArray()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Umwandlung einer Sammlung in ein Array.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">contains()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Prüft, ob ein Wert vorhanden ist oder nicht.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 215.333px;">
+<p><span style="font-family: andale mono, monospace;">max()</span></p>
+</td>
+<td style="width: 1347.47px;">
+<p>Findet den größten Wert in einer Sammlung.</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h1>Wichtige Collection-Typen</h1>
 <div class="exe-fx exe-tabs">
 <h2>ArrayList</h2>
@@ -193,8 +361,8 @@ System.out.println(stack.pop()); // Ausgabe: Transformation 2</code></pre>
 <h2>Iteration über Collections</h2>
 <p>Java bietet verschiedene Möglichkeiten zur Iteration über Collections:</p>
 <div class="exe-fx exe-tabs">
-<h2>Erweiterte for-Schleife</h2>
-<p>Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten for-Schleife ist deutlich einfacher, als der einer normalen for-Schleife:</p>
+<h2>Erweiterte For-Schleife</h2>
+<p>Die erweiterte For-Schleife (for-each) ermöglicht eine einfache Iteration über alle Elemente einer Collection. Der Aufbau einer erweiterten For-Schleife ist deutlich einfacher, als der einer normalen For-Schleife:</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>for ( Datentyp variable : Liste) {
@@ -204,8 +372,9 @@ System.out.println(stack.pop()); // Ausgabe: Transformation 2</code></pre>
 }</code></pre>
 </div>
 </div>
+<p>Selbstverständlich können Collections auch mit der normalen For-Schleife durchlaufen werden.</p>
 <p><strong>Beispiel:</strong></p>
-<p>In diesem Beispiel werden alle Songtitel innerhalb der ArrayList vom Typ String ausgegeben.</p>
+<p>In diesem Beispiel werden alle Songtitel innerhalb der <span style="font-family: andale mono, monospace;">ArrayList</span> vom Typ String ausgegeben.</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>ArrayList&lt;String&gt; songs = new ArrayList&lt;&gt;();
@@ -218,8 +387,8 @@ for (String song : songs) {
 </div>
 </div>
 <h3></h3>
-<h2>.forEach - Methode inkl. Lambda Ausdruck</h2>
-<p>Collections wie ArrayList, LinkedList und HashMap haben eine Klassen-Methode .forEach(). Innerhalb der Klammern der .forEach()-Methode wird angegeben, was für jedes Element der Liste durgeführt werden soll.</p>
+<h2>forEach() &amp; Lambda-Ausdruck</h2>
+<p>Collections implementieren das Interface Iterable und können somit die Methode<span style="font-family: andale mono, monospace;"> forEach()</span> des Interfaces nutzen. Innerhalb der Klammern wird angegeben, was für jedes Element der Sammlung durchgeführt werden soll.</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>LinkedList&lt;String&gt; queue = new LinkedList&lt;&gt;();
@@ -230,22 +399,37 @@ queue.addFirst("Urgent Task");
 queue.forEach(task -&gt; System.out.println(task));</code></pre>
 </div>
 </div>
-<p>Das was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegen nimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:</p>
+<p>Mit <span style="font-family: andale mono, monospace;">forEach()</span> ist das Entfernen von Elementen aus der Collection während der Iteration nicht erlaubt und führt zu einer <span style="font-family: andale mono, monospace;">ConcurrentModificationException</span></p>
+<h3>Lambda-Ausdruck</h3>
+<p>Das, was in den Klammern angegeben ist, ist ein Lambda Ausdruck. Dabei handelt es sich um einen kurzen Codeblock, welcher Parameter entgegennimmt und einen Wert zurückgibt. Lambda Ausdrücke ähneln Methoden, brauchen aber keinen Namen und können direkt im Codeblock einer anderen Methode implementiert werden. Lambda Ausdrücke sind folgendermaßen aufgebaut:</p>
 <div class="highlighted-code language-java">
 <div>
-<pre><code>// Ein Parameter
-Parameter -&gt; Anweisung
+<pre><code>// Aufbau -----------------------------------
+(Parameterliste) -&gt; Ausdruck oder { Anweisung }
 
-// Mehrere Parameter
-(Parameter1, Parameter2) -&gt; Anweisung
+// Beispiele --------------------------------
 
-// Mehrere Parameter und komplexe Anweisung
-(Parameter1, Parameter2) -&gt; { Codeblock }</code></pre>
+// Einfache Addition zweier Zahlen
+(a, b) -&gt; a + b
+
+// Einen Wert quadrieren
+x -&gt; x * x
+
+// Ohne Parameter
+() -&gt; System.out.println("Hallo Welt")
+
+// Mit Block und explizitem Return
+(a, b) -&gt; {
+   int sum = a + b;
+   return sum * 2;
+}
+
+</code></pre>
 </div>
 </div>
 <p></p>
 <h2>Iterator</h2>
-<p>Ein Iterator bietet mehr Kontrolle über die Iteration:</p>
+<p>Ein Iterator ist ein Objekt, das explizit aus einer Collection erzeugt wird. Mit den Methoden <span style="font-family: andale mono, monospace;">hasNext()</span>, <span style="font-family: andale mono, monospace;">next()</span> und <span style="font-family: andale mono, monospace;">remove()</span> kann man die Elemente sequenziell durchlaufen und ggf. entfernen.</p>
 <div class="highlighted-code language-java">
 <div>
 <pre><code>import java.util.ArrayList;
