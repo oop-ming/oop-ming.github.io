@@ -709,16 +709,16 @@ public class Main {
 &lt;h2&gt;Processing in der Java IDE&lt;/h2&gt;
 &lt;p&gt;Da Processing eine (anfängerfreundliche) Version von Java ist, kann man Processing Code auch in Java schreiben - wenn man ein paar Einstellungen in der IDE vornimmt. In diesem Modul legen wir den Schwerpunkt auf der Arbeit mit Java, allerdings machen wir uns eine Sache von Processing zu Nutzen: &lt;em&gt;Die grafische Ausgabe.&lt;/em&gt; Das ist mit Java nämlich so einfach nicht möglich. Aus diesem Grund möchten wir Processing in unser Java-Projekt integrieren und dafür nutzen die grafische Ausgabe zu erstellen. Das Hauptprogramm soll aber in Java geschrieben werden. In diesem Abschnitt gehen wir di einzelnen Schritte durch, die du gehen musst, um Processing in IntelliJ einzurichten.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Schritt 1:&lt;/strong&gt; Processing installieren und mit IntelliJ verknüpfen&lt;/p&gt;
-&lt;p&gt;Installiere dir Processing von &lt;a href=&quot;http://www.processing.org,&quot;&gt;www.processing.org,&lt;/a&gt; falls du dies noch nicht getan haben solltest. Danach öffnest du das Java-Projekt, zu dem du Processing hinzufügen möchtest oder erstellst ein neues Projekt. Dann öffnest du die Modul Einstellung (&quot;Open Module Settings&quot;) indem du in der linken Spate deines Projekt mit der rechten Maustaste auf den Projektordner (ganz oben) klickst. Es öffnet sich dann ein Kontext-Menü, in dem du fast ganz unten den Punkt &quot;Open Module Settings&quot; findest.&lt;/p&gt;
-&lt;p&gt;Nun offnet sich ein Fenster mit dem Titel &quot;Project Structure&quot;. Im rechten Bereich kannst du diverse Einstellungen für Module vornehmen. Achte darauf, dass du dich im Tab &quot;Dependencies&quot; (Abhängigkeiten) befindest. In der Tabelle siehst du links oben ein Plus-Icon. Klicke auf das Icon, um eine neue Abhängigkeit hinzuzufügen. Wähle in dem Kontextmenü den Punkt &quot;JAR or Directories&quot;. Daraufhin öffnet sich ein Fenster, indem du die Dateien und Ordner auf deinem Rechner siehst. Hier musst du den Pfad zu der Datei &quot;core.jar&quot; angeben, die sich in deinem Processing-Ordner befindet.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;resources/open_module_settings.png&quot; title=&quot;Modul Einstellungen öffnen&quot; width=&quot;641&quot; height=&quot;754&quot; /&gt; &lt;img src=&quot;resources/add_jar.png&quot; alt=&quot;&quot; title=&quot;Jar-Datei hinzufügen&quot; width=&quot;794&quot; height=&quot;428&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Wo genau finde ich diese &quot;core.jar&quot;-Datei?&lt;/strong&gt; Da Processing kein Programm ist, das man installiert, sondern in der Regeln einfach nur runterlädt, kann dein Processing Ordner theoretisch überall sein, wie z.B. in deinem Downloads-Ordner, wenn du Proessing nach dem Download dort liegen lassen hast. Es ist allerdings durchaus sinnvoll Processing nicht im Downloads-Ordner, auf dem Desktop oder sonst zu wo liegen zu haben. Überlege dir einen sinnvollen Ort auf deinem Rechner. Für Windows Nutzer bietet sich z.B. der Programme-Order unter &quot;Dieser PC&quot; an. Je nachdem, welche Version von Processing du hast, hat dieser Ordner einen Namen wie &quot;processing-4.3&quot;. Verwechsle ihn nicht mit dem Ordner &quot;Processing&quot;. Dies ist ein Ordner, den Processing für dich erstellt und in dem alle deine Sketches gespeichtert sind. &lt;/p&gt;
+&lt;p&gt;Um Processing mit IntelliJ verbinden zu können, benötigst du die Datei core.jar aus dem Ordner &quot;processing-4.5&quot; (am Ende steht die Versionsnummer, kann abweichen). Wenn du Windows nutzt, kannst du die Datei in diesem Ordner unter core/library/core.jar finden. Bei MacOS geht das leider nicht. Aus diesem Grund habe ich core.jar im Moodle Kurs hinterlegt. Da kannst du sie runterladen.&lt;/p&gt;
+&lt;p&gt;Nun öffnest du das Java-Projekt, zu dem du Processing hinzufügen möchtest oder erstellst ein neues Projekt.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Wenn du im &quot;richtigen&quot; Processing-Ordner bist, findest du deine core.jar-Datei unter core/library/core.jar.&lt;/li&gt;
-&lt;li&gt;Hinweise: IntelliJ braucht nur die Datei core.jar. Das bedeutet, dass es theoretisch auch möglich ist, die Datei in den Ordner zu kopieren, wo all deine IntelliJ-Projekte gespeichert sind, damit du sie in Zukunft schneller findest, dann: Diese Verknüpfung musst du für jedes Java-Projkt vornehmen, das Processing verwenden soll.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Öffne die Modul Einstellungen&lt;/strong&gt;: Klicke in der linken Spate des Projekts mit der rechten Maustaste auf den Projektordner. Klicke nun fast ganz unten den Punkt &quot;Open Module Settings&quot;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dependency hinzufügen&lt;/strong&gt;: Im Fenster Procjet Structure klickst du unter Modules &amp;gt; Dependencies auf das Plus-Icon und wähle JAR or Directories. Gib nun den Pfad zur core.jar Datei an.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;resources/open_module_settings.png&quot; title=&quot;Modul Einstellungen öffnen&quot; width=&quot;641&quot; height=&quot;754&quot; /&gt; &lt;img src=&quot;resources/add_jar.png&quot; alt=&quot;&quot; title=&quot;Jar-Datei hinzufügen&quot; width=&quot;794&quot; height=&quot;428&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Schritt 2:&lt;/strong&gt; Processing im Code importieren&lt;/p&gt;
-&lt;p&gt;Damit du das Grafikfenster erhältst und Processing-Befehle nutzen kannst fehlen nur noch ein paar Schritte. Als erstes musst du eine neue Klasse mit dem Namen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window&lt;/span&gt; erstellen (theoretisch kannst du auch jeden anderen Namen wählen, in dieser Anleitung nutzen wir aber den Namen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window).&lt;/span&gt; Das machst du, indem du in der linken Spalte in deinem Projekt den Ordner mit dem Namen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;src&lt;/span&gt; suchst. In diesem Ordner befindet sich aller Code, den du für dein Projekt erstellt. Klicke den Ordner mit der rechten Maustaste an. Es öffnet sich ein Kontextmenü, in der ganz oben die Option &quot;New&quot; steht. Wähle &quot;New&quot; und dann im nächsten Menü die Option &quot;Java Class&quot;. Im nächsten Schritt kannst du den Namen für deine Klasse festlegen. IntelliJ erstellt dann eine Datei namens &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window.java&lt;/span&gt; mit folgendem Code:&lt;/p&gt;
+&lt;p&gt;Damit du das Grafikfenster erhältst und Processing-Befehle nutzen kannst fehlen nur noch ein paar Schritte. Als erstes musst du eine &lt;strong&gt;neue Klasse&lt;/strong&gt; mit dem Namen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window&lt;/span&gt; erstellen (theoretisch kannst du auch jeden anderen Namen wählen, in dieser Anleitung nutzen wir aber den Namen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window).&lt;/span&gt; Das machst du, indem du in der linken Spalte in deinem Projekt den Ordner mit dem Namen &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;src&lt;/span&gt; suchst. In diesem Ordner befindet sich aller Code, den du für dein Projekt erstellt. Klicke den Ordner mit der rechten Maustaste an. Es öffnet sich ein Kontextmenü, in der ganz oben die Option &quot;New&quot; steht. Wähle &quot;New&quot; und dann im nächsten Menü die Option &quot;Java Class&quot;. Im nächsten Schritt kannst du den Namen für deine Klasse festlegen. IntelliJ erstellt dann eine Datei namens &lt;span style=&quot;font-family: andale mono, monospace;&quot;&gt;Window.java&lt;/span&gt; mit folgendem Code:&lt;/p&gt;
 &lt;div class=&quot;highlighted-code language-java line-numbers&quot;&gt;
 &lt;div&gt;
 &lt;pre&gt;&lt;code&gt;public class Window {
@@ -842,7 +842,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="5888"></int>
+                        <int value="5902"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -856,7 +856,7 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.73"></unicode>
+                      <unicode value="14_129_2.77"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="50">
                        <dictionary>
@@ -867,7 +867,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="add_jar.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\add_jar.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\add_jar.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6223868330388650cebfa7b04d03fdc2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -894,7 +894,7 @@ public class Main {
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="5893"></int>
+                        <int value="5907"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -908,7 +908,7 @@ public class Main {
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="14_129_2.74"></unicode>
+                      <unicode value="14_129_2.78"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="51">
                        <dictionary>
@@ -919,7 +919,7 @@ public class Main {
                         <string role="key" value="_storageName"></string>
                         <string value="open_module_settings.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\open_module_settings.png"></string>
+                        <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\open_module_settings.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="749e23d9d9de65b7413b560ab94fac35"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2805,7 +2805,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\aktivitatsdiagramm.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\aktivitatsdiagramm.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="bea5be8e6c5f6bb1e4149a0242b97fb7"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2825,7 +2825,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\klassendiagramm_beispiel2.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\klassendiagramm_beispiel2.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9204c0b50abec03c0414d7426fbd5a7a"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2845,7 +2845,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <string role="key" value="_storageName"></string>
                                                  <string value="wasserfall.png"></string>
                                                  <string role="key" value="_userName"></string>
-                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\wasserfall.png"></string>
+                                                 <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\wasserfall.png"></string>
                                                  <string role="key" value="checksum"></string>
                                                  <string value="9d452ad70230caa2b2b42f7a6ebd1707"></string>
                                                  <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3362,7 +3362,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="5889"></int>
+                                                   <int value="5903"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3376,7 +3376,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.55"></unicode>
+                                                 <unicode value="28_127_2.61"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="30"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3395,7 +3395,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="5891"></int>
+                                                   <int value="5905"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3409,7 +3409,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.56"></unicode>
+                                                 <unicode value="28_127_2.62"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="31"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3428,7 +3428,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                  <instance class="exe.engine.field.TextField">
                                                   <dictionary>
                                                    <string role="key" value="_id"></string>
-                                                   <int value="5894"></int>
+                                                   <int value="5908"></int>
                                                    <string role="key" value="_idevice"></string>
                                                    <none></none>
                                                    <string role="key" value="_instruc"></string>
@@ -3442,7 +3442,7 @@ public void validateInput(int input) throws InvalidInputException {
                                                   </dictionary>
                                                  </instance>
                                                  <string role="key" value="_id"></string>
-                                                 <unicode value="28_127_2.57"></unicode>
+                                                 <unicode value="28_127_2.63"></unicode>
                                                  <string role="key" value="_imageResource"></string>
                                                  <reference key="32"></reference>
                                                  <string role="key" value="_parent"></string>
@@ -3818,7 +3818,7 @@ System.out.println(datenbankverbindung.passwort);&lt;/code&gt;&lt;/pre&gt;
                                              <reference key="24"></reference>
                                             </dictionary>
                                             <string role="key" value="nextImageId"></string>
-                                            <int value="58"></int>
+                                            <int value="64"></int>
                                             <string role="key" value="parentNode"></string>
                                             <reference key="37"></reference>
                                            </dictionary>
@@ -4239,7 +4239,7 @@ class Wall implements Drawable {
                                    <string role="key" value="_storageName"></string>
                                    <string value="klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="_userName"></string>
-                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\klassendiagramm_vererbung.drawio.png"></string>
+                                   <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\klassendiagramm_vererbung.drawio.png"></string>
                                    <string role="key" value="checksum"></string>
                                    <string value="4f7a7bb81fd5f475baa1dc212cbd4a84"></string>
                                    <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4594,7 +4594,7 @@ public class Main {
                                    <instance class="exe.engine.field.TextField">
                                     <dictionary>
                                      <string role="key" value="_id"></string>
-                                     <int value="5892"></int>
+                                     <int value="5906"></int>
                                      <string role="key" value="_idevice"></string>
                                      <none></none>
                                      <string role="key" value="_instruc"></string>
@@ -4608,7 +4608,7 @@ public class Main {
                                     </dictionary>
                                    </instance>
                                    <string role="key" value="_id"></string>
-                                   <unicode value="16_127_2.34"></unicode>
+                                   <unicode value="16_127_2.36"></unicode>
                                    <string role="key" value="_imageResource"></string>
                                    <reference key="38"></reference>
                                    <string role="key" value="_parent"></string>
@@ -4632,7 +4632,7 @@ public class Main {
                                <reference key="20"></reference>
                               </dictionary>
                               <string role="key" value="nextImageId"></string>
-                              <int value="35"></int>
+                              <int value="37"></int>
                               <string role="key" value="parentNode"></string>
                               <reference key="24"></reference>
                              </dictionary>
@@ -5781,7 +5781,7 @@ public class Main {
                                            <instance class="exe.engine.field.TextField">
                                             <dictionary>
                                              <string role="key" value="_id"></string>
-                                             <int value="5890"></int>
+                                             <int value="5904"></int>
                                              <string role="key" value="_idevice"></string>
                                              <none></none>
                                              <string role="key" value="_instruc"></string>
@@ -5795,7 +5795,7 @@ public class Main {
                                             </dictionary>
                                            </instance>
                                            <string role="key" value="_id"></string>
-                                           <unicode value="8_135_2.2"></unicode>
+                                           <unicode value="8_135_2.4"></unicode>
                                            <string role="key" value="_imageResource"></string>
                                            <instance class="exe.engine.resource.Resource" reference="44">
                                             <dictionary>
@@ -5806,7 +5806,7 @@ public class Main {
                                              <string role="key" value="_storageName"></string>
                                              <string value="Collections_Ubersicht.png"></string>
                                              <string role="key" value="_userName"></string>
-                                             <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmphlqsdb\\Collections_Ubersicht.png"></string>
+                                             <string value="c:\\users\\jdittrib\\appdata\\local\\temp\\tmpm_azbw\\Collections_Ubersicht.png"></string>
                                              <string role="key" value="checksum"></string>
                                              <string value="2e04e6cbb8c55879197f75d0872b16ad"></string>
                                              <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5835,7 +5835,7 @@ public class Main {
                                       <string role="key" value="intlinks_to_anchors"></string>
                                       <dictionary></dictionary>
                                       <string role="key" value="nextImageId"></string>
-                                      <int value="3"></int>
+                                      <int value="5"></int>
                                       <string role="key" value="parentNode"></string>
                                       <reference key="43"></reference>
                                      </dictionary>
@@ -6414,7 +6414,7 @@ public class Ball {
                   </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="75"></int>
+                 <int value="79"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="48"></reference>
                 </dictionary>
@@ -7153,7 +7153,7 @@ public class Main {
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="3"></reference>
+  <reference key="48"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -8225,7 +8225,7 @@ public class Main {
   <string role="key" value="scowwebsite"></string>
   <bool value="0"></bool>
   <string role="key" value="style"></string>
-  <unicode value="base"></unicode>
+  <unicode value="fh_kiel"></unicode>
   <string role="key" value="sugaractivityname"></string>
   <string value=""></string>
   <string role="key" value="sugarservicename"></string>
